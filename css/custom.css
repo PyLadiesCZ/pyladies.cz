@@ -152,8 +152,9 @@ html {
 
 @media(min-width:768px) {
     .intro {
-        height: 100%;
+        height: 75%;
         padding: 0;
+        margin-top: 50px;
     }
 
     .intro .intro-body .brand-heading,
@@ -202,7 +203,7 @@ html {
 
 .actual {
     background: #e51e41;
-    padding: 25px 15px;
+    padding: 25px 0px;
     color: #fff;
     z-index: 1000;
     margin-top: -40px;
@@ -569,6 +570,7 @@ footer {
     border: 1px solid #E0E0E0;
     height: auto;
     padding: 0px 0px;
+    margin-left: 15px;
 }
 
 .section-heading {
@@ -588,8 +590,16 @@ footer {
 
 }
 
+.new-city:hover {
+    text-decoration: none;
+}
+
 .join a {
     color: #e51e41;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .section-active {
