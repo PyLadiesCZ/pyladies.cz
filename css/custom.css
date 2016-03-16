@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     color: #333;
     background-color: #fff;
-}
+font-family: 'Open Sans', sans-serif;}
 
 html {
     width: 100%;
@@ -12,12 +12,15 @@ html {
     overflow-x: hidden;
 }
 
-
+#material {
+  padding: 35px 0px;
+  text-align: left;
+}
 
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid #ddd;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
     background-color: #fff;
     color: #333;
 
@@ -111,7 +114,9 @@ html {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -119,20 +124,47 @@ html {
     -o-background-size: cover;
 }
 
+.copy a {
+  color: #8e8c8d;
+  text-decoration: underline;
+}
+
+
+
 .intro_city {
     display: table;
     width: 100%;
     height: auto;
-    padding: 150px 0;
+    padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/praha_bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha_bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha_bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha_bg.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
+
+.intro_city1 {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
 
 .intro .intro-body,
 .intro_city .intro-body {
@@ -405,6 +437,20 @@ ul.nav.nav-tabs.text-left {
     height: auto;
     background: #fff;
     padding: 10px 0px;
+}
+
+#material a {
+  color: #8e8c8d;
+
+}
+
+#material a:hover {
+  color: #8e8c8d;
+  text-decoration: underline;
+}
+
+#material div {
+  margin-top: 30px;
 }
 
 .partners h2 {
@@ -739,4 +785,8 @@ a:hover {
 
 h2.course-city-heading {
     padding-bottom: 40px;
+}
+
+.smaller {
+  font-size: 25px !important;
 }
