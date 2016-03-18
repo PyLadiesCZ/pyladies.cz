@@ -375,7 +375,6 @@ HOMEPAGE
     height: 30px;
     position: absolute;
     top: 0px;
-    left: 50px;
     bottom: 0px;
 }
 .new-city {
@@ -528,8 +527,11 @@ h2.course-city-heading {
     padding-top: 10px;
 }
 .py-block {
-    float: right;
-    margin-right: 65px;
+    float: left;
+    margin-left: 95px;
+}
+.py-icon {
+  margin-left: 15px;
 }
 .github-divider {
         background: #333;
