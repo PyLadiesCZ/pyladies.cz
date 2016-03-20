@@ -29,6 +29,12 @@ Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstrá
 
 Stránky se vytvoří v adresáři `_build/html`.
 
+### Nasazení
+
+Spuštěním `make dirhtml` vzniknou v adresáři `_build/dirhtml`
+statické stránky k nasazení na webový server.
+
+
 ## Základné informácie - editace HTML
 
 **Správa kurzov na úvodnej stránke** <br /><br />
