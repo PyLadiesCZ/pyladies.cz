@@ -53,18 +53,25 @@
                         </p>
                     {% endif %}
                     {% for mat in lesson['materials'] %}
+                        {% set done = mat.get('done', lesson.get('done', False)) %}
+                        {% set done_class = 'section-done' if done else 'section-todo' %}
                         <div class="section-info">
                             {% if mat['type'] == 'lesson' %}
-                                <span class="glyphicon glyphicon-blackboard section-icon"></span>
+                                {% if done %}
+                                    {% set icon_class = 'glyphicon-ok ' + done_class %}
+                                {% else %}
+                                    {% set icon_class = 'glyphicon-remove ' + done_class %}
+                                {% endif %}
                             {% elif mat['type'] == 'handout' %}
-                                <span class="glyphicon glyphicon-sunglasses section-icon"></span>
+                                {% set icon_class = 'glyphicon-book ' + done_class %}
                             {% elif mat['type'] == 'homework' %}
-                                <span class="glyphicon glyphicon-pencil section-icon"></span>
+                                {% set icon_class = 'glyphicon-pencil' %}
                             {% elif mat['type'] == 'link' %}
-                                <span class="glyphicon glyphicon-link section-icon"></span>
+                                {% set icon_class = 'glyphicon-link' %}
                             {% else %}
-                                <span class="glyphicon glyphicon-flag section-icon"></span>
+                                {% set icon_class = 'glyphicon-flag' %}
                             {% endif %}
+                            <span class="glyphicon {{ icon_class }} section-icon"></span>
                             {% if 'link' in mat %}
                                 <a href="{{ mat['link'] }}">{{ mat['name'] | md(inline=True) }}</a>
                             {% else %}

@@ -523,10 +523,10 @@ h2.course-city-heading {
 .section-box .course-city-p {
   margin-left: 15px;
 }
-.glyphicon-remove {
+.glyphicon-remove, .section-todo {
     color: #D32F2F;
 }
-.glyphicon-ok {
+.glyphicon-ok, .section-done {
     color: #00796B;
 }
 .couch-i {

@@ -1,5 +1,6 @@
 - name: Instalace
   date: 2016-03-07
+  done: true
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -24,6 +25,7 @@
     link: v1/s001-install/handout/handout.pdf
 - name: První program
   date: 2016-03-14
+  done: true
   materials:
   - name: První program
     type: lesson
@@ -185,7 +187,7 @@
   date: 2016-06-06
   materials:
   - name: Pokračování Asteroids
-    type: lesson
+    type: special
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
