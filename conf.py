@@ -18,6 +18,16 @@ import os
 if sys.version_info < (3, 0):
     raise RuntimeError('You need Python 3 to build pyladies.cz')
 
+def collect(app):
+    yield 'index', {}, 'index.html'
+    yield 'brno', {}, 'brno.html'
+    yield 'brno_info', {}, 'brno_info.html'
+    yield 'praha', {}, 'praha.html'
+    yield 'praha_info', {}, 'praha_info.html'
+
+def setup(app):
+    app.connect('html-collect-pages', collect)
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
