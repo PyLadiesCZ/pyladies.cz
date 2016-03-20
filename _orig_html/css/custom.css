@@ -1,0 +1,598 @@
+/*******************
+BASIC CSS
+*******************/
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.animated {
+      position: relative;
+}
+.pull-right li {
+  padding-top: 10px;
+}
+footer {
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    padding-bottom: 2px;
+    padding-top: 10px;
+}
+.social {
+    width: 40px;
+}
+.copy a {
+  color: #8e8c8d;
+  text-decoration: underline;
+}
+.beer {
+    height: 70px;
+}
+.copy {
+    margin-top: 10px;
+    color: #8e8c8d;
+}
+a:hover {
+    text-decoration: none;
+}
+.smaller {
+  font-size: 25px !important;
+}
+/* NAVIGATION */
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+.navbar-nav>li>.dropdown-menu {
+    border: none;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+.navbar-custom a {
+    color: #fff;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #e51e41;
+    background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+.navbar-custom .nav li a:active {
+    color: #fff;
+}
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+.navbar-custom .nav li.active a {
+    background-color: #e51e41;
+}
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+ }
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        letter-spacing: 1px;
+        background: #fff;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+        color: #333;
+    }
+    .navbar-custom a {
+        color: #333;
+      }
+}
+
+/*******************
+INTRO IMAGES
+*******************/
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.intro-city-praha {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha/praha-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha/praha-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/praha/praha-bg.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.intro-city-brno {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/brno/brno-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/brno/brno-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/brno/brno-bg.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-material {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body,
+.intro-info .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro .intro-body .brand-heading,
+.intro-info .intro-body .brand-heading {
+    font-size: 40px;
+}
+.intro .intro-body .intro-text,
+.intro-info .intro-body .intro-text {
+    font-size: 18px;
+}
+.intro-text-city {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 60px;
+}
+@media(min-width:768px) {
+    .intro,
+    .intro-info {
+        height: 75%;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .intro .intro-body .brand-heading,
+    .intro-info .intro-body .brand-heading {
+        font-size: 100px;
+    }
+    .intro .intro-body .intro-text,
+    .intro-info .intro-body .intro-text {
+        font-size: 26px;
+        font-weight: 800;
+    }
+}
+/*******************
+HOMEPAGE
+*******************/
+.pyladi-icon {
+    margin-top: 15px;
+    padding: 13px 5px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    outline: none;
+    border-radius: 100%;
+}
+.pyladi-icon:hover,
+.pyladi-icon:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+.actual {
+    background: #e51e41;
+    padding: 25px 0px;
+    color: #fff;
+    z-index: 1000;
+    margin-top: -40px;
+}
+.btn-city {
+    padding: 15px 45px;
+    background: #e51e41;
+    color: #fff;
+    border: none;
+}
+.new-city:hover {
+    text-decoration: none;
+}
+.join a {
+    color: #e51e41;
+}
+.actual-address a {
+    color: #fff;
+}
+.actual-address a:hover {
+    text-decoration: underline;
+}
+.logo-i {
+    height: 40px;
+    margin-top: -10px;
+}
+.logo-cz {
+  height: 50px !important;
+}
+.comp-icon {
+  height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+#about {
+    padding-top: 105px;
+    padding-bottom: 30px;
+}
+.about-p {
+    color: #8e8c8d;
+}
+.about-p {
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+    padding-bottom: 85px;
+    padding-top: 15px;
+}
+#start {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: #f8f9fa;
+}
+.start-p {
+    color: #8e8c8d;
+    padding: 25px 0px;
+}
+.partners {
+    height: auto;
+    background: #fff;
+    padding: 10px 0px;
+}
+.partners h2 {
+    padding-bottom: 35px;
+}
+.partner-logo {
+    height: 60px;
+    padding-bottom: 20px;
+}
+.ref-heading {
+    padding: 25px 0px;
+    color: #fff;
+    font-size: 30px;
+}
+.ref {
+    position: relative;
+    height: auto;
+    max-height: 50%;
+    color: #fff;
+    text-align: left;
+}
+.ref-p {
+    float: left;
+    font-style: italic;
+}
+.py-icon-i {
+    width: 50px;
+    float: left;
+    margin: auto;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+.new-city {
+    color: rgb(229, 31, 64);
+    font-weight: 700;
+    padding: 30px 0px;
+}
+/*******************
+MATERIAL PAGE
+*******************/
+#material {
+  padding: 35px 0px;
+  text-align: left;
+}
+#material a {
+  color: #8e8c8d;
+}
+#material a:hover {
+  color: #8e8c8d;
+  text-decoration: underline;
+}
+#material div {
+  margin-top: 30px;
+}
+.material-box {
+    padding-top: 55px;
+}
+.col-md-4.material {
+    color: rgb(229, 31, 64);
+}
+/*******************
+CITIES PAGE
+*******************/
+#about2 {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+.info-city {
+    padding-top: 55px;
+    padding-bottom: 85px;
+}
+.info-city div div h2 {
+    padding-bottom: 25px;
+}
+.city-heading {
+    font-weight: bold;
+    color: #333;
+}
+.city-info,
+.city-address a {
+    color: #8e8c8d;
+}
+.glyphicon-calendar {
+    font-size: 40px;
+    float: left;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+}
+.meetup-date,
+.meetup-address a {
+    color: #8e8c8d;
+}
+.meetup {
+    padding-top: 40px;
+}
+h2.course-city-heading {
+    padding-bottom: 40px;
+}
+.advice {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    background: #e51f40;
+    margin-top: 20px;
+}
+.course-wrapper {
+    display: block;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.course-wrapper .course-i:nth-child(3) {
+    border-right: none;
+}
+.course-i {
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.course-city {
+    padding: 35px 0px;
+}
+.course-city-p {
+    color: #8e8c8d;
+}
+.sections {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    height: auto;
+    padding: 0px 0px;
+    margin-left: 15px;
+}
+.section-heading {
+        margin-top: 0px;
+        background-color: #EDEDED;
+        border-bottom: 1px solid #E0E0E0;
+        padding: 15px 15px;
+        font-weight: bold;
+}
+.section-info,
+.section-homework {
+        color: #8e8c8d;
+        padding: 15px 15px;
+}
+.section-active {
+    background: #e51e41;
+    color: #fff;
+}
+.section-active .section-date {
+    color: #fff;
+}
+.section-date {
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+}
+.section-icon {
+    margin-right: 15px;
+}
+.glyphicon-remove {
+    color: #D32F2F;
+}
+.glyphicon-map-marker {
+    margin-right: 15px;
+}
+.glyphicon-ok {
+    color: #00796B;
+}
+.couch-i {
+    width: 300px;
+    margin-left: 140px;
+}
+.couch-box {
+    color: #8e8c8d;
+    padding-top: 35px;
+    text-align: left;
+}
+.couch-box ol {
+    padding-top: 10px;
+}
+.py-block {
+    float: left;
+    margin-left: 95px;
+}
+.py-icon {
+  margin-left: 15px;
+}
+.github-divider {
+        background: #333;
+        height: 80px;
+        position: relative;
+}
+.github {
+    height: 160px;
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+}
+#about3 {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background: #e51e41;
+    color: #fff;
+}
+#about3 div a {
+    color: #fff;
+}
+.photo-box {
+    height: auto;
+    padding-top: 300px;
+}
+.city-box {
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.city-image {
+    height: auto;
+}
+.start-title2 {
+    padding: 30px 0px;
+}
+.couch {
+    padding-top: 45px;
+    padding-bottom: 85px;
+}
+.couch {
+    padding-top: 55px;
+}
+.couch ul li {
+    list-style: none;
+    padding: 10px 0px;
+    color: #8e8c8d;
+}
+.btn-couch {
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+}
+.btn-couch:hover {
+    color: #e51e41;
+}
+.start-title3 {
+    padding-bottom: 40px;
+}
