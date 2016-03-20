@@ -15,18 +15,36 @@
 import sys
 import os
 
+import yaml
+import jinja2
+import markdown
+
 if sys.version_info < (3, 0):
     raise RuntimeError('You need Python 3 to build pyladies.cz')
 
+def read_yaml(filename):
+    with open(filename) as file:
+        return yaml.safe_load(file)
+
 def collect(app):
     yield 'index', {}, 'index.html'
-    yield 'brno', {}, 'brno.html'
+    yield 'brno', {'plan': read_yaml('plans/brno.yaml')}, 'brno.html'
     yield 'brno_info', {}, 'brno_info.html'
     yield 'praha', {}, 'praha.html'
     yield 'praha_info', {}, 'praha_info.html'
 
+def add_jinja_filters(app):
+    md = markdown.Markdown(extensions=['meta'])
+    def md_filter(text, inline=False):
+        result = jinja2.Markup(md.convert(text))
+        if inline and result[:3] == '<p>' and result[-4:] == '</p>':
+            result = result[3:-4]
+        return result
+    app.builder.templates.environment.filters['md'] = md_filter
+
 def setup(app):
     app.connect('html-collect-pages', collect)
+    app.connect('builder-inited', add_jinja_filters)
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
