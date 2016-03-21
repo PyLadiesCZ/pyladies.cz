@@ -43,7 +43,8 @@ footer {
 }
 a:hover,
 .city-address a:hover,
-.meetup-address a:hover {
+.meetup-address a:hover,
+.meetup-heading a:hover{
     text-decoration: none;
     color: #fa023c;
 }
@@ -138,6 +139,20 @@ a:hover,
     top: 11px;
     left: -6px;
  }
+ .btn-start {
+   padding: 10px 25px;
+   background: transparent;
+   color: #fff;
+   font-size: 20px;
+   border: 1px solid #fff;
+   margin-top: 10px;
+ }
+.btn-start:hover {
+  background: #fff;
+  border: 1px solid #fa023c;
+  opacity: 0.5;
+  color: #fa023c;
+}
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -212,7 +227,7 @@ INTRO IMAGES
 .intro-material {
     display: table;
     width: 100%;
-    height: auto;
+    height: 25% !important;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -385,6 +400,11 @@ HOMEPAGE
     font-weight: 700;
     padding: 25px 0px;
 }
+.img-user {
+  width: 30px;
+  margin-right: 10px;
+  float: left;
+}
 /*******************
 MATERIAL PAGE
 *******************/
@@ -437,10 +457,15 @@ CITIES PAGE
     float: left;
     padding-right: 15px;
     color: #8e8c8d;
+    height: 30px;
 }
-.meetup-heading {
+.meetup-heading  {
   font-weight: 700;
   font-size: 20px;
+  margin-bottom: 20px;
+}
+.meetup-heading a {
+  color: #333;
 }
 .meetup-date,
 .meetup-time,
@@ -554,8 +579,8 @@ h2.course-city-heading {
         height: 80px;
         position: relative;
 }
-.github {
-    height: 160px;
+.pylady-black {
+    height: 115px;
     z-index: 1000;
     position: absolute;
     top: 0px;
