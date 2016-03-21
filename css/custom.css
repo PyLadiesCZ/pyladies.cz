@@ -153,26 +153,6 @@ a:hover,
   opacity: 0.5;
   color: #fa023c;
 }
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        letter-spacing: 1px;
-        background: #fff;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-        border-bottom: 1px solid #ddd;
-    }
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid #ddd;
-        background: #fff;
-        color: #333;
-    }
-    .navbar-custom a {
-        color: #333;
-      }
-}
 
 /*******************
 INTRO IMAGES
