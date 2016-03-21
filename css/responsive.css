@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    .py-block {
+      font-size: 14px;
+    }
+    .city-heading {
+      font-size: 14px;
+    }
+    .course-wrapper {
+      max-height: 119px;
+    }
+    .new-city {
+      padding: 33px 0px;
+    }
+}
