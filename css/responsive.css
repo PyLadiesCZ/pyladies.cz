@@ -116,11 +116,13 @@
 
 }
 
-@media all and (max-width: 769px) {
+@media all and (max-width: 767px) {
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
   .nav .open>a, .nav .open>a:focus, .nav .open>a:focus {
-    background: #fa023c;
-    color: #fff;
+    color: #fa023c;
+  }
+  .navbar-custom a {
+    color: #333;
   }
   a.dropdown-toggle {
     color: #333;
@@ -143,6 +145,9 @@
     -webkit-box-shadow: transparent;
     box-shadow: 0 6px 12px rgba(0,0,0,0);
   }
+}
+
+@media all and (max-width: 768px) {
   #about {
     padding-top: 50px;
     padding-bottom: 0px;
@@ -161,7 +166,7 @@
     padding-bottom: 10px;
 }
 .partners div:nth-child(4) {
-    margin-left: -23px;
+    margin-left: -42px;
 }
 .partners div:nth-child(5) {
     margin-left: 13px;
@@ -176,6 +181,19 @@ span.pull-right.actual-address {
 }
 .sections {
   margin-left: 0px;
+}
+
+.partner-logo {
+  height: 85px !important;
+}
+img.partner-logo.logo-cz {
+  height: 65px !important;
+}
+button.btn.btn-couch {
+  margin-right: -10px;
+}
+.course-city {
+    padding: 5px 15px;
 }
 }
 
@@ -194,10 +212,22 @@ span.pull-right.actual-address {
   width: 50%;
 }
 .course-city {
-    padding: 35px 30px;
+    padding: 35px 18px;
 }
 .about-p {
   max-height: 115px;
+}
+.partner-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.partners div:nth-child(4) {
+    margin-left: 15px;
+}
+.left-couch, .right-couch {
+  margin-left: -30px;
 }
 
 }
@@ -217,7 +247,7 @@ span.pull-right.actual-address {
   width: 50%;
 }
 .course-city {
-    padding: 35px 30px;
+    padding: 35px 17px;
 }
 .about-p {
   max-height: 115px;
@@ -225,11 +255,33 @@ span.pull-right.actual-address {
 .course-city-p {
   padding-bottom: 55px;
 }
+.partner-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info-city {
+  padding-bottom: 20px !important;
+}
+.left-couch, .right-couch {
+  margin-left: -30px;
+}
 
+button.btn.btn-couch {
+  margin-left: -35px;
+}
 }
 @media all and (max-width: 568px) {
 .btn-couch {
   margin-left: -56px;
+}
+
+p.pull-left.copy {
+    font-size: 14px;
+    margin-top: 15px;
+}
+button.btn.btn-couch {
+  margin-left: 50px;
 }
 }
 @media all and (max-width: 414px) {
@@ -271,6 +323,12 @@ img.partner-logo{
 .section-icon {
   height: 45px;
 }
+button.btn.btn-couch {
+    margin-left: -154px;
+}
+a .about .about-title {
+  font-size: 14px;
+}
 }
 
 @media all and (max-width: 384px) {
@@ -307,11 +365,75 @@ img.partner-logo{
   font-size: 40px;
   }
   .smaller {
-    font-size: 18px;
+    font-size: 14px !important;
   }
   .section-icon {
   height: 45px;
   }
+
+  .partners div:nth-child(4) {
+      margin-left: -20px;
+  }
+  h4.actual-heading {
+    font-size: 16px;
+  }
+  .section-box .course-city-p {
+    padding-bottom: 20px !important;
+  }
+
+
+}
+
+@media all and (max-width: 375px) {
+  .intro-text {
+    margin-top: 70px;
+  }
+  .about-p {
+    max-height: 195px;
+  }
+  img.partner-logo{
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  }
+  .copy {
+  display: none;
+  }
+  .meetup-box .col-xs-12 {
+  width: 100%;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-flex;
+    max-width: 98%;
+  }
+  .btn-couch {
+    margin-left: -140px;
+  }
+  .actual .col-xs-5 {
+  width: 85%;
+  }
+  .intro-text-city {
+  font-size: 40px;
+  }
+  .smaller {
+    font-size: 14px !important;
+  }
+  .section-icon {
+  height: 45px;
+  }
+
+  .partners div:nth-child(4) {
+      margin-left: -20px;
+  }
+  h4.actual-heading {
+    font-size: 16px;
+  }
+  .section-box .course-city-p {
+    padding-bottom: 20px !important;
+  }
+
 
 }
 @media all and (max-width: 320px) {
@@ -344,9 +466,7 @@ img.partner-logo{
     display: inline-flex;
     max-width: 98%;
   }
-  .btn-couch {
-    margin-left: -140px;
-  }
+
   .actual .col-xs-5 {
   width: 85%;
   }
@@ -359,5 +479,21 @@ img.partner-logo{
   .section-icon {
   height: 45px;
   }
+
+  img.partner-logo.logo-cz {
+    height: 56px !important;
+  }
+  .partner-logo {
+    height: 70px !important;
+}
+
+.btn-couch {
+  padding: 10px 16px;
+  margin-left: -147px !important;
+}
+
+a .about img {
+  height: 80px;
+}
 
 }
