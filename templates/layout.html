@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně."></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
+      <meta name="twitter:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
+
+      <title>{% block title %}PyLadies CZ{% endblock title %}</title>
+
+      {% block css %}
+        <!-- Bootstrap CSS -->
+        <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ pathto('_static/css/custom.css', 1) }}" rel="stylesheet">
+        <link href="{{ pathto('_static/css/responsive.css', 1) }}" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="{{ pathto('_static/fonts/font-awesome/css/font-awesome.min.css', 1) }}" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      {% endblock css %}
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target="">
+      <!-- Navigation -->
+      <nav class="navbar navbar-custom" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                      <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="index.html">
+                      <img class="logo-i" src="{{ pathto('_static/img/pyladies.png', 1) }}" />
+                  </a>
+              </div>
+              <div class="navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Města
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                              <li><a href="brno_info.html">Brno</a></li>
+                              <li><a href="praha_info.html">Praha</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="brno.html">Brno</a></li>
+                            <li><a href="praha.html">Praha</a></li>
+                           <!-- <li role="separator" class="divider"></li>
+                            <li><a href="#">Všechny</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="join">
+                      <a href="#main-course">Staň se PyLady!</a>
+                    </li>
+                    <li>
+                      <a href="mailto: valkova.zuza@seznam.cz">Napiš nám</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %} {% endblock %}
+    {% block footer %}
+    <footer>
+        <div class="container text-left">
+            <p class="pull-left copy">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com" target="new">mezinárodních PyLadies</a>.
+            </p>
+            <ul class="pull-right list-inline">
+                <li>
+                    <a href="https://twitter.com/pyladiescz" target="new">
+                        <img class="social" src="{{ pathto('_static/img/icon/twitter.png', 1) }}" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz" target="new">
+                        <img class="social" src="{{ pathto('_static/img/icon/github.png', 1) }}" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/" target="new">
+                        <img class="social" src="{{ pathto('_static/img/icon/facebook.png', 1) }}" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    {% endblock footer %}
+    {% block javascript %}
+        <!-- jQuery -->
+        <script src="{{ pathto('_static/js/jquery.js', 1) }}"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
+        <!-- Plugin JavaScript -->
+        <script src="{{ pathto('_static/js/jquery.easing.min.js', 1) }}"></script>
+        <!-- Custom JavaScript -->
+        <script src="{{ pathto('_static/js/custom.js', 1) }}"></script>
+    {% endblock javascript %}
+</body>
+</html>
