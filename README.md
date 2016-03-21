@@ -1,12 +1,48 @@
 # PyLadies.cz
-Základné informácie
+
+Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
+Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
+šablonových vychytávek (dědičnost, makra), ať je v tom trochu pořádek.
+
+Soubory jako obrázky, fonty, CSS, JS jsou v `static`.
+
+Původní stránky jsou v  `original`; podadresář `v1` obsahuje kurz a musí
+být zveřejněn na setjných URL jako předtím.
+
+V `course` snad časem bude kurz převedený do ReST dokumentace.
+
+V `plans` jsou data pro seznamy lekcí (zatím pro Brno).
+
+Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstránky.
+
+## Jak vytvořit stránky
+
+### Instalace
+
+    $ python -m pip install -r requirements.txt
+
+### Vytvoření stránek
+
+    $ sphinx-build -b html . _build/html
+
+(na Linuxu postačí zadat `make`)
+
+Stránky se vytvoří v adresáři `_build/html`.
+
+### Nasazení
+
+Spuštěním `make dirhtml` vzniknou v adresáři `_build/dirhtml`
+statické stránky k nasazení na webový server.
+
+
+## Základné informácie - editace HTML
 
 **Správa kurzov na úvodnej stránke** <br /><br />
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
-    <img src="img/pylady.png" class="py-icon-i" />
+    <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
   </div>
   <div class="py-block pull-left">
     <h4 class="city-heading">Praha</h4>
@@ -18,11 +54,11 @@ Základné informácie
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
     <div class="py-icon">
-      <img src="img/pylady-grey.png" class="py-icon-i" />
+      <img src="{{ pathto('_static/img/icon/pylady-grey.png', 1) }}" class="py-icon-i" />
     </div>
     <div class="py-block pull-left">
       <h4 class="city-heading">Brno</h4>
@@ -34,11 +70,11 @@ Základné informácie
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
-    <img src="img/pylady-blue.png" class="py-icon-i" />
+    <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
   </div>
   <div class="py-block pull-left">
     <h4 class="city-heading">Praha</h4>
@@ -65,7 +101,7 @@ Obrázky sú definované v CSSku. Pre každé mesto je spoločná trieda intro-c
   <li>Neaktívny kurz (sekcia Intro header v súbore brno.html)</li>
 </ul>
 
-**Stavu kurzu - stránka kurzu**
+**Stavu kurzu - stránka kurzu (Praha)**
 <ul>
   <li>Prejdená hodina - zmena ikonky na <strong>glyphicon-ok</strong></li>
   <li>Ešte neprejdená hodina - ikonka <strong>glyphicon-remove</strong></li>
