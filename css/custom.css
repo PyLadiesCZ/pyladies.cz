@@ -42,9 +42,13 @@ footer {
     color: #8e8c8d;
 }
 a:hover,
+a:focus,
 .city-address a:hover,
+.city-address a:focus,
 .meetup-address a:hover,
-.meetup-heading a:hover{
+.meetup-address a:focus,
+.meetup-heading a:hover,
+.meetup-heading a:focus {
     text-decoration: none;
     color: #fa023c;
 }
@@ -67,8 +71,6 @@ a:hover,
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
-
-
 .navbar-custom a {
     color: #fff;
 }
@@ -81,7 +83,8 @@ a:hover,
    border: 1px solid #fff;
    margin-top: 10px;
  }
-.btn-start:hover {
+.btn-start:hover,
+.btn-start:focus {
   background: #fff;
   border: 1px solid #fa023c;
   opacity: 0.5;
@@ -225,7 +228,8 @@ HOMEPAGE
     color: #fff;
     border: none;
 }
-.new-city:hover {
+.new-city:hover,
+.new-city:focus{
     text-decoration: none;
 }
 .join a {
@@ -234,7 +238,8 @@ HOMEPAGE
 .actual-address a {
     color: #fff;
 }
-.actual-address a:hover {
+.actual-address a:hover,
+.actual-address a:focus {
     text-decoration: underline;
 }
 .logo-i {
@@ -329,7 +334,8 @@ MATERIAL PAGE
 #material a {
   color: #8e8c8d;
 }
-#material a:hover {
+#material a:hover,
+#material a:focus {
   color: #8e8c8d;
   text-decoration: underline;
 }
@@ -548,7 +554,8 @@ h2.course-city-heading {
 .btn-couch a {
   color: #fff;
 }
-.btn-couch a:hover {
+.btn-couch a:hover,
+.btn-couch a:focus {
     color: #e51e41;
 }
 .start-title3 {

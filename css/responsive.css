@@ -37,7 +37,8 @@
           -moz-transition: background .3s ease-in-out;
           transition: background .3s ease-in-out;
       }
-      .navbar-custom .nav li a:hover {
+      .navbar-custom .nav li a:hover,
+      .navbar-custom .nav li a:focus {
           outline: 0;
           color: #e51e41;
           background-color: transparent;
@@ -66,7 +67,8 @@
       .navbar-custom .nav li.active a {
           background-color: #e51e41;
       }
-      .navbar-custom .nav li.active a:hover {
+      .navbar-custom .nav li.active a:hover,
+      .navbar-custom .nav li.active a:focus {
           color: #fff;
       }
       .dropdown-menu .sub-menu {
@@ -76,10 +78,12 @@
           visibility: hidden;
           margin-top: -1px;
       }
-      .dropdown-menu li:hover .sub-menu {
+      .dropdown-menu li:hover .sub-menu,
+      .dropdown-menu li:focus .sub-menu  {
           visibility: visible;
       }
-      .dropdown:hover .dropdown-menu {
+      .dropdown:hover .dropdown-menu,
+      .dropdown:focus .dropdown-menu {
           display: block;
       }
       .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
@@ -106,7 +110,8 @@
 }
 
 @media all and (max-width: 769px) {
-  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:focus {
     background: #fa023c;
     color: #fff;
   }
