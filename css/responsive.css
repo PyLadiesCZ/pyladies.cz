@@ -71,7 +71,7 @@ span.pull-right.actual-address {
 }
 }
 
-@media all  and (min-width: 736px)  {
+@media all  and (max-width: 736px)  {
   .course-wrapper {
     max-height: none;
 }
@@ -114,5 +114,142 @@ span.pull-right.actual-address {
 .about-p {
   max-height: 115px;
 }
+.course-city-p {
+  padding-bottom: 55px;
+}
+
+}
+@media all and (max-width: 568px) {
+.btn-couch {
+  margin-left: -56px;
+}
+}
+@media all and (max-width: 414px) {
+  .intro-text {
+    margin-top: 70px;
+  }
+  .about-p {
+    max-height: 165px;
+}
+img.partner-logo{
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+.copy {
+  display: none;
+}
+.meetup-box .col-xs-12 {
+  width: 100%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-flex;
+    max-width: 98%;
+}
+.btn-couch {
+    margin-left: -140px;
+}
+.actual .col-xs-5 {
+  width: 85%;
+}
+.intro-text-city {
+  font-size: 40px;
+}
+.smaller {
+    font-size: 18px;
+}
+.section-icon {
+  height: 45px;
+}
+}
+
+@media all and (max-width: 384px) {
+  .intro-text {
+    margin-top: 70px;
+  }
+  .about-p {
+    max-height: 195px;
+  }
+  img.partner-logo{
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  }
+  .copy {
+  display: none;
+  }
+  .meetup-box .col-xs-12 {
+  width: 100%;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-flex;
+    max-width: 98%;
+  }
+  .btn-couch {
+    margin-left: -140px;
+  }
+  .actual .col-xs-5 {
+  width: 85%;
+  }
+  .intro-text-city {
+  font-size: 40px;
+  }
+  .smaller {
+    font-size: 18px;
+  }
+  .section-icon {
+  height: 45px;
+  }
+
+}
+@media all and (max-width: 320px) {
+  .intro-text {
+    margin-top: 70px;
+  }
+  .about-p {
+    max-height: 250px;
+  }
+  .section-heading {
+    font-size: 10px;
+  }
+  .section-date {
+    font-size: 10px;
+  }
+  img.partner-logo{
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  }
+  .copy {
+  display: none;
+  }
+  .meetup-box .col-xs-12 {
+  width: 100%;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-flex;
+    max-width: 98%;
+  }
+  .btn-couch {
+    margin-left: -140px;
+  }
+  .actual .col-xs-5 {
+  width: 85%;
+  }
+  .intro-text-city {
+  font-size: 40px;
+  }
+  .smaller {
+    font-size: 18px;
+  }
+  .section-icon {
+  height: 45px;
+  }
 
 }
