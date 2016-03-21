@@ -30,7 +30,8 @@ footer {
 .social {
     width: 40px;
 }
-.copy a {
+.copy a,
+.about-p a {
   color: #8e8c8d;
 }
 .beer {
@@ -382,7 +383,7 @@ HOMEPAGE
 .new-city {
     color: rgb(229, 31, 64);
     font-weight: 700;
-    padding: 30px 0px;
+    padding: 25px 0px;
 }
 /*******************
 MATERIAL PAGE
@@ -461,12 +462,13 @@ h2.course-city-heading {
     margin-top: 20px;
 }
 .course-wrapper {
+    max-height: 105px;
     display: block;
     text-align: left;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.course-wrapper .course-i:nth-child(3) {
+.course-wrapper .course-i:nth-child(4) {
     border-right: none;
 }
 .course-i {
