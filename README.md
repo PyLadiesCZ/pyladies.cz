@@ -38,7 +38,7 @@ statické stránky k nasazení na webový server.
 ## Základné informácie - editace HTML
 
 **Správa kurzov na úvodnej stránke** <br /><br />
-<img src="{{ pathto('_static/img/logo/pylady.png', 1) }}" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
@@ -54,7 +54,7 @@ statické stránky k nasazení na webový server.
 </div>
 ```
 
-<img src="{{ pathto('_static/img/logo/pylady-grey.png', 1) }}"width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
     <div class="py-icon">
@@ -70,7 +70,7 @@ statické stránky k nasazení na webový server.
 </div>
 ```
 
-<img src="{{ pathto('_static/img/logo/pylady-blue.png', 1) }}" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
