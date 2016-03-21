@@ -70,3 +70,26 @@ span.pull-right.actual-address {
   margin-left: 0px;
 }
 }
+
+@media all and (min-width: 736px) {
+  .course-wrapper {
+    max-height: none;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  display: inline-flex;
+    max-width: 50%;
+}
+.couch {
+  padding-bottom: 10px;
+}
+.meetup-box .col-xs-12 {
+  width: 50%;
+}
+.course-city {
+    padding: 35px 30px;
+}
+span.pull-right.actual-address {
+    float: right !important;
+    margin-top: -1px;
+}
+}
