@@ -67,6 +67,7 @@ a:focus,
 }
 .navbar-nav>li>.dropdown-menu {
     border: none;
+
 }
 .navbar-custom .navbar-brand:focus {
     outline: 0;
@@ -74,6 +75,7 @@ a:focus,
 .navbar-custom a {
     color: #fff;
 }
+
 
  .btn-start {
    padding: 10px 25px;
@@ -180,7 +182,6 @@ INTRO IMAGES
     .intro-info {
         height: 75%;
         padding: 0;
-        margin-top: 50px;
     }
     .intro .intro-body .brand-heading,
     .intro-info .intro-body .brand-heading {

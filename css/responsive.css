@@ -38,7 +38,8 @@
           transition: background .3s ease-in-out;
       }
       .navbar-custom .nav li a:hover,
-      .navbar-custom .nav li a:focus {
+      .navbar-custom .nav li a:focus,
+       {
           outline: 0;
           color: #e51e41;
           background-color: transparent;
@@ -71,6 +72,8 @@
       .navbar-custom .nav li.active a:focus {
           color: #fff;
       }
+
+
       .dropdown-menu .sub-menu {
           left: 100%;
           position: absolute;
@@ -117,6 +120,24 @@
   }
   a.dropdown-toggle {
     color: #333;
+  }
+  .navbar-nav>li>.dropdown-menu {
+      position: relative;
+      display: inline;
+      width: 100%;
+      border: none;
+      margin-bottom: 20px;
+
+  }
+
+  .dropdown-menu {
+    -webkit-background-clip: none;
+    background-clip: none;
+    border: none;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: transparent;
+    box-shadow: 0 6px 12px rgba(0,0,0,0);
   }
   #about {
     padding-top: 50px;
