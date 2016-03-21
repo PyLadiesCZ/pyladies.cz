@@ -75,6 +75,12 @@ a:focus,
 .navbar-custom a {
     color: #fff;
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
+.nav>li>a:focus, .nav>li>a:hover,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  background: transparent;
+  color: #fa023c;
+}
 
 
  .btn-start {
@@ -180,7 +186,7 @@ INTRO IMAGES
 @media(min-width:768px) {
     .intro,
     .intro-info {
-        height: 75%;
+        height: 76%;
         padding: 0;
     }
     .intro .intro-body .brand-heading,
@@ -233,7 +239,8 @@ HOMEPAGE
 .new-city:focus{
     text-decoration: none;
 }
-.join a {
+.join a,
+.join {
     color: #e51e41;
 }
 .actual-address a {

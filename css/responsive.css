@@ -14,8 +14,12 @@
 }
 
 @media(min-width:768px) {
+  .join a,
+  .join {
+      color: #e51e41;
+  }
     .navbar-custom {
-        padding: 20px 0;
+        padding: 5px 0;
         letter-spacing: 1px;
         background: #fff;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
