@@ -23,7 +23,7 @@ if sys.version_info < (3, 0):
     raise RuntimeError('You need Python 3 to build pyladies.cz')
 
 def read_yaml(filename):
-    with open(filename) as file:
+    with open(filename, encoding='utf-8') as file:
         return yaml.safe_load(file)
 
 def collect(app):
