@@ -41,9 +41,9 @@
                         {% if 'date' in lesson %}
                             Lekce {{ loop.index }} - {{ lesson['name'] }}
                             <span class="pull-right section-date">
-                                {% set day = lesson['date'][:2] %}
-                                {% set month = lesson['date'][3:5] %}
-                                {% set year = lesson['date'][6:] %}
+                                {% set day = lesson['date'][8:] %}
+                                {% set month = lesson['date'][5:7] %}
+                                {% set year = lesson['date'][:4] %}
                                 {{ '{}. {}. {}'.format(day, month, year) }}
                             </span>
                         {% else %}
