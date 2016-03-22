@@ -76,7 +76,7 @@
                             {% endif %}
                             <span class="glyphicon {{ icon_class }} section-icon"></span>
                             {% if 'link' in mat %}
-                                <a href="{{ mat['link'] }}">{{ mat['name'] }}</a>
+                                <a href="{{ pathto(mat['link'], 1) }}">{{ mat['name'] }}</a>
                             {% else %}
                                 {{ mat['name'] }}
                             {% endif %}
