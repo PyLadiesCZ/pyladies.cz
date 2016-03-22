@@ -38,7 +38,7 @@ footer {
     height: 70px;
 }
 .copy {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #8e8c8d;
 }
 a:hover,
@@ -156,9 +156,9 @@ INTRO IMAGES
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/material-bg.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -325,7 +325,7 @@ HOMEPAGE
 .new-city {
     color: rgb(229, 31, 64);
     font-weight: 700;
-    padding: 30px 0px;
+    padding: 25px 0px;
 }
 .img-user {
   width: 30px;
@@ -456,9 +456,6 @@ h2.course-city-heading {
         color: #8e8c8d;
         padding: 15px 15px;
 }
-.section-info a {
-    color: #8e8c8d;
-}
 .section-active {
     background: #e51e41;
     color: #fff;
@@ -480,10 +477,10 @@ h2.course-city-heading {
 .section-box .course-city-p {
   margin-left: 15px;
 }
-.glyphicon-remove, .section-todo {
+.glyphicon-remove {
     color: #D32F2F;
 }
-.glyphicon-ok, .section-done {
+.glyphicon-ok {
     color: #00796B;
 }
 .couch-i {

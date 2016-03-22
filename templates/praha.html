@@ -1,89 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-      <!-- ADD META TAGS -->
-      <meta charset="utf-8"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
-      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
-      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
-      <meta name="description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně."></meta>
-      <meta property="og:title" content="PyLadies CZ"></meta>
-      <meta property="og:type" content="article"></meta>
-      <meta property="og:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
-      <meta property="og:url" content="www.pyladies.cz"></meta>
-      <meta property="og:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
-      <meta name="twitter:card" content="summary"></meta>
-      <meta name="twitter:title" content="PyLadies CZ"></meta>
-      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
-      <meta name="twitter:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
-      <meta name="twitter:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
-
-      <title>PyLadies CZ</title>
-
-      <!-- Bootstrap CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom CSS -->
-      <link href="css/custom.css" rel="stylesheet">
-      <link href="css/responsive.css" rel="stylesheet">
-      <!-- Custom Fonts -->
-      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-      <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-      <!-- Favicon -->
-      <link rel="icon" type="image/x-icon" href="favicon.ico" />
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-
-    <body id="page-top praha-top" data-spy="scroll" data-target=".navbar-fixed-top">
-      <!-- Navigation -->
-      <nav class="navbar navbar-custom" role="navigation">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                      <i class="fa fa-bars"></i>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="index.html">
-                      <img class="logo-i" src="img/pyladies.png" />
-                  </a>
-              </div>
-              <div class="navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Města
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                              <li><a href="brno_info.html">Brno</a></li>
-                              <li><a href="praha_info.html">Praha</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="brno.html">Brno</a></li>
-                            <li><a href="praha.html">Praha</a></li>
-                        </ul>
-                    </li>
-                    <li class="join">
-                      <a href="index.html#main-course">Staň se PyLady!</a>
-                    </li>
-                    <li>
-                      <a href="mailto:valkova.zuza@seznam.cz">Napiš nám</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 {% extends "layout.html" %}
 {% block content %}
     <!-- Intro Header -->
@@ -239,24 +153,18 @@
               <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
                 <a href="https://www.facebook.com/groups/1640052339543471/" target="new">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
-                        <img height="110" src="img/facebook-praha.png" />
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/facebook.png', 1) }}" />
                         <h4 class="about-title">Facebook PyLadies Praha</h4>
                     </div>
                 </a>
                 <a href="https://groups.google.com/forum/#!forum/pyladies-praha" target="new">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
-                        <img height="110" src="img/google-group.png" />
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/google-group.png', 1) }}" />
                         <h4 class="about-title">Google Group Pyladies Praha</h4>
                     </div>
                 </a>
                 <a href="mailto:pyladies-praha@googlegroups.com">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
-                        <img height="110" src="img/couch.png" />
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/coach.png', 1) }}" />
                         <h4 class="about-title">Napiš koučovi</h4>
                     </div>
