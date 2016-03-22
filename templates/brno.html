@@ -41,7 +41,10 @@
                         {% if 'date' in lesson %}
                             Lekce {{ loop.index }} - {{ lesson['name'] }}
                             <span class="pull-right section-date">
-                                {{ '{0.day}. {0.month}. {0.year}'.format(lesson['date']) }}
+                                {% set day = lesson['date'][:2] %}
+                                {% set month = lesson['date'][3:5] %}
+                                {% set year = lesson['date'][6:] %}
+                                {{ '{}. {}. {}'.format(day, month, year) }}
                             </span>
                         {% else %}
                             {{ lesson['name'] }}
@@ -49,7 +52,7 @@
                     </h4>
                     {% if 'description' in lesson %}
                         <p class="section-info course-city-p">
-                            {{ markdown(lesson['description'], inline=True) }}
+                            {{ lesson['description'] }}
                         </p>
                     {% endif %}
                     {% for mat in lesson['materials'] %}
@@ -73,9 +76,9 @@
                             {% endif %}
                             <span class="glyphicon {{ icon_class }} section-icon"></span>
                             {% if 'link' in mat %}
-                                <a href="{{ mat['link'] }}">{{ markdown(mat['name'], inline=True) }}</a>
+                                <a href="{{ mat['link'] }}">{{ mat['name'] }}</a>
                             {% else %}
-                                {{ markdown(mat['name'], inline=True) }}
+                                {{ mat['name'] }}
                             {% endif %}
                         </div>
                     {% endfor %}

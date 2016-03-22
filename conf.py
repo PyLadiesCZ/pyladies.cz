@@ -22,9 +22,29 @@ import markdown
 if sys.version_info < (3, 0):
     raise RuntimeError('You need Python 3 to build pyladies.cz')
 
+md = markdown.Markdown(extensions=['meta'])
+def convert_markdown(text, inline=False):
+    result = jinja2.Markup(md.convert(text))
+    if inline and result[:3] == '<p>' and result[-4:] == '</p>':
+        result = result[3:-4]
+    return result
+
 def read_yaml(filename):
     with open(filename, encoding='utf-8') as file:
-        return yaml.safe_load(file)
+        data = yaml.safe_load(file)
+
+    # workaround for http://stackoverflow.com/q/36157569/99057
+    # Convert datetime objects to strings
+    for lesson in data:
+        if 'date' in lesson:
+            lesson['date'] = str(lesson['date'])
+        if 'description' in lesson:
+            lesson['description'] = convert_markdown(lesson['description'],
+                                                     inline=True)
+        for mat in lesson['materials']:
+            mat['name'] = convert_markdown(mat['name'], inline=True)
+
+    return data
 
 def collect(app):
     yield 'index', {}, 'index.html'
@@ -33,18 +53,8 @@ def collect(app):
     yield 'praha', {}, 'praha.html'
     yield 'praha_info', {}, 'praha_info.html'
 
-def add_markdown_function(app, pagename, templatename, context, doctree):
-    md = markdown.Markdown(extensions=['meta'])
-    def md_filter(text, inline=False):
-        result = jinja2.Markup(md.convert(text))
-        if inline and result[:3] == '<p>' and result[-4:] == '</p>':
-            result = result[3:-4]
-        return result
-    context['markdown'] = md_filter
-
 def setup(app):
     app.connect('html-collect-pages', collect)
-    app.connect('html-page-context', add_markdown_function)
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
