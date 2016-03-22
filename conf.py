@@ -33,18 +33,18 @@ def collect(app):
     yield 'praha', {}, 'praha.html'
     yield 'praha_info', {}, 'praha_info.html'
 
-def add_jinja_filters(app):
+def add_markdown_function(app, pagename, templatename, context, doctree):
     md = markdown.Markdown(extensions=['meta'])
     def md_filter(text, inline=False):
         result = jinja2.Markup(md.convert(text))
         if inline and result[:3] == '<p>' and result[-4:] == '</p>':
             result = result[3:-4]
         return result
-    app.builder.templates.environment.filters['md'] = md_filter
+    context['markdown'] = md_filter
 
 def setup(app):
     app.connect('html-collect-pages', collect)
-    app.connect('builder-inited', add_jinja_filters)
+    app.connect('html-page-context', add_markdown_function)
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the

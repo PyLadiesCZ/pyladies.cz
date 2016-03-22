@@ -49,7 +49,7 @@
                     </h4>
                     {% if 'description' in lesson %}
                         <p class="section-info course-city-p">
-                            {{ lesson['description'] | md(inline=True) }}
+                            {{ markdown(lesson['description'], inline=True) }}
                         </p>
                     {% endif %}
                     {% for mat in lesson['materials'] %}
@@ -73,9 +73,9 @@
                             {% endif %}
                             <span class="glyphicon {{ icon_class }} section-icon"></span>
                             {% if 'link' in mat %}
-                                <a href="{{ mat['link'] }}">{{ mat['name'] | md(inline=True) }}</a>
+                                <a href="{{ mat['link'] }}">{{ markdown(mat['name'], inline=True) }}</a>
                             {% else %}
-                                {{ mat['name'] | md(inline=True) }}
+                                {{ markdown(mat['name'], inline=True) }}
                             {% endif %}
                         </div>
                     {% endfor %}
