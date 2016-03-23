@@ -123,6 +123,11 @@
     width: auto  !important;
   }
 
+a .about img {
+  width: 110px;
+  height: 110px;
+}
+
 img.partner-logo {
   width: auto !important;
 }
