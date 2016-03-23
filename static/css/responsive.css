@@ -120,7 +120,7 @@
 
 @media all and (max-width: 768px) {
   img {
-    width: 15% !important;
+    width: auto  !important;
   }
 
 img.partner-logo {
