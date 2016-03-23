@@ -29,29 +29,28 @@ Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstrá
 
 Stránky se vytvoří v adresáři `_build/html`.
 
+### Úprava súborov
+
+* Súbory html sa nachádzajú v priečinku ``templates``
+* Úprava hlavičky webu, hlavného menu a päty stránky v súbore `templates/layout.html`
+* CSS súbory sa nachádzajú v `static/css`
+* Obrázky sa nachádzajú v `static/img`
+* Priradenie obrázku `src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"`
+
+### Spustenie webu lokálne v PC
+
+* Spustanie cez konzolu navigovana v hlavnom priecinku webu
+* Instalacia requirements - `python -m pip install -r requirements.txt`
+* Spustiť príkaz `sphinx-build -b html . _build/html`
+* Vygenerované stránky sa nachádzajú v priečinku `_build/html`
+* Po vykonaní zmien v HTML, CSS je potrebné opakovať příkaz sphinx-build
+
 ### Nasazení
+
+(Tohle je pro spuštění „ostré” verze webu; většinou to nebudeš potřebovat)
 
 Spuštěním `make dirhtml` vzniknou v adresáři `_build/dirhtml`
 statické stránky k nasazení na webový server.
-
-### Úprava súborov<br />
-<ol>
-    <li>Súbory html sa nachádzajú v priečinku templates</li>
-    <li>Úprava hlavičky webu, hlavného menu a päty stránky v súbore layout.html</li>
-    <li>CSS súbory sa nachádzajú v static/css</li>
-    <li>Obrázky sa nachádzajú v static/img</li>
-    <li>Priradenie obrázku src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"</li>
-</ol>
-
-### Spustenie webu lokálne v PC<br />
-<ol>
-    <li>Spustanie cez konzolu navigovana v hlavnom priecinku webu</li>
-    <li>Instalacia requirements - python -m pip install -r requirements.txt </li>
-    <li>Spustiť príkaz sphinx-build -b html . _build/html</li>
-    <li>Príkaz make dirhtml</li>
-    <li>Vygenerované stránky sa nachádzajú v priečinku _build/dirhtml</li>
-    <li>Po vykonaní zmien v HTML, CSS je potrebné opakovať krok 3, 4 (asi)</li>
-</ol>
 
 ## Základné informácie - editace HTML
 
@@ -103,25 +102,22 @@ statické stránky k nasazení na webový server.
   </div>
 </div>
 ```
-**Správa obrázkov**<br />
-<ul>
-  <li>Banner na úvodnej stránke - 1500px x 655px</li>
-  <li>Banner v detailoch miest - 1850px x 400px</li>
-  <li>Fotky - detail mesta - 1920px x 1278px</li>
-</ul>
+**Správa obrázkov**
+
+* Banner na úvodnej stránke - 1500px × 655px
+* Banner v detailoch miest - 1850px × 400px
+* Fotky - detail mesta - 1920px × 1278px
 
 **Zmena obrázkov podľa miest v banneroch**
 Obrázky sú definované v CSSku. Pre každé mesto je spoločná trieda intro-city, s tým, že obrázok pre každé mesto sa zmení v triede **intro-city-{city-name}**. (Príklad triedy: intro-city-praha).
 
 **Správa kurzov na stránke materiálov**
-<ul>
-  <li>Aktívny kurz (sekcia Intro header v súbore praha.html)</li>
-  <li>Neaktívny kurz (sekcia Intro header v súbore brno.html)</li>
-</ul>
+
+* Aktívny kurz (sekcia Intro header v súbore `templates/praha.html`)
+* Neaktívny kurz (sekcia Intro header v súbore `templates/brno.html`)
 
 **Stavu kurzu - stránka kurzu (Praha)**
-<ul>
-  <li>Prejdená hodina - zmena ikonky na <strong>glyphicon-ok</strong></li>
-  <li>Ešte neprejdená hodina - ikonka <strong>glyphicon-remove</strong></li>
-  <li>Vyznačenie aktívnej aktuálnej hodiny - trieda <strong>section-active</strong></li>
-</ul>
+
+* Prejdená hodina - zmena ikonky na `glyphicon-ok`
+* Ešte neprejdená hodina - ikonka `glyphicon-remove`
+* Vyznačenie aktívnej aktuálnej hodiny - trieda `section-active`
