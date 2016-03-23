@@ -38,7 +38,7 @@ statické stránky k nasazení na webový server.
 <ol>
     <li>Súbory html sa nachádzajú v priečinku templates</li>
     <li>Úprava hlavičky webu, hlavného menu a päty stránky v súbore layout.html</li>
-    <li>CSS súbory sa nachádzajú v static/css<li>
+    <li>CSS súbory sa nachádzajú v static/css</li>
     <li>Obrázky sa nachádzajú v static/img</li>
     <li>Priradenie obrázku src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"</li>
 </ol>
@@ -47,7 +47,7 @@ statické stránky k nasazení na webový server.
 <ol>
     <li>Spustanie cez konzolu navigovana v hlavnom priecinku webu</li>
     <li>Instalacia requirements - python -m pip install -r requirements.txt </li>
-    <li>Spustiť príkaz sphinx-build -b html . _build/html<li>
+    <li>Spustiť príkaz sphinx-build -b html . _build/html</li>
     <li>Príkaz make dirhtml</li>
     <li>Vygenerované stránky sa nachádzajú v priečinku _build/dirhtml</li>
     <li>Po vykonaní zmien v HTML, CSS je potrebné opakovať krok 3, 4 (asi)</li>
