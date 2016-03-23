@@ -114,9 +114,18 @@
           left: -6px;
        }
 
+       img {
+    width: auto !important;
+    height: auto;
+}
+
 }
 
 @media all and (max-width: 767px) {
+  img {
+width: auto !important;
+height: auto;
+}
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
   .nav .open>a, .nav .open>a:focus, .nav .open>a:focus {
     color: #fa023c;
