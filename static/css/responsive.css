@@ -114,11 +114,6 @@
           left: -6px;
        }
 
-       img {
-    width: auto !important;
-    height: auto;
-}
-
 }
 
 @media all and (max-width: 767px) {
