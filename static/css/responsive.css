@@ -114,6 +114,18 @@
           left: -6px;
        }
 
+
+
+}
+
+@media all and (max-width: 768px) {
+  img {
+    width: 15% !important;
+  }
+
+img.partner-logo {
+  width: auto !important;
+}
 }
 
 @media all and (max-width: 767px) {
