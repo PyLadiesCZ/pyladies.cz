@@ -38,7 +38,7 @@ footer {
     height: 70px;
 }
 .copy {
-    margin-top: 10px;
+    margin-top: 15px;
     color: #8e8c8d;
 }
 a:hover,
@@ -325,7 +325,7 @@ HOMEPAGE
 .new-city {
     color: rgb(229, 31, 64);
     font-weight: 700;
-    padding: 25px 0px;
+    padding: 30px 0px;
 }
 .img-user {
   width: 30px;
@@ -457,6 +457,11 @@ h2.course-city-heading {
         color: #8e8c8d;
         padding: 15px 15px;
 }
+
+.section-info a {
+  color: #8e8c8d;
+}
+
 .section-active {
     background: #e51e41;
     color: #fff;
