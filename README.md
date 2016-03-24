@@ -1,4 +1,12 @@
-# PyLadies.cz
+# pyladies.cz
+
+Website of the Czech PyLadies chapter / Web českých PyLadies.
+
+[![Travis CI kontrolka](https://travis-ci.org/PyLadiesCZ/pyladies.cz.svg?branch=master)](https://travis-ci.org/PyLadiesCZ/pyladies.cz)
+
+*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` na do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
+
+## Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
 Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
