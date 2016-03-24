@@ -1,0 +1,16 @@
+language: "python"
+python:
+    - "3.5"
+cache: "pip"
+script:
+    - "echo 'No linters, no tests...'"
+env:
+  global:
+    - secure: "SNsAKRch621pN1xgCkJ//IEmhw80Ucd+ZtbIgPGw4ZUXSAZWe3+hCdQSjELNN1RyiBDHYWrFjAi8wcpmym1L7+KXx+PVa+vGMt8uPQDoBg9kIl/pMDYiDDZo6rYpKnqLvVMtZt85DY0s2Yolzno61zR6OCPOmUaqxJKvnCJoUJu7qO2a3XW+1j0HJX5pwI13nIM5Rfjui52B+lm3SgtbKIwRgVNXv/3X3uhizFXnkirm9hrnRSRqwYtFFWN/roBxm77czow96IYdg0rqiY3LC3d/bKv00Nb+4CZECt60YohpDeAxnUrkXz+aDNWEMrACnsQAkZ8StKgXHIMO0S1UBwASFxEgB1k4S8AK6zAnIuSHJwmL6aDan/jTk72C3E364yaUebGivBxBpfUEMj4x38pJpgt8D5gAIhiULAAvKOS8mFhFRbyo7o+TkFPWE+66Jjxd8C4tpv6Un4WpU1o5BZ6vOHxv0FIwWLConX9J/yWYon/Yf2CvJB7UirdESVY158ChCOG8fp+r66tC7m7DZtTKH1N+cLpFili3d4WQNlnPdVpUortVPiWg+qPy8erTKt+XMxUXSxfMCj4wgpCuhbTq937zPRUZXbUDti7+eb9/E/ybrU5GJIcT79NTuGL9XvzyIA2wzYnieyy+SOUmHosVGFz1566wkmZbkW9oqtI="
+deploy:
+    provider: "script"
+    script: "python deploy.py"
+    on:
+        branch: "master"
+        repo: "PyLadiesCZ/pyladies.cz"
+sudo: false
