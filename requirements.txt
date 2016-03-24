@@ -2,3 +2,5 @@ sphinx
 PyYAML
 jinja2
 markdown
+sh
+ghp-import

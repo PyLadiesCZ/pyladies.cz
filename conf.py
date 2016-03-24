@@ -111,7 +111,7 @@ today_fmt = '%d. %m. %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build', 'env']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -176,7 +176,7 @@ html_static_path = ['static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-html_extra_path = ['original']
+html_extra_path = ['original', 'CNAME']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
