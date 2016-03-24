@@ -13,14 +13,15 @@
 # serve to show the default.
 
 import sys
-import os
 
 import yaml
 import jinja2
 import markdown
 
+
 if sys.version_info < (3, 0):
     raise RuntimeError('You need Python 3 to build pyladies.cz')
+
 
 md = markdown.Markdown(extensions=['meta'])
 def convert_markdown(text, inline=False):
@@ -28,6 +29,7 @@ def convert_markdown(text, inline=False):
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':
         result = result[3:-4]
     return result
+
 
 def read_yaml(filename):
     with open(filename, encoding='utf-8') as file:
@@ -46,15 +48,18 @@ def read_yaml(filename):
 
     return data
 
+
 def collect(app):
     yield 'index', {}, 'index.html'
-    yield 'brno', {'plan': read_yaml('plans/brno.yaml')}, 'brno.html'
+    yield 'brno', {'plan': read_yaml('plans/brno.yml')}, 'brno.html'
     yield 'brno_info', {}, 'brno_info.html'
     yield 'praha', {}, 'praha.html'
     yield 'praha_info', {}, 'praha_info.html'
 
+
 def setup(app):
     app.connect('html-collect-pages', collect)
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
