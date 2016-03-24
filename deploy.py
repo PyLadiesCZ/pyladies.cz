@@ -1,7 +1,7 @@
 
 import os
 import random
-from sh import git, make, ghp_import
+from sh import git, make, ghp_import, touch
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -19,6 +19,7 @@ COMMIT_EMOJIS = [
 def deploy():
     print('Generating HTML...')
     make('dirhtml')
+    touch(os.path.join(OUTPUT_DIR, '.nojekyll'))
 
     if os.environ.get('TRAVIS'):  # Travis CI
         print('Setting up Git...')
