@@ -4,7 +4,7 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 
 [![Travis CI kontrolka](https://travis-ci.org/PyLadiesCZ/pyladies.cz.svg?branch=master)](https://travis-ci.org/PyLadiesCZ/pyladies.cz)
 
-*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` na do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
+*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
 
 ## Jak to funguje
 
