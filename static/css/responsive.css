@@ -2,6 +2,9 @@
   .course-wrapper {
     max-height: 119px;
   }
+  .py-block {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1024px) {
     .py-block {
