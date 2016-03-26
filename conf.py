@@ -53,7 +53,7 @@ def collect(app):
     yield 'index', {}, 'index.html'
     yield 'brno', {'plan': read_yaml('plans/brno.yml')}, 'brno.html'
     yield 'brno_info', {}, 'brno_info.html'
-    yield 'praha', {}, 'praha.html'
+    yield 'praha', {'plan': read_yaml('plans/praha.yml')}, 'praha.html'
     yield 'praha_info', {}, 'praha_info.html'
 
 
