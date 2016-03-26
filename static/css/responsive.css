@@ -1,3 +1,8 @@
+@media all and (max-width: 1365px) {
+  .course-wrapper {
+    max-height: 119px;
+  }
+}
 @media screen and (max-width: 1024px) {
     .py-block {
       font-size: 14px;
