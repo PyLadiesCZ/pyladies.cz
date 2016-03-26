@@ -1,7 +1,7 @@
 
 import os
 import random
-from sh import git, make, ghp_import, touch
+from sh import git, make, ghp_import
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -19,7 +19,6 @@ COMMIT_EMOJIS = [
 def deploy():
     print('Generating HTML...')
     make('dirhtml')
-    touch(os.path.join(OUTPUT_DIR, '.nojekyll'))
 
     if os.environ.get('TRAVIS'):  # Travis CI
         print('Setting up Git...')
@@ -33,7 +32,7 @@ def deploy():
 
     print('Rewriting gh-pages branch...')
     commit_message = 'Deploying {}'.format(random.choice(COMMIT_EMOJIS))
-    ghp_import('-m', commit_message, OUTPUT_DIR)
+    ghp_import('-n', '-m', commit_message, OUTPUT_DIR)  # -n includes .nojekyll file
 
     print('Pushing to GitHub...')
     git.push('origin', 'gh-pages:gh-pages', force=True)
