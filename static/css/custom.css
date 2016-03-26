@@ -416,11 +416,15 @@ h2.course-city-heading {
     margin-top: 20px;
 }
 .course-wrapper {
-    max-height: 105px;
     display: block;
     text-align: left;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+}
+.py-block.pull-left {
+    height: 129px;
+    min-height: 129px;
+    max-height: 129px;
 }
 .course-wrapper .course-i:nth-child(4) {
     border-right: none;

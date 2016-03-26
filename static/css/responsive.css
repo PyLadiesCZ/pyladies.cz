@@ -1,7 +1,4 @@
 @media all and (max-width: 1365px) {
-  .course-wrapper {
-    max-height: 119px;
-  }
   .py-block {
     font-size: 14px;
   }
@@ -12,9 +9,6 @@
     }
     .city-heading {
       font-size: 14px;
-    }
-    .course-wrapper {
-      max-height: 119px;
     }
     .new-city {
       padding: 33px 0px;
