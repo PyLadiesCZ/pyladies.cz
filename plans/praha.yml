@@ -1,0 +1,220 @@
+- name: Instalace
+  date: 2016-03-07
+  done: true
+  materials:
+  - name: Úvodní prezentace (která se s každým kurzem trochu mění)
+    type: lesson
+    link: v1/s001-install/uvod.html
+  - name: Úvod do příkazové řádky
+    type: lesson
+    link: v1/s001-install/cmdline.html
+  - name: Instalace Pythonu a první krůčky s ním
+    type: lesson
+    link: v1/s001-install/instalace.html
+  - name: Instalace editoru
+    type: lesson
+    link: v1/s002-hello-world/editor.html
+  - name: Instalace Gitu
+    type: lesson
+    link: v1/s001-install/git.html
+  - name: Tahák na klávesnici
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/keyboard/keyboard-cs.pdf
+  - name: Instrukce a úkoly (PDF)
+    type: homework
+    link: v1/s001-install/handout/handout.pdf
+- name: První program
+  date: 2016-03-14
+  done: true
+  materials:
+  - name: První program
+    type: lesson
+    link: v1/s002-hello-world/hello-world.html
+  - name: Chybové hlášky a `print`
+    type: lesson
+    link: v1/s002-hello-world/printing.html
+  - name: Proměnné
+    type: lesson
+    link: v1/s002-hello-world/variables.html
+  - name: Porovnávání
+    type: lesson
+    link: v1/s002-hello-world/comparisons.html
+  - name: "*Nebo* anebo *a* (bonus)"
+    type: lesson
+    link: v1/s002-hello-world/and-or.html
+  - name: Instrukce a úkoly (PDF)
+    type: homework
+    link: v1/s002-hello-world/handout/handout2.pdf
+- name: Cykly
+  date: 2016-03-21
+  done: true
+  materials:
+  - name: Funkce
+    type: lesson
+    link: v1/s003-looping/functions.html
+  - name: Želva a cykly
+    type: lesson
+    link: v1/s003-looping/turtle.html
+  - name: Cyklus `While`
+    type: lesson
+    link: v1/s003-looping/while.html
+  - name: Tahák s užitečnými funkcemi
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s003-looping/handout/handout3a.pdf
+- name: Správa zdrojového kódu
+  date: 2016-04-04
+  materials:
+  - name: Git
+    type: lesson
+    link: v1/s009-git/git.html
+  - name: Větvení v Gitu
+    type: lesson
+    link: v1/s009-git/branching.html
+  - name: Gitový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s003-looping/handout/handout3b.pdf
+- name: Funkce & Řetězce
+  date: 2016-04-11
+  materials:
+  - name: Vlastní funkce
+    type: lesson
+    link: v1/s004-strings/functions.html
+  - name: Řetězce
+    type: lesson
+    link: v1/s004-strings/strings.html
+  - name: Řetězcový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/strings/strings-cs.pdf
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s004-strings/handout/handout4.pdf
+- name: Testování
+  date: 2016-04-18
+  materials:
+  - name: Výjimky
+    type: lesson
+    link: v1/s005-modules/exceptions.html
+  - name: Moduly
+    type: lesson
+    link: v1/s005-modules/modules.html
+  - name: Testování
+    type: lesson
+    link: v1/s005-modules/testing.html
+  - name: Poznámka o importování
+    type: lesson
+    link: v1/s005-modules/circular_imports.html
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s005-modules/handout/handout5.pdf
+- name: Spolupráce a Open-Source
+  date: 2016-04-25
+  materials:
+  - name: Spolupráce & Open Source
+    type: lesson
+    link: v1/s005-modules/opensource.html
+  - name: Soubory
+    type: lesson
+    link: v1/s006-lists/files.html
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s005-modules/handout/handout7.pdf
+  - name: |
+        odkazy k úkolům – [hiragana](v1/s006-lists/resources/hiragana.txt),
+        [katakana](v1/s006-lists/resources/katakana.txt),
+        [„日本語の表記体系” na japonské Wikipedii](http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB)
+    type: link
+- name: Grafika
+  date: 2016-05-02
+  materials:
+  - name: Grafika
+    type: lesson
+    link: v1/s012-pyglet/pyglet.html
+  - name: "Praktické cvičení: Pong"
+    type: lesson
+    link: v1/s012-pyglet/pong.html
+  - name: Kód celé hry Pong
+    type: link
+    link: v1/s012-pyglet/pong.py
+- name: Seznamy
+  date: 2016-05-09
+  materials:
+  - name: Turnaj v piškvorkách
+    type: special
+  - name: Seznamy
+    type: lesson
+    link: v1/s006-lists/lists.html
+  - name: N-tice
+    type: lesson
+    link: v1/s006-lists/tuples.html
+  - name: Tahák na seznamy
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
+  - name: Domácí úkoly (PDF)
+    type: homework
+    link: v1/s006-lists/handout/handout6.pdf
+- name: Slovníky
+  date: 2016-05-16
+  materials:
+  - name: Slovníky
+    type: lesson
+    link: v1/s011-dicts/dicts.html
+  - name: JSON
+    type: lesson
+    link: v1/s011-dicts/json.html
+  - name: Github API
+    type: lesson
+    link: v1/s011-dicts/github-api.html
+- name: Třídy
+  date: 2016-05-23
+  materials:
+  - name: Třídy
+    type: lesson
+    link: v1/s014-class/classes.html
+  - name: Dědičnost [XXX:dopsat]
+    type: lesson
+- name: Závěrečný projekt
+  date: 2016-05-30
+  materials:
+  - name: Asteroids
+    type: lesson
+    link: v1/s015-asteroids/index.html
+- name: Závěrečný projekt II
+  date: 2016-06-06
+  materials:
+  - name: Pokračování Asteroids
+    type: special
+- name: Odbočky
+  description: |
+    Někdy je na sraze menší účast, tak zařadíme téma na přání,
+    které je zajímavé, ale dá se přeskočit.
+    Ne vždycky je to téma předem připravené, a proto tu bohužel
+    k některým nejsou materiály.
+  materials:
+  - name: Soubory, adresáře, a příkazová řádka do hloubky (cca 30min)
+    type: lesson
+    link: v1/s005-modules/cmdline.html
+  - name: Data (cca 2h)
+    type: lesson
+    link: v1/s010-data/data.ipynb.html
+  - name: Requests & Twitter API
+    type: lesson
+    link: v1/s011-dicts/requests.ipynb.html
+  - name: Mrak slov z vlastní timeline na Twitteru
+    type: lesson
+    link: v1/s011-dicts/twitter_word_cloud.html
+  - name: Relační databáze (SQLite)
+    type: lesson
+  - name: Speciální světelná show
+    type: lesson
+  - name: Klondike Solitaire – hra na procvičení seznamů a n-tic
+    type: lesson
+    link: v1/s007-cards/klondike.html
+  - name:  Slovníky ve funkci ``popis_karty`` ve hře Klondike
+    type: lesson
+    link: v1/s011-dicts/klondike-dictget.html
