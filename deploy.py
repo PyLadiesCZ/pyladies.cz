@@ -22,8 +22,14 @@ def deploy():
 
     if os.environ.get('TRAVIS'):  # Travis CI
         print('Setting up Git...')
-        git.config('user.name', git('show', format='%cN', s=True))
-        git.config('user.email', git('show', format='%cE', s=True))
+        git.config(
+            'user.name',
+            git('show', format='%cN', s=True, _tty_out=False).strip()
+        )
+        git.config(
+            'user.email',
+            git('show', format='%cE', s=True, _tty_out=False).strip()
+        )
 
         github_token = os.environ.get('GITHUB_TOKEN')  # encrypted in .travis.yml
         repo_slug = os.environ.get('TRAVIS_REPO_SLUG')
