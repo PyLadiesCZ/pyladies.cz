@@ -515,4 +515,8 @@ a .about img {
   height: 80px;
 }
 
+.py-block.pull-left {
+    min-height: 180px;
+}
+
 }
