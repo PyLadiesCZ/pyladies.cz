@@ -110,6 +110,8 @@ INTRO IMAGES
     text-align: center;
     color: #fff;
     background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
+    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
+    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
     background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
     background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
     background-color: #000;
@@ -127,6 +129,8 @@ INTRO IMAGES
     color: #fff;
     background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha.jpg) no-repeat bottom center scroll;
     background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha.jpg) no-repeat bottom center scroll;
+    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha.jpg) no-repeat bottom center scroll;
+    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha.jpg) no-repeat bottom center scroll;
     background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -142,6 +146,8 @@ INTRO IMAGES
     color: #fff;
     background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
     background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
+    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
+    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
     background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
