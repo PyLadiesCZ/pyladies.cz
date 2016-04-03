@@ -1,0 +1,57 @@
+#material {
+  padding: 35px 0px;
+  text-align: left;
+}
+#material a {
+  color: #8e8c8d;
+}
+#material a:hover,
+#material a:focus {
+  color: #8e8c8d;
+  text-decoration: underline;
+}
+.material-box {
+    padding-top: 55px;
+}
+.col-md-4.material {
+    color: rgb(229, 31, 64);
+}
+#material a.headerlink {
+    color: transparent;
+    text-decoration: none;
+}
+#material a.headerlink::before {
+    content: "  ";
+}
+#material h1:hover a.headerlink,
+#material h2:hover a.headerlink,
+#material h3:hover a.headerlink,
+#material h4:hover a.headerlink,
+#material h5:hover a.headerlink,
+#material h6:hover a.headerlink {
+    color: #fa023c;
+}
+
+#material table.table {
+    border: none;
+}
+
+#material table.table td, table.table th {
+    border: none;
+}
+
+#material .admonition.note {
+    padding-left: 3em;
+    font-style: italic;
+}
+#material .admonition.note .admonition-title {
+    display: none;
+}
+
+#material .c-footer {
+    padding-top: 2em;
+    margin-top: 2em;
+    margin-right: 1em;
+    border-top: 2px solid #CCCCEE;
+    width: auto;
+}

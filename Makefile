@@ -46,7 +46,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 serve: html
-	sphinx-autobuild-3 -b html -p 8008 $(ALLSPHINXOPTS) $(BUILDDIR)
+	sphinx-autobuild-3 -b html -p 8008 $(ALLSPHINXOPTS) $(BUILDDIR)/html
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
