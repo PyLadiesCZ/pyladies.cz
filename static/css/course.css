@@ -1,0 +1,23 @@
+#material a.headerlink {
+    color: transparent;
+    text-decoration: none;
+}
+#material a.headerlink::before {
+    content: "  ";
+}
+#material h1:hover a.headerlink,
+#material h2:hover a.headerlink,
+#material h3:hover a.headerlink,
+#material h4:hover a.headerlink,
+#material h5:hover a.headerlink,
+#material h6:hover a.headerlink {
+    color: #fa023c;
+}
+
+#material table.table {
+    border: none;
+}
+
+#material table.table td, table.table th {
+    border: none;
+}

@@ -2,6 +2,11 @@
 
 {% block title %}{{ title }} – PyLadies CZ{% endblock %}
 
+{% block css %}
+    {{ super() }}
+    <link href="{{ pathto('_static/css/course.css', 1) }}" rel="stylesheet">
+{% endblock css %}
+
 {% block content %}
       <!-- Intro Header -->
       <header class="intro-info intro-material">

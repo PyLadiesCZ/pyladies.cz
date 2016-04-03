@@ -275,27 +275,32 @@ Malý seznam příkazů
 
 Tady je tabulka základních příkazů.
 
-==============  ==================  ==================================  ==================================================================
-Příkaz (Unix)   Příkaz (Windows)    Popis                               Příklad použití
-==============  ==================  ==================================  ==================================================================
-exit            exit                ukončení                            ``exit``
-cd              cd                  změna adresáře                      ``cd test``
-ls              dir                 výpis adresáře                      ``ls``
-cp              copy                kopírování souboru                  ``cp /home/helena/test/test.txt /home/helena/test/kopie_test.txt``
-mv              move                přesun (nebo přejmenování) souboru  ``mv /home/helena/test/a.txt /home/helena/test/b.txt``
-mkdir           mkdir               vytvoření adresáře                  ``mkdir test``
-rm              del                 smazání souboru                     ``rm test.txt``
-==============  ==================  ==================================  ==================================================================
+.. table::
+    :class: table table-striped
+
+    ==============  ==================  ==================================  ==================================================================
+    Příkaz (Unix)   Příkaz (Windows)    Popis                               Příklad použití
+    ==============  ==================  ==================================  ==================================================================
+    exit            exit                ukončení                            ``exit``
+    cd              cd                  změna adresáře                      ``cd test``
+    ls              dir                 výpis adresáře                      ``ls``
+    cp              copy                kopírování souboru                  ``cp /home/helena/test/test.txt /home/helena/test/kopie_test.txt``
+    mv              move                přesun (nebo přejmenování) souboru  ``mv /home/helena/test/a.txt /home/helena/test/b.txt``
+    mkdir           mkdir               vytvoření adresáře                  ``mkdir test``
+    rm              del                 smazání souboru                     ``rm test.txt``
+    ==============  ==================  ==================================  ==================================================================
 
 Příkazů existuje jich samozřejmě daleko víc,
 pro dnešek nám ale budou stačit tyhle.
-Jen jeden ještě přidáme – příkaz <code>python</code>.
+Jen jeden ještě přidáme – příkaz ``python``.
 
 Nejdřív ho ale musíme :doc:`nainstalovat <install-python>`.
 
 .. todo::
 
     Nastylovat patičku
+
+------
 
 Přeloženo z `tutoriálu Django Girls`_.
 
