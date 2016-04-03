@@ -24,17 +24,18 @@ kterým počítač vybízí k zadání příkazu.
 Podle systému bude končit buď znakem ``$`` nebo ``>``,
 před nímž můžou být ještě další informace:
 
-Unix (Linux, OS X)::
+.. container:: col-md-6 os-unix
+
+    **Unix (Linux, OS X)**::
 
     $
 
-Windows::
+.. container:: col-md-6 os-windows
 
-    $
 
-.. todo::
+    **Windows**::
 
-    Styl pro rozdílné systémy
+    >
 
 První příkaz
 ------------
@@ -44,15 +45,19 @@ Napiš ``whoami`` (z angl. *who am I?* – kdo jsem?)
 a stiskni Enter.
 Objeví se přihlašovací jméno. U mě to vypadá takhle:
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ whoami
-    helena
+    **Unix**::
 
-Windows::
+        $ whoami
+        helena
 
-    > whoami
-    pocitac\helena
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > whoami
+        pocitac\helena
 
 .. todo::
 
@@ -77,15 +82,19 @@ Ve kterém adresáři zrovna je, to nám poví příkaz ``pwd`` nebo ``cd``
 (z angl. *print working directory* – vypiš pracovní adresář,
 resp. *current directory* – aktuální adresář).
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ pwd
-    /home/helena/
+    **Unix**::
 
-Windows::
+        $ pwd
+        /home/helena/
 
-    > cd
-    C:\Users\helena
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > cd
+        C:\Users\helena
 
 .. note::
 
@@ -100,24 +109,28 @@ Příkaz ``ls`` nebo ``dir`` (z angl. *list* – vyjmenovat; *directory* – adr
 nám vypíše, co aktuální adresář obsahuje – všechny soubory,
 včetně podadresářů, které se v aktuálním adresáři nacházejí.
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
+    **Unix**::
 
-Windows::
+        $ ls
+        Applications
+        Desktop
+        Downloads
+        Music
+        ...
 
-    > dir
-    Directory of C:\Users\helena
-    05/08/2014 07:28 PM &lt;DIR&gt;      Applications
-    05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
-    05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
-    05/08/2014 07:28 PM &lt;DIR&gt;      Music
-    ...
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > dir
+        Directory of C:\Users\helena
+        05/08/2014 07:28 PM <DIR>      Applications
+        05/08/2014 07:28 PM <DIR>      Desktop
+        05/08/2014 07:28 PM <DIR>      Downloads
+        05/08/2014 07:28 PM <DIR>      Music
+        ...
 
 
 Změna aktuálního adresáře
@@ -129,42 +142,46 @@ Za ``cd`` se píše jméno adresáře, kam chceme přejít – pokud máš
 adresář *Desktop* nebo *Plocha*, přejdi tam.
 Pak nezapomeň  ověřit, že jsi na správném místě.
 
-Unix::
+.. container:: col-md-6 os-unix
 
-.. note::
+    **Unix**:
 
-    Unix rozeznává u adresářů a souborů velikost písmen:
-    ``Desktop`` a ``desktop`` není to samé.
+    .. note::
 
-::
+        Unix rozeznává u adresářů a souborů velikost písmen:
+        ``Desktop`` a ``desktop`` není to samé.
 
-    $ cd Desktop
-    $ pwd
-    /home/helena/Desktop
+    ::
 
-Windows:
+        $ cd Desktop
+        $ pwd
+        /home/helena/Desktop
 
-.. note::
+.. container:: col-md-6 os-windows
 
-    (``cd`` jsme už viděly; ale předtím jsme nepsaly nic za něj)
+    **Windows**:
 
-::
+    .. note::
 
-    > cd Desktop
+        (``cd`` jsme už viděly; ale předtím jsme nepsaly nic za něj)
 
-    > cd
-    C:\Users\helena\Desktop
+    ::
 
-.. note::
+        > cd Desktop
 
-    Pokud přecházíš do adresáře na jiném disku,
-    například D: místo C:, je potřeba *před* ``cd``
-    zadat jméno disku jako zvláštní příkaz::
-
-        > cd D:\blabla
-        > D:
         > cd
-        D:\blabla
+        C:\Users\helena\Desktop
+
+    .. note::
+
+        Pokud přecházíš do adresáře na jiném disku,
+        například D: místo C:, je potřeba *před* ``cd``
+        zadat jméno disku jako zvláštní příkaz::
+
+            > cd D:\blabla
+            > D:
+            > cd
+            D:\blabla
 
 Vytvoření adresáře
 ------------------
@@ -173,13 +190,17 @@ Co takhle si vytvořit adresář na PyLadies?
 To se dělá příkazem ``mkdir``
 (z angl. *make directory* – vytvořit adresář).
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ mkdir pyladies
+    **Unix**::
 
-Windows::
+        $ mkdir pyladies
 
-    > mkdir pyladies
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > mkdir pyladies
 
 Potom, co adresář vytvoříš, se zkus zkontrolovat, že tam opravdu je.
 Můžeš to udělat buď příkazem ``dir``/``pwd``, nebo i z grafického programu,
@@ -200,19 +221,23 @@ Budou se hodit příkazy `cd`, `mkdir`, `ls` či `dir`.
 
     Nastylovat Řešení
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ cd pyladies
-    $ mkdir test
-    $ ls
-    test
+    **Unix**::
 
-Windows::
+        $ cd pyladies
+        $ mkdir test
+        $ ls
+        test
 
-    > cd pyladies
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > cd pyladies
+        > mkdir test
+        > dir
+        05/08/2014 07:28 PM <DIR>      test
 
 Úklid
 -----
@@ -221,17 +246,21 @@ Teď vytvořené adresáře zase smažeme. Nemůžeme ale smazat adresář, ve k
 jsme, takže se vrátíme na `Desktop`.
 Nadřazený adresář (ten, který obsahuje ten aktuální), se značí dvěma tečkami:
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ cd ..
-    $ pwd
-    /home/helena/Desktop
+    **Unix**::
 
-Windows::
+        $ cd ..
+        $ pwd
+        /home/helena/Desktop
 
-    > cd ..
-    > cd
-    /home/helena/Desktop
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > cd ..
+        > cd
+        /home/helena/Desktop
 
 A nakonec smažeme vytvořený adresář `pyladies`.
 K tomu použijeme příkaz `rm` nebo `rmdir`
@@ -242,19 +271,23 @@ K tomu použijeme příkaz `rm` nebo `rmdir`
     Všechno se nadobro smaže, takže si dobře překontroluj, že mažeš správný
     adresář.
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ pwd
-    /home/helena/Desktop
-    $ rm -rv pyladies
-    removed directory: ‘pyladies’
+    **Unix**::
 
-Windows::
+        $ pwd
+        /home/helena/Desktop
+        $ rm -rv pyladies
+        removed directory: ‘pyladies’
 
-    > cd
-    /home/helena/Desktop
-    > rmdir /S pyladies
-    pyladies, Are you sure <Y/N>? Y
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > cd
+        /home/helena/Desktop
+        > rmdir /S pyladies
+        pyladies, Are you sure <Y/N>? Y
 
 Konec
 -----
@@ -262,13 +295,17 @@ Konec
 A to je vše! Můžeš příkazovou řádku zavřít.
 To se dělá příkazem `exit`.
 
-Unix::
+.. container:: col-md-6 os-unix
 
-    $ exit
+    **Unix**::
 
-Windows::
+        $ exit
 
-    > exit
+.. container:: col-md-6 os-windows
+
+    **Windows**::
+
+        > exit
 
 Malý seznam příkazů
 -------------------
