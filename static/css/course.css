@@ -39,3 +39,11 @@
 #material table.table td, table.table th {
     border: none;
 }
+
+#material .admonition.note {
+    padding-left: 3em;
+    font-style: italic;
+}
+#material .admonition.note .admonition-title {
+    display: none;
+}

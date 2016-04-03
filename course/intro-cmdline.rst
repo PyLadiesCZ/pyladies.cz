@@ -1,3 +1,5 @@
+.. highlight:: none
+
 Úvod do příkazové řádky
 =======================
 
