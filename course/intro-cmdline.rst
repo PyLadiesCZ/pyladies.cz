@@ -335,19 +335,17 @@ Jen jeden ještě přidáme – příkaz ``python``.
 
 Nejdřív ho ale musíme :doc:`nainstalovat <install-python>`.
 
-.. todo::
 
-    Nastylovat patičku
 
-------
+.. container:: c-footer
 
-Přeloženo z `tutoriálu Django Girls`_.
+    Přeloženo z `tutoriálu Django Girls`_.
 
-Licence: `Creative Commons Attribution-ShareAlike 4.0 International`__
+    Licence: `Creative Commons Attribution-ShareAlike 4.0 International`__
 
-Pro PyLadies Brno napsal Petr Viktorin.
+    Pro PyLadies Brno napsal Petr Viktorin.
 
-__ cc-by-sa_
-.. _cc-by-sa: http://creativecommons.org/licenses/by-sa/4.0/
-.. _tutoriálu Django Girls: http://tutorial.djangogirls.org/intro_to_command_line/README.html
+    __ cc-by-sa_
+    .. _cc-by-sa: http://creativecommons.org/licenses/by-sa/4.0/
+    .. _tutoriálu Django Girls: http://tutorial.djangogirls.org/intro_to_command_line/README.html
 

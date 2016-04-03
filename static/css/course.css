@@ -47,3 +47,11 @@
 #material .admonition.note .admonition-title {
     display: none;
 }
+
+#material .c-footer {
+    padding-top: 2em;
+    margin-top: 2em;
+    margin-right: 1em;
+    border-top: 2px solid #CCCCEE;
+    width: auto;
+}
