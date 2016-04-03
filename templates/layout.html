@@ -9,14 +9,14 @@
       <meta name="description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně."></meta>
       <meta property="og:title" content="PyLadies CZ"></meta>
       <meta property="og:type" content="article"></meta>
-      <meta property="og:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
+      <meta property="og:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/bg/intro.jpg"></meta>
       <meta property="og:url" content="www.pyladies.cz"></meta>
       <meta property="og:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
       <meta name="twitter:card" content="summary"></meta>
       <meta name="twitter:title" content="PyLadies CZ"></meta>
       <meta name="twitter:site" content="@PyLadiesCZ"></meta>
       <meta name="twitter:description" content="České PyLadies - týdenní srazy a kurzy pro holky, slečny či ženy co se chtějí učit programovat v Pythonu. Momentálně v Praze a Brně. Pro přehled otevřených kurzů sleduj náš web www.pyladies.cz"></meta>
-      <meta name="twitter:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/intro-bg.jpg"></meta>
+      <meta name="twitter:image" content="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/bg/intro.jpg"></meta>
 
       <title>{% block title %}PyLadies CZ{% endblock title %}</title>
 
@@ -25,6 +25,7 @@
         <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="{{ pathto('_static/css/custom.css', 1) }}" rel="stylesheet">
+        <link href="{{ pathto('_static/css/responsive.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href="{{ pathto('_static/fonts/font-awesome/css/font-awesome.min.css', 1) }}" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
@@ -41,19 +42,19 @@
       <![endif]-->
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body id="page-top" data-spy="scroll" data-target="">
       <!-- Navigation -->
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-custom" role="navigation">
           <div class="container">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                       <i class="fa fa-bars"></i>
                   </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">
+                  <a class="navbar-brand page-scroll" href="{{ pathto('index') }}">
                       <img class="logo-i" src="{{ pathto('_static/img/pyladies.png', 1) }}" />
                   </a>
               </div>
-              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <div class="navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -63,8 +64,8 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ pathto('brno_info') }}">Brno</a></li>
-                            <li><a href="{{ pathto('praha_info') }}">Praha</a></li>
+                              <li><a href="{{ pathto('brno_info') }}">Brno</a></li>
+                              <li><a href="{{ pathto('praha_info') }}">Praha</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -74,20 +75,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="{{ pathto('brno') }}">Brno</a></li>
                             <li><a href="{{ pathto('praha') }}">Praha</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Všechny</a></li>
+                           <!-- <li role="separator" class="divider"></li>
+                            <li><a href="#">Všechny</a></li> -->
                         </ul>
                     </li>
                     <li class="join">
-                    <a href="#">Staň se PyLady!</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontakt
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Jsem PyLady</a></li>
-                            <li><a href="#">Jsem kouč</a></li>
-                        </ul>
+                      <a href="../index.html#main-course">Staň se PyLady!</a>
+                    </li>
+                    <li>
+                      <a href="mailto:valkova.zuza@seznam.cz">Napiš nám</a>
                     </li>
                 </ul>
             </div>
@@ -98,29 +94,29 @@
     <footer>
         <div class="container text-left">
             <p class="pull-left copy">
-              PyLadies CZ jsou součástí <a href="http://pyladies.com" target="new">mezinárodních PyLadies</a>.
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
             </p>
             <ul class="pull-right list-inline">
                 <li>
-                    <a href="https://twitter.com/pyladiescz" target="new">
+                    <a href="https://twitter.com/pyladiescz">
                         <img class="social" src="{{ pathto('_static/img/icon/twitter.png', 1) }}" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/pyladiescz" target="new">
+                    <a href="https://github.com/pyladiescz">
                         <img class="social" src="{{ pathto('_static/img/icon/github.png', 1) }}" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/groups/pyonieri/" target="new">
+                    <a href="https://www.facebook.com/groups/pyonieri/">
                         <img class="social" src="{{ pathto('_static/img/icon/facebook.png', 1) }}" />
                     </a>
                 </li>
             </ul>
         </div>
     </footer>
-    {% endblock footer %} 
-    {% block javascript %} 
+    {% endblock footer %}
+    {% block javascript %}
         <!-- jQuery -->
         <script src="{{ pathto('_static/js/jquery.js', 1) }}"></script>
         <!-- Bootstrap Core JavaScript -->
@@ -129,6 +125,6 @@
         <script src="{{ pathto('_static/js/jquery.easing.min.js', 1) }}"></script>
         <!-- Custom JavaScript -->
         <script src="{{ pathto('_static/js/custom.js', 1) }}"></script>
-    {% endblock javascript %} 
+    {% endblock javascript %}
 </body>
 </html>

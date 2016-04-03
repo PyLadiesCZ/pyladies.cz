@@ -1,4 +1,12 @@
-# PyLadies.cz
+# pyladies.cz
+
+Website of the Czech PyLadies chapter / Web českých PyLadies.
+
+[![Travis CI kontrolka](https://travis-ci.org/PyLadiesCZ/pyladies.cz.svg?branch=master)](https://travis-ci.org/PyLadiesCZ/pyladies.cz)
+
+*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
+
+## Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
 Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
@@ -29,16 +37,33 @@ Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstrá
 
 Stránky se vytvoří v adresáři `_build/html`.
 
+### Úprava súborov
+
+* Súbory html sa nachádzajú v priečinku ``templates``
+* Úprava hlavičky webu, hlavného menu a päty stránky v súbore `templates/layout.html`
+* CSS súbory sa nachádzajú v `static/css`
+* Obrázky sa nachádzajú v `static/img`
+* Priradenie obrázku `src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"`
+
+### Spustenie webu lokálne v PC
+
+* Spustanie cez konzolu navigovana v hlavnom priecinku webu
+* Instalacia requirements - `python -m pip install -r requirements.txt`
+* Spustiť príkaz `sphinx-build -b html . _build/html`
+* Vygenerované stránky sa nachádzajú v priečinku `_build/html`
+* Po vykonaní zmien v HTML, CSS je potrebné opakovať příkaz sphinx-build
+
 ### Nasazení
+
+(Tohle je pro spuštění „ostré” verze webu; většinou to nebudeš potřebovat)
 
 Spuštěním `make dirhtml` vzniknou v adresáři `_build/dirhtml`
 statické stránky k nasazení na webový server.
 
-
 ## Základné informácie - editace HTML
 
 **Správa kurzov na úvodnej stránke** <br /><br />
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
@@ -54,7 +79,7 @@ statické stránky k nasazení na webový server.
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
     <div class="py-icon">
@@ -70,7 +95,7 @@ statické stránky k nasazení na webový server.
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
@@ -85,30 +110,22 @@ statické stránky k nasazení na webový server.
   </div>
 </div>
 ```
-**Správa obrázkov**<br />
-<ul>
-  <li>Banner na úvodnej stránke - 1500px x 655px</li>
-  <li>Banner v detailoch miest - 1850px x 400px</li>
-  <li>Fotky - detail mesta - 1920px x 1278px</li>
-</ul>
+**Správa obrázkov**
+
+* Banner na úvodnej stránke - 1500px × 655px
+* Banner v detailoch miest - 1850px × 400px
+* Fotky - detail mesta - 1920px × 1278px
 
 **Zmena obrázkov podľa miest v banneroch**
 Obrázky sú definované v CSSku. Pre každé mesto je spoločná trieda intro-city, s tým, že obrázok pre každé mesto sa zmení v triede **intro-city-{city-name}**. (Príklad triedy: intro-city-praha).
 
 **Správa kurzov na stránke materiálov**
-<ul>
-  <li>Aktívny kurz (sekcia Intro header v súbore praha.html)</li>
-  <li>Neaktívny kurz (sekcia Intro header v súbore brno.html)</li>
-</ul>
+
+* Aktívny kurz (sekcia Intro header v súbore `templates/praha.html`)
+* Neaktívny kurz (sekcia Intro header v súbore `templates/brno.html`)
 
 **Stavu kurzu - stránka kurzu (Praha)**
-<ul>
-  <li>Prejdená hodina - zmena ikonky na <strong>glyphicon-ok</strong></li>
-  <li>Ešte neprejdená hodina - ikonka <strong>glyphicon-remove</strong></li>
-  <li>Vyznačenie aktívnej aktuálnej hodiny - trieda <strong>section-active</strong></li>
-</ul>
 
-
-
-
-
+* Prejdená hodina - zmena ikonky na `glyphicon-ok`
+* Ešte neprejdená hodina - ikonka `glyphicon-remove`
+* Vyznačenie aktívnej aktuálnej hodiny - trieda `section-active`

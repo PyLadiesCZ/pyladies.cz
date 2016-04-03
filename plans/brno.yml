@@ -47,6 +47,7 @@
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
   date: 2016-03-21
+  done: true
   materials:
   - name: Funkce
     type: lesson

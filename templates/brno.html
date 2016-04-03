@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                        <p class="intro-text-city">BRNO <br /><span class="smaller">PyLadies Brno - začátečnický kurz</span></p>
+                        <p class="intro-text-city">BRNO <br /><span class="smaller">Začátečnický kurz od 07.03. do 06.06. 2016</span></p>
                     </div>
                 </div>
             </div>
@@ -15,12 +15,12 @@
     </header>
     <div class="actual container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h4 class="actual-heading">Kurz momentálně běží každé pondělí od 18:00 do 20:00
+            <h4 class="actual-heading">Právě probíhá každé pondělí od 18:00 do 20:00
                 <span class="pull-right actual-address">
-                    <a href="https://www.google.cz/maps/place/BC+TITANIUM/@49.1879995,16.604512,17z/data=!3m1!4b1!4m2!3m1!1s0x471294548d5a37a9:0x3cff77f7c3e63814?hl=cs" target="new">
-                    <span class="glyphicon glyphicon-map-marker"></span>BC Titanium, Nové Sady 25, Brno
+                    <a href="https://www.google.cz/maps/place/BC+TITANIUM/@49.1879995,16.604512,17z/data=!3m1!4b1!4m2!3m1!1s0x471294548d5a37a9:0x3cff77f7c3e63814?hl=cs" target="_blank">
+                    <span class="glyphicon glyphicon-map-marker hidden-xs"></span>BC Titanium, Nové Sady 25, Brno
                     </a>
-                  <!-- <a href="" target="new">Registračný formulár pre nový beh</a> -->
+                  <!-- <a href="" target="_blank">Registračný formulár pre nový beh</a> -->
                 </span>
             </h4>
         </div>
@@ -28,20 +28,23 @@
     <!-- Course description -->
     <section class="course-city container">
         <div class="row">
-            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 <h2 class="course-city-heading">Začátečnický kurz</h2>
                 <p class="course-city-p">Tento kurz tě naučí základy programování, konkrétně programování v Pythonu. Je rozdělen na zhruba dvouhodinové lekce, které na sebe navazují; domácí úkoly, které lekce doplňují; a nepovinné odbočky, které ukazují zajímavosti a praktické použití probraných konceptů.</p>
             </div>
         </div>
         <div class="row">
-            <div class="sections col-xs-12 col-sm-10 col-md-8 col-lg-8">
+            <div class="sections col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 {% for lesson in plan %}
                 <div class="section-box" id="section{{ loop.index }}">
                     <h4 class="section-heading">
                         {% if 'date' in lesson %}
                             Lekce {{ loop.index }} - {{ lesson['name'] }}
                             <span class="pull-right section-date">
-                                {{ '{0.day}. {0.month}. {0.year}'.format(lesson['date']) }}
+                                {% set day = lesson['date'][8:] %}
+                                {% set month = lesson['date'][5:7] %}
+                                {% set year = lesson['date'][:4] %}
+                                {{ '{}. {}. {}'.format(day, month, year) }}
                             </span>
                         {% else %}
                             {{ lesson['name'] }}
@@ -49,7 +52,7 @@
                     </h4>
                     {% if 'description' in lesson %}
                         <p class="section-info course-city-p">
-                            {{ lesson['description'] | md(inline=True) }}
+                            {{ lesson['description'] }}
                         </p>
                     {% endif %}
                     {% for mat in lesson['materials'] %}
@@ -73,9 +76,9 @@
                             {% endif %}
                             <span class="glyphicon {{ icon_class }} section-icon"></span>
                             {% if 'link' in mat %}
-                                <a href="{{ mat['link'] }}">{{ mat['name'] | md(inline=True) }}</a>
+                                <a href="{{ pathto(mat['link'], 1) }}">{{ mat['name'] }}</a>
                             {% else %}
-                                {{ mat['name'] | md(inline=True) }}
+                                {{ mat['name'] }}
                             {% endif %}
                         </div>
                     {% endfor %}
@@ -83,26 +86,25 @@
                 {% endfor %}
             </div>
         </div>
-        </div>
     </section>
     <!-- Advice section -->
     <section id="about3" class="container-fluid content-section text-center">
         <div class="row">
               <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
-                <a href="https://www.facebook.com/groups/pyladiesBrno/" target="new">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 about">
+                <a href="https://www.facebook.com/groups/pyladiesBrno/">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/facebook.png', 1) }}" />
                         <h4 class="about-title">Facebook PyLadies Brno</h4>
                     </div>
                 </a>
-                <a href="https://groups.google.com/forum/#!forum/pyladies-brno" target="new">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 about">
+                <a href="https://groups.google.com/forum/#!forum/pyladies-brno">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/google-group.png', 1) }}" />
                         <h4 class="about-title">Google Group PyLadies Brno</h4>
                     </div>
                 </a>
-                <a href="mailto:encukou@gmail.com" target="new">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 about">
+                <a href="mailto:encukou@gmail.com">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
                         <img height="110" src="{{ pathto('_static/img/link/coach.png', 1) }}" />
                         <h4 class="about-title">Napiš koučovi</h4>
                     </div>
