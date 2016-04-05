@@ -1,5 +1,6 @@
 - name: Instalace
   date: 2016-04-05
+  done: true
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
