@@ -457,6 +457,31 @@ h2.course-city-heading {
     padding: 0px 0px;
     margin-left: 15px;
 }
+
+.member-box .img-circle {
+  width: 80%;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.member-name {
+  font-size: 24px;
+}
+
+span ul li a img {
+  width: 20%;
+
+}
+
+span ul li {
+  margin: -40px;
+  margin-top: 15px;
+}
+
+#team {
+  padding-bottom: 45px;
+}
 .section-heading {
         margin-top: 0px;
         background-color: #EDEDED;
