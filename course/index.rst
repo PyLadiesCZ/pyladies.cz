@@ -11,6 +11,8 @@ Obsah:
 .. toctree::
    :maxdepth: 2
 
+   intro-cmdline
+
 
 
 Rejstříky a tabulky

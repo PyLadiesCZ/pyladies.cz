@@ -1,0 +1,31 @@
+{%- extends "layout.html" %}
+
+{% block title %}{{ title }} – PyLadies CZ{% endblock %}
+
+{% block css %}
+    {{ super() }}
+    <link href="{{ pathto('_static/css/course.css', 1) }}" rel="stylesheet">
+{% endblock css %}
+
+{% block content %}
+      <!-- Intro Header -->
+      <header class="intro-info intro-material">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                        <p class="intro-text-city">
+                            <span class="smaller">{{ title }}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Material section -->
+    <section class="material container" id="material">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        {{ body | safe }}
+      </div>
+    </section>
+{% endblock %}

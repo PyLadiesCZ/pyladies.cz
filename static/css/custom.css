@@ -340,30 +340,6 @@ HOMEPAGE
   float: left;
 }
 /*******************
-MATERIAL PAGE
-*******************/
-#material {
-  padding: 35px 0px;
-  text-align: left;
-}
-#material a {
-  color: #8e8c8d;
-}
-#material a:hover,
-#material a:focus {
-  color: #8e8c8d;
-  text-decoration: underline;
-}
-#material div {
-  margin-top: 30px;
-}
-.material-box {
-    padding-top: 55px;
-}
-.col-md-4.material {
-    color: rgb(229, 31, 64);
-}
-/*******************
 CITIES PAGE
 *******************/
 #about2 {
