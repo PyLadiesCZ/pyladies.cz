@@ -116,6 +116,8 @@
 - name: Spolupráce a Open-Source
   date: 2016-04-25
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Spolupráce & Open Source
     type: lesson
     link: v1/s005-modules/opensource.html
@@ -145,8 +147,6 @@
 - name: Seznamy
   date: 2016-05-09
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
     link: v1/s006-lists/lists.html
