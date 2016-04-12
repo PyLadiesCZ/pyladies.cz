@@ -25,6 +25,7 @@
     link: v1/s001-install/handout/handout.pdf
 - name: První program
   date: 2016-04-12
+  done: true
   materials:
   - name: První program
     type: lesson
