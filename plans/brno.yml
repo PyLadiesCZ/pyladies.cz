@@ -118,8 +118,6 @@
 - name: Spolupráce a Open-Source
   date: 2016-04-25
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Spolupráce & Open Source
     type: lesson
     link: v1/s005-modules/opensource.html
@@ -137,6 +135,8 @@
 - name: Grafika
   date: 2016-05-02
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Grafika
     type: lesson
     link: v1/s012-pyglet/pyglet.html
