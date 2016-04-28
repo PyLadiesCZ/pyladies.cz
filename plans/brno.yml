@@ -127,11 +127,15 @@
   - name: Domácí úkoly (PDF)
     type: homework
     link: v1/s005-modules/handout/handout7.pdf
-  - name: |
-        odkazy k úkolům – [hiragana](v1/s006-lists/resources/hiragana.txt),
-        [katakana](v1/s006-lists/resources/katakana.txt),
-        [„日本語の表記体系” na japonské Wikipedii](http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB)
+  - name: odkaz k úkolům – hiragana
     type: link
+    link: v1/s006-lists/resources/hiragana.txt
+  - name: odkaz k úkolům – katakana
+    type: link
+    link: v1/s006-lists/resources/katakana.txt
+  - name: odkaz k úkolům – „日本語の表記体系” na japonské Wikipedii
+    type: link
+    link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Grafika
   date: 2016-05-02
   materials:
