@@ -142,7 +142,7 @@
   materials:
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists.html
+    link: v1/s006-lists/lists2.html
   - name: N-tice
     type: lesson
     link: v1/s006-lists/tuples.html
