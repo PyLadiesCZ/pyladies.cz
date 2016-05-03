@@ -83,6 +83,7 @@
 - name: Funkce & Řetězce
   date: 2016-05-03
   materials:
+  done: true
   - name: Vlastní funkce
     type: lesson
     link: v1/s004-strings/functions.html
