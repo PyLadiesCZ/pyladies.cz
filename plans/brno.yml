@@ -139,7 +139,10 @@
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Seznamy
   date: 2016-05-02
+  done: true
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Seznamy
     type: lesson
     link: v1/s006-lists/lists2.html
@@ -155,8 +158,6 @@
 - name: Grafika
   date: 2016-05-09
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Grafika
     type: lesson
     link: v1/s012-pyglet/pyglet.html
