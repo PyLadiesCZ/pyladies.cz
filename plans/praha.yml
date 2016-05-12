@@ -98,6 +98,7 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Testování
   date: 2016-05-10
+  done: true
   materials:
   - name: Výjimky
     type: lesson
