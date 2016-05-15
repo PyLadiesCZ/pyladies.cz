@@ -116,18 +116,14 @@
           left: -6px;
        }
 
-       .member-box ul li a img {
-           width: 20% !important;
-         }
+
 
 
 
 }
 
 @media all and (max-width: 768px) {
-  img {
-    width: auto  !important;
-  }
+
 
 
 
