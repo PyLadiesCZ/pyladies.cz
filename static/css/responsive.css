@@ -125,7 +125,10 @@
     width: auto  !important;
   }
 
+  .member-box  ul li a img {
+    width: 20px !important;
 
+  }
 
 a .about img {
   width: 110px;
