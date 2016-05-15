@@ -116,6 +116,10 @@
           left: -6px;
        }
 
+       .member-box ul li a img {
+           width: 20% !important;
+         }
+
 
 
 }
@@ -125,9 +129,7 @@
     width: auto  !important;
   }
 
-.member-box ul li a img {
-    width: 20% !important;
-  }
+
 
 a .about img {
   width: 110px;
