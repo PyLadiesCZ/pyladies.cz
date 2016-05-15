@@ -125,9 +125,8 @@
     width: auto  !important;
   }
 
-  #team > div:nth-child(14) > span > ul > li > a > img {
-    width: 100px !important;
-    height: 100px;
+.member-box ul li a img {
+    width: 20% !important;
   }
 
 a .about img {
