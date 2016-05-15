@@ -450,8 +450,11 @@ h2.course-city-heading {
 
 }
 
-span ul li {
-  margin-top: 20px;
+.member-box ul li {
+  margin-top: 14px;
+margin-right: -40px;
+width: 123px;
+margin-left: -40px;
 }
 
 #team {
