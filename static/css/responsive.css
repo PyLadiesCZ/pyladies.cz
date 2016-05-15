@@ -125,6 +125,11 @@
     width: auto  !important;
   }
 
+  #team > div:nth-child(14) > span > ul > li > a > img {
+    width: 100px !important;
+    height: 100px;
+  }
+
 a .about img {
   width: 110px;
   height: 110px;

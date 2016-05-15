@@ -458,6 +458,11 @@ span ul li {
 #team {
   padding-bottom: 45px;
 }
+
+.col-md-3.member-box {
+    margin-bottom: 30px;
+}
+
 .section-heading {
         margin-top: 0px;
         background-color: #EDEDED;
