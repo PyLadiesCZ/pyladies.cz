@@ -157,6 +157,7 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Grafika
   date: 2016-05-09
+  done: true
   materials:
   - name: Grafika
     type: lesson
@@ -167,8 +168,13 @@
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
-- name: Slovníky
+- name: Odbočka
   date: 2016-05-16
+  materials:
+  - name: MicroPython a světýlka
+    type: special
+- name: Slovníky
+  date: 2016-05-23
   materials:
   - name: Slovníky
     type: lesson
@@ -180,7 +186,7 @@
     type: lesson
     link: v1/s011-dicts/github-api.html
 - name: Třídy
-  date: 2016-05-23
+  date: 2016-05-30
   materials:
   - name: Třídy
     type: lesson
@@ -188,13 +194,13 @@
   - name: Dědičnost [XXX:dopsat]
     type: lesson
 - name: Závěrečný projekt
-  date: 2016-05-30
+  date: 2016-06-06
   materials:
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
 - name: Závěrečný projekt II
-  date: 2016-06-06
+  date: 2016-06-13
   materials:
   - name: Pokračování Asteroids
     type: special
