@@ -185,6 +185,9 @@
   - name: Github API
     type: lesson
     link: v1/s011-dicts/github-api.html
+  - name: Slovníkový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Třídy
   date: 2016-05-30
   materials:
