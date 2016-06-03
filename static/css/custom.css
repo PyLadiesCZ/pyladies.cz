@@ -300,10 +300,13 @@ HOMEPAGE
 .partners h2 {
     padding-bottom: 35px;
 }
+
 .partner-logo {
-    height: 60px;
+    width: 100%;
+    height: 100%;
     padding-bottom: 20px;
 }
+
 .ref-heading {
     padding: 25px 0px;
     color: #fff;
