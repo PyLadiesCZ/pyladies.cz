@@ -261,9 +261,7 @@ HOMEPAGE
     width: 94px;
     margin-top: -10px;
 }
-.logo-cz {
-  height: 50px !important;
-}
+
 .comp-icon {
   height: 100px;
     width: 100px;
@@ -302,8 +300,8 @@ HOMEPAGE
 }
 
 .partner-logo {
-    width: 100%;
-    height: 100%;
+  width: 165px;
+  height: 76px;
     padding-bottom: 20px;
 }
 
