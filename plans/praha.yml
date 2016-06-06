@@ -138,7 +138,7 @@
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Seznamy
-  date: 2016-05-31
+  date: 2016-05-24
   done: true
   materials:
   - name: Turnaj v piškvorkách
@@ -156,7 +156,7 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2016-06-07
+  date: 2016-05-31
   done: true
   materials:
   - name: Slovníky
@@ -172,7 +172,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
-  date: 2016-05-24
+  date: 2016-06-07
   materials:
   - name: Grafika
     type: lesson
