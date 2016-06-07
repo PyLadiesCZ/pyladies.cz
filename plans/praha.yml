@@ -178,7 +178,7 @@
   - name: Grafika
     type: lesson
     link: v1/s012-pyglet/pyglet.html
-  - name: "Praktické cvičení: Pong" - mimo kurz navíc
+  - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
     link: v1/s012-pyglet/pong.html
   - name: Kód celé hry Pong
