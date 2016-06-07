@@ -173,11 +173,12 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
   date: 2016-06-07
+  done: true
   materials:
   - name: Grafika
     type: lesson
     link: v1/s012-pyglet/pyglet.html
-  - name: "Praktické cvičení: Pong"
+  - name: "Praktické cvičení: Pong" - mimo kurz navíc
     type: lesson
     link: v1/s012-pyglet/pong.html
   - name: Kód celé hry Pong
