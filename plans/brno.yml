@@ -197,8 +197,9 @@
   - name: Třídy
     type: lesson
     link: v1/s014-class/classes.html
-  - name: Dědičnost [XXX:dopsat]
+  - name: Dědičnost
     type: lesson
+    link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
   date: 2016-06-06
   done: true
