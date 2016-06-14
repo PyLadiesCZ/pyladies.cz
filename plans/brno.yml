@@ -170,11 +170,13 @@
     link: v1/s012-pyglet/pong.py
 - name: Odbočka
   date: 2016-05-16
+  done: true
   materials:
   - name: MicroPython a světýlka
     type: special
 - name: Slovníky
   date: 2016-05-23
+  done: true
   materials:
   - name: Slovníky
     type: lesson
@@ -190,6 +192,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Třídy
   date: 2016-05-30
+  done: true
   materials:
   - name: Třídy
     type: lesson
@@ -198,6 +201,7 @@
     type: lesson
 - name: Závěrečný projekt
   date: 2016-06-06
+  done: true
   materials:
   - name: Asteroids
     type: lesson
