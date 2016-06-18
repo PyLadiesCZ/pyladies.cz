@@ -186,6 +186,7 @@
     link: v1/s012-pyglet/pong.py
 - name: Třídy
   date: 2016-06-14
+  done: true
   materials:
   - name: Třídy
     type: lesson
