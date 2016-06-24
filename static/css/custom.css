@@ -333,8 +333,13 @@ HOMEPAGE
 .new-city {
     color: rgb(229, 31, 64);
     font-weight: 700;
-    padding: 50px 0px;
+    padding: 62px 0px;
 }
+
+.course-wrapper div:nth-child(3) {
+    border-right: none;
+}
+
 .img-user {
   width: 30px;
   margin-right: 10px;
