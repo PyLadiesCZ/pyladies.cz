@@ -196,15 +196,17 @@
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
   date: 2016-06-21
+  done: true
   materials:
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
 - name: Závěrečný projekt II
   date: 2016-06-28
+  done: true
   materials:
   - name: Pokračování Asteroids
-    type: special
+    type: lesson
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
