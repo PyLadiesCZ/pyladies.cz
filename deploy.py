@@ -1,11 +1,13 @@
 
 import os
 import random
-from sh import git, make, ghp_import
+from sh import git, ghp_import
+
+import pyladies_cz
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_DIR = os.path.join(ROOT_DIR, '_build', 'dirhtml')
+OUTPUT_DIR = os.path.join(ROOT_DIR, '_build')
 
 COMMIT_EMOJIS = [
     ':sunglasses:', ':two_hearts:', ':sparkles:', ':star2:', ':star:',
@@ -18,7 +20,7 @@ COMMIT_EMOJIS = [
 
 def deploy():
     print('Generating HTML...')
-    make('dirhtml')
+    pyladies_cz.freeze_app(path=OUTPUT_DIR, base_url='http://pyladies.cz')
 
     if os.environ.get('TRAVIS'):  # Travis CI
         print('Setting up Git...')

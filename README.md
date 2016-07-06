@@ -21,7 +21,8 @@ V `course` snad časem bude kurz převedený do ReST dokumentace.
 
 V `plans` jsou data pro seznamy lekcí (zatím pro Brno).
 
-Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstránky.
+Celé dohromady to spojuje `pyladies_cz.py`; tady se např. přidávají nové
+podstránky.
 
 ## Jak vytvořit stránky
 
@@ -29,13 +30,12 @@ Celé dohromady to spojuje `conf.py`; tady se např. přidávají nové podstrá
 
     $ python -m pip install -r requirements.txt
 
-### Vytvoření stránek
+### Spuštění webu lokálně v PC
 
-    $ sphinx-build -b html . _build/html
+    $ python pyladies_cz.py serve
 
-(na Linuxu postačí zadat `make`)
-
-Stránky se vytvoří v adresáři `_build/html`.
+Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
+Změny v kódu se projeví po obnovení stránky v prohlížeči.
 
 ### Úprava súborov
 
@@ -45,20 +45,14 @@ Stránky se vytvoří v adresáři `_build/html`.
 * Obrázky sa nachádzajú v `static/img`
 * Priradenie obrázku `src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"`
 
-### Spustenie webu lokálne v PC
-
-* Spustanie cez konzolu navigovana v hlavnom priecinku webu
-* Instalacia requirements - `python -m pip install -r requirements.txt`
-* Spustiť príkaz `sphinx-build -b html . _build/html`
-* Vygenerované stránky sa nachádzajú v priečinku `_build/html`
-* Po vykonaní zmien v HTML, CSS je potrebné opakovať příkaz sphinx-build
-
 ### Nasazení
 
 (Tohle je pro spuštění „ostré” verze webu; většinou to nebudeš potřebovat)
 
-Spuštěním `make dirhtml` vzniknou v adresáři `_build/dirhtml`
-statické stránky k nasazení na webový server.
+Tento příkaz vytvoří v adresáři `_build`
+statické stránky k nasazení na webový server.:
+
+    $ python pyladies_cz.py freeze
 
 ## Základné informácie - editace HTML
 
