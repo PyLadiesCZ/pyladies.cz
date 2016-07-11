@@ -18,6 +18,7 @@ import markdown
 import click
 
 app = Flask('pyladies_cz')
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
@@ -49,6 +50,9 @@ def brno():
 def praha():
     return render_template('praha.html', plan=read_yaml('plans/praha.yml'))
 
+@app.route('/stan_se/')
+def stan_se():
+    return render_template('stan_se.html')
 
 @app.route('/v1/<path:path>')
 def v1(path):
@@ -70,7 +74,9 @@ def cname():
 ##########
 ## Helpers
 
-md = markdown.Markdown(extensions=['meta'])
+md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
+
+@app.template_filter('markdown')
 def convert_markdown(text, inline=False):
     result = jinja2.Markup(md.convert(text))
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':

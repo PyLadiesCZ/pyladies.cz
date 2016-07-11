@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block content %}
+      <!-- Intro Header -->
+      <header class="intro-info intro-material">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                        <p class="intro-text-city">
+                            <span class="smaller">Staň se PyLady!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main section -->
+    <section class="course-city container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+{% filter markdown %}
+
+# Staň se PyLady!
+
+Jestli chceš začít programovat, najdi kurz ve svém městě, poǩej až se otevře
+registrace, a můžeš se přihlásit.
+Stav kurzů je vidět na [hlavní stránce]({{url_for('index')}}#main-course).
+
+# Jak organizovat kurz PyLadies?
+
+Chceš-li se zapojit do organizace, nebo založit PyLadies v novém městě,
+máme tu vypsané role, kterých se můžeš ujmout.
+
+## Hlavní organizátorka
+
+Hlavní organizátorka musí mít přehled o tom, jak kurzy PyLadies fungují.
+Proto by to měla být bývalá účastnice/koučka, nebo někdo, kdo je
+v kontaktu s organizátorkami ostatních měst.
+
+* Urči den a čas, kdy se budete scházet. Každý sraz trvá dvě hodiny,
+  a srazy se opakují každý týden.
+
+* Domluv místo, kde se bude kurz konat. Jestli nevíš, zeptej se v místních
+  IT firmách a školách, jestli by nějaký prostor nezapůjčili.
+
+* Navrhni časový plán: který týden se bude co probírat.
+  Kurz má standardně 13 lekcí, ale je dobré si jeden nebo dva týdny nechat
+  jako rezervu na případné odbočky.
+
+    Nezapomeň zkontrolovat kalendář; pozor na státní svátky!
+
+* Rozhodni, pro kolik lidí sraz bude.
+
+* Zhruba dva měsíce před začátkem pozvi kouče. Na první sraz je potřeba zhruba
+  1 kouč na 2-3 účastnice (plus 1 hlavní kouč) – instalace je hodně individuální.
+  Od druhého srazu stačí 1 kouč na 4-5 úǎstnic (plus 1 hlavní kouč).
+
+* Zhruba měsíc před začátkem pozvi účastnice!
+  Můžeš použít tuhle vzorovou přihlášku: http://goo.gl/forms/fGlImOko0oa2imDo1
+  – ozvi se a dáme ti k ní přístup, abys ji mohla zkopírovat a přizpůsobit.
+
+* Zhruba dva týdny před začátkem vyber účastnice.
+  Vybraným pošli mail s radostnou zprávou.
+  Zhruba 5-10 odmítnutých informuj, že jsou náhradnice.
+  Ostatní odmítnutým sděl, že se bohužel nevejdou.
+
+* Každý sraz musí mít vlastní organizátorku a hlavního kouče.
+  Organizátorka konkrétního srazu můžeš být i ty: a na první sraz to
+  doporučujeme, ale na ty další si radši najdi pomocnice.
+
+* Organizátorky a hlavní kouče přidej na stránku týmu na pyladies.cz.
+
+* Řeš případné finanční náklady, t.j. hlavně tisk materiálů/taháků a nákup
+  barevných papírků.
+  Všechno by měla proplatit naše neziskovka Pyvec, ale domluv se předem.
+
+* Na konci kurzu pošli mail se shrnutím, a začni hledat hlavní organizátorku na
+  další běh :)
+
+
+## Organizátorka srazu
+
+Organizátorka srazu může být bývalá nebo současná účastnice nebo koučka.
+Měla by už za sebou mít minimálně 1-2 srazy, aby věděla do čeho jde.
+
+* Ujisti se, že je vybraný hlavní kouč, a že přijde :)
+
+* Ujisti se, že je vybráno dost vedlejších koučů, a kdyžtak sežeň další.
+
+* Zhruba den předem připomeň sraz účastnicím.
+
+* Ujisti se, že na sraze budou k dispozici:
+  * červené/zelené/žluté papírky (na proplacení nákladů se domluv s hlavní
+    organizátorkou)
+  * Vytištěné domácí úkoly (pokud k aktuální lekci jsou)
+  * Vytištěné taháky (pokud k aktuální lekci jsou)
+  * Na některé srazy je potřeba speciální vybavení – domluv se s hlavní
+    organizátorkou:
+
+    * Ceny na turnaj v piškvorkách
+    * Hardware na odbočku on MicroPython
+
+* Přijď na sraz s předstihem, přichystej místnost, uvítej účastnice, a předej
+  slovo hlavnímu koučovi.
+
+* Na konci srazu poděkuj všem zúčastněným, vyber od účastnic zpětnou vazbu
+  a předej ji hlavnímu koučovi, a rozdej domácí úkoly.
+
+* Po srazu zkontroluj, že hlavní kouč zpětnou vazbu zpracoval :)
+
+
+## Hlavní kouč/ka
+
+Hlavní kouč musí být někdo, kdo programování rozumí, umí vysvětlit látku
+(s pomocí materiálů), a nezalekne se těžkých otázek.
+
+Důrazně doporučujeme, aby hlavní kouč byl na předcházejícím srazu, a mohl tak
+navázat.
+
+* Předem si nastuduj materiály a rozvrhni si čas, ať je za hodinu a půl stíháš
+  projít. (To může trvat zhruba 1-2 hodiny.)
+
+* Na sraze se první půlhodinu procházejí domácí úkoly – ve dvojicích,
+  společně, nebo nějakým jiným systémem.
+  Účel je, aby těm, kdo se na úkoly podívaly, bylo jasné o co jde a jak se to
+  řeší.
+  Hlavní kouč tu půlhodinu vede diskuzi.
+
+* Po úkolech vysvětli látku v materiálech.
+
+* Na konci dostaneš zpětnou vazbu. Napiš shrnutí probrané látky a zpětné vazby
+  někam, kde si to všichni zúčastnění přečtou (mail, Facebook, atd. – kdyžtak
+  se zeptej organizátorky).
+
+
+## Vedlejší kouč/ka
+
+Vedlejší kouč může být kdokoli, kdo je o trochu napřed před účastnicemi,
+a chce pomoct.
+Může to být profi programátor nebo klidně účastnice minuláho běhu, která si
+chce kurz nebo lekci zopakovat.
+
+* Chceš-li koučovat častěji, nahlaš se předem přihlaš hlavní organizátorce
+  kurzu, lépe se pak naplánuje.
+
+* Chceš-li přijít jen občas, nahlaš se organizátorce konkrétního srazu – nejlépe
+  tak, že odpovíš na pozvánku, kterou pošle zhruba den předem.
+
+* Úkol vedlejšího kouče je sledovat místnost. Kdykoli uvidíš červený papírek,
+  přiskoč a vyřeš problém.
+  Neumíš-li to vyřešit, předej problém jinému (nebo hlavnímu) koučovi.
+
+
+## Účastnice
+
+Nedílnou součástí jsou holky, co se učí Python!
+Jejich práce je nejtěžší, a proto se všichni ostatní snaží, aby se mohly
+soustředit na to učení:
+
+* Choď na srazy!
+
+* Svědomitě plň domácí úlohy!
+
+* A odevzdávej zpětnou vazbu, ať víme co zlepšit! :)
+
+{% endfilter %}
+            </div>
+        </div>
+    </section>
+{% endblock content %}
