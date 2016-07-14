@@ -186,7 +186,6 @@ INTRO IMAGES
 }
 .intro-text-city {
     font-weight: bold;
-    margin-top: 40px;
     font-size: 60px;
 }
 @media(min-width:768px) {
