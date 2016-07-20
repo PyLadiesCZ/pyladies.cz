@@ -24,6 +24,13 @@
   .join {
       color: #e51e41;
   }
+
+  .news-summer-p {
+        min-height: 300px;
+        margin-top: 60px;
+        border: none;
+  }
+
     .navbar-custom {
         padding: 5px 0;
         letter-spacing: 1px;
