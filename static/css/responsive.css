@@ -13,6 +13,10 @@
     .new-city {
       padding: 33px 0px;
     }
+
+    .news-summer-p {
+          min-height: 645px;
+    }
 }
 
 @media(min-width:768px) {
