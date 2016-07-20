@@ -268,20 +268,19 @@ HOMEPAGE
 }
 
 #news-summer {
-    padding-top: 105px;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 .news-title {
+  margin-bottom: 70px;
   color: #000000;
 }
 .news-summer-p {
   border: 1px solid #ccc;
   padding: 40px 30px;
-  box-shadow: 1px 6px 10px #ced1d8;
-  border-radius: .2em;
   height: auto;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 570px;
   max-height: 800px;
   padding-bottom: 85px;
   padding-top: 25px;
