@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <!-- Intro Header -->
+  <header class="intro-info intro-city-brno">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                      <p class="intro-text-city">BRNO</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- Meetups -->
+  <section class="meetup container text-center" id="meetups">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+              <h2 class="course-city-heading">Kurzy a srazy</h2>
+          </div>
+          <div class="meetup-box text-left">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h4 class="meetup-heading"><a href="/brno/">PyLadies Brno<br>začátečnický kurz</a></h4>
+                <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>07.03.2016 - 13.06.2016</p>
+                <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>aktuálně neprobíhá</p>
+                <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.cz/maps/place/BC+TITANIUM/@49.1879995,16.604512,17z/data=!3m1!4b1!4m2!3m1!1s0x471294548d5a37a9:0x3cff77f7c3e63814" target="_blank">BC Titanium, Nové sady 25, Brno</a></p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h4 class="meetup-heading">PyLadies Brno<br>pokročilé a doučovací srazy</h4>
+                <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>probíhají opakovaně</p>
+                <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>každý čtvrtek 18:00 - 20:00</p>
+                <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.cz/maps/place/Fakulta+informatiky+MU/@49.2100695,16.597013,17z/data=!3m1!4b1!4m2!3m1!1s0x4712946af848abab:0xcbdad60137e0b956" target="_blank">Fakulta informatiky MU, Botanická 68a, Brno</a></p>
+              </div>
+            <!--   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <span class="glyphicon glyphicon-calendar"></span>
+              <h4 class="meetup-heading">PyLady Brno - Beer</h4>
+              <p class="meetup-date">12.04.2015 - 13.05.2015</p>
+              <p class="meetup-address"><a href="#" target="_blank">Vysoka 23, 1234 Brno</a></p>
+              </div> -->
+          </div>
+        </div>
+    </section>
+      
+    <!-- Advice section -->
+    <section id="about3" class="container-fluid content-section text-center">
+        <div class="row">
+              <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
+                <a href="https://www.facebook.com/groups/pyladiesBrno">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/facebook.png', 1) }}">
+                        <h4 class="about-title">Facebook PyLadies Brno</h4>
+                    </div>
+                </a>
+                <a href="https://groups.google.com/forum/#!forum/pyladies-brno">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/google-group.png', 1) }}" />
+                        <h4 class="about-title">Google Group PyLadies Brno</h4>
+                    </div>
+                </a>
+                <a href="mailto:encukou@gmail.com">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/coach.png', 1) }}" />
+                        <h4 class="about-title">Napiš koučovi</h4>
+                    </div>
+                </a>
+        </div>
+    </section>
+{% endblock content %}
