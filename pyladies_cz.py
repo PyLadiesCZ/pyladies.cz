@@ -40,6 +40,13 @@ def brno_info():
 def praha_info():
     return render_template('praha_info.html')
 
+@app.route('/praha_course/')
+def praha_info():
+    return render_template('praha_course.html')
+
+@app.route('/brno_course/')
+def praha_info():
+    return render_template('brno_course.html')
 
 @app.route('/brno/')
 def brno():
