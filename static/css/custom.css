@@ -397,6 +397,11 @@ CITIES PAGE
     color: #8e8c8d;
     height: 30px;
 }
+
+.meetup-box div {
+  margin-bottom: 40px;
+}
+
 .meetup-heading  {
   font-weight: 700;
   font-size: 20px;
