@@ -241,3 +241,6 @@
   - name:  Slovníky ve funkci ``popis_karty`` ve hře Klondike
     type: lesson
     link: v1/s011-dicts/klondike-dictget.html
+  - name: MicroPython a malé počítače
+    type: lesson
+    link: v1/s016-micropython/index.html
