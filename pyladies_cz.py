@@ -7,7 +7,6 @@ if sys.version_info < (3, 0):
 
 import os
 import fnmatch
-import urllib.parse
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask import redirect
@@ -15,7 +14,6 @@ from flask_frozen import Freezer
 import yaml
 import jinja2
 import markdown
-import click
 
 from elsa import cli
 
