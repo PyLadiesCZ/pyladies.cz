@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Intro Header -->
+  <header class="intro-info intro-city-ostrava">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                      <p class="intro-text-city">OSTRAVA !!!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- Meetups -->
+  <section class="meetup container text-center" id="meetups">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+              <h2 class="course-city-heading">Kurzy a srazy</h2>
+          </div>
+          <div class="meetup-box text-left">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h4 class="meetup-heading"><a href="/ostrava/">PyLadies Ostrava<br>začátečnický kurz</a></h4>
+              <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>04.10. - 20.12. 2016</p>
+              <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>každé úterý 17:00 - 19:00</p>
+              <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span>bude upřesněno</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Advice section -->
+    <section id="about3" class="container-fluid content-section text-center">
+        <div class="row">
+              <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
+                <a href="https://www.facebook.com/pyladiesostrava/">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/facebook.png', 1) }}">
+                        <h4 class="about-title">Facebook PyLadies Ostrava</h4>
+                    </div>
+                </a>
+                <a href="https://groups.google.com/forum/#!forum/pyladies-ostrava">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/google-group.png', 1) }}" />
+                        <h4 class="about-title">Google Group PyLadies Ostrava</h4>
+                    </div>
+                </a>
+                <a href="mailto:pyladies-ostrava@googlegroups.com">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/coach.png', 1) }}" />
+                        <h4 class="about-title">Napiš koučovi</h4>
+                    </div>
+                </a>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Intro Header -->
+  <header class="intro-info intro-city-ostrava">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                      <p class="intro-text-city">OSTRAVA !!!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+      <!-- About city section -->
+      <section class="info-city container text-center">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Ostravě?</h2>
+                <p class="course-city-p">TODO</p>
+            </div>
+<!--        <div class="photo-box">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha1.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha2.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha3.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+            </div> -->
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <p class="course-city-p">TODO</p>
+            </div>
+        </div>
+    </section>
+  <!-- Team section -->
+  <section id="team" class="container content-section text-center">
+    <h2 class="course-city-heading">Tým ostravských PyLadies</h2>
+    <div class="member-box col-md-3 col-sm-4 col-xs-12">
+      <img src="{{ pathto('_static/img/ostrava/team/lumir.jpg', 1) }}" class="img-circle img-responsive" />
+      <h5 class"member-name text-center"><strong>Lumír Balhar</strong></h5>
+      <span><em>Organizátor/Kouč</em></span>
+      <ul class="list-inline">
+        <li><a href="https://cz.linkedin.com/in/lumír-balhar-b173833a"><img src="{{ pathto('_static/img/icon/linkedin-link.png', 1) }}" /></a></li>
+        <li><a href="http://www.frenzy.cz/"><img src="{{ pathto('_static/img/icon/website-link.png', 1) }}" /></a></li>
+        <li><a href="https://github.com/frenzymadness"><img src="{{ pathto('_static/img/icon/github-link.png', 1) }}" /></a></li>
+        <li><a href="https://twitter.com/lumirbalhar"><img src="{{ pathto('_static/img/icon/twitter-link.png', 1) }}" /></a></li>
+        <li><a href="mailto:frenzy.madness@gmail.com"><img src="{{ pathto('_static/img/icon/mail-link.png', 1) }}" /></a></li>
+      </ul>
+    </div>
+    <div class="member-box col-md-3 col-sm-4 col-xs-12">
+      <img src="{{ pathto('_static/img/ostrava/team/nela.jpg', 1) }}" class="img-circle img-responsive" />
+      <h5 class"member-name text-center"><strong>Nela Štrbíková</strong></h5>
+      <span><em>Organizátorka/Koučka</em></span>
+      <ul class="list-inline">
+
+      </ul>
+    </div>
+    <div class="member-box col-md-3 col-sm-4 col-xs-12">
+      <img src="{{ pathto('_static/img/ostrava/team/tana.jpg', 1) }}" class="img-circle img-responsive" />
+      <h5 class"member-name text-center"><strong>Táňa Marčišovská</strong></h5>
+      <span><em>Organizátorka/Koučka</em></span>
+      <ul class="list-inline">
+
+      </ul>
+    </div>
+    <div class="member-box col-md-3 col-sm-4 col-xs-12">
+      <img src="{{ pathto('_static/img/ostrava/team/ladka.jpg', 1) }}" class="img-circle img-responsive" />
+      <h5 class"member-name text-center"><strong>Ladislava Lipinová</strong></h5>
+      <span><em>Organizátorka/Koučka</em></span>
+      <ul class="list-inline">
+
+      </ul>
+    </div>
+  </section>
+    <!-- Advice section -->
+    <section id="about3" class="container-fluid content-section text-center">
+        <div class="row">
+              <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
+                <a href="https://www.facebook.com/pyladiesostrava/">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/facebook.png', 1) }}">
+                        <h4 class="about-title">Facebook PyLadies Ostrava</h4>
+                    </div>
+                </a>
+                <a href="https://groups.google.com/forum/#!forum/pyladies-ostrava">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/google-group.png', 1) }}" />
+                        <h4 class="about-title">Google Group PyLadies Ostrava</h4>
+                    </div>
+                </a>
+                <a href="mailto:pyladies-ostrava@googlegroups.com">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 about">
+                        <img height="110" src="{{ pathto('_static/img/link/coach.png', 1) }}" />
+                        <h4 class="about-title">Napiš koučovi</h4>
+                    </div>
+                </a>
+        </div>
+    </section>
+{% endblock content %}
