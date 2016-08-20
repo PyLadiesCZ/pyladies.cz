@@ -17,6 +17,8 @@ import jinja2
 import markdown
 import click
 
+from elsa import cli
+
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
@@ -72,10 +74,6 @@ def index_html():
 @app.route('/course.html')
 def course_html():
     return send_from_directory(orig_path, 'course.html')
-
-@app.route('/CNAME')
-def cname():
-    return app.config['SERVER_NAME']
 
 
 ##########
@@ -144,49 +142,5 @@ def v1():
                 path = os.path.relpath(os.path.join(name, file), v1_path)
                 yield {'path': path}
 
-
-def freeze_app(path, base_url):
-    app.config['FREEZER_DESTINATION'] = path
-    app.config['FREEZER_BASE_URL'] = base_url
-    app.config['SERVER_NAME'] = urllib.parse.urlparse(base_url).netloc
-    freezer.freeze()
-
-
-#########
-## Runner
-
-
-def main():
-    return cli(obj={})
-
-
-@click.group(context_settings=dict(help_option_names=['-h', '--help']),
-             help=__doc__)
-def cli():
-    pass
-
-
-@cli.command()
-@click.option('--port', type=int, default=8003,
-              help='Port to listen at')
-def serve(port):
-    """Run a debug server"""
-    app.run(host='0.0.0.0', port=port, debug=True)
-
-@cli.command()
-@click.option('--path', default=os.path.join(app.root_path, '_build'),
-              help='Output path')
-@click.option('--base-url', default='http://pyladies.cz/',
-              help='URL for the application, used for external links')
-@click.option('--serve/--no-serve',
-              help='After building the site, run a server with it')
-@click.option('--port', default=8003,
-              help='Port used for --serve')
-def freeze(path, base_url, serve, port):
-    """Build a static site"""
-    freeze_app(path, base_url)
-    if serve:
-        freezer.serve(port=port)
-
 if __name__ == '__main__':
-    cli()
+    cli(app, freezer=freezer, base_url='http://pyladies.cz')
