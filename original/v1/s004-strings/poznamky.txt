@@ -1,7 +1,7 @@
 Sraz 20. 10. 2014
 
 - while.html, jako slajdy (~30min)
-- Kontrola domácích úkolů – ve dvojicích, potom skupinově (~30min)
+- Kontrola domácích projektů – ve dvojicích, potom skupinově (~30min)
 - functions.html, jako slajdy (~30min)
 - strings.html, jako slajdy (~30min)
 - odevzdání papírků, rozdání úloh (viz 2. sraz)
@@ -36,9 +36,9 @@ Příklady
     To se mi tentokrát něco povedlo, tak časování.
     Snad to vyjde i příště.
 
-Domácí úkoly
+Domácí projekty
 
-    -1 Moc úkolů
+    -1 Moc projektů
 
     Byly na dva týdny, a kreslilo se v nich; myslím že to nebylo tak hrozný.
 
