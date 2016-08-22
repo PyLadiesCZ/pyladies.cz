@@ -191,7 +191,7 @@
     type: link
     link: v1/s012-pyglet/pong.py
 - name: Třídy
-  date: 2016-12-06
+  date: 2016-11-29
   done: false
   materials:
   - name: Třídy
@@ -201,7 +201,7 @@
     type: lesson
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
-  date: 2016-12-13
+  date: 2016-12-06
   done: false
   materials:
   - name: Asteroids
