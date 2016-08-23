@@ -40,6 +40,10 @@ def brno_info():
 def praha_info():
     return render_template('praha_info.html')
 
+@app.route('/ostrava_info/')
+def ostrava_info():
+    return render_template('ostrava_info.html')
+
 @app.route('/praha_course/')
 def praha_course():
     return render_template('praha_course.html')
@@ -47,6 +51,10 @@ def praha_course():
 @app.route('/brno_course/')
 def brno_course():
     return render_template('brno_course.html')
+
+@app.route('/ostrava_course/')
+def ostrava_course():
+    return render_template('ostrava_course.html')
 
 @app.route('/brno/')
 def brno():
@@ -56,6 +64,10 @@ def brno():
 @app.route('/praha/')
 def praha():
     return render_template('praha.html', plan=read_yaml('plans/praha.yml'))
+
+@app.route('/ostrava/')
+def ostrava():
+    return render_template('ostrava.html', plan=read_yaml('plans/ostrava.yml'))
 
 @app.route('/stan_se/')
 def stan_se():
