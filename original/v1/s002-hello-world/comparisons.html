@@ -17,7 +17,7 @@
                         Pamatuješ si ještě, co je to <em>operátor</em>?
                     </p>
                     <p>
-                        Minule, a v domácím úkolu, jsme si ukázaly
+                        Minule, a v domácím úkolu, jsme si ukázali
                         základní aritmetické operátory.
                         Přidáme-li jeden další (<code>//</code>),
                         jsou to tyhle:
@@ -82,7 +82,7 @@
                         Hodnoty provnání jsou takzvané <em>booleovské</em> hodnoty
                         (angl. <em>boolean</em>, podle <a href="http://en.wikipedia.org/wiki/George_Boole">G. Boolea</a>).
                         V Pythonu se používají vždycky,
-                        když potřebujeme vědět jestli něco platí
+                        když potřebujeme vědět, jestli něco platí
                         nebo neplatí.
                         Jsou jenom dvě – buď <code>True</code> (pravda),
                         nebo <code>False</code> (nepravda).
@@ -99,7 +99,7 @@ print(nepravda)
 </pre>
                     </p>
                     <p class="note">
-                        Všimni si, že rovnost zjušťujeme pomocí dvou rovnítek: <code>3 == 3</code>.
+                        Všimni si, že rovnost zjišťujeme pomocí dvou rovnítek: <code>3 == 3</code>.
                         Jedno rovnítko přiřazuje do proměnné; dvě rovnítka porovnávají.
                     </p>
                     <p>
@@ -126,14 +126,14 @@ print('Obsah čtverce se stranou', strana, 'je', strana * strana, 'cm²')
 
                     </p>
                     <p>
-                        Tady je vidět, jak počítač dělá přesně co se mu řekne,
+                        Tady je vidět, jak počítač dělá přesně, co se mu řekne,
                         a nepřemýšlí o významu.
                         Bylo by dobré uživateli, který zadá záporné číslo,
-                        přímo říct že zadal blbost. Jak na to?
+                        přímo říct, že zadal blbost. Jak na to?
                     </p>
                     <p>
                         Nejdřív zkus nastavit proměnnou,
-                        která bude <code>True</code> když uživatel zadal kladné číslo nebo nulu.
+                        která bude <code>True</code>, když uživatel zadal kladné číslo nebo nulu.
                     </p>
 <details class="solution"><h3>Řešení</h3>
 <pre>
@@ -144,7 +144,7 @@ cislo_je_spravne = strana &gt;= 0
                         A nyní řekneme počítači, aby tuhle proměnnou použil.
                         K tomu se používá dvojice příkazů <code>if</code> (angl. <em>pokud</em>)
                         a <code>else</code> (angl. <em>jinak</em>).
-                        Nejepší bude je ukázat na příkadu:
+                        Nejepší bude je ukázat na příkladu:
                     </p>
 <pre>
 strana = float(input('Zadej stranu v centimetrech: '))
@@ -160,7 +160,7 @@ print('Děkujeme za použití geometrické kalkulačky.')
 </pre>
                     <p>
                         Neboli: po <code>if</code> následuje <em>podmínka</em> (angl. <em>condition</em>),
-                        což je výraz, podle kterého se budeme, rozhodovat a za podmínkou je dvojtečka.
+                        což je výraz, podle kterého se budeme rozhodovat a za podmínkou je dvojtečka.
                         Potom následují příkazy, které se provedou, pokud je podmínka pravdivá.
                         Všechny jsou odsazeny o čtyři mezery.<br>
                         Po téhle části stačí napsat neodsazené <code>else:</code>, zase s dvojtečkou na konci,
