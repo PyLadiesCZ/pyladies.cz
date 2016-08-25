@@ -3,7 +3,7 @@ Sraz 13. 10. 2014
 - První program (hello-world.html), řešeno samostatně podle návodu
     Mezitím každá účastnice dostala červený a zelený lepivý papírek;
     zelený přilepila na zadní stranu počítače vždycky, když měla úkol hotový;
-    červený když bylnějaký problém.
+    červený když byl nějaký problém.
     Papírky hlídali pomocníci.
     (z us.pycon.org/2014/schedule/presentation/174/, youtube FtKO619O5g0)
 - Kontrola domácích úkolů – ve dvojicích, potom skupinově
@@ -36,7 +36,7 @@ Rychlost a srozumitelnost:
   zelených papírků na počítačích byla spousta), a zkrátit – hodina a půl by
   asi byla ideální.
   Nebo zkusit zařadit přestávku?
-  Vypadá to že srozumitelné je to dost, ale trochu se obávám že tyhle odhlasy
+  Vypadá to, že srozumitelné je to dost, ale trochu se obávám že tyhle odhlasy
   jdou od těch, které už programovat trochu umí.
 
 
@@ -47,7 +47,7 @@ Dostupnost materiálů
   Rychlejší chtějí materiály předem, ale to mi přijde kontraproduktivní:
   cíl byl všechny sesynchronizovat.
   Na to, aby si každá PyLady jela vlastním tempem, mi přijde lepší
-  domácí samostudium, případně s „konzultacemi”.
+  domácí samostudium, případně s „konzultacemi“.
   Budu ale příště podporovat to, aby po se rychlejší skončení každého
   úkolu převtělily do role pomocnic.
 
