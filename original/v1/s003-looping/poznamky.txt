@@ -1,7 +1,7 @@
 Sraz 20. 10. 2014
 
 - functions.html, jako slajdy
-- Kontrola domácích projektů – ve dvojicích, potom skupinově
+- Kontrola domácích úkolů – ve dvojicích, potom skupinově
     [pro příště: nechat víc času na reflexi?]
 - turtle.html, jako slajdy
 - odevzdání papírků, rozdání úloh (viz 2. sraz)
@@ -30,17 +30,17 @@ Délka a tempo:
     Příště už to snad opravdu vyjde.
 
 
-Domácí projekty:
+Domácí úkoly:
 
-    +1 náročnější domácí projekty
-    -1 kontrola projektů stačí se sousedkou, příp. nejasnosti prodiskutovat
-    -1 moc projektů
+    +1 náročnější domácí úkoly
+    -1 kontrola úkolů stačí se sousedkou, příp. nejasnosti prodiskutovat
+    -1 moc úkolů
 
-    Ač to není populární, i nadále bude „hodně” domácích projektů.
+    Ač to není populární, i nadále bude „hodně” domácích úkolů.
     Na srazech holt není dost času, zvlášť na přemýšlení o nových věcech.
-    Samozřejmě nikoho nenutím ty projekty dělat – ale pak se toho moc nenaučí.
+    Samozřejmě nikoho nenutím ty úkoly dělat – ale pak se toho moc nenaučí.
     Na učení je hlavní čas.
-    Kontrolu projektů můžu trochu zkrátit, ale podle toho co jsem o učení četl
+    Kontrolu úkolů můžu trochu zkrátit, ale podle toho co jsem o učení četl
     je tahle část dost důležitá, takže bych ji nerad krátil příliš.
 
 Formát:
@@ -52,7 +52,7 @@ Formát:
     Zkusím se znovu zamyslet, jak udělat přehled úloh,
     který by se dal zveřejnit před srazem.
     Problém je stále ten, že chci aby se dělalo na stejném příkladu,
-    ne aby si každá PyLady jela podle svého tempa – na to jsou domácí projekty.
+    ne aby si každá PyLady jela podle svého tempa – na to jsou úkoly.
     Nejlepší bude přece jen líp dodržovat dvě hodiny.
 
 Do skupiny:
@@ -66,3 +66,4 @@ Do skupiny:
 Papírky bez nápadů:
 
     -3 nic
+

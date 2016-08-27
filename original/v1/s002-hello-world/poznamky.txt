@@ -6,7 +6,7 @@ Sraz 13. 10. 2014
     červený když byl nějaký problém.
     Papírky hlídali pomocníci.
     (z us.pycon.org/2014/schedule/presentation/174/, youtube FtKO619O5g0)
-- Kontrola domácích projektů – ve dvojicích, potom skupinově
+- Kontrola domácích úkolů – ve dvojicích, potom skupinově
     [pro příště: nechat víc času na reflexi?]
 - Nastavení editorů (editor.html), samostatně podle návodu
 - Print a chyby (printing.html), samostatně podle návodu
@@ -15,7 +15,7 @@ Sraz 13. 10. 2014
 - Porovnávání (variables.html): bez vyvěšeného návodu, jako proměnné
 - Odevzdání papírků: na červený každá účastnice napsala něco negativního,
     na zelený něco pozitivního
-- Rozdání papírů s domácími projekty
+- Rozdání papírů s domácími úkoly
 
 Celkem to trvalo zhruba dvě hodiny.
 
