@@ -48,7 +48,9 @@ a:focus,
 .meetup-address a:hover,
 .meetup-address a:focus,
 .meetup-heading a:hover,
-.meetup-heading a:focus {
+.meetup-heading a:focus,
+.meetup-registration a:hover,
+.meetup-registration a:focus {
     text-decoration: none;
     color: #fa023c;
 }
@@ -406,6 +408,7 @@ CITIES PAGE
 }
 .glyphicon-calendar,
 .glyphicon-hourglass,
+.glyphicon-edit,
 .meetup-box .meetup-address .glyphicon-map-marker {
     font-size: 20px;
     float: left;
@@ -429,7 +432,8 @@ CITIES PAGE
 }
 .meetup-date,
 .meetup-time,
-.meetup-address a {
+.meetup-address a,
+.meetup-registration a {
     color: #8e8c8d;
 }
 .meetup {
