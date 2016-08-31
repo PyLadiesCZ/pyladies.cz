@@ -25,7 +25,7 @@
       color: #e51e41;
   }
 
-  
+
 
     .navbar-custom {
         padding: 5px 0;
@@ -204,9 +204,7 @@ img.partner-logo {
 .partners div:nth-child(4) {
     margin-left: -42px;
 }
-.partners div:nth-child(5) {
-    margin-left: 13px;
-}
+
 .city-box {
   margin-bottom: 60px;
   height: 140px;
@@ -413,7 +411,7 @@ a .about .about-title {
   }
 
   .partners div:nth-child(4) {
-      margin-left: -20px;
+      margin-left: -5px;
   }
   h4.actual-heading {
     font-size: 16px;
@@ -466,7 +464,7 @@ a .about .about-title {
   }
 
   .partners div:nth-child(4) {
-      margin-left: -20px;
+      margin-left: -5px;
   }
   h4.actual-heading {
     font-size: 16px;
