@@ -131,6 +131,10 @@
   img {
     width: auto  !important;
   }
+
+  .col-xs-12.col-sm-12.col-md-4.col-lg-4.about {
+    margin-top: 50px;
+  }
   .news-summer-p {
         min-height: auto;
         margin-top: 60px;
