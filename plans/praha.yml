@@ -4,7 +4,7 @@
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
-    link: v1/s001-install/uvod.html
+    link: v1/s001-install/uvod-praha.html
   - name: Úvod do příkazové řádky
     type: lesson
     link: v1/s001-install/cmdline.html
