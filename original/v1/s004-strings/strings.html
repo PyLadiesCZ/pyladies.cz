@@ -22,7 +22,7 @@
                         <h1>Řetězce</h1>
                         <aside class="notes">
                             Teď se podíváme na zoubek řetězcům (angl. <em>strings</em>).
-                            Už víme jak je zapisovat:
+                            Už víme, jak je zapisovat:
                         </aside>
 <pre>
 'tohle je řetězec'
@@ -32,9 +32,9 @@
                             Někdy ale potřebujeme řetězce,
                             které obsahují více řádků.
                             Pythoní řetězce ale můžeme normálně napsat
-                            jen jeden řádek.
+                            jen na jeden řádek.
                             Jinak by koncová uvozovka mohla být kdekoli,
-                            a špatně by se hledala, kdybychom na ni zapomněly.
+                            a špatně by se hledala, kdybychom na ni zapomněli.
                         </aside>
                         <aside class="notes">
                             Můžeme ale do řetězce znak pro
@@ -47,9 +47,9 @@ print('Haló haló!\nCo se stalo?')
                         <aside class="notes">
                             Obecně nám zpětné lomítko umožňuje zapsat znaky,
                             které by se špatně zadávaly.
-                            Třebauvozovka se dá zapsat jako <code>\"</code>,
-                            a „apostrof” jako <code>\'</code>.
-                            To se dá použít když potřebujeme mít v jednom
+                            Třeba uvozovka se dá zapsat jako <code>\"</code>,
+                            a „apostrof“ jako <code>\'</code>.
+                            To se dá použít, když potřebujeme mít v jednom
                             řetězci uvozovku i apostrof:
                         </aside>
 <pre class="fragment">
@@ -73,7 +73,7 @@ print('--\N{KATAKANA LETTER KO}--')
                             (třeba ve jménech souborů na Windows),
                             musíme ho ve zdrojovém kódu zdvojit.
                             Sekvence <code>\\</code> znamená „jedno zpětné
-                            lomítko”.
+                            lomítko“.
                         </aside>
 <pre class="fragment">
 print('C:\\PyLadies\\Nový adresář')
@@ -83,15 +83,15 @@ print('C:\\PyLadies\\Nový adresář')
                 <section class="col-lg-12">
                     <section>
                         <aside class="notes">
-                            Ale zpátky k víceřádkovým řetězcům na více řádků.
+                            Ale zpátky k řetězcům na více řádků.
                             Kromě <code>\n</code> je i druhý způsob, jak takový
                             řetězec zadat: ohraničit ho <em>třemi</em>
                             uvozovkami (jednoduchými nebo dvojitými)
                             na každé straně:
                         </aside>
                         <aside class="notes">
-                            Na rozdíl od „normálních” řetězců,
-                            s tímhle zápisem může mít řetězec může mít více řádků:
+                            Na rozdíl od „normálních“ řetězců,
+                            s tímhle zápisem může mít řetězec více řádků:
                         </aside>
 <pre>
 basen = '''Haló haló!
@@ -156,7 +156,7 @@ print(pate_pismeno)
                         <aside class="notes">
                             Jak sis možná už všimla, programátoři
                             počítají od nuly.
-                            „První” domácí úloha měla vždy číslo nula,
+                            „První“ domácí úloha měla vždy číslo nula,
                             druhá číslo jedna, a tak dál.
                         </aside>
                         <aside class="notes">
@@ -173,7 +173,7 @@ print(pate_pismeno)
                             že programátoři jsou prostě divní.
                         </aside>
                         <aside class="notes">
-                            A nebo že mají rádi divná čísla, jako nulu.
+                            A nebo, že mají rádi divná čísla, jako nulu.
                         </aside>
                     </section>
                     <section>
@@ -243,7 +243,7 @@ print('Čokoláda'[-4])  <span class="comment"># → l</span>
                         <aside class="notes">
                             Řetězce vždy berou v potaz velikost písmen,
                             takže např. <code>'ČOKO' in 'čokoláda' == False</code>.
-                            Kdybychom chtěly porovnávat bez ohledu na velikost písmen,
+                            Kdybychom chtěli porovnávat bez ohledu na velikost písmen,
                             musíme oba řetězce převést na malá písmena,
                             a pak je porovnat.
                         </aside>
@@ -277,7 +277,7 @@ print(retezec.lower())
 print(retezec)
 </pre>
                         <aside class="notes">
-                            Všimni si že původní řetězec se nemění;
+                            Všimni si, že původní řetězec se nemění;
                             metoda vrátí řetězec nový.
                         </aside>
                     </section>
@@ -388,10 +388,10 @@ print('Iniciály:', (jmeno[0] + prijmeni[0]).upper())
                             Všechny další jsou popsány v
                             <a href="https://docs.python.org/2/library/stdtypes.html#string-methods">
                                 dokumentaci Pythonu
-                            </a> (anglicky; plné věcí které ještě neznáme).
+                            </a> (anglicky; plné věcí, které ještě neznáme).
                         </aside>
                         <aside class="notes">
-                            Všimni si že <code>len</code> není metoda,
+                            Všimni si, že <code>len</code> není metoda,
                             ale funkce;
                             píše se <code>len(r)</code>,
                             ne <code>r.len()</code>.
@@ -420,7 +420,7 @@ print('Ahoj, {jmeno}!'.format(jmeno='Elvíro'))
 </pre>
                         <aside class="notes">
                             Formátování se používá skoro všude, kde je
-                            potřeba „hezky” vypsat nějakou hodnotu.
+                            potřeba „hezky“ vypsat nějakou hodnotu.
                         </aside>
                     </section>
                 </section>
@@ -429,7 +429,7 @@ print('Ahoj, {jmeno}!'.format(jmeno='Elvíro'))
                         <h2>Sekání řetězců</h2>
                         <aside class="notes">
                             Teď se vrátíme k vybírání kousků řetězců.
-                            Zkus co dělá tenhle program:
+                            Zkus, co dělá tenhle program:
                         </aside>
 <pre>
 retezec = 'čokoláda'
@@ -522,7 +522,7 @@ def zamen(retezec, pozice, znak):
                 <div>Licence: <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a></div>
                 <div>
                     Jako příklady byly použity úryvky z <a href="http://www.nohavica.cz/cz/tvorba/texty/halo_halo.htm">„Haló Haló“ Jaromíra Nohavici</a>
-                    a z povídky „Chlap, děd, vnuk, pes a hrob” Jana Wericha.
+                    a z povídky „Chlap, děd, vnuk, pes a hrob“ Jana Wericha.
                 </div>
                 <div><a class="btn" href="javascript:start_reveal()">‣ slajdy</a></div>
             </div>
