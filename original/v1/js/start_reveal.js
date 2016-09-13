@@ -10,38 +10,63 @@ function start_reveal() {
         head.appendChild(s);
     }
 
-    while (true) {
-        links = document.getElementsByTagName('link');
-        if (links.length) {
-            links[0].remove();
-        } else {
-            break;
-        }
+    function add_js(src, callback) {
+        var head = document.getElementsByTagName('body')[0];
+        var s = document.createElement('script');
+        s.setAttribute('src', src);
+        s.onload = callback;
+        head.appendChild(s);
     }
 
-    var details = document.getElementsByTagName('details');
-    for(i=0; i < details.length; i++) {
-        details[i].setAttribute('style', 'display: none');
-    }
+    add_js('../reveal.js/lib/js/head.min.js', function () {
+        add_js('../reveal.js/js/reveal.js', function () {
 
-    add_css("../reveal.js/css/reveal.min.css");
-    add_css("../css/reveal-theme.css");
-    document.body.setAttribute('class', 'reveal');
+            while (true) {
+                links = document.getElementsByTagName('link');
+                if (links.length) {
+                    links[0].remove();
+                } else {
+                    break;
+                }
+            }
 
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+            var details = document.getElementsByTagName('details');
+            for(i=0; i < details.length; i++) {
+                details[i].setAttribute('style', 'display: none');
+            }
 
-        transition: 'linear',
-        transitionSpeed: 'fast',
-        backgroundTransition: 'linear',
+            add_css("../reveal.js/css/reveal.css");
+            add_css("../css/reveal-theme.css");
+            document.body.setAttribute('class', 'reveal');
 
-        dependencies: [
-            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        ]
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'linear',
+                transitionSpeed: 'fast',
+                backgroundTransition: 'linear',
+
+                dependencies: [
+                    {
+                        src: '../reveal.js/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    },
+                    {
+                        src: '../reveal.js/plugin/zoom-js/zoom.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    },
+                ]
+            });
+        });
     });
 }
 
