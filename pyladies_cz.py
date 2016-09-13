@@ -148,6 +148,8 @@ def v1():
         if '.git' in dirs:
             dirs.remove('.git')
         for file in files:
+            if file == '.git':
+                continue
             if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
                 path = os.path.relpath(os.path.join(name, file), v1_path)
                 yield {'path': path}
