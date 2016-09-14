@@ -454,6 +454,7 @@ h2.course-city-heading {
     text-align: left;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    padding: 15px 0 46px 0;
 }
 .py-block.pull-left {
     height: 129px;
@@ -465,7 +466,6 @@ h2.course-city-heading {
     border-right: none;
 }
 .course-i {
-    border-right: 1px solid #ddd;
     position: relative;
 }
 .course-city {
