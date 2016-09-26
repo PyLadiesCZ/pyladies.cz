@@ -35,12 +35,16 @@
 \newcommand\plpage{
     \newpage
     \begin{tikzpicture}[remember picture,overlay]
-    \node[opacity=0.1,below left,xshift=1cm,yshift=1cm] at (current page.north east) {\includegraphics[width=12cm]{../../images/pylady-pink}};
+        \node[opacity=0.1,below left,xshift=1cm,yshift=1cm] at (current page.north east) {\includegraphics[width=12cm]{../../images/pylady-pink}};
+        \node[below left,align=right,yshift=-1.5em] at (current page.north east) {\color{white} strana \thepage};
+        \node[below left,align=right] at (current page.north east) {\color{white} sada \plsetno};
     \end{tikzpicture}
 }
 
 \newcommand\answerspace{\\\rule[0cm]{0pt}{1cm}}
 \newcommand\answerline{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+\newcommand\plsetno{1}
 
 \begin{document}
 
@@ -79,7 +83,7 @@ Příkazy k puštění Pythonu na mém počítači jsou:
 
 \plpage
 
-\section*{Domácí projekty}
+\section*{Domácí projekty \plsetno}
 
 \begin{enumerate}
 \item Doma (nebo pár dní po instalaci, pokud nejsi na srazu) si znovu pusť Python,
@@ -92,7 +96,7 @@ Příkazy k puštění Pythonu na mém počítači jsou:
     \begin{verbatim}
     >>> 4 - 2
     \end{verbatim}
-\item A co násobení? Programátoři nenásobí pomocí · ani ×, použijí jiný \emph{operátor}: hvězdičku.
+\item A co násobení? Programátoři nenásobí pomocí · ani ×, použijí jiný \emph{operátor}: hvězdičku. Vyzkoušej si to.
 \item Dělení? Znak ÷ se taky na klávesnici těžko píše (zvlášť na české). Jak se asi bude dělit?
 \item Závorky v Pythonu fungují jako v matematice.
     Zkus pomocí Pythonu vypočítat: $3 + (4 + 6) \times 8 \div 2 - 1 = $
@@ -112,7 +116,7 @@ Příkazy k puštění Pythonu na mém počítači jsou:
     >>> 'Ahoj!'
     'Ahoj!'
     \end{verbatim}
-\item Řetězce jdou spojovat sčítáním:
+\item Řetězce jdou spojovat sčítáním. Vyzkoušej si to:
     \begin{verbatim}
     >>> 'A' + "B"
     'AB'
