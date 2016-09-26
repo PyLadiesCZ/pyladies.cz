@@ -99,6 +99,26 @@ $ <b>sudo dnf install python3</b>
                     Potřebuješ-li doinstalovat Virtualenv, nahraď <code>python3</code> za <code>python-virtualenv</code>.
                 </div>
                 <div class="col-lg-12">
+                    Máš-li nainstalováno, spusť ještě příkaz <code>python3 -m tkinter</code> . Ukáže-li se okýnko, je vše v pořádku.
+                    Jestli ne, nainstaluj ještě modul tkinter:
+                </div>
+            </div>
+            <div class="row stuff">
+                <div class="col-lg-6">
+                    <h4>Ubuntu</h4>
+<pre>
+$ <b>sudo apt-get install python3-tkinter</b>
+</pre>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Fedora</h4>
+<pre>
+$ <b>sudo dnf install python3-tk</b>
+</pre>
+                </div>
+            </div>
+            <div class="row stuff">
+                <div class="col-lg-12">
                     <h1>Vytvoření prostředí</h1>
                     <p class="note">
                         Možná si říkáš, k čemu takové <strong>virtuální prostředí</strong> vlastně potřebuješ.
@@ -121,6 +141,15 @@ $ <b>sudo dnf install python3</b>
                         doplň „svůj“ adresář.
                     </p>
                     </p>
+                        Zvolený adresář bys po vytvoření neměla přesouvat jinam.
+                        Proto ho nedoporučuji vytářet na Ploše.
+                    </p>
+                    <p class="note">
+                        Kdybys někdy chtěla adresář přece jen přesunout,
+                        musela bys virtuální prostředí (<code>venv</code>)
+                        smazat a vytvořit nové.
+                    </p>
+                    </p>
                         Teď otevři příkazovou řádku
                         a příkazem <code>cd</code> se přepni do adresáře
                         <code class="plhome">~/pyladies</code>.
@@ -134,7 +163,7 @@ $ <b>sudo dnf install python3</b>
                 <div class="col-lg-4">
                     <h4>Windows, Python 3.5</h4>
 <pre>
-> <b>python -m venv venv</b>
+> <b>py -3 -m venv venv</b>
 </pre>
                 </div>
                 <div class="col-lg-4">
@@ -150,18 +179,28 @@ $ <b>virtualenv -p python3 venv</b>
 </pre>
                 </div>
                 <div class="col-lg-12">
-                    <p>
-                    Pokud Windows tvrdí, že neznají příkaz <em>python</em>, musíš specifikovat celou cestu k binárce Pythonu,
-                    typicky <code>C:\Users\<i>tvoje_jméno</i>\AppData\Local\Programs\Python\Python35\python</code>. Cestu si ověř a celou dosaď do příkazu výše pro vlastní OS místo <code>python/python3</code>.
+                    <p class="note">
+                        Znak <code>$</code> nebo <code>&gt;</code> vypíše počítač
+                        sám, ty napiš jen to za ním!
                     </p>
                     <p>
-                       Pokud používáš starší Ubuntu 14.04 nebo novější, tak se může stát, že inicializace prostředí selže, pak je potřeba postupovat podle <a href="http://askubuntu.com/questions/279959/how-to-create-a-virtualenv-with-python3-3-in-ubuntu">rady na askubuntu.com</a>.
+                    Pokud Windows tvrdí, že neznají příkaz <em>python</em>,
+                    poraď se s koučem. Typicky v takovém případě
+                    musíš napsat celou cestu k Pythonu, jako
+                    <code>C:\Users\<i>tvoje_jméno</i>\AppData\Local\Programs\Python\Python35\python</code>.
+                    Cestu si ověř a celou dosaď do příkazu výše místo
+                    <code>py -3</code>.
+                    </p>
+                    <p>
+                       Pokud používáš starší Ubuntu (kolem 14.04), tak se může
+                       stát, že inicializace prostředí selže.
+                       Pak je potřeba postupovat podle <a href="http://askubuntu.com/questions/279959/how-to-create-a-virtualenv-with-python3-3-in-ubuntu">rady na askubuntu.com</a>.
                 </div>
                 <div class="col-lg-12">
                     <p>
                         Tím se nám vytvořil adresář <code><span class="plhome">~/pyladies</span>/venv</code>,
                         ve kterém jsou soubory s virtuálním prostředím.
-                        Můžeš se podívat dovnitř, ale nikdy tam nic neměň!
+                        Můžeš se podívat dovnitř, ale nikdy tam nic neměň.
                     </p>
                 </div>
                 <div class="col-lg-12">
@@ -244,11 +283,10 @@ NameError: name 'whoami' is not defined
                 <div class="col-lg-12">
                     Pokud ses dostala až sem, gratuluji! To nejhorší – instalaci – máš za sebou.
                     Stačí už jen zavřít Python a pak i samotnou příkazovou řádku.
-                    V Pythonu se to dělá pomocí <code>quit()</code>, s prázdnými závorkami na konci;
-                    příkazová řádka má příkaz <code>exit</code>.
+                    V Pythonu se to dělá pomocí <code>quit()</code>, s prázdnými závorkami na konci.
 <pre>
 &gt;&gt;&gt; <b>quit()</b>
-(venv)$ <b>exit</b>
+(venv)$
 </pre>
                 </div>
                 <div class="col-lg-12">
@@ -259,6 +297,13 @@ NameError: name 'whoami' is not defined
                     <code>cd</code>, ale příkazy Pythonu
                     jako <code>1 + 2</code> fungovat nebudou, dokud Python
                     opět nepustíš pomocí příkazu <code>python</code>.
+                </div>
+                <div class="col-lg-12">
+                    Příkazovou řádku můžeš zavřít příkazem <code>exit</code> –
+                    bez závorek.
+<pre>
+(venv)$ <b>exit</b>
+</pre>
                 </div>
                 <div class="col-lg-12">
                     Pro cvik si zkus celé okno zavřít, a pak Python znovu
