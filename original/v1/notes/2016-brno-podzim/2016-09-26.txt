@@ -1,0 +1,85 @@
+První sraz byl docela chaotický. Wifi moc nefungovala, ale nakonec se našlo
+dost flashek na to, aby téměř všechny účastnice nainstalovaly vše potřebné.
+Jedna všechno nestihla, musela odejít dřív, ale doinstaluje doma; jedna
+narazila na problém na Macu: Git po spuštění segfaultuje.
+
+Zpětná vazba & reakce:
+
+- Problémy s internetem
+- Nefunkčnost wifi
+- Wifi ☹
+- Pomalý internet
+- Nešlo se připojit k netu
+- Nic, možná přetížená wifi ☺
+- Wifi? (ale s tím se asi nedalo nic dělat)
+- Škoda že nefungovala wifi
++ Snad půjde internet
+
+    Wifi byla největší problém. Zkusíme to vyřešit, snad už do příště.
+
+- Manuály byly moc dobře napsány, ale chyběla mi nějaká hlavní "osnova" –
+  nikdo mi neřekl, co vše se dnes má udělat a stihnout, přišlo mi to trochu
+  chaotické. Ale vždy, když jsme se zeptaly co dál, tak každý ochotně pomůže.
+  Díky ☺
+- Možná by bylo lepší na začátku říct, co je třeba udělat, aby se každý neptal
+  individuálně ☺
+
+    Tohle byl taky problém s netem – na http://pyladies.cz/brno/ osnova je.
+    Materiály z flashek byly bohužel docela chaotické.
+
+- Některé věci (příkazy) nevysvětlené (asi je to pro nás teď nepodstatné,
+  ale myslím, že pro naši lepší orientaci a pochopení by to bylo fajn mít
+  vysvětlené
+- Hodilo by se vysvětlení, co znamenají některá písmena v příkazech → je to
+  pak jen opičí opisování (ale to snad přejde)
+
+    Tady jde myslím o `rm -rv` a `rmdir /S`? Zbytek mi přišel vysvětlený.
+    Samozřejmě jsou tu koučové, ale materiály by měly být přístupné i bez nich.
+    Tak jsem nahlásil chybu: https://github.com/pyvec/naucse.python.cz/issues/9
+
++ Je tu málo místa
+
+    Moc lidí, málo místa. To se snad časem taky spraví.
+
+- Odkazy z materiálů na pyladies.cz by se měly otevírat v novém okně
+
+    Jestli je chceš do nového okna, klikej na ně prostředním tlačítkem myši.
+
+- Nic jiného negativního na srdci nemám. Krásný večer a děkuji všem! ☼
+- Zápory nemám, s prodlužkou už bylo všechno fajn
+- Děkuji vám a těším se!
+- Asi zatím nic
+
++ Jinak vše super! Těším se na příště ☺
++ Super, koučové byli téměř v přesile a akční
++ Díky
++ Trpělivé odpovídání na individuální dotazy ☺
++ Je super, že vše musíme udělat na klávesnici sami
++ Kouči ochotní, milí, moc pomohli
++ Super, milý přístup, díky za ochotu ☺
++ Těším se na vás
++ Všichni byli strašně moc milí, ochotní a fajn, to je strašně super ☺
+  Vždy někdo přišel s úsměvem pomoci ☺ Díky ☺
++ Ochotná pomoc
++ Moc milí koučové
++ Hezky připravené návody
++ Dnes to bylo přátelé naprosto super!!!
++ Skvěle vysvětleno
++ S každým problémem pomoženo
++ Srozumitelné vysvětlení pro naprostého neználka
++ Usměvavý a ochotný tým
++ Dobrý tip na poslední čtvrtky v měsíci
++ Pomoc při řešení problémů
++ Atmosféra
++ Bylo to parádní
++ Těším se na příště
++ Snad se naučím víc
++ Snad stihnu kafe
++ Všichni byli nápomocní
++ Instrukce na instalaci a příkazy byly srozumitelné
++ Skvělí kouči!
++ Všechny návody skvěle podrobné
++ Vždy mi někdo pomůže, když si nevím rady, nepřipadám si jako idiot ☺
++ Příjemní, ochotní kouči. Trpělivě vysvětlili instalaci...
++ Koučové byli ochotní a nápomocní a velmi pohotoví
++ Přátelské prostředí
