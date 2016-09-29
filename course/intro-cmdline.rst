@@ -14,6 +14,7 @@ se na různých systémech otevírá různě:
 
 * **Windows** (české): Start → Všechny programy → Příslušenství → Příkazový řádek
 * **Windows** (anglické): Start → All Programs → Accessories → Command Prompt
+* **macOS** (český): Aplikace → Utility → Terminál
 * **macOS** (anglické): Applications → Utilities → Terminal
 * **Linux** (KDE): Hlavní Menu → hledat Konsole
 * **Linux** (Gnome): Super → hledat Terminál
