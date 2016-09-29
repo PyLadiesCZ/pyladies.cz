@@ -39,7 +39,7 @@ knihovnami. OpenGL pouziva matematicky souradny system, nula je vlevo *dole*.
 """
 
 # Prvni radek (#!/usr/bin/env python3) je takzvany "shebang": na systemech
-# zalozenych na Unixu (Linux, OS X) umoznuje spustit tenhle soubor jednoduse
+# zalozenych na Unixu (Linux, macOS) umoznuje spustit tenhle soubor jednoduse
 # pomoci prikazu: ./pong.py
 
 # A ted uz k samotne hre: napred naimportujeme potrebne veci z knihovny pyglet

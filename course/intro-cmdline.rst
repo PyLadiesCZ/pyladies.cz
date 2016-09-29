@@ -14,7 +14,7 @@ se na různých systémech otevírá různě:
 
 * **Windows** (české): Start → Všechny programy → Příslušenství → Příkazový řádek
 * **Windows** (anglické): Start → All Programs → Accessories → Command Prompt
-* **Mac OS X** (anglické): Applications → Utilities → Terminal
+* **macOS** (anglické): Applications → Utilities → Terminal
 * **Linux** (KDE): Hlavní Menu → hledat Konsole
 * **Linux** (Gnome): Super → hledat Terminál
 
@@ -28,7 +28,7 @@ před nímž můžou být ještě další informace:
 
 .. container:: col-md-6 os-unix
 
-    **Unix (Linux, OS X)**::
+    **Unix (Linux, macOS)**::
 
     $
 
