@@ -42,7 +42,7 @@
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
     link: v1/s002-hello-world/and-or.html
-  - name: Instrukce a domácí projekty (PDF)
+  - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
