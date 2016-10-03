@@ -42,7 +42,9 @@
 \newcommand\plpage{
     \newpage
     \begin{tikzpicture}[remember picture,overlay]
-    \node[opacity=0.1,below left,xshift=1cm,yshift=1cm] at (current page.north east) {\includegraphics[width=12cm]{../../images/pylady-pink}};
+        \node[opacity=0.1,below left,xshift=1cm,yshift=1cm] at (current page.north east) {\includegraphics[width=12cm]{../../images/pylady-pink}};
+        \node[below left,align=right,yshift=-1.5em] at (current page.north east) {\color{white} strana \thepage};
+        \node[below left,align=right] at (current page.north east) {\color{white} sada \plsetno};
     \end{tikzpicture}
 }
 
@@ -64,11 +66,13 @@
 \newfontfamily\headingfont[]{Bree Serif}
 \titleformat*{\section}{\LARGE\headingfont}
 
+\newcommand\plsetno{2}
+
 \begin{document}
 
 \plpage
 
-\section*{Domácí projekty 2}
+\section*{Domácí projekty \plsetno}
 
 \begin{enumerate}
 \item Jakou používáš verzi Pythonu?
