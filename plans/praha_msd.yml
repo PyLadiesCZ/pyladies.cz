@@ -1,6 +1,6 @@
 - name: Instalace
-  date: 2016-09-13
-  done: true
+  date: 2016-10-05
+  done: false
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -24,8 +24,8 @@
     type: homework
     link: v1/s001-install/handout/handout.pdf
 - name: První program
-  date: 2016-09-20
-  done: true
+  date: 2016-10-12
+  done: false
   materials:
   - name: První program
     type: lesson
@@ -46,8 +46,8 @@
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
-  date: 2016-09-27
-  done: true
+  date: 2016-10-19
+  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -65,7 +65,7 @@
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Správa zdrojového kódu
-  date: 2016-10-04
+  date: 2016-10-26
   done: false
   materials:
   - name: Git
@@ -81,7 +81,7 @@
     type: homework
     link: v1/s003-looping/handout/handout3b.pdf
 - name: Funkce & Řetězce
-  date: 2016-10-11
+  date: 2016-11-02
   done: false
   materials:
   - name: Vlastní funkce
@@ -96,14 +96,8 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
-- name: Procvičování
-  date: 2016-10-18
-  done: false
-  materials:
-  - name: Procvičíme si vše, co jsme se naučily
-    type: lesson
 - name: Testování
-  date: 2016-10-25
+  date: 2016-11-09
   done: false
   materials:
   - name: Výjimky
@@ -122,7 +116,7 @@
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
 - name: Spolupráce a Open-Source
-  date: 2016-11-01
+  date: 2016-11-16
   done: false
   materials:
   - name: Spolupráce & Open Source
@@ -144,7 +138,7 @@
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Seznamy
-  date: 2016-11-08
+  date: 2016-11-23
   done: false
   materials:
   - name: Turnaj v piškvorkách
@@ -162,7 +156,7 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2016-11-15
+  date: 2016-11-30
   done: false
   materials:
   - name: Slovníky
@@ -178,7 +172,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
-  date: 2016-11-22
+  date: 2016-12-07
   done: false
   materials:
   - name: Grafika
@@ -191,7 +185,7 @@
     type: link
     link: v1/s012-pyglet/pong.py
 - name: Třídy
-  date: 2016-11-29
+  date: 2016-12-14
   done: false
   materials:
   - name: Třídy
@@ -201,7 +195,7 @@
     type: lesson
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
-  date: 2016-12-06
+  date: 2016-12-21
   done: false
   materials:
   - name: Asteroids
@@ -209,7 +203,7 @@
     link: v1/s015-asteroids/index.html
 - name: Odbočky
   description: |
-    Někdy je na sraze menší účast, tak zařadíme téma na přání,
+    Kdyby se stalo, že bude na srazu menší účast, tak zařadíme téma na přání,
     které je zajímavé, ale dá se přeskočit.
     Ne vždycky je to téma předem připravené, a proto tu bohužel
     k některým nejsou materiály.
