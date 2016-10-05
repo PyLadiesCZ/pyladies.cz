@@ -61,9 +61,13 @@ def brno():
     return render_template('brno.html', plan=read_yaml('plans/brno.yml'))
 
 
-@app.route('/praha/')
+@app.route('/praha/cznic/')
 def praha():
     return render_template('praha.html', plan=read_yaml('plans/praha.yml'))
+
+@app.route('/praha/msd/')
+def praha():
+    return render_template('praha_msd.html', plan=read_yaml('plans/praha_msd.yml'))
 
 @app.route('/ostrava/')
 def ostrava():
