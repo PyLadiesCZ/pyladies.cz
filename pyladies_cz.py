@@ -66,7 +66,7 @@ def praha():
     return render_template('praha.html', plan=read_yaml('plans/praha.yml'))
 
 @app.route('/praha/msd/')
-def praha():
+def praha_msd():
     return render_template('praha_msd.html', plan=read_yaml('plans/praha_msd.yml'))
 
 @app.route('/ostrava/')
