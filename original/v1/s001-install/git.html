@@ -52,7 +52,7 @@
                 <section class="col-lg-6">
                     <h4>Ubuntu, Debian:</h4>
                     <div>
-                        <pre>$ sudo apt-get install git gitk git-gui</pre>
+                        <pre>$ sudo apt-get install git gitk git-gui nano</pre>
                     </div>
                 </section>
                 <section class="col-lg-12">
@@ -68,7 +68,13 @@
                     </div>
                 </section>
                 <section class="col-lg-12">
-                    Jestli máš nainstalováno, pokračuj Nastavením níže.
+                    Jestli máš nainstalováno, ještě nastavíme editor.
+                    Pokud nemáš ráda Vim (nebo nevíš co to je),
+                    zadej tento příkaz:
+<pre>
+git config --global core.editor nano
+</pre>
+                    Dál pokračuj obecným nastavením níže.
                 </section>
                 <section class="col-lg-12">
                     <h2>Windows</h2>
@@ -101,6 +107,13 @@
                     Je-li už nainstalovaný, dozvíš se, jak ho používat
                     (výpis začíná <code>usage</code>).
                     Jinak by se měly objevit instalační instrukce.
+
+                    Gitu je ještě potřeba nastavit editor.
+                    Dělá se to tímto příkazem:
+<pre>
+git config --global core.editor nano
+</pre>
+                    Dál pokračuj obecným nastavením níže.
                 </section>
                 <section class="col-lg-12">
                     <h2>Nastavení</h2>
