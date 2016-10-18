@@ -98,7 +98,7 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování
   date: 2016-10-18
-  done: false
+  done: true
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: lesson
