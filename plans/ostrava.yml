@@ -47,7 +47,7 @@
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
   date: 2016-10-18
-  done: false
+  done: true
   materials:
   - name: Funkce
     type: lesson
@@ -55,19 +55,19 @@
   - name: Želva a cykly
     type: lesson
     link: v1/s003-looping/turtle.html
-  - name: Cyklus `While`
-    type: lesson
-    link: v1/s003-looping/while.html
   - name: Tahák s užitečnými funkcemi
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
-- name: Správa zdrojového kódu
+- name: Jeden nový cyklus a správa zdrojového kódu
   date: 2016-10-25
   done: false
   materials:
+  - name: Cyklus `While`
+    type: lesson
+    link: v1/s003-looping/while.html
   - name: Git
     type: lesson
     link: v1/s009-git/git.html
