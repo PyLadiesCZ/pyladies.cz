@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-
 {% block content %}
   <!-- Intro Header -->
   <header class="intro-info intro-city-brno">
@@ -37,6 +36,88 @@
             </div>
         </div>
     </section>
+
+    <!-- Team section -->
+    <section id="team" class="container content-section text-center">
+      <h2 class="course-city-heading">Tým brněnských PyLadies</h2>
+
+      {{ member_box(
+        'Petr Viktorin',
+        img='img/praha/team/peterv.jpg',
+        role='Hlavní kouč',
+        links=[
+            ('website-link', 'http://encukou.cz')
+        ],
+      ) }}
+
+      {{ member_box(
+        'Martina Antalovová',
+        img='img/brno/team/martina.jpg',
+        role='Hlavní organizátorka/Koučka',
+        links=[
+            ('mail-link', 'mailto:antalovova@gmail.com'),
+            ('linkedin-link', 'https://www.linkedin.com/in/martina-ant'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Pavel Dedík',
+        img='img/brno/team/pavel.jpg',
+        role='Kouč',
+        links=[
+            ('mail-link', 'mailto:dedikx@gmail.com'),
+            ('github-link', 'https://github.com/paveldedik'),
+            ('website-link', 'http://paveldedik.com'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Jarmila Hladká',
+        img='img/brno/team/jarka.jpg',
+        role='Koučka',
+        links=[
+            ('mail-link', 'mailto:jarka.repakova@centrum.cz'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Jenda Král',
+        img='img/brno/team/honza.jpg',
+        role='Kouč',
+        links=[
+            ('mail-link', 'mailto:jenda.kraluj@gmail.com'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Zuzana Piskořová',
+        img='img/brno/team/zuzana.jpg',
+        role='Koučka',
+        links=[
+            ('mail-link', 'mailto:zuzanapiskorova@gmail.com'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Manka Stará',
+        img='img/brno/team/manka.jpg',
+        role='Koučka',
+        links=[
+            ('mail-link', 'mailto:manka.py@gmail.com'),
+        ],
+      ) }}
+
+      {{ member_box(
+        'Jiří Zapletal',
+        img='img/brno/team/jiri.jpg',
+        role='Kouč',
+        links=[
+            ('mail-link', 'mailto:yaplik@gmail.com'),
+        ],
+      ) }}
+
+  </section>
+
     <!-- Advice section -->
     <section id="about3" class="container-fluid content-section text-center">
       <div class="row">
