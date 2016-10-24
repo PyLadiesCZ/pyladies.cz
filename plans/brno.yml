@@ -66,6 +66,7 @@
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Správa zdrojového kódu
   date: 2016-10-17
+  done: true
   materials:
   - name: Git
     type: lesson
