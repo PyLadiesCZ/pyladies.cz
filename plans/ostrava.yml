@@ -63,7 +63,7 @@
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Jeden nový cyklus a správa zdrojového kódu
   date: 2016-10-25
-  done: false
+  done: true
   materials:
   - name: Cyklus `While`
     type: lesson
@@ -74,6 +74,7 @@
   - name: Větvení v Gitu
     type: lesson
     link: v1/s009-git/branching.html
+    done: false
   - name: Gitový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
