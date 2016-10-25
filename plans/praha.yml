@@ -104,7 +104,7 @@
     type: lesson
 - name: Testování
   date: 2016-10-25
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
