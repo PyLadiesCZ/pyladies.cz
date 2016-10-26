@@ -66,7 +66,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
 - name: Správa zdrojového kódu
   date: 2016-10-26
-  done: false
+  done: true
   materials:
   - name: Git
     type: lesson
