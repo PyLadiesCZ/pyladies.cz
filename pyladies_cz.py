@@ -115,7 +115,7 @@ def read_yaml(filename):
         if 'description' in lesson:
             lesson['description'] = convert_markdown(lesson['description'],
                                                      inline=True)
-        for mat in lesson['materials']:
+        for mat in lesson.get('materials', ()):
             mat['name'] = convert_markdown(mat['name'], inline=True)
 
     return data
