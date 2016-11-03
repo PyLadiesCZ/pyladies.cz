@@ -81,8 +81,12 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3b.pdf
-- name: Funkce & Řetězce
+- name: Procvičování
   date: 2016-11-01
+  description: Během této lekce jsme procvičovali a dodělávali domácí projekty
+  done: true
+- name: Funkce & Řetězce
+  date: 2016-11-08
   done: false
   materials:
   - name: Vlastní funkce
@@ -98,7 +102,7 @@
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
 - name: Testování
-  date: 2016-11-08
+  date: 2016-11-15
   done: false
   materials:
   - name: Výjimky
@@ -117,7 +121,7 @@
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
 - name: Spolupráce a Open-Source
-  date: 2016-11-15
+  date: 2016-11-22
   done: false
   materials:
   - name: Spolupráce & Open Source
@@ -139,7 +143,7 @@
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Seznamy
-  date: 2016-11-22
+  date: 2016-11-29
   done: false
   materials:
   - name: Turnaj v piškvorkách
@@ -157,7 +161,7 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2016-11-29
+  date: 2016-12-06
   done: false
   materials:
   - name: Slovníky
@@ -173,7 +177,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
-  date: 2016-12-06
+  date: 2016-12-13
   done: false
   materials:
   - name: Grafika
@@ -186,7 +190,7 @@
     type: link
     link: v1/s012-pyglet/pong.py
 - name: Třídy
-  date: 2016-12-13
+  date: 2016-12-20
   done: false
   materials:
   - name: Třídy
@@ -196,7 +200,7 @@
     type: lesson
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
-  date: 2016-12-20
+  date: 2017-01-10
   done: false
   materials:
   - name: Asteroids
