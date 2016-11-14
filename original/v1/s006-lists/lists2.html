@@ -23,9 +23,10 @@
                         <p>
                             Tahle kapitola je plná nových věcí.
                             Doufám že vydržíš až do konce. A kdyby něco
-                            zatím nedávalo úlně smysl, nevěš hlavu: na příště
-                            máme naplánováno praktické využití věcí,
-                            které se teď naučíme.
+                            zatím nedávalo úlně smysl, nevěš hlavu:
+                            věci, které si teď vysvětlíme, se opravdu naučíš
+                            až v dalších lekcích, kde je budeme využívat
+                            prakticky.
                             <div>
                                 Encyklopedické informace z této stránky shrnuje
                                 <a href="https://github.com/encukou/cheatsheets/blob/master/lists/lists-cs.pdf">Tahák na seznamy</a>,
@@ -44,8 +45,8 @@
                             Doufám že víš, kde máš na klávesnici hranaté
                             závorky, protože právě těmi se seznamy vytváří:
 <pre>
-fibonacciho_cisla = [1, 1, 2, 3, 5, 8, 13]
-print(fibonacciho_cisla)
+cisla = [1, 1, 2, 3, 5, 8, 13]
+print(cisla)
 </pre>
                         </p>
                         <div class="note">
@@ -61,7 +62,7 @@ print(fibonacciho_cisla)
                             procházet řetězec po znacích,
                             seznam můžeme procházet po jednotlivých prvcích:
 <pre>
-for cislo in fibonacciho_cisla:
+for cislo in cisla:
     print(cislo)
 </pre>
                         </p>
@@ -95,7 +96,7 @@ print(seznam)
                             se dá číslo prvku. Čísluje se, jako u řetězců,
                             od nuly; záporná čísla označují prvky od konce.
 <pre>
-print(fibonacciho_cisla[2])
+print(cisla[2])
 </pre>
                         </p>
                         <p>
@@ -107,7 +108,7 @@ print(fibonacciho_cisla[2])
                             funguje to stejně, jen místo menšího řetězce
                             dostaneme menší seznam.
 <pre>
-print(fibonacciho_cisla[2:-3])
+print(cisla[2:-3])
 </pre>
                         </p>
                         <h2>Měnění seznamů</h2>
@@ -497,7 +498,7 @@ def tah_pocitace(pole, symbol):
                             Zkus napsat funkci <code>zamen_xo</code>.
                             Udělej v ní seznam jednotlivých znaků
                             (viz sekce Tvoření seznamů),
-                            a pak ho převéď na řetězec pomocí
+                            a pak ho převeď na řetězec pomocí
                             <code>join</code>.
                         </p>
 <details class="solution notes"><h3>Řešení</h3>
@@ -559,7 +560,7 @@ tah_pocitace = random.choice(mozne_tahy)
                             A perlička na konec!
                             Na začátku tohoto textu je napsáno, že v seznam
                             může obsahovat jakýkoli typ hodnot.
-                            Samozřejmě může obsahovat i další seznamy:
+                            Platí to i pro další seznamy:
 <pre>
 seznam_seznamu = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 </pre>
