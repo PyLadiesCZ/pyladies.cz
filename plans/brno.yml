@@ -117,6 +117,7 @@
     link: v1/s005-modules/handout/handout5.pdf
 - name: Spolupráce a Open-Source
   date: 2016-11-07
+  done: true
   materials:
   - name: Spolupráce & Open Source
     type: lesson
