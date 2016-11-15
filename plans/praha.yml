@@ -163,7 +163,7 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
   date: 2016-11-15
-  done: false
+  done: true
   materials:
   - name: Slovníky
     type: lesson
