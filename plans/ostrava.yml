@@ -103,7 +103,7 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Testování
   date: 2016-11-15
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
