@@ -167,12 +167,6 @@
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
-- name: Odbočka
-  date: 2016-05-16
-  done: true
-  materials:
-  - name: MicroPython a světýlka
-    type: special
 - name: Slovníky
   date: 2016-11-28
   materials:
@@ -203,8 +197,16 @@
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
-- name: Závěrečný projekt II
+- name: Vánoční speciál
   date: 2016-12-19
+  done: true
+  materials:
+  - name: MicroPython a světýlka
+    type: special
+- name: Opakování/téma na přání
+  date: 2016-01-02
+- name: Závěrečný projekt II
+  date: 2016-01-09
   materials:
   - name: Pokračování Asteroids
     type: special
