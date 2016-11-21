@@ -190,6 +190,9 @@
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
+  - name: Tahák na Pyglet
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2016-11-29
   done: false
