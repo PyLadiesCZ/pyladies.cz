@@ -170,12 +170,6 @@
   - name: Tahák na Pyglet
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
-- name: Odbočka
-  date: 2016-05-16
-  done: true
-  materials:
-  - name: MicroPython a světýlka
-    type: special
 - name: Slovníky
   date: 2016-11-28
   materials:
@@ -206,8 +200,16 @@
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
-- name: Závěrečný projekt II
+- name: Vánoční speciál
   date: 2016-12-19
+  done: true
+  materials:
+  - name: MicroPython a světýlka
+    type: special
+- name: Opakování/téma na přání
+  date: 2016-01-02
+- name: Závěrečný projekt II
+  date: 2016-01-09
   materials:
   - name: Pokračování Asteroids
     type: special
