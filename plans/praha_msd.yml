@@ -123,7 +123,7 @@
     link: v1/s005-modules/handout/handout5.pdf
 - name: Spolupráce a Open-Source
   date: 2016-11-23
-  done: false
+  done: true
   materials:
   - name: Spolupráce & Open Source
     type: lesson
@@ -147,8 +147,6 @@
   date: 2016-11-30
   done: false
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
     link: v1/s006-lists/lists2.html
@@ -165,6 +163,8 @@
   date: 2016-12-07
   done: false
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Slovníky
     type: lesson
     link: v1/s011-dicts/dicts.html
