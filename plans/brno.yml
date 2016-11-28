@@ -157,6 +157,7 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Grafika
   date: 2016-11-21
+  done: true
   materials:
   - name: Grafika
     type: lesson
