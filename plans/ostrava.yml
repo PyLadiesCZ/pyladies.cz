@@ -142,8 +142,12 @@
   - name: odkaz k domácím projektům – „日本語の表記体系” na japonské Wikipedii
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
-- name: Seznamy
+- name: Procvičování
   date: 2016-11-29
+  description: Během této lekce jsme procvičovali a dodělávali domácí projekty
+  done: true
+- name: Seznamy
+  date: 2016-12-06
   done: false
   materials:
   - name: Turnaj v piškvorkách
@@ -161,7 +165,7 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2016-12-06
+  date: 2016-12-13
   done: false
   materials:
   - name: Slovníky
@@ -177,7 +181,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
-  date: 2016-12-13
+  date: 2016-12-20
   done: false
   materials:
   - name: Grafika
@@ -193,7 +197,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
-  date: 2016-12-20
+  date: 2017-01-10
   done: false
   materials:
   - name: Třídy
@@ -203,7 +207,7 @@
     type: lesson
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
-  date: 2017-01-10
+  date: 2017-01-17
   done: false
   materials:
   - name: Asteroids
