@@ -173,6 +173,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Slovníky
   date: 2016-11-28
+  done: true
   materials:
   - name: Slovníky
     type: lesson
