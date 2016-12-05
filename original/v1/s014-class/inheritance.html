@@ -26,7 +26,7 @@
                 <section class="col-lg-12">
                     <h1>Dědičnost</h1>
                     <p>
-                        Minule jsme probraly třídy – jako příklad jsme si
+                        Minule jsme probraly třídy, a jako příklad jsme si
                         ukázaly třídu pro koťátka:
 <pre>
 class Kotatko:
@@ -53,10 +53,10 @@ class Stenatko:
 </pre>
                         Většina kódu je stejná!
                         Kdybys měla napsat i třídu pro kuřátka, kůzlátka,
-                        slůňátka a háďátka, bez Ctrl+C by to bylo docela nudné.
+                        slůňátka a háďátka, bylo by to docela nudné.
                         A protože jsou programátoři líní psát stejný kód
                         několikrát (a hlavně ho potom udržovat), vymysleli
-                        mechanismus, jak se toho vyvarovat. Jak?
+                        mechanismus, jak se toho vyvarovat.
                     </p>
                     <p>
                         I koťátka i štěňátka jsou zvířátka.
@@ -99,9 +99,9 @@ azorek.snez('kost')
                         <em>dědí</em> ze třídy <code>Zviratko</code>
                         (angl. <em>inherits</em> from <code>Zviratko</code>).
                         Případně se můžeš setkat s jinými termíny:
-                        „je odvozená” ze třídy <code>Zviratko</code>,
+                        „je odvozená“ ze třídy <code>Zviratko</code>,
                         (angl. <em>derived from</em>),
-                        nebo ji rozšiřuje, angl. <em>extends</em>).
+                        nebo ji „rozšiřuje“ (angl. <em>extends</em>).
                         A když už jsme u terminologie, odvozeným třídám se
                         říká taky <em>podtřídy</em> (angl. <em>subclasses</em>),
                         a <code>Zviratko</code> je tu <em>nadtřída</em>
@@ -113,8 +113,8 @@ azorek.snez('kost')
                         a nenajde ji přímo ve třídě daného objektu (u nás
                         <code>Kotatko</code>), podívá se do nadtřídy.
                         Takže všechno, co je definované pro
-                        <code>Zviratko</code>, platí i pro koťátka.
-                        Pokud to tedy výslovně nezměníš.
+                        <code>Zviratko</code>, platí i pro koťátka,
+                        pokud to výslovně nezměníš.
                     </p>
                     <h1>Přepisování metod a <code>super()</code></h1>
                     <p>
@@ -132,7 +132,7 @@ micka.snez('granule')
 </pre>
                     </p>
                     <p class="note">
-                        Je to podobné jako když jsme minule přeisovali atribut
+                        Je to podobné jako když jsme minule přepisovali atribut
                         pomocí <code>micka.zamnoukej = 12345</code>.
                         Python atributy hledá napřed na samotném objektu,
                         potom na třídě toho objektu, a pak na nadtřídě
@@ -143,7 +143,7 @@ micka.snez('granule')
                         potřebovat použít původní funkčnost, jen budeš chtít
                         udělat ještě něco navíc.
                         To umí zařídit speciální funkce <code>super()</code>,
-                        na kterém můžeme volat metody z nadtřídy.
+                        pomocí které můžeme volat metody z nadtřídy.
                         Třeba takhle:
 <pre>
 class Kotatko(Zviratko):
@@ -176,7 +176,8 @@ standa.snez('myš')
                         Jak je vidět, <code>super()</code> se dá bez problémů
                         kombinovat se speciálními metodami jako
                         <code>__init__</code>.
-                        Dokonce se to dělá poměrně často!
+                        Dokonce se to v opravdových programech dělá poměrně
+                        často!
                     </p>
                     <h1>Polymorfismus</h1>
                     <p>
@@ -226,8 +227,8 @@ for zviratko in zviratka:
                         nebo <em>panelák</em> je <em>stavení</em>.
                         V takových případech dává dědičnost smysl.
                         <br>
-                        Někdy se ale stane, že tuhle pomůcku použiješ a narazíš
-                        na nesmysl jako „každé auto je volant”.
+                        Někdy se ti ale může stát, že tuhle pomůcku použiješ
+                        a narazíš na nesmysl jako „každé auto je volant”.
                         V takovém případě dědičnost nepoužívej.
                         I když jak auto tak volant se dají „otočit doprava”,
                         u každého to znamená něco jiného – a určitě nejde auto
@@ -238,8 +239,8 @@ for zviratko in zviratka:
                         a do <code>Auto.__init__</code> napsat něco jako
                         <code>self.volant = Volant()</code>.
                         <br>
-                        (A až bude nějaký vystudovaný informatik nespokojený
-                        s tím, že porušuješ
+                        (A kdyby ti nějaký vystudovaný informatik někdy vyčítal,
+                        že porušuješ
                         <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskovové substituční princip</a>,
                         jde o právě tento problém.)
                     </p>
@@ -248,7 +249,8 @@ for zviratko in zviratka:
                         a <code>zastekej</code>, možná tě napadne, že by se
                         daly pojmenovat lépe, aby se daly použít pro všechna
                         zvířata, podobně jako <code>snez</code>.
-                        Bude nejlepší je přejmenovat:
+                        Bude nejlepší je přejmenovat, a říct že každé zvířátko
+                        by mělo umět udělat zvuk:
 <pre>
 class Zviratko:
     def __init__(self, jmeno):
