@@ -369,9 +369,13 @@ print(cisla)
                             ale nebude to ten samý seznam:
                             měnit se bude nezávisle na tom starém.
                         </div>
+                        <div>
+                            Jinou možností se stejným výsledkem je použití
+                            metody <code>copy</code>.
+                        </div>
 <pre>
 a = [1, 2, 3]
-b = list(a)
+b = list(a)  <span class="comment"># nebo: b = a.copy()</span>
 
 print(b)
 a.append(4)
