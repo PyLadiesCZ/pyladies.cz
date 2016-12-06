@@ -148,7 +148,7 @@
   done: true
 - name: Seznamy
   date: 2016-12-06
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
