@@ -205,7 +205,7 @@
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
   date: 2016-12-06
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
