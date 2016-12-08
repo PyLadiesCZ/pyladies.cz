@@ -77,6 +77,10 @@ def ostrava():
 def stan_se():
     return render_template('stan_se.html')
 
+@app.route('/faq/')
+def stan_se():
+    return render_template('faq.html')
+
 @app.route('/v1/<path:path>')
 def v1(path):
     return send_from_directory(v1_path, path)
