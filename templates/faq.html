@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 
 {% block content %}
-      <!-- Intro Header -->
-      <header class="intro-info intro-material">
+    <!-- Intro Header -->
+    <header class="intro-info intro-material">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -16,50 +16,63 @@
         </div>
     </header>
     <!-- Main section -->
-    <section class="course-city container">
+    <section class="course-city faq container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-{% filter markdown %}
-<h3 class="faq">Jak se můžu přihlásit do začátečnického kurzu?</h3>
-<p class="faq-p">Vždy před zahájením nového kurzu spouštíme přihlašování přes registrační formuláře. Pokud zrovna neprobíhá přihlašování, je možné kontaktovat organizátorky a zapsat se na mailing list pro příští registraci.</p><br />
-<h3 class="faq">Co mě bude stát začátečnický kurz?</h3>
-<p class="faq-p">Kurz je zcela zdarma, ale na druhou stranu stojí hodně času. Kromě samotných dvouhodinových srazů zabere dost času i domácí příprava, která je velmi důležitá.</p><br />
-<h3 class="faq">Podle jakých kritérií se vybírají účastnice do kurzu?</h3>
-<p class="faq-p">Zajímá nás především osobní motivace a očekávání od kurzu. V přihlášce se ptáme také na dosavadní zkušenosti s programováním, neznamená to však, že více zkušeností znamená lepší hodnocení. Přihlášky pak hodnotí nezávisle na sobě několik lidí a výsledky se sčítají.</p><br />
-<h3 class="faq">Může se do PyLadies kurzu přihlásit úplná začátečnice?</h3>
-<p class="faq-p">Ano, začátečnický kurz je dělaný pro naprosté začátečníky. Stačí umět základní ovládání počítače – poslat e-mail, stáhnout z internetu a nainstalovat program, pracovat se složkami a soubory.</p><br />
-<h3 class="faq">Může se do začátečnického kurzu přihlásit někdo, kdo už nějaké základy programování zná?</h3>
-<p class="faq-p">Může! Upevnit si základy není nikdy na škodu. Počítej ale s tím, že než se dostaneme ke složitějším tématům, může pro tebe být tempo kurzu pomalé. <br />
-Pokud už programuješ, jen třeba ne v Pythonu, můžeš se přihlásit jako vedlejší koučka. Základy Pythonu pochytíš, i když budeš mezitím pomáhat ostatním řešit menší problémy.</p><br />
-<h3 class="faq">Může se přihlásit kluk?</h3>
-<p class="faq-p">Přihlášku samozřejmě mohou vyplnit a zaslat i pánové, nicméně uplatňujeme pravidlo, že v případě, že se přihlásí dostatečný počet zájemkyň, dostanou při výběru přednost, protože je to naše primární cílová skupina.
-<br />
-<em>*Aktuálně se v python komunitě vážně zabýváme tím, že bychom v Praze uspořádali začátečnický kurz Pythonu bez ohledu na pohlaví, zatím je to teprve ve fázi počátečních příprav a rádi případně uvítáme pomoc s organizací.</em></p><br />
-<h3 class="faq">Jaký je rozdíl mezi PyLadies a Django Girls</h3>
-<p class="faq-p">Django Girls jsou jednodenní workshopy zaměřené na programování webových stránek, PyLadies kurz pro začátečníky je tříměsíční kurz, kde se dámy učí základní principy programování a nezaměřují se pouze na jednu konkrétní oblast. Stejně jako PyLadies jsou i Django Girls součástí mezinárodní iniciativy, viz www.djangogirls.org.</p><br />
-{% endfilter %}
-</div>
-<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-{% filter markdown %}
-<h3 class="faq">Co jsou PyLadies Advanced a jak se mohu přihlásit?</h3>
-<p class="faq-p">PyLadies Advanced jsou neformální srazy pro dámy, které už mají za sebou začátečnický kurz nebo se jinou cestou naučily základy programování. Záměrem je společně se dál učit a rozvíjet, inspirovat se navzájem, pomáhat si s projekty, dozvídat se novinky ze světa IT (nejen Pythonu) a bavit se programováním. Přihlásit se můžeš jednoduše, stačí napsat mail a domluvíme se, co a jak.</p><br />
-<h3 class="faq">Mám za sebou kurz PyLadies a chci si najít první práci v IT. Co mám dělat?</h3>
-<p class="faq-p">Je zapotřebí ujasnit si, na jakou pracovní oblast by ses chtěla zaměřit. Můžeme poskytnout konzultace a v některých oblastech i přímé kontakty na firmy, kde mají o začínající programátorky zájem. Python komunita je v tomto ohledu velmi nápomocná, tak se hlavně neboj toho využít.</p><br />
-<h3 class="faq">Jsme firma a zajímá nás spolupráce s PyLadies</h3>
-<p class="faq-p">Dejte nám o sobě vědět! Rádi zprostředkujeme Vaše nabídky pracovního uplatnění, pokud jsou vhodné pro začínající programátorky. Pokud chcete podpořit naše aktivity, jakožto nezisková iniciativa vítáme i možnosti sponzorské spolupráce.</p><br />
-<h3 class="faq">Jaký je rozdíl mezi PyLadies a Czechitas</h3>
-<p class="faq-p">Czechitas mají za cíl dostat více žen do IT, PyLadies mají za cíl naučit ženy programovat. Rozdíl je v tom, že IT je poměrně široký pojem a samotné programování je jen jednou z jeho disciplín. <br />
-Czechitas se specializují zejména na webové workshopy nebo dlouhodobý kurz práce s daty. Kurz PyLadies je naopak zaměřený čistě na programování.
-<br />
-Czechitas příležitostně pořádají workshopy nebo kurzy programování, různě dlouhé a v různých programovacích jazycích. PyLadies organizují tříměsíční kurzy vždy v jazyce Python, za tu dobu lze dojít od úplných základů programování až ke komplexnějším projektům.
-<br />
-Czechitas programovací workshopy jsou zpravidla placené, PyLadies jsou zdarma a materiály, podle kterých se začátečnice učí, jsou na webu volně k dispozici všem (uplatňujeme princip Open Source).
-<br />
-České PyLadies jsou aktivní součástí komunity lidí a firem sdružených kolem jazyka Python. Zároveň jsou lokální odnoží mezinárodní iniciativy PyLadies - je tedy možné využívat kontakty a síť PyLadies i jinde ve světě, třeba při dlouhodobém pobytu v zahraničí. Czechitas vznikly přímo v ČR, takže zatím nejsou součástí širší sítě. V podstatě zde budují zcela novou vlastní komunitu.
-</p><br />
 
-{% endfilter %}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                <h3>Jak se můžu přihlásit do začátečnického kurzu?</h3>
+                <p>Vždy před zahájením nového kurzu spouštíme přihlašování přes registrační formuláře. Pokud zrovna neprobíhá přihlašování, je možné kontaktovat organizátorky a zapsat se na mailing list pro příští registraci.</p>
+
+                <h3>Co mě bude stát začátečnický kurz?</h3>
+                <p>Kurz je zcela zdarma, ale na druhou stranu stojí hodně času. Kromě samotných dvouhodinových srazů zabere dost času i domácí příprava, která je velmi důležitá.</p>
+
+                <h3>Podle jakých kritérií se vybírají účastnice do kurzu?</h3>
+                <p>Zajímá nás především osobní motivace a očekávání od kurzu. V přihlášce se ptáme také na dosavadní zkušenosti s programováním, neznamená to však, že více zkušeností znamená lepší hodnocení. Přihlášky pak hodnotí nezávisle na sobě několik lidí a výsledky se sčítají.</p>
+
+                <h3>Může se do PyLadies kurzu přihlásit úplná začátečnice?</h3>
+                <p>Ano, začátečnický kurz je dělaný pro naprosté začátečníky. Stačí umět základní ovládání počítače – poslat e-mail, stáhnout z internetu a nainstalovat program, pracovat se složkami a soubory.</p>
+
+                <h3>Může se do začátečnického kurzu přihlásit někdo, kdo už nějaké základy programování zná?</h3>
+                <p>
+                    Může! Upevnit si základy není nikdy na škodu. Počítej ale s tím, že než se dostaneme ke složitějším tématům, může pro tebe být tempo kurzu pomalé.
+                    <br />
+                    Pokud už programuješ, jen třeba ne v Pythonu, můžeš se přihlásit jako vedlejší koučka. Základy Pythonu pochytíš, i když budeš mezitím pomáhat ostatním řešit menší problémy.
+                </p>
+
+                <h3>Může se přihlásit kluk?</h3>
+                <p>
+                    Přihlášku samozřejmě mohou vyplnit a zaslat i pánové, nicméně uplatňujeme pravidlo, že v případě, že se přihlásí dostatečný počet zájemkyň, dostanou při výběru přednost, protože je to naše primární cílová skupina.
+                    <br />
+                    <em>*Aktuálně se v python komunitě vážně zabýváme tím, že bychom v Praze uspořádali začátečnický kurz Pythonu bez ohledu na pohlaví, zatím je to teprve ve fázi počátečních příprav a rádi případně uvítáme pomoc s organizací.</em>
+                </p>
+
+                <h3>Jaký je rozdíl mezi PyLadies a Django Girls</h3>
+                <p>Django Girls jsou jednodenní workshopy zaměřené na programování webových stránek, PyLadies kurz pro začátečníky je tříměsíční kurz, kde se dámy učí základní principy programování a nezaměřují se pouze na jednu konkrétní oblast. Stejně jako PyLadies jsou i Django Girls součástí mezinárodní iniciativy, viz www.djangogirls.org.</p>
             </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                <h3>Co jsou PyLadies Advanced a jak se mohu přihlásit?</h3>
+                <p>PyLadies Advanced jsou neformální srazy pro dámy, které už mají za sebou začátečnický kurz nebo se jinou cestou naučily základy programování. Záměrem je společně se dál učit a rozvíjet, inspirovat se navzájem, pomáhat si s projekty, dozvídat se novinky ze světa IT (nejen Pythonu) a bavit se programováním. Přihlásit se můžeš jednoduše, stačí napsat mail a domluvíme se, co a jak.</p>
+
+                <h3>Mám za sebou kurz PyLadies a chci si najít první práci v IT. Co mám dělat?</h3>
+                <p>Je zapotřebí ujasnit si, na jakou pracovní oblast by ses chtěla zaměřit. Můžeme poskytnout konzultace a v některých oblastech i přímé kontakty na firmy, kde mají o začínající programátorky zájem. Python komunita je v tomto ohledu velmi nápomocná, tak se hlavně neboj toho využít.</p>
+
+                <h3>Jsme firma a zajímá nás spolupráce s PyLadies</h3>
+                <p>Dejte nám o sobě vědět! Rádi zprostředkujeme Vaše nabídky pracovního uplatnění, pokud jsou vhodné pro začínající programátorky. Pokud chcete podpořit naše aktivity, jakožto nezisková iniciativa vítáme i možnosti sponzorské spolupráce.</p>
+
+                <h3>Jaký je rozdíl mezi PyLadies a Czechitas</h3>
+                <p>
+                    Czechitas mají za cíl dostat více žen do IT, PyLadies mají za cíl naučit ženy programovat. Rozdíl je v tom, že IT je poměrně široký pojem a samotné programování je jen jednou z jeho disciplín. <br />
+                    Czechitas se specializují zejména na webové workshopy nebo dlouhodobý kurz práce s daty. Kurz PyLadies je naopak zaměřený čistě na programování.
+                    <br />
+                    Czechitas příležitostně pořádají workshopy nebo kurzy programování, různě dlouhé a v různých programovacích jazycích. PyLadies organizují tříměsíční kurzy vždy v jazyce Python, za tu dobu lze dojít od úplných základů programování až ke komplexnějším projektům.
+                    <br />
+                    Czechitas programovací workshopy jsou zpravidla placené, PyLadies jsou zdarma a materiály, podle kterých se začátečnice učí, jsou na webu volně k dispozici všem (uplatňujeme princip Open Source).
+                    <br />
+                    České PyLadies jsou aktivní součástí komunity lidí a firem sdružených kolem jazyka Python. Zároveň jsou lokální odnoží mezinárodní iniciativy PyLadies – je tedy možné využívat kontakty a síť PyLadies i jinde ve světě, třeba při dlouhodobém pobytu v zahraničí. Czechitas vznikly přímo v ČR, takže zatím nejsou součástí širší sítě. V podstatě zde budují zcela novou vlastní komunitu.
+                </p>
+            </div>
+
         </div>
     </section>
 {% endblock content %}
