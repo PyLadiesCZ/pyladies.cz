@@ -78,7 +78,7 @@ def stan_se():
     return render_template('stan_se.html')
 
 @app.route('/faq/')
-def stan_se():
+def faq():
     return render_template('faq.html')
 
 @app.route('/v1/<path:path>')
