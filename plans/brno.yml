@@ -209,7 +209,7 @@
   materials:
   - name: MicroPython a světýlka
     type: special
-- name: Opakování/téma na přání
+- name: Relační databáze (SQLite a SQLAlchemy)
   date: 2016-01-02
 - name: Závěrečný projekt II
   date: 2016-01-09
