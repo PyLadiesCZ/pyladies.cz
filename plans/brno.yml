@@ -203,6 +203,12 @@
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
+  - name: Množinový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
+  - name: Tahák na geometrii a fyziku 2D her
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
 - name: Vánoční speciál
   date: 2016-12-19
   done: true

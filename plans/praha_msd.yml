@@ -210,6 +210,12 @@
   - name: Asteroids
     type: lesson
     link: v1/s015-asteroids/index.html
+  - name: Množinový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
+  - name: Tahák na geometrii a fyziku 2D her
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
 - name: Odbočky
   description: |
     Kdyby se stalo, že bude na srazu menší účast, tak zařadíme téma na přání,
