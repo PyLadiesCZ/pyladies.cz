@@ -189,6 +189,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Třídy
   date: 2016-12-05
+  done: true
   materials:
   - name: Třídy
     type: lesson
