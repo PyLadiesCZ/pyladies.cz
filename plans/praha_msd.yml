@@ -161,7 +161,7 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
   date: 2016-12-07
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -179,7 +179,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
   date: 2016-12-14
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
