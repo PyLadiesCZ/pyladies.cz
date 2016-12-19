@@ -20,7 +20,7 @@
             .pull-right, .pull-left { margin: 1em; }
             .highlight   { background-color:  hsla(  0, 100%, 50%, 0.1); }
             .img-fluid   { max-width: 100%; }
-            .highlight-nocolor{ background-color:  hsla( 60, 100%, 99%, 0.5); }
+            .highlight-nocolor{ background-color:  hsla( 60, 100%, 50%, 0.75); }
             .highlight-red    { background-color:  hsla(  0, 100%, 50%, 0.25); }
             .highlight-green  { background-color:  hsla(113, 100%, 50%, 0.25); }
             .highlight-blue   { background-color:  hsla(236, 100%, 50%, 0.25); }
@@ -44,6 +44,10 @@
                         Případně jde případný hardware objednat přes Internet,
                         typicky z čínských e-shopů.
                     </div>
+                    <div class="note">
+                        Materiály byly připraveny pro celodenní workshop;
+                        na kratší lekcích může být něco vynecháno.
+                    </div>
                     <div class="clearfix">
                         <figure class="well pull-right">
                             <img class="img-fluid" src="nodemcuv3.jpg">
@@ -52,13 +56,13 @@
                             </figcaption>
                         </figure>
                         <p>
-                            Dnes budeme programovat malý počítač – konkrétně
+                            Dnes budeme programovat malý počítač –
                             tak malý počítač, že se ho pohodlně schováš v ruce.
                             Konkrétně budeme používat „chytrou destičku” zvanou
                             <i>NodeMCU</i>, která by měla ležet před tebou.
                             Než ji vyndáš z obalu, měla by ses <em>vybít</em>:
                             dotkni se něčeho kovového, co je spojeno se zemí,
-                            třeba radiátoru nebo kovové části scránky nějakého
+                            třeba radiátoru nebo kovové části schránky nějakého
                             spotřebiče, který je zapojený do zásuvky.
                             Tím se zbavíš statické elektřiny, která by mohla
                             malinký počítač poškodit.
@@ -79,8 +83,8 @@
                     <div class="clearfix">
                         <img src="nodemcu-popisky.png" class="img-fluid clear clearfix pull-left">
                         <p>
-                            Nejdůležitější část našeho počítače je oplechovaná
-                            krabička s logem "Wi-Fi" a "FCC":
+                            Nejdůležitější část našeho počítače je v oplechované
+                            krabičce s logem "Wi-Fi" a "FCC":
                             <span class="part-green">mikroprocesor ESP8266</span>.
                             To je „mozek” celého zařízení, který – když je
                             správně naprogramován – umí provádět Pythoní
@@ -107,8 +111,8 @@
                             Kolem USB konektoru jsou dvě tlačítka:
                             <code class="part-orange">RST</code>, kterým se
                             počítač restartuje
-                            (jako kdybys ho odpojila a zase zapojila, což se
-                            hodí když něco uděláš špatně a počítač „zamrzne”),
+                            (skoro jako kdybys ho odpojila a zase zapojila, což
+                            se hodí když něco uděláš špatně a počítač „zamrzne”),
                             a <code class="part-yellow">FLASH</code>, o kterém
                             si povíme později.
                         </p>
@@ -145,19 +149,38 @@
                     </p>
                     <h2>Linux</h2>
                     <div>
-                        Nainstaluj příkaz <code>picocom</code> (např.
-                        <code>sudo dnf install picocom</code>,
-                        <code>sudo apt-get install picocom</code>).
-                        Potom spusť:
+                        Na správně nastaveném velkém počítači stačí zadat:
 <pre>
-$ sudo picocom -b 115200 /dev/ttyUSB0 
+$ picocom -b 115200 --flow n /dev/ttyUSB0
 </pre>
-                        a stiskni Enter.
-                        Měly by se objevit tři zobáčky, <code>&gt;&gt;&gt;</code>.
+                        Pokud příkaz neskončí s chybou, stiskni <code>RST</code>
+                        na malém počítači.
+                        Měly by se nakonec objevit tři zobáčky,
+                        <code>&gt;&gt;&gt;</code>.
                     </div>
                     <div>
-                        Kdyby to nefungovalo, použij příkaz
-                        <code>dmesg | tail</code>, který vypíše něco jako:
+                        Většina počítačů ale na komunikaci s malými zařízeními
+                        nastavená není.
+                        Skončí-li příkaz <codE>picocom</code> s chybou,
+                        oprav ji podle následujícího návodu, a zkus to znova.
+                        (Možná bude potřeba vyřešit víc nejednu chybu.)
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                Nemáš-li příkaz <code>picocom</code> nainstalovaný,
+                                je potřeba ho nainstalovat (např.
+                                <code>sudo dnf install picocom</code> nebo
+                                <code>sudo apt-get install picocom</code>).
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                Pokud <code>picocom</code> skončil s chybou
+                                <code>No such file or directory</code>, pravděpodobně
+                                je potřeba k zařízení přistupovat přes jiný soubor.
+                                Použij příkaz
+                                <code>dmesg | tail</code>, který vypíše něco jako:
 <pre>
 $ dmesg|tail
 [703169.886296] ch341 1-1.1:1.0: device disconnected
@@ -168,30 +191,87 @@ $ dmesg|tail
 [703177.060474] ch341 1-1.1:1.0: ch341-uart converter detected
 [703177.062781] usb 1-1.1: ch341-uart converter now attached to <span class="highlight">ttyUSB0</span>
 </pre>
-                        V předchozím příkazu pak zaměň <code>ttyUSB</code> za to,
-                        co ti tento příkaz ukázal.
-                    </div>
-                    <div>
-                        Nechceš-li pro <code>picocom</code> používat
-                        <code>sudo</code>, přidej se do skupiny
-                        <code>dialout</code> nebo <code>uucp</code>, podle
-                        svého systḿu. Kouč ti kdyžtak poradí.
-                    </div>
+                                Máš-li místo <code>ttyUSB0</code> něco jiného,
+                                v předchozím příkazu to použij místo
+                                <code>ttyUSB0</code>.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                Pokud <code>picocom</code> skončil s chybou
+                                <code>Permission denied</code>, potřebujeme získat
+                                přístup k souboru zařízení.
+                                To znamená, že by ses měla přidat do příslušné skupiny.
+                                To je bohužel trošku složitější než by mělo.
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Fedora:
+                                        <pre>$ sudo usermod -a -G dialout $(whoami)</pre>
+                                    </li>
+                                    <li>
+                                        Debian/Ubuntu:
+                                        <pre>$ sudo usermod -a -G uucp $(whoami)</pre>
+                                    </li>
+                                </ul>
+                                Poté je potřeba se znovu přihlásit, třeba příkazem:
+                                <pre>$ su - $(whoami)</pre>
+                            </div>
+                            <div>
+                                Pro ověření spusť příkaz <code>groups</code>; v jeho
+                                výstupu by mělo být <code>dialout</code> nebo
+                                <code>uucp</code>.
+                            </div>
+                            <div>
+                                Kdyby to nefungovalo, na srazu ti může pomoci
+                                nějaký kouč.
+                                Jestli procházíš materiály z domu a nepovedlo
+                                se ti přidat do skupiny, dá se to obejít tak,
+                                že místo <code>picocom</code>
+                                použiješ <code>sudo picocom</code>.
+                            </div>
+                        </li>
+                    </ul>
                     <h2>Windows</h2>
                         <div>
                             MicroPython se přihlásí jako COM port. Otevři
                             správce zařízení, a zjisti který COM port to je
                             (kouč s tím pomůže).
+                        </div>
+                        <div>
+                            Nebylo-li zařízení nalezeno, je potřeba nainstalovat
+                            <em>driver</em>, který je ke stažení třeba
+                            <a href="http://kig.re/2014/12/31/how-to-use-arduino-nano-mini-pro-with-CH340G-on-mac-osx-yosemite.html">
+                            z tohoto blogu
+                            </a>, případně z
+                            <a href="https://onedrive.live.com/?authkey=%21AKLO1lLajaeTmo4&id=182EF9BC3A8BDDA4%2166743&cid=182EF9BC3A8BDDA4">materiálů pro Arduino workshop</a>.
+                        </div>
+                        <div>
                             Pak si nainstaluj si program
                             <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a>
                             (<code>putty.exe</code>), a spusť ho.
                             V konfiguračním okýnku zaškrtni
-                            <em>Connection Type: Serial</em>,
-                            do <em>Serial line:</em> zadej svůj COM port,
-                            a nastav <em>Speed: 115200</em>.
-                            Klikni <em>Open</em>. Mělo by se otevřít
-                            okýnko podobné konzoli, kde se, když stiskneš
-                            Enter, objeví tři zobáčky:
+                            <em>Connection Type: Serial</em> a
+                            do <em>Serial line:</em> zadej svůj COM port.
+                            Pak přepni v seznamu vlevo na <em>Serial</em>,
+                            a nastav <em>Speed</en> na </em>115200</em>
+                            a <em>Flow Control</em> na <em>None</em>:
+                        </div>
+                        <div>
+                            <img src="putty-config.jpg">
+                        </div>
+                        <div>
+                            Potom zpátky v kategorii <em>Session</em>
+                            můžeš nastavení uložit pro příště:
+                            do políčka <em>Saved Sessions</em> zadej
+                            <em>MicroPython</em> a klikni OK.
+                        </div>
+                        <div>
+                            Nakonec klikni <em>Open</em>. Mělo by se otevřít
+                            okýnko podobné konzoli, kde se, když zmáčkneš
+                            na malém počítači <code>RST</code>,
+                            objeví nakonec tři zobáčky:
                             <code>&gt;&gt;&gt;</code>.
                         </div>
                     <h2>Mac</h2>
@@ -200,9 +280,15 @@ $ dmesg|tail
 <pre>
 $ screen /dev/tty.usbmodem* 115200
 </pre>
-                        a stiskni Enter.
-                        Měly by se objevit tři zobáčky, <code>&gt;&gt;&gt;</code>.
-                    </div>
+                            a stiskni Enter.
+                            Pak na malém počítači zmáčkni <code>RST</code>.
+                            Měly by se objevit tři zobáčky, <code>&gt;&gt;&gt;</code>.
+                        </div>
+                        <div>
+                            Nejde-li to, je možná potřeba nainstalovat driver.
+                            Ten se dá stáhnout z
+                            <a href="https://tzapu.com/ch340-ch341-serial-adapters-macos-sierra/">tohoto blogu</a>.
+                        </div>
                 </div>
                 <div class="col-lg-12">
                     <h1>MicroPython – taky Python</h1>
@@ -234,12 +320,11 @@ Hello World
                     </p>
 <pre>
 >>> print
->>> help(print)
 >>> import math
 >>> math.pi
 </pre>
                     <p>
-                        Najdůležitější věc, která je osekaná, je <em>standardní
+                        Nejdůležitější věc, která je osekaná, je <em>standardní
                         knihovna</em> – většina modulů, které na velkém
                         počítači můžeš naimportovat, v MicroPythonu chybí.
                         U modulů jako <code>turtle</code> je to pochopitelné;
@@ -249,6 +334,17 @@ Hello World
                         na jiné věci než ty velké – ale je potřeba si na to
                         dát pozor.
                     </p>
+                    <p>
+                        Některé věci ze standardní knihovny se dají najít
+                        ve zjednodušené formě na jiných místech.
+                        Například ačkoliv modul <code>random</code> chybí,
+                        náhodné číslo od 0 do 255 se dá získat pomocí:
+                    </p>
+<pre>
+>>> from os import urandom
+>>> urandom(1)[0]
+61
+</pre>
                 </div>
                 <div class="col-lg-12">
                     <h1>Vstup</h1>
@@ -308,7 +404,7 @@ print(pin.value())
                     </p>
                     <p>
                         Jako zdroj napětí můžeme použít i náš počítač.
-                        Ten bere elektřinu přes USB a dává nám ji k dispozici\
+                        Ten bere elektřinu přes USB a dává nám ji k dispozici
                         na některých svých „nožičkách”:
                         konkrétně plus na nožičce označené <code>3V</code>
                         a mínus na nožičce označené <code>G</code>.
@@ -461,9 +557,10 @@ while True:
                     <p>
                         Jak začneš psát trochu složitější programy,
                         mohlo by se stát, že tě konzole MicroPythonu začne
-                        trochu štvát. Pojďme tomu předejít.
+                        trochu štvát.
                         Špatně se v ní opravují chyby a automatické odsazování
                         funguje jen většinou.
+                        Pojďme se podívat, jak naštvání předejít.
                     </p>
                     <p>
                         Doporučuju si větší kousky kódu – a určitě takové,
@@ -479,12 +576,21 @@ while True:
                         jenom vadí.
                     </p>
                     <p>
-                        Možná sis toho už všimla u minulé nekonečné smyčky, ale
-                        <kbd>Ctrl</kbd>+<kbd>C</kbd>, funguje jako v Pythonu
-                        na velkých počítačích.
+                        Vkládací mód (který <kbd>Ctrl</kbd>+<kbd>E</kbd> spouští)
+                        je docela vybíravý.
+                        Nemá rád, když jsou na začátku vkládaného textu prázdné
+                        řádky.
+                        Taky nefunguje, pokud na konci vkládaného textu není
+                        dokončený řádek: <kbd>Ctrl</kbd>+<kbd>D</kbd> je potřeba
+                        zmáčknout když je kurzor na začátku řádku.
                     </p>
                     <p>
-                        A dobrá zpráva pro Windowsačky: když zmáčkneš v PuTTY
+                        Další funkce – <kbd>Ctrl</kbd>+<kbd>C</kbd> pro zrušení
+                        programu – funguje jako v Pythonu na velkých počítačích.
+                        Možná sis toho už všimla u minulé nekonečné smyčky.
+                    </p>
+                    <p>
+                        A nakonec dobrá zpráva pro Windowsačky: když zmáčkneš v PuTTY
                         prostřední tlačítko myši, vloží se obsah schránky.
                         Nemusíš tedy, jako v příkazové řádce Windows,
                         vkládat přes menu.
@@ -503,8 +609,8 @@ while True:
                     <p>
                         Tuhle nevýhodu ale můžeme obejít s využitím dvou faktů.
                         Ten první je, že diodám – na rozdíl od žárovek nebo
-                        zářivek – nevadí, časté vypínání a zapínání.
-                        Opotřebovávají se svícením a časem. 
+                        zářivek – nevadí časté vypínání a zapínání.
+                        Opotřebovávají se spíš svícením a časem.
                         Druhý je, že lidské oko nestačí zaznamenat pohyby a
                         změny, které probíhají rychleji než zhruba za
                         setinu vteřiny.
@@ -608,7 +714,7 @@ pwm = PWM(pin_diody, freq=50, duty=512)
                     <p>
                         Tahle malá věc obsahuje speciální materiál, který se,
                         když ho připojíme ke zdroji napětí, trošku roztáhne.
-                        Roztažením zatlačí na okolní vzduch, a vytvoří tlakovou
+                        Roztažením zatlačí na okolní vzduch a vytvoří tlakovou
                         vlnu, která může doputovat až k našim uším.
                     </p>
                     <p>
@@ -931,7 +1037,7 @@ from neopixel import NeoPixel
 POCET_LED = 8
 pin = Pin(2, Pin.OUT)
 np = NeoPixel(pin, POCET_LED)
-np[<span class="highlight-nocolor">0</span>] = (<span class="highlight-red">255</span>, <span class="highlight-green">255</span>, <span class="highlight-blue">255</span>)
+np<span class="highlight-nocolor">[0]</span> = (<span class="highlight-red">255</span>, <span class="highlight-green">255</span>, <span class="highlight-blue">255</span>)
 np.write()
 </pre>
                     <p>
