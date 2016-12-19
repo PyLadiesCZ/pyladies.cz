@@ -19,7 +19,7 @@ být zveřejněn na setjných URL jako předtím.
 
 V `course` snad časem bude kurz převedený do ReST dokumentace.
 
-V `plans` jsou data pro seznamy lekcí (zatím pro Brno).
+V `plans` jsou data pro seznamy lekcí. Mění se tu datumy, probrané/neprobrané lekce, přesun témat.
 
 Celé dohromady to spojuje `pyladies_cz.py`; tady se např. přidávají nové
 podstránky.
@@ -37,13 +37,13 @@ podstránky.
 Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
 Změny v kódu se projeví po obnovení stránky v prohlížeči.
 
-### Úprava súborov
+### Úprava souborů
 
-* Súbory html sa nachádzajú v priečinku ``templates``
-* Úprava hlavičky webu, hlavného menu a päty stránky v súbore `templates/layout.html`
-* CSS súbory sa nachádzajú v `static/css`
-* Obrázky sa nachádzajú v `static/img`
-* Priradenie obrázku `src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"`
+* Soubory html jsou ve složce ``templates``
+* Úprava hlavičky webu, hlavního menu a patičky stránky v souboru `templates/layout.html`
+* CSS soubory sa nacházejí v `static/css`
+* Obrázky se nacházejí v `static/img`
+* Přiřazování obrázků `src="{{ pathto('_static/img/{subfolder}/{image}', 1) }}"`
 
 ### Nasazení
 
@@ -54,9 +54,11 @@ statické stránky k nasazení na webový server.:
 
     $ python pyladies_cz.py freeze
 
-## Základné informácie - editace HTML
+## Základní informace o kurzech, které se často mění - editace HTML
 
-**Správa kurzov na úvodnej stránke** <br /><br />
+**Nastavení aktuálních kurzů na úvodní stránce** <br /><br />
+**Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město**
+
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
@@ -64,7 +66,7 @@ statické stránky k nasazení na webový server.:
     <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
   </div>
   <div class="py-block pull-left">
-    <h4 class="city-heading">Praha</h4>
+    <a href="{{ pathto('praha') }}"><h4 class="city-heading">Praha - začátečnický kurz</h4>
     <p class="city-info">01.01. - 31.04. 2016</p>
     <p class="city-address">
       <a href="https://www.google.cz/maps/place/Florentinum/@50.0888957,14.4353417,15z/data=!4m2!3m1!1s0x0:0x90e42b8069106734" target="new">Na Florenci 2116/15, 110 00</a>
@@ -80,10 +82,10 @@ statické stránky k nasazení na webový server.:
       <img src="{{ pathto('_static/img/icon/pylady-grey.png', 1) }}" class="py-icon-i" />
     </div>
     <div class="py-block pull-left">
-      <h4 class="city-heading">Brno</h4>
-      <p class="city-info">Kurz práve neprebieha.</p>
+      <a href="{{ pathto('brno') }}"><h4 class="city-heading">Brno - začátečnický kurz</h4>
+      <p class="city-info">Kurz právě neprobíhá.</p>
       <p class="city-address">
-        <a href="mailto: a@a.com">Napíš nám</a>
+        <a href="mailto: a@a.com">Napiš nám.</a>
       </p>
     </div>
 </div>
@@ -96,30 +98,32 @@ statické stránky k nasazení na webový server.:
     <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
   </div>
   <div class="py-block pull-left">
-    <h4 class="city-heading">Praha</h4>
-    <p class="city-info">Nový štart od 01.01. - 31.04. 2016</p>
+    <a href="{{ pathto('ostrava') }}"><h4 class="city-heading">Ostrava - začátečnický kurz</h4>
+    <p class="city-info">Proběhne od 01.01. - 31.04. 2016</p>
     <p class="city-address">
-      <a href="#">Registračný formulár</a>
+      <a href="#">Registrační formulář</a>
     </p>
   </div>
 </div>
 ```
-**Správa obrázkov**
+**Nastavení obrázků**
 
-* Banner na úvodnej stránke - 1500px × 655px
-* Banner v detailoch miest - 1850px × 400px
-* Fotky - detail mesta - 1920px × 1278px
+* Banner na úvodní stránce - 1500px × 655px
+* Banner v detailu měst - 1850px × 400px
+* Fotky - detail města - 1920px × 1278px
 
-**Zmena obrázkov podľa miest v banneroch**
-Obrázky sú definované v CSSku. Pre každé mesto je spoločná trieda intro-city, s tým, že obrázok pre každé mesto sa zmení v triede **intro-city-{city-name}**. (Príklad triedy: intro-city-praha).
+**Změna obrázků podle měst v banerech**
 
-**Správa kurzov na stránke materiálov**
+Obrázky jsou definované v CSS. Pro každé město je společná třída intro=city, s tím, že obrázek pro každé město se změní v třídě **intro-city-{city-name}**. (Příklad třídy: intro-city-praha).
 
-* Aktívny kurz (sekcia Intro header v súbore `templates/praha.html`)
-* Neaktívny kurz (sekcia Intro header v súbore `templates/brno.html`)
+**Nastavení informací o aktuálním kurzu na stránce materiálů**
 
-**Stavu kurzu - stránka kurzu (Praha)**
+* Aktivní kurz (př. v sekci ```Started course Prague``` v souboru `templates/praha.html`)
+* Neaktivní kurz (př. v sekci ```Started course Brno``` v souboru `templates/brno.html`)
 
-* Prejdená hodina - zmena ikonky na `glyphicon-ok`
-* Ešte neprejdená hodina - ikonka `glyphicon-remove`
-* Vyznačenie aktívnej aktuálnej hodiny - trieda `section-active`
+**Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)**
+
+* Probraná lekce ```done: true```
+* Neprobraná lekce ```done: false```
+
+**Stav kurzu - přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
