@@ -78,6 +78,8 @@
                                 {% set icon_class = 'glyphicon-pencil' %}
                             {% elif mat['type'] == 'link' %}
                                 {% set icon_class = 'glyphicon-link' %}
+                            {% elif mat['type'] == 'special-lesson' %}
+                                {% set icon_class = 'glyphicon-education ' + done_class %}
                             {% else %}
                                 {% set icon_class = 'glyphicon-flag' %}
                             {% endif %}

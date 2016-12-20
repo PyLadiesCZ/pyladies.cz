@@ -199,6 +199,7 @@
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
   date: 2016-12-12
+  done: true
   materials:
   - name: Asteroids
     type: lesson
@@ -214,14 +215,19 @@
   done: true
   materials:
   - name: MicroPython a světýlka
-    type: special
+    type: special-lesson
 - name: Relační databáze (SQLite a SQLAlchemy)
   date: 2016-01-02
+  done: false
+  materials:
+  - name: Relační databáze
+    type: special-lesson
 - name: Závěrečný projekt II
   date: 2016-01-09
+  done: false
   materials:
   - name: Pokračování Asteroids
-    type: special
+    type: special-lesson
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
