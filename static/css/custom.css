@@ -424,6 +424,7 @@ CITIES PAGE
     color: #8e8c8d;
 }
 .glyphicon-calendar,
+.glyphicon-education,
 .glyphicon-hourglass,
 .glyphicon-edit,
 .meetup-box .meetup-address .glyphicon-map-marker {
@@ -449,6 +450,7 @@ CITIES PAGE
 }
 .meetup-date,
 .meetup-time,
+.meetup-topic,
 .meetup-address a,
 .meetup-registration a {
     color: #8e8c8d;
