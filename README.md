@@ -2,7 +2,7 @@
 
 Website of the Czech PyLadies chapter / Web českých PyLadies.
 
-##Licence
+##License
 Code: [MIT](LICENSE)
 Online tutorial: CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
