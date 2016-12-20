@@ -3,7 +3,8 @@
 Website of the Czech PyLadies chapter / Web českých PyLadies.
 
 ##Licence
-[MIT](LICENSE)
+Code: [MIT](LICENSE)
+Online tutorial: CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 [![Travis CI kontrolka](https://travis-ci.org/PyLadiesCZ/pyladies.cz.svg?branch=master)](https://travis-ci.org/PyLadiesCZ/pyladies.cz)
 
