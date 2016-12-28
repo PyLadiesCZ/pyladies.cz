@@ -93,6 +93,11 @@ def index_html():
 def course_html():
     return send_from_directory(orig_path, 'course.html')
 
+@app.route('/googlecc704f0f191eda8f.html')
+def google_verification():
+    # Verification page for GMail on our domain
+    return send_from_directory(app.root_path, 'google-verification.html')
+
 
 ##########
 ## Helpers
