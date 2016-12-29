@@ -132,14 +132,16 @@ Obrázky jsou definované v CSS. Pro každé město je společná třída intro=
 * Probraná lekce ```done: true```
 * Neprobraná lekce ```done: false```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" width=100 height=55 /><br /> 
 Ukázka pro probranou a neprobranou lekci na webu:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" /><br /> 
+
 
 **Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
 Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-2.png" width=100 height=55 /><br /> 
-Ukázka pro běžnou lekci:
+**Ukázka pro běžnou lekci:**
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-2.png" /><br /> 
+
 ```
 - name: Seznamy
   date: 2016-11-14
@@ -163,8 +165,10 @@ Ukázka pro běžnou lekci:
     type: link
     link: v1/cele-kody/seznamy.py
 ```
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-3.png" width=100 height=55 /><br /> 
-Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:
+
+**Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:**
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-3.png" /><br /> 
+
 ```
 - name: Vánoční speciál
   date: 2016-12-19
