@@ -138,7 +138,7 @@ Ukázka pro probranou a neprobranou lekci na webu:
 **Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
 Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/static/img/readme-course-plan-2.png" width=100 height=55 /><br /> 
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-2.png" width=100 height=55 /><br /> 
 Ukázka pro běžnou lekci:
 ```
 - name: Seznamy
@@ -163,7 +163,7 @@ Ukázka pro běžnou lekci:
     type: link
     link: v1/cele-kody/seznamy.py
 ```
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/static/img/readme-course-plan-3.png" width=100 height=55 /><br /> 
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-3.png" width=100 height=55 /><br /> 
 Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:
 ```
 - name: Vánoční speciál
