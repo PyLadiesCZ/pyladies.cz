@@ -62,8 +62,8 @@ statické stránky k nasazení na webový server.:
 
 ## Základní informace o kurzech, které se často mění - editace HTML
 
-**Nastavení aktuálních kurzů na úvodní stránce** <br /><br />
-**Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město**
+### Nastavení aktuálních kurzů na úvodní stránce <br /><br />
+**Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město!**
 
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, který právě běží. Ikonka - obrázek pylady.png. Kód:
 ```
@@ -112,22 +112,22 @@ statické stránky k nasazení na webový server.:
   </div>
 </div>
 ```
-**Nastavení obrázků**
+### Nastavení obrázků
 
 * Banner na úvodní stránce - 1500px × 655px
 * Banner v detailu měst - 1850px × 400px
 * Fotky - detail města - 1920px × 1278px
 
-**Změna obrázků podle měst v banerech**
+### Změna obrázků podle měst v banerech
 
 Obrázky jsou definované v CSS. Pro každé město je společná třída intro=city, s tím, že obrázek pro každé město se změní v třídě **intro-city-{city-name}**. (Příklad třídy: intro-city-praha).
 
-**Nastavení informací o aktuálním kurzu na stránce materiálů**
+### Nastavení informací o aktuálním kurzu na stránce materiálů
 
 * Aktivní kurz (př. v sekci ```Started course Prague``` v souboru `templates/praha.html`)
 * Neaktivní kurz (př. v sekci ```Started course Brno``` v souboru `templates/brno.html`)
 
-**Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)**
+### Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)
 
 * Probraná lekce ```done: true```
 * Neprobraná lekce ```done: false```
@@ -135,8 +135,7 @@ Obrázky jsou definované v CSS. Pro každé město je společná třída intro=
 ***Ukázka pro probranou a neprobranou lekci na webu:***
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" /><br /> 
 
-
-**Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
+### Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)
 Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
 
 ***Ukázka pro běžnou lekci:***
@@ -165,6 +164,8 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
     type: link
     link: v1/cele-kody/seznamy.py
 ```
+
+
 
 ***Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:***
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-3.png" /><br /> 
