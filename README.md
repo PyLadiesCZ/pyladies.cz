@@ -65,7 +65,7 @@ statické stránky k nasazení na webový server.:
 **Nastavení aktuálních kurzů na úvodní stránce** <br /><br />
 **Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město**
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, ktorý práve beží. Ikonka - obrázok pylady.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, který právě běží. Ikonka - obrázek pylady.png. Kód:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
@@ -81,7 +81,7 @@ statické stránky k nasazení na webový server.:
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží a nie je spustená registrácia. Ikonka - obrázok pylady-grey.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, který právě nebeží a není spuštěná registrace. Ikonka - obrázek pylady-grey.png. Kód:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
     <div class="py-icon">
@@ -97,7 +97,7 @@ statické stránky k nasazení na webový server.:
 </div>
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, ktorý práve nebeží, ale je spustená registrácia. Ikonka - obrázok pylady-blue.png. V kóde označený takto:
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, který právě nebeží, ale je spuštěná registrace. Ikonka - obrázek pylady-blue.png. Kód:
 ```
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
   <div class="py-icon">
@@ -132,4 +132,53 @@ Obrázky jsou definované v CSS. Pro každé město je společná třída intro=
 * Probraná lekce ```done: true```
 * Neprobraná lekce ```done: false```
 
-**Stav kurzu - přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" width=100 height=55 /><br /> 
+Ukázka pro probranou a neprobranou lekci na webu:
+
+**Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)**
+Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
+
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/static/img/readme-course-plan-2.png" width=100 height=55 /><br /> 
+Ukázka pro běžnou lekci:
+```
+- name: Seznamy
+  date: 2016-11-14
+  done: true
+  materials:
+  - name: Turnaj v piškvorkách
+    type: special
+  - name: Seznamy
+    type: lesson
+    link: v1/s006-lists/lists2.html
+  - name: N-tice
+    type: lesson
+    link: v1/s006-lists/tuples.html
+  - name: Tahák na seznamy
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s006-lists/handout/handout6.pdf
+  - name: Celý kód na hru z lekce o seznamech
+    type: link
+    link: v1/cele-kody/seznamy.py
+```
+<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/static/img/readme-course-plan-3.png" width=100 height=55 /><br /> 
+Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:
+```
+- name: Vánoční speciál
+  date: 2016-12-19
+  done: true
+  materials:
+  - name: MicroPython a světýlka
+    type: special-lesson
+- name: Relační databáze (SQLite a SQLAlchemy)
+  date: 2016-01-02
+  done: false
+  materials:
+  - name: Relační databáze
+    type: special-lesson
+```
+    
+    
+
