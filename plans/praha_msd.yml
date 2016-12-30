@@ -101,7 +101,7 @@
   done: true
   materials:
   - name: Procvičíme si vše, co jsme se naučily
-    type: lesson
+    type: special-lesson
 - name: Testování
   date: 2016-11-16
   done: true
