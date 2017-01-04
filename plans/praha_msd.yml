@@ -216,6 +216,9 @@
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+  - name: Kód celé hry Asteroids
+    type: link
+    link: v1/s015-asteroids/game
 - name: Odbočky
   description: |
     Kdyby se stalo, že bude na srazu menší účast, tak zařadíme téma na přání,
