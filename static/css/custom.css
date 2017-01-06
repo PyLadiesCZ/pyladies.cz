@@ -672,6 +672,18 @@ margin-left: -30px;
 }
 
 /*****
+STAN SE
+*****/
+
+.role-requirements {
+    list-style-type: none;
+}
+.role-requirements li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/*****
 FAQ
 *****/
 
