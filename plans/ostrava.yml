@@ -198,7 +198,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2017-01-10
-  done: false
+  done: true
   materials:
   - name: Třídy
     type: lesson
