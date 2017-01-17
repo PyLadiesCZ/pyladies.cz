@@ -208,7 +208,7 @@
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
   date: 2017-01-17
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
@@ -219,6 +219,14 @@
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+- name: Pokračování závěrečného projektu
+  date: 2017-01-24
+  description: V této lekci budeme pokračovat v dalších fázích závěrečného projektu. Kdo minule nebyl, dostane první fázi vypracovanou.
+  done: false
+- name: Test Advance PyLadies & PyWork
+  date: 2017-01-31
+  description: Tato lekce bude sloužit jako testovací pro navazující setkání PyLadies jinak též známé jako Advance PyLadies či obecněji PyWork.
+  done: false
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
