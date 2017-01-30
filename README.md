@@ -21,7 +21,7 @@ Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
 Soubory jako obrázky, fonty, CSS, JS jsou v `static`.
 
 Původní stránky jsou v  `original`; podadresář `v1` obsahuje kurz a musí
-být zveřejněn na setjných URL jako předtím.
+být zveřejněn na stejných URL jako předtím.
 
 V `course` snad časem bude kurz převedený do ReST dokumentace.
 
