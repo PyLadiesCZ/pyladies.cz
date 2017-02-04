@@ -18,7 +18,7 @@
                     </div>
                     <ul>
                         <li>Nainstalujeme Python a Virtualenv</li>
-                        <li>Vytvoříme si virtuální prostředí pro práci v Pythonu</li>
+                        <li>Vytvoříme si virtuální prostředí pro práci v Pythonu</li>
                         <li>Spustíme Python</li>
                     </ul>
                     <div>
@@ -31,7 +31,7 @@
                     <div>
                         Pokud máš jiný systém než Windows nebo Linux (např. macOS),
                         nebo pokud ke svému počítači neznáš administrátorské heslo (např. u RHEL CSB),
-                        poraď se s koučem hned, jinak se ptej, až bude něco nejasné.
+                        poraď se s koučem hned, jinak se ptej, až bude něco nejasné.
                         Nejsi-li na srazu, zeptej se přes e-mail.
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     <h3>Windows</h3>
                     <p>
                         Běž na <a href="https://www.python.org/downloads/">stahovací stránku Pythonu</a>
-                        a stáhni si instalátor nejnovější stabilní verze Pythonu (v době psaní tohoto textu to byla 3.5.2). Ujisti se že jde o verzi <strong>3</strong> tečka něco.
+                        a stáhni si instalátor nejnovější stabilní verze Pythonu (v době psaní tohoto textu to byla 3.5.2). Ujisti se že jde o verzi <strong>3</strong> tečka něco.
                         <br>
                         Jak poznat, který instalátor je ten pravý?
                         Pokud má tvůj počítač 64bitovou verzi Windows, stáhni si <em>Windows x86-64 executable installer</em>.
@@ -67,7 +67,7 @@
                     </p>
 
                     <p>
-                        Spusť v příkazové řádce příkaz:
+                        Spusť v příkazové řádce příkaz:
                     </p>
 
 <pre>
@@ -84,7 +84,7 @@ $ <b>brew install python3</b>
 
                     <h3>Linux</h3>
                     <p>
-                        Spusť v příkazové řádce příkaz <code>python3 --version</code>.
+                        Spusť v příkazové řádce příkaz <code>python3 --version</code>.
                         Teď můžou nastat tři možnosti:
                         <ul>
                             <li><code>Python 3.5.2</code> (nebo 3.4.0, a vyšší): hotovo, máš nainstalováno</li>.
@@ -114,8 +114,8 @@ $ <b>sudo dnf install python3</b>
                     Potřebuješ-li doinstalovat Virtualenv, nahraď <code>python3</code> za <code>python-virtualenv</code>.
                 </div>
                 <div class="col-lg-12">
-                    Máš-li nainstalováno, spusť ještě příkaz <code>python3 -m tkinter</code> . Ukáže-li se okýnko, je vše v pořádku.
-                    Jestli ne, nainstaluj ještě modul tkinter:
+                    Máš-li nainstalováno, spusť ještě příkaz <code>python3 -m tkinter</code> . Ukáže-li se okýnko, je vše v pořádku.
+                    Jestli ne, nainstaluj ještě modul <em>tkinter</em>:
                 </div>
             </div>
             <div class="row stuff">
@@ -136,20 +136,20 @@ $ <b>sudo dnf install python3-tk</b>
                 <div class="col-lg-12">
                     <h1>Vytvoření prostředí</h1>
                     <p class="note">
-                        Možná si říkáš, k čemu takové <strong>virtuální prostředí</strong> vlastně potřebuješ.
+                        Možná si říkáš, k čemu takové <strong>virtuální prostředí</strong> vlastně potřebuješ.
                         Je to proto, že se zapnutým virtuálním prostředím se všechny počítače budou (teoreticky)
                         chovat stejně, takže ve zbytku těchto materiálů již nemusí být 2-3 varianty každého příkazu! :)
                         <br>
-                        V budoucnu využijeme druhou výhodu: každé virtuální prostředí je oddělené od ostatních,
+                        V budoucnu využijeme druhou výhodu: každé virtuální prostředí je oddělené od ostatních,
                         takže když doinstalujeme nějakou knihovnu (rozšíření pro Python), projeví se to jen
-                        v jednom virtuálním prostředí. Pokud by se při práci na projektu něco pokazilo,
+                        v jednom virtuálním prostředí. Pokud by se při práci na projektu něco pokazilo,
                         neohrozí to další projekty ve tvém počítači.
                         <br>
                         Před prací na projektech PyLadies nezapomeň vždy virtuální prostředí zapnout.
                     </p>
                     </p>
-                        Zvol si adresář (složku), ve které budeš mít soubory k PyLadies.
-                        Na Windows to může být třeba <code>C:/PyLadies</code>, na Linuxu <code>/home/<i>jméno</i>/pyladies</code>.
+                        Zvol si adresář (složku), ve které budeš mít soubory k–PyLadies.
+                        Na Windows to může být třeba <code>C:\PyLadies</code>, na Linuxu <code>/home/<i>jméno</i>/pyladies</code>.
                         Vytvoř ho a poznamenej si, kde je.
                         Já ho budu nazývat <code class="plhome">~/pyladies</code>;
                         takže vždycky, když uvidíš <code class="plhome">~/pyladies</code>,
@@ -200,7 +200,7 @@ $ <b>virtualenv -p python3 venv</b>
                     </p>
                     <p>
                     Pokud Windows tvrdí, že neznají příkaz <em>python</em>,
-                    poraď se s koučem. Typicky v takovém případě
+                    poraď se s koučem. Typicky v takovém případě
                     musíš napsat celou cestu k Pythonu, jako
                     <code>C:\Users\<i>tvoje_jméno</i>\AppData\Local\Programs\Python\Python35\python</code>.
                     Cestu si ověř a celou dosaď do příkazu výše místo
@@ -214,7 +214,7 @@ $ <b>virtualenv -p python3 venv</b>
                 <div class="col-lg-12">
                     <p>
                         Tím se nám vytvořil adresář <code><span class="plhome">~/pyladies</span>/venv</code>,
-                        ve kterém jsou soubory s virtuálním prostředím.
+                        ve kterém jsou soubory s virtuálním prostředím.
                         Můžeš se podívat dovnitř, ale nikdy tam nic neměň.
                     </p>
                 </div>
@@ -223,7 +223,7 @@ $ <b>virtualenv -p python3 venv</b>
                     <p>
                         Teď si ukážeme příkaz, který spustí virtuální prostředí.
                         Tenhle příkaz je důležitý: budeš ho zadávat vždycky,
-                        když spustíš příkazovou řádku pro práci s Pythonem.
+                        když spustíš příkazovou řádku pro práci s Pythonem.
                         Zapiš si ho!
                     </p>
                 </div>
@@ -257,9 +257,9 @@ Type "help", "copyright", "credits" or "license" for more information.
                 </div>
                 <div class="col-lg-12">
                     Příkaz <code>python</code> vypíše několik informací.
-                    Z prvního řádku se můžeš ujistit, že používáš Python 3.
+                    Z prvního řádku se můžeš ujistit, že používáš Python 3.
                     Třemi zobáčky <code>&gt;&gt;&gt;</code> pak Python poprosí o instrukce.
-                    Je to jako v příkazové řádce, ale místo příkazů jako
+                    Je to jako v příkazové řádce, ale místo příkazů jako
                     <code>cd</code> a <code>mkdir</code> budeme psát příkazy Pythonu.
                 </div>
                 <div class="col-lg-12">
@@ -282,7 +282,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; <b>8 + 2</b>
 10
 </pre>
-                    Všimni si, že příkazy z příkazové řádky v Pythonu nefungují,
+                    Všimni si, že příkazy z příkazové řádky v Pythonu nefungují,
                     ačkoli okýnko vypadá skoro stejně:
 <pre>
 &gt;&gt;&gt; <b>whoami</b>
@@ -292,13 +292,13 @@ NameError: name 'whoami' is not defined
 </pre>
                     Tohle je <em>chybová hláška</em>, která se objeví vždycky,
                     když uděláš něco špatně.
-                    V průběhu kurzu jich uvidíš ještě spoustu,
+                    V průběhu kurzu jich uvidíš ještě spoustu,
                     takže si ji dobře prohlédni, ať ji příště poznáš.
                 </div>
                 <div class="col-lg-12">
                     Pokud ses dostala až sem, gratuluji! To nejhorší – instalaci – máš za sebou.
                     Stačí už jen zavřít Python a pak i samotnou příkazovou řádku.
-                    V Pythonu se to dělá pomocí <code>quit()</code>, s prázdnými závorkami na konci.
+                    V Pythonu se to dělá pomocí <code>quit()</code>, s prázdnými závorkami na konci.
 <pre>
 &gt;&gt;&gt; <b>quit()</b>
 (venv)$
