@@ -17,7 +17,7 @@
                         <p>
                             Nejdříve musíme otevřít příkazovou řádku – to černé okýnko,
                             které programátoři používají na zadávání příkazů.
-                            Na první pohled může vypadat nepřirozeně, ale dá se na ni zvyknout :)
+                            Na první pohled může vypadat nepřirozeně, ale dá se na ni zvyknout. :)
                         </p>
                         <p>
                             Příkazová řádka
@@ -39,7 +39,7 @@
                         </p>
                         <p>
                             Po otevření konzole tě uvítá řádek,
-                            kterým počítač vybízí k zadání příkazu.
+                            kterým počítač vybízí k zadání příkazu.
                             Podle systému bude končit buď znakem <code>$</code> nebo <code>&gt;</code>,
                             před nímž můžou být ještě další informace:
                         </p>
@@ -53,7 +53,7 @@ $
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
->
+&gt;
 </pre>
                     </div>
                 </section>
@@ -82,9 +82,9 @@ helena
                     <div class="col-lg-12">
                         <div class="note">
                             Znak <code>$</code> nebo <code>&gt;</code>
-                            je v ukázce jen proto, aby bylo jasné, že zadáváme příkaz do příkazové
+                            je v ukázce jen proto, aby bylo jasné, že zadáváme příkaz do příkazové
                             řádky.
-                            Vypíše ho sám počítač (většinou ještě s něčím před ním),
+                            Vypíše ho sám počítač (většinou ještě s něčím před ním),
                             takže ho nepiš sama! Zadej jen <code>whoami</code> a Enter.
                         </div>
                         <div class="note">
@@ -95,10 +95,10 @@ helena
                 <section class="row stuff">
                     <div class="col-lg-12">
                         <h2>Aktuální adresář</h2>
-                        Příkazová řádka pracuje vždy v nějakém <em>adresáři</em> neboli složce
+                        Příkazová řádka pracuje vždy v nějakém <em>adresáři</em> neboli <em>složce</em>
                         (angl. <em>directory</em>, <em>folder</em>).
                         Ve kterém adresáři zrovna je, to nám poví příkaz <code>pwd</code> nebo <code>cd</code>
-                        (z angl. <em>print working directory</em> – vypiš pracovní adresář,
+                        (z angl. <em>print working directory</em> – vypiš pracovní adresář,
                          resp. <em>current directory</em> – aktuální adresář).
                     </div>
                     <div  class="col-lg-6">
@@ -111,7 +111,7 @@ $ <b>pwd</b>
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>cd</b>
+&gt; <b>cd</b>
 C:\Users\helena
 </pre>
                     </div>
@@ -124,7 +124,7 @@ C:\Users\helena
                 </section>
                 <section class="row stuff">
                     <div class="col-lg-12">
-                        <h2>Co v tom adresáři je?</h2>
+                        <h2>Co v tom adresáři je?</h2>
                         Příkaz <code>ls</code> nebo <code>dir</code>
                         (z angl. <em>list</em> – vyjmenovat; <em>directory</em> – adresář)
                         nám vypíše, co aktuální adresář obsahuje – všechny soubory,
@@ -138,19 +138,19 @@ Applications
 Desktop
 Downloads
 Music
-...
+…
 </pre>
                     </div>
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>dir</b>
+&gt; <b>dir</b>
  Directory of C:\Users\pviktori
 05/08/2014 07:28 PM &lt;DIR&gt;      Applications
 05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
 05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
 05/08/2014 07:28 PM &lt;DIR&gt;      Music
-...
+…
 </pre>
                     </div>
                 </section>
@@ -184,9 +184,9 @@ $ <b>pwd</b>
                             (<code>cd</code> jsme už viděly; ale předtím jsme nepsaly nic za něj)
                         </div>
 <pre>
-> <b>cd Desktop</b>
+&gt; <b>cd Desktop</b>
 
-> <b>cd</b>
+&gt; <b>cd</b>
 C:\Users\pviktori\Desktop
 </pre>
                         <div class="note">
@@ -201,7 +201,7 @@ C:\Users\pviktori\Desktop
                         <h2>Vytvoření adresáře</h2>
                         Co takhle si vytvořit adresář na PyLadies?
                         To se dělá příkazem <code>mkdir</code>
-                        (z angl. <em>make directory</em> – vytvořit adresář).
+                        (z angl. <em>make directory</em> – vytvořit adresář).
                     </div>
                     <div  class="col-lg-6">
                         <h4>Unix</h4>
@@ -212,14 +212,14 @@ $ <b>mkdir pyladies</b>
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>mkdir pyladies</b>
+&gt; <b>mkdir pyladies</b>
 </pre>
                     </div>
                 </section>
                 <section class="row stuff">
                     <div class="col-lg-12">
                         <h2>Úkol</h2>
-                        Zkus v nově vytvořeném adresáři <code>pyladies</code>
+                        Zkus v nově vytvořeném adresáři <code>pyladies</code>
                         vytvořit adresář <code>test</code>,
                         a zkontrolovat, že se opravdu vytvořil.
                     </div>
@@ -244,9 +244,9 @@ test
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>cd pyladies</b>
-> <b>mkdir test</b>
-> <b>dir</b>
+&gt; <b>cd pyladies</b>
+&gt; <b>mkdir test</b>
+&gt; <b>dir</b>
 05/08/2014 07:28 PM &lt;DIR&gt;      test
 </pre>
                     </div>
@@ -271,15 +271,15 @@ $ <b>pwd</b>
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>cd ..</b>
-> <b>cd</b>
+&gt; <b>cd ..</b>
+&gt; <b>cd</b>
 /home/pviktori/Desktop
 </pre>
                     </div>
                     <div class="col-lg-12">
                         A nakonec smažeme vytvořený adresář <code>pyladies</code>.
                         K tomu použijeme příkaz <code>rm</code> nebo <code>rmdir</code>
-                        (z <em>remove</em> – odstraň, resp. <em>remove directory</em> – odstraň adresář).
+                        (z <em>remove</em> – odstraň, resp. <em>remove directory</em> – odstraň adresář).
                         Pozor, příkazová řádka nepoužívá odpadkový koš!
                         Všechno se nadobro smaže, takže si dobře překontroluj, že mažeš správný adresář.
                     </div>
@@ -295,10 +295,10 @@ removed directory: ‘pyladies’
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>cd</b>
+&gt; <b>cd</b>
 /home/pviktori/Desktop
-> <b>rmdir /S pyladies</b>
-pyladies, Are you sure <Y/N>? Y
+&gt; <b>rmdir /S pyladies</b>
+pyladies, Are you sure &lt;Y/N&gt;? Y
 </pre>
                     </div>
                 </section>
@@ -317,7 +317,7 @@ $ <b>exit</b>
                     <div class="col-lg-6">
                         <h4>Windows</h4>
 <pre>
-> <b>exit</b>
+&gt; <b>exit</b>
 </pre>
                     </div>
                 </section>
