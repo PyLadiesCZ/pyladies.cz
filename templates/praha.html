@@ -43,61 +43,7 @@
                 <p class="course-city-p">Tento kurz tě naučí základy programování, konkrétně programování v Pythonu. Je rozdělen na zhruba dvouhodinové lekce, které na sebe navazují; domácí projekty, které lekce doplňují; a nepovinné odbočky, které ukazují zajímavosti a praktické použití probraných konceptů.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="sections col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                {% for lesson in plan %}
-                <div class="section-box" id="section{{ loop.index }}">
-                    <h4 class="section-heading">
-                        {% if 'date' in lesson %}
-                            Lekce {{ loop.index }} - {{ lesson['name'] }}
-                            <span class="pull-right section-date">
-                                {% set day = lesson['date'][8:] %}
-                                {% set month = lesson['date'][5:7] %}
-                                {% set year = lesson['date'][:4] %}
-                                {{ '{}. {}. {}'.format(day, month, year) }}
-                            </span>
-                        {% else %}
-                            {{ lesson['name'] }}
-                        {% endif %}
-                    </h4>
-                    {% if 'description' in lesson %}
-                        <p class="section-info course-city-p">
-                            {{ lesson['description'] }}
-                        </p>
-                    {% endif %}
-                    {% for mat in lesson['materials'] %}
-                        {% set done = mat.get('done', lesson.get('done', False)) %}
-                        {% set done_class = 'section-done' if done else 'section-todo' %}
-                        <div class="section-info">
-                            {% if mat['type'] == 'lesson' %}
-                                {% if done %}
-                                    {% set icon_class = 'glyphicon-ok ' + done_class %}
-                                {% else %}
-                                    {% set icon_class = 'glyphicon-remove ' + done_class %}
-                                {% endif %}
-                            {% elif mat['type'] == 'handout' %}
-                                {% set icon_class = 'glyphicon-book ' + done_class %}
-                            {% elif mat['type'] == 'homework' %}
-                                {% set icon_class = 'glyphicon-pencil' %}
-                            {% elif mat['type'] == 'link' %}
-                                {% set icon_class = 'glyphicon-link' %}
-                            {% elif mat['type'] == 'special-lesson' %}
-                                {% set icon_class = 'glyphicon-education ' + done_class %}
-                            {% else %}
-                                {% set icon_class = 'glyphicon-flag' %}
-                            {% endif %}
-                            <span class="glyphicon {{ icon_class }} section-icon"></span>
-                            {% if 'link' in mat %}
-                                <a href="{{ pathto(mat['link'], 1) }}">{{ mat['name'] }}</a>
-                            {% else %}
-                                {{ mat['name'] }}
-                            {% endif %}
-                        </div>
-                    {% endfor %}
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+        {{ course_list(plan) }}
     </section>
     <!-- Advice section -->
     <section id="about3" class="container-fluid content-section text-center">
