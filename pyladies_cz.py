@@ -120,7 +120,7 @@ def read_yaml(filename):
     # Convert datetime objects to strings
     for lesson in data:
         if 'date' in lesson:
-            lesson['date'] = str(lesson['date'])
+            lesson['dates'] = [lesson['date']]
         if 'description' in lesson:
             lesson['description'] = convert_markdown(lesson['description'],
                                                      inline=True)

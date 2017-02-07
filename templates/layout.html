@@ -28,13 +28,18 @@
             {% for lesson in plan %}
             <div class="section-box" id="section{{ loop.index }}">
                 <h4 class="section-heading">
-                    {% if 'date' in lesson %}
+                    {% if 'dates' in lesson %}
                         Lekce {{ loop.index }} - {{ lesson['name'] }}
                         <span class="pull-right section-date">
-                            {% set day = lesson['date'][8:] %}
-                            {% set month = lesson['date'][5:7] %}
-                            {% set year = lesson['date'][:4] %}
-                            {{ '{}. {}. {}'.format(day, month, year) }}
+                            {% for date in lesson['dates'] %}
+                                {{ date.day }}. {{ date.month }}.
+                                {% if loop.last or date.year != lesson['dates'][-1].year %}
+                                    {{ date.year }}
+                                {% endif %}
+                                {% if not loop.last %}
+                                    a
+                                {% endif %}
+                            {% endfor %}
                         </span>
                     {% else %}
                         {{ lesson['name'] }}
