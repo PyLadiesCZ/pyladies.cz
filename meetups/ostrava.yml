@@ -1,0 +1,25 @@
+- name: PyLadies Ostrava <br> začátečnický kurz
+  registration:
+    url: https://goo.gl/forms/YhXAAKztRuffRWLw1
+  start: 2017-03-01
+  end: 2017-05-31
+  time: každou středu 17:00 - 19:00
+  place: &tieto-towers
+    name: Tieto Towers
+    address: 28.října 3346/91, Ostrava
+    url: https://goo.gl/maps/rq7CrLf9x2A2
+
+- name: MicroPython workshop
+  registration:
+    url: https://goo.gl/forms/knpg6S9lyBfWKy7H3
+  date: 2017-03-04
+  time: 9:00 - 17:00
+  place:
+    name: klubovna Pirátské strany
+    address: Jugoslávská 3038/40A, Ostrava
+    url: https://goo.gl/maps/rq7CrLf9x2A2
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  start: 2017-01-31
+  end: 2016-04-10
+  place: *tieto-towers
