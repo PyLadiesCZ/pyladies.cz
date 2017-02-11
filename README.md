@@ -13,6 +13,8 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 * Materiály: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Obsah README
+**Obecně**
+
 [Jak to funguje](#jak-to-funguje)
 
 [Jak vytvořit stránky](#jak-vytvorit-stranky)
@@ -22,6 +24,12 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 [Nastavení aktuálních kurzů na úvodní stránce](#uvodni-stranka)
 
 [Nastavení obrázků](#nastaveni-obrazku)
+
+[Nastavení informací o aktuálním kurzu na stránce materiálů](#nastaveni-informaci-o-aktualnim-kurzu)
+
+[Stav kurzu - probrané a neprobrané lekce](#probrane-neprobrane)
+
+[Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu](#presun-lekci)
 
 ## <a name="jak-to-funguje">Jak to funguje
 
@@ -133,12 +141,12 @@ statické stránky k nasazení na webový server.:
 
 Obrázky jsou definované v CSS. Pro každé město je společná třída intro=city, s tím, že obrázek pro každé město se změní v třídě **intro-city-{city-name}**. (Příklad třídy: intro-city-praha).
 
-### Nastavení informací o aktuálním kurzu na stránce materiálů
+### <a name="nastaveni-informaci-o-aktualnim-kurzu">Nastavení informací o aktuálním kurzu na stránce materiálů
 
 * Aktivní kurz (př. v sekci ```Started course Prague``` v souboru `templates/praha.html`)
 * Neaktivní kurz (př. v sekci ```Started course Brno``` v souboru `templates/brno.html`)
 
-### Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)
+### <a name="probrane-neprobrane">Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)
 
 * Probraná lekce ```done: true```
 * Neprobraná lekce ```done: false```
@@ -146,7 +154,7 @@ Obrázky jsou definované v CSS. Pro každé město je společná třída intro=
 ***Ukázka pro probranou a neprobranou lekci na webu:***
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" /><br /> 
 
-### Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)
+### <a name="presun-lekci">Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)
 Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
 
 ***Ukázka pro běžnou lekci:***
