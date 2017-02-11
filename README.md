@@ -14,6 +14,14 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 
 [Jak to funguje](#jak-to-funguje)
 
+[Jak vytvořit stránky](#jak-vytvorit-stranky)
+
+### Editace HTML:
+
+[Nastavení aktuálních kurzů na úvodní stránce](#uvodni-stranka)
+
+[Nastavení obrázků](#nastaveni-obrazku)
+
 ## <a name="jak-to-funguje">Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
@@ -32,7 +40,7 @@ V `plans` jsou data pro seznamy lekcí. Mění se tu datumy, probrané/neprobran
 Celé dohromady to spojuje `pyladies_cz.py`; tady se např. přidávají nové
 podstránky.
 
-## Jak vytvořit stránky
+## <a name="jak-vytvorit-stranky">Jak vytvořit stránky
 
 ### Instalace
 
@@ -64,7 +72,7 @@ statické stránky k nasazení na webový server.:
 
 ## Základní informace o kurzech, které se často mění - editace HTML
 
-### Nastavení aktuálních kurzů na úvodní stránce <br /><br />
+### <a name="uvodni-stranka">Nastavení aktuálních kurzů na úvodní stránce <br /><br />
 **Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město!**
 
 <img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, který právě běží. Ikonka - obrázek pylady.png. Kód:
@@ -114,7 +122,7 @@ statické stránky k nasazení na webový server.:
   </div>
 </div>
 ```
-### Nastavení obrázků
+### <a name="nastaveni-obrazku">Nastavení obrázků
 
 * Banner na úvodní stránce - 1500px × 655px
 * Banner v detailu měst - 1850px × 400px
