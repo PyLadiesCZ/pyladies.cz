@@ -12,7 +12,9 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 * Kód: [MIT](LICENSE)
 * Materiály: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## Jak to funguje
+[Jak to funguje](#jak-to-funguje)
+
+## <a name="jak-to-funguje">Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
 Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
