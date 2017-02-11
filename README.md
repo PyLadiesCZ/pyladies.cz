@@ -137,7 +137,7 @@ statické stránky k nasazení na webový server.:
 * Banner v detailu měst - 1850px × 400px
 * Fotky - detail města - 1920px × 1278px
 
-### Změna obrázků podle měst v banerech
+**Změna obrázků podle měst v banerech**
 
 Obrázky jsou definované v CSS. Pro každé město je společná třída intro=city, s tím, že obrázek pro každé město se změní v třídě **intro-city-{city-name}**. (Příklad třídy: intro-city-praha).
 
