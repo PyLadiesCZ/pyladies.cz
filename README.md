@@ -7,16 +7,17 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 *Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
 
 
-## Licence
+### Licence
 
 * Kód: [MIT](LICENSE)
 * Materiály: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
+## Obsah README
 [Jak to funguje](#jak-to-funguje)
 
 [Jak vytvořit stránky](#jak-vytvorit-stranky)
 
-### Editace HTML:
+**Editace HTML**
 
 [Nastavení aktuálních kurzů na úvodní stránce](#uvodni-stranka)
 
