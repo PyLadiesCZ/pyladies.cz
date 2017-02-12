@@ -179,8 +179,8 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
-  - name: Celý kód na hru z lekce o seznamech
-    type: link
+  - name: Celý kód na hru z lekce o seznamech
+    type: link
     link: v1/cele-kody/seznamy.py
 ```
 
@@ -203,6 +203,74 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
   - name: Relační databáze
     type: special-lesson
 ```
-    
-    
 
+### <a name="kurzy-mesta">Aktuální a proběhlé kurzy (stránka kurzů se upravuje v souboru `meetups/brno.yml`)
+Každé město má vlastní stránku s aktuálními a proběhlými kurzy. Dříve či později se z toho stane taková kronika.
+
+***V meetupech lze nastavit:***
+
+name: jméno akce
+
+topic: téma akce
+
+start a end: datum ve formátu `2017-02-13`, pokud má akce pevný termín od do
+
+date: jednodenní akce
+
+time: čas od do, případně i den v týdnu
+
+place: místo, kde sraz probíhá (pokud je víc srazů v jednom místě, dá se v YAMLu místo nasdílet dalším srazům, viz ukázky v těch YAML souborech)
+
+* name: jméno
+* address: adresa
+* latitude, longitude: mapové souřadnice
+* url: odkaz (chybí-li, ukáže se odkaz na mapu podle latitude/longitude)
+
+registration:
+
+* url: odkaz na registrační formulář
+* end: konec registrace (dá se vynechat, pokud je registrace vždy aktuální, třeba u opakujících se srazů)
+* text: text, který se objeví v odkazu (místo "Registrace právě probíhá!")
+
+
+***Ukázky variant kurzu (dají se kombinovat):***
+
+** Kurz má jasný start a konec, místo, čas registraci**
+
+```
+- name: Začátečnický kurz <br> Jarní pondělí 2017
+  start: 2017-02-27
+  end: 2017-05-29
+  time: pondělky 18:00 – 20:00
+  place:
+    name: Odbor školství
+    address: Cejl 73, Brno
+    latitude: '49.1992294'
+    longitude: '16.6235206'
+  registration:
+    url: <tady_bude_adresa>
+    end: 2017-02-19
+```
+
+** Kurz je jednodenní a má například téma**
+
+```
+- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Django Polls
+  date: 2017-01-28
+  time: 9:00 - 17:30
+  place:
+    name: MSD IT (Riverview)
+    address: Svornosti 3321/2, Praha 5
+    latitude: '50.0670442'
+```
+
+** Jsou to pravidelné srazy**
+
+```
+- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
+  time: pondělky ve 14 denních intervalech, 18:00 - 20:00
+  registration:
+    url: <tady_bude_adresa>
+```
+    
