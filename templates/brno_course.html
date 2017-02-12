@@ -15,41 +15,7 @@
   </header>
   <!-- Meetups -->
   <section class="meetup container text-center" id="meetups">
-      <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-              <h2 class="course-city-heading">Kurzy a srazy</h2>
-          </div>
-      </div>
-      <div class="row">
-          <div class="meetup-box text-left">
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h4 class="meetup-heading"><a href="/brno/">PyLadies Brno<br>začátečnický kurz</a></h4>
-                <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>27. 2. 2017 - 29. 5. 2017</p>
-                <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>18:00 – 20:00</p>
-                <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://mapy.cz/s/qFcU" target="_blank">Odbor školství, Cejl 73, Brno</a></p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h4 class="meetup-heading"><a href="/brno/">PyLadies Brno<br>začátečnický kurz</a></h4>
-                <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>28. 2. 2017 - 30. 5. 2017</p>
-                <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>18:00 – 20:00</p>
-                <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://mapy.cz/s/17fac" target="_blank">BC Titanium, Nové sady 25, Brno</a></p>
-              </div>
-              <!--
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h4 class="meetup-heading">PyLadies Brno<br>pokročilé a doučovací srazy</h4>
-                <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>probíhají opakovaně</p>
-                <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>každý čtvrtek 18:00 - 20:00</p>
-                <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.cz/maps/place/Fakulta+informatiky+MU/@49.2100695,16.597013,17z/data=!3m1!4b1!4m2!3m1!1s0x4712946af848abab:0xcbdad60137e0b956" target="_blank">Fakulta informatiky MU, Botanická 68a, Brno</a></p>
-              </div>
-              -->
-            <!--   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <span class="glyphicon glyphicon-calendar"></span>
-              <h4 class="meetup-heading">PyLady Brno - Beer</h4>
-              <p class="meetup-date">12.04.2015 - 13.05.2015</p>
-              <p class="meetup-address"><a href="#" target="_blank">Vysoka 23, 1234 Brno</a></p>
-              </div> -->
-          </div>
-        </div>
+    {{ meetup_list(meetups) }}
     </section>
 
     <!-- Advice section -->

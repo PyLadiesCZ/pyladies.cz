@@ -7,6 +7,7 @@ if sys.version_info < (3, 0):
 
 import os
 import fnmatch
+import datetime
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask import redirect
@@ -46,32 +47,32 @@ def ostrava_info():
 
 @app.route('/praha_course/')
 def praha_course():
-    return render_template('praha_course.html')
+    return render_template('praha_course.html', meetups=read_meetups_yaml('meetups/praha.yml'))
 
 @app.route('/brno_course/')
 def brno_course():
-    return render_template('brno_course.html')
+    return render_template('brno_course.html', meetups=read_meetups_yaml('meetups/brno.yml'))
 
 @app.route('/ostrava_course/')
 def ostrava_course():
-    return render_template('ostrava_course.html')
+    return render_template('ostrava_course.html', meetups=read_meetups_yaml('meetups/ostrava.yml'))
 
 @app.route('/brno/')
 def brno():
-    return render_template('brno.html', plan=read_yaml('plans/brno.yml'))
+    return render_template('brno.html', plan=read_lessons_yaml('plans/brno.yml'))
 
 
 @app.route('/praha/cznic/')
 def praha():
-    return render_template('praha.html', plan=read_yaml('plans/praha.yml'))
+    return render_template('praha.html', plan=read_lessons_yaml('plans/praha.yml'))
 
 @app.route('/praha/msd/')
 def praha_msd():
-    return render_template('praha_msd.html', plan=read_yaml('plans/praha_msd.yml'))
+    return render_template('praha_msd.html', plan=read_lessons_yaml('plans/praha_msd.yml'))
 
 @app.route('/ostrava/')
 def ostrava():
-    return render_template('ostrava.html', plan=read_yaml('plans/ostrava.yml'))
+    return render_template('ostrava.html', plan=read_lessons_yaml('plans/ostrava.yml'))
 
 @app.route('/stan_se/')
 def stan_se():
@@ -111,10 +112,30 @@ def convert_markdown(text, inline=False):
         result = result[3:-4]
     return result
 
+@app.template_filter('date_range')
+def date_range(dates, sep='–'):
+    start, end = dates
+    pieces = []
+    if start != end:
+        if start.year != end.year:
+            pieces.append('{d.day}. {d.month}. {d.year}'.format(d=start))
+        elif start.month != end.month:
+            pieces.append('{d.day}. {d.month}.'.format(d=start))
+        else:
+            pieces.append('{d.day}.'.format(d=start))
+        pieces.append('–')
+    pieces.append('{d.day}. {d.month}. {d.year}'.format(d=end))
+
+    return ' '.join(pieces)
+
 
 def read_yaml(filename):
     with open(filename, encoding='utf-8') as file:
         data = yaml.safe_load(file)
+    return data
+
+def read_lessons_yaml(filename):
+    data = read_yaml(filename)
 
     # workaround for http://stackoverflow.com/q/36157569/99057
     # Convert datetime objects to strings
@@ -128,6 +149,52 @@ def read_yaml(filename):
             mat['name'] = convert_markdown(mat['name'], inline=True)
 
     return data
+
+
+def read_meetups_yaml(filename):
+    data = read_yaml(filename)
+
+    today = datetime.date.today()
+
+
+    for meetup in data:
+        if 'frequency' not in meetup:
+            # Make sure all mettups have 'date', 'start', and 'end'.
+            if 'start' not in meetup:
+                meetup['start'] = meetup['date']
+            if 'date' not in meetup:
+                meetup['date'] = meetup['start']
+            if 'end' not in meetup:
+                meetup['end'] = meetup['date']
+
+            # Derive a URL for places that don't have one from the location
+            if 'place' in meetup:
+                if ('url' not in meetup['place']
+                        and {'latitude', 'longitude'} <= meetup['place'].keys()):
+                    meetup['place']['url'] = (
+                        'http://mapy.cz/zakladni?q={p[name]},'
+                        '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
+
+            # Figure out the status of registration
+            if 'registration' in meetup:
+                if 'end' in meetup['registration']:
+                    if meetup['start'] <= today:
+                        meetup['registration_status'] = 'meetup_started'
+                    elif meetup['registration']['end'] >= today:
+                        meetup['registration_status'] = 'running'
+                    else:
+                        meetup['registration_status'] = 'closed'
+                else:
+                    meetup['registration_status'] = 'running'
+        else:
+            meetup['end'] = today
+
+    return {
+        'current': [meetup for meetup in data
+                if not meetup['end'] or meetup['end'] >= today],
+        'past': [meetup for meetup in data
+                if meetup['end'] < today],
+    }
 
 
 def pathto(name, static=False):
@@ -146,6 +213,7 @@ def pathto(name, static=False):
 def inject_context():
     return {
         'pathto': pathto,
+        'today': datetime.date.today(),
     }
 
 

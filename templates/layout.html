@@ -85,6 +85,97 @@
     </div>
 {% endmacro %}
 
+{% macro meetup_info(meetup) %}
+  <div class="meetup-box text-left">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>
+      {% if meetup.topic %}
+        <p class="meetup-topic">
+        <span class="glyphicon glyphicon-bookmark"></span>
+        {{ meetup.topic }}
+      {% endif %}
+      {% if meetup.frequency %}
+        <p class="meetup-date">
+          <span class="glyphicon glyphicon-calendar"></span>
+          {{ meetup.frequency }}
+        </p>
+      {% elif meetup.start, meetup.end %}
+      <p class="meetup-date">
+        <span class="glyphicon glyphicon-calendar"></span>
+        {{ (meetup.start, meetup.end) | date_range }}
+      </p>
+      {% endif %}
+      {% if meetup.time %}
+        <p class="meetup-time">
+          <span class="glyphicon glyphicon-hourglass"></span>
+          {{ ('\n' ~ meetup.time) | markdown(inline=True) }}
+        </p>
+      {% endif %}
+      {% if meetup.place %}
+        <p class="meetup-address">
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <a href="{{ meetup.place.url }}" target="_blank">
+            {{ meetup.place.name }},
+            {{ meetup.place.address }}
+          </a>
+        </p>
+      {% endif %}
+      {% if meetup.registration_status %}
+        <p class="meetup-registration">
+          <span class="glyphicon glyphicon-edit"></span>
+          {% if meetup.registration_status == 'running' %}
+            <a href="{{ meetup.registration.url }}">Registrace právě probíhá!</a>
+          {% elif meetup.registration_status == 'closed' %}
+            Registrace už je uzavřena :(
+          {% elif meetup.registration_status == 'course_started' %}
+            Kurz probíhá
+          {% endif %}
+        </p>
+      {% endif %}
+      {% if meetup.info_rsvp %}
+        <p class="meetup-registration">
+          <span class="glyphicon glyphicon-edit"></span>
+          <a href="{{ meetup.info_rsvp.url }}">Potvrzení účasti a informace</a>
+          </a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro meetup_list(meetups) %}
+    {% if meetups['current'] %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+          <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
+        </div>
+      </div>
+      <div class="row">
+        {% for meetup in meetups['current'] %}
+          {{ meetup_info(meetup) }}
+          {% if not loop.last and loop.index0 % 2 %}
+            </div><div class="row">
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if meetups['past'] %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+          <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+        </div>
+      </div>
+      <div class="row">
+        {% for meetup in meetups['past'] %}
+          {{ meetup_info(meetup) }}
+          {% if not loop.last and loop.index0 % 2 %}
+            </div><div class="row">
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+{% endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -14,47 +14,7 @@
   </header>
   <!-- Meetups -->
   <section class="meetup container text-center" id="meetups">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Kurzy a srazy</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="meetup-box text-left">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h4 class="meetup-heading"><a href="/ostrava/">PyLadies Ostrava<br>začátečnický kurz</a></h4>
-          <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>1. 3. 2017 - 31. 5. 2017</p>
-          <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>každou středu 17:00 - 19:00</p>
-          <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/rq7CrLf9x2A2" target="_blank">Tieto Towers, 28.října 3346/91, Ostrava</a></p>
-          <p class="meetup-registration"><span class="glyphicon glyphicon-edit"></span><a href="https://goo.gl/forms/YhXAAKztRuffRWLw1" target="_blank">Registrace právě probíhá!</a></p>
-        </div>
-      </div>
-      <div class="meetup-box text-left">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h4 class="meetup-heading"><a href="/ostrava/">MicroPython workshop</a></h4>
-          <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>4. 3. 2017</p>
-          <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>9:00 - 17:00</p>
-          <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/TUEuh41nJH62" target="_blank">klubovna Pirátské strany, Jugoslávská 3038/40A, Ostrava</a></p>
-          <p class="meetup-registration"><span class="glyphicon glyphicon-edit"></span><a href="https://goo.gl/forms/knpg6S9lyBfWKy7H3" target="_blank">Registrace právě probíhá!</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="meetup-box text-left">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h4 class="meetup-heading"><a href="/ostrava/">PyLadies Ostrava<br>začátečnický kurz</a></h4>
-          <p class="meetup-date"><span class="glyphicon glyphicon-calendar"></span>4. 10. 2016 - 31. 1. 2017</p>
-          <p class="meetup-time"><span class="glyphicon glyphicon-hourglass"></span>každé úterý 18:00 - 20:00</p>
-          <p class="meetup-address"><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/rq7CrLf9x2A2" target="_blank">Tieto Towers, 28.října 3346/91, Ostrava</a></p>
-          <p class="meetup-registration"><span class="glyphicon glyphicon-edit"></span><a href="https://goo.gl/forms/vzgbdN1fxnJYfZTf1" target="_blank">Registrace uzavřena :-(</a></p>
-        </div>
-      </div>
-    </div>
+    {{ meetup_list(meetups) }}
   </section>
 
   <!-- Advice section -->
