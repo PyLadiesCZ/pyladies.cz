@@ -31,6 +31,8 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 
 [Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu](#presun-lekci)
 
+[Aktuální a proběhlé kurzy](#kurzy-mesta)
+
 ## <a name="jak-to-funguje">Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
