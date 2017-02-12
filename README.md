@@ -179,8 +179,8 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
-  - name: Celý kód na hru z lekce o seznamech
-    type: link
+  - name: Celý kód na hru z lekce o seznamech
+    type: link
     link: v1/cele-kody/seznamy.py
 ```
 
@@ -203,6 +203,71 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
   - name: Relační databáze
     type: special-lesson
 ```
-    
-    
 
+### <a name="kurzy-mesta">Aktuální a proběhlé kurzy (stránka kurzů se upravuje v souboru `meetups/brno.yml`)
+Každé město má vlastní stránku s aktuálními a proběhlými kurzy. Dříve či později se z toho stane taková kronika.
+
+***V meetupech lze nastavit:***
+
+name: jméno akce
+
+topic: téme akce
+
+start a end: pokud má akce pevný termín od do
+
+date: jednodenní akce
+
+frequency: opakované akce
+
+time: čas od do
+
+place: místo
+
+registration: registrační link, který sám mění aktuálnost podle data
+
+info_rsvp: registrační link, který nemění aktuálnost - tzn. je otevřen vždy (hodí se u opakujících se srazů)
+
+
+***Ukázky variant kurzu (dají se kombinovat):***
+
+Pozor, pokud má akce pravidelná setkání nenastavuj 'date', 'start' a 'end', ale 'frequency' do které můžeš vepsat pravidelnost.
+
+Pokud má akce link, kde je registrace a plánuje se, že registrace bude stále otevřená (jako u pokračovacích srazů), vyber 'info-rspv'
+nikoliv 'registration'.
+
+** Kurz má jasný start a konec, místo, čas registraci**
+```
+- name: Začátečnický kurz <br> Jarní pondělí 2017
+  start: 2017-02-27
+  end: 2017-05-29
+  time: pondělky 18:00 – 20:00
+  place:
+    name: Odbor školství
+    address: Cejl 73, Brno
+    latitude: '49.1992294'
+    longitude: '16.6235206'
+  registration:
+    url: <tady_bude_adresa>
+```
+
+** Kurz je jednodenní a má například téma**
+```
+- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Django Polls
+  date: 2017-01-28
+  time: 9:00 - 17:30
+  place: &msd-it-riverview
+    name: MSD IT (Riverview)
+    address: Svornosti 3321/2, Praha 5
+    latitude: '50.0670442'
+```
+
+** Jsou to pravidelné srazy**
+```
+- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
+  frequency: pondělky ve 14 denních intervalech
+  time: 18:00 - 20:00
+  info_rsvp:
+    url: <tady_bude_adresa>
+```
+    

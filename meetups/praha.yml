@@ -10,17 +10,16 @@
     url: https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029
 
 - name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
+  frequency: pondělky ve 14 denních intervalech
   time: 18:00 - 20:00
-  date_text: pondělky ve 14denních intervalech
-  registration:
-    url: https://www.meetup.com/pyladiescz/
-    text: Potvrď účast na meetup.com
   place: &usertech
     name: Usertech
     address: Štefánikova 43a, Praha 5 - Anděl
     latitude: '50.0764314'
     longitude: '14.4016603'
     url: https://www.google.cz/maps/place/%C5%A0tef%C3%A1nikova+13%2F43,+150+00+Praha+5-Sm%C3%ADchov/@50.0764314,14.4016603,17z/data=!3m1!4b1!4m5!3m4!1s0x470b94f938dd9c6d:0xa7239b1dd6398d30!8m2!3d50.0764314!4d14.403849
+  info_rsvp:
+    url: https://www.meetup.com/pyladiescz/
 
 - name: Kurz Testování <br> vhled do automatizovaného testování
   start: 2017-01-14
@@ -78,7 +77,6 @@
 - name: PyLadies Praha <br> pokročilé a doučovací srazy
   time: každé pondělí 18:00 - 20:00
   start: 2016-04-05
-  end: 2016-06-28    # XXX - kdy to končilo?
   place:
     name: probíhaly na různých místech v Praze
 

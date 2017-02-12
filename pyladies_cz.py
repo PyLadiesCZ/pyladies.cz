@@ -1,5 +1,7 @@
 """Create or serve the pyladies.cz website
 """
+#!/usr/bin/python
+# coding: utf-8
 
 import sys
 if sys.version_info < (3, 0):
@@ -156,38 +158,44 @@ def read_meetups_yaml(filename):
 
     today = datetime.date.today()
 
+
     for meetup in data:
+        if 'frequency' not in meetup:
+            # Make sure all mettups have 'date', 'start', and 'end'.
+            if 'start' not in meetup:
+                meetup['start'] = meetup['date']
+            if 'date' not in meetup:
+                meetup['date'] = meetup['start']
+            if 'end' not in meetup:
+                meetup['end'] = meetup['date']
 
-        # 'date' means both start and end
-        if 'date' in meetup:
-            meetup['start'] = meetup['date']
-            meetup['end'] = meetup['date']
+            # Derive a URL for places that don't have one from the location
+            if 'place' in meetup:
+                if ('url' not in meetup['place']
+                        and {'latitude', 'longitude'} <= meetup['place'].keys()):
+                    meetup['place']['url'] = (
+                        'http://mapy.cz/zakladni?q={p[name]},'
+                        '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
 
-        # Derive a URL for places that don't have one from the location
-        if 'place' in meetup:
-            if ('url' not in meetup['place']
-                    and {'latitude', 'longitude'} <= meetup['place'].keys()):
-                meetup['place']['url'] = (
-                    'http://mapy.cz/zakladni?q={p[name]},'
-                    '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
-
-        # Figure out the status of registration
-        if 'registration' in meetup:
-            if 'end' in meetup['registration']:
-                if meetup['start'] <= today:
-                    meetup['registration_status'] = 'meetup_started'
-                elif meetup['registration']['end'] >= today:
-                    meetup['registration_status'] = 'running'
+            # Figure out the status of registration
+            if 'registration' in meetup:
+                if 'end' in meetup['registration']:
+                    if meetup['start'] <= today:
+                        meetup['registration_status'] = 'meetup_started'
+                    elif meetup['registration']['end'] >= today:
+                        meetup['registration_status'] = 'running'
+                    else:
+                        meetup['registration_status'] = 'closed'
                 else:
-                    meetup['registration_status'] = 'closed'
-            else:
-                meetup['registration_status'] = 'running'
+                    meetup['registration_status'] = 'running'
+        else:
+            meetup['end'] = today
 
     return {
         'current': [meetup for meetup in data
-                    if ('end' not in meetup) or (meetup['end'] >= today)],
+                if not meetup['end'] or meetup['end'] >= today],
         'past': [meetup for meetup in data
-                 if ('end' in meetup) and (meetup['end'] < today)],
+                if meetup['end'] < today],
     }
 
 
