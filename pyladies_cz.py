@@ -1,7 +1,5 @@
 """Create or serve the pyladies.cz website
 """
-#!/usr/bin/python
-# coding: utf-8
 
 import sys
 if sys.version_info < (3, 0):
