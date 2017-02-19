@@ -2,7 +2,7 @@
   dates:
   - 2017-02-27
   - 2017-02-28
-  done: true
+  done: false
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -29,7 +29,7 @@
   dates:
   - 2017-03-06
   - 2017-03-07
-  done: true
+  done: false
   materials:
   - name: První program
     type: lesson
@@ -53,7 +53,7 @@
   dates:
   - 2017-03-13
   - 2017-03-14
-  done: true
+  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -74,7 +74,7 @@
   dates:
   - 2017-03-20
   - 2017-03-21
-  done: true
+  done: false
   materials:
   - name: Git
     type: lesson
@@ -92,7 +92,7 @@
   dates:
   - 2017-03-27
   - 2017-03-28
-  done: true
+  done: false
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -110,7 +110,7 @@
   dates:
   - 2017-04-03
   - 2017-04-04
-  done: true
+  done: false
   materials:
   - name: Výjimky
     type: lesson
@@ -131,7 +131,7 @@
   dates:
   - 2017-04-10
   - 2017-04-11
-  done: true
+  done: false
   materials:
   - name: Spolupráce & Open Source
     type: lesson
@@ -154,7 +154,7 @@
 - name: Seznamy
   dates:
   - 2017-04-18
-  done: true
+  done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -174,7 +174,7 @@
   dates:
   - 2017-04-24
   - 2017-04-25
-  done: true
+  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -191,7 +191,7 @@
 - name: Slovníky
   dates:
   - 2017-05-02
-  done: true
+  done: false
   materials:
   - name: Slovníky
     type: lesson
@@ -208,7 +208,7 @@
 - name: Třídy
   dates:
   - 2017-05-09
-  done: true
+  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -220,7 +220,7 @@
   dates:
   - 2017-05-15
   - 2017-05-16
-  done: true
+  done: false
   materials:
   - name: Asteroids
     type: lesson

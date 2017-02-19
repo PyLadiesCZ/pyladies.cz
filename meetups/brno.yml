@@ -7,8 +7,6 @@
     address: Cejl 73, Brno
     latitude: '49.1992294'
     longitude: '16.6235206'
-  registration:
-    url: https://docs.google.com/forms/d/e/1FAIpQLSczcYKk3vbjd6iYTc9uBbM3s_qEfQzIi-2M0nAGWdbK97FvDA/viewform?c=0&w=1
 
 - name: Začátečnický kurz <br> Jarní úterý 2017
   start: 2017-02-28
@@ -19,8 +17,6 @@
     address: BC Titanium, Nové sady 25, Brno
     latitude: '49.1875653'
     longitude: '16.6064981'
-  registration:
-    url: https://docs.google.com/forms/d/e/1FAIpQLSczcYKk3vbjd6iYTc9uBbM3s_qEfQzIi-2M0nAGWdbK97FvDA/viewform?c=0&w=1
 
 - name: Začátečnický kurz <br> Podzim 2016
   start: 2016-09-26
