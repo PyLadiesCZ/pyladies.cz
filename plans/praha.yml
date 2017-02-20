@@ -1,6 +1,6 @@
 - name: Instalace
-  date: 2016-09-13
-  done: true
+  date: 2017-03-14
+  done: false
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -24,8 +24,8 @@
     type: homework
     link: v1/s001-install/handout/handout.pdf
 - name: První program
-  date: 2016-09-20
-  done: true
+  date: 2017-03-21
+  done: false
   materials:
   - name: První program
     type: lesson
@@ -46,8 +46,8 @@
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
-  date: 2016-09-27
-  done: true
+  date: 2017-03-28
+  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -64,9 +64,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
-- name: Správa zdrojového kódu
-  date: 2016-10-04
-  done: true
+- name: Spolupráce a Opensource - Git
+  date: 2017-04-04
+  done: false
   materials:
   - name: Git
     type: lesson
@@ -74,15 +74,33 @@
   - name: Větvení v Gitu
     type: lesson
     link: v1/s009-git/branching.html
+  - name: Spolupráce & Open Source
+    type: lesson
+    link: v1/s005-modules/opensource.html
+  - name: Soubory
+    type: lesson
+    link: v1/s006-lists/files.html
   - name: Gitový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
-  - name: Domácí projekty (PDF)
+  - name: Domácí projekty - Git (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3b.pdf
+  - name: Domácí projekty - Soubory (PDF)
+    type: homework
+    link: v1/s005-modules/handout/handout7.pdf
+  - name: odkaz k domácím projektům – hiragana
+    type: link
+    link: v1/s006-lists/resources/hiragana.txt
+  - name: odkaz k domácím projektům – katakana
+    type: link
+    link: v1/s006-lists/resources/katakana.txt
+  - name: odkaz k domácím projektům – „日本語の表記体系” na japonské Wikipedii
+    type: link
+    link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Funkce & Řetězce
-  date: 2016-10-11
-  done: true
+  date: 2017-04-11
+  done: false
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -97,14 +115,14 @@
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování
-  date: 2016-10-18
-  done: true
+  date: 2016-04-18
+  done: false
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: special-lesson
 - name: Testování
-  date: 2016-10-25
-  done: true
+  date: 2017-04-25
+  done: false
   materials:
   - name: Výjimky
     type: lesson
@@ -121,31 +139,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
-- name: Spolupráce a Open-Source
-  date: 2016-11-01
-  done: true
-  materials:
-  - name: Spolupráce & Open Source
-    type: lesson
-    link: v1/s005-modules/opensource.html
-  - name: Soubory
-    type: lesson
-    link: v1/s006-lists/files.html
-  - name: Domácí projekty (PDF)
-    type: homework
-    link: v1/s005-modules/handout/handout7.pdf
-  - name: odkaz k domácím projektům – hiragana
-    type: link
-    link: v1/s006-lists/resources/hiragana.txt
-  - name: odkaz k domácím projektům – katakana
-    type: link
-    link: v1/s006-lists/resources/katakana.txt
-  - name: odkaz k domácím projektům – „日本語の表記体系” na japonské Wikipedii
-    type: link
-    link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Seznamy
-  date: 2016-11-08
-  done: true
+  date: 2017-05-02
+  done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -162,8 +158,8 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2016-11-15
-  done: true
+  date: 2017-05-09
+  done: false
   materials:
   - name: Slovníky
     type: lesson
@@ -178,8 +174,8 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
-  date: 2016-11-22
-  done: true
+  date: 2017-05-16
+  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -194,8 +190,8 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
-  date: 2016-11-29
-  done: true
+  date: 2017-05-23
+  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -204,8 +200,8 @@
     type: lesson
     link: v1/s014-class/inheritance.html
 - name: Závěrečný projekt
-  date: 2016-12-06
-  done: true
+  date: 2017-05-30
+  done: false
   materials:
   - name: Asteroids
     type: lesson
@@ -215,7 +211,10 @@
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf   
+- name: Závěrečná procvičovací hodina 
+  date: 2017-06-06
+  done: false
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
