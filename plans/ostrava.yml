@@ -7,13 +7,13 @@
     link: v1/s001-install/uvod-ostrava.html
   - name: Úvod do příkazové řádky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/cmdline/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/cmdline/
   - name: Instalace Pythonu a první krůčky s ním
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/install/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/install/
   - name: Instalace editoru
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/install-editor/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/install-editor/
   - name: Tahák na klávesnici
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/keyboard/keyboard-cs.pdf
