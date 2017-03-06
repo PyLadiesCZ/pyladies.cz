@@ -1,6 +1,6 @@
 - name: Instalace
   date: 2017-03-01
-  done: false
+  done: true
   materials:
   - name: Úvodní prezentace
     type: lesson
