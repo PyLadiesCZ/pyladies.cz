@@ -26,22 +26,22 @@
   materials:
   - name: První program
     type: lesson
-    link: v1/s002-hello-world/hello-world.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/hello-world/
   - name: Chybové hlášky a `print`
     type: lesson
-    link: v1/s002-hello-world/printing.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/print/
   - name: Proměnné
     type: lesson
-    link: v1/s002-hello-world/variables.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/variables/
   - name: Porovnávání
     type: lesson
-    link: v1/s002-hello-world/comparisons.html
-  - name: "*Nebo* anebo *a* (bonus)"
-    type: lesson
-    link: v1/s002-hello-world/and-or.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/comparisons/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
+  - name: "*Nebo* anebo *a* (bonus)"
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/and-or/
 - name: Cykly
   date: 2017-03-15
   done: false
