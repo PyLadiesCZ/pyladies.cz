@@ -42,6 +42,9 @@
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/and-or/
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/9mTOUeziFQJXa2BfwRkX
 - name: Cykly
   date: 2017-03-15
   done: false
