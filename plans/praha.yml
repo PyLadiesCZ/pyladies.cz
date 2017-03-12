@@ -7,16 +7,16 @@
     link: v1/s001-install/uvod-praha.html
   - name: Úvod do příkazové řádky
     type: lesson
-    link: v1/s001-install/cmdline.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/cmdline/
   - name: Instalace Pythonu a první krůčky s ním
     type: lesson
-    link: v1/s001-install/instalace.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/install/
   - name: Instalace editoru
     type: lesson
-    link: v1/s002-hello-world/editor.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/install-editor/
   - name: Instalace Gitu
     type: lesson
-    link: v1/s001-install/git.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/git/install/
   - name: Tahák na klávesnici
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/keyboard/keyboard-cs.pdf
@@ -29,19 +29,19 @@
   materials:
   - name: První program
     type: lesson
-    link: v1/s002-hello-world/hello-world.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/hello-world/
   - name: Chybové hlášky a `print`
     type: lesson
-    link: v1/s002-hello-world/printing.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/print/
   - name: Proměnné
     type: lesson
-    link: v1/s002-hello-world/variables.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/variables/
   - name: Porovnávání
     type: lesson
-    link: v1/s002-hello-world/comparisons.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/comparisons/
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
-    link: v1/s002-hello-world/and-or.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/and-or/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
