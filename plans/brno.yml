@@ -29,7 +29,7 @@
   dates:
   - 2017-03-06
   - 2017-03-07
-  done: false
+  done: true
   materials:
   - name: První program
     type: lesson
