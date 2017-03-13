@@ -51,13 +51,13 @@
   materials:
   - name: Funkce
     type: lesson
-    link: v1/s003-looping/functions.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/functions
   - name: Želva a cykly
     type: lesson
-    link: v1/s003-looping/turtle.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/intro/turtle
   - name: Cyklus `While`
     type: lesson
-    link: v1/s003-looping/while.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/while
   - name: Tahák s užitečnými funkcemi
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
