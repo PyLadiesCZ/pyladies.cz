@@ -53,7 +53,7 @@
   dates:
   - 2017-03-13
   - 2017-03-14
-  done: false
+  done: true
   materials:
   - name: Funkce
     type: lesson
