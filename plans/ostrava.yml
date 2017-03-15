@@ -61,6 +61,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/lGdiV8TaPuK6WMIkUB0l
 - name: Jeden nový cyklus a procvičování
   date: 2017-03-22
   done: false
