@@ -1,3 +1,14 @@
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2017-03-14
+  end: 2017-06-06
+  time: každé úterý 18:00 - 20:00
+  place: &cz-nic
+    name: budova CZ.NIC
+    address: Milešovská 5, Praha 3
+    latitude: '50.079123'
+    longitude: '14.4490963'
+    url: https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs
+
 - name: Kurz Webfrontend <br> Tvorba webu
   start: 2017-01-31
   end:   2017-02-28
@@ -26,13 +37,8 @@
   start: 2017-01-14
   end: 2017-01-15
   time: 9:00 - 16:00
-  place: &cz-nic
-    name: budova CZ.NIC
-    address: Milešovská 5, Praha 3
-    latitude: '50.079123'
-    longitude: '14.4490963'
-    url: https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs
-
+  place: *cz-nic
+  
 - name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
   topic: Django Polls
   date: 2017-01-28
