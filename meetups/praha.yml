@@ -1,9 +1,3 @@
-- name: PyLadies Praha <br> začátečnický kurz
-  start: 2017-03-14
-  end: 2017-05-30
-  time: každé úterý 18:00 - 20:00
-  place: *cz-nic
-
 - name: Kurz Webfrontend <br> Tvorba webu
   start: 2017-01-31
   end:   2017-02-28
