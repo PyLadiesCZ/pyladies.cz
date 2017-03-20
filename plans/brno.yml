@@ -78,10 +78,10 @@
   materials:
   - name: Git
     type: lesson
-    link: v1/s009-git/git.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/git/basics/
   - name: Větvení v Gitu
     type: lesson
-    link: v1/s009-git/branching.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/git/branching/
   - name: Gitový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
