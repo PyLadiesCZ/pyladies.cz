@@ -9,7 +9,6 @@
     longitude: '14.408024'
     url: https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127
 
-
 - name: PyLadies Praha <br> začátečnický kurz
   start: 2017-03-14
   end: 2017-06-06
@@ -55,13 +54,8 @@
   topic: Django Polls
   date: 2017-01-28
   time: 9:00 - 17:30
-  place: &msd-it-riverview
-    name: MSD IT (Riverview)
-    address: Svornosti 3321/2, Praha 5
-    latitude: '50.0670442'
-    longitude: '14.408024'
-    url: https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127
-
+  place: *msd-it-riverview
+  
 - name: PyLadies Praha <br> začátečnický kurz
   start: 2016-10-05
   end: 2016-12-21
