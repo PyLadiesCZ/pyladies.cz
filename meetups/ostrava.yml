@@ -25,3 +25,15 @@
   start: 2016-10-04
   end: 2017-01-31
   place: *tieto-towers
+
+- name: Advanced PyLadies <br> pokročilé a doučovací srazy
+  registration:
+    url: https://docs.google.com/spredsheets/d/1v5R0c3ltbWqIZNV5NMWG7sJZ3welxdSjNC0V-LRQRUU/edit#gid=0
+    text: Registrace je otevřená po celou dobu
+  start: 2017-03-05
+  end: 2017-06-26
+  time: každé úterý 18:00 - 19:30
+  place:
+    name: VŠB TUO - FEI
+    address: 17. listopadu 15, Ostrava - Poruba
+    url: https://goo.gl/maps/hKpiFtjqKnp
