@@ -74,6 +74,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3b.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/FyAKaua6sFGjSR4Ldnzo
 - name: Funkce & Řetězce
   date: 2017-03-29
   done: false
