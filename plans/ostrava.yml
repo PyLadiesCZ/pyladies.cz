@@ -45,6 +45,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/9mTOUeziFQJXa2BfwRkX
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s002-hello-world/ostrava/feedback-homeworks.html
 - name: Cykly
   date: 2017-03-15
   done: true
@@ -64,6 +67,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/lGdiV8TaPuK6WMIkUB0l
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s003-looping/ostrava/feedback-homeworks.html
 - name: Jeden nový cyklus a procvičování
   date: 2017-03-22
   done: true
