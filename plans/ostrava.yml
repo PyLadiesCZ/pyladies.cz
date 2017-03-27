@@ -99,6 +99,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/3s1Fj5hqWkO9RuPiPTNY
 - name: Práce se soubory
   date: 2017-04-05
   done: false
