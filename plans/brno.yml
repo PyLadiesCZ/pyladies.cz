@@ -74,7 +74,7 @@
   dates:
   - 2017-03-20
   - 2017-03-21
-  done: false
+  done: true
   materials:
   - name: Git
     type: lesson
