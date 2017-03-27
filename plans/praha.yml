@@ -104,10 +104,10 @@
   materials:
   - name: Vlastní funkce
     type: lesson
-    link: v1/s004-strings/functions.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/def/
   - name: Řetězce
     type: lesson
-    link: v1/s004-strings/strings.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/str/
   - name: Řetězcový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/strings/strings-cs.pdf
