@@ -124,6 +124,9 @@
   - name: odkaz k domácím projektům – „日本語の表記体系” na japonské Wikipedii
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/uIhKpOH3X7CO7cWJKoTc
 - name: Seznamy
   date: 2017-04-12
   done: false
