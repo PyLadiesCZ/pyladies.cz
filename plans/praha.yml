@@ -68,18 +68,12 @@
   date: 2017-04-04
   done: false
   materials:
-  - name: Git
+  - name: Spolupráce a Git
     type: lesson
-    link: v1/s009-git/git.html
-  - name: Větvení v Gitu
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/git/git-collaboration-2in1/
+  - name: Větvení v Gitu (bonus)
     type: lesson
-    link: v1/s009-git/branching.html
-  - name: Spolupráce & Open Source
-    type: lesson
-    link: v1/s005-modules/opensource.html
-  - name: Soubory
-    type: lesson
-    link: v1/s006-lists/files.html
+    link: http://naucse.python.cz/lessons/git/branching/
   - name: Gitový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
