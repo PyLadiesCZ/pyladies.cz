@@ -126,16 +126,19 @@
   materials:
   - name: Výjimky
     type: lesson
-    link: v1/s005-modules/exceptions.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/exceptions/
   - name: Moduly
     type: lesson
-    link: v1/s005-modules/modules.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/modules/
   - name: Testování
     type: lesson
-    link: v1/s005-modules/testing.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/testing/
   - name: Poznámka o importování
     type: lesson
-    link: v1/s005-modules/circular_imports.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/circular-imports/
+  - name: Výjimkový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/exceptions/exceptions-cs.pdf
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
