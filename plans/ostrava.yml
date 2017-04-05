@@ -105,6 +105,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/3s1Fj5hqWkO9RuPiPTNY
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s004-strings/ostrava/feedback-homeworks.html
 - name: Práce se soubory
   date: 2017-04-05
   done: false
