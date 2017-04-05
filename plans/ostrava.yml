@@ -115,7 +115,10 @@
   - name: Soubory
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/files/
-  - name: Domácí projekty (PDF)
+  - name: Domácí projekty A (PDF) – dělejte jen druhou stranu („Šibenice“)
+    type: homework
+    link: v1/s005-modules/handout/handout5.pdf
+  - name: Domácí projekty B (PDF)
     type: homework
     link: v1/s005-modules/handout/handout7.pdf
   - name: odkaz k domácím projektům – hiragana
