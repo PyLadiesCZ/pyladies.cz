@@ -114,7 +114,7 @@
   materials:
   - name: Soubory
     type: lesson
-    link: v1/s006-lists/files.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/files/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout7.pdf
