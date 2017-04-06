@@ -110,7 +110,7 @@
     link: v1/s004-strings/ostrava/feedback-homeworks.html
 - name: Práce se soubory
   date: 2017-04-05
-  done: false
+  done: true
   materials:
   - name: Soubory
     type: lesson
