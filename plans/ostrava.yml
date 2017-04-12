@@ -150,7 +150,10 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
   - name: Domácí projekty (PDF)
     type: homework
-    link: v1/s006-lists/handout/handout6.pdf
+    link: v1/s006-lists/handout-ostrava/handout6.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/Y9AcQe8FPbYF8KZcG6cH
 - name: Slovníky
   date: 2017-04-19
   done: false
