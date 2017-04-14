@@ -138,7 +138,7 @@
     link: v1/s005-modules/ostrava/feedback-homeworks.html
 - name: Seznamy
   date: 2017-04-12
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
