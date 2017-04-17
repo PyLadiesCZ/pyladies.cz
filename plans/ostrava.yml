@@ -169,7 +169,10 @@
     link: v1/s011-dicts/json.html
   - name: Slovníkový tahák
     type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
+    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf    
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
 - name: Testování
   date: 2017-04-26
   done: false
