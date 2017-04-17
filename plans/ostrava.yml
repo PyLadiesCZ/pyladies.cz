@@ -170,6 +170,9 @@
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf    
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s011-dicts/handout/handout8.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
