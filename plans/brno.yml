@@ -134,7 +134,7 @@
   dates:
   - 2017-04-10
   - 2017-04-11
-  done: false
+  done: true
   materials:
   - name: Spolupráce & Open Source
     type: lesson
@@ -159,17 +159,16 @@
     link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/git/ignoring/
 - name: Seznamy
   dates:
+  - 2017-04-20
   - 2017-04-18
   done: false
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists2.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/list
   - name: N-tice
     type: lesson
-    link: v1/s006-lists/tuples.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/tuple
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
@@ -182,6 +181,8 @@
   - 2017-04-25
   done: false
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Grafika
     type: lesson
     link: v1/s012-pyglet/pyglet.html
@@ -196,6 +197,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Slovníky
   dates:
+  - 2017-05-04
   - 2017-05-02
   done: false
   materials:
@@ -213,6 +215,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Třídy
   dates:
+  - 2017-05-11
   - 2017-05-09
   done: false
   materials:
