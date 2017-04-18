@@ -163,10 +163,13 @@
   materials:
   - name: Slovníky
     type: lesson
-    link: v1/s011-dicts/dicts.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/dict/
   - name: JSON
     type: lesson
-    link: v1/s011-dicts/json.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/json/
+  - name: Ukázka jednoduchého API
+    type: lesson
+    link: v1/s011-dicts/simple-api.html
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf    
