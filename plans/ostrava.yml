@@ -201,6 +201,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
 - name: Coding Dojo
   date: 2017-05-03
   description: |
