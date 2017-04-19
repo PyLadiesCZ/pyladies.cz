@@ -162,7 +162,7 @@
     link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
 - name: Slovníky
   date: 2017-04-19
-  done: false
+  done: true
   materials:
   - name: Slovníky
     type: lesson
