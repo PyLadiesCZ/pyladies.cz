@@ -157,6 +157,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/Y9AcQe8FPbYF8KZcG6cH
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
 - name: Slovníky
   date: 2017-04-19
   done: false
@@ -175,7 +178,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf    
   - name: Domácí projekty (PDF)
     type: homework
-    link: v1/s011-dicts/handout/handout8.pdf
+    link: v1/s011-dicts/handout/handout9.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
