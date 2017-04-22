@@ -175,7 +175,7 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
-- name: Grafika
+- name: Slovníky
   dates:
   - 2017-04-24
   - 2017-04-25
@@ -183,24 +183,6 @@
   materials:
   - name: Turnaj v piškvorkách
     type: special
-  - name: Grafika
-    type: lesson
-    link: v1/s012-pyglet/pyglet.html
-  - name: "Praktické cvičení: Pong"
-    type: lesson
-    link: v1/s012-pyglet/pong.html
-  - name: Kód celé hry Pong
-    type: link
-    link: v1/s012-pyglet/pong.py
-  - name: Tahák na Pyglet
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
-- name: Slovníky
-  dates:
-  - 2017-05-04
-  - 2017-05-02
-  done: false
-  materials:
   - name: Slovníky
     type: lesson
     link: v1/s011-dicts/dicts.html
@@ -213,6 +195,24 @@
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
+- name: Grafika
+  dates:
+  - 2017-05-04
+  - 2017-05-02
+  done: false
+  materials:
+  - name: Grafika
+    type: lesson
+    link: v1/s012-pyglet/pyglet.html
+  - name: "Praktické cvičení: Pong"
+    type: lesson
+    link: v1/s012-pyglet/pong.html
+  - name: Kód celé hry Pong
+    type: link
+    link: v1/s012-pyglet/pong.py
+  - name: Tahák na Pyglet
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   dates:
   - 2017-05-11
