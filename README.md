@@ -64,6 +64,10 @@ podstránky.
 Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
 Změny v kódu se projeví po obnovení stránky v prohlížeči.
 
+Na Windows to kvůli použité knihovně sh, která na Windows nefunguje spustit nepůjde. 
+Na Windows 10 to lze vyřešit pomocí instalace [https://msdn.microsoft.com/en-us/commandline/wsl/about](Bash on Ubuntu on Windows) a spuštění přes něj. K úspěšnému spuštění bude pravděpodobně také nutné nainstalovat `python-setuptools` a možná i další balíčky.
+
+
 ### Úprava souborů
 
 * Soubory html jsou ve složce ``templates``
