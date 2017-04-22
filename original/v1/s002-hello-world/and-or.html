@@ -59,6 +59,7 @@ elif stastna_retezec == 'ne':
     stastna = False
 else:
     print('Nerozumím!')
+    exit()
 
 bohata_retezec = input('Jsi bohatá? ')
 if bohata_retezec == 'ano':
@@ -67,6 +68,7 @@ elif bohata_retezec == 'ne':
     bohata = False
 else:
     print('Nerozumím!')
+    exit()
 
 if bohata and stastna:
     <span class="comment"># Je bohatá a zároveň štǎstná, ta se má.</span>
@@ -82,6 +84,15 @@ else:
     <span class="comment"># A tady víme, že není ani šťastná, ani bohatá.</span>
     print('To je mi líto.')
 </pre>
+                    <p>
+                        Funkce <code>exit</code> program okamžitě ukončí,
+                        ačkoli ještě nedoběhl až na poslední řádek.
+                        Tady ho používáme, když uživatel na otázku odpoví
+                        něco jiného než „ano“, nebo „ne“.
+                        V takovém případě nemá smysl pokračovat: radu do
+                        života můžeme udělit, jen pokud známe odpovědi na
+                        obě otázky.
+                    </p>
                 </div>
             </div>
             <div class="footer">
