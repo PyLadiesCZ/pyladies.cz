@@ -144,10 +144,10 @@
     type: special
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists2.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/list
   - name: N-tice
     type: lesson
-    link: v1/s006-lists/tuples.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/tuple
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
@@ -160,13 +160,13 @@
   materials:
   - name: Slovníky
     type: lesson
-    link: v1/s011-dicts/dicts.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/dict
   - name: JSON
     type: lesson
-    link: v1/s011-dicts/json.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/intro/json
   - name: Github API
     type: lesson
-    link: v1/s011-dicts/github-api.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/projects/github-api
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
@@ -176,10 +176,10 @@
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/intro/pyglet
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/projects/pong
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py

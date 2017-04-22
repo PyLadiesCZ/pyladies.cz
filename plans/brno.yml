@@ -185,13 +185,13 @@
     type: special
   - name: Slovníky
     type: lesson
-    link: v1/s011-dicts/dicts.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/dict
   - name: JSON
     type: lesson
-    link: v1/s011-dicts/json.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/intro/json
   - name: Github API
     type: lesson
-    link: v1/s011-dicts/github-api.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/github-api
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
@@ -203,10 +203,10 @@
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
-  - name: "Praktické cvičení: Pong"
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/intro/pyglet
+  - name: "Praktické cvičení: Pong (bonus)"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/pong
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
