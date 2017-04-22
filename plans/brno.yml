@@ -161,7 +161,7 @@
   dates:
   - 2017-04-20
   - 2017-04-18
-  done: false
+  done: true
   materials:
   - name: Seznamy
     type: lesson
