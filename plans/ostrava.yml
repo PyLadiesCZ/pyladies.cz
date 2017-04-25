@@ -186,21 +186,21 @@
   date: 2017-04-26
   done: false
   materials:
-  - name: Výjimky
-    type: lesson
-    link: v1/s005-modules/exceptions.html
   - name: Moduly
     type: lesson
     link: v1/s005-modules/modules.html
-  - name: Testování
-    type: lesson
-    link: v1/s005-modules/testing.html
   - name: Poznámka o importování
     type: lesson
     link: v1/s005-modules/circular_imports.html
+  - name: Výjimky
+    type: lesson
+    link: v1/s005-modules/exceptions.html
+  - name: Testování
+    type: lesson
+    link: v1/s005-modules/testing.html
   - name: Domácí projekty (PDF)
     type: homework
-    link: v1/s005-modules/handout/handout5.pdf
+    link: v1/s005-modules/handout/handout5-ostrava.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
