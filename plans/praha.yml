@@ -116,7 +116,7 @@
     type: special-lesson
 - name: Testování
   date: 2017-04-25
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
