@@ -182,6 +182,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s011-dicts/handout/feedback-homeworks.html
 - name: Testování
   date: 2017-04-26
   done: false
