@@ -185,9 +185,9 @@
   - name: Feedback k domácím projektům
     type: link
     link: v1/s011-dicts/handout/feedback-homeworks.html
-- name: Testování
+- name: Moduly a výjimky
   date: 2017-04-26
-  done: false
+  done: true
   materials:
   - name: Moduly
     type: lesson
@@ -201,19 +201,25 @@
   - name: Testování
     type: lesson
     link: v1/s005-modules/testing.html
-  - name: Domácí projekty (PDF)
+  - name: Domácí projekty (PDF) - Jen ty, které se týkají modulů (bez testování)
     type: homework
     link: v1/s005-modules/handout/handout5-ostrava.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
-- name: Coding Dojo
+- name: Testování a procvičování
   date: 2017-05-03
-  description: |
-    Během této lekce si vyzkoušíme tzv. Coding Dojo, v
-    rámci kterého budeme spolupracovat a společnými silami se pokusíme
-    vyřešit jednoduché zadání.
   done: false
+  materials:
+  - name: Testování
+    type: lesson
+    link: v1/s005-modules/testing.html
+  - name: Domácí projekty (PDF) - Zbytek z minulého týdne
+    type: homework
+    link: v1/s005-modules/handout/handout5-ostrava.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/fHTkQaArPEhtR4e7H9qF
 - name: Grafika
   date: 2017-05-10
   done: false
