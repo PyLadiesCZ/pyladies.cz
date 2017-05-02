@@ -127,7 +127,7 @@
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   img {
     width: auto  !important;
   }
@@ -153,6 +153,7 @@ a .about img {
 
 img.partner-logo {
   width: auto !important;
+  display: block;
 }
 }
 
@@ -205,10 +206,6 @@ img.partner-logo {
     padding-top: 15px;
     padding-bottom: 10px;
 }
-.partners div:nth-child(4) {
-    margin-left: -42px;
-}
-
 .city-box {
   margin-bottom: 60px;
   height: 140px;
@@ -255,12 +252,6 @@ button.btn.btn-couch {
 .about-p {
   max-height: 115px;
 }
-.partner-logo {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .partners div:nth-child(4) {
     margin-left: 15px;
 }

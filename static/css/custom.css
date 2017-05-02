@@ -339,9 +339,14 @@ HOMEPAGE
 }
 
 .partner-logo {
-  width: 165px;
-  height: 76px;
+    width: 165px;
+    height: 76px;
     padding-bottom: 20px;
+    margin: auto;
+}
+
+.partner-logo.logo-kiwi {
+  height: 110px !important;
 }
 
 .ref-heading {
