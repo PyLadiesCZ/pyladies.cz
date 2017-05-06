@@ -209,7 +209,7 @@
     link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
 - name: Testování a procvičování
   date: 2017-05-03
-  done: false
+  done: true
   materials:
   - name: Testování
     type: lesson
