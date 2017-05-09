@@ -221,10 +221,10 @@
   materials:
   - name: Třídy
     type: lesson
-    link: v1/s014-class/classes.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/class
   - name: Dědičnost
     type: lesson
-    link: v1/s014-class/inheritance.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/inheritance
 - name: Závěrečný projekt
   dates:
   - 2017-05-15
@@ -233,7 +233,7 @@
   materials:
   - name: Asteroids
     type: lesson
-    link: v1/s015-asteroids/index.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/asteroids
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
