@@ -179,7 +179,7 @@
   dates:
   - 2017-04-24
   - 2017-04-25
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -199,7 +199,7 @@
   dates:
   - 2017-05-04
   - 2017-05-02
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
