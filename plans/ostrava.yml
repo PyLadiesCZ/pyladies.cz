@@ -222,7 +222,7 @@
     link: https://www.dropbox.com/request/fHTkQaArPEhtR4e7H9qF
 - name: Grafika
   date: 2017-05-10
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
