@@ -191,16 +191,13 @@
   materials:
   - name: Moduly
     type: lesson
-    link: v1/s005-modules/modules.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/modules/
   - name: Poznámka o importování
     type: lesson
-    link: v1/s005-modules/circular_imports.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/circular-imports/
   - name: Výjimky
     type: lesson
-    link: v1/s005-modules/exceptions.html
-  - name: Testování
-    type: lesson
-    link: v1/s005-modules/testing.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/exceptions/
   - name: Domácí projekty (PDF) - Jen ty, které se týkají modulů (bez testování)
     type: homework
     link: v1/s005-modules/handout/handout5-ostrava.pdf
@@ -213,7 +210,7 @@
   materials:
   - name: Testování
     type: lesson
-    link: v1/s005-modules/testing.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/testing/
   - name: Domácí projekty (PDF) - Zbytek z minulého týdne
     type: homework
     link: v1/s005-modules/handout/handout5-ostrava.pdf
@@ -226,13 +223,13 @@
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/pyglet/
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/pong/
   - name: Kód celé hry Pong
     type: link
-    link: v1/s012-pyglet/pong.py
+    link: http://pyladies.cz/v1/s012-pyglet/pong.py
   - name: Tahák na Pyglet
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
@@ -242,17 +239,17 @@
   materials:
   - name: Třídy
     type: lesson
-    link: v1/s014-class/classes.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/class/
   - name: Dědičnost
     type: lesson
-    link: v1/s014-class/inheritance.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/inheritance/
 - name: Závěrečný projekt
   date: 2017-05-24
   done: false
   materials:
   - name: Asteroids
     type: lesson
-    link: v1/s015-asteroids/index.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/asteroids/
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
