@@ -172,7 +172,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
   date: 2017-05-16
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
