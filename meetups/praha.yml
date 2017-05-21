@@ -1,3 +1,10 @@
+- name: PyLadies workshop MicroPythonu
+  start: 2017-05-23
+  end: 2017-05-25
+  time: 18:00 - 20:00
+  place:
+    name: Apiary, CZ.NIC
+
 - name: Květnový PyWorking <br> meetup pro pokročilé začátečníky
   topic: Internety
   date: 2017-05-20
