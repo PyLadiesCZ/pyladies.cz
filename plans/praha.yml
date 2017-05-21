@@ -94,7 +94,7 @@
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
 - name: Funkce & Řetězce
   date: 2017-04-11
-  done: false
+  done: true
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -110,13 +110,13 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování
   date: 2016-04-18
-  done: false
+  done: true
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: special-lesson
 - name: Testování
   date: 2017-04-25
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
@@ -138,16 +138,16 @@
     link: v1/s005-modules/handout/handout5.pdf
 - name: Seznamy
   date: 2017-05-02
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists2.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/list
   - name: N-tice
     type: lesson
-    link: v1/s006-lists/tuples.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/tuple
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
@@ -156,30 +156,30 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
   date: 2017-05-09
-  done: false
+  done: true
   materials:
   - name: Slovníky
     type: lesson
-    link: v1/s011-dicts/dicts.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/dict
   - name: JSON
     type: lesson
-    link: v1/s011-dicts/json.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/intro/json
   - name: Github API
     type: lesson
-    link: v1/s011-dicts/github-api.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/projects/github-api
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Grafika
   date: 2017-05-16
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/intro/pyglet
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/projects/pong
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
@@ -192,17 +192,17 @@
   materials:
   - name: Třídy
     type: lesson
-    link: v1/s014-class/classes.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/class
   - name: Dědičnost
     type: lesson
-    link: v1/s014-class/inheritance.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/inheritance
 - name: Závěrečný projekt
   date: 2017-05-30
   done: false
   materials:
   - name: Asteroids
     type: lesson
-    link: v1/s015-asteroids/index.html
+    link: http://naucse.python.cz/2017/pyladies-praha-jaro/projects/asteroids
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf

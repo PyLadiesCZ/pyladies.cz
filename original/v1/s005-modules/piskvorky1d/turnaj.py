@@ -94,7 +94,7 @@ def call_with_watchdog(func, *args, **kwargs):
     # Funkce `sys.settrace` umožní zavolat funkci po provedení každého řádku
     # kódu. My po každém řádku zkontrolujeme, že nebyl překročen časový limit.
     # Pozor – pokud `sys.settrace` už nastavil někdo jinak, tato funkce
-    # nastavení přepíše. Proto by se podobná "magie" neměla moc, používat,
+    # nastavení přepíše. Proto by se podobná "magie" neměla moc používat,
     # zvláště ne v knihovnách.
     start = time.perf_counter()
     limit = 0.1
@@ -106,8 +106,7 @@ def call_with_watchdog(func, *args, **kwargs):
         elapsed = time.perf_counter() - start
         if elapsed > limit:
             msg = 'Volání funkce trvá příliš dlouho ({0:.3} s, {1} řádků)'
-            raise Timeout(msg.format(
-                elapsed, line_count))
+            raise Timeout(msg.format(elapsed, line_count))
         return tracer
     sys.settrace(tracer)
     try:
@@ -239,8 +238,6 @@ for ai, i, test, e in error_info:
         e=(': ' + str(e).strip().partition('\n')[0]) if str(e) else ''
     ))
 
-wait()
-
 
 #
 # Samotný turnaj
@@ -266,12 +263,13 @@ for cislo_turnaje in range(opts.num):
         def write(*a, **ka):
             """Nedělá nic"""
             return
+
     for a in ais:
         for b in ais:
             write()
-            write('{a} (x) vs. {b} (o)'.format(a=a.__name__, b=b.__name__))
             if cislo_turnaje < opts.num_shown:
                 wait()
+            write('{a} (x) vs. {b} (o)'.format(a=a.__name__, b=b.__name__))
             pole = before = '-' * opts.len_pole
             cislo_tahu = 0
             while True:

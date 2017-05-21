@@ -110,7 +110,7 @@
   dates:
   - 2017-04-03
   - 2017-04-04
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
@@ -134,14 +134,14 @@
   dates:
   - 2017-04-10
   - 2017-04-11
-  done: false
+  done: true
   materials:
   - name: Spolupráce & Open Source
     type: lesson
-    link: v1/s005-modules/opensource.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/git/collaboration/
   - name: Soubory
     type: lesson
-    link: v1/s006-lists/files.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/files/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout7.pdf
@@ -154,71 +154,77 @@
   - name: odkaz k úkolům – „日本語の表記体系” na japonské Wikipedii
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
+  - name: Ignorování souborů v Gitu (bonus)
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/git/ignoring/
 - name: Seznamy
   dates:
+  - 2017-04-20
   - 2017-04-18
-  done: false
+  done: true
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists2.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/list
   - name: N-tice
     type: lesson
-    link: v1/s006-lists/tuples.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/tuple
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
-- name: Grafika
+- name: Slovníky
   dates:
   - 2017-04-24
   - 2017-04-25
-  done: false
+  done: true
+  materials:
+  - name: Turnaj v piškvorkách
+    type: special
+  - name: Slovníky
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/dict
+  - name: JSON
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/intro/json
+  - name: Github API
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/github-api
+  - name: Slovníkový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
+- name: Grafika
+  dates:
+  - 2017-05-04
+  - 2017-05-02
+  done: true
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
-  - name: "Praktické cvičení: Pong"
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/intro/pyglet
+  - name: "Praktické cvičení: Pong (bonus)"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/pong
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
   - name: Tahák na Pyglet
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
-- name: Slovníky
-  dates:
-  - 2017-05-02
-  done: false
-  materials:
-  - name: Slovníky
-    type: lesson
-    link: v1/s011-dicts/dicts.html
-  - name: JSON
-    type: lesson
-    link: v1/s011-dicts/json.html
-  - name: Github API
-    type: lesson
-    link: v1/s011-dicts/github-api.html
-  - name: Slovníkový tahák
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
 - name: Třídy
   dates:
+  - 2017-05-11
   - 2017-05-09
   done: false
   materials:
   - name: Třídy
     type: lesson
-    link: v1/s014-class/classes.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/class
   - name: Dědičnost
     type: lesson
-    link: v1/s014-class/inheritance.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/inheritance
 - name: Závěrečný projekt
   dates:
   - 2017-05-15
@@ -227,7 +233,7 @@
   materials:
   - name: Asteroids
     type: lesson
-    link: v1/s015-asteroids/index.html
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/projects/asteroids
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf

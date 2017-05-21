@@ -133,96 +133,123 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/uIhKpOH3X7CO7cWJKoTc
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s005-modules/ostrava/feedback-homeworks.html
 - name: Seznamy
   date: 2017-04-12
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
   - name: Seznamy
     type: lesson
-    link: v1/s006-lists/lists2.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/list/
   - name: N-tice
     type: lesson
-    link: v1/s006-lists/tuples.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/tuple/
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
   - name: Domácí projekty (PDF)
     type: homework
-    link: v1/s006-lists/handout/handout6.pdf
+    link: v1/s006-lists/handout-ostrava/handout6.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/Y9AcQe8FPbYF8KZcG6cH
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
 - name: Slovníky
   date: 2017-04-19
-  done: false
+  done: true
   materials:
   - name: Slovníky
     type: lesson
-    link: v1/s011-dicts/dicts.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/dict/
   - name: JSON
     type: lesson
-    link: v1/s011-dicts/json.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/json/
+  - name: Ukázka jednoduchého API
+    type: lesson
+    link: v1/s011-dicts/simple-api.html
   - name: Slovníkový tahák
     type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
-- name: Testování
-  date: 2017-04-26
-  done: false
-  materials:
-  - name: Výjimky
-    type: lesson
-    link: v1/s005-modules/exceptions.html
-  - name: Moduly
-    type: lesson
-    link: v1/s005-modules/modules.html
-  - name: Testování
-    type: lesson
-    link: v1/s005-modules/testing.html
-  - name: Poznámka o importování
-    type: lesson
-    link: v1/s005-modules/circular_imports.html
+    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf    
   - name: Domácí projekty (PDF)
     type: homework
-    link: v1/s005-modules/handout/handout5.pdf
-- name: Coding Dojo
+    link: v1/s011-dicts/handout/handout9.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s011-dicts/handout/feedback-homeworks.html
+- name: Moduly a výjimky
+  date: 2017-04-26
+  done: true
+  materials:
+  - name: Moduly
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/modules/
+  - name: Poznámka o importování
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/circular-imports/
+  - name: Výjimky
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/exceptions/
+  - name: Domácí projekty (PDF) - Jen ty, které se týkají modulů (bez testování)
+    type: homework
+    link: v1/s005-modules/handout/handout5-ostrava.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
+- name: Testování a procvičování
   date: 2017-05-03
-  description: |
-    Během této lekce si vyzkoušíme tzv. Coding Dojo, v
-    rámci kterého budeme spolupracovat a společnými silami se pokusíme
-    vyřešit jednoduché zadání.
-  done: false
+  done: true
+  materials:
+  - name: Testování
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/testing/
+  - name: Domácí projekty (PDF) - Zbytek z minulého týdne
+    type: homework
+    link: v1/s005-modules/handout/handout5-ostrava.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/fHTkQaArPEhtR4e7H9qF
 - name: Grafika
   date: 2017-05-10
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
-    link: v1/s012-pyglet/pyglet.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/pyglet/
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: v1/s012-pyglet/pong.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/pong/
   - name: Kód celé hry Pong
     type: link
-    link: v1/s012-pyglet/pong.py
+    link: http://pyladies.cz/v1/s012-pyglet/pong.py
   - name: Tahák na Pyglet
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2017-05-17
-  done: false
+  done: true
   materials:
   - name: Třídy
     type: lesson
-    link: v1/s014-class/classes.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/class/
   - name: Dědičnost
     type: lesson
-    link: v1/s014-class/inheritance.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/inheritance/
 - name: Závěrečný projekt
   date: 2017-05-24
   done: false
   materials:
   - name: Asteroids
     type: lesson
-    link: v1/s015-asteroids/index.html
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/asteroids/
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
