@@ -229,7 +229,7 @@
   dates:
   - 2017-05-15
   - 2017-05-16
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
@@ -240,10 +240,22 @@
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
-- name: Závěrečný projekt II
+- name: MicroPython
   dates:
   - 2017-05-22
   - 2017-05-23
+  done: false
+  materials:
+  - name: MicroPython
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-brno-jaro-po/beginners/micropython
+  - name: Tahák na NodeMCU Devkit
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/micropython/nodemcu-cs.pdf
+- name: Závěrečný projekt II
+  dates:
+  - 2017-05-29
+  - 2017-05-30
   done: false
   materials:
   - name: Pokračování Asteroids
