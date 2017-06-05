@@ -245,7 +245,7 @@
     link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/inheritance/
 - name: Závěrečný projekt
   date: 2017-05-24
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
@@ -259,7 +259,7 @@
 - name: Pokračování závěrečného projektu
   date: 2017-05-31
   description: V této lekci budeme pokračovat v dalších fázích závěrečného projektu.
-  done: false
+  done: true
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
