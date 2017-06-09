@@ -198,7 +198,7 @@
     link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/inheritance
 - name: Závěrečný projekt
   date: 2017-05-30
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
@@ -211,7 +211,7 @@
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf   
 - name: Závěrečná procvičovací hodina 
   date: 2017-06-06
-  done: false
+  done: true
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
