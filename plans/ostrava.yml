@@ -1,6 +1,6 @@
 - name: Instalace
-  date: 2017-03-01
-  done: true
+  date: 2017-09-12
+  done: false
   materials:
   - name: Úvodní prezentace
     type: lesson
@@ -21,8 +21,8 @@
     type: homework
     link: v1/s001-install/handout/handout.pdf
 - name: První program
-  date: 2017-03-08
-  done: true
+  date: 2017-09-19
+  done: false
   materials:
   - name: První program
     type: lesson
@@ -44,13 +44,10 @@
     link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/and-or/
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/9mTOUeziFQJXa2BfwRkX
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s002-hello-world/ostrava/feedback-homeworks.html
+    link: https://www.dropbox.com/request/ezM34x08V0ooGjIuzOJB
 - name: Cykly
-  date: 2017-03-15
-  done: true
+  date: 2017-09-26
+  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -66,13 +63,10 @@
     link: v1/s003-looping/handout/handout3a.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/lGdiV8TaPuK6WMIkUB0l
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s003-looping/ostrava/feedback-homeworks.html
+    link: https://www.dropbox.com/request/dIghRsOtawUytP8qg3Yb
 - name: Jeden nový cyklus a procvičování
-  date: 2017-03-22
-  done: true
+  date: 2017-10-03
+  done: false
   materials:
   - name: Cyklus `While`
     type: lesson
@@ -82,13 +76,10 @@
     link: v1/s003-looping/handout/handout3b.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/FyAKaua6sFGjSR4Ldnzo
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s003-looping/ostrava/feedback-homeworks-2.html
+    link: https://www.dropbox.com/request/b4Yw8W42nSsm49UrzUqN
 - name: Funkce & Řetězce
-  date: 2017-03-29
-  done: true
+  date: 2017-10-10
+  done: false
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -104,13 +95,10 @@
     link: v1/s004-strings/handout/handout4.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/3s1Fj5hqWkO9RuPiPTNY
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s004-strings/ostrava/feedback-homeworks.html
+    link: https://www.dropbox.com/request/gzMXJdksiODF1JEYGdiF
 - name: Práce se soubory
-  date: 2017-04-05
-  done: true
+  date: 2017-10-17
+  done: false
   materials:
   - name: Soubory
     type: lesson
@@ -132,13 +120,10 @@
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/uIhKpOH3X7CO7cWJKoTc
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s005-modules/ostrava/feedback-homeworks.html
+    link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
 - name: Seznamy
-  date: 2017-04-12
-  done: true
+  date: 2017-10-24
+  done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -156,13 +141,10 @@
     link: v1/s006-lists/handout-ostrava/handout6.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/Y9AcQe8FPbYF8KZcG6cH
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
+    link: https://www.dropbox.com/request/V0kzxqX19ICk7q7YSI8B
 - name: Slovníky
-  date: 2017-04-19
-  done: true
+  date: 2017-10-31
+  done: false
   materials:
   - name: Slovníky
     type: lesson
@@ -181,13 +163,10 @@
     link: v1/s011-dicts/handout/handout9.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/f813xJiafgxIi3nMBNYw
-  - name: Feedback k domácím projektům
-    type: link
-    link: v1/s011-dicts/handout/feedback-homeworks.html
+    link: https://www.dropbox.com/request/RPoOQOyya1tmxr3ngLFO
 - name: Moduly a výjimky
-  date: 2017-04-26
-  done: true
+  date: 2017-11-07
+  done: false
   materials:
   - name: Moduly
     type: lesson
@@ -203,10 +182,10 @@
     link: v1/s005-modules/handout/handout5-ostrava.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/36oO86hWupPTV7KyBjjy
+    link: https://www.dropbox.com/request/mlgOENzebT3oRXEBdvMt
 - name: Testování a procvičování
-  date: 2017-05-03
-  done: true
+  date: 2017-11-14
+  done: false
   materials:
   - name: Testování
     type: lesson
@@ -216,10 +195,10 @@
     link: v1/s005-modules/handout/handout5-ostrava.pdf
   - name: Odevzdání domácích projektů
     type: link
-    link: https://www.dropbox.com/request/fHTkQaArPEhtR4e7H9qF
+    link: https://www.dropbox.com/request/3HlBHVc8gAvZyCYZ9LvP
 - name: Grafika
-  date: 2017-05-10
-  done: true
+  date: 2017-11-21
+  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -234,8 +213,8 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
-  date: 2017-05-17
-  done: true
+  date: 2017-11-28
+  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -244,8 +223,8 @@
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/inheritance/
 - name: Závěrečný projekt
-  date: 2017-05-24
-  done: true
+  date: 2017-12-05
+  done: false
   materials:
   - name: Asteroids
     type: lesson
@@ -257,9 +236,13 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
 - name: Pokračování závěrečného projektu
-  date: 2017-05-31
+  date: 2017-12-12
   description: V této lekci budeme pokračovat v dalších fázích závěrečného projektu.
-  done: true
+  done: false
+- name: Závěrečná hodina
+  date: 2017-12-19
+  description: Během závěrečné hodiny si předáme diplomy a seznámíme se s možnostmi pokračování studia
+  done: false
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
