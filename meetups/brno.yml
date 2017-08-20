@@ -1,4 +1,6 @@
 - name: Začátečnický kurz <br> Podzimní pondělí 2017
+  registration:
+    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
   start: 2017-09-25
   end: 2017-12-18
   time: pondělky 18:00 – 20:00
