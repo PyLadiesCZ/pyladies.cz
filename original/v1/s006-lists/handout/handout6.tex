@@ -79,13 +79,13 @@
 
 \startsection{Na začátek trocha práce se seznamy.
     Některé z projektů – a zvlášť ten poslední – potřebují trochu přemýšlení;
-    nebudeš-li vědět jak dál, zeptej se na Internetu nebo na sraze ostatních,
+    nebudeš-li vědět jak dál, zeptej se na Internetu nebo na sraze ostatních
     a řešte společně!}
 
 \begin{enumerate}
 
 \item Udělej si seznam domácích zvířat. Budeš ho potřebovat v dalších úlohách.
-    \\Domácí zvířata známe tyto: \verb+"pes", "kočka", "králík", "had"+.
+    \\Domácí zvířata známe tato: \verb+"pes", "kočka", "králík", "had"+.
 
 
 \item Napiš funkci, která vypíše jména domácích zvířat, která jsou kratší než 5 písmen.
@@ -97,13 +97,13 @@
 
     \emph{„Zjistí“ znamená, že funkce vrátí \texttt{True} nebo \texttt{False}.}
 
-\item Napiš funkci, která dostane dva seznamy jmen zvířat, a vrátí tři seznamy:
+\item Napiš funkci, která dostane dva seznamy jmen zvířat a vrátí tři seznamy:
     \begin{enumerate}
-        \item Zvířata, která jsou v obou seznamech
-        \item Zvířata, která jsou v jen prvním seznamu
-        \item Zvířata, která jsou v jen druhém seznamu
+        \item zvířata, která jsou v obou seznamech,
+        \item zvířata, která jsou v jen prvním seznamu,
+        \item zvířata, která jsou v jen druhém seznamu.
     \end{enumerate}
-    Napiš (a pusť) k této funkci testy, aby sis ověřila že funguje správně.
+    Napiš (a pusť) k této funkci testy, aby sis ověřila, že funguje správně.
 
 \item Napiš program, který seřadí seznam domácích zvířat podle abecedy.
 
@@ -124,7 +124,7 @@
                 \emph{klíče}. Klíč se dá z každé hodnoty vypočítat.
             \item Vytvoř seznam dvojic \texttt{(klíč, hodnota)}.
             \item Seřaď tento seznam dvojic – dvojice se řadí nejdřív podle
-                prvního prvku, pak druhého, atd.
+                prvního prvku, pak druhého atd.
             \item Nakonec vytvoř ze seznamu dvojic opět jen seznam hodnot.
         \end{itemize}
         Proč má zrovna had takovéhle výsadní postavení, zjistíš později.
@@ -140,11 +140,11 @@
 
 \item Napiš funkci, která převede římské číslice na číslo (\verb+int+).
     \\\emph{Tip: Nejdřív napiš k této funkci nějaké testy, aby sis
-        ověřila že (a co) (ne)funguje správně.}
+        ověřila, že (a co) (ne)funguje správně.}
 
 \end{enumerate}
 
-\startsection{Dadaistický koutek: procvičení práce se seznamy, řetězci,
+\startsection{Dadaistický koutek: procvičení práce se seznamy, řetězci
     a soubory. Opět: nebudeš-li vědět jak dál, zeptej se!}
 
 \begin{enumerate}[resume]
@@ -153,7 +153,7 @@
     Ulož ji do souboru \verb+basnicka.txt+,
 
 \item Napiš program, který vypíše básničku ze souboru \verb+basnicka.txt+,
-    ale obrátí pořadí veršů (t.j. jako první vypíše poslední řádek, atd.)
+    ale obrátí pořadí veršů (t.j. jako první vypíše poslední řádek atd.).
     \\\emph{Nápověda: Každý seznam má metodu \texttt{reverse}, která ho „obrátí”.}
 
 \item Napiš program, který obrátí pořadí slov v jednotlivých verších.
@@ -162,7 +162,7 @@
 
 \item Vypiš slova básně v náhodném pořadí.
     \\\emph{Bonusový projekt: Snaž se přitom co nejlépe zachovat strukturu básně
-        (sloky, verše, interpunkci, velká písmena, ...)}
+        (sloky, verše, interpunkci, velká písmena, ...)}.
 
 \end{enumerate}
 
@@ -174,12 +174,12 @@
 \startsection{Projekty \ref{snakestart}-\ref{snakeend} závisí jeden na druhém,
     řeš je postupně. Až to uděláš, můžeš si zahrát hru!
     Tahle sekce není jednoduchá (a poslední dva projekty jsou obzvláště náročné).
-    Kdyžtak můžeš zkusit spojit síly s ostatními účastnicemi kurzu :)}
+    Případně můžeš zkusit spojit síly s ostatními účastnicemi kurzu. :)}
 
 \begin{enumerate}[resume]
 
 \item \label{snakestart}
-    Napiš funkci, která dostane seznam souřadnic (párů čísel menších než 10),
+    Napiš funkci, která dostane seznam souřadnic (párů čísel menších než 10)
     a vypíše je jako mapu. Například:
 
 \verb+nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9)])+
@@ -204,7 +204,7 @@
     }
 
 \item Napiš funkci \verb+pohyb+, která dostane seznam souřadnic a světovou stranu
-    (\verb+"s"+, \verb+"j"+, \verb+"v"+ nebo \verb+"z"+),
+    (\verb+"s"+, \verb+"j"+, \verb+"v"+ nebo \verb+"z"+)
     a přidá k seznamu poslední bod „posunutý“ v daném směru. Např.:
 
   \verb+souradnice = [(0, 0)]+
@@ -222,26 +222,26 @@
 
 \item Napiš cyklus, který se bude ptát uživatele na světovou stranu,
     podle ní zavolá \verb+pohyb+, a následně vykreslí seznam jako mapu.
-    Pak se opět se zeptá na stranu, atd.
-    \\Začínej se seznamem \verb+[(0, 0), (1, 0), (2, 0)]+
+    Pak se opět se zeptá na stranu atd.
+    \\Začínej se seznamem \verb+[(0, 0), (1, 0), (2, 0)]+.
 
 \item \label{snaketail}
     Doplň funkci \verb+pohyb+ tak, aby při pohybu umazala první bod ze seznamu
     souřadnic. Výsledný seznam tak bude mít stejnou délku, jako před voláním.
     \\Uprav testy.
 
-\item Doplň funkci \verb+pohyb+ tak, aby zamezila
+\item Doplň funkci \verb+pohyb+ tak, aby zamezila:
     \begin{itemize}
-    \item pohybu ven z mapy
-    \item pohybu na políčko, které už v seznamu je
+    \item pohybu ven z mapy,
+    \item pohybu na políčko, které už v seznamu je.
     \end{itemize}
     Vhodná výjimka pro tyto situace je \verb+ValueError('Game over')+.
     \\Doplň i testy.
 
 \item Přidej do hry hadí potravu. Tady jsou pravidla pro vegetariánského hada,
     ale můžeš si je změnit podle chuti:
-    \\ Seznam ovoce obsahuje na začátku jedno ovoce, na políčku na kterém není had.
-    (například: \texttt{[(2, 3)]} znamená jedno ovoce na pozici (2, 3).)
+    \\ Seznam ovoce obsahuje na začátku jedno ovoce na políčku, na kterém není had
+    (například: \texttt{[(2, 3)]} znamená jedno ovoce na pozici (2, 3)).
     Když had sežere ovoce, vyroste („nesmaže“ se mu ocas, tedy neprovede se to,
     cos přidala v projektu \ref{snaketail}),
     a pokud na mapě zrovna není další ovoce, na náhodném místě (kde není had) vyroste ovoce nové.
