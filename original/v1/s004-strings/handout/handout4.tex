@@ -1,3 +1,5 @@
+% arara: lualatex
+% arara: lualatex
 % Typeset using lualatex
 
 \documentclass[a4paper,10pt]{article}
@@ -78,7 +80,7 @@
 \section*{Domácí projekty \plsetno}
 
 Nezapomeň: Když něco funguje, přidej to do Gitu!
-\\\emph{\small Pokud materiály procházíš v jiném pořadí než my na srazech, a Git ještě neznáš, můžeš všechny poznámky o Gitu ignorovat. Jinak si na tuto sadu projektů udělej zvláštní repozitář.}
+\\\emph{\small Pokud materiály procházíš v jiném pořadí než my na srazech a Git ještě neznáš, můžeš všechny poznámky o Gitu ignorovat. Jinak si na tuto sadu projektů udělej zvláštní repozitář.}
 
 \vspace{1cm}
 
@@ -92,7 +94,7 @@ Nezapomeň: Když něco funguje, přidej to do Gitu!
 
 \end{enumerate}
 
-\startsection{Procvičení funkcí. Jestli jsi Pythoní funkce nepsala už před kurzem, tak první z těchto projektů určitě udělej. Druhý jen pokud máš ráda geometrii :)}
+\startsection{Procvičení funkcí. Jestli jsi pythonní funkce nepsala už před kurzem, tak první z těchto projektů určitě udělej. Druhý jen pokud máš ráda geometrii :)}
 
 \begin{enumerate}[resume]
 
@@ -165,7 +167,7 @@ with ctx():
 
 \end{enumerate}
 
-\startsection{Procvičení programování. Často je jednoduché něco napsat, ale dotažení do konce může být časově náročné. Nemáš-li čas, zkus se aspoň zamyslet jak bys projekt vyřešila.}
+\startsection{Procvičení programování. Často je jednoduché něco napsat, ale dotažení do konce může být časově náročné. Nemáš-li čas, zkus se aspoň zamyslet, jak bys projekt vyřešila.}
 
 \begin{enumerate}[resume]
 
@@ -174,7 +176,7 @@ with ctx():
 
 \item Změň funkci \texttt{ano\_nebo\_ne} tak,
     aby se místo \texttt{"ano"} se dalo použít i \texttt{"a"},
-    místo \texttt{"ne"} i \texttt{"n"},
+    místo \texttt{"ne"} i \texttt{"n"}
     a aby se nebral ohled na velikost písmen a mezery před/za odpovědí.
     \\\emph{\small
         Textům jako \texttt{"možná"} nebo \texttt{"no tak určitě"}
@@ -187,11 +189,11 @@ with ctx():
 
 \begin{enumerate}[resume]
 
-\item Napiš program, který se zeptá na příjmení uživatelky/uživatele,
+\item Napiš program, který se zeptá na příjmení uživatelky/uživatele
     a zkusí podle něj uhodnout její/jeho pohlaví.
     \\\emph{\small Připomínám: Až to bude fungovat, dej to do Gitu!}
 
-\item Najdi na internetu text své oblíbené písně, zkopíruj si ho do řetězce,
+\item Najdi na internetu text své oblíbené písně, zkopíruj si ho do řetězce
     a zjisti, kolikrát je v něm použito písmeno K.
     \\\emph{\small Připomínám: Až to bude fungovat, dej to do Gitu!}
 
@@ -200,10 +202,10 @@ with ctx():
     \emph{(t.j. vybírají se náhodná čísla od 1 do 6)},
     dokud nepadne šestka.
     Potom hází další hráč, dokud nepadne šestka i jemu.
-    Potom hází hráč třetí, a nakonec čtvrtý.
+    Potom hází hráč třetí a nakonec čtvrtý.
     Vyhrává ten, kdo na hození šestky potřeboval nejvíc hodů.
     (V případě shody vyhraje ten, kdo házel dřív.)
-    \\Program by měl vypisovat všechny hody, a nakonec napsat, kdo vyhrál.
+    \\Program by měl vypisovat všechny hody a nakonec napsat, kdo vyhrál.
     \\\emph{\small Připomínám: Až to bude fungovat, dej to do Gitu!}
 
 \end{enumerate}
@@ -235,7 +237,7 @@ Pokračování na další straně. \hfill \emph{\%}
 \begin{enumerate}[resume]
 
 \item Napiš funkci \texttt{vyhodnot}, která dostane řetězec
-    s herním polem 1-D piškvorek,
+    s herním polem 1-D piškvorek
     a vrátí jednoznakový řetězec podle stavu hry:
     \begin{enumerate}
     \item[\texttt{"x"}] – Vyhrál hráč s křížky (pole obsahuje \texttt{xxx})
@@ -246,7 +248,7 @@ Pokračování na další straně. \hfill \emph{\%}
     \emph{\small Připomínám: Až to bude fungovat, dej to do Gitu!}
 
 \item Napiš funkci \texttt{tah}, která dostane řetězec s herním polem,
-    číslo políčka (0-19), a symbol (\texttt{x} nebo \texttt{o}),
+    číslo políčka (0-19), a symbol (\texttt{x} nebo \texttt{o})
     a vrátí herní pole \emph{(t.j. řetězec)} s daným symbolem umístěným na danou pozici.
 
     Hlavička funkce by tedy měla vypadat nějak takhle:
@@ -258,7 +260,7 @@ Pokračování na další straně. \hfill \emph{\%}
 \item Napiš funkci \texttt{tah\_hrace}, která dostane řetězec s herním polem,
     zeptá se hráče, na kterou pozici chce hrát, a vrátí herní pole
     se zaznamenaným tahem hráče.
-    \\Funkce by měla odmítnout záporná nebo příliš velká čísla,
+    \\Funkce by měla odmítnout záporná nebo příliš velká čísla
     a tahy na obsazená políčka.
     Pokud uživatel zadá špatný vstup, funkce mu vynadá a zeptá se znova.
     \\\emph{\small Funguje? Do Gitu s tím!}
@@ -268,9 +270,9 @@ Pokračování na další straně. \hfill \emph{\%}
     se zaznamenaným tahem počítače.
     \\Použij jednoduchou náhodnou „strategii”:
     \begin{enumerate}
-    \item[1.] Vyber číslo od 0 do 19
-    \item[2.] Pokud je dané políčko volné, hrej na něj
-    \item[3.] Pokud ne, opakuj od bodu 1
+    \item[1.] Vyber číslo od 0 do 19.
+    \item[2.] Pokud je dané políčko volné, hrej na něj.
+    \item[3.] Pokud ne, opakuj od bodu 1.
     \end{enumerate}
 
     Hlavička funkce by tedy měla vypadat nějak takhle:
@@ -278,7 +280,7 @@ Pokračování na další straně. \hfill \emph{\%}
 \\\verb+        "Vrátí herní pole se zaznamenaným tahem počítače"+
 \\\verb+        ...+
 
-\item Napiš funkci \texttt{piskvorky1d}, která vytvoří řetězec s herním polem,
+\item Napiš funkci \texttt{piskvorky1d}, která vytvoří řetězec s herním polem
     a střídavě volá funkce \texttt{tah\_hrace} a \texttt{tah\_pocitace},
     dokud někdo nevyhraje nebo nedojde k remíze.
     \\Nezapomeň kontrolovat stav hry po každém tahu.
@@ -291,7 +293,7 @@ Pokračování na další straně. \hfill \emph{\%}
 \begin{enumerate}[resume]
 
 \item Zvládneš pro počítač naprogramovat lepší strategii?
-    Třeba aby se snažil hrát vedle svých existujících symbolů,
+    Třeba aby se snažil hrát vedle svých existujících symbolů
     nebo aby bránil protihráčovi?
     \\Stačí jen docela malé vylepšení!
 
