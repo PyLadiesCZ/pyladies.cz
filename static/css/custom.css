@@ -407,6 +407,9 @@ CITIES PAGE
     font-weight: bold;
     color: #333;
 }
+.city-heading a {
+    color: #333;
+}
 .city-info,
 .city-address a {
     color: #8e8c8d;

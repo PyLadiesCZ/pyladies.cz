@@ -2,6 +2,8 @@
   start: 2017-09-19
   end: 2017-12-12
   time: každé úterý 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
   place: &cz-nic
     name: budova CZ.NIC
     address: Milešovská 5, Praha 3

@@ -81,58 +81,83 @@ statické stránky k nasazení na webový server.:
 
     $ python pyladies_cz.py freeze
 
-## Základní informace o kurzech, které se často mění - editace HTML
+### <a name="kurzy-mesta">Aktuální a proběhlé kurzy (stránka kurzů se upravuje v souboru `meetups/brno.yml`)
+Každé město má vlastní stránku s aktuálními a proběhlými kurzy. Dříve či později se z toho stane taková kronika.
 
-### <a name="uvodni-stranka">Nastavení aktuálních kurzů na úvodní stránce <br /><br />
-**Nezapomeň vždy změnit {{ pathto('mesto') }} pro dané město!**
+První kurz v seznamu se ukáže na hlavní stránce.
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady.png" width=100 height=55 /><br /> - kurz, který právě běží. Ikonka - obrázek pylady.png. Kód:
+***V meetupech lze nastavit:***
+
+* `name`: jméno akce
+
+* `topic`: téma akce
+
+* `start` a `end`: datum ve formátu `2017-02-13`, pokud má akce pevný termín od do
+
+* `date`: datum jednodenní akce (`start` a `end` by byly stejné)
+
+* `time`: čas od do, případně i den v týdnu
+
+* `place`: místo, kde sraz probíhá (pokud je víc srazů v jednom místě, dá se v YAMLu místo nasdílet dalším srazům, viz ukázky v těch YAML souborech)
+
+    * `name`: jméno místa
+    * `address`: adresa
+    * `latitude`, `longitude`: mapové souřadnice
+    * `url`: odkaz (chybí-li, ukáže se odkaz na mapu podle latitude/longitude)
+
+* `registration`: informace o registraci
+
+    * `url`: odkaz na registrační formulář
+    * `end`: konec registrace (dá se vynechat, pokud je registrace aktuální až do konce kurzu – třeba u opakujících se srazů)
+    * `text`: text, který se objeví v odkazu (místo "Registrace právě probíhá!")
+
+* `parallel-with-previous`: `true` pokud je kurz paralelní s předchozím.
+  (Informace o paralelních kurzech se občas zobrazují společně.)
+
+
+***Ukázky variant kurzu (dají se kombinovat):***
+
+** Kurz má jasný start a konec, místo, čas registraci**
+
 ```
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
-  <div class="py-icon">
-    <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
-  </div>
-  <div class="py-block pull-left">
-    <a href="{{ pathto('praha') }}"><h4 class="city-heading">Praha - začátečnický kurz</h4>
-    <p class="city-info">01.01. - 31.04. 2016</p>
-    <p class="city-address">
-      <a href="https://www.google.cz/maps/place/Florentinum/@50.0888957,14.4353417,15z/data=!4m2!3m1!1s0x0:0x90e42b8069106734" target="new">Na Florenci 2116/15, 110 00</a>
-    </p>
-  </div>
-</div>
+- name: Začátečnický kurz <br> Jarní pondělí 2017
+  start: 2017-02-27
+  end: 2017-05-29
+  time: pondělky 18:00 – 20:00
+  place:
+    name: Odbor školství
+    address: Cejl 73, Brno
+    latitude: '49.1992294'
+    longitude: '16.6235206'
+  registration:
+    url: <tady_bude_adresa>
+    end: 2017-02-19
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-grey.png" width=100 height=55 /><br /> - kurz, který právě nebeží a není spuštěná registrace. Ikonka - obrázek pylady-grey.png. Kód:
+** Kurz je jednodenní a má například téma**
+
 ```
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
-    <div class="py-icon">
-      <img src="{{ pathto('_static/img/icon/pylady-grey.png', 1) }}" class="py-icon-i" />
-    </div>
-    <div class="py-block pull-left">
-      <a href="{{ pathto('brno') }}"><h4 class="city-heading">Brno - začátečnický kurz</h4>
-      <p class="city-info">Kurz právě neprobíhá.</p>
-      <p class="city-address">
-        <a href="mailto: a@a.com">Napiš nám.</a>
-      </p>
-    </div>
-</div>
+- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Django Polls
+  date: 2017-01-28
+  time: 9:00 - 17:30
+  place:
+    name: MSD IT (Riverview)
+    address: Svornosti 3321/2, Praha 5
+    latitude: '50.0670442'
 ```
 
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/icon/pylady-blue.png" width=100 height=55 /><br /> - kurz, který právě nebeží, ale je spuštěná registrace. Ikonka - obrázek pylady-blue.png. Kód:
+** Jsou to pravidelné srazy**
+
 ```
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 course-i">
-  <div class="py-icon">
-    <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
-  </div>
-  <div class="py-block pull-left">
-    <a href="{{ pathto('ostrava') }}"><h4 class="city-heading">Ostrava - začátečnický kurz</h4>
-    <p class="city-info">Proběhne od 01.01. - 31.04. 2016</p>
-    <p class="city-address">
-      <a href="#">Registrační formulář</a>
-    </p>
-  </div>
-</div>
+- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
+  time: pondělky ve 14 denních intervalech, 18:00 - 20:00
+  registration:
+    url: <tady_bude_adresa>
 ```
+    
+
+
 ### <a name="nastaveni-obrazku">Nastavení obrázků
 
 * Banner na úvodní stránce - 1500px × 655px
@@ -205,74 +230,3 @@ Každé město může mít vlastní plán kurzu. Případně navíc speciální 
   - name: Relační databáze
     type: special-lesson
 ```
-
-### <a name="kurzy-mesta">Aktuální a proběhlé kurzy (stránka kurzů se upravuje v souboru `meetups/brno.yml`)
-Každé město má vlastní stránku s aktuálními a proběhlými kurzy. Dříve či později se z toho stane taková kronika.
-
-***V meetupech lze nastavit:***
-
-name: jméno akce
-
-topic: téma akce
-
-start a end: datum ve formátu `2017-02-13`, pokud má akce pevný termín od do
-
-date: jednodenní akce
-
-time: čas od do, případně i den v týdnu
-
-place: místo, kde sraz probíhá (pokud je víc srazů v jednom místě, dá se v YAMLu místo nasdílet dalším srazům, viz ukázky v těch YAML souborech)
-
-* name: jméno
-* address: adresa
-* latitude, longitude: mapové souřadnice
-* url: odkaz (chybí-li, ukáže se odkaz na mapu podle latitude/longitude)
-
-registration:
-
-* url: odkaz na registrační formulář
-* end: konec registrace (dá se vynechat, pokud je registrace vždy aktuální, třeba u opakujících se srazů)
-* text: text, který se objeví v odkazu (místo "Registrace právě probíhá!")
-
-
-***Ukázky variant kurzu (dají se kombinovat):***
-
-** Kurz má jasný start a konec, místo, čas registraci**
-
-```
-- name: Začátečnický kurz <br> Jarní pondělí 2017
-  start: 2017-02-27
-  end: 2017-05-29
-  time: pondělky 18:00 – 20:00
-  place:
-    name: Odbor školství
-    address: Cejl 73, Brno
-    latitude: '49.1992294'
-    longitude: '16.6235206'
-  registration:
-    url: <tady_bude_adresa>
-    end: 2017-02-19
-```
-
-** Kurz je jednodenní a má například téma**
-
-```
-- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Django Polls
-  date: 2017-01-28
-  time: 9:00 - 17:30
-  place:
-    name: MSD IT (Riverview)
-    address: Svornosti 3321/2, Praha 5
-    latitude: '50.0670442'
-```
-
-** Jsou to pravidelné srazy**
-
-```
-- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
-  time: pondělky ve 14 denních intervalech, 18:00 - 20:00
-  registration:
-    url: <tady_bude_adresa>
-```
-    
