@@ -12,6 +12,7 @@
     longitude: '16.6064981'
 
 - name: Začátečnický kurz <br> Podzimní středa 2017
+  parallel-with-previous: true
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
     end: 2017-09-03
@@ -35,6 +36,7 @@
     longitude: '16.6235206'
 
 - name: Začátečnický kurz <br> Jarní úterý 2017
+  parallel-with-previous: true
   start: 2017-02-28
   end: 2017-05-30
   time: úterky 18:00 – 20:00

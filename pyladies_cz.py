@@ -8,6 +8,7 @@ if sys.version_info < (3, 0):
 import os
 import fnmatch
 import datetime
+import collections
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask import redirect
@@ -29,7 +30,10 @@ v1_path = os.path.join(orig_path, 'v1/')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    current_meetups = collections.OrderedDict(
+        (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
+        for city in ('praha', 'brno', 'ostrava'))
+    return render_template('index.html', current_meetups=current_meetups)
 
 
 @app.route('/brno_info/')
@@ -152,6 +156,8 @@ def read_meetups_yaml(filename):
 
     today = datetime.date.today()
 
+    previous = None
+
     for meetup in data:
 
         # 'date' means both start and end
@@ -179,12 +185,17 @@ def read_meetups_yaml(filename):
             else:
                 meetup['registration_status'] = 'running'
 
-    return {
-        'current': [meetup for meetup in data
-                    if ('end' not in meetup) or (meetup['end'] >= today)],
-        'past': [meetup for meetup in data
-                 if ('end' in meetup) and (meetup['end'] < today)],
-    }
+        meetup['current'] = ('end' not in meetup) or (meetup['end'] >= today)
+
+        # meetup['parallel_runs'] will contain a shared list of all parallel runs
+        if meetup.get('parallel-with-previous'):
+            meetup['parallel_runs'] = previous['parallel_runs']
+        else:
+            meetup['parallel_runs'] = []
+        meetup['parallel_runs'].append(meetup)
+        previous = meetup
+
+    return data
 
 
 def pathto(name, static=False):
