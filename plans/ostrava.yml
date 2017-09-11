@@ -7,13 +7,13 @@
     link: v1/s001-install/uvod-ostrava.html
   - name: Úvod do příkazové řádky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/cmdline/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/cmdline/
   - name: Instalace Pythonu a první krůčky s ním
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/install/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/install/
   - name: Instalace editoru
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/install-editor/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/install-editor/
   - name: Tahák na klávesnici
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/keyboard/keyboard-cs.pdf
@@ -26,22 +26,22 @@
   materials:
   - name: První program
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/hello-world/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/hello-world/
   - name: Chybové hlášky a `print`
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/print/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/print/
   - name: Proměnné
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/variables/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/variables/
   - name: Porovnávání
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/comparisons/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/comparisons/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2-ostrava.pdf
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/and-or/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/and-or/
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/ezM34x08V0ooGjIuzOJB
@@ -51,10 +51,10 @@
   materials:
   - name: Funkce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/functions
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/functions
   - name: Želva a cykly
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/turtle
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/intro/turtle
   - name: Tahák s užitečnými funkcemi
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
@@ -70,7 +70,7 @@
   materials:
   - name: Cyklus `While`
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/while
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/while
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3b-ostrava.pdf
@@ -83,10 +83,10 @@
   materials:
   - name: Vlastní funkce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/def
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/def
   - name: Řetězce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/str
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/str
   - name: Řetězcový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/strings/strings-cs.pdf
@@ -102,7 +102,7 @@
   materials:
   - name: Soubory
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/files/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/files/
   - name: Domácí projekty A (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5a-ostrava.pdf
@@ -127,10 +127,10 @@
   materials:
   - name: Seznamy
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/list/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/list/
   - name: N-tice
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/tuple/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/tuple/
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
@@ -146,10 +146,10 @@
   materials:
   - name: Slovníky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/dict/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/dict/
   - name: JSON
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/json/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/intro/json/
   - name: Ukázka jednoduchého API
     type: lesson
     link: v1/s011-dicts/simple-api.html
@@ -168,13 +168,13 @@
   materials:
   - name: Moduly
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/modules/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/modules/
   - name: Poznámka o importování
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/circular-imports/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/circular-imports/
   - name: Výjimky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/exceptions/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/exceptions/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5b-ostrava.pdf
@@ -187,7 +187,7 @@
   materials:
   - name: Testování
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/testing/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/testing/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5c-ostrava.pdf
@@ -200,10 +200,10 @@
   materials:
   - name: Grafika
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/intro/pyglet/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/intro/pyglet/
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/pong/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/projects/pong/
   - name: Kód celé hry Pong
     type: link
     link: http://pyladies.cz/v1/s012-pyglet/pong.py
@@ -216,17 +216,17 @@
   materials:
   - name: Třídy
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/class/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/class/
   - name: Dědičnost
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/inheritance/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/inheritance/
 - name: Závěrečný projekt
   date: 2017-12-05
   done: false
   materials:
   - name: Asteroids
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/projects/asteroids/
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/projects/asteroids/
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
