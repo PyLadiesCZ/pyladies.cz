@@ -148,6 +148,15 @@ def read_lessons_yaml(filename):
         for mat in lesson.get('materials', ()):
             mat['name'] = convert_markdown(mat['name'], inline=True)
 
+        # If lesson has no `done` key, add them according to lesson dates
+        # All lesson's dates must be in past to mark it as done
+        done = lesson.get('done', None)
+        if done is None and 'dates' in lesson:
+            all_done = []
+            for date in lesson['dates']:
+                all_done.append(datetime.date.today() > date)
+            lesson['done'] = all(all_done)
+
     return data
 
 

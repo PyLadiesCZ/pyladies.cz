@@ -1,6 +1,5 @@
 - name: Instalace
   date: 2017-09-12
-  done: false
   materials:
   - name: Úvodní prezentace
     type: lesson
@@ -22,7 +21,6 @@
     link: v1/s001-install/handout/handout.pdf
 - name: První program
   date: 2017-09-19
-  done: false
   materials:
   - name: První program
     type: lesson
@@ -47,7 +45,6 @@
     link: https://www.dropbox.com/request/ezM34x08V0ooGjIuzOJB
 - name: Cykly
   date: 2017-09-26
-  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -66,7 +63,6 @@
     link: https://www.dropbox.com/request/dIghRsOtawUytP8qg3Yb
 - name: Jeden nový cyklus a procvičování
   date: 2017-10-03
-  done: false
   materials:
   - name: Cyklus `While`
     type: lesson
@@ -79,7 +75,6 @@
     link: https://www.dropbox.com/request/b4Yw8W42nSsm49UrzUqN
 - name: Funkce & Řetězce
   date: 2017-10-10
-  done: false
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -98,7 +93,6 @@
     link: https://www.dropbox.com/request/gzMXJdksiODF1JEYGdiF
 - name: Práce se soubory
   date: 2017-10-17
-  done: false
   materials:
   - name: Soubory
     type: lesson
@@ -123,7 +117,6 @@
     link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
 - name: Seznamy
   date: 2017-10-24
-  done: false
   materials:
   - name: Seznamy
     type: lesson
@@ -142,7 +135,6 @@
     link: https://www.dropbox.com/request/V0kzxqX19ICk7q7YSI8B
 - name: Slovníky
   date: 2017-10-31
-  done: false
   materials:
   - name: Slovníky
     type: lesson
@@ -164,7 +156,6 @@
     link: https://www.dropbox.com/request/RPoOQOyya1tmxr3ngLFO
 - name: Moduly a výjimky
   date: 2017-11-07
-  done: false
   materials:
   - name: Moduly
     type: lesson
@@ -183,7 +174,6 @@
     link: https://www.dropbox.com/request/mlgOENzebT3oRXEBdvMt
 - name: Testování a procvičování
   date: 2017-11-14
-  done: false
   materials:
   - name: Testování
     type: lesson
@@ -196,7 +186,6 @@
     link: https://www.dropbox.com/request/3HlBHVc8gAvZyCYZ9LvP
 - name: Grafika
   date: 2017-11-21
-  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -212,7 +201,6 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2017-11-28
-  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -222,7 +210,6 @@
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/inheritance/
 - name: Závěrečný projekt
   date: 2017-12-05
-  done: false
   materials:
   - name: Asteroids
     type: lesson
@@ -236,11 +223,9 @@
 - name: Pokračování závěrečného projektu
   date: 2017-12-12
   description: V této lekci budeme pokračovat v dalších fázích závěrečného projektu.
-  done: false
 - name: Závěrečná hodina
   date: 2017-12-19
   description: Během závěrečné hodiny si předáme diplomy a seznámíme se s možnostmi pokračování studia
-  done: false
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
