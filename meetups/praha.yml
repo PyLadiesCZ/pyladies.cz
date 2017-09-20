@@ -12,6 +12,20 @@
     longitude: '14.4490963'
     url: https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs
 
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2017-09-25
+  end: 2017-18-12
+  time: každé pondělí 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
+    end: 2017-09-10
+  place: &ntk
+    name: Národní technická knihovna
+    address: Technická 2710/6, Praha 6
+    latitude: '50.103924'
+    longitude: '14.390703'
+    url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
+
 - name: PyLadies workshop MicroPythonu
   start: 2017-05-23
   end: 2017-05-25
