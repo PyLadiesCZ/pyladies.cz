@@ -368,7 +368,7 @@ HOMEPAGE
 .py-icon-i {
     width: 50px;
     float: left;
-    margin: auto;
+    margin: 60px auto 0 auto;
     height: 30px;
     position: absolute;
     top: 0px;
@@ -464,12 +464,10 @@ h2.course-city-heading {
     text-align: left;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 15px 0 46px 0;
+    padding: 15px 0 15px 0;
 }
 .py-block.pull-left {
-    height: 129px;
     min-height: 145px;
-    max-height: 129px;
     padding: 15px 0px;
 }
 .course-wrapper .course-i:nth-child(4) {
