@@ -65,10 +65,27 @@ def ostrava_course():
 def brno():
     return render_template('brno.html', plan=read_lessons_yaml('plans/brno.yml'))
 
-
 @app.route('/praha/')
 def praha():
-    return render_template('praha.html', plan=read_lessons_yaml('plans/praha.yml'))
+    '''
+    Na podzim 2017 běží dva paralelní kurzy, proto je to rozdělené.
+    Toto je jen redirect kvůli zpětné kompatibilitě URL adres, co mají lidi v bookmarcích.
+    '''
+    return redirect(url_for('praha_cznic'))
+
+@app.route('/praha-cznic/')
+def praha_cznic():
+    '''
+    Pražský kurz v CZ.NIC
+    '''
+    return render_template('praha.html', location='cznic', plan=read_lessons_yaml('plans/praha-cznic.yml'))
+
+@app.route('/praha-ntk/')
+def praha_ntk():
+    '''
+    Pražský kurz v NTK
+    '''
+    return render_template('praha.html', location='ntk', plan=read_lessons_yaml('plans/praha-ntk.yml'))
 
 @app.route('/ostrava/')
 def ostrava():
