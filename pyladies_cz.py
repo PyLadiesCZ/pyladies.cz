@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Create or serve the pyladies.cz website
 """
 
