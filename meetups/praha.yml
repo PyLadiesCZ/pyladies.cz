@@ -27,6 +27,29 @@
     longitude: '14.390703'
     url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
 
+- name: Říjnový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Vue.js a Django
+  date: 2017-10-14
+  time: 9:00 - 17:30
+  place: &apiary
+    name: Apiary
+    address: Pernerova 49, Praha 8 - Karlín
+    latitude: '50.0919519'
+    longitude: '14.4544029'
+    url: https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029
+
+- name: Zářijový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Pandas
+  date: 2017-09-2
+  time: 9:00 - 17:30
+  place: &msd-it-riverview
+    name: MSD IT (Riverview)
+    address: Svornosti 3321/2, Praha 5
+    latitude: '50.0670442'
+    longitude: '14.408024'
+    url: https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127
+
+
 - name: PyLadies workshop MicroPythonu
   start: 2017-05-23
   end: 2017-05-25
