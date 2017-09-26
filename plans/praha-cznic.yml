@@ -42,6 +42,9 @@
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-praha-jaro/beginners/and-or/
+  - name: Tahák na příkazovou řádku a první kroky v Pythonu (PDF)
+    type: handout
+    link: https://s3-eu-west-1.amazonaws.com/messa-shared-files/2017/09/pyladies_2_lekce_tahak.pdf
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
@@ -208,8 +211,8 @@
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf   
-- name: Závěrečná procvičovací hodina 
+    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+- name: Závěrečná procvičovací hodina
   date: 2017-12-12
   done: false
 - name: Odbočky
