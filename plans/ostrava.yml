@@ -73,6 +73,9 @@
   - name: Cyklus `While`
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/while
+  - name: Úkoly k procvičování
+    type: link
+    link: v1/s003-looping/ostrava/ukoly-k-procvicovani/ukoly.html
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3b-ostrava.pdf
