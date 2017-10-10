@@ -134,36 +134,37 @@
 {% endmacro %}
 
 {% macro meetup_list(meetups) %}
-    {% if meetups['current'] %}
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-          <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+        <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
       </div>
-      <div class="row">
-        {% for meetup in meetups['current'] %}
-          {{ meetup_info(meetup) }}
+    </div>
+    <div class="row">
+      {% for meetup in meetups %}
+        {% if meetup.current %}
+         {{ meetup_info(meetup) }}
           {% if not loop.last and loop.index0 % 2 %}
             </div><div class="row">
           {% endif %}
-        {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
       </div>
-    {% endif %}
-    {% if meetups['past'] %}
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-          <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
-        </div>
-      </div>
-      <div class="row">
-        {% for meetup in meetups['past'] %}
+    </div>
+    <div class="row">
+      {% for meetup in meetups %}
+        {% if not meetup.current %}
           {{ meetup_info(meetup,  with_registration_link=False) }}
           {% if not loop.last and loop.index0 % 2 %}
             </div><div class="row">
           {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
 {% endmacro %}
 
 <!DOCTYPE html>
@@ -249,7 +250,8 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ pathto('brno') }}">Brno</a></li>
-                            <li><a href="{{ pathto('praha') }}">Praha</a></li>
+                            <li><a href="{{ pathto('praha_cznic') }}">Praha - CZ.NIC</a></li>
+                            <li><a href="{{ pathto('praha_ntk') }}">Praha - NTK</a></li>
                             <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li>
                            <!-- <li role="separator" class="divider"></li>
                             <li><a href="#">Všechny</a></li> -->

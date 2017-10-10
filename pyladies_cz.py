@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Create or serve the pyladies.cz website
 """
 
@@ -8,6 +10,7 @@ if sys.version_info < (3, 0):
 import os
 import fnmatch
 import datetime
+import collections
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask import redirect
@@ -29,7 +32,10 @@ v1_path = os.path.join(orig_path, 'v1/')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    current_meetups = collections.OrderedDict(
+        (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
+        for city in ('praha', 'brno', 'ostrava'))
+    return render_template('index.html', current_meetups=current_meetups)
 
 
 @app.route('/brno_info/')
@@ -61,10 +67,27 @@ def ostrava_course():
 def brno():
     return render_template('brno.html', plan=read_lessons_yaml('plans/brno.yml'))
 
-
 @app.route('/praha/')
 def praha():
-    return render_template('praha.html', plan=read_lessons_yaml('plans/praha.yml'))
+    '''
+    Na podzim 2017 běží dva paralelní kurzy, proto je to rozdělené.
+    Toto je jen redirect kvůli zpětné kompatibilitě URL adres, co mají lidi v bookmarcích.
+    '''
+    return redirect(url_for('praha_cznic'))
+
+@app.route('/praha-cznic/')
+def praha_cznic():
+    '''
+    Pražský kurz v CZ.NIC
+    '''
+    return render_template('praha.html', location='cznic', plan=read_lessons_yaml('plans/praha-cznic.yml'))
+
+@app.route('/praha-ntk/')
+def praha_ntk():
+    '''
+    Pražský kurz v NTK
+    '''
+    return render_template('praha.html', location='ntk', plan=read_lessons_yaml('plans/praha-ntk.yml'))
 
 @app.route('/ostrava/')
 def ostrava():
@@ -144,6 +167,15 @@ def read_lessons_yaml(filename):
         for mat in lesson.get('materials', ()):
             mat['name'] = convert_markdown(mat['name'], inline=True)
 
+        # If lesson has no `done` key, add them according to lesson dates
+        # All lesson's dates must be in past to mark it as done
+        done = lesson.get('done', None)
+        if done is None and 'dates' in lesson:
+            all_done = []
+            for date in lesson['dates']:
+                all_done.append(datetime.date.today() > date)
+            lesson['done'] = all(all_done)
+
     return data
 
 
@@ -151,6 +183,8 @@ def read_meetups_yaml(filename):
     data = read_yaml(filename)
 
     today = datetime.date.today()
+
+    previous = None
 
     for meetup in data:
 
@@ -179,12 +213,17 @@ def read_meetups_yaml(filename):
             else:
                 meetup['registration_status'] = 'running'
 
-    return {
-        'current': [meetup for meetup in data
-                    if ('end' not in meetup) or (meetup['end'] >= today)],
-        'past': [meetup for meetup in data
-                 if ('end' in meetup) and (meetup['end'] < today)],
-    }
+        meetup['current'] = ('end' not in meetup) or (meetup['end'] >= today)
+
+        # meetup['parallel_runs'] will contain a shared list of all parallel runs
+        if meetup.get('parallel-with-previous'):
+            meetup['parallel_runs'] = previous['parallel_runs']
+        else:
+            meetup['parallel_runs'] = []
+        meetup['parallel_runs'].append(meetup)
+        previous = meetup
+
+    return data
 
 
 def pathto(name, static=False):

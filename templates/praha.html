@@ -7,33 +7,41 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
                         <p class="intro-text-city">PRAHA<br />
-                        <span class="smaller">Začátečnický kurz v CZ.NIC</span></p>
+                        <span class="smaller">Začátečnický kurz v {{ 'CZ.NIC' if location == 'cznic' else 'NTK' }}</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Registration period -->
+    <!-- Registration period
     <div class="actual container">
         <div class="col-xs-5 col-sm-10 col-md-12 col-lg-12">
             <h4 class="actual-heading">
                 <span class="actual-address">
                 <a href="https://goo.gl/forms/PwQU4TanL6ZpSwNE3" target="_blank">Registrace na aktuální kurz jsou otevřeny!</a>
                 </span>
-                <!--<span class="pull-right actual-address">
+                <span class="pull-right actual-address">
                 <a href="https://goo.gl/forms/PwQU4TanL6ZpSwNE3" target="_blank">Registrační formulář</a>
-                </span> -->
+                </span>
             </h4>
         </div>
-    </div> 
+    </div>  -->
     <!-- Started course Prague -->
     <div class="actual container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h4 class="actual-heading">Další kurz bude probíhat od 19.9.2017 každé úterý od 18:00 do 20:00. 
+            <h4 class="actual-heading">Podzimní kurzy právě probíhají. <br>
+                Každé úterý od 19.9.2017 od 18:00 do 20:00 v CZ.NIC <br>
+                a každé pondělí od 25.9.2017 od 18:00 do 20:00 v NTK.
                 <span class="pull-right actual-address">
-                    <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs" target="_blank">
-                    <span class="glyphicon glyphicon-map-marker hidden-xs"></span>budova CZ.NIC, Milešovská 5, Praha 3
-                    </a>
+                    {% if location == 'cznic' %}
+                        <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs" target="_blank">
+                            <span class="glyphicon glyphicon-map-marker hidden-xs"></span>budova CZ.NIC, Milešovská 5, Praha 3
+                        </a>
+                    {% elif location == 'ntk'%}
+                        <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x470b94e8b61a7d13:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907032" target="_blank">
+                            <span class="glyphicon glyphicon-map-marker hidden-xs"></span>Národní technická knihovna, Technická 2710/6, Praha 6
+                        </a>
+                    {% endif%}
                 </span>
             </h4>
         </div>

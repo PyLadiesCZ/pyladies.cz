@@ -53,7 +53,7 @@
               <img height="110" src="{{ pathto('_static/img/icon/qa.png', 1) }}" class="keyfeature-icon">
               <h2 class="about-title">Co jsou PyLadies?</h2>
               <div class="about-p">
-                PyLadies jsou (mezinárodní) aktivita, která se snaží přiblížit IT ženám a ženy k IT. K tomu využívá programovací jazyk Python, který je perfektní pro výukové účely a zároveň je po něm velká poptávka na trhu práce.
+                PyLadies jsou (mezinárodní) aktivita, která se snaží přiblížit IT ženám a ženy k&nbsp;IT. K&nbsp;tomu využívá programovací jazyk Python, který je perfektní pro výukové účely a zároveň je po něm velká poptávka na trhu práce.
               </div>
           </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 about">
@@ -67,56 +67,60 @@
                 <img height="110" src="{{ pathto('_static/img/icon/computer.png', 1) }}" class="keyfeature-icon">
                 <h2 class="about-title">Co potřebuješ?</h2>
                 <div class="about-p">
-                  Abys mohla začít, potřebuješ hlavně motivaci a dostatek času. K dispozici bys měla mít vlastní notebook, na kterém se budeš učit programovat (ideálně s oprávněním k instalaci programů).
+                  Abys mohla začít, potřebuješ hlavně motivaci a dostatek času. K&nbsp;dispozici bys měla mít vlastní notebook, na kterém se budeš učit programovat (ideálně s&nbsp;oprávněním k&nbsp;instalaci programů).
                 </div>
             </div>
         </div>
     </section>
     <!-- Courses section -->
     <section class="course-wrapper container-fluid" id="main-course">
-        <!-- PRAHA AKTUÁLNĚ -->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 course-i">
-            <div class="py-icon">
-                <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
+
+        {% for city_name, meetups in current_meetups.items() %}
+            {% set meetup = meetups[0] %}
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 course-i">
+                <div class="py-icon">
+                    {% if meetup.registration_status in ('meetup_started', 'closed') %}
+                        <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
+                    {% elif meetup.registration_status == 'running' %}
+                        <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
+                    {% else %}
+                        <img src="{{ pathto('_static/img/icon/pylady-grey.png', 1) }}" class="py-icon-i" />
+                    {% endif %}
+                </div>
+                <div class="py-block pull-left">
+                    <h4 class="city-heading">
+                        <a href="{{ pathto(city_name) }}">
+                        {{ city_name | title }} &ndash; začátečnický kurz
+                        </a>
+                    </h4>
+
+                    {% for c in meetup.parallel_runs %}
+                        <p class="city-info">
+                            {{ (c.start, c.end)| date_range }}
+                            {% if c.registration_status == 'running' %}
+                                <a target="_blank" href="{{ c.registration.url }}">
+                                    {{ c.registration.get('text', 'Registrace zde!') }}
+                                </a>
+                            {% endif %}
+                        </p>
+                        {% if c.place %}
+                          <p class="city-address">
+                              <a href="{{ c.place.url }}" target="_blank">
+                                {{ c.place.name }},
+                                {{ c.place.address }}
+                              </a>
+                          </p>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
             </div>
-            <div class="py-block pull-left">
-                <a href="{{ pathto('praha') }}"><h4 class="city-heading">Praha - začátečnický kurz</h4>
-                <p class="city-info">19. 9. - 12. 12. 2017 <a target="_blank" href="https://goo.gl/forms/PwQU4TanL6ZpSwNE3">Registrace zde!</a></p>
-                <p class="city-address">
-                    <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs" target="_blank">budova CZ.NIC, Milešovská 5, Praha 3</a>
-                </p>
-            </div>
-        </div>
-        <!-- BRNO AKTUÁLNĚ-->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 course-i">
-            <div class="py-icon">
-                <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
-            </div>
-            <div class="py-block pull-left">
-                <a href="{{ pathto('brno') }}"><h4 class="city-heading">Brno - začátečnický kurz</h4></a>
-                <p class="city-info">25. 9. – 18. 12. 2017 / <br>27. 9. – 20. 12. 2017 <a target="_blank" href="https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs/edit">Registrace zde!</a></p>
-                <p class="city-address">
-                   <a href="https://mapy.cz/s/17fac" target="_blank">Experis, Nové sady 996/25</a> /
-                   <a href="https://goo.gl/miAzTf" target="_blank"> SolarWinds, Holandská 873/6</a>
-                </p>
-            </div>
-        </div>
-        <!-- OSTRAVA AKTUÁLNĚ -->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 course-i">
-            <div class="py-icon">
-                <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
-            </div>
-            <div class="py-block pull-left">
-                <a href="{{ pathto('ostrava') }}"><h4 class="city-heading">Ostrava - začátečnický kurz</h4></a>
-                <p class="city-info">12. 9. - 19. 12. 2017</p>
-                <p class="city-address">
-                    <a href="https://goo.gl/maps/rq7CrLf9x2A2" target="_blank">Tieto Towers, 28.října 3346/91, Ostrava</a>
-                </p>
-            </div>
-        </div>
+        {% endfor %}
+
         <div class="col-md-3 hidden-sm hidden-xs course-i text-center">
             <a href="http://pyladies.cz/stan_se/"><div class="new-city">Založ vlastní PyLadies</div></a>
         </div>
+
     </section>
     <!-- After course -->
     <section id="about2" class="container content-section text-center">
@@ -126,8 +130,8 @@
                 <img height="110" src="{{ pathto('_static/img/icon/code.png', 1) }}">
                 <h2 class="about-title">Dál programovat</h2>
                 <div class="about-p">
-                  Začátečnickým kurzem to nekončí. Pokud budeš chtít dál pokračovat společně s PyLadies, na navazující srazy můžeš přijít s vlastním projektem, případně si vybrat některý z předem připravených větších projektů. Také dokážeme zprostředkovat příležitosti na stáže nebo různé juniorské pracovní pozice v IT.<br/>
-                  Na webu www.python.cz také najdeš odkazy na <a href="http://python.cz/zacatecnici/#onlineumim" target="_blank">materiály k dalšímu studiu</a>.
+                  Začátečnickým kurzem to nekončí. Pokud budeš chtít dál pokračovat společně s&nbsp;PyLadies, na <a href="https://www.meetup.com/pyladiescz/">navazující srazy</a> můžeš přijít s&nbsp;vlastním projektem, případně si vybrat některý z předem připravených větších projektů. Také dokážeme zprostředkovat příležitosti na stáže nebo různé juniorské pracovní pozice v&nbsp;IT.<br/>
+                  Na webu www.python.cz také najdeš odkazy na <a href="http://python.cz/zacatecnici/#onlineumim" target="_blank">materiály k&nbsp;dalšímu studiu</a>.
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 about">
@@ -141,7 +145,7 @@
                 <a href="http://pyvo.cz/" target="_blank"><img height="110" src="{{ pathto('_static/img/icon/pyvo.png', 1) }}"></a>
                 <h2 class="about-title">Přijít na Pyvo</h2>
                 <div class="about-p">
-                    Příznivci Pythonu se rádi setkávají na neformálních srazech v <a href="http://pyvo.cz/praha" target="_blank">Praze</a>, <a href="http://pyvo.cz/brno" target="_blank">Brně</a> nebo <a href="http://pyvo.cz/ostrava" target="_blank">Ostravě</a> na <a href="http://pyvo.cz/" target="_blank">Pyvu</a>. Díky tomu je Python komunita velmi živá a soudržná. Všichni nováčkové jsou zde vítáni.</div>
+                    Příznivci Pythonu se rádi setkávají na neformálních srazech v&nbsp;<a href="http://pyvo.cz/praha" target="_blank">Praze</a>, <a href="http://pyvo.cz/brno" target="_blank">Brně</a> nebo <a href="http://pyvo.cz/ostrava" target="_blank">Ostravě</a> na <a href="http://pyvo.cz/" target="_blank">Pyvu</a>. Díky tomu je Python komunita velmi živá a soudržná. Všichni nováčkové jsou zde vítáni.</div>
                 </div>
             </div>
     </section>
@@ -182,19 +186,19 @@
             <h4 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ref-heading">PyLadies pro PyLadies</h4>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ref">
                 <p class="ref-p pull-left">
-                  "Kurz byl pro mě ohromně přínosný. S pomocí koučů a lidí ve skupině jsem si po kurzu zvládla napsat pár krátkých prográmků, které mi zjednodušují každodenní práci a to jsem před pyladies o pythonu sotva slyšela. Všichni jsou až neuvěřitelně ochotní pomoci. Rozhodně doporučuji!"
+                  "Kurz byl pro mě ohromně přínosný. S&nbsp;pomocí koučů a lidí ve skupině jsem si po kurzu zvládla napsat pár krátkých prográmků, které mi zjednodušují každodenní práci a to jsem před pyladies o&nbsp;Pythonu sotva slyšela. Všichni jsou až neuvěřitelně ochotní pomoci. Rozhodně doporučuji!"
                   <p class="ref-name"><strong>Pavlína F.</strong></p>
                 </p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ref">
                 <p class="ref-p">
-                  "Dříve jsem vyhledávala krátké jednodenní či víkendové kurzy programování pro slečny. Ale díky PyLadies srazům jsem zjistila, že scházet se každý týden, učit se postupně a více do detailů je jednoduše super a velmi přínosné! Odcházela jsem s pocitem, že umím informace ze srazů využít při psaní kódu. Oblíbila jsem si programovací jazyk Python a především komunitu kolem Pythonu. Nyní pokračuji na vlastních projektech dál a na PyLadies srazy se vracím jako koučka pro další slečny!"
+                  "Dříve jsem vyhledávala krátké jednodenní či víkendové kurzy programování pro slečny. Ale díky PyLadies srazům jsem zjistila, že scházet se každý týden, učit se postupně a více do detailů je jednoduše super a velmi přínosné! Odcházela jsem s&nbsp;pocitem, že umím informace ze srazů využít při psaní kódu. Oblíbila jsem si programovací jazyk Python a především komunitu kolem Pythonu. Nyní pokračuji na vlastních projektech dál a na PyLadies srazy se vracím jako koučka pro další slečny!"
                   <p class="ref-name"><strong>Verča G.</strong></p>
                 </p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ref">
                 <p class="ref-p pull-right">
-                  "Kurz Pythonu u pražských Pyladies byl skvělý - komplexní, dobře vystavěný a srozumitelně prezentovaný. Vyžadoval pozornou účast a aktivní domácí práci, ale nikdy jsme v tom nebyly samy; k dispozici byli koučové, kteří ochotně zodpověděli všechny dotazy a pomohli překonat nástrahy učení, online i offline. Super způsob, jak se seznámit se základy programování a začlenit se do místní pythonovské komunity."
+                  "Kurz Pythonu u pražských Pyladies byl skvělý - komplexní, dobře vystavěný a srozumitelně prezentovaný. Vyžadoval pozornou účast a aktivní domácí práci, ale nikdy jsme v&nbsp;tom nebyly samy; k&nbsp;dispozici byli koučové, kteří ochotně zodpověděli všechny dotazy a pomohli překonat nástrahy učení, online i offline. Super způsob, jak se seznámit se základy programování a začlenit se do místní pythonovské komunity."
                   <p class="ref-name"><strong>Verča Š.</strong></p>
                 </p>
             </div>
@@ -249,7 +253,7 @@
             </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            
+
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <a href="https://www.kiwi.com/jobs" target="_blank">
