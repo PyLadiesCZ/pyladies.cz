@@ -14,8 +14,8 @@
 - name: Začátečnický kurz <br> Podzimní středa 2017
   parallel-with-previous: true
   registration:
-    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
-    end: 2017-09-03
+  url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
+  end: 2017-09-03
   start: 2017-09-27
   end: 2017-12-20
   time: středy 18:00 – 20:00
