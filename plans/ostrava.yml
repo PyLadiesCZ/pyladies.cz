@@ -82,6 +82,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/b4Yw8W42nSsm49UrzUqN
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s003-looping/ostrava/feedback-homeworks-2.html
 - name: Funkce & Řetězce
   date: 2017-10-10
   materials:
