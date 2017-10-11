@@ -50,7 +50,7 @@
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
   date: 2017-10-03
-  done: false
+  done: true
   materials:
   - name: Funkce
     type: lesson
@@ -69,7 +69,7 @@
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Spolupráce a Opensource - Git
   date: 2017-10-10
-  done: false
+  done: true
   materials:
   - name: Spolupráce a Git
     type: lesson
