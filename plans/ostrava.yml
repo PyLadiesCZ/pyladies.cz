@@ -106,16 +106,37 @@
   - name: Feedback k domácím projektům
     type: link
     link: v1/s004-strings/ostrava/feedback-homeworks.html
-- name: Práce se soubory
+- name: Výjimky
   date: 2017-10-17
+  materials:
+  - name: Výjimky
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/exceptions/
+  - name: Odevzdání domácích projektů (nedokončených z minula)
+    type: link
+    link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
+- name: Soubory, seznamy
+  date: 2017-10-24
   materials:
   - name: Soubory
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/files/
+  - name: Seznamy
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/list/
+  - name: N-tice
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/tuple/
+  - name: Tahák na seznamy
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
   - name: Domácí projekty A (PDF)
     type: homework
-    link: v1/s005-modules/handout/handout5a-ostrava.pdf
+    link: v1/s006-lists/handout-ostrava/handout6.pdf
   - name: Domácí projekty B (PDF)
+    type: homework
+    link: v1/s005-modules/handout/handout5a-ostrava.pdf
+  - name: Domácí projekty C (PDF)
     type: homework
     link: v1/s005-modules/handout/handout7-ostrava.pdf
   - name: odkaz k domácím projektům – hiragana
@@ -127,24 +148,6 @@
   - name: odkaz k domácím projektům – „日本語の表記体系” na japonské Wikipedii
     type: link
     link: http://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E8%A1%A8%E8%A8%98%E4%BD%93%E7%B3%BB
-  - name: Odevzdání domácích projektů
-    type: link
-    link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
-- name: Seznamy
-  date: 2017-10-24
-  materials:
-  - name: Seznamy
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/list/
-  - name: N-tice
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/tuple/
-  - name: Tahák na seznamy
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
-  - name: Domácí projekty (PDF)
-    type: homework
-    link: v1/s006-lists/handout-ostrava/handout6.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/V0kzxqX19ICk7q7YSI8B
@@ -169,7 +172,7 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/RPoOQOyya1tmxr3ngLFO
-- name: Moduly a výjimky
+- name: Moduly
   date: 2017-11-07
   materials:
   - name: Moduly
@@ -178,9 +181,6 @@
   - name: Poznámka o importování
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/circular-imports/
-  - name: Výjimky
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/exceptions/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5b-ostrava.pdf
