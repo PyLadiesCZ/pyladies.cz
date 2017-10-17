@@ -11771,7 +11771,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">odpoved_uzivatele</span><span class="p">(</span><span class="n">odpoved</span><span class="p">):</span>
@@ -11798,7 +11798,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">odpoved_uzivatele</span><span class="p">(</span><span class="n">odpoved</span><span class="p">):</span>
@@ -11808,6 +11808,79 @@ div#notebook {
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">elif</span> <span class="n">odpoved</span> <span class="o">==</span> <span class="s1">&#39;ne&#39;</span> <span class="ow">or</span> <span class="n">odpoved</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="P&#237;smeno-&quot;k&quot;-v-textu-p&#237;sn&#283;">P&#237;smeno "k" v textu p&#237;sn&#283;<a class="anchor-link" href="#P&#237;smeno-&quot;k&quot;-v-textu-p&#237;sn&#283;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>K tomuto účastnice napsala, že takovéto vypracování nefunguje, pokud píseň začíná písmenem "k". Uhádneš proč se jí to takto chovalo?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;My girl, my girl, don&#39;t lie to me,</span>
+<span class="s2">Tell me where did you sleep last night.</span>
+<span class="s2">In the pines, in the pines,</span>
+<span class="s2">Where the sun don&#39;t ever shine.</span>
+<span class="s2">I would shiver the whole night through...&quot;&quot;&quot;</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Písmeno k je v textu použito&quot;</span><span class="p">,</span><span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;k&quot;</span><span class="p">),</span><span class="s2">&quot;krát.&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tipni-p&#345;&#237;jmen&#237;">Tipni p&#345;&#237;jmen&#237;<a class="anchor-link" href="#Tipni-p&#345;&#237;jmen&#237;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Je v tomto příkladu něco, co by se dalo napsat lépe a tím kód udělat přehlednější?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prijmeni</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Zadej příjmení &#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="s1">&#39;ová&#39;</span> <span class="ow">in</span> <span class="n">prijmeni</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;žena&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;muž&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11832,6 +11905,8 @@ div#notebook {
 <ul>
 <li>Domácí projekt odevzdaly do pondělních osmnácti hodin jen <strong>čtyři</strong> účastnice</li>
 <li><strong>Pokud je nebudete dělat, nemůžete úspěšně absolvovat kurz</strong></li>
+<li>Připravit kvalitní feedback pár hodin před kurzem je nemožné (tento dělám místo oběda na školení hasičů)</li>
+<li>Pokud potřebujete akutní pomoc, nepište to do komentářů, ale napište email přímo některému z koučů</li>
 </ul>
 
 </div>
