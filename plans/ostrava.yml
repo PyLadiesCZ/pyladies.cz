@@ -115,9 +115,12 @@
   - name: Soubory
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/files/
-  - name: Domácí projekty (PDF)
+  - name: Domácí projekty A (PDF)
     type: homework
-    link: v1/s005-modules/handout/handout7a-ostrava.pdf
+    link: v1/s005-modules/handout/handout5a-ostrava.pdf
+  - name: Domácí projekty B (PDF)
+    type: homework
+    link: v1/s005-modules/handout/handout7-ostrava.pdf
   - name: odkaz k domácím projektům – hiragana
     type: link
     link: v1/s006-lists/resources/hiragana.txt
@@ -142,12 +145,9 @@
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
-  - name: Domácí projekty A (PDF)
+  - name: Domácí projekty (PDF)
     type: homework
     link: v1/s006-lists/handout-ostrava/handout6.pdf
-  - name: Domácí projekty B (PDF)
-    type: homework
-    link: v1/s005-modules/handout/handout5d-ostrava.pdf
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/V0kzxqX19ICk7q7YSI8B
