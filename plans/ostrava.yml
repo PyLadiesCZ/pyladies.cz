@@ -106,9 +106,12 @@
   - name: Feedback k domácím projektům
     type: link
     link: v1/s004-strings/ostrava/feedback-homeworks.html
-- name: Práce se soubory
+- name: Výjimky, soubory
   date: 2017-10-17
   materials:
+  - name: Výjimky
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-ostrava-jaro/beginners/exceptions/
   - name: Soubory
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/files/
@@ -130,7 +133,7 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
-- name: Seznamy
+- name: Seznamy, n-tice
   date: 2017-10-24
   materials:
   - name: Seznamy
@@ -169,7 +172,7 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/RPoOQOyya1tmxr3ngLFO
-- name: Moduly a výjimky
+- name: Moduly
   date: 2017-11-07
   materials:
   - name: Moduly
@@ -178,9 +181,6 @@
   - name: Poznámka o importování
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/circular-imports/
-  - name: Výjimky
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-ostrava-podzim/beginners/exceptions/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5b-ostrava.pdf
