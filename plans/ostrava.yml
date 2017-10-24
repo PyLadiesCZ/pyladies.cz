@@ -133,6 +133,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/uQEtv4zPfMyKQMdGIQzL
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s005-modules/ostrava/feedback-homeworks.html
 - name: Seznamy, n-tice
   date: 2017-10-24
   materials:
