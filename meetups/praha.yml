@@ -27,6 +27,15 @@
     longitude: '14.390703'
     url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
 
+- name: Datová analýza v Pythonu
+  start: 2017-10-05
+  end: 2017-11-02
+  time: každý čtvrtek 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/0G4Fv0DrKgZ4GUqI3
+    end: 2017-09-30
+  place: *cz-nic
+
 - name: Říjnový PyWorking <br> meetup pro pokročilé začátečníky
   topic: Vue.js a Django
   date: 2017-10-14
