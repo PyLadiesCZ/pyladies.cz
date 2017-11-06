@@ -98,13 +98,13 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování
   date: 2017-10-30
-  done: false
+  done: true
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: special-lesson
 - name: Testování
   date: 2017-11-06
-  done: false
+  done: true
   materials:
   - name: Výjimky
     type: lesson
