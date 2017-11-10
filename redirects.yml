@@ -1,0 +1,46 @@
+naucse-lessons:
+    s001-install:
+        cmdline.html: beginners/cmdline
+        git.html: git/install
+        instalace.html: beginners/install
+    s002-hello-world:
+        and-or.html: beginners/and-or
+        comparisons.html: beginners/comparisons
+        hello-world.html: beginners/hello-world
+        printing.html: beginners/print
+        variables.html: beginners/variables
+        editor.html: beginners/install-editor
+    s003-looping:
+        functions.html: beginners/functions
+        turtle.html: beginners/turtle
+        while.html: beginners/while
+    s004-strings:
+        functions.html: beginners/def
+        strings.html: beginners/str
+    s005-modules:
+        opensource.html: git/collaboration
+        exceptions.html: beginners/exceptions
+        modules.html: beginners/modules
+        testing.html: beginners/testing
+        circular_imports.html: beginners/circular_imports
+    s006-lists:
+        files.html: beginners/files
+        lists2.html: beginners/list
+        tuples.html: beginners/tuple
+    s009-git:
+        git.html: git/basics
+        branching.html: git/branching
+    s011-dicts:
+        dicts.html: beginners/dict
+        json.html: intro/json
+        github-api.html: projects/github-api
+    s012-pyglet:
+        pyglet.html: intro/pyglet
+        pong.html: projects/pong
+    s014-class:
+        classes.html: beginners/class
+        inheritance.html: beginners/inheritance
+    s015-asteroids:
+        index.html: projects/asteroids
+    s016-micropython:
+        index.html: beginners/micropython

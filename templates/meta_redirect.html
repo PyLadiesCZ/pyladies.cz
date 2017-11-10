@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block extra_head %}
+    <!-- Apologies for using deprecated HTML technology -->
+    <meta http-equiv="refresh" content="0; {{ url }}">
+{% endblock extra_head %}
+
+{% block content %}
+    <section class="course-city faq container">
+        <div class="row">
+        <h1>Přesměrování</h1>
+            <p>
+                Obsah této stránky byl přesunut na novou adresu:
+                <a href="{{ url }}">{{ url }}</a>.
+            </p>
+        </div>
+    </section>
+{% endblock %}

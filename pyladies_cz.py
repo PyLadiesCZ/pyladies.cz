@@ -13,7 +13,6 @@ import datetime
 import collections
 
 from flask import Flask, render_template, url_for, send_from_directory
-from flask import redirect
 from flask_frozen import Freezer
 import yaml
 import jinja2
@@ -26,6 +25,20 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
+
+
+def redirect(url):
+    """Return a response with a Meta redirect"""
+
+    # With static pages, we can't use HTTP redirects.
+    # Return a page wit <meta refresh> instead.
+    #
+    # When Frozen-Flask gets support for redirects
+    # (https://github.com/Frozen-Flask/Frozen-Flask/issues/81),
+    # this should be revisited.
+
+    return render_template('meta_redirect.html', url=url)
+
 
 ########
 ## Views
@@ -103,6 +116,8 @@ def faq():
 
 @app.route('/v1/<path:path>')
 def v1(path):
+    if path in REDIRECTS:
+        return redirect(REDIRECTS[path])
     return send_from_directory(v1_path, path)
 
 @app.route('/index.html')
@@ -244,6 +259,18 @@ def inject_context():
         'pathto': pathto,
         'today': datetime.date.today(),
     }
+
+
+############
+## Redirects
+
+REDIRECTS_DATA = read_yaml('redirects.yml')
+
+REDIRECTS = {}
+for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
+    for html_filename, lesson in pages.items():
+        new_url = 'http://naucse.python.cz/lessons/{}/'.format(lesson)
+        REDIRECTS['{}/{}'.format(directory, html_filename)] = new_url
 
 
 ##########
