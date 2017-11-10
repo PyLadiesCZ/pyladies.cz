@@ -290,6 +290,8 @@ def v1():
             if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
                 path = os.path.relpath(os.path.join(name, file), v1_path)
                 yield {'path': path}
+    for path in REDIRECTS:
+        yield url_for('v1', path=path)
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
