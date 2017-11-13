@@ -187,6 +187,9 @@
 
       <title>{% block title %}PyLadies CZ{% endblock title %}</title>
 
+      {% block extra_head %}
+      {% endblock extra_head %}
+
       {% block css %}
         <!-- Bootstrap CSS -->
         <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
