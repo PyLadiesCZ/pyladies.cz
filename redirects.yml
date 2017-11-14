@@ -12,7 +12,7 @@ naucse-lessons:
         editor.html: beginners/install-editor
     s003-looping:
         functions.html: beginners/functions
-        turtle.html: beginners/turtle
+        turtle.html: intro/turtle
         while.html: beginners/while
     s004-strings:
         functions.html: beginners/def
@@ -22,7 +22,7 @@ naucse-lessons:
         exceptions.html: beginners/exceptions
         modules.html: beginners/modules
         testing.html: beginners/testing
-        circular_imports.html: beginners/circular_imports
+        circular_imports.html: beginners/circular-imports
     s006-lists:
         files.html: beginners/files
         lists2.html: beginners/list
