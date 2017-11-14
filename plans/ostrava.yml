@@ -196,6 +196,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/mlgOENzebT3oRXEBdvMt
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s005-modules/ostrava/feedback-homeworks-modules.html
 - name: Testování a procvičování
   date: 2017-11-14
   materials:
