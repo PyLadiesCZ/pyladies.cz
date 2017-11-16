@@ -126,7 +126,7 @@
     link: v1/s005-modules/handout/handout5.pdf
 - name: Seznamy
   date: 2017-11-13
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
