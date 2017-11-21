@@ -128,8 +128,6 @@
   date: 2017-11-13
   done: true
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/list
@@ -144,7 +142,7 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
   date: 2017-11-20
-  done: false
+  done: true
   materials:
   - name: Slovníky
     type: lesson
@@ -188,6 +186,8 @@
   date: 2017-12-11
   done: false
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Asteroids
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/asteroids
