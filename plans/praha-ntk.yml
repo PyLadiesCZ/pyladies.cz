@@ -161,7 +161,7 @@
     link: v1/s011-dicts/handout/handout9.pdf
 - name: Grafika
   date: 2017-11-27
-  done: false
+  done: true
   materials:
   - name: Grafika
     type: lesson
