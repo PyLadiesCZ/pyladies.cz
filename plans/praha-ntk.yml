@@ -177,7 +177,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2017-12-04
-  done: false
+  done: true
   materials:
   - name: Třídy
     type: lesson
@@ -200,8 +200,9 @@
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
-- name: Závěrečná procvičovací hodina
+- name: Závěrečná procvičovací hodina nebo pokračování Asteroids
   date: 2017-12-18
+  description: Během závěrečné hodiny se mimojiné seznámíme s možnostmi dalšího vzdělávání
   done: false
 - name: Odbočky
   description: |
