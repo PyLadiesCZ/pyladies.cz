@@ -194,7 +194,7 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2017-11-28
-  done: false
+  done: true
   materials:
   - name: Třídy
     type: lesson
@@ -204,7 +204,7 @@
     link: http://naucse.python.cz/2017/pyladies-praha-podzim-cznic/beginners/inheritance
 - name: Závěrečný projekt
   date: 2017-12-05
-  done: false
+  done: true
   materials:
   - name: Asteroids
     type: lesson
