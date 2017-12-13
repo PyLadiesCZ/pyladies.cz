@@ -187,7 +187,7 @@
     link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/inheritance
 - name: Závěrečný projekt
   date: 2017-12-11
-  done: false
+  done: true
   materials:
   - name: Turnaj v piškvorkách
     type: special
