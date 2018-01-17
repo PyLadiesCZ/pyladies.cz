@@ -84,7 +84,7 @@ statické stránky k nasazení na webový server.:
 ### <a name="kurzy-mesta">Aktuální a proběhlé kurzy (stránka kurzů se upravuje v souboru `meetups/brno.yml`)
 Každé město má vlastní stránku s aktuálními a proběhlými kurzy. Dříve či později se z toho stane taková kronika.
 
-První kurz v seznamu se ukáže na hlavní stránce.
+Nové kurzy se přidávají na konec `.yml` souboru. Nejnovější kurz v seznamu (poslední v souboru) se ukáže na hlavní stránce.
 
 ***V meetupech lze nastavit:***
 
