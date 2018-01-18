@@ -1,15 +1,61 @@
-- name: Začátečnický kurz <br> Podzimní pondělí 2017
-  registration:
-    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
-    end: 2017-09-03
-  start: 2017-09-25
-  end: 2017-12-18
+# Pozor, nové meetupy se přidávají na konec souboru
+
+- name: Build your own Blog with PyLadies! <br> Django Workshop @ RuPy 2012
+  date: 2012-11-16
+
+- name: Doučování Pythonu
+  start: 2013-11-11
+  end: 2014-09-15
+  time: pondělky a později úterky 18:00 – 20:00
+  place: &rh-tower-big
+    name: Red Hat – Tower Big
+    address: Purkyňova 99, Brno
+    url: http://www.mapy.cz/s/8NKT
+
+- name: Začátečnický kurz <br> 2014
+  start: 2014-06-10
+  end: 2015-03-16
   time: pondělky 18:00 – 20:00
+  place: *rh-tower-big
+
+- name: Začátečnický kurz <br> 2015
+  start: 2015-10-05
+  end: 2016-02-29
+  time: pondělky 17:00 – 19:00
   place: &experis
     name: Experis
     address: BC Titanium, Nové sady 25, Brno
     latitude: '49.1875653'
     longitude: '16.6064981'
+
+- name: Začátečnický kurz <br> Jaro 2016
+  start: 2016-03-07
+  end: 2016-06-19
+  time: pondělky 17:00 – 19:00
+  place: *experis
+
+- name: Začátečnický kurz <br> Podzim 2016
+  start: 2016-09-26
+  end: 2017-01-09
+  time: pondělky 18:00 – 20:00
+  place: *experis
+
+- name: Začátečnický kurz <br> Jarní úterý 2017
+  parallel-with-previous: true
+  start: 2017-02-28
+  end: 2017-05-30
+  time: úterky 18:00 – 20:00
+  place: *experis
+
+- name: Začátečnický kurz <br> Jarní pondělí 2017
+  start: 2017-02-27
+  end: 2017-05-29
+  time: pondělky 18:00 – 20:00
+  place: &odbor-skolstvi
+    name: Odbor školství
+    address: Cejl 73, Brno
+    latitude: '49.1992294'
+    longitude: '16.6235206'
 
 - name: Začátečnický kurz <br> Podzimní středa 2017
   parallel-with-previous: true
@@ -25,55 +71,11 @@
     latitude: '49.1810008'
     longitude: '16.6057989'
 
-- name: Začátečnický kurz <br> Jarní pondělí 2017
-  start: 2017-02-27
-  end: 2017-05-29
-  time: pondělky 18:00 – 20:00
-  place: &odbor-skolstvi
-    name: Odbor školství
-    address: Cejl 73, Brno
-    latitude: '49.1992294'
-    longitude: '16.6235206'
-
-- name: Začátečnický kurz <br> Jarní úterý 2017
-  parallel-with-previous: true
-  start: 2017-02-28
-  end: 2017-05-30
-  time: úterky 18:00 – 20:00
-  place: *experis
-
-- name: Začátečnický kurz <br> Podzim 2016
-  start: 2016-09-26
-  end: 2017-01-09
+- name: Začátečnický kurz <br> Podzimní pondělí 2017
+  registration:
+    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
+    end: 2017-09-03
+  start: 2017-09-25
+  end: 2017-12-18
   time: pondělky 18:00 – 20:00
   place: *experis
-
-- name: Začátečnický kurz <br> Jaro 2016
-  start: 2016-03-07
-  end: 2016-06-19
-  time: pondělky 17:00 – 19:00
-  place: *experis
-
-- name: Začátečnický kurz <br> 2015
-  start: 2015-10-05
-  end: 2016-02-29
-  time: pondělky 17:00 – 19:00
-  place: *experis
-
-- name: Začátečnický kurz <br> 2014
-  start: 2014-06-10
-  end: 2015-03-16
-  time: pondělky 18:00 – 20:00
-  place: &rh-tower-big
-    name: Red Hat – Tower Big
-    address: Purkyňova 99, Brno
-    url: http://www.mapy.cz/s/8NKT
-
-- name: Doučování Pythonu
-  start: 2013-11-11
-  end: 2014-09-15
-  time: pondělky a později úterky 18:00 – 20:00
-  place: *rh-tower-big
-
-- name: Build your own Blog with PyLadies! <br> Django Workshop @ RuPy 2012
-  date: 2012-11-16

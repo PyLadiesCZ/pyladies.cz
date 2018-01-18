@@ -1,16 +1,144 @@
+# Pozor, nové meetupy se přidávají na konec souboru
+
+- name: Jednodenní hardwarový workshop u Prahy <br> MicroPython a LED světýlka
+  date: 2016-08-19
+  time: celý den
+  place:
+    name: Mšené-Lázně
+    url: http://www.msene-lazne.cz/
+
+- name: PyLadies Praha <br> pokročilé a doučovací srazy
+  time: každé pondělí 18:00 - 20:00
+  start: 2016-04-05
+  end: 2016-06-28    # XXX - kdy to končilo?
+  place:
+    name: probíhaly na různých místech v Praze
+
 - name: PyLadies Praha <br> začátečnický kurz
-  start: 2017-09-19
-  end: 2017-12-12
-  time: každé úterý 18:00 - 20:00
-  registration:
-    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
-    end: 2017-09-10
+  start: 2016-04-05
+  end: 2016-06-28
   place: &cz-nic
     name: budova CZ.NIC
     address: Milešovská 5, Praha 3
     latitude: '50.079123'
     longitude: '14.4490963'
     url: https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs
+
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2016-09-13
+  end: 2016-12-06
+  time: každé úterý 18:00 - 20:00
+  place: *cz-nic
+
+- name: Prosincový PyWorking <br> meetup pro pokročilé začátečníky
+  topic:  Django - první webová aplikace
+  date: 2016-12-10
+  time: 9:00 - 17:30
+  place: &apiary
+    name: Apiary
+    address: Pernerova 49, Praha 8 - Karlín
+    latitude: '50.0919519'
+    longitude: '14.4544029'
+    url: https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029
+
+
+- name: |
+    Vánoční MicroPython <br>
+    pokračování začátečnického MicroPython kurzu
+    s [Josefem Rouskem](https://twitter.com/josefrousek)
+  date: 2016-12-12
+  time: 18:00 - 20:30
+  place: &usertech
+    name: Usertech
+    address: Štefánikova 43a, Praha 5 - Anděl
+    latitude: '50.0764314'
+    longitude: '14.4016603'
+    url: https://www.google.cz/maps/place/%C5%A0tef%C3%A1nikova+13%2F43,+150+00+Praha+5-Sm%C3%ADchov/@50.0764314,14.4016603,17z/data=!3m1!4b1!4m5!3m4!1s0x470b94f938dd9c6d:0xa7239b1dd6398d30!8m2!3d50.0764314!4d14.403849
+
+
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2016-10-05
+  end: 2016-12-21
+  time: každou středu 18:30 - 20:30
+  place: &msd-it-riverview
+    name: MSD IT (Riverview)
+    address: Svornosti 3321/2, Praha 5
+    latitude: '50.0670442'
+    longitude: '14.408024'
+    url: https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127
+
+
+- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Django Polls
+  date: 2017-01-28
+  time: 9:00 - 17:30
+  place: *msd-it-riverview
+
+- name: Kurz Testování <br> vhled do automatizovaného testování
+  start: 2017-01-14
+  end: 2017-01-15
+  time: 9:00 - 16:00
+  place: *cz-nic
+
+- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
+  time: 18:00 - 20:00
+  date_text: pondělky ve 14denních intervalech
+  registration:
+    url: https://www.meetup.com/pyladiescz/
+    text: Potvrď účast na meetup.com
+  place: *usertech
+
+- name: Kurz Webfrontend <br> Tvorba webu
+  start: 2017-01-31
+  end:   2017-02-28
+  time: 18:00 - 20:00
+  place: *apiary
+
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2017-03-14
+  end: 2017-06-06
+  time: každé úterý 18:00 - 20:00
+  place: *cz-nic
+
+- name: Dubnový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Databáze
+  date: 2017-04-08
+  time: 9:00 - 17:30
+  place: *msd-it-riverview
+
+- name: Květnový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Internety
+  date: 2017-05-20
+  time: 9:00 - 17:30
+  place: *msd-it-riverview
+
+- name: PyLadies workshop MicroPythonu
+  start: 2017-05-23
+  end: 2017-05-25
+  time: 18:00 - 20:00
+  place:
+    name: Apiary, CZ.NIC
+
+- name: Zářijový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Pandas
+  date: 2017-09-02
+  time: 9:00 - 17:30
+  place: *msd-it-riverview
+
+- name: Říjnový PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Vue.js a Django
+  date: 2017-10-14
+  time: 9:00 - 17:30
+  place: *apiary
+
+- name: Datová analýza v Pythonu
+  start: 2017-10-05
+  end: 2017-11-02
+  time: každý čtvrtek 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/0G4Fv0DrKgZ4GUqI3
+    end: 2017-09-30
+  place: *cz-nic
 
 - name: PyLadies Praha <br> začátečnický kurz
   parallel-with-previous: true
@@ -27,137 +155,11 @@
     longitude: '14.390703'
     url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
 
-- name: Datová analýza v Pythonu
-  start: 2017-10-05
-  end: 2017-11-02
-  time: každý čtvrtek 18:00 - 20:00
-  registration:
-    url: https://goo.gl/forms/0G4Fv0DrKgZ4GUqI3
-    end: 2017-09-30
-  place: *cz-nic
-
-- name: Říjnový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Vue.js a Django
-  date: 2017-10-14
-  time: 9:00 - 17:30
-  place: &apiary
-    name: Apiary
-    address: Pernerova 49, Praha 8 - Karlín
-    latitude: '50.0919519'
-    longitude: '14.4544029'
-    url: https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029
-
-- name: Zářijový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Pandas
-  date: 2017-09-02
-  time: 9:00 - 17:30
-  place: &msd-it-riverview
-    name: MSD IT (Riverview)
-    address: Svornosti 3321/2, Praha 5
-    latitude: '50.0670442'
-    longitude: '14.408024'
-    url: https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127
-
-
-- name: PyLadies workshop MicroPythonu
-  start: 2017-05-23
-  end: 2017-05-25
-  time: 18:00 - 20:00
-  place:
-    name: Apiary, CZ.NIC
-
-- name: Květnový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Internety
-  date: 2017-05-20
-  time: 9:00 - 17:30
-  place: *msd-it-riverview
-
-
-- name: Dubnový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Databáze
-  date: 2017-04-08
-  time: 9:00 - 17:30
-  place: *msd-it-riverview
-
 - name: PyLadies Praha <br> začátečnický kurz
-  start: 2017-03-14
-  end: 2017-06-06
+  start: 2017-09-19
+  end: 2017-12-12
   time: každé úterý 18:00 - 20:00
-  place: *cz-nic
-
-- name: Kurz Webfrontend <br> Tvorba webu
-  start: 2017-01-31
-  end:   2017-02-28
-  time: 18:00 - 20:00
-  place: *apiary
-
-
-- name: Advanced PyLadies & PyWorking Praha <br> pokročilé a doučovací srazy
-  time: 18:00 - 20:00
-  date_text: pondělky ve 14denních intervalech
   registration:
-    url: https://www.meetup.com/pyladiescz/
-    text: Potvrď účast na meetup.com
-  place: &usertech
-    name: Usertech
-    address: Štefánikova 43a, Praha 5 - Anděl
-    latitude: '50.0764314'
-    longitude: '14.4016603'
-    url: https://www.google.cz/maps/place/%C5%A0tef%C3%A1nikova+13%2F43,+150+00+Praha+5-Sm%C3%ADchov/@50.0764314,14.4016603,17z/data=!3m1!4b1!4m5!3m4!1s0x470b94f938dd9c6d:0xa7239b1dd6398d30!8m2!3d50.0764314!4d14.403849
-
-- name: Kurz Testování <br> vhled do automatizovaného testování
-  start: 2017-01-14
-  end: 2017-01-15
-  time: 9:00 - 16:00
+    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
+    end: 2017-09-10
   place: *cz-nic
-
-- name: Lednový PyWorking <br> meetup pro pokročilé začátečníky
-  topic: Django Polls
-  date: 2017-01-28
-  time: 9:00 - 17:30
-  place: *msd-it-riverview
-
-- name: PyLadies Praha <br> začátečnický kurz
-  start: 2016-10-05
-  end: 2016-12-21
-  time: každou středu 18:30 - 20:30
-  place: *msd-it-riverview
-
-- name: |
-    Vánoční MicroPython <br>
-    pokračování začátečnického MicroPython kurzu
-    s [Josefem Rouskem](https://twitter.com/josefrousek)
-  date: 2016-12-12
-  time: 18:00 - 20:30
-  place: *usertech
-
-- name: Prosincový PyWorking <br> meetup pro pokročilé začátečníky
-  topic:  Django - první webová aplikace
-  date: 2016-12-10
-  time: 9:00 - 17:30
-  place: *apiary
-
-- name: PyLadies Praha <br> začátečnický kurz
-  start: 2016-09-13
-  end: 2016-12-06
-  time: každé úterý 18:00 - 20:00
-  place: *cz-nic
-
-- name: PyLadies Praha <br> začátečnický kurz
-  start: 2016-04-05
-  end: 2016-06-28
-  place: *cz-nic
-
-- name: PyLadies Praha <br> pokročilé a doučovací srazy
-  time: každé pondělí 18:00 - 20:00
-  start: 2016-04-05
-  end: 2016-06-28    # XXX - kdy to končilo?
-  place:
-    name: probíhaly na různých místech v Praze
-
-- name: Jednodenní hardwarový workshop u Prahy <br> MicroPython a LED světýlka
-  date: 2016-08-19
-  time: celý den
-  place:
-    name: Mšené-Lázně
-    url: http://www.msene-lazne.cz/

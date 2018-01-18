@@ -238,7 +238,7 @@ def read_meetups_yaml(filename):
         meetup['parallel_runs'].append(meetup)
         previous = meetup
 
-    return data
+    return list(reversed(data))
 
 
 def pathto(name, static=False):
