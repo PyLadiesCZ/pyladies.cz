@@ -36,7 +36,7 @@
     link: http://naucse.python.cz/2018/pyladies-ostrava-jaro/beginners/comparisons/
   - name: Společná večeře PyLadies ve Slezské P.U.O.R.
     type: special
-    link: https://www.dropbox.com/request/DtEPNZIkdUAePzbCLx4S
+    link: http://slezska.com/
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2-ostrava.pdf
@@ -246,10 +246,10 @@
     link: http://naucse.python.cz/2018/pyladies-ostrava-jaro/projects/asteroids/
   - name: Množinový tahák
     type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
+    link: https://github.com/pyvec/cheatsheets/raw/master/sets/sets-cs.pdf
   - name: Tahák na geometrii a fyziku 2D her
     type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+    link: https://github.com/pyvec/cheatsheets/raw/master/game-physics/game-physics-cs.pdf
 - name: Pokračování závěrečného projektu
   date: 2018-05-09
   description: V této lekci budeme pokračovat v dalších fázích závěrečného projektu.
@@ -263,9 +263,6 @@
     Ne vždycky je to téma předem připravené, a proto tu bohužel
     k některým nejsou materiály.
   materials:
-  - name: Instalace Gitu
-    type: lesson
-    link: v1/s001-install/git.html
   - name: Git
     type: lesson
     link: v1/s009-git/git.html
