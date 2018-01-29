@@ -71,6 +71,18 @@
     latitude: '49.1810008'
     longitude: '16.6057989'
 
+- name: Python a jeho knihovny
+  registration:
+    url: https://goo.gl/forms/LeubY9EwR7MLcPu53
+  start: 2018-02-06
+  end: 2018-06-26
+  time: každé druhé úterý 18:00 – 20:00
+  place: &nekavarna
+    name: Nekavárna
+    address: Minská 73/13, Brno
+    latitude: '49.2103950'
+    longitude: '16.5858589'
+
 - name: Začátečnický kurz <br> Podzimní pondělí 2017
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
