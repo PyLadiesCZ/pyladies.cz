@@ -71,6 +71,15 @@
     latitude: '49.1810008'
     longitude: '16.6057989'
 
+- name: Začátečnický kurz <br> Podzimní pondělí 2017
+  registration:
+    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
+    end: 2017-09-03
+  start: 2017-09-25
+  end: 2017-12-18
+  time: pondělky 18:00 – 20:00
+  place: *experis
+
 - name: Python a jeho knihovny
   registration:
     url: https://goo.gl/forms/LeubY9EwR7MLcPu53
@@ -83,11 +92,23 @@
     latitude: '49.2103950'
     longitude: '16.5858589'
 
-- name: Začátečnický kurz <br> Podzimní pondělí 2017
+- name: Začátečnický kurz <br> Jarní pondělí 2018
   registration:
-    url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
-    end: 2017-09-03
-  start: 2017-09-25
-  end: 2017-12-18
+    url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
+  start: 2018-02-01
+  end: 2018-02-14
   time: pondělky 18:00 – 20:00
   place: *experis
+
+- name: Začátečnický kurz <br> Jarní středa 2018
+  registration:
+    url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
+  start: 2018-02-01
+  end: 2018-02-14
+  time: středy 18:00 – 20:00
+  place: &fi-muni
+    name: Fakulta informatiky MU
+    address: Botanická 68A, Brno
+    latitude: '49.2099833'
+    longitude: '16.5989164'
+
