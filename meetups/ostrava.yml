@@ -49,6 +49,17 @@
   time: každé úterý 17:00 - 19:00
   place: *tieto-towers
 
+- name: MicroPython workshop
+  registration:
+    url: https://goo.gl/forms/U33YfjxMFtOXqiEq1
+    end: 2018-03-10
+  date: 2018-04-21
+  time: 9:00 - 15:00
+  place:
+    name: Bude upřesněno
+    address: N/A
+    url:
+
 - name: PyLadies Ostrava <br> začátečnický kurz
   registration:
     url: https://goo.gl/forms/NMZUc8G4fEAwIHix2
