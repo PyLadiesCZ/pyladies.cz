@@ -281,14 +281,10 @@
     link: v1/s011-dicts/twitter_word_cloud.html
   - name: Relační databáze (SQLite)
     type: lesson
-  - name: Speciální světelná show
-    type: lesson
   - name: Klondike Solitaire – hra na procvičení seznamů a n-tic
     type: lesson
     link: v1/s007-cards/klondike.html
   - name:  Slovníky ve funkci ``popis_karty`` ve hře Klondike
     type: lesson
     link: v1/s011-dicts/klondike-dictget.html
-  - name: MicroPython a malé počítače
-    type: lesson
-    link: v1/s016-micropython/index.html
+
