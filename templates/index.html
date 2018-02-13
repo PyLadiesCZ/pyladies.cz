@@ -15,37 +15,25 @@
     </header>
 
     <!-- News Section -->
-    <!-- <section id="news-summer" class="container content-section text-center">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1 class="news-title">Letní novinky</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <div class="news-summer-p">
-          <a href="https://github.com/micropython/micropython"><img height="110" src="{{ pathto('_static/img/icon/micropython.png', 1) }}" class="keyfeature-icon"></a>
-          <h3 class="news-title">Praha - začátečnický kurz</h3>Kurz začne 13. září 2016 a bude sestávat ze zhruba 13&nbsp;dvouhodinových setkání. Tím pádem pojedeme až do půlky prosince.
-          Budeme se scházet jednou týdně, ve vybavených prostorách naší partnerské firmy <a href="http://www.nic.cz">CZ.NIC</a> v&nbsp;blízkosti náměstí Jiřího&nbsp;z&nbsp;Poděbrad. Setkání probíhá v&nbsp;úterý od&nbsp;18&nbsp;do&nbsp;20&nbsp;hod.
-          (Pokud s&nbsp;jistotou víš, že v&nbsp;tuto dobu nemůžeš, můžeš zkusit pracovat samostatně dle učebních materiálů, případně si zkusit na FB&nbsp;skupině najít kolegyni nebo domluvit individuální konzultace).
-          Celkově je kurz poměrně časově náročný, mezi jednotlivými srazy je zapotřebí pracovat i&nbsp;samostatně na domácích projektech, které pomáhají osvojit si nově probrané téma. Zvaž prosím, jestli budeš mít na PyLadies v následujících měsících dost času, výsledné dovednosti ale stojí určitě za to. :)
-          <br>Pokud máš nějaké otázky, neváhej se zeptat na <a href="https://www.facebook.com/groups/pyladiespraha/?fref=ts">FB skupině PyLadies Praha</a>.
-
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <div class="news-summer-p">
-            <img height="110" src="{{ pathto('_static/img/icon/pylady-ostrava.png', 1) }}" class="keyfeature-icon">
-          <h3 class="news-title">Příprava kurzů v Ostravě</h3>
-             V Ostravě připravují na podzim 2016 vůbec první kurz Pythonu pro holky. A&nbsp;to díky slečnám, které se rozhodly, že by se Python rády naučily. Daly se dohromady s&nbsp;místním pythonistou a&nbsp;organizátorem ostravských python meetupů Pyvo, Lumírem.
-             Nyní se již snaží společnými silami vše na podzim připravit.
-            <br>Kontaktovat organizátory ostravských PyLadies <a href="mailto:pyladies-ostrava@googlegroups.com">můžeš už nyní</a>.
-            <br>Pokud bys ráda zorganizovala PyLadies ve svém městě a díky tomu se i Python naučila bez zbytečného dojíždění, dej nám <a href="mailto:encukou@gmail.com">vědět</a>, pomůžeme Ti :-) Nějaké základní informace, najdeš sepsané <a href="http://pyladies.cz/stan_se/">i tady</a>.
-          </div>
-        </div>
-      </div>
-    </section>
-      -->
+    {% if news %}
+        <section id="news" class="container content-section text-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1 id="news-main-title">Novinky</h1>
+                </div>
+            </div>
+            <div class="row">
+                {% for new in news %}
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="news-p">
+                    <h3 class="news-title">{{ new.title }}</h3>
+                        {{ new.content|safe }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
