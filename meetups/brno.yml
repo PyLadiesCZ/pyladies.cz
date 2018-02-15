@@ -96,16 +96,16 @@
 - name: Začátečnický kurz <br> Jarní pondělí 2018
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
-  start: 2018-02-01
-  end: 2018-02-14
+  start: 2018-03-05
+  end: 2018-06-04
   time: pondělky 18:00 – 20:00
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní středa 2018
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
-  start: 2018-02-01
-  end: 2018-02-14
+  start: 2018-03-07
+  end: 2018-06-06
   time: středy 18:00 – 20:00
   place: &fi-muni
     name: Fakulta informatiky MU
