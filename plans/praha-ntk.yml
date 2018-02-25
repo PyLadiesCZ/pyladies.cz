@@ -1,6 +1,6 @@
 - name: Instalace
-  date: 2017-09-25
-  done: true
+  date: 2017-03-07
+  done: false
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -24,8 +24,8 @@
     type: homework
     link: v1/s001-install/handout/handout.pdf
 - name: První program
-  date: 2017-10-02
-  done: true
+  date: 2017-03-14
+  done: false
   materials:
   - name: První program
     type: lesson
@@ -46,8 +46,8 @@
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
-  date: 2017-10-09
-  done: true
+  date: 2017-03-21
+  done: false
   materials:
   - name: Funkce
     type: lesson
@@ -64,25 +64,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
-- name: Spolupráce a Opensource - Git
-  date: 2017-10-16
-  done: true
-  materials:
-  - name: Spolupráce a Git
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/git/git-collaboration-2in1/
-  - name: Větvení v Gitu (bonus)
-    type: lesson
-    link: http://naucse.python.cz/lessons/git/branching/
-  - name: Gitový tahák
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
-  - name: Domácí projekty - Git (PDF)
-    type: homework
-    link: v1/s003-looping/handout/handout3b.pdf
 - name: Funkce & Řetězce
-  date: 2017-10-23
-  done: true
+  date: 2017-03-28
+  done: false
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -96,15 +80,69 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
-- name: Procvičování
-  date: 2017-10-30
-  done: true
+- name: Procvičování a soubory
+  date: 2017-04-04
+  done: false
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: special-lesson
+  - name: Soubory
+    type: lesson
+    link: http://naucse.python.cz/2018/pyladies-brno-jaro/beginners/files/
+- name: Spolupráce a Opensource - Git
+  date: 2017-04-11
+  done: false
+  materials:
+  - name: Spolupráce a Git
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/git/git-collaboration-2in1/
+  - name: Větvení v Gitu (bonus)
+    type: lesson
+    link: http://naucse.python.cz/lessons/git/branching/
+  - name: Gitový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/basic-git/basic-git-cs.pdf
+  - name: Domácí projekty - Git (PDF)
+    type: homework
+    link: v1/s003-looping/handout/handout3b.pdf
+- name: Seznamy
+  date: 2017-04-18
+  done: false
+  materials:
+  - name: Seznamy
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/list
+  - name: N-tice
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/tuple
+  - name: Tahák na seznamy
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s006-lists/handout/handout6.pdf
+- name: Slovníky
+  date: 2017-04-25
+  done: false
+  materials:
+  - name: Slovníky
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/dict
+  - name: JSON
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/intro/json
+  - name: Github API
+    type: lesson
+    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/github-api
+  - name: Slovníkový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s011-dicts/handout/handout9.pdf
 - name: Testování
-  date: 2017-11-06
-  done: true
+  date: 2017-05-02
+  done: false
   materials:
   - name: Výjimky
     type: lesson
@@ -124,44 +162,9 @@
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
-- name: Seznamy
-  date: 2017-11-13
-  done: true
-  materials:
-  - name: Seznamy
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/list
-  - name: N-tice
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/tuple
-  - name: Tahák na seznamy
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
-  - name: Domácí projekty (PDF)
-    type: homework
-    link: v1/s006-lists/handout/handout6.pdf
-- name: Slovníky
-  date: 2017-11-20
-  done: true
-  materials:
-  - name: Slovníky
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/dict
-  - name: JSON
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/intro/json
-  - name: Github API
-    type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/github-api
-  - name: Slovníkový tahák
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
-  - name: Domácí projekty (PDF)
-    type: homework
-    link: v1/s011-dicts/handout/handout9.pdf
 - name: Grafika
-  date: 2017-11-27
-  done: true
+  date: 2017-05-09
+  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -176,8 +179,8 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
-  date: 2017-12-04
-  done: true
+  date: 2017-05-16
+  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -186,8 +189,8 @@
     type: lesson
     link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/inheritance
 - name: Závěrečný projekt
-  date: 2017-12-11
-  done: true
+  date: 2017-05-23
+  done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -201,7 +204,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
 - name: Závěrečná procvičovací hodina nebo pokračování Asteroids
-  date: 2017-12-18
+  date: 2017-05-30
   description: Během závěrečné hodiny se mimojiné seznámíme s možnostmi dalšího vzdělávání
   done: false
 - name: Odbočky
