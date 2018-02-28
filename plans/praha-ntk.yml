@@ -1,5 +1,5 @@
 - name: Instalace
-  date: 2017-03-07
+  date: 2018-03-07
   done: false
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
@@ -7,16 +7,16 @@
     link: v1/s001-install/uvod-praha.html
   - name: Úvod do příkazové řádky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/cmdline/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/cmdline/
   - name: Instalace Pythonu a první krůčky s ním
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/install/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/install/
   - name: Instalace editoru
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/install-editor/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/install-editor/
   - name: Instalace Gitu
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/git/install/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/git/install/
   - name: Tahák na klávesnici
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/keyboard/keyboard-cs.pdf
@@ -24,40 +24,43 @@
     type: homework
     link: v1/s001-install/handout/handout.pdf
 - name: První program
-  date: 2017-03-14
+  date: 2018-03-14
   done: false
   materials:
   - name: První program
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/hello-world/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/hello-world/
   - name: Chybové hlášky a `print`
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/print/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/print/
   - name: Proměnné
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/variables/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/variables/
   - name: Porovnávání
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/comparisons/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/comparisons/
   - name: "*Nebo* anebo *a* (bonus)"
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/and-or/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/and-or/
+  - name: Tahák na příkazovou řádku a první kroky v Pythonu (PDF)
+    type: handout
+    link: https://s3-eu-west-1.amazonaws.com/messa-shared-files/2017/09/pyladies_2_lekce_tahak.pdf
   - name: Domácí projekty (PDF)
     type: homework
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
-  date: 2017-03-21
+  date: 2018-03-21
   done: false
   materials:
   - name: Funkce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/functions
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/functions
   - name: Želva a cykly
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/intro/turtle
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/intro/turtle
   - name: Cyklus `While`
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/while
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/while
   - name: Tahák s užitečnými funkcemi
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/basic-functions/basic-functions-cs.pdf
@@ -65,15 +68,15 @@
     type: homework
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Funkce & Řetězce
-  date: 2017-03-28
+  date: 2018-03-28
   done: false
   materials:
   - name: Vlastní funkce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/def/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/def/
   - name: Řetězce
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/str/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/str/
   - name: Řetězcový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/strings/strings-cs.pdf
@@ -81,7 +84,7 @@
     type: homework
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování a soubory
-  date: 2017-04-04
+  date: 2018-04-04
   done: false
   materials:
   - name: Procvičíme si vše, co jsme se naučily
@@ -90,12 +93,12 @@
     type: lesson
     link: http://naucse.python.cz/2018/pyladies-brno-jaro/beginners/files/
 - name: Spolupráce a Opensource - Git
-  date: 2017-04-11
+  date: 2018-04-11
   done: false
   materials:
   - name: Spolupráce a Git
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/git/git-collaboration-2in1/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/git/git-collaboration-2in1/
   - name: Větvení v Gitu (bonus)
     type: lesson
     link: http://naucse.python.cz/lessons/git/branching/
@@ -106,15 +109,15 @@
     type: homework
     link: v1/s003-looping/handout/handout3b.pdf
 - name: Seznamy
-  date: 2017-04-18
+  date: 2018-04-18
   done: false
   materials:
   - name: Seznamy
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/list
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/list
   - name: N-tice
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/tuple
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/tuple
   - name: Tahák na seznamy
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
@@ -122,18 +125,18 @@
     type: homework
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
-  date: 2017-04-25
+  date: 2018-04-25
   done: false
   materials:
   - name: Slovníky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/dict
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/dict
   - name: JSON
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/intro/json
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/intro/json
   - name: Github API
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/github-api
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/projects/github-api
   - name: Slovníkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/dicts/dicts-cs.pdf
@@ -141,21 +144,21 @@
     type: homework
     link: v1/s011-dicts/handout/handout9.pdf
 - name: Testování
-  date: 2017-05-02
+  date: 2018-05-02
   done: false
   materials:
   - name: Výjimky
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/exceptions/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/exceptions/
   - name: Moduly
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/modules/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/modules/
   - name: Testování
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/testing/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/testing/
   - name: Poznámka o importování
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/circular-imports/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/circular-imports/
   - name: Výjimkový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/exceptions/exceptions-cs.pdf
@@ -163,15 +166,15 @@
     type: homework
     link: v1/s005-modules/handout/handout5.pdf
 - name: Grafika
-  date: 2017-05-09
+  date: 2018-05-09
   done: false
   materials:
   - name: Grafika
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/intro/pyglet
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/intro/pyglet
   - name: "Praktické cvičení: Pong - mimo kurz navíc"
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/pong
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/projects/pong
   - name: Kód celé hry Pong
     type: link
     link: v1/s012-pyglet/pong.py
@@ -179,24 +182,24 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
-  date: 2017-05-16
+  date: 2018-05-16
   done: false
   materials:
   - name: Třídy
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/class
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/class
   - name: Dědičnost
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/beginners/inheritance
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/inheritance
 - name: Závěrečný projekt
-  date: 2017-05-23
+  date: 2018-05-23
   done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
   - name: Asteroids
     type: lesson
-    link: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/projects/asteroids
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/projects/asteroids
   - name: Množinový tahák
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
@@ -204,7 +207,7 @@
     type: handout
     link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
 - name: Závěrečná procvičovací hodina nebo pokračování Asteroids
-  date: 2017-05-30
+  date: 2018-05-30
   description: Během závěrečné hodiny se mimojiné seznámíme s možnostmi dalšího vzdělávání
   done: false
 - name: Odbočky
