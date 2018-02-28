@@ -67,9 +67,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/MGJCrNSw8iqOInVIk8Wq
-  # - name: Feedback k domácím projektům
-  #   type: link
-  #   link: v1/s003-looping/ostrava/feedback-homeworks.html
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s003-looping/ostrava/feedback-homeworks.html
 - name: Jeden nový cyklus a procvičování
   date: 2018-02-28
   materials:
