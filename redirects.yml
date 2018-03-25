@@ -11,7 +11,6 @@ naucse-lessons:
         variables.html: beginners/variables
         editor.html: beginners/install-editor
     s003-looping:
-        functions.html: beginners/functions
         turtle.html: intro/turtle
         while.html: beginners/while
     s004-strings:

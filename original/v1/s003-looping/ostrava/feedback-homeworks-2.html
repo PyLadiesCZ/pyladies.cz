@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Feedback k domácím projektům</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Feedback k domácím projektům-2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tah-hr&#225;&#269;e">Tah hr&#225;&#269;e<a class="anchor-link" href="#Tah-hr&#225;&#269;e">&#182;</a></h2>
+<h1 id="Feedback-k-dom&#225;c&#237;m-projekt&#367;m">Feedback k dom&#225;c&#237;m projekt&#367;m<a class="anchor-link" href="#Feedback-k-dom&#225;c&#237;m-projekt&#367;m">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11783,97 +11783,108 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Je-tam-opravdu-v&#353;e-pot&#345;eba?">Je tam opravdu v&#353;e pot&#345;eba?<a class="anchor-link" href="#Je-tam-opravdu-v&#353;e-pot&#345;eba?">&#182;</a></h3>
+<h2 id="For-poprv&#233;">For poprv&#233;<a class="anchor-link" href="#For-poprv&#233;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Opravdu by se na tohle nedal použít cyklus tak, abychom nemuseli opakovat <code>print</code> ručně?</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tah_hrace</span> <span class="p">(</span><span class="n">pole</span><span class="p">):</span>
-    <span class="s1">&#39;Vrátí herní pole se zaznamenaným tahem hráče&#39;</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">t</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">pozice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Na které políčko chceš hrát? &#39;</span><span class="p">))</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">pozice</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pozice</span><span class="o">&lt;=</span><span class="mi">20</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pole</span><span class="p">[</span><span class="n">pozice</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">tah</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span><span class="n">pozice</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-            <span class="n">t</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Špatně zadaná pozice, zkus to znovu.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">X</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X X &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X X X &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X X X X &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>X
+X X  X X X  X X X X  X
+X X  X X X  X X X X  X
+X X  X X X  X X X X  X
+X X  X X X  X X X X  </pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Nen&#237;">Nen&#237;<a class="anchor-link" href="#Nen&#237;">&#182;</a></h3>
+<h2 id="For-podruh&#233;">For podruh&#233;<a class="anchor-link" href="#For-podruh&#233;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Opravdu je nutné psát cyklus i tam, kde se operace vykoná jen jednou?</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tah_hrace</span><span class="p">(</span><span class="n">pole</span><span class="p">):</span>
-    <span class="s1">&#39;Vrátí herní pole se zaznamenaným tahem hráče&#39;</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">pozice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Na které políčko chceš hrát? &#39;</span><span class="p">))</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">pozice</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pozice</span><span class="o">&lt;=</span><span class="mi">20</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pole</span><span class="p">[</span><span class="n">pozice</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">tah</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span><span class="n">pozice</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Špatně zadaná pozice, zkus to znovu.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="s2">&quot;X&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">X</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">X</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vyhodnocen&#237;-pi&#353;kvorek">Vyhodnocen&#237; pi&#353;kvorek<a class="anchor-link" href="#Vyhodnocen&#237;-pi&#353;kvorek">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Co-by-se-tady-dalo-ud&#283;lat-jednodu&#353;eji?">Co by se tady dalo ud&#283;lat jednodu&#353;eji?<a class="anchor-link" href="#Co-by-se-tady-dalo-ud&#283;lat-jednodu&#353;eji?">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">):</span>
-    <span class="s2">&quot;Vyhodnotí stav pole.&quot;</span>
-    <span class="n">krizek</span> <span class="o">=</span> <span class="s2">&quot;xxx&quot;</span>
-    <span class="n">kolecko</span> <span class="o">=</span> <span class="s2">&quot;ooo&quot;</span>
-    <span class="n">volno</span> <span class="o">=</span> <span class="s2">&quot;-&quot;</span>
-    <span class="k">if</span> <span class="n">krizek</span> <span class="ow">in</span> <span class="n">pole</span> <span class="ow">and</span> <span class="n">kolecko</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">kolecko</span> <span class="ow">in</span> <span class="n">pole</span> <span class="ow">and</span> <span class="n">krizek</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">volno</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span> <span class="ow">and</span> <span class="n">krizek</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span> <span class="ow">and</span> <span class="n">kolecko</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="kc">None</span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>XXXXX
+XXXXX
+XXXXX
+XXXXX
+XXXXX
+</pre>
 </div>
+</div>
+
 </div>
 </div>
 
@@ -11882,112 +11893,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Upraven&#225;-varianta">Upraven&#225; varianta<a class="anchor-link" href="#Upraven&#225;-varianta">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">):</span>
-    <span class="s2">&quot;Vyhodnotí stav pole.&quot;</span>
-    <span class="k">if</span> <span class="s1">&#39;xxx&#39;</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s1">&#39;ooo&#39;</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s1">&#39;-&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;-&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pi&#353;kvorky">Pi&#353;kvorky<a class="anchor-link" href="#Pi&#353;kvorky">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randrange</span>
-
-<span class="k">def</span> <span class="nf">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">):</span>
-    <span class="s2">&quot;Vyhodnotí stav pole.&quot;</span>
-    <span class="k">if</span> <span class="s1">&#39;xxx&#39;</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s1">&#39;ooo&#39;</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s1">&#39;-&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pole</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;-&#39;</span>
-
-<span class="k">def</span> <span class="nf">tah</span><span class="p">(</span><span class="n">pole</span><span class="p">,</span> <span class="n">pozice</span><span class="p">,</span> <span class="n">symbol</span><span class="p">):</span>
-    <span class="s2">&quot;Vrátí herní pole s daným symbolem umístěným na danou pozici.&quot;</span>
-    <span class="k">return</span> <span class="n">pole</span><span class="p">[:</span><span class="n">pozice</span><span class="p">]</span> <span class="o">+</span> <span class="n">symbol</span> <span class="o">+</span> <span class="n">pole</span><span class="p">[</span><span class="n">pozice</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
-
-<span class="k">def</span> <span class="nf">tah_hrace</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">):</span>
-    <span class="s2">&quot;Ptá se hráče na kterou pozici chce hrát a vrací herní pole se zaznamenaným tahem&quot;</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">cislo_pozice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Na kterou pozici chceš hrát? &quot;</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">cislo_pozice</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cislo_pozice</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">)</span> <span class="ow">and</span> <span class="n">herni_pole</span><span class="p">[</span><span class="n">cislo_pozice</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">tah</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">,</span> <span class="n">cislo_pozice</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Špatná pozice, zkus to znovu. &quot;</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">tah_pocitace</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">):</span>
-    <span class="s2">&quot;Vrátí herní pole se zaznamenaným tahem počítače. &quot;</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">cislo_pozice</span> <span class="o">=</span> <span class="n">randrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">herni_pole</span><span class="p">[</span><span class="n">cislo_pozice</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">tah</span><span class="p">(</span><span class="n">herni_pole</span><span class="p">,</span> <span class="n">cislo_pozice</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">piskvorky</span><span class="p">():</span>
-    <span class="s2">&quot;Vygeneruje prázdné pole a střídá tah hráče a počítače. &quot;</span>
-    <span class="n">pole</span> <span class="o">=</span> <span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">20</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span>
-        <span class="n">pole</span> <span class="o">=</span> <span class="n">tah_hrace</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="n">pole</span> <span class="o">=</span> <span class="n">tah_pocitace</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span>
-            <span class="k">break</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;!&#39;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Remíza!&#39;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vyhrála jsi!&#39;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">vyhodnot</span><span class="p">(</span><span class="n">pole</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;o&#39;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vyhrál počítač!&#39;</span><span class="p">)</span>
-
-<span class="n">piskvorky</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Obecn&#233;-rady-a-doporu&#269;en&#237;">Obecn&#233; rady a doporu&#269;en&#237;<a class="anchor-link" href="#Obecn&#233;-rady-a-doporu&#269;en&#237;">&#182;</a></h2>
+<h2 id="Obecn&#233;-p&#345;ipom&#237;nky-a-rady">Obecn&#233; p&#345;ipom&#237;nky a rady<a class="anchor-link" href="#Obecn&#233;-p&#345;ipom&#237;nky-a-rady">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11996,7 +11902,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Je zbytečné volat <code>print</code> na funkci, která nic nevrací.</li>
+<li>Udržujeme importy konzistentní</li>
+<li>Kontrola prázdných souborů</li>
+<li>Pokud máte na výpis použít cyklus, udělejte to. Psát printy pod sebe na více řádků není hezké ani udržovatelné.</li>
 </ul>
 
 </div>
