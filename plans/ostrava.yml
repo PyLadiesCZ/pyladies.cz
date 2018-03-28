@@ -157,9 +157,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/CMv1sZQ4NNhDH86Nwknb
-  # - name: Feedback k domácím projektům
-  #   type: link
-  #   link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s006-lists/feedback-ostrava/feedback-homeworks.html
 - name: Slovníky
   date: 2018-03-28
   materials:
