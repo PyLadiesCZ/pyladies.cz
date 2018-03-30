@@ -69,7 +69,7 @@
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Funkce & Řetězce
   date: 2018-03-29
-  done: false
+  done: true
   materials:
   - name: Vlastní funkce
     type: lesson
