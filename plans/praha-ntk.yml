@@ -91,7 +91,7 @@
     type: special-lesson
   - name: Soubory
     type: lesson
-    link: http://naucse.python.cz/2018/pyladies-brno-jaro/beginners/files/
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/files/
 - name: Spolupráce a Opensource - Git
   date: 2018-04-11
   done: false
