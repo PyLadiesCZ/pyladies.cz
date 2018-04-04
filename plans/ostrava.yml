@@ -181,9 +181,9 @@
   - name: Odevzdání domácích projektů
     type: link
     link: https://www.dropbox.com/request/lLwYydI7a0rkimhczdIB
-  # - name: Feedback k domácím projektům
-  #   type: link
-  #   link: v1/s011-dicts/ostrava/feedback-homeworks.html
+  - name: Feedback k domácím projektům
+    type: link
+    link: v1/s011-dicts/ostrava/feedback-homeworks.html
 - name: Moduly
   date: 2018-04-04
   materials:
