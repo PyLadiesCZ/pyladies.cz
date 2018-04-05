@@ -56,17 +56,15 @@ def index():
 
 @app.route('/brno_info/')
 def brno_info():
-    return render_template('brno_info.html',
-                           team=read_yaml('teams/brno.yml'))
-
+    return redirect(url_for('brno_course', _anchor='city-info'))
 
 @app.route('/praha_info/')
 def praha_info():
-    return render_template('praha_info.html')
+    return redirect(url_for('praha_course', _anchor='city-info'))
 
 @app.route('/ostrava_info/')
 def ostrava_info():
-    return render_template('ostrava_info.html')
+    return redirect(url_for('ostrava_course', _anchor='city-info'))
 
 @app.route('/praha_course/')
 def praha_course():
