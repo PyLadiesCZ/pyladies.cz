@@ -8,20 +8,6 @@
     </a>
 {% endmacro %}
 
-{# Macro for generating team member boxes #}
-{% macro member_box(name, img, role, links) %}
-      <div class="member-box col-md-3 col-sm-4 col-xs-12">
-        <img src="{{ url_for('static', filename=img) }}" class="img-circle img-responsive" />
-        <h5 class="member-name text-center"><strong>{{ name }}</strong></h5>
-        <span><em>{{ role }}</em></span>
-        <ul class="list-inline">
-          {%- for type, url in links -%}
-            <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
-          {%- endfor -%}
-        </ul>
-      </div>
-{% endmacro %}
-
 {% macro course_list(plan) %}
     <div class="row">
         <div class="sections col-xs-12 col-sm-12 col-md-8 col-lg-8">

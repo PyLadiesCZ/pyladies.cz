@@ -41,232 +41,24 @@
     <section id="team" class="container content-section text-center">
       <h2 class="course-city-heading">Tým brněnských PyLadies</h2>
 
-      {{ member_box(
-           'Anežka Müller',
-           img='img/brno/team/anezka.jpg',
-           role='Organizátorka',
-           links=[
-               ('mail-link', 'mailto:anezka.muller@gmail.com'),
-               ('linkedin-link', 'https://www.linkedin.com/in/anezkamll/'),
-               ('twitter-link', 'https://twitter.com/anezkamll'),
-           ],
-         ) }}
-         {{ member_box(
-           'Karolina Surma',
-           img='img/brno/team/karolina.jpg',
-           role='Organizátorka',
-           links=[
-               ('mail-link', 'mailto:karolina.surma@gazeta.pl'),
-           ],
-         ) }}
 
-         {{ member_box(
-           'Terezie Vahalová',
-           img='img/brno/team/terezie.jpg',
-           role='Organizátorka',
-           links=[
-               ('mail-link', 'mailto:vahalova@gmail.com'),
-               ('github-link', 'https://github.com/vahalova'),
-               
-           ],
-         ) }}
-         {{ member_box(
-           'Viera Vakulová',
-           img='img/brno/team/viera.jpg',
-           role='Organizátorka',
-           links=[
-               ('mail-link', 'mailto:vakulova.viera@gmail.com'),
-               ('linkedin-link', 'https://www.linkedin.com/in/viera-vakulova-42353730/?ppe=1'),
-           ],
-         ) }}
+{# Macro for generating team member boxes #}
+{% macro member_box(name, img, role, links) %}
+      <div class="member-box col-md-3 col-sm-4 col-xs-12">
+        <img src="{{ url_for('static', filename=img) }}" class="img-circle img-responsive" />
+        <h5 class="member-name text-center"><strong>{{ name }}</strong></h5>
+        <span><em>{{ role }}</em></span>
+        <ul class="list-inline">
+          {%- for link in links -%}{%- for type, url in link.items() -%}
+            <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
+          {%- endfor -%}{%- endfor -%}
+        </ul>
+      </div>
+{% endmacro %}
 
-         {{ member_box(
-           'Iveta Horrová',
-           img='img/brno/team/blank.png',
-           role='Organizátorka',
-           links=[
-               ('mail-link', 'mailto:iveta.horrova@cz.ibm.com'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Dominika Krejčí',
-           img='img/brno/team/dominika.jpg',
-           role='Hlavní koučka',
-           links=[
-               ('github-link', 'https://github.com/Krejdom'),
-               ('linkedin-link', 'https://cz.linkedin.com/in/dominika-krej%C4%8D%C3%AD-9779759b'),
-               ('website-link', 'http://krejdom.cz/'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Petr Viktorin',
-           img='img/praha/team/peterv.jpg',
-           role='Hlavní kouč',
-           links=[
-               ('website-link', 'http://encukou.cz')
-           ],
-         ) }}
-
-         {{ member_box(
-           'Jiří Zapletal',
-           img='img/brno/team/jiri.jpg',
-           role='Hlavní kouč',
-           links=[
-               ('mail-link', 'mailto:yaplik@gmail.com'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Anna Haymannová',
-           img='img/brno/team/anna.jpg',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:haymannovaa@gmail.com'),
-               ('linkedin-link', 'https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Edita Balkóová',
-           img='img/brno/team/blank.png',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:386966@mail.muni.cz'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Hanka Střondalová',
-           img='img/brno/team/Hanka.jpg',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:strondalovah@centrum.cz'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Jaroslav Šafka',
-           img='img/brno/team/JarekS.png',
-           role='Kouč',
-           links=[
-               ('mail-link', 'mailto:pyladies zavináč safka.org'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Juraj Michálek',
-           img='img/brno/team/Juraj.jpg',
-           role='Kouč',
-           links=[
-               ('mail-link', 'mailto:juraj.michalek132@gmail.com'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Kateřina Chmelařová',
-           img='img/brno/team/blank.png',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:sprinarova.katka@gmail.com'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Luděk Reif',
-           img='img/brno/team/ludek.jpg',
-           role='Kouč',
-           links=[
-               ('mail-link', 'mailto:ludek.reif@gmail.com'),
-               ('github-link', 'https://github.com/lurei'),
-               ('twitter-link', 'https://twitter.com/lu_rei'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Marcela Vaculíková',
-           img='img/brno/team/blank.png',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:marcvac@seznam.cz'),
-           ],
-         ) }}
-
-         {{ member_box(
-           'Mária Krajčovičová',
-           img='img/brno/team/MariaK.jpg',
-           role='Koučka',
-           links=[
-               ('mail-link', 'mailto:krajcovicmaja@gmail.com'),
-           ],
-         ) }}
-
-        {{ member_box(
-          'Martin Pavlásek',
-          img='img/brno/team/Martin.jpg',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:tuzticzka@gmail.com'),
-              ('linkedin-link', 'https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5'),
-          ],
-        ) }}
-        
-        {{ member_box(
-          'Michal Cyprian',
-          img='img/brno/team/blank.png',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:m.cyprian@gmail.com'),
-          ],
-        ) }}
-
-        {{ member_box(
-          'Pavel Dedík',
-          img='img/brno/team/pavel.jpg',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:dedikx@gmail.com'),
-              ('github-link', 'https://github.com/paveldedik'),
-              ('website-link', 'http://paveldedik.com'),
-          ],
-        ) }}
-
-        {{ member_box(
-          'Petr Bolf',
-          img='img/brno/team/blank.png',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:petr.bolf@taborpolana.cz'),
-          ],
-        ) }}
-
-        {{ member_box(
-          'Roman Blanco',
-          img='img/brno/team/roman.jpg',
-          role='Kouč',
-          links=[
-              ('github-link', 'https://github.com/romanblanco'),
-          ],
-        ) }}
-
-        {{ member_box(
-          'Svätopluk Hanzel',
-          img='img/brno/team/blank.png',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:svatoplukhanzel@gmail.com '),
-          ],
-        ) }}
-
-        {{ member_box(
-          'Tomáš Orsava',
-          img='img/brno/team/blank.png',
-          role='Kouč',
-          links=[
-              ('mail-link', 'mailto:tomas.n@orsava.cz'),
-          ],
-        ) }}
+      {% for member in team %}
+      {{ member_box(member.name, member.img, member.role, member.links) }}
+      {% endfor %}
 
 
   </section>

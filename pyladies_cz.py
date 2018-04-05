@@ -56,7 +56,8 @@ def index():
 
 @app.route('/brno_info/')
 def brno_info():
-    return render_template('brno_info.html')
+    return render_template('brno_info.html',
+                           team=read_yaml('teams/brno.yml'))
 
 
 @app.route('/praha_info/')
