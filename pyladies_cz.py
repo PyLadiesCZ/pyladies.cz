@@ -69,15 +69,24 @@ def ostrava_info():
 
 @app.route('/praha_course/')
 def praha_course():
-    return render_template('praha_course.html', meetups=read_meetups_yaml('meetups/praha.yml'))
+    return render_template('course.html',
+                           city_slug='praha',
+                           city_title='Praha',
+                           meetups=read_meetups_yaml('meetups/praha.yml'))
 
 @app.route('/brno_course/')
 def brno_course():
-    return render_template('brno_course.html', meetups=read_meetups_yaml('meetups/brno.yml'))
+    return render_template('course.html',
+                           city_slug='brno',
+                           city_title='Brno',
+                           meetups=read_meetups_yaml('meetups/brno.yml'))
 
 @app.route('/ostrava_course/')
 def ostrava_course():
-    return render_template('ostrava_course.html', meetups=read_meetups_yaml('meetups/ostrava.yml'))
+    return render_template('course.html',
+                           city_slug='ostrava',
+                           city_title='OSTRAVA!!!',
+                           meetups=read_meetups_yaml('meetups/ostrava.yml'))
 
 @app.route('/brno/')
 def brno():
