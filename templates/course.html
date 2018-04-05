@@ -54,6 +54,58 @@
       </div>
     </section>
 
+    <!-- How it started -->
+    <section class="info-city container text-center">
+        <div class="row">
+        {% if city_slug == 'brno' %}
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h2 class="course-city-heading">Jak to v Brně vzniklo?</h2>
+                <p class="course-city-p">Bylo nebylo, přijela jednou do Brna na návštěvu Lynn Root, která vede PyLadies v San Franciscu. Zrovna probíhala konference RuPy 2012, a v rámci ní Lynn uspořádala půldenní workshop pod hlavičkou PyLadies. Ale potom odjela, než našla dostatečně akční Pythonistku, která by to po ní převzala.</p>
+            </div>
+            <div class="photo-box">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/brno/brno1.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/brno/brno2.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/brno/brno3.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <p class="course-city-p">Až po více než roce se na Facebooku ozvaly tři studentky, které se Python učily na škole a potřebovaly doučování. Vzpomněli jsme si na balíček samolepek PyLadies, co tu nechala Lynn, a rozhodli se to doučování udělat pod touto značkou. A odtud byl už jen krůček k začátečnickým kurzům i jiným srazům.</p>
+            </div>
+        {% elif city_slug == 'ostrava' %}
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Ostravě?</h2>
+                <p class="course-city-p">Chtěly jsme umět něco, co nás ve škole nenaučí. A tak jednoho dne nás na cestu Pythonu přivedl bratr jedné z nás. Začaly jsme hledat možnost, jak nejlépe se ho naučit. Po dlouhém rozmýšlení a hledání jsme se rozhodly pro Pyladies. Dojíždění do Prahy či Brna nepřicházelo v úvahu a tak jsme se prostě rozhodly založit kurz v Ostravě.</p>
+                <p class="course-city-p">Věříme, že i vy se chcete naučit něco víc, a že to víc najdete právě u nás. Doufáme, že vám naše lekce nebudou přinášet jen ponaučení a vědomosti, ale i zábavu a nové přátele. Můžete se také těšit na jiné akce, které pro vás chystáme v průběhu roku.</p>
+            </div>
+        {% elif city_slug == 'praha' %}
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Praze?</h2>
+                <p class="course-city-p">PyLadies v Praze vznikly v roce 2015 díky iniciativě pražské Python komunity a organizačním schopnostem pár akčních holek, které měly zájem se kurzu samy účastnit.  Spouštěcím impulsem byl i úspěch jednodenního workshopu Django Girls Prague, rovněž zaměřeného na programování v Pythonu. Vytvořili jsme pražskou pilotní skupinu PyLadies a během prvního kurzu společně vylaďovali organizaci i náplň pražských srazů do současné podoby. Nyní kurz PyLadies představuje zhruba 13 dvouhodinových lekcí, které jsou doplněny i samostatnou prací na domácích projektech.</p>
+                <p class="course-city-p">Na kurz pro začátečnice jsme v roce 2016 navázaly pravidelnými pondělními srazy (PyWorking sessions) pro pokročilejší začátečnice, kde mohou absolventky našeho kurzu pracovat na svých vlastních projektech pod vedením zkušených mentorů.</p>
+            </div>
+            <div class="photo-box">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha1.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha2.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 city-box">
+                    <img src="{{ pathto('_static/img/praha/praha3.jpg', 1) }}" class="img-responsive city-image" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <p class="course-city-p">Společné setkávání v rámci PyLadies má velkou výhodu v tom, že se můžou holky navzájem průběžně motivovat a podporovat. Začátky bývají těžké, ale komunita kolem PyLadies vždy ochotně pomůže počáteční překážky překonávat. Díky týmu nadšenců fungují PyLadies čistě na dobrovolné a nezištné bázi.</p>
+            </div>
+        {% endif %}
+        </div>
+    </section>
+
     <!-- Team section -->
     <section id="team" class="container content-section text-center">
       <h2 class="course-city-heading">{{ team_name }}</h2>
