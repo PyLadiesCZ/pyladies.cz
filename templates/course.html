@@ -13,15 +13,30 @@
           </div>
       </div>
   </header>
-  <!-- Meetups -->
-  <section class="meetup container text-center" id="meetups">
-    {{ meetup_list(meetups) }}
-    </section>
 
-    <!-- Advice section -->
+  <!-- Current Meetups -->
+  <section class="meetup container text-center" id="meetups">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+        <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for meetup in meetups %}
+        {% if meetup.current %}
+         {{ meetup_info(meetup) }}
+          {% if not loop.last and loop.index0 % 2 %}
+            </div><div class="row">
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+    <!-- Contact -->
     <section id="about3" class="container-fluid content-section text-center">
       <div class="row">
-        <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
+        <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Kontakty</h2>
         {% if city_slug == 'brno' %}
           {{ advice(text='Facebook PyLadies Brno', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/pyladiesBrno') }}
           {{ advice(text='Google Group PyLadies Brno', img=pathto('_static/img/link/google-group.png', 1), url='https://groups.google.com/forum/#!forum/pyladies-brno') }}
@@ -38,5 +53,24 @@
         {% endif %}
       </div>
     </section>
+
+  <!-- Past Meetups -->
+  <section class="meetup container text-center" id="meetups">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
+        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for meetup in meetups %}
+        {% if not meetup.current %}
+          {{ meetup_info(meetup,  with_registration_link=False) }}
+          {% if not loop.last and loop.index0 % 2 %}
+            </div><div class="row">
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
 
 {% endblock content %}

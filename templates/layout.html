@@ -133,40 +133,6 @@
   </div>
 {% endmacro %}
 
-{% macro meetup_list(meetups) %}
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
-      </div>
-    </div>
-    <div class="row">
-      {% for meetup in meetups %}
-        {% if meetup.current %}
-         {{ meetup_info(meetup) }}
-          {% if not loop.last and loop.index0 % 2 %}
-            </div><div class="row">
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
-      </div>
-    </div>
-    <div class="row">
-      {% for meetup in meetups %}
-        {% if not meetup.current %}
-          {{ meetup_info(meetup,  with_registration_link=False) }}
-          {% if not loop.last and loop.index0 % 2 %}
-            </div><div class="row">
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-{% endmacro %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
