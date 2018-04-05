@@ -54,6 +54,24 @@
       </div>
     </section>
 
+    <!-- Team section -->
+    <section id="team" class="container content-section text-center">
+      <h2 class="course-city-heading">{{ team_name }}</h2>
+
+      {% for member in team %}
+      <div class="member-box col-md-3 col-sm-4 col-xs-12">
+        <img src="{{ url_for('static', filename=member.img) }}" class="img-circle img-responsive" />
+        <h5 class="member-name text-center"><strong>{{ member.name }}</strong></h5>
+        <span><em>{{ member.role }}</em></span>
+        <ul class="list-inline">
+          {%- for link in member.links -%}{%- for type, url in link.items() -%}
+            <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
+          {%- endfor -%}{%- endfor -%}
+        </ul>
+      </div>
+      {% endfor %}
+    </section>
+
   <!-- Past Meetups -->
   <section class="meetup container text-center" id="meetups">
     <div class="row">

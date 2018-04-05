@@ -73,21 +73,27 @@ def praha_course():
     return render_template('course.html',
                            city_slug='praha',
                            city_title='Praha',
-                           meetups=read_meetups_yaml('meetups/praha.yml'))
+                           team_name='Tým pražských PyLadies',
+                           meetups=read_meetups_yaml('meetups/praha.yml'),
+                           team=read_yaml('teams/praha.yml'))
 
 @app.route('/brno_course/')
 def brno_course():
     return render_template('course.html',
                            city_slug='brno',
                            city_title='Brno',
-                           meetups=read_meetups_yaml('meetups/brno.yml'))
+                           team_name='Tým brněnských PyLadies',
+                           meetups=read_meetups_yaml('meetups/brno.yml'),
+                           team=read_yaml('teams/brno.yml'))
 
 @app.route('/ostrava_course/')
 def ostrava_course():
     return render_template('course.html',
                            city_slug='ostrava',
                            city_title='OSTRAVA!!!',
-                           meetups=read_meetups_yaml('meetups/ostrava.yml'))
+                           team_name='Tým ostravských PyLadies',
+                           meetups=read_meetups_yaml('meetups/ostrava.yml'),
+                           team=read_yaml('teams/ostrava.yml'))
 
 @app.route('/brno/')
 def brno():
