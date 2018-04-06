@@ -44,6 +44,14 @@
           {% endif %}
         </p>
       {% endif %}
+      {% if meetup.materials %}
+        <p class="meetup-materials">
+          <span class="glyphicon glyphicon-book"></span>
+          <a href="{{ meetup.materials }}">
+            Materiály
+          </a>
+        </p>
+      {% endif %}
     </div>
   </div>
 {% endmacro %}

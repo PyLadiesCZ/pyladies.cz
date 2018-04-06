@@ -412,11 +412,7 @@ CITIES PAGE
 .city-address a {
     color: #8e8c8d;
 }
-.glyphicon-calendar,
-.glyphicon-hourglass,
-.glyphicon-bookmark,
-.glyphicon-edit,
-.meetup-box .meetup-address .glyphicon-map-marker {
+.meetup-box .glyphicon {
     font-size: 20px;
     float: left;
     padding-right: 15px;
