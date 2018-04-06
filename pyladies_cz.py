@@ -55,7 +55,7 @@ def index():
 
 @app.route('/praha/')
 def praha():
-    return render_template('course.html',
+    return render_template('city.html',
                            city_slug='praha',
                            city_title='Praha',
                            team_name='Tým pražských PyLadies',
@@ -64,7 +64,7 @@ def praha():
 
 @app.route('/brno/')
 def brno():
-    return render_template('course.html',
+    return render_template('city.html',
                            city_slug='brno',
                            city_title='Brno',
                            team_name='Tým brněnských PyLadies',
@@ -73,7 +73,7 @@ def brno():
 
 @app.route('/ostrava/')
 def ostrava():
-    return render_template('course.html',
+    return render_template('city.html',
                            city_slug='ostrava',
                            city_title='OSTRAVA!!!',
                            team_name='Tým ostravských PyLadies',
