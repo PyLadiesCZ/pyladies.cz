@@ -156,18 +156,27 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ pathto('brno') }}">Brno – začátečnický kurz</a></li>
+                            {% for name, url in (
+                                    ('Brno – začátečnický kurz (pondělí)',
+                                     'http://naucse.python.cz/2018/pyladies-brno-jaro/'),
+                                    ('Brno – začátečnický kurz (středa)',
+                                     'http://naucse.python.cz/2018/pyladies-brno-jaro-st/'),
+                                    ('Brno – navazující kurz',
+                                     'http://naucse.python.cz/2018/pyknihovny-jaro/'),
+                                    ('Praha – CZ.NIC',
+                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/'),
+                                    ('Praha – NTK',
+                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
+                                    ('Ostrava – začátečnický kurz',
+                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
+                                    ) %}
                             <li>
-                                <a href="http://naucse.python.cz/2018/pyknihovny-jaro/" target="_blank">
-                                    Brno – navazující kurz
+                                <a href="{{ url }}">
+                                    {{ name }}
                                     <small><span class="glyphicon glyphicon-new-window"></span></small>
                                 </a>
                             </li>
-                            <li><a href="{{ pathto('praha_cznic') }}">Praha - CZ.NIC</a></li>
-                            <li><a href="{{ pathto('praha_ntk') }}">Praha - NTK</a></li>
-                            <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li>
-                           <!-- <li role="separator" class="divider"></li>
-                            <li><a href="#">Všechny</a></li> -->
+                            {% endfor %}
                         </ul>
                     </li>
 
