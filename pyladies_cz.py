@@ -299,5 +299,17 @@ def v1():
     for path in REDIRECTS:
         yield url_for('v1', path=path)
 
+OLD_CITIES = 'praha', 'brno', 'ostrava'
+
+@freezer.register_generator
+def course_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
+
+@freezer.register_generator
+def info_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
+
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
