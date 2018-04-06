@@ -174,7 +174,7 @@
 
       {% for member in team %}
       <div class="member-box col-md-3 col-sm-4 col-xs-12">
-        <img src="{{ url_for('static', filename=member.img) }}" class="img-circle img-responsive" />
+        <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle img-responsive" />
         <h5 class="member-name text-center"><strong>{{ member.name }}</strong></h5>
         <span><em>{{ member.role }}</em></span>
         <ul class="list-inline">
