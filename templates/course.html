@@ -24,10 +24,14 @@
       {% if meetup.place %}
         <p class="meetup-address">
           <span class="glyphicon glyphicon-map-marker"></span>
+          {% if meetup.place.url %}
           <a href="{{ meetup.place.url }}" target="_blank">
+          {% endif %}
             {{ meetup.place.name }},
             {{ meetup.place.address }}
+          {% if meetup.place.url %}
           </a>
+          {% endif %}
         </p>
       {% endif %}
       {% if meetup.registration_status and with_registration_link %}
