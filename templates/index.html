@@ -58,57 +58,6 @@
        
     </section>
 
-    <!-- Courses section -->
-    <section class="course-wrapper container-fluid" id="main-course">
-
-        {% for city_name, meetups in current_meetups.items() %}
-            {% set meetup = meetups[0] %}
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 course-i">
-                <div class="py-icon">
-                    {% if meetup.registration_status in ('meetup_started', 'closed') %}
-                        <img src="{{ pathto('_static/img/icon/pylady.png', 1) }}" class="py-icon-i" />
-                    {% elif meetup.registration_status == 'running' %}
-                        <img src="{{ pathto('_static/img/icon/pylady-blue.png', 1) }}" class="py-icon-i" />
-                    {% else %}
-                        <img src="{{ pathto('_static/img/icon/pylady-grey.png', 1) }}" class="py-icon-i" />
-                    {% endif %}
-                </div>
-                <div class="py-block pull-left">
-                    <h4 class="city-heading">
-                        <a href="{{ pathto(city_name) }}">
-                        {{ city_name | title }} &ndash; začátečnický kurz
-                        </a>
-                    </h4>
-
-                    {% for c in meetup.parallel_runs %}
-                        <p class="city-info">
-                            {{ (c.start, c.end)| date_range }}
-                            {% if c.registration_status == 'running' %}
-                                <a target="_blank" href="{{ c.registration.url }}">
-                                    {{ c.registration.get('text', 'Registrace zde!') }}
-                                </a>
-                            {% endif %}
-                        </p>
-                        {% if c.place %}
-                          <p class="city-address">
-                              <a href="{{ c.place.url }}" target="_blank">
-                                {{ c.place.name }},
-                                {{ c.place.address }}
-                              </a>
-                          </p>
-                        {% endif %}
-                    {% endfor %}
-
-                </div>
-            </div>
-        {% endfor %}
-
-        <div class="col-md-3 hidden-sm hidden-xs course-i text-center">
-            <a href="http://pyladies.cz/stan_se/"><div class="new-city">Založ vlastní PyLadies</div></a>
-        </div>
-
-    </section>
-
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
