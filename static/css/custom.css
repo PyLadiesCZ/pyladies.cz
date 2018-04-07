@@ -305,8 +305,8 @@ HOMEPAGE
 }
 
 #about {
-    padding-top: 105px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    
 }
 .about-p {
     color: #8e8c8d;
@@ -315,7 +315,6 @@ HOMEPAGE
     height: auto;
     min-height: 200px;
     max-height: 300px;
-    padding-bottom: 85px;
     padding-top: 15px;
 }
 #start {
@@ -392,10 +391,14 @@ HOMEPAGE
     display: flex;
     list-style-type: none;
     justify-content: center;
+    background-color: #e51f40;
+    background-repeat-y: no-repeat;
+    padding: 0;
+    margin: 0;  
     
 }
-.banner li{    
-    display: flex;
+.banner li{           
+    position: relative;   
     
 }
 .banner a {    
@@ -403,19 +406,23 @@ HOMEPAGE
     display: flex;
     flex-direction: column;
 }
+.banner img{
+    height: auto;
+    width: 100%;
+}
 .banner span{
-    font-size: 40px;
+    font-size: 2.3em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: white;
     text-decoration: none;
-    bottom: 100px;
-    position: relative;
-
+    position: absolute;
+    width: 100%;
+    margin-top: -2vw;
 }
 .banner-bcg{
-    background-image: url(../img/bcg.svg)
+    background-image: url(../img/bcg.svg);
 }
 img.img-style{
     display: block;
@@ -429,14 +436,16 @@ img.img-hover{
 .banner li:hover img.img-hover{
     display: block;
 }
-img.img-style:hover{
-    
+@media(max-width:867px){
+    .banner{
+        display: none;
+    }
 }
 /*******************
 CITIES PAGE
 *******************/
 #about2 {
-    padding-top: 65px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .info-city {

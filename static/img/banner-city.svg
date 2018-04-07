@@ -11,9 +11,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   width="385.1543"
-   height="299.8132"
-   viewBox="0 0 385.1543 299.81319"
+   width="1371.9948"
+   height="299.81326"
+   viewBox="0 0 1371.9948 299.81325"
    sodipodi:docname="banner-city.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,8 +44,8 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="-438.24354"
-     inkscape:cy="62.49703"
+     inkscape:cx="548.59688"
+     inkscape:cy="62.497098"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -57,22 +57,22 @@
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="-632.14834,-122.20288"
+       position="354.69207,-122.20281"
        orientation="1,0"
        id="guide5284"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="-358.49799,-28.157705"
+       position="628.34242,-28.157637"
        orientation="1,0"
        id="guide5286"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="0.0051158611,5.7834143"
+       position="986.84553,5.7834825"
        orientation="1,0"
        id="guide5288"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="-927.44343,299.8132"
+       position="59.396975,299.81327"
        orientation="0,1"
        inkscape:locked="false"
        id="guide1611" />
@@ -81,7 +81,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="translate(-1241.6744,-125.20431)">
+     transform="translate(-254.83398,-125.20431)">
     <g
        id="g1272"
        transform="translate(16)"
