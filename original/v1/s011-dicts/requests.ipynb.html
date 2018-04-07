@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11967,8 +11967,12 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
+
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">odpoved</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.twitter.com/1.1/search/tweets.json&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span>
 <span class="n">odpoved</span><span class="o">.</span><span class="n">text</span>
+<span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12054,8 +12058,12 @@ div#notebook {
 <span class="n">odpoved</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://api.twitter.com/oauth2/token&#39;</span><span class="p">,</span>
                         <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
                         <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;grant_type&#39;</span><span class="p">:</span> <span class="s1">&#39;client_credentials&#39;</span><span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span>
 <span class="n">odpoved</span><span class="o">.</span><span class="n">text</span>
+<span class="p">)</span>
 </pre></div>
+
 
 </div>
 </div>
