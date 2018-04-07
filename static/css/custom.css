@@ -387,6 +387,56 @@ HOMEPAGE
   margin-right: 10px;
   float: left;
 }
+
+.banner ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+.banner li{    
+    display: flex;
+    
+}
+.banner a {    
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.banner span{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    bottom: 70px;
+    position: relative;
+
+}
+.banner-bcg{
+    background-color: rgb(229, 31, 64);
+    width: 200vw;
+    padding: 58px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 112px;
+}
+img.img-style{
+    display: block;
+}
+img.img-hover{
+    display: none;
+}
+.banner li:hover img.img-style{
+    display: none;    
+}
+.banner li:hover img.img-hover{
+    display: block;
+}
+img.img-style:hover{
+    
+}
 /*******************
 CITIES PAGE
 *******************/
