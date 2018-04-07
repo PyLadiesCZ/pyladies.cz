@@ -1,6 +1,5 @@
 - name: Instalace
   date: 2018-03-07
-  done: true
   materials:
   - name: Úvodní prezentace (která se s každým kurzem trochu mění)
     type: lesson
@@ -25,7 +24,6 @@
     link: v1/s001-install/handout/handout.pdf
 - name: První program
   date: 2018-03-14
-  done: true
   materials:
   - name: První program
     type: lesson
@@ -50,7 +48,6 @@
     link: v1/s002-hello-world/handout/handout2.pdf
 - name: Cykly
   date: 2018-03-21
-  done: true
   materials:
   - name: Funkce
     type: lesson
@@ -69,7 +66,6 @@
     link: v1/s003-looping/handout/handout3a.pdf
 - name: Funkce & Řetězce
   date: 2018-03-28
-  done: true
   materials:
   - name: Vlastní funkce
     type: lesson
@@ -85,7 +81,6 @@
     link: v1/s004-strings/handout/handout4.pdf
 - name: Procvičování a soubory
   date: 2018-04-04
-  done: true
   materials:
   - name: Procvičíme si vše, co jsme se naučily
     type: special-lesson
@@ -94,7 +89,6 @@
     link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/files/
 - name: Spolupráce a Opensource - Git
   date: 2018-04-11
-  done: false
   materials:
   - name: Spolupráce a Git
     type: lesson
@@ -110,7 +104,6 @@
     link: v1/s003-looping/handout/handout3b.pdf
 - name: Seznamy
   date: 2018-04-18
-  done: false
   materials:
   - name: Seznamy
     type: lesson
@@ -126,7 +119,6 @@
     link: v1/s006-lists/handout/handout6.pdf
 - name: Slovníky
   date: 2018-04-25
-  done: false
   materials:
   - name: Slovníky
     type: lesson
@@ -145,7 +137,6 @@
     link: v1/s011-dicts/handout/handout9.pdf
 - name: Testování
   date: 2018-05-02
-  done: false
   materials:
   - name: Výjimky
     type: lesson
@@ -167,7 +158,6 @@
     link: v1/s005-modules/handout/handout5.pdf
 - name: Grafika
   date: 2018-05-09
-  done: false
   materials:
   - name: Grafika
     type: lesson
@@ -183,7 +173,6 @@
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
 - name: Třídy
   date: 2018-05-16
-  done: false
   materials:
   - name: Třídy
     type: lesson
@@ -193,7 +182,6 @@
     link: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/beginners/inheritance
 - name: Závěrečný projekt
   date: 2018-05-23
-  done: false
   materials:
   - name: Turnaj v piškvorkách
     type: special
@@ -209,7 +197,6 @@
 - name: Závěrečná procvičovací hodina nebo pokračování Asteroids
   date: 2018-05-30
   description: Během závěrečné hodiny se mimojiné seznámíme s možnostmi dalšího vzdělávání
-  done: false
 - name: Odbočky
   description: |
     Někdy je na sraze menší účast, tak zařadíme téma na přání,
