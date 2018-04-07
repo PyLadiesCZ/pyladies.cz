@@ -415,12 +415,7 @@ HOMEPAGE
 
 }
 .banner-bcg{
-    background-color: rgb(229, 31, 64);
-    width: 200vw;
-    padding: 58px;
-    position: absolute;
-    z-index: -1;
-    margin-top: 112px;
+    background-image: url(../img/bcg.svg)
 }
 img.img-style{
     display: block;
