@@ -32,6 +32,7 @@
     url: https://goo.gl/maps/jkhhUVTtc9m
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-ostrava-jaro/
   registration:
     url: https://goo.gl/forms/YhXAAKztRuffRWLw1
     end: 2017-02-17
@@ -41,6 +42,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-ostrava-podzim/
   registration:
     url: https://goo.gl/forms/KviPS2OlsA2oGT8J2
     end: 2017-08-31
@@ -61,6 +63,7 @@
     url:
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2018/pyladies-ostrava-jaro/
   registration:
     url: https://goo.gl/forms/NMZUc8G4fEAwIHix2
     end: 2018-01-25

@@ -95,6 +95,7 @@
   place: *apiary
 
 - name: PyLadies Praha <br> začátečnický kurz
+  material: http://naucse.python.cz/2017/pyladies-praha-jaro/
   start: 2017-03-14
   end: 2017-06-06
   time: každé úterý 18:00 - 20:00
@@ -141,6 +142,7 @@
   place: *cz-nic
 
 - name: PyLadies Praha <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/
   parallel-with-previous: true
   start: 2017-09-25
   end: 2017-12-18
@@ -156,6 +158,7 @@
     url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
   
 - name: PyLadies Praha <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-praha-podzim-cznic/
   start: 2017-09-19
   end: 2017-12-12
   time: každé úterý 18:00 - 20:00
@@ -165,6 +168,7 @@
   place: *cz-nic
 
 - name: Pyladies Praha <br> Začátečnický kurz středa
+  materials: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/
   start: 2018-03-07
   end: 2018-05-30
   time: každou středu 18:00 - 20:00
@@ -174,6 +178,7 @@
   place: *ntk
   
 - name: Pyladies Praha <br> Začátečnický kurz čtvrtek
+  materials: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/
   parallel-with-previous: true
   start: 2018-03-08
   end: 2018-05-31

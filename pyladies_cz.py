@@ -53,59 +53,40 @@ def index():
                            current_meetups=current_meetups,
                            news=news)
 
-
-@app.route('/brno_info/')
-def brno_info():
-    return render_template('brno_info.html',
-                           team=read_yaml('teams/brno.yml'))
-
-
-@app.route('/praha_info/')
-def praha_info():
-    return render_template('praha_info.html')
-
-@app.route('/ostrava_info/')
-def ostrava_info():
-    return render_template('ostrava_info.html')
-
-@app.route('/praha_course/')
-def praha_course():
-    return render_template('course.html',
+@app.route('/praha/')
+def praha():
+    return render_template('city.html',
                            city_slug='praha',
                            city_title='Praha',
                            team_name='Tým pražských PyLadies',
                            meetups=read_meetups_yaml('meetups/praha.yml'),
                            team=read_yaml('teams/praha.yml'))
 
-@app.route('/brno_course/')
-def brno_course():
-    return render_template('course.html',
+@app.route('/brno/')
+def brno():
+    return render_template('city.html',
                            city_slug='brno',
                            city_title='Brno',
                            team_name='Tým brněnských PyLadies',
                            meetups=read_meetups_yaml('meetups/brno.yml'),
                            team=read_yaml('teams/brno.yml'))
 
-@app.route('/ostrava_course/')
-def ostrava_course():
-    return render_template('course.html',
+@app.route('/ostrava/')
+def ostrava():
+    return render_template('city.html',
                            city_slug='ostrava',
                            city_title='OSTRAVA!!!',
                            team_name='Tým ostravských PyLadies',
                            meetups=read_meetups_yaml('meetups/ostrava.yml'),
                            team=read_yaml('teams/ostrava.yml'))
 
-@app.route('/brno/')
-def brno():
-    return render_template('brno.html', plan=read_lessons_yaml('plans/brno.yml'))
+@app.route('/<city>_course/')
+def course_redirect(city):
+    return redirect(url_for(city, _anchor='meetups'))
 
-@app.route('/praha/')
-def praha():
-    '''
-    Na podzim 2017 běží dva paralelní kurzy, proto je to rozdělené.
-    Toto je jen redirect kvůli zpětné kompatibilitě URL adres, co mají lidi v bookmarcích.
-    '''
-    return redirect(url_for('praha_cznic'))
+@app.route('/<city>_info/')
+def info_redirect(city):
+    return redirect(url_for(city, _anchor='city-info'))
 
 @app.route('/praha-cznic/')
 def praha_cznic():
@@ -120,10 +101,6 @@ def praha_ntk():
     Pražský kurz v NTK
     '''
     return render_template('praha.html', location='ntk', plan=read_lessons_yaml('plans/praha-ntk.yml'))
-
-@app.route('/ostrava/')
-def ostrava():
-    return render_template('ostrava.html', plan=read_lessons_yaml('plans/ostrava.yml'))
 
 @app.route('/stan_se/')
 def stan_se():
@@ -321,6 +298,18 @@ def v1():
                 yield {'path': path}
     for path in REDIRECTS:
         yield url_for('v1', path=path)
+
+OLD_CITIES = 'praha', 'brno', 'ostrava'
+
+@freezer.register_generator
+def course_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
+
+@freezer.register_generator
+def info_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
