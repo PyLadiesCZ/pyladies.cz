@@ -404,13 +404,13 @@ HOMEPAGE
     flex-direction: column;
 }
 .banner span{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: white;
     text-decoration: none;
-    bottom: 70px;
+    bottom: 100px;
     position: relative;
 
 }
