@@ -28,13 +28,13 @@
 
 
     .navbar-custom {
-        padding: 5px 0;
+        padding: 10px 0;
         letter-spacing: 1px;
         background: #fff;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-        border-bottom: 1px solid #ddd;
+        /* border-bottom: 1px solid #ddd; */
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;

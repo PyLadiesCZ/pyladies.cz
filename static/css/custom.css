@@ -60,7 +60,7 @@ a:focus,
 /* NAVIGATION */
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: none;
     background-color: #fff;
     color: #333;
 }
@@ -424,15 +424,30 @@ img.img-style{
 img.img-hover{
     display: none;
 }
-.banner li:hover img.img-style{
+.banner li:hover img.img-style,
+.container li:hover img.img-style{
     display: none;    
 }
-.banner li:hover img.img-hover{
+.banner li:hover img.img-hover,
+.container  li:hover img.img-hover{
     display: block;
 }
 .banner li:hover span {
     background-color: #333;
 }
+.head li{
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+    min-height: 200px;
+}
+h3, span {    
+    color: #333;    
+}
+.container a img{    
+    margin: 0 auto;
+}
+
 @media(max-width:867px){
     .banner{
         display: none;
@@ -502,7 +517,7 @@ h2.course-city-heading {
     padding-top: 30px;
     padding-bottom: 55px;
     background: #e51f40;
-    margin-top: 20px;
+   
 }
 .course-wrapper {
     display: block;
@@ -522,7 +537,7 @@ h2.course-city-heading {
     position: relative;
 }
 .course-city {
-    padding: 35px 0px;
+    padding: 35px 5%;
 }
 .course-city-p {
     color: #8e8c8d;
@@ -733,7 +748,9 @@ FAQ
 /*******************
 BECOME PYLADY /stan_se
 ********************/
-
+.become-pylady{
+    padding: 0 10%;
+}
 .become-pylady h3 {
     margin-top: 40px;
 }
