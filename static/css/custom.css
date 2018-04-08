@@ -387,27 +387,19 @@ HOMEPAGE
   float: left;
 }
 
-.banner ul{
+.banner{
     display: flex;
-    list-style-type: none;
-    justify-content: center;
-    background-color: #e51f40;
-    background-repeat-y: no-repeat;
+    list-style-type: none;        
     padding: 0;
-    margin: 0;  
-    
-}
-.banner li{           
-    position: relative;   
+    max-width: 1170px;
+    margin: 0 auto;  
     
 }
 .banner a {    
-    justify-content: flex-end;
     display: flex;
     flex-direction: column;
 }
-.banner img{
-    height: auto;
+.banner img{    
     width: 100%;
 }
 .banner span{
@@ -417,12 +409,14 @@ HOMEPAGE
     text-align: center;
     color: white;
     text-decoration: none;
-    position: absolute;
     width: 100%;
-    margin-top: -2vw;
+    line-height: 100px;
+    background-color: #e51f40;
 }
 .banner-bcg{
     background-image: url(../img/bcg.svg);
+    background-position-y: 136px;
+    background-repeat: repeat-x;
 }
 img.img-style{
     display: block;
@@ -435,6 +429,9 @@ img.img-hover{
 }
 .banner li:hover img.img-hover{
     display: block;
+}
+.banner li:hover span {
+    background-color: #333;
 }
 @media(max-width:867px){
     .banner{
