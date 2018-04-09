@@ -129,7 +129,7 @@
 
 @media all and (max-width: 767px) {
   img {
-    width: auto  !important;
+    width: auto;
   }
 
   .col-xs-12.col-sm-12.col-md-4.col-lg-4.about {

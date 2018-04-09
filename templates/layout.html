@@ -141,9 +141,9 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li><a href="{{ pathto('praha') }}">Praha</a></li>
+                    <!-- <li><a href="{{ pathto('praha') }}">Praha</a></li>
                     <li><a href="{{ pathto('brno') }}">Brno</a></li>
-                    <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li>
+                    <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
                             <span class="caret"></span>
@@ -183,6 +183,41 @@
             </div>
         </div>
     </nav>
+    <section class="banner-bcg">
+        <ul class="banner">
+            <li>
+                <a href="{{ pathto('praha') }}">
+                    <img class="img-style" src="../static/img/praha.svg" alt="">
+                    <img class="img-hover" src="../static/img/praha-blc.svg" alt="">
+                    <span>Praha</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ pathto('brno') }}">
+                    <img class="img-style" src="../static/img/brno.svg" alt="">
+                    <img class="img-hover" src="../static/img/brno-blc.svg" alt="">
+                    <span>Brno</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ pathto('ostrava') }}">
+                    <img class="img-style" src="../static/img/ostrava.svg" alt="">
+                    <img class="img-hover" src="../static/img/ostrava-blc.svg" alt="">
+                    <span>Ostrava</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ pathto('ostatni') }}">
+                    <img class="img-style" src="../static/img/ostatni.svg" alt="">
+                    <img class="img-hover" src="../static/img/ostatni-blc.svg" alt="">
+                    <span>Tvé město...</span>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </section>
     {% block content %} {% endblock %}
     {% block footer %}
     <footer>

@@ -124,7 +124,8 @@ INTRO IMAGES
     -o-background-size: cover;
 }
 .intro-city-praha {
-    display: table;
+    /* display: table; */
+    display: none;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -141,7 +142,8 @@ INTRO IMAGES
     -o-background-size: cover;
 }
 .intro-city-brno {
-    display: table;
+    /* display: table; */
+    display: none;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -159,7 +161,8 @@ INTRO IMAGES
 }
 
 .intro-city-ostrava {
-    display: table;
+    /* display: table; */
+    display: none;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -175,7 +178,24 @@ INTRO IMAGES
     background-size: cover;
     -o-background-size: cover;
 }
-
+.intro-city-ostatni {
+    /* display: table; */
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
+    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
+    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 .intro-material {
     display: table;
     width: 100%;
@@ -183,9 +203,9 @@ INTRO IMAGES
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
+    background: -moz-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
+    background: -webkit-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -277,8 +297,8 @@ HOMEPAGE
     text-decoration: underline;
 }
 .logo-i {
-    height: 40px;
-    width: 94px;
+  height: 80px;
+  width: auto;
     margin-top: -10px;
 }
 
@@ -307,7 +327,7 @@ HOMEPAGE
 
 #about {
     padding-top: 30px;
-    
+
 }
 .about-p {
     color: #8e8c8d;
@@ -390,17 +410,17 @@ HOMEPAGE
 
 .banner{
     display: flex;
-    list-style-type: none;        
+    list-style-type: none;
     padding: 0;
     max-width: 1170px;
-    margin: 0 auto;  
-    
+    margin: 0 auto;
+
 }
-.banner a {    
+.banner a {
     display: flex;
     flex-direction: column;
 }
-.banner img{    
+.banner img{
     width: 100%;
 }
 .banner span{
@@ -416,7 +436,7 @@ HOMEPAGE
 }
 .banner-bcg{
     background-image: url(../img/bcg.svg);
-    background-position-y: 136px;
+    background-position: bottom -1px left;
     background-repeat: repeat-x;
 }
 img.img-style{
@@ -427,10 +447,11 @@ img.img-hover{
 }
 .banner li:hover img.img-style,
 .container li:hover img.img-style{
-    display: none;    
+    display: none;
 }
 .banner li:hover img.img-hover,
-.container  li:hover img.img-hover{
+.container  li:hover img.img-hover
+{
     display: block;
 }
 .banner li:hover span {
@@ -439,21 +460,29 @@ img.img-hover{
 .head li{
     list-style-type: none;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     min-height: 200px;
 }
-h3, span {    
-    color: #333;    
+h3, span {
+    color: #333;
 }
-.container a img{    
+.container a img{
     margin: 0 auto;
 }
 
-@media(max-width:867px){
-    .banner{
-        display: none;
+@media(max-width:992px){
+    .banner span{
+        font-size: 1.8em;
     }
 }
+
+@media(max-width: 768px){
+  .banner {
+    display: none;
+  }
+  .navbar-nav {
+    margin: 50px 0px;
+}}
 /*******************
 CITIES PAGE
 *******************/
@@ -518,7 +547,7 @@ h2.course-city-heading {
     padding-top: 30px;
     padding-bottom: 55px;
     background: #e51f40;
-   
+
 }
 .course-wrapper {
     display: block;
@@ -584,7 +613,7 @@ margin-left: -30px;
 
 .col-md-3.member-box {
     margin-bottom: 30px;
-    min-height: 321px;
+    min-height: 333px;
 }
 
 .section-heading {
@@ -668,7 +697,7 @@ margin-left: -30px;
 #about3 {
     margin-top: 50px;
     padding-bottom: 50px;
-    background: #e51e41;
+    background: rgb(229,31,64);
     color: #fff;
 }
 #about3 div a {

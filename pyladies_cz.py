@@ -79,6 +79,9 @@ def ostrava():
                            team_name='Tým ostravských PyLadies',
                            meetups=read_meetups_yaml('meetups/ostrava.yml'),
                            team=read_yaml('teams/ostrava.yml'))
+@app.route('/ostatni/')
+def ostatni():
+    return render_template('city.html', city_slug='ostatni')
 
 @app.route('/<city>_course/')
 def course_redirect(city):
