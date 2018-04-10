@@ -188,7 +188,7 @@ img.partner-logo {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   #about {
     padding-top: 50px;
     padding-bottom: 0px;
