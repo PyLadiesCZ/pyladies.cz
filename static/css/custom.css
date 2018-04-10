@@ -229,22 +229,7 @@ INTRO IMAGES
     font-weight: bold;
     font-size: 60px;
 }
-@media(min-width:768px) {
-    .intro,
-    .intro-info {
-        height: 76%;
-        padding: 0;
-    }
-    .intro .intro-body .brand-heading,
-    .intro-info .intro-body .brand-heading {
-        font-size: 100px;
-    }
-    .intro .intro-body .intro-text,
-    .intro-info .intro-body .intro-text {
-        font-size: 26px;
-        font-weight: 800;
-    }
-}
+
 /*******************
 HOMEPAGE
 *******************/
