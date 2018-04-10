@@ -202,14 +202,14 @@ INTRO IMAGES
     height: 25% !important;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
+    color: #333;
+    /* background: -moz-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
     background: -webkit-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
     background: linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
 }
 
 .intro .intro-body,
@@ -470,19 +470,9 @@ h3, span {
     margin: 0 auto;
 }
 
-@media(max-width:992px){
-    .banner span{
-        font-size: 1.8em;
-    }
-}
 
-@media(max-width: 768px){
-  .banner {
-    display: none;
-  }
-  .navbar-nav {
-    margin: 50px 0px;
-}}
+
+
 /*******************
 CITIES PAGE
 *******************/
@@ -567,7 +557,7 @@ h2.course-city-heading {
     position: relative;
 }
 .course-city {
-    padding: 35px 5%;
+    padding: 0px 5%;
 }
 .course-city-p {
     color: #8e8c8d;
@@ -613,7 +603,7 @@ margin-left: -30px;
 
 .col-md-3.member-box {
     margin-bottom: 30px;
-    min-height: 333px;
+    min-height: 348px;
 }
 
 .section-heading {
@@ -757,6 +747,7 @@ STAN SE
 
 .role-requirements {
     list-style-type: none;
+    padding:0;
 }
 .role-requirements li {
     margin-top: 0.5em;
@@ -769,6 +760,7 @@ FAQ
 
 .faq h3 {
 	margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .faq p {
@@ -780,9 +772,11 @@ BECOME PYLADY /stan_se
 ********************/
 .become-pylady{
     padding: 0 10%;
+
 }
 .become-pylady h3 {
     margin-top: 40px;
+
 }
 
 .become-pylady p {
