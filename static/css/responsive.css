@@ -2,6 +2,8 @@
   .py-block {
     font-size: 14px;
   }
+  .member-box{
+    min-height: 350px;
 }
 @media screen and (max-width: 1024px) {
     .py-block {
@@ -22,6 +24,13 @@
     .banner span{
         font-size: 1.8em;
     }
+    .member-box{
+      min-height: 380px;
+  }
+    .member_box .img-circle{
+      width: 70%;
+    }
+
 }
 
 
@@ -43,7 +52,9 @@
     width: 20px !important;
 
   }
-
+  .member-box{
+    min-height: 380px
+  }
 a .about img {
   width: 100%;
   height: auto;
@@ -118,7 +129,7 @@ button.btn.btn-couch {
 }
 }
 
-@media all  and (max-width: 736px)  {
+@media all  and (max-width: 767px)  {
   .course-wrapper {
     max-height: none;
 }
@@ -353,8 +364,17 @@ button.btn.btn-couch {
     margin: 50px 0px;
   }
   .member-box .img-circle {
-  width: 40%;
-}
+    width: 30%;
+  }
+  .member-name {
+    font-size: 14px;
+  }
+  .member_box strong{
+    font-size: 12px;
+  }
+  .member-box{
+    min-height: 200px
+  }
 }
 
 @media all and (max-width: 568px) {

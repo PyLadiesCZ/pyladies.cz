@@ -581,14 +581,19 @@ margin-right: -30px;
 width: 30px;
 margin-left: -30px;
 }
-
+.team{
+  display: flex;
+}
+.member{
+  flex: 1 1 30%;
+}
 #team {
   padding-bottom: 45px;
 }
 
-.col-md-3.member-box {
+.member-box {
     margin-bottom: 30px;
-    min-height: 348px;
+    min-height: 400px;
 }
 
 .section-heading {
