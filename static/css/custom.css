@@ -76,7 +76,7 @@ a:focus,
     outline: 0;
 }
 .navbar-custom a {
-    color: #fff;
+    color: #333;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
 .nav>li>a:focus, .nav>li>a:hover,
@@ -101,7 +101,17 @@ a:focus,
   opacity: 0.5;
   color: #fa023c;
 }
-
+.navbar-nav{
+  float: left;
+  margin: 0;
+}
+.navbar-nav>li{
+  float: left;
+}
+navbar-right{
+  float: right;
+  margin-right: -15px;
+}
 /*******************
 INTRO IMAGES
 *******************/
@@ -272,7 +282,7 @@ HOMEPAGE
 }
 .join a,
 .join {
-    color: #e51e41;
+    color: #333;
 }
 .actual-address a {
     color: #fff;
@@ -456,7 +466,12 @@ h3, span {
 }
 
 
-
+.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu {
+  display: block;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 1px 8px 1px rgba(51, 51, 51, 0.13);
+  background-color: #f7f7f7;
+}
 
 /*******************
 CITIES PAGE
