@@ -56,9 +56,9 @@
   date: 2018-04-21
   time: 9:00 - 15:00
   place:
-    name: Bude upřesněno
-    address: N/A
-    url:
+    name: Nová FEI (VŠB) místnost EB229
+    address: 17. listopadu 2172/15, Ostrava
+    url: https://goo.gl/maps/m9PcPDokQnC2
 
 - name: PyLadies Ostrava <br> začátečnický kurz
   registration:
