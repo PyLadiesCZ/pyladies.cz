@@ -101,17 +101,7 @@ a:focus,
   opacity: 0.5;
   color: #fa023c;
 }
-.navbar-nav{
-  float: left;
-  margin: 0;
-}
-.navbar-nav>li{
-  float: left;
-}
-navbar-right{
-  float: right;
-  margin-right: -15px;
-}
+
 /*******************
 INTRO IMAGES
 *******************/

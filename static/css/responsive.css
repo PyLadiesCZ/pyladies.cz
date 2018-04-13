@@ -1,4 +1,4 @@
-@media all and (max-width: 1365px) {
+@media all and (min-width: 1024px) {
   .py-block {
     font-size: 14px;
   }
