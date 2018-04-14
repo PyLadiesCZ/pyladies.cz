@@ -49,6 +49,14 @@ body {
 .main-navbar .materials-dropdown:hover {
     background: #8e8c8d;
 }
+.main-navbar .materials-dropdown li .glyphicon-new-window {
+    font-size: 0.75em;
+    opacity: 0.5;
+    color: white;
+}
+.main-navbar .materials-dropdown li:hover .glyphicon-new-window {
+    opacity: 1;
+}
 .main-navbar a {
     width: 100%;
     display: block;
@@ -64,8 +72,12 @@ body {
 .main-navbar ul ul li {
     margin-left: -30px;
     margin-right: -30px;
-    padding-left: 45px;
+    padding-left: 60px;
     padding-right: 30px;
+    text-indent: -15px;
+}
+.main-navbar ul ul li * {
+    text-indent: 0;
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
@@ -135,6 +147,9 @@ body {
     }
     .main-navbar .materials-dropdown ul li a:hover {
         color: #e51f40;
+    }
+    .main-navbar .materials-dropdown li .glyphicon-new-window {
+        color: #333;
     }
 }
 @media all and (min-width: 620px) {
