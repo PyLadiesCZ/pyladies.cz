@@ -112,6 +112,9 @@ body.menu-shown .main-navbar .navbar-menu {
 .main-navbar ul ul li * {
     text-indent: 0;
 }
+nav.main-navbar li.current-page {
+    background: #e51f40;
+}
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
     .main-navbar .navbar-menu {
@@ -199,6 +202,13 @@ body.menu-shown .main-navbar .navbar-menu {
     .main-navbar .materials-dropdown li .glyphicon-new-window {
         color: #333;
     }
+    .main-navbar .navbar-other li.current-page {
+        background: #ededed;
+        border-radius: 4px;
+    }
+    .main-navbar .navbar-other li.current-page a {
+        color: #333 !important;
+    }
 }
 @media all and (min-width: 620px) {
     /* On large screens the menu is on one line */
@@ -229,7 +239,7 @@ body.menu-shown .main-navbar .navbar-menu {
 .navbar-cities.faded-banner li {
     background: #8e8c8d;
 }
-.navbar-cities li.current-city {
+.navbar-cities.faded-banner li.current-page {
     background: #e51f40;
 }
 .navbar-cities li:hover {

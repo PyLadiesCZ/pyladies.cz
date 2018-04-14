@@ -90,10 +90,10 @@
                     </ul>
                 </li>
 
-                <li>
+                <li {% block current_page_class_stanse %}{% endblock %}>
                     <a href="{{ pathto('stan_se') }}">Staň se PyLady!</a>
                 </li>
-                <li>
+                <li {% block current_page_class_faq %}{% endblock %}>
                     <a href="{{ pathto('faq') }}">FAQ</a>
                 </li>
             </ul>
