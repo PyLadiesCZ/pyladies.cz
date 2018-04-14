@@ -25,6 +25,7 @@
         <!-- Bootstrap CSS -->
         <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
         <!-- Custom CSS -->
+        <link href="{{ pathto('_static/css/main.css', 1) }}" rel="stylesheet">
         <link href="{{ pathto('_static/css/custom.css', 1) }}" rel="stylesheet">
         <link href="{{ pathto('_static/css/responsive.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
@@ -68,9 +69,6 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <!-- <li><a href="{{ pathto('praha') }}">Praha</a></li>
-                    <li><a href="{{ pathto('brno') }}">Brno</a></li>
-                    <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
                             <span class="caret"></span>
@@ -110,8 +108,8 @@
             </div>
         </div>
     </nav>
-    <section class="banner-bcg {% block banner_class %}faded-banner{% endblock %}">
-        <ul class="banner">
+    <section class="cities-banner {% block banner_class %}faded-banner{% endblock %}">
+        <ul>
             {% for city, title in {
                 'praha': 'Praha',
                 'brno': 'Brno',
@@ -130,33 +128,34 @@
     {% block content %} {% endblock %}
     {% block footer %}
     <footer>
-        <div class="container text-left">
+        <div class="container">
             <p class="global-pyladies">
               PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
             </p>
-            <ul class="pull-right list-inline">
+            <ul>
                 <li>
                     <a href="mailto:info@pyladies.cz">
-                        <img class="social" src="{{ pathto('_static/img/icon/mail-white.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/mail-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/pyladiescz">
-                        <img class="social" src="{{ pathto('_static/img/icon/twitter-white.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/twitter-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/pyladiescz">
-                        <img class="social" src="{{ pathto('_static/img/icon/github-white.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/github-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/groups/pyonieri/">
-                        <img class="social" src="{{ pathto('_static/img/icon/facebook-white.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/facebook-white.png', 1) }}" />
                     </a>
                 </li>
             </ul>
         </div>
+        <div class="clear"></div>
     </footer>
     {% endblock footer %}
     {% block javascript %}

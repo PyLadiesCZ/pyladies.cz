@@ -1,0 +1,66 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body > footer {
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    padding-bottom: 2px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+body > footer ul {
+    display: block;
+    float: right;
+    padding: 0.5em;
+}
+
+body > footer li {
+    list-style: none;
+    display: inline;
+}
+
+body > footer img {
+    width: 40px;
+    opacity: 0.5;
+}
+
+body > footer img:hover {
+    opacity: 1;
+}
+
+body > footer .clear {
+    clear: both;
+}
+
+body > footer .global-pyladies a,
+body > footer .about-p a {
+  color: #8e8c8d;
+}
+
+body > footer .global-pyladies {
+    margin-top: 15px;
+    color: #aeacad;
+    float: left;
+}
+
+body > footer .global-pyladies a {
+    color: white;
+}
+
+body > footer .global-pyladies a:hover {
+    text-shadow: 0 0 5px white;
+    color: white;
+}
