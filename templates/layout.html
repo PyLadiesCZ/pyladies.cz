@@ -59,10 +59,13 @@
                     <img src="{{ pathto('_static/img/pyladies.png', 1) }}" />
                 </a>
             </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
             <ul class="navbar-other">
                 <li class="materials-dropdown">
                     <a href="{{ pathto('index') }}">Materiály<span class="caret"></span></a>
-                    <ul class="materials-menu">
+                    <ul>
                         {% for name, url in (
                                 ('Brno – začátečnický kurz (pondělí)',
                                     'http://naucse.python.cz/2018/pyladies-brno-jaro/'),
@@ -145,6 +148,7 @@
         </div>
         <div class="clear"></div>
     </footer>
+    <script src="{{ pathto('_static/js/script.js', 1) }}"></script>
     {% endblock footer %}
     {% block javascript %}
     {% endblock javascript %}

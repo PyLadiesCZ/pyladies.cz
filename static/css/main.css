@@ -23,8 +23,14 @@ body {
 body .main-navbar ul {
     display: none;
 }
-body.index-page .main-navbar ul {
+.navbar-menu {
+    display: none;
+}
+body.menu-shown .main-navbar ul {
     display: block;
+}
+body.menu-shown .main-navbar .navbar-menu {
+    display: none;
 }
 .main-navbar .navbar-logo {
     padding-top: 10px;
@@ -32,6 +38,25 @@ body.index-page .main-navbar ul {
 }
 .main-navbar .navbar-logo img {
     max-height: 80px;
+}
+body.have-menu .main-navbar .navbar-logo {
+    text-align: left;
+}
+body.have-menu .main-navbar .navbar-menu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #ededed;
+}
+body.have-menu .main-navbar .navbar-menu:hover {
+    box-shadow: 0 0 2px #8e8c8d;
+}
+body.menu-shown .main-navbar .navbar-menu {
+    background: #cdcdcd;
 }
 .main-navbar ul {
     padding-left: 0;
@@ -89,6 +114,9 @@ body.index-page .main-navbar ul {
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
+    .main-navbar .navbar-menu {
+        display: none !important;
+    }
     body nav.main-navbar ul {
         display: block;
     }
@@ -145,14 +173,14 @@ body.index-page .main-navbar ul {
         border: 1px solid #8e8c8d;
         padding: 0.5ex;
         z-index: 1000;
-    }
-    .main-navbar .materials-dropdown:hover ul {
-        display: block;
         position: absolute;
         right: 1em;
         width: auto;
         text-align: left;
         margin-top: 0;
+    }
+    .main-navbar .materials-dropdown:hover ul {
+        display: block;
     }
     .main-navbar .materials-dropdown ul li {
         display: block;
