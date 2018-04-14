@@ -38,10 +38,9 @@ h2.course-city-heading {
     max-width: 80%;
     margin: 0 auto;
 }
-.about{
+.contact .about{
     margin: 15px;
 }
-
 
 .contact{
     display: inline-flex;    
