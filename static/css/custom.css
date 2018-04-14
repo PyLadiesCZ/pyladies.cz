@@ -25,8 +25,12 @@ footer {
     padding-top: 10px;
     margin-top: 20px;
 }
-.social {
+footer .social {
     width: 40px;
+    opacity: 0.5;
+}
+footer .social:hover {
+    opacity: 1;
 }
 .global-pyladies a,
 .about-p a {
@@ -37,8 +41,15 @@ footer {
 }
 .global-pyladies {
     margin-top: 15px;
-    color: #8e8c8d;
+    color: #aeacad;
     float: left;
+}
+.global-pyladies a {
+    color: white;
+}
+.global-pyladies a:hover {
+    text-shadow: 0 0 5px white;
+    color: white;
 }
 a:hover,
 a:focus,
