@@ -417,7 +417,6 @@ HOMEPAGE
     text-decoration: none;
     width: 100%;
     line-height: 100px;
-    background-color: #e51f40;
 }
 .banner-bcg{
     background-color: #e51f40;
@@ -431,20 +430,11 @@ img.img-style{
 img.img-hover{
     display: none;
 }
+.banner li {
+    background: #e51f40;
+}
 .banner li:hover {
-    background: black;
-}
-.banner li:hover img.img-style,
-.container li:hover img.img-style{
-    display: none;
-}
-.banner li:hover img.img-hover,
-.container  li:hover img.img-hover
-{
-    display: block;
-}
-.banner li:hover span {
-    background-color: #333;
+    background: #333;
 }
 .head li{
     list-style-type: none;
