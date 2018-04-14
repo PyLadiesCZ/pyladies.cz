@@ -31,7 +31,7 @@
   <defs
      id="defs6" />
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#e51f40"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -43,9 +43,9 @@
      inkscape:window-height="990"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="268.8723"
-     inkscape:cy="64.345124"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="350.28085"
+     inkscape:cy="150.07502"
      inkscape:window-x="1920"
      inkscape:window-y="147"
      inkscape:window-maximized="1"
@@ -83,71 +83,12 @@
      id="layer2"
      inkscape:label="Layer 2"
      transform="translate(-231.67952,-425.01758)">
-    <g
-       id="g1272"
-       transform="translate(16)"
-       style="fill:#fa023c">
-      <g
-         style="fill:#fa023c;stroke:none"
-         transform="matrix(0.02388699,0,0,0.02388699,1514.8053,-132.19665)"
-         id="layer1-3" />
-      <g
-         style="fill:#fa023c;stroke:none"
-         transform="matrix(0.00634024,0,0,0.00634024,1326.3286,256.21784)"
-         id="layer1-6" />
-      <g
-         id="g917"
-         transform="matrix(-0.01851576,0,0,0.01851576,1222.0756,-37.508575)"
-         style="fill:#fa023c;stroke:none" />
-      <g
-         transform="matrix(0.0223685,0,0,0.0223685,1414.0491,264.25718)"
-         id="g985"
-         style="fill:#fa023c" />
-      <g
-         id="g1228"
-         transform="matrix(0.01791895,0,0,0.03104793,1556.4419,-259.42378)"
-         style="fill:#fa023c;stroke:none" />
-    </g>
-    <rect
-       style="fill:#d40000;fill-opacity:1"
-       id="rect5196"
-       width="0.15609741"
-       height="1.9356759e-05"
-       x="257.83334"
-       y="424.67587" />
-    <path
-       style="fill:#ffffff;fill-opacity:1"
-       d="M 254.83398,125.20431 H 609.52539 V 293.08984 H 254.83398 Z"
-       id="rect1613"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.87836021"
-       d="M 609.52606,125.20431 H 883.17639 V 293.08984 H 609.52606 Z"
-       id="rect1625"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke-width:1.00535905"
-       d="M 883.17639,125.20431 H 1241.6796 V 293.08984 H 883.17639 Z"
-       id="rect1627"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke-width:1.04205155"
-       d="m 1241.6794,125.20431 h 385.1493 v 167.88553 h -385.1493 z"
-       id="rect1629"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:1.00046778"
-       id="rect1721"
-       width="100"
-       height="200"
-       x="254.834"
-       y="125.0173" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.9987402;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect4525"
        width="102.53049"
        height="201.52544"
-       x="203.39525"
-       y="389.48352" />
+       x="191.91504"
+       y="386.98099" />
   </g>
 </svg>
