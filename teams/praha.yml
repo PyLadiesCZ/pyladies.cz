@@ -122,39 +122,38 @@
   - github-link: https://github.com/honzajavorek
 
 # Neaktivní:
-- _inactive:
-  - name: Vašek Chalupníček
-    img: img/praha/team/vasek.jpg
-    role: Kouč
-    links:
-    - github-link: https://github.com/vasekch
-    - linkedin-link: https://www.linkedin.com/in/v%C3%A1clav-chalupn%C3%AD%C4%8Dek-15a2b228
-  - name: Honza Čermák
-    img: img/praha/team/honza.jpg
-    role: Kouč
-    links:
-    - twitter-link: https://twitter.com/sairon
-  - name: Svetlana Margetová
-    img: img/praha/team/sveta.jpg
-    role: Koučka
-    links:
-    - github-link: https://github.com/SvetlanaM
-    - website-link: http://margetova.eu/
-    - linkedin-link: https://www.linkedin.com/in/msvetlana
-  - name: Veronika Gabrielová
-    img: img/praha/team/veronika.jpg
-    role: Organizátorka
-    links:
-    - mail-link: mailto:gabrielova.veronika@gmail.com
-    - facebook-link: https://www.facebook.com/veronika.gabrielova.7
-  - name: Kristýna Doležalová
-    img: img/praha/team/tyna2.jpg
-    role: Organizátorka/Koučka
-    links:
-    - mail-link: mailto:dolezalova.tynka@gmail.com
-    - facebook-link: https://www.facebook.com/kristyna.dolezalova.58
-  - name: Veronika Švecová
-    img: img/praha/team/verca.jpg
-    role: Organizátorka/Koučka
-    links:
-    - twitter-link: https://twitter.com/ostruzina
+#  - name: Vašek Chalupníček
+#    img: img/praha/team/vasek.jpg
+#    role: Kouč
+#    links:
+#    - github-link: https://github.com/vasekch
+#    - linkedin-link: https://www.linkedin.com/in/v%C3%A1clav-chalupn%C3%AD%C4%8Dek-15a2b228
+#  - name: Honza Čermák
+#    img: img/praha/team/honza.jpg
+#    role: Kouč
+#    links:
+#    - twitter-link: https://twitter.com/sairon
+#  - name: Svetlana Margetová
+#    img: img/praha/team/sveta.jpg
+#    role: Koučka
+#    links:
+#    - github-link: https://github.com/SvetlanaM
+#    - website-link: http://margetova.eu/
+#    - linkedin-link: https://www.linkedin.com/in/msvetlana
+#  - name: Veronika Gabrielová
+#    img: img/praha/team/veronika.jpg
+#    role: Organizátorka
+#    links:
+#    - mail-link: mailto:gabrielova.veronika@gmail.com
+#    - facebook-link: https://www.facebook.com/veronika.gabrielova.7
+#  - name: Kristýna Doležalová
+#    img: img/praha/team/tyna2.jpg
+#    role: Organizátorka/Koučka
+#    links:
+#    - mail-link: mailto:dolezalova.tynka@gmail.com
+#    - facebook-link: https://www.facebook.com/kristyna.dolezalova.58
+#  - name: Veronika Švecová
+#    img: img/praha/team/verca.jpg
+#    role: Organizátorka/Koučka
+#    links:
+#    - twitter-link: https://twitter.com/ostruzina
