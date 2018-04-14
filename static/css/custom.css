@@ -21,32 +21,6 @@ a:focus,
 .smaller {
   font-size: 25px !important;
 }
-/* NAVIGATION */
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: none;
-    background-color: #fff;
-    color: #333;
-}
-.navbar-custom .navbar-brand {
-    font-weight: 700;
-}
-.navbar-nav>li>.dropdown-menu {
-    border: none;
-
-}
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-.navbar-custom a {
-    color: #333;
-}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
-.nav>li>a:focus, .nav>li>a:hover,
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  background: transparent;
-  color: #fa023c;
-}
 
 /*******************
 INTRO IMAGES
@@ -157,56 +131,6 @@ HOMEPAGE
   float: left;
 }
 
-.cities-banner ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    max-width: 1170px;
-    margin: 0 auto;
-
-}
-.cities-banner a {
-    display: flex;
-    flex-direction: column;
-    outline: none;
-}
-.cities-banner img{
-    width: 100%;
-}
-.cities-banner span{
-    font-size: 2.3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    line-height: 100px;
-}
-.cities-banner {
-    background-color: #e51f40;
-    background-image: url(../img/bcg.svg);
-    background-position: top left;
-    background-repeat: repeat-x;
-}
-.cities-banner.faded-banner {
-    background: #8e8c8d;
-    background-image: url(../img/bcg.svg);
-    background-position: top left;
-    background-repeat: repeat-x;
-}
-.cities-banner li {
-    background: #e51f40;
-}
-.cities-banner.faded-banner li {
-    background: #8e8c8d;
-}
-.cities-banner li.current-city {
-    background: #e51f40;
-}
-.cities-banner li:hover {
-    background: #333;
-}
 .head li{
     list-style-type: none;
     text-align: center;

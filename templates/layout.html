@@ -50,23 +50,16 @@
     <!-- End Zeerat code -->
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target="">
+    <body>
       <!-- Navigation -->
-      <nav class="navbar navbar-custom" role="navigation">
-          <div class="container">
-              <div class="navbar-header">
-                  <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                      <i class="fa fa-bars"></i>
-                  </button> -->
-                  <a class="navbar-brand page-scroll" href="{{ pathto('index') }}">
-                      <img class="logo-i" src="{{ pathto('_static/img/pyladies.png', 1) }}" />
-                  </a>
-              </div>
-              <div class="navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="{{ pathto('index') }}">
+                    <img src="{{ pathto('_static/img/pyladies.png', 1) }}" />
+                </a>
+            </div>
+            <div class="container">
+                <ul class="navbar-other container">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
                             <span class="caret"></span>
@@ -96,33 +89,33 @@
                         </ul>
                     </li>
 
-                    <li class="join">
+                    <li>
                       <a href="{{ pathto('stan_se') }}">Staň se PyLady!</a>
                     </li>
-                    <li class="join">
+                    <li>
                       <a href="{{ pathto('faq') }}">FAQ</a>
                     </li>
                 </ul>
             </div>
+            <div class="navbar-cities {% block banner_class %}faded-banner{% endblock %}">
+                <ul>
+                    {% for city, title in {
+                        'praha': 'Praha',
+                        'brno': 'Brno',
+                        'ostrava': 'Ostrava',
+                        'ostatni': 'Tvé město...',
+                        }.items() %}
+                    <li {% block current_city_class scoped %}{% endblock %}>
+                        <a href="{{ pathto(city) }}">
+                            <img class="city-outline" src="{{ pathto('_static/img/'+city+'.svg', 1) }}" alt="">
+                            <span>{{ title }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </nav>
-    <section class="cities-banner {% block banner_class %}faded-banner{% endblock %}">
-        <ul>
-            {% for city, title in {
-                'praha': 'Praha',
-                'brno': 'Brno',
-                'ostrava': 'Ostrava',
-                'ostatni': 'Tvé město...',
-                }.items() %}
-            <li {% block current_city_class scoped %}{% endblock %}>
-                <a href="{{ pathto(city) }}">
-                    <img class="city-outline" src="../static/img/{{ city }}.svg" alt="">
-                    <span>{{ title }}</span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
     {% block content %} {% endblock %}
     {% block footer %}
     <footer>

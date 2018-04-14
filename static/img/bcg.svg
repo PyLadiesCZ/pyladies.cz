@@ -40,14 +40,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="990"
+     inkscape:window-height="1043"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.70710678"
      inkscape:cx="350.28085"
      inkscape:cy="150.07502"
-     inkscape:window-x="1920"
-     inkscape:window-y="147"
+     inkscape:window-x="0"
+     inkscape:window-y="120"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2"
      showguides="true"
@@ -56,7 +56,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     units="px">
+     units="px"
+     inkscape:pagecheckerboard="true">
     <sodipodi:guide
        position="377.84651,14.797202"
        orientation="1,0"
