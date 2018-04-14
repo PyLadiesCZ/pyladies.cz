@@ -21,20 +21,37 @@ body {
     color: #333;
 }
 
+.main-navbar .navbar-logo {
+    padding-top: 10px;
+}
 .main-navbar .navbar-logo img {
     max-height: 80px;
 }
 .main-navbar ul {
     padding-left: 0;
     padding-top: 10px;
-    margin-bottom: 0;
-    min-height: 80px;
+    padding-bottom: 0;
+    margin: 0;
 }
 .main-navbar li {
-    padding-left: 0;
     display: block;
     list-style-type: none;
-    color: #333;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background: #8e8c8d;
+}
+.main-navbar li:hover {
+    background: #333;
+}
+.main-navbar a {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.main-navbar a:hover {
+    color: white;
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
@@ -49,9 +66,24 @@ body {
         padding-left: 200px;
         text-align: right;
         min-height: 50px;
+        min-height: 80px;
     }
     .main-navbar .navbar-other li {
-        padding-left: 20px;
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    .main-navbar li {
+        padding: 0;
+    }
+    .main-navbar .navbar-other li {
+        background: transparent;
+        color: #333;
+    }
+    .main-navbar .navbar-other a {
+        color: #333;
+    }
+    .main-navbar .navbar-other a:hover {
+        color: #e51f40;
     }
 }
 @media all and (min-width: 620px) {
@@ -60,13 +92,6 @@ body {
         display: inline-block;
     }
 }
-.main-navbar .navbar-other a {
-    color: #333;
-}
-.main-navbar .navbar-other a:hover {
-    color: #e51f40;
-}
-
 .navbar-cities ul {
     margin-top: 0;
     padding-top: 0;
@@ -75,8 +100,6 @@ body {
     display: none;
 }
 .navbar-cities li {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .navbar-cities {
     background-color: #e51f40;
@@ -96,18 +119,12 @@ body {
 .navbar-cities li:hover {
     background: #333;
 }
-.navbar-cities a {
-    width: 100%;
-    display: block;
-}
 .navbar-cities span {
     color: white;
-    text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
 }
 @media all and (min-width: 404px) {
-    /* On most screens, show the  silhouettes */
+    /* On most screens, show the city silhouettes */
     .navbar-cities {
         margin: 0;
         padding: 0;
@@ -134,6 +151,7 @@ body {
         text-align: center;
         width: 100%;
         line-height: 9vw;
+        text-transform: uppercase;
     }
     .navbar-cities {
         background-image: url(../img/bcg.svg);
