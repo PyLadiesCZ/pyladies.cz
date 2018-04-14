@@ -124,6 +124,12 @@ HOMEPAGE
     padding-top: 30px;
 
 }
+.about-link a {
+    color: #e51f40;
+}
+.about-link a:hover {
+    color: #333;
+}
 .about-p {
     color: #8e8c8d;
 }
