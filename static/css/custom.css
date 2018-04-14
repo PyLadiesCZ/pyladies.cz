@@ -231,6 +231,7 @@ HOMEPAGE
 .banner a {
     display: flex;
     flex-direction: column;
+    outline: none;
 }
 .banner img{
     width: 100%;
@@ -245,8 +246,14 @@ HOMEPAGE
     width: 100%;
     line-height: 100px;
 }
-.banner-bcg{
+.banner-bcg {
     background-color: #e51f40;
+    background-image: url(../img/bcg.svg);
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+.banner-bcg.faded-banner {
+    background: #8e8c8d;
     background-image: url(../img/bcg.svg);
     background-position: top left;
     background-repeat: repeat-x;
@@ -258,6 +265,12 @@ img.img-hover{
     display: none;
 }
 .banner li {
+    background: #e51f40;
+}
+.faded-banner .banner li {
+    background: #8e8c8d;
+}
+.banner li.current-city {
     background: #e51f40;
 }
 .banner li:hover {

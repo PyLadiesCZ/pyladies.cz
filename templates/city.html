@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 
+{% block current_city_class -%}
+    {% if city_slug == city -%}
+        class='current-city'
+    {%- endif -%}
+{%- endblock -%}
+
 {% macro meetup_info(meetup, with_registration_link=True) %}
   <div class="meetup-box text-left">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">

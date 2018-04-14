@@ -183,36 +183,22 @@
             </div>
         </div>
     </nav>
-    <section class="banner-bcg">
+    <section class="banner-bcg {% block banner_class %}faded-banner{% endblock %}">
         <ul class="banner">
-            <li>
-                <a href="{{ pathto('praha') }}">
-                    <img class="city-outline" src="../static/img/praha.svg" alt="">
-                    <span>Praha</span>
+            {% for city, title in {
+                'praha': 'Praha',
+                'brno': 'Brno',
+                'ostrava': 'Ostrava',
+                'ostatni': 'Tvé město...',
+                }.items() %}
+            <li {% block current_city_class scoped %}{% endblock %}>
+                <a href="{{ pathto(city) }}">
+                    <img class="city-outline" src="../static/img/{{ city }}.svg" alt="">
+                    <span>{{ title }}</span>
                 </a>
             </li>
-            <li>
-                <a href="{{ pathto('brno') }}">
-                    <img class="city-outline" src="../static/img/brno.svg" alt="">
-                    <span>Brno</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ pathto('ostrava') }}">
-                    <img class="city-outline" src="../static/img/ostrava.svg" alt="">
-                    <span>Ostrava</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ pathto('ostatni') }}">
-                    <img class="city-outline" src="../static/img/ostatni.svg" alt="">
-                    <span>Tvé město...</span>
-                </a>
-            </li>
-
-
+            {% endfor %}
         </ul>
-
     </section>
     {% block content %} {% endblock %}
     {% block footer %}
