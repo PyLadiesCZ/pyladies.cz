@@ -20,6 +20,12 @@ body {
     background-color: #fff;
     color: #333;
 }
+body .main-navbar ul {
+    display: none;
+}
+body.index-page .main-navbar ul {
+    display: block;
+}
 .main-navbar .navbar-logo {
     padding-top: 10px;
     text-align: center;
@@ -83,7 +89,7 @@ body {
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
-    .main-navbar ul {
+    body nav.main-navbar ul {
         display: block;
     }
     .main-navbar .navbar-logo img {
@@ -130,7 +136,7 @@ body {
         background: transparent;
         background: #ededed;
     }
-    .main-navbar .materials-dropdown ul {
+    body .main-navbar .materials-dropdown ul {
         display: none;
         -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
         box-shadow: 0 1px 8px 1px rgba(51, 51, 51, 0.13);
@@ -213,7 +219,7 @@ body {
         width: 100%;
     }
     .navbar-cities ul {
-        display: flex;
+        display: flex !important;
         list-style-type: none;
         padding: 0;
         max-width: 1170px;
