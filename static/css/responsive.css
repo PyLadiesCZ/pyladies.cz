@@ -514,8 +514,8 @@
     display: block;
     margin-top: 20px;
   }
-  .copy {
-    display: none;
+  .global-pyladies {
+    float: none;
   }
   .meetup-box .col-xs-12 {
     width: 100%;

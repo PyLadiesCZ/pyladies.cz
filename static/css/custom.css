@@ -28,16 +28,17 @@ footer {
 .social {
     width: 40px;
 }
-.copy a,
+.global-pyladies a,
 .about-p a {
   color: #8e8c8d;
 }
 .beer {
     height: 70px;
 }
-.copy {
+.global-pyladies {
     margin-top: 15px;
     color: #8e8c8d;
+    float: left;
 }
 a:hover,
 a:focus,
