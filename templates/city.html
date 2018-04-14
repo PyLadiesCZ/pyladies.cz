@@ -62,16 +62,8 @@
 
 {% block content %}
   <!-- Intro Header -->
-  <header class="intro-info intro-city-{{ city_slug }}">
-      <div class="intro-body">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-                      <p class="intro-text-city">{{ city_title | upper }}</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+  <header class="intro-city">
+      <h1>{{ city_title | upper }}</h1>
   </header>
 
   <!-- Current Meetups -->

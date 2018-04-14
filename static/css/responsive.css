@@ -117,9 +117,6 @@
   img.partner-logo.logo-cz {
     height: 65px !important;
   }
-  button.btn.btn-couch {
-    margin-right: -10px;
-  }
   .course-city {
     padding: 5px 15px;
   }
@@ -133,9 +130,6 @@
     display: inline-flex;
     max-width: 50%;
   }
-  .couch {
-    padding-bottom: 10px;
-  }
   .meetup-box .col-xs-12 {
     width: 50%;
   }
@@ -148,9 +142,6 @@
   .partners div:nth-child(4) {
     margin-left: 15px;
   }
-  .left-couch, .right-couch {
-    margin-left: -30px;
-  }
 }
 
 @media all  and (max-width: 667px) {
@@ -160,9 +151,6 @@
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: inline-flex;
     max-width: 50%;
-  }
-  .couch {
-    padding-bottom: 10px;
   }
   .meetup-box .col-xs-12 {
     width: 50%;
@@ -183,13 +171,6 @@
   }
   .info-city {
     padding-bottom: 20px !important;
-  }
-  .left-couch, .right-couch {
-    margin-left: -30px;
-  }
-
-  button.btn.btn-couch {
-    margin-left: -35px;
   }
 }
 
@@ -369,15 +350,9 @@
 }
 
 @media all and (max-width: 568px) {
-  .btn-couch {
-    margin-left: -56px;
-  }
   p.pull-left.copy {
     font-size: 14px;
     margin-top: 15px;
-  }
-  button.btn.btn-couch {
-    margin-left: 50px;
   }
 }
 @media all and (max-width: 414px) {
@@ -404,9 +379,6 @@
     display: inline-flex;
     max-width: 98%;
   }
-  .btn-couch {
-    margin-left: -140px;
-  }
   .actual .col-xs-5 {
     width: 85%;
   }
@@ -419,10 +391,6 @@
   .section-icon {
     height: 45px;
   }
-  button.btn.btn-couch {
-    margin-left: -154px;
-  }
-
   a .news-summer .news-title {
     font-size: 14px;
   }
@@ -455,9 +423,6 @@
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: inline-flex;
     max-width: 98%;
-  }
-  .btn-couch {
-    margin-left: -140px;
   }
   .actual .col-xs-5 {
     width: 85%;
@@ -505,9 +470,6 @@
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: inline-flex;
     max-width: 98%;
-  }
-  .btn-couch {
-    margin-left: -140px;
   }
   .actual .col-xs-5 {
     width: 85%;
@@ -579,10 +541,6 @@
   }
   .partner-logo {
     height: 70px !important;
-  }
-  .btn-couch {
-    padding: 10px 16px;
-    margin-left: -147px !important;
   }
   a .about img {
     width: 100%;
