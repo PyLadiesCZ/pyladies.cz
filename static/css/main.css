@@ -20,9 +20,9 @@ body {
     background-color: #fff;
     color: #333;
 }
-
 .main-navbar .navbar-logo {
     padding-top: 10px;
+    text-align: center;
 }
 .main-navbar .navbar-logo img {
     max-height: 80px;
@@ -62,6 +62,8 @@ body {
     display: block;
     color: white;
     text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .main-navbar a:hover {
     color: white;
@@ -81,11 +83,20 @@ body {
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
+    .main-navbar ul {
+        display: block;
+    }
     .main-navbar .navbar-logo img {
         height: 80px;
         display: block;
         position: absolute;
         top: 10px;
+    }
+    .main-navbar a {
+        padding: 0;
+    }
+    .main-navbar .caret {
+        display: inline-block;
     }
     .main-navbar .navbar-other {
         padding-top: 10px;
@@ -93,6 +104,9 @@ body {
         text-align: right;
         min-height: 50px;
         min-height: 80px;
+    }
+    .main-navbar li {
+        min-height: 1em;
     }
     .main-navbar .navbar-other li {
         padding-left: 15px;
@@ -168,8 +182,6 @@ body {
 }
 .navbar-cities li img {
     display: none;
-}
-.navbar-cities li {
 }
 .navbar-cities {
     background-color: #e51f40;
