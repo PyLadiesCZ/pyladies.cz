@@ -22,22 +22,43 @@ body {
 }
 
 .main-navbar .navbar-logo img {
-    height: 80px;
-    display: block;
-    position: absolute;
-    top: 10px;
+    max-height: 80px;
 }
-.main-navbar .navbar-other {
+.main-navbar ul {
+    padding-left: 0;
     padding-top: 10px;
-    padding-left: 200px;
+    margin-bottom: 0;
     min-height: 80px;
-    text-align: right;
 }
-.main-navbar .navbar-other li {
-    display: inline-block;
+.main-navbar li {
+    padding-left: 0;
+    display: block;
     list-style-type: none;
-    padding-left: 20px;
     color: #333;
+}
+@media all and (min-width: 404px) {
+    /* On most screens the logo and menu are side by side */
+    .main-navbar .navbar-logo img {
+        height: 80px;
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    .main-navbar .navbar-other {
+        padding-top: 10px;
+        padding-left: 200px;
+        text-align: right;
+        min-height: 50px;
+    }
+    .main-navbar .navbar-other li {
+        padding-left: 20px;
+    }
+}
+@media all and (min-width: 620px) {
+    /* On large screens the menu is on one line */
+    .main-navbar .navbar-other li {
+        display: inline-block;
+    }
 }
 .main-navbar .navbar-other a {
     color: #333;
@@ -47,48 +68,21 @@ body {
 }
 
 .navbar-cities ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    max-width: 1170px;
-    margin: 0 auto;
-
+    margin-top: 0;
+    padding-top: 0;
 }
-.navbar-cities a {
-    display: flex;
-    flex-direction: column;
-    outline: none;
+.navbar-cities li img {
+    display: none;
 }
-.navbar-cities img{
-    width: 100%;
-}
-.navbar-cities span{
-    font-size: 3vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    line-height: 9vw;
-}
-@media all and (min-width: 1000px) {
-    .navbar-cities span{
-        font-size: 2.3em;
-        line-height: 100px;
-    }
+.navbar-cities li {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .navbar-cities {
     background-color: #e51f40;
-    background-image: url(../img/bcg.svg);
-    background-position: top left;
-    background-repeat: repeat-x;
 }
 .navbar-cities.faded-banner {
     background: #8e8c8d;
-    background-image: url(../img/bcg.svg);
-    background-position: top left;
-    background-repeat: repeat-x;
 }
 .navbar-cities li {
     background: #e51f40;
@@ -101,6 +95,66 @@ body {
 }
 .navbar-cities li:hover {
     background: #333;
+}
+.navbar-cities a {
+    width: 100%;
+    display: block;
+}
+.navbar-cities span {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media all and (min-width: 404px) {
+    /* On most screens, show the  silhouettes */
+    .navbar-cities {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar-cities ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .navbar-cities a {
+        display: flex;
+        flex-direction: column;
+        outline: none;
+    }
+    .navbar-cities li img{
+        width: 100%;
+        display: block;
+    }
+    .navbar-cities span{
+        font-size: 3vw;  /* fluid font size */
+        text-align: center;
+        width: 100%;
+        line-height: 9vw;
+    }
+    .navbar-cities {
+        background-image: url(../img/bcg.svg);
+        background-position: top left;
+        background-repeat: repeat-x;
+    }
+    .navbar-cities.faded-banner {
+        background-image: url(../img/bcg.svg);
+        background-position: top left;
+        background-repeat: repeat-x;
+    }
+    .navbar-cities li {
+        padding: 0;
+    }
+}
+@media all and (min-width: 1000px) {
+    /* For very big sceens, set a max font size */
+    .navbar-cities span{
+        font-size: 2.3em;
+        line-height: 100px;
+    }
 }
 
 body > footer {
