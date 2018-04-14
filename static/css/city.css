@@ -1,0 +1,40 @@
+h2.course-city-heading {
+    padding-bottom: 40px;
+    text-align: center;
+}
+.grid-team {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,250px);
+}
+
+#team {
+    padding-bottom: 45px;
+}
+
+.person {
+    text-align: center;
+}
+.person ul {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0;
+    justify-content: center;
+}
+.person li {
+    list-style-type: none;
+}
+.person li img {
+    vertical-align: middle;
+    max-height: 30px;
+    margin: 5px;
+}
+.member-name {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.img-circle {
+    border-radius: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}

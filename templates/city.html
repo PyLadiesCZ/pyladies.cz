@@ -187,25 +187,26 @@
     </section>
 
     <!-- Team section -->
-    <section id="team" class="container text-center">
+    <section id="team" class="container" >
       <h2 class="course-city-heading">{{ team_name }}</h2>
-
+      <div class="grid-team ">
       {% for member in team %}
-      <div class="member-box col-md-3 col-sm-6 col-xs-12">
+      <div class="person">
         <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle img-responsive" />
-        <h5 class="member-name text-center"><strong>{{ member.name }}</strong></h5>
+        <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
         <span><em>{{ member.role }}</em></span>
-        <ul class="list-inline">
+        <ul>
           {%- for link in member.links -%}{%- for type, url in link.items() -%}
             <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
           {%- endfor -%}{%- endfor -%}
         </ul>
       </div>
       {% endfor %}
+    </div>
     </section>
 
   <!-- Past Meetups -->
-  <section class="meetup container text-center" id="meetups">
+  <section  class="meetup container text-center" id="meetups">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
         <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
