@@ -11,9 +11,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   width="2000"
-   height="102"
-   viewBox="0 0 2000 101.99999"
+   width="20"
+   height="136"
+   viewBox="0 0 20 135.99998"
    sodipodi:docname="bcg.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
@@ -39,15 +39,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="704"
+     inkscape:window-width="1920"
+     inkscape:window-height="990"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="1647.2515"
-     inkscape:cy="50.995507"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="268.8723"
+     inkscape:cy="64.345124"
+     inkscape:window-x="1920"
+     inkscape:window-y="147"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2"
      showguides="true"
@@ -82,7 +82,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="translate(-231.67952,-460.01758)">
+     transform="translate(-231.67952,-426.01758)">
     <g
        id="g1272"
        transform="translate(16)"
@@ -135,11 +135,6 @@
        d="m 1241.6794,125.20431 h 385.1493 v 167.88553 h -385.1493 z"
        id="rect1629"
        inkscape:connector-curvature="0" />
-    <path
-       style="fill:#e51f40;fill-opacity:1;stroke-width:2.03034377"
-       d="M 231.67952,460.01758 H 2231.6795 v 102 H 231.67952 Z"
-       id="rect1995"
-       inkscape:connector-curvature="0" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke-width:1.00046778"
        id="rect1721"
@@ -147,5 +142,12 @@
        height="200"
        x="254.834"
        y="125.0173" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.9987402;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4525"
+       width="102.53049"
+       height="201.52544"
+       x="203.39525"
+       y="389.48352" />
   </g>
 </svg>

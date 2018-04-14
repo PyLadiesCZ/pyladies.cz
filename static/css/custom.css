@@ -405,10 +405,6 @@ HOMEPAGE
     display: flex;
     flex-direction: column;
 }
-.banner li:hover {
-    background: black;
-    background: linear-gradient(to bottom, #fff 0px,#fff 136px,#000 136px,#000 50px);
-}
 .banner img{
     width: 100%;
 }
@@ -424,9 +420,9 @@ HOMEPAGE
     background-color: #e51f40;
 }
 .banner-bcg{
+    background-color: #e51f40;
     background-image: url(../img/bcg.svg);
-    background: linear-gradient(to bottom, #fff 0px,#fff 136px,#e51f40 136px,#e51f40 50px);
-    background-position: bottom -1px left;
+    background-position: top left;
     background-repeat: repeat-x;
 }
 img.img-style{
@@ -434,6 +430,9 @@ img.img-style{
 }
 img.img-hover{
     display: none;
+}
+.banner li:hover {
+    background: black;
 }
 .banner li:hover img.img-style,
 .container li:hover img.img-style{
