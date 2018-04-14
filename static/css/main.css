@@ -29,9 +29,11 @@ body {
 }
 .main-navbar ul {
     padding-left: 0;
-    padding-top: 10px;
     padding-bottom: 0;
     margin: 0;
+}
+.main-navbar ul.navbar-other {
+    padding-top: 10px;
 }
 .main-navbar li {
     display: block;
@@ -44,6 +46,9 @@ body {
 .main-navbar li:hover {
     background: #333;
 }
+.main-navbar .materials-dropdown:hover {
+    background: #8e8c8d;
+}
 .main-navbar a {
     width: 100%;
     display: block;
@@ -52,6 +57,15 @@ body {
 }
 .main-navbar a:hover {
     color: white;
+}
+.main-navbar .caret {
+    display: none;
+}
+.main-navbar ul ul li {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 45px;
+    padding-right: 30px;
 }
 @media all and (min-width: 404px) {
     /* On most screens the logo and menu are side by side */
@@ -69,8 +83,8 @@ body {
         min-height: 80px;
     }
     .main-navbar .navbar-other li {
-        padding-left: 0px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .main-navbar li {
         padding: 0;
@@ -85,11 +99,52 @@ body {
     .main-navbar .navbar-other a:hover {
         color: #e51f40;
     }
+    /* and the Materials dropdown is hidden */
+    .main-navbar .materials-dropdown:hover {
+        background: transparent;
+        background: #ededed;
+    }
+    .main-navbar .materials-dropdown ul {
+        display: none;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 1px 8px 1px rgba(51, 51, 51, 0.13);
+        background-color: #ededed;
+        border-radius: 4px;
+        border: 1px solid #8e8c8d;
+        padding: 0.5ex;
+        z-index: 1000;
+    }
+    .main-navbar .materials-dropdown:hover ul {
+        display: block;
+        position: absolute;
+        right: 1em;
+        width: auto;
+        text-align: left;
+        margin-top: 0;
+    }
+    .main-navbar .materials-dropdown ul li {
+        display: block;
+        color: #333;
+        background: transparent;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-navbar .materials-dropdown ul li a {
+        color: #333;
+    }
+    .main-navbar .materials-dropdown ul li a:hover {
+        color: #e51f40;
+    }
 }
 @media all and (min-width: 620px) {
     /* On large screens the menu is on one line */
     .main-navbar .navbar-other li {
         display: inline-block;
+    }
+    .main-navbar .materials-dropdown:hover {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
     }
 }
 .navbar-cities ul {

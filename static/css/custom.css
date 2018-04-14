@@ -145,13 +145,6 @@ h3, span {
 }
 
 
-.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu {
-  display: block;
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  box-shadow: 0 1px 8px 1px rgba(51, 51, 51, 0.13);
-  background-color: #f7f7f7;
-}
-
 /*******************
 CITIES PAGE
 *******************/
