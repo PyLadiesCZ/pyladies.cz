@@ -38,3 +38,22 @@ h2.course-city-heading {
     max-width: 80%;
     margin: 0 auto;
 }
+.about{
+    margin: 15px;
+}
+
+
+.contact{
+    display: inline-flex;    
+    width: 100%;
+    justify-content: space-between;
+}
+.contacts .row{
+    text-align: center;
+}
+section.contacts div a {
+    color: #fff;
+    min-width: 25%;
+    flex: 1 1 auto;
+}
+

@@ -40,10 +40,7 @@
     .member-box{
       min-height: 380px
     }
-  a .about img {
-    width: 100%;
-    height: auto;
-  }
+
   img.partner-logo {
     width: auto !important;
     display: block;
