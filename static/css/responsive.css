@@ -16,10 +16,6 @@
     .new-city {
       padding: 33px 0px;
     }
-
-    .news-summer-p {
-      min-height: 645px;
-    }
 }
 @media(max-width:992px){
     .banner span{
@@ -40,11 +36,6 @@
 
     .col-xs-12.col-sm-12.col-md-4.col-lg-4.about {
       margin-top: 50px;
-    }
-    .news-summer-p {
-      min-height: auto;
-      margin-top: 60px;
-      border: none;
     }
     .member-box  ul li a img {
       width: 20px !important;
@@ -379,10 +370,6 @@
   .section-icon {
     height: 45px;
   }
-  a .news-summer .news-title {
-    font-size: 14px;
-  }
-
   a .about .about-title {
     font-size: 14px;
   }

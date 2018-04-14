@@ -68,23 +68,6 @@ HOMEPAGE
     margin-top: -10px;
 }
 
-#news {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-#news-main-title {
-    margin: 0;
-    color: #000000;
-}
-.news-title {
-  margin-bottom: 20px;
-  color: #000000;
-}
-.news-p {
-  padding: 40px 40px 40px 0;
-  color: #8e8c8d;
-}
-
 #about {
     padding-top: 30px;
 
