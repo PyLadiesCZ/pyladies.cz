@@ -484,13 +484,21 @@ margin-left: -30px;
         height: 80px;
         position: relative;
 }
-#about3 {
+section.other-activities {
+    margin: 0;
+    padding: 0 10px 50px;
+    width: 100%;
+}
+section.recommendations,
+section.contacts {
+    margin: 0;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 0 10px 50px;
     background: rgb(229,31,64);
     color: #fff;
+    width: 100%;
 }
-#about3 div a {
+section.contacts div a {
     color: #fff;
 }
 .photo-box {
