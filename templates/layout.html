@@ -64,7 +64,7 @@
             </div>
             <ul class="navbar-other">
                 <li class="materials-dropdown">
-                    <a href="{{ pathto('index') }}">Materiály<span class="caret"></span></a>
+                    <a>Materiály<span class="caret"></span></a>
                     <ul>
                         {% for name, url in (
                                 ('Brno – začátečnický kurz (pondělí)',
@@ -107,8 +107,10 @@
                         }.items() %}
                     <li {% block current_city_class scoped %}{% endblock %}>
                         <a href="{{ pathto(city) }}">
-                            <img class="city-outline" src="{{ pathto('_static/img/'+city+'.svg', 1) }}" alt="">
-                            <span>{{ title }}</span>
+                            <span class="img-container">
+                                <img class="city-outline" src="{{ pathto('_static/img/'+city+'.svg', 1) }}" alt="">
+                            </span>
+                            <span class="city-title">{{ title }}</span>
                         </a>
                     </li>
                     {% endfor %}
