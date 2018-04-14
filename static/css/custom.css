@@ -405,6 +405,10 @@ HOMEPAGE
     display: flex;
     flex-direction: column;
 }
+.banner li:hover {
+    background: black;
+    background: linear-gradient(to bottom, #fff 0px,#fff 136px,#000 136px,#000 50px);
+}
 .banner img{
     width: 100%;
 }
@@ -421,6 +425,7 @@ HOMEPAGE
 }
 .banner-bcg{
     background-image: url(../img/bcg.svg);
+    background: linear-gradient(to bottom, #fff 0px,#fff 136px,#e51f40 136px,#e51f40 50px);
     background-position: bottom -1px left;
     background-repeat: repeat-x;
 }
