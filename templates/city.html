@@ -7,9 +7,8 @@
 {%- endblock -%}
 
 {% macro meetup_info(meetup, with_registration_link=True) %}
-  <div class="meetup-box text-left">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>
+  <div class="meetup-width">
+      <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>  
       {% if meetup.start and meetup.end %}
         <p class="meetup-date">
           <span class="glyphicon glyphicon-calendar"></span>
@@ -62,7 +61,6 @@
           </a>
         </p>
       {% endif %}
-    </div>
   </div>
 {% endmacro %}
 
@@ -83,18 +81,13 @@
   </header>
 
   <!-- Current Meetups -->
-  <section class="meetup container text-center" id="meetups">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
-      </div>
-    </div>
-    <div class="row">
+  <section class=" container text-center" id=""> 
+        <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>  
+    <div class="meetup-grid">
       {% for meetup in meetups %}
         {% if meetup.current %}
          {{ meetup_info(meetup) }}
-          {% if not loop.last and loop.index0 % 2 %}
-            </div><div class="row">
+          {% if not loop.last and loop.index0 % 2 %}            
           {% endif %}
         {% endif %}
       {% endfor %}
@@ -208,18 +201,16 @@
     </section>
 
   <!-- Past Meetups -->
-  <section  class="meetup container text-center" id="meetups">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10">
-        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
-      </div>
+  <section  class=" container text-center" id="meetups">
+    <div class="row">      
+        <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>      
     </div>
-    <div class="row">
+    <div class="meetup-grid">
       {% for meetup in meetups %}
         {% if not meetup.current %}
           {{ meetup_info(meetup,  with_registration_link=False) }}
           {% if not loop.last and loop.index0 % 2 %}
-            </div><div class="row">
+            
           {% endif %}
         {% endif %}
       {% endfor %}

@@ -323,6 +323,7 @@ body > footer ul {
 body > footer li {
     list-style: none;
     display: inline;
+    padding: 0 5px;
 }
 
 body > footer img {
