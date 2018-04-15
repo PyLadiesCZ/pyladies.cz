@@ -95,6 +95,7 @@
   </section>
 
     <!-- Contact -->
+    {% if city_slug != 'ostatni' %}
     <section class="contacts text-center">
       <div class="container">
         <h2>Kontakty</h2>
@@ -116,6 +117,7 @@
       </div>
       </div>
     </section>
+    {% endif %}
 
     <a name="city-info" id="city-info"></a>
 
@@ -181,6 +183,7 @@
         </div>
     </section>
 
+    {% if city_slug != 'ostatni' %}
     <!-- Team section -->
     <section id="team" class="container" >
       <h2 class="course-city-heading">{{ team_name }}</h2>
@@ -199,6 +202,7 @@
       {% endfor %}
     </div>
     </section>
+    {% endif %}
 
   <!-- Past Meetups -->
   <section  class=" container text-center" id="meetups">
