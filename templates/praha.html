@@ -1,4 +1,68 @@
 {% extends "layout.html" %}
+
+{% macro course_list(plan) %}
+    <div class="row">
+        <div class="sections col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            {% for lesson in plan %}
+            <div class="section-box" id="section{{ loop.index }}">
+                <h4 class="section-heading">
+                    {% if 'dates' in lesson %}
+                        Lekce {{ loop.index }} - {{ lesson['name'] }}
+                        <span class="pull-right section-date">
+                            {% for date in lesson['dates'] %}
+                                {{ date.day }}. {{ date.month }}.
+                                {% if loop.last or date.year != lesson['dates'][-1].year %}
+                                    {{ date.year }}
+                                {% endif %}
+                                {% if not loop.last %}
+                                    a
+                                {% endif %}
+                            {% endfor %}
+                        </span>
+                    {% else %}
+                        {{ lesson['name'] }}
+                    {% endif %}
+                </h4>
+                {% if 'description' in lesson %}
+                    <p class="section-info course-city-p">
+                        {{ lesson['description'] }}
+                    </p>
+                {% endif %}
+                {% for mat in lesson['materials'] %}
+                    {% set done = mat.get('done', lesson.get('done', False)) %}
+                    {% set done_class = 'section-done' if done else 'section-todo' %}
+                    <div class="section-info">
+                        {% if mat['type'] == 'lesson' %}
+                            {% if done %}
+                                {% set icon_class = 'glyphicon-ok ' + done_class %}
+                            {% else %}
+                                {% set icon_class = 'glyphicon-chevron-right ' + done_class %}
+                            {% endif %}
+                        {% elif mat['type'] == 'handout' %}
+                            {% set icon_class = 'glyphicon-book ' + done_class %}
+                        {% elif mat['type'] == 'homework' %}
+                            {% set icon_class = 'glyphicon-pencil' %}
+                        {% elif mat['type'] == 'link' %}
+                            {% set icon_class = 'glyphicon-link' %}
+                        {% elif mat['type'] == 'special-lesson' %}
+                            {% set icon_class = 'glyphicon-education ' + done_class %}
+                        {% else %}
+                            {% set icon_class = 'glyphicon-flag' %}
+                        {% endif %}
+                        <span class="glyphicon {{ icon_class }} section-icon"></span>
+                        {% if 'link' in mat %}
+                            <a href="{{ pathto(mat['link'], 1) }}">{{ mat['name'] }}</a>
+                        {% else %}
+                            {{ mat['name'] }}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
 {% block content %}
     <!-- Intro Header -->
     <header class="intro-info intro-city-praha">
@@ -55,15 +119,5 @@
             </div>
         </div>
         {{ course_list(plan) }}
-    </section>
-    <!-- Advice section -->
-    <section id="about3" class="container-fluid content-section text-center">
-        <div class="row">
-          <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 start-title2">Potřebuješ poradit?</h2>
-          {{ advice(text='Facebook PyLadies Praha', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/1640052339543471/') }}
-          {{ advice(text='PyWorking Praha', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/PyWorkingPraha/') }}
-          {{ advice(text='Google Group PyLadies Praha', img=pathto('_static/img/link/google-group.png', 1), url='https://groups.google.com/forum/#!forum/pyladies-praha') }}
-          {{ advice(text='Napiš koučovi', img=pathto('_static/img/link/coach.png', 1), url='mailto:pyladies-praha@googlegroups.com') }}
-      </div>
     </section>
 {% endblock content %}

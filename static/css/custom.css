@@ -1,46 +1,9 @@
-/*******************
-BASIC CSS
-*******************/
-body {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-  }
 
-html {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
-.animated {
-      position: relative;
-}
 .pull-right li {
   padding-top: 10px;
 }
-footer {
-    background: #333;
-    color: rgba(255, 255, 255, 0.2);
-    padding-bottom: 2px;
-    padding-top: 10px;
-    margin-top: 20px;
-}
-.social {
-    width: 40px;
-}
-.copy a,
 .about-p a {
   color: #8e8c8d;
-}
-.beer {
-    height: 70px;
-}
-.copy {
-    margin-top: 15px;
-    color: #8e8c8d;
 }
 a:hover,
 a:focus,
@@ -58,228 +21,20 @@ a:focus,
 .smaller {
   font-size: 25px !important;
 }
-/* NAVIGATION */
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: none;
-    background-color: #fff;
-    color: #333;
-}
-.navbar-custom .navbar-brand {
-    font-weight: 700;
-}
-.navbar-nav>li>.dropdown-menu {
-    border: none;
-
-}
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-.navbar-custom a {
-    color: #333;
-}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
-.nav>li>a:focus, .nav>li>a:hover,
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  background: transparent;
-  color: #fa023c;
-}
-
-
- .btn-start {
-   padding: 10px 25px;
-   background: transparent;
-   color: #fff;
-   font-size: 20px;
-   border: 1px solid #fff;
-   margin-top: 10px;
- }
-.btn-start:hover,
-.btn-start:focus {
-  background: #fff;
-  border: 1px solid #fa023c;
-  opacity: 0.5;
-  color: #fa023c;
-}
 
 /*******************
 INTRO IMAGES
 *******************/
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
-    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
-    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/intro.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.intro-city-praha {
-    /* display: table; */
+.intro-city, .intro-info {
     display: none;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha_cznic.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha_cznic.jpg) no-repeat bottom center scroll;
-    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha_cznic.jpg) no-repeat bottom center scroll;
-    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha_cznic.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/praha_cznic.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.intro-city-brno {
-    /* display: table; */
-    display: none;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
-    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
-    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/brno.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.intro-city-ostrava {
-    /* display: table; */
-    display: none;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.intro-city-ostatni {
-    /* display: table; */
-    display: none;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: -moz-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -ms-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: -o-linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(250,2,60,0.4) 1%,rgba(250,194,122,0.8) 99%), url(../img/bg/ostrava.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.intro-material {
-    display: table;
-    width: 100%;
-    height: 25% !important;
-    padding: 100px 0;
-    text-align: center;
-    color: #333;
-    /* background: -moz-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: -webkit-linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(top, rgba(229,31,64,1) 1%,rgba(229,31,64,0.5) 99%), url(../img/bg/material.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; */
-}
-
-.intro .intro-body,
-.intro-info .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-.intro .intro-body .brand-heading,
-.intro-info .intro-body .brand-heading {
-    font-size: 40px;
-}
-.intro .intro-body .intro-text,
-.intro-info .intro-body .intro-text {
-    font-size: 18px;
-}
-.intro-text-city {
-    font-weight: bold;
-    font-size: 60px;
 }
 
 /*******************
 HOMEPAGE
 *******************/
-.pyladi-icon {
-    margin-top: 15px;
-    padding: 13px 5px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    outline: none;
-    border-radius: 100%;
-}
-.pyladi-icon:hover,
-.pyladi-icon:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-.actual {
-    background: #e51e41;
-    padding: 25px 0px;
-    color: #fff;
-    z-index: 1000;
-    margin-top: -40px;
-}
-.btn-city {
-    padding: 15px 45px;
-    background: #e51e41;
-    color: #fff;
-    border: none;
-}
-.new-city:hover,
-.new-city:focus{
-    text-decoration: none;
-}
 .join a,
 .join {
     color: #333;
-}
-.actual-address a {
-    color: #fff;
-}
-.actual-address a:hover,
-.actual-address a:focus {
-    text-decoration: underline;
 }
 .logo-i {
   height: 80px;
@@ -287,32 +42,15 @@ HOMEPAGE
     margin-top: -10px;
 }
 
-.comp-icon {
-  height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-#news {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-#news-main-title {
-    margin: 0;
-    color: #000000;
-}
-.news-title {
-  margin-bottom: 20px;
-  color: #000000;
-}
-.news-p {
-  padding: 40px 40px 40px 0;
-  color: #8e8c8d;
-}
-
 #about {
     padding-top: 30px;
 
+}
+.about-link a {
+    color: #e51f40;
+}
+.about-link a:hover {
+    color: #333;
 }
 .about-p {
     color: #8e8c8d;
@@ -393,55 +131,6 @@ HOMEPAGE
   float: left;
 }
 
-.banner{
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    max-width: 1170px;
-    margin: 0 auto;
-
-}
-.banner a {
-    display: flex;
-    flex-direction: column;
-}
-.banner img{
-    width: 100%;
-}
-.banner span{
-    font-size: 2.3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    line-height: 100px;
-    background-color: #e51f40;
-}
-.banner-bcg{
-    background-image: url(../img/bcg.svg);
-    background-position: bottom -1px left;
-    background-repeat: repeat-x;
-}
-img.img-style{
-    display: block;
-}
-img.img-hover{
-    display: none;
-}
-.banner li:hover img.img-style,
-.container li:hover img.img-style{
-    display: none;
-}
-.banner li:hover img.img-hover,
-.container  li:hover img.img-hover
-{
-    display: block;
-}
-.banner li:hover span {
-    background-color: #333;
-}
 .head li{
     list-style-type: none;
     text-align: center;
@@ -455,13 +144,6 @@ h3, span {
     margin: 0 auto;
 }
 
-
-.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu {
-  display: block;
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  box-shadow: 0 1px 8px 1px rgba(51, 51, 51, 0.13);
-  background-color: #f7f7f7;
-}
 
 /*******************
 CITIES PAGE
@@ -519,9 +201,7 @@ CITIES PAGE
 .meetup {
     padding-top: 40px;
 }
-h2.course-city-heading {
-    padding-bottom: 40px;
-}
+
 .advice {
     height: auto;
     padding-top: 30px;
@@ -571,9 +251,7 @@ h2.course-city-heading {
   margin-left: auto;
 }
 
-.member-name {
-  font-size: 24px;
-}
+
 
 .member-box  ul li a img {
   width: 20px;
@@ -592,10 +270,6 @@ margin-left: -30px;
 .member{
   flex: 1 1 30%;
 }
-#team {
-  padding-bottom: 45px;
-}
-
 .member-box {
     margin-bottom: 30px;
     min-height: 400px;
@@ -645,49 +319,26 @@ margin-left: -30px;
 .glyphicon-ok, .section-done {
     color: #00796B;
 }
-.couch-i {
-    width: 300px;
-    margin-left: 140px;
-}
-.couch-box {
-    color: #8e8c8d;
-    padding-top: 35px;
-    text-align: left;
-}
-.couch-box ol {
-    padding-top: 10px;
-}
-.py-block {
-    float: left;
-    margin-left: 95px;
-}
-.py-icon {
-  margin-left: 15px;
-}
 .github-divider {
         background: #333;
         height: 80px;
         position: relative;
 }
-.pylady-black {
-    height: 115px;
-    z-index: 1000;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    margin: auto;
+section.other-activities {
+    margin: 0;
+    padding: 0 10px 50px;
+    width: 100%;
 }
-#about3 {
+section.recommendations,
+section.contacts {
+    margin: 0;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 0 10px 50px;
     background: rgb(229,31,64);
     color: #fff;
+    width: 100%;
 }
-#about3 div a {
-    color: #fff;
-}
+
 .photo-box {
     height: auto;
     padding-top: 300px;
@@ -703,38 +354,10 @@ margin-left: -30px;
 .start-title2 {
     padding: 30px 0px;
 }
-.couch {
-    padding-top: 45px;
-    padding-bottom: 85px;
-}
-.couch {
-    padding-top: 55px;
-}
-.couch ul li {
-    list-style: none;
-    padding: 10px 0px;
-    color: #8e8c8d;
-}
-.btn-couch {
-    padding: 10px 25px;
-    background: #333;
-    color: #fff;
-    font-size: 16px;
-}
-.btn-couch a {
-  color: #fff;
-}
-.btn-couch a:hover,
-.btn-couch a:focus {
-    color: #e51e41;
-}
 .start-title3 {
     padding-bottom: 40px;
 }
 
-.img-circle {
-  border-radius: 100% !important;
-}
 
 /*****
 STAN SE

@@ -1,0 +1,78 @@
+h2.course-city-heading {
+    padding-bottom: 40px;
+    text-align: center;
+}
+.grid-team {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill,250px);
+}
+
+#team {
+    padding-bottom: 45px;
+}
+
+.person {
+    text-align: center;
+}
+.person ul {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0;
+    justify-content: center;
+}
+.person li {
+    list-style-type: none;
+}
+.person li img {
+    vertical-align: middle;
+    max-height: 30px;
+    margin: 5px;
+}
+.member-name {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.img-circle {
+    border-radius: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.contact .about{
+    margin: 15px;
+}
+
+.contact{
+    display: flex;    
+    width: 100%;
+    
+}
+.contacts .row{
+    text-align: center;
+}
+section.contacts div a {
+    color: #fff;
+    min-width: 25%;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.contact a img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 6em;
+}
+
+.meetup-grid{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill,300px);
+}
+
+.meetup-width {
+    width: 33.33%;
+    min-width: 300px;
+    padding: 15px;
+    text-align: left;
+}

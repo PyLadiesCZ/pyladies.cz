@@ -1,76 +1,3 @@
-{# Macro for generating links in bottom of pages in advice section #}
-{% macro advice(text, img, url) %}
-    <a href="{{ url }}">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 about">
-            <img height="110" src="{{ img }}" />
-            <h4 class="about-title">{{ text }}</h4>
-        </div>
-    </a>
-{% endmacro %}
-
-{% macro course_list(plan) %}
-    <div class="row">
-        <div class="sections col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            {% for lesson in plan %}
-            <div class="section-box" id="section{{ loop.index }}">
-                <h4 class="section-heading">
-                    {% if 'dates' in lesson %}
-                        Lekce {{ loop.index }} - {{ lesson['name'] }}
-                        <span class="pull-right section-date">
-                            {% for date in lesson['dates'] %}
-                                {{ date.day }}. {{ date.month }}.
-                                {% if loop.last or date.year != lesson['dates'][-1].year %}
-                                    {{ date.year }}
-                                {% endif %}
-                                {% if not loop.last %}
-                                    a
-                                {% endif %}
-                            {% endfor %}
-                        </span>
-                    {% else %}
-                        {{ lesson['name'] }}
-                    {% endif %}
-                </h4>
-                {% if 'description' in lesson %}
-                    <p class="section-info course-city-p">
-                        {{ lesson['description'] }}
-                    </p>
-                {% endif %}
-                {% for mat in lesson['materials'] %}
-                    {% set done = mat.get('done', lesson.get('done', False)) %}
-                    {% set done_class = 'section-done' if done else 'section-todo' %}
-                    <div class="section-info">
-                        {% if mat['type'] == 'lesson' %}
-                            {% if done %}
-                                {% set icon_class = 'glyphicon-ok ' + done_class %}
-                            {% else %}
-                                {% set icon_class = 'glyphicon-chevron-right ' + done_class %}
-                            {% endif %}
-                        {% elif mat['type'] == 'handout' %}
-                            {% set icon_class = 'glyphicon-book ' + done_class %}
-                        {% elif mat['type'] == 'homework' %}
-                            {% set icon_class = 'glyphicon-pencil' %}
-                        {% elif mat['type'] == 'link' %}
-                            {% set icon_class = 'glyphicon-link' %}
-                        {% elif mat['type'] == 'special-lesson' %}
-                            {% set icon_class = 'glyphicon-education ' + done_class %}
-                        {% else %}
-                            {% set icon_class = 'glyphicon-flag' %}
-                        {% endif %}
-                        <span class="glyphicon {{ icon_class }} section-icon"></span>
-                        {% if 'link' in mat %}
-                            <a href="{{ pathto(mat['link'], 1) }}">{{ mat['name'] }}</a>
-                        {% else %}
-                            {{ mat['name'] }}
-                        {% endif %}
-                    </div>
-                {% endfor %}
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-{% endmacro %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -98,12 +25,12 @@
         <!-- Bootstrap CSS -->
         <link href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" rel="stylesheet">
         <!-- Custom CSS -->
+        <link href="{{ pathto('_static/css/main.css', 1) }}" rel="stylesheet">
         <link href="{{ pathto('_static/css/custom.css', 1) }}" rel="stylesheet">
         <link href="{{ pathto('_static/css/responsive.css', 1) }}" rel="stylesheet">
+        <link href="{{ pathto('_static/css/city.css', 1) }}" rel="stylesheet">
         <!-- Custom Fonts -->
-        <link href="{{ pathto('_static/fonts/font-awesome/css/font-awesome.min.css', 1) }}" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
       {% endblock css %}
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="{{ pathto('_static/img/favicon.ico', 1) }}" />
@@ -124,131 +51,106 @@
     <!-- End Zeerat code -->
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target="">
+    <body class="{% block body_class %}{% endblock %}">
       <!-- Navigation -->
-      <nav class="navbar navbar-custom" role="navigation">
-          <div class="container">
-              <div class="navbar-header">
-                  <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                      <i class="fa fa-bars"></i>
-                  </button> -->
-                  <a class="navbar-brand page-scroll" href="{{ pathto('index') }}">
-                      <img class="logo-i" src="{{ pathto('_static/img/pyladies.png', 1) }}" />
-                  </a>
-              </div>
-              <div class="navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li><a href="{{ pathto('praha') }}">Praha</a></li>
-                    <li><a href="{{ pathto('brno') }}">Brno</a></li>
-                    <li><a href="{{ pathto('ostrava') }}">Ostrava</a></li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiály
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            {% for name, url in (
-                                    ('Brno – začátečnický kurz (pondělí)',
-                                     'http://naucse.python.cz/2018/pyladies-brno-jaro/'),
-                                    ('Brno – začátečnický kurz (středa)',
-                                     'http://naucse.python.cz/2018/pyladies-brno-jaro-st/'),
-                                    ('Brno – navazující kurz',
-                                     'http://naucse.python.cz/2018/pyknihovny-jaro/'),
-                                    ('Praha – CZ.NIC',
-                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/'),
-                                    ('Praha – NTK',
-                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
-                                    ('Ostrava – začátečnický kurz',
-                                     'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
-                                    ) %}
-                            <li>
-                                <a href="{{ url }}">
-                                    {{ name }}
-                                    <small><span class="glyphicon glyphicon-new-window"></span></small>
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </li>
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="{{ pathto('index') }}">
+                    <img src="{{ pathto('_static/img/pyladies.png', 1) }}" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                        {% for name, url in (
+                                ('Brno – začátečnický kurz (pondělí)',
+                                    'http://naucse.python.cz/2018/pyladies-brno-jaro/'),
+                                ('Brno – začátečnický kurz (středa)',
+                                    'http://naucse.python.cz/2018/pyladies-brno-jaro-st/'),
+                                ('Brno – navazující kurz',
+                                    'http://naucse.python.cz/2018/pyknihovny-jaro/'),
+                                ('Praha – CZ.NIC',
+                                    'http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/'),
+                                ('Praha – NTK',
+                                    'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
+                                ('Ostrava – začátečnický kurz',
+                                    'http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/'),
+                                ) %}
+                        <li>
+                            <a href="{{ url }}">
+                                {{ name }}
+                                <small><span class="glyphicon glyphicon-new-window"></span></small>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
 
-                    <li class="join">
-                      <a href="{{ pathto('stan_se') }}">Staň se PyLady!</a>
+                <li {% block current_page_class_stanse %}{% endblock %}>
+                    <a href="{{ pathto('stan_se') }}">Staň se PyLady!</a>
+                </li>
+                <li {% block current_page_class_faq %}{% endblock %}>
+                    <a href="{{ pathto('faq') }}">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities {% block banner_class %}faded-banner{% endblock %}">
+                <ul>
+                    {% for city, title in {
+                        'praha': 'Praha',
+                        'brno': 'Brno',
+                        'ostrava': 'Ostrava',
+                        'ostatni': 'Tvé město...',
+                        }.items() %}
+                    <li {% block current_city_class scoped %}{% endblock %}>
+                        <a href="{{ pathto(city) }}">
+                            <span class="img-container">
+                                <img class="city-outline" src="{{ pathto('_static/img/'+city+'.svg', 1) }}" alt="">
+                            </span>
+                            <span class="city-title">{{ title }}</span>
+                        </a>
                     </li>
-                    <li class="join">
-                      <a href="{{ pathto('faq') }}">FAQ</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="banner-bcg">
-        <ul class="banner">
-            <li>
-                <a href="{{ pathto('praha') }}">
-                    <img class="img-style" src="../static/img/praha.svg" alt="">
-                    <img class="img-hover" src="../static/img/praha-blc.svg" alt="">
-                    <span>Praha</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ pathto('brno') }}">
-                    <img class="img-style" src="../static/img/brno.svg" alt="">
-                    <img class="img-hover" src="../static/img/brno-blc.svg" alt="">
-                    <span>Brno</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ pathto('ostrava') }}">
-                    <img class="img-style" src="../static/img/ostrava.svg" alt="">
-                    <img class="img-hover" src="../static/img/ostrava-blc.svg" alt="">
-                    <span>Ostrava</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ pathto('ostatni') }}">
-                    <img class="img-style" src="../static/img/ostatni.svg" alt="">
-                    <img class="img-hover" src="../static/img/ostatni-blc.svg" alt="">
-                    <span>Tvé město...</span>
-                </a>
-            </li>
-
-
-        </ul>
-
-    </section>
     {% block content %} {% endblock %}
     {% block footer %}
     <footer>
-        <div class="container text-left">
-            <p class="pull-left copy">
+        <div class="container">
+            <p class="global-pyladies">
               PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
             </p>
-            <ul class="pull-right list-inline">
+            <ul>
                 <li>
                     <a href="mailto:info@pyladies.cz">
-                        <img class="social" src="{{ pathto('_static/img/icon/mail-link.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/mail-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/pyladiescz">
-                        <img class="social" src="{{ pathto('_static/img/icon/twitter.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/twitter-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/pyladiescz">
-                        <img class="social" src="{{ pathto('_static/img/icon/github.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/github-white.png', 1) }}" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/groups/pyonieri/">
-                        <img class="social" src="{{ pathto('_static/img/icon/facebook.png', 1) }}" />
+                        <img src="{{ pathto('_static/img/icon/facebook-white.png', 1) }}" />
                     </a>
                 </li>
             </ul>
         </div>
+        <div class="clear"></div>
     </footer>
+    <script src="{{ pathto('_static/js/script.js', 1) }}"></script>
     {% endblock footer %}
     {% block javascript %}
     {% endblock javascript %}
