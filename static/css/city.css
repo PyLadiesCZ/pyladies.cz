@@ -61,7 +61,7 @@ section.contacts div a {
 /* course team */
 .grid-team {
     display: grid;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-template-columns: repeat(auto-fill,225px);
 }
 
