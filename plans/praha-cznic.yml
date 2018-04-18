@@ -117,8 +117,6 @@
 - name: Seznamy
   date: 2018-04-19
   materials:
-  - name: Turnaj v piškvorkách
-    type: special
   - name: Seznamy
     type: lesson
     link: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/beginners/list
@@ -152,6 +150,8 @@
 - name: Testování
   date: 2018-05-03
   materials:
+  - name: Turnaj v piškvorkách
+    type: special
   - name: Výjimky
     type: lesson
     link: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/beginners/exceptions/
