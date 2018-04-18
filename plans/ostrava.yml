@@ -229,6 +229,12 @@
   - name: Tahák na Pyglet
     type: handout
     link: https://github.com/pyvec/cheatsheets/raw/master/pyglet/pyglet-basics-cs.pdf
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s012-pyglet/handout/handout.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/SwREdJDXXxC1w1Oc6rUr
 - name: Třídy
   date: 2018-04-25
   materials:
