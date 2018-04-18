@@ -55,12 +55,7 @@ HOMEPAGE
 .about-p {
     color: #8e8c8d;
 }
-.about-p {
-    height: auto;
-    min-height: 200px;
-    max-height: 300px;
-    padding-top: 15px;
-}
+
 #start {
     padding-top: 65px;
     padding-bottom: 65px;
@@ -364,8 +359,7 @@ STAN SE
 *****/
 
 .role-requirements {
-    list-style-type: none;
-    padding:0;
+    padding-left: 20px;
 }
 .role-requirements li {
     margin-top: 0.5em;

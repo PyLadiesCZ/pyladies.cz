@@ -104,7 +104,6 @@ body.menu-shown .main-navbar .navbar-menu {
 }
 .main-navbar ul ul li {
     margin-left: -30px;
-    margin-right: -30px;
     padding-left: 60px;
     padding-right: 30px;
     text-indent: -15px;
@@ -165,7 +164,6 @@ nav.main-navbar li.current-page {
     /* and the Materials dropdown is hidden */
     .main-navbar .materials-dropdown:hover {
         background: transparent;
-        background: #ededed;
     }
     body .main-navbar .materials-dropdown ul {
         display: none;
@@ -297,6 +295,7 @@ nav.main-navbar li.current-page {
     .navbar-cities li {
         padding: 0;
     }
+
 }
 @media all and (min-width: 1000px) {
     /* For very big sceens, set a max size */
@@ -304,6 +303,10 @@ nav.main-navbar li.current-page {
         font-size: 2.3em;
         line-height: 100px;
     }
+}
+body > section .about-p {
+    margin-bottom: 25px;
+    padding-top: 15px;
 }
 
 body > footer {

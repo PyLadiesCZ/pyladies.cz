@@ -31,9 +31,6 @@
       width: auto;
     }
 
-    .col-xs-12.col-sm-12.col-md-4.col-lg-4.about {
-      margin-top: 50px;
-    }
     .member-box  ul li a img {
       width: 20px !important;
     }
@@ -68,12 +65,7 @@
     padding-top: 50px;
     padding-bottom: 0px;
   }
-  .about-p {
-    padding-bottom: 40px;
-    padding-top: 15px;
-    min-height: 100px;
-    max-height: 100px;
-  }
+
   .course-i {
     border-right: none;
   }
@@ -114,9 +106,7 @@
   .course-city {
     padding: 35px 18px;
   }
-  .about-p {
-    max-height: 115px;
-  }
+
   .partners div:nth-child(4) {
     margin-left: 15px;
   }
@@ -132,9 +122,7 @@
   .course-city {
     padding: 35px 17px;
   }
-  .about-p {
-    max-height: 115px;
-  }
+
   .course-city-p {
     padding-bottom: 55px;
   }
@@ -181,9 +169,7 @@
   .intro-text {
     margin-top: 70px;
   }
-  .about-p {
-    max-height: 165px;
-  }
+
   img.partner-logo{
     margin-right: auto;
     margin-left: auto;
@@ -218,9 +204,7 @@
   .intro-text {
     margin-top: 70px;
   }
-  .about-p {
-    max-height: 195px;
-  }
+
   img.partner-logo{
     margin-right: auto;
     margin-left: auto;
@@ -261,9 +245,7 @@
   .intro-text {
     margin-top: 70px;
   }
-  .about-p {
-    max-height: 195px;
-  }
+
   img.partner-logo{
     margin-right: auto;
     margin-left: auto;
@@ -304,9 +286,7 @@
   .intro-text {
     margin-top: 70px;
   }
-  .about-p {
-    max-height: 250px;
-  }
+
   .section-heading {
     font-size: 10px;
   }

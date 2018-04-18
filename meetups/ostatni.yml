@@ -1,0 +1,9 @@
+# Pozor, nové meetupy se přidávají na konec souboru
+
+
+- name: Hadí workshop
+  materials: https://naucse.python.cz/2018/snake-hradec/
+  date: 2018-03-25
+  time: 8:00 – 18:00
+  place:
+    name:  Hradec Králové

@@ -47,7 +47,7 @@ def redirect(url):
 def index():
     current_meetups = collections.OrderedDict(
         (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
-        for city in ('praha', 'brno', 'ostrava'))
+        for city in ('praha', 'brno', 'ostrava', 'ostatni'))
     return render_template('index.html',
                            current_meetups=current_meetups)
 
@@ -79,7 +79,7 @@ def ostrava():
                            team=read_yaml('teams/ostrava.yml'))
 @app.route('/ostatni/')
 def ostatni():
-    return render_template('city.html', city_slug='ostatni')
+    return render_template('city.html', city_slug='ostatni', meetups=read_meetups_yaml('meetups/ostatni.yml'))
 
 @app.route('/<city>_course/')
 def course_redirect(city):

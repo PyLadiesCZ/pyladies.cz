@@ -1,55 +1,49 @@
-h2.course-city-heading {
-    padding-bottom: 40px;
-    text-align: center;
-}
-.grid-team {
+
+
+/* meet up */
+.meetup-grid{
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fill,250px);
+    grid-template-columns: repeat(auto-fill,300px);
 }
 
-#team {
-    padding-bottom: 45px;
+.meetup-width {
+    width: 33.33%;
+    min-width: 300px;
+    padding: 15px;
+    text-align: left;
 }
 
-.person {
-    text-align: center;
+.meetup-address, .meetup-date {
+  display: flex;
 }
-.person ul {
-    display: flex;
-    margin-bottom: 30px;
-    padding: 0;
-    justify-content: center;
+
+.meetup-grid .meetup-address span, .meetup-date span {
+  top: 5px;
+  margin-right: 5px;
 }
-.person li {
-    list-style-type: none;
+
+.meetup-grid .meetup-materials a {
+  font-size: 1.5em;
+  color: #e51f40;
 }
-.person li img {
-    vertical-align: middle;
-    max-height: 30px;
-    margin: 5px;
-}
-.member-name {
-    font-size: 24px;
-    margin-top: 15px;
-}
-.img-circle {
-    border-radius: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-}
+
+
+/* contact row */
 .contact .about{
     margin: 15px;
 }
 
 .contact{
-    display: flex;    
+    display: flex;
     width: 100%;
-    
+
 }
+
 .contacts .row{
     text-align: center;
 }
+
 section.contacts div a {
     color: #fff;
     min-width: 25%;
@@ -64,15 +58,49 @@ section.contacts div a {
     width: 6em;
 }
 
-.meetup-grid{
+/* course team */
+.grid-team {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fill,300px);
+    grid-template-columns: repeat(auto-fill,225px);
 }
 
-.meetup-width {
-    width: 33.33%;
-    min-width: 300px;
-    padding: 15px;
-    text-align: left;
+#team {
+    padding-bottom: 45px;
+}
+
+h2.course-city-heading {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.person {
+    text-align: center;
+}
+.person ul {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0;
+    justify-content: center;
+}
+
+.person li {
+    list-style-type: none;
+}
+
+.person li img {
+    vertical-align: middle;
+    max-height: 30px;
+    margin: 5px;
+}
+
+.member-name {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.img-circle {
+    border-radius: 100%;
+    max-width: 70%;
+    margin: 0 auto;
 }
