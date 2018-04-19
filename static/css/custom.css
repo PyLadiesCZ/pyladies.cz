@@ -334,18 +334,8 @@ section.contacts {
     width: 100%;
 }
 
-.photo-box {
-    height: auto;
-    padding-top: 300px;
-}
-.city-box {
-    height: 240px;
-    overflow: hidden;
-    margin-bottom: 80px;
-}
-.city-image {
-    height: auto;
-}
+
+
 .start-title2 {
     padding: 30px 0px;
 }

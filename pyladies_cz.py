@@ -79,7 +79,9 @@ def ostrava():
                            team=read_yaml('teams/ostrava.yml'))
 @app.route('/ostatni/')
 def ostatni():
-    return render_template('city.html', city_slug='ostatni', meetups=read_meetups_yaml('meetups/ostatni.yml'))
+    return render_template('city.html',
+                            city_slug='ostatni',
+                            meetups=read_meetups_yaml('meetups/ostatni.yml'))
 
 @app.route('/<city>_course/')
 def course_redirect(city):

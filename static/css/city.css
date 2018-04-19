@@ -57,6 +57,21 @@ section.contacts div a {
     height: auto;
     width: 6em;
 }
+/* photo */
+.city-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+}
+.course-city-images {
+  width: 33.33%;
+  min-width: 350px;
+  padding: 15px;
+}
+.city-img {
+    height: auto;
+}
 
 /* course team */
 .grid-team {
