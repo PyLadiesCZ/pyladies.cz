@@ -99,18 +99,13 @@
             </ul>
             <div class="navbar-cities {% block banner_class %}faded-banner{% endblock %}">
                 <ul>
-                    {% for city, title in {
-                        'praha': 'Praha',
-                        'brno': 'Brno',
-                        'ostrava': 'Ostrava',
-                        'ostatni': 'Tvé město...',
-                        }.items() %}
+                    {% for slug, city in cities.items() %}
                     <li {% block current_city_class scoped %}{% endblock %}>
-                        <a href="{{ pathto(city) }}">
+                        <a href="{{ url_for('city', city_slug=slug) }}">
                             <span class="img-container">
-                                <img class="city-outline" src="{{ pathto('_static/img/'+city+'.svg', 1) }}" alt="">
+                                <img class="city-outline" src="{{ pathto('_static/img/'+slug+'.svg', 1) }}" alt="">
                             </span>
-                            <span class="city-title">{{ title }}</span>
+                            <span class="city-title">{{ city['title'] }}</span>
                         </a>
                     </li>
                     {% endfor %}

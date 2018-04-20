@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block current_city_class -%}
-    {% if city_slug == city -%}
+    {% if city_slug == slug -%}
         class="current-page"
     {%- endif -%}
 {%- endblock -%}
