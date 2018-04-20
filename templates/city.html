@@ -81,18 +81,18 @@
   </header>
 
   <!-- Current Meetups -->
+  {% if current_meetups %}
   <section class=" container text-center" id="">
         <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
     <div class="meetup-grid">
-      {% for meetup in meetups %}
-        {% if meetup.current %}
+      {% for meetup in current_meetups %}
          {{ meetup_info(meetup) }}
           {% if not loop.last and loop.index0 % 2 %}
           {% endif %}
-        {% endif %}
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
     <!-- Contact -->
     {% if city_slug != 'ostatni' %}
@@ -216,20 +216,20 @@
     {% endif %}
 
   <!-- Past Meetups -->
+  {% if past_meetups %}
   <section  class=" container text-center" id="meetups">
     <div class="row">
         <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
     </div>
     <div class="meetup-grid">
-      {% for meetup in meetups %}
-        {% if not meetup.current %}
+      {% for meetup in past_meetups %}
           {{ meetup_info(meetup,  with_registration_link=False) }}
           {% if not loop.last and loop.index0 % 2 %}
 
           {% endif %}
-        {% endif %}
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
 {% endblock content %}
