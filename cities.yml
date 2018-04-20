@@ -1,11 +1,47 @@
 praha:
     title: Praha
     team-name: Tým pražských PyLadies
+    contacts:
+        Facebook PyLadies Praha:
+            icon: facebook
+            url: https://www.facebook.com/groups/PyLadiesPraha/
+        PyWorking Praha:
+            icon: facebook
+            url: https://www.facebook.com/groups/PyWorkingPraha/
+        Google Group PyLadies Praha:
+            icon: google-group
+            url: https://groups.google.com/forum/#!forum/pyladies-praha
+        Napiš koučovi:
+            icon: coach
+            url: mailto:pyladies-praha@googlegroups.com
+
 brno:
     title: Brno
     team-name: Tým brněnských PyLadies
+    contacts:
+        Facebook PyLadies Brno:
+            icon: facebook
+            url: https://www.facebook.com/groups/pyladiesBrno
+        Google Group PyLadies Brno:
+            icon: google-group
+            url: https://groups.google.com/forum/#!forum/pyladies-brno
+        Napiš koučovi:
+            icon: coach
+            url: mailto:brno@pyladies.cz
+
 ostrava:
     title: OSTRAVA!!!
     team-name: Tým ostravských PyLadies
+    contacts:
+        Facebook PyLadies Ostrava:
+            icon: facebook
+            url: https://www.facebook.com/pyladiesostrava/
+        Google Group PyLadies Ostrava:
+            icon: google-group
+            url: https://groups.google.com/forum/#!forum/pyladies-ostrava
+        Napiš koučovi:
+            icon: coach
+            url: mailto:pyladies-ostrava@googlegroups.com
+
 ostatni:
     title: Tvoje město

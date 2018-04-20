@@ -67,6 +67,7 @@ def city(city_slug):
         team_name=city.get('team-name'),
         current_meetups=[m for m in meetups if m['current']],
         past_meetups=[m for m in meetups if not m['current']],
+        contacts=city.get('contacts'),
         team=read_yaml('teams/' + city_slug + '.yml', default=()),
     )
 
