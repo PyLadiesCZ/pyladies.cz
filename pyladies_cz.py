@@ -11,6 +11,7 @@ import os
 import fnmatch
 import datetime
 import collections
+from urllib.parse import urlencode
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
@@ -211,9 +212,15 @@ def read_meetups_yaml(filename):
         if 'place' in meetup:
             if ('url' not in meetup['place']
                     and {'latitude', 'longitude'} <= meetup['place'].keys()):
-                meetup['place']['url'] = (
-                    'http://mapy.cz/zakladni?q={p[name]},'
-                    '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
+                place = meetup['place']
+                place['url'] = 'http://mapy.cz/zakladni?' + urlencode({
+                    'y': place['latitude'],
+                    'x': place['longitude'],
+                    'z': '16',
+                    'id': place['longitude'] + ',' + place['latitude'],
+                    'source': 'coor',
+                    'q': place['name'],
+                })
 
         # Figure out the status of registration
         if 'registration' in meetup:
