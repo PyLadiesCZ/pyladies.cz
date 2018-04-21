@@ -64,16 +64,6 @@
   </div>
 {% endmacro %}
 
-{# Macro for generating links in bottom of pages in advice section #}
-{% macro advice(text, img, url) %}
-    <a href="{{ url }}">
-        <div class="about">
-            <img height="110" src="{{ img }}" />
-            <h4 class="about-title">{{ text }}</h4>
-        </div>
-    </a>
-{% endmacro %}
-
 {% block content %}
   <!-- Intro Header -->
   <header class="intro-city">
