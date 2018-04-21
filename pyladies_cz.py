@@ -73,11 +73,11 @@ def city(city_slug):
 
 @app.route('/<city>_course/')
 def course_redirect(city):
-    return redirect(url_for(city, _anchor='meetups'))
+    return redirect(url_for('city', city_slug=city, _anchor='meetups'))
 
 @app.route('/<city>_info/')
 def info_redirect(city):
-    return redirect(url_for(city, _anchor='city-info'))
+    return redirect(url_for('city', city_slug=city, _anchor='city-info'))
 
 @app.route('/praha-cznic/')
 def praha_cznic():
