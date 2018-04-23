@@ -28,6 +28,8 @@ body .main-navbar ul {
 }
 body.menu-shown .main-navbar ul {
     display: block;
+    padding-left: 0;
+    line-height: 25px;
 }
 body.menu-shown .main-navbar .navbar-menu {
     display: none;
@@ -104,7 +106,7 @@ body.menu-shown .main-navbar .navbar-menu {
 }
 .main-navbar ul ul li {
     margin-left: -30px;
-    padding-left: 60px;
+    padding-left: 40px;
     padding-right: 30px;
     text-indent: -15px;
 }
