@@ -356,6 +356,20 @@ STAN SE
     margin-bottom: 0.5em;
 }
 
+.head-icons a {
+    display: block;
+    width: 100%;
+}
+
+.head-icons a img.head-cutout {
+    display: block;
+    background-color: #e51f40;
+}
+
+.head-icons a:hover img.head-cutout {
+    background-color: #333;
+}
+
 /*****
 FAQ
 *****/

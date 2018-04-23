@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block current_city_class -%}
-    {% if city_slug == city -%}
+    {% if city_slug == slug -%}
         class="current-page"
     {%- endif -%}
 {%- endblock -%}
@@ -64,16 +64,6 @@
   </div>
 {% endmacro %}
 
-{# Macro for generating links in bottom of pages in advice section #}
-{% macro advice(text, img, url) %}
-    <a href="{{ url }}">
-        <div class="about">
-            <img height="110" src="{{ img }}" />
-            <h4 class="about-title">{{ text }}</h4>
-        </div>
-    </a>
-{% endmacro %}
-
 {% block content %}
   <!-- Intro Header -->
   <header class="intro-city">
@@ -81,39 +71,33 @@
   </header>
 
   <!-- Current Meetups -->
+  {% if current_meetups %}
   <section class=" container text-center" id="">
     <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
     <div class="meetup-grid">
-      {% for meetup in meetups %}
-        {% if meetup.current %}
+      {% for meetup in current_meetups %}
          {{ meetup_info(meetup) }}
           {% if not loop.last and loop.index0 % 2 %}
           {% endif %}
-        {% endif %}
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
     <!-- Contact -->
-    {% if city_slug != 'ostatni' %}
+    {% if contacts %}
     <section class="contacts text-center">
       <div class="container">
         <h2>Kontakty</h2>
-          <div class="contact">
-          {% if city_slug == 'brno' %}
-            {{ advice(text='Facebook PyLadies Brno', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/pyladiesBrno') }}
-            {{ advice(text='Google Group PyLadies Brno', img=pathto('_static/img/link/google-group.png', 1), url='https://groups.google.com/forum/#!forum/pyladies-brno') }}
-            {{ advice(text='Napiš koučovi', img=pathto('_static/img/link/coach.png', 1), url='mailto:brno@pyladies.cz') }}
-          {% elif city_slug == 'ostrava' %}
-            {{ advice(text='Facebook PyLadies Ostrava', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/pyladiesostrava/') }}
-            {{ advice(text='Google Group PyLadies Ostrava', img=pathto('_static/img/link/google-group.png', 1), url='https://groups.google.com/forum/#!forum/pyladies-ostrava') }}
-            {{ advice(text='Napiš koučovi', img=pathto('_static/img/link/coach.png', 1), url='mailto:pyladies-ostrava@googlegroups.com') }}
-          {% elif city_slug == 'praha' %}
-            {{ advice(text='Facebook PyLadies Praha', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/PyLadiesPraha/') }}
-            {{ advice(text='PyWorking Praha', img=pathto('_static/img/link/facebook.png', 1), url='https://www.facebook.com/groups/PyWorkingPraha/') }}
-            {{ advice(text='Google Group PyLadies Praha', img=pathto('_static/img/link/google-group.png', 1), url='https://groups.google.com/forum/#!forum/pyladies-praha') }}
-            {{ advice(text='Napiš koučovi', img=pathto('_static/img/link/coach.png', 1), url='mailto:pyladies-praha@googlegroups.com') }}
-          {% endif %}
+        <div class="contact">
+            {% for text, contact in contacts.items() %}
+                <a href="{{ contact['url'] }}">
+                    <div class="about">
+                        <img height="110" src="{{ pathto('_static/img/link/' + contact['icon'] + '.png', 1) }}" />
+                        <h4 class="about-title">{{ text }}</h4>
+                    </div>
+                </a>
+            {% endfor %}
         </div>
       </div>
     </section>
@@ -170,6 +154,7 @@
             </div>
         {% elif city_slug == 'ostatni' %}
             <div class="col-md-offset-1 col-md-10 text-left">
+<<<<<<< HEAD
                 <h2 class="course-city-heading">Jak založit Pyladies ve tvém městě?</h2>
                 <p> Nenašla jsi žádný plánovaný workshop nebo kurz ve svém městě? Zorganizuj si vlastní! :-)</p>
 
@@ -188,10 +173,42 @@
                 <p>bla bla a tak <a href="https://www.facebook.com/groups/pyonieri/">Pythoní komunita na FB</a><p>
                 <p><a href="https://python.cz/">Python.cz</a><p></li>
             </ul>
+=======
+                <h2 class="course-city-heading">
+                    Jak založit Pyladies ve tvém městě?
+                </h2>
+                <p>
+                    Nenašla jsi žádný plánovaný workshop nebo kurz ve svém městě? Zorganizuj si vlastní! :-)
+                </p>
+                <p>
+                    Nejsnažší cesta je obrátit se na některou z organizátorek PyLadies kurzů. Kontakt najdeš zde pod jednotlivými městy, nebo napiš do FB skupiny
+                    <a href="https://www.facebook.com/groups/pyladiespraha/">Pyladies Praha</a>,
+                    <a href="https://www.facebook.com/groups/pyladiesBrno/">Pyladies Brno</a>, nebo
+                    <a href="https://www.facebook.com/pyladiesostrava/">Pyladies Ostrava</a>.
+                    Určitě ti poradí s organizací.
+                </p>
+                <p>
+                    Nebo prostě zajdi na <a href="https://pyvo.cz/">Pyvo</a>.
+                    Ve větších městech pravidelně probíhají setkání příznivců programovacího jazyka Python.
+                    Najdeš zde spoustu nadšenců a třeba i nějaké ochotné budoucí kouče.
+                </p>
+                <p>
+                    Pokud neznáš nikoho, kdo Python učí, zkus najít kouče ve skupině
+                    <a href="https://www.facebook.com/groups/800923800012580/">Učíme Python</a>, která je určena pro kouče/učitele Pythonu a pro ty, co je shánějí.
+                </p>
+                <p>
+                    Praktické rady k organizaci jsou sepsané i
+                    v <a href="http://pyvec-guide.readthedocs.io/guides/beginners-course.html">Příručce pro pořadatele kurzů pro začátečníky</a>.
+                </p>
+                <p>
+                    Podporu jistě najdeš i na <a href="https://www.facebook.com/groups/pyonieri/">Facebookové skupině Pythoní komunity</a>
+                    a na stránkách <a href="https://python.cz/">Python.cz</a>.
+                <p>
+>>>>>>> d9f9671d483ca399ded9aeb8499f969b36e598bc
         {% endif %}
     </section>
 
-    {% if city_slug != 'ostatni' %}
+    {% if team %}
     <!-- Team section -->
     <section id="team" class="container" >
       <h2 class="course-city-heading">{{ team_name }}</h2>
@@ -213,18 +230,18 @@
     {% endif %}
 
   <!-- Past Meetups -->
+  {% if past_meetups %}
   <section  class=" container text-center" id="meetups">
     <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
     <div class="meetup-grid">
-      {% for meetup in meetups %}
-        {% if not meetup.current %}
+      {% for meetup in past_meetups %}
           {{ meetup_info(meetup,  with_registration_link=False) }}
           {% if not loop.last and loop.index0 % 2 %}
 
           {% endif %}
-        {% endif %}
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
 {% endblock content %}

@@ -11,6 +11,7 @@ import os
 import fnmatch
 import datetime
 import collections
+from urllib.parse import urlencode
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
@@ -25,7 +26,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
-
+MISSING = object()
 
 def redirect(url):
     """Return a response with a Meta redirect"""
@@ -49,47 +50,34 @@ def index():
         (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
         for city in ('praha', 'brno', 'ostrava', 'ostatni'))
     return render_template('index.html',
+                           cities=read_yaml('cities.yml'),
                            current_meetups=current_meetups)
 
-@app.route('/praha/')
-def praha():
-    return render_template('city.html',
-                           city_slug='praha',
-                           city_title='Praha',
-                           team_name='Tým pražských PyLadies',
-                           meetups=read_meetups_yaml('meetups/praha.yml'),
-                           team=read_yaml('teams/praha.yml'))
-
-@app.route('/brno/')
-def brno():
-    return render_template('city.html',
-                           city_slug='brno',
-                           city_title='Brno',
-                           team_name='Tým brněnských PyLadies',
-                           meetups=read_meetups_yaml('meetups/brno.yml'),
-                           team=read_yaml('teams/brno.yml'))
-
-@app.route('/ostrava/')
-def ostrava():
-    return render_template('city.html',
-                           city_slug='ostrava',
-                           city_title='OSTRAVA!!!',
-                           team_name='Tým ostravských PyLadies',
-                           meetups=read_meetups_yaml('meetups/ostrava.yml'),
-                           team=read_yaml('teams/ostrava.yml'))
-@app.route('/ostatni/')
-def ostatni():
-    return render_template('city.html',
-                            city_slug='ostatni',
-                            meetups=read_meetups_yaml('meetups/ostatni.yml'))
+@app.route('/<city_slug>/')
+def city(city_slug):
+    cities = read_yaml('cities.yml')
+    city = cities.get(city_slug)
+    if city is None:
+        abort(404)
+    meetups = read_meetups_yaml('meetups/' + city_slug + '.yml')
+    return render_template(
+        'city.html',
+        city_slug=city_slug,
+        city_title=city['title'],
+        team_name=city.get('team-name'),
+        current_meetups=[m for m in meetups if m['current']],
+        past_meetups=[m for m in meetups if not m['current']],
+        contacts=city.get('contacts'),
+        team=read_yaml('teams/' + city_slug + '.yml', default=()),
+    )
 
 @app.route('/<city>_course/')
 def course_redirect(city):
-    return redirect(url_for(city, _anchor='meetups'))
+    return redirect(url_for('city', city_slug=city, _anchor='meetups'))
 
 @app.route('/<city>_info/')
 def info_redirect(city):
-    return redirect(url_for(city, _anchor='city-info'))
+    return redirect(url_for('city', city_slug=city, _anchor='city-info'))
 
 @app.route('/praha-cznic/')
 def praha_cznic():
@@ -134,6 +122,14 @@ def google_verification():
 
 
 ##########
+## Template variables
+
+@app.context_processor
+def inject_cities():
+    return dict(cities=read_yaml('cities.yml'))
+
+
+##########
 ## Helpers
 
 md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
@@ -162,8 +158,14 @@ def date_range(dates, sep='–'):
     return ' '.join(pieces)
 
 
-def read_yaml(filename):
-    with open(filename, encoding='utf-8') as file:
+def read_yaml(filename, default=MISSING):
+    try:
+        file = open(filename, encoding='utf-8')
+    except FileNotFoundError:
+        if default is MISSING:
+            raise
+        return default
+    with file:
         data = yaml.safe_load(file)
     return data
 
@@ -211,9 +213,15 @@ def read_meetups_yaml(filename):
         if 'place' in meetup:
             if ('url' not in meetup['place']
                     and {'latitude', 'longitude'} <= meetup['place'].keys()):
-                meetup['place']['url'] = (
-                    'http://mapy.cz/zakladni?q={p[name]},'
-                    '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
+                place = meetup['place']
+                place['url'] = 'http://mapy.cz/zakladni?' + urlencode({
+                    'y': place['latitude'],
+                    'x': place['longitude'],
+                    'z': '16',
+                    'id': place['longitude'] + ',' + place['latitude'],
+                    'source': 'coor',
+                    'q': place['name'],
+                })
 
         # Figure out the status of registration
         if 'registration' in meetup:
