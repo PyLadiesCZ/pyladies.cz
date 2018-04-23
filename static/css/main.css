@@ -131,6 +131,7 @@ nav.main-navbar li.current-page {
     .main-navbar a {
         padding: 0;
     }
+
     .main-navbar .caret {
         display: inline-block;
     }
@@ -360,4 +361,31 @@ body > footer .global-pyladies a {
 body > footer .global-pyladies a:hover {
     text-shadow: 0 0 5px white;
     color: white;
+}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* style for IE 10-11 */
+   .meetup, .team {
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .img-circle {
+     width: 200px;
+     max-width: 100%;
+   }
+   .person {
+     padding: 15px;
+   }
+   .main-navbar a {
+      margin-top: -22px;
+    }
+    .main-navbar ul.navbar-other {
+      padding-right: 20px;
+    }
+
+    .main-navbar ul.navbar-other {
+      padding-right: 20px;
+    }
 }
