@@ -85,7 +85,7 @@ section.contacts div a {
 }
 
 h2.course-city-heading {
-    padding-bottom: 40px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -115,7 +115,21 @@ h2.course-city-heading {
 }
 
 .img-circle {
-    border-radius: 100%;
+    border-radius: 50%;
     max-width: 70%;
     margin: 0 auto;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* style for IE 10-11 */
+   .meetup, .team {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .img-circle {
+       width: 200px;
+       max-width: 100%;
+   }
+   .person {
+      padding: 15px;
+   }
+ }

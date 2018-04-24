@@ -145,8 +145,7 @@ CITIES PAGE
     padding-bottom: 30px;
 }
 .info-city {
-    padding-top: 55px;
-    padding-bottom: 85px;
+    padding: 40px;
 }
 .info-city div div h2 {
     padding-bottom: 25px;
@@ -256,10 +255,8 @@ margin-right: -30px;
 width: 30px;
 margin-left: -30px;
 }
-.team{
-  display: flex;
-}
-.member{
+
+.member {
   flex: 1 1 30%;
 }
 .member-box {
