@@ -244,6 +244,12 @@
   - name: Dědičnost
     type: lesson
     link: http://naucse.python.cz/2018/pyladies-ostrava-jaro/beginners/inheritance/
+  - name: Domácí projekty (PDF)
+    type: homework
+    link: v1/s014-class/handout/handout.pdf
+  - name: Odevzdání domácích projektů
+    type: link
+    link: https://www.dropbox.com/request/gAXL9jJV9n6vEL82eksw
 - name: Závěrečný projekt
   date: 2018-05-02
   materials:
