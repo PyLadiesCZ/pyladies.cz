@@ -30,7 +30,7 @@
         <p class="meetup-address">
           <span class="glyphicon glyphicon-map-marker"></span>
           {% if meetup.place.url %}
-          <a href="{{ meetup.place.url }}" target="_blank">
+          <a href="{{ meetup.place.url }}" target="_blank" rel="noopener">
           {% endif %}
             {{ meetup.place.name }},
             {{ meetup.place.address }}

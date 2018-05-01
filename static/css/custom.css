@@ -330,7 +330,7 @@ nav.main-navbar li.current-page {
    /* style for IE 10-11 */
 
     .navbar-cities img {
-        margin-top: -23px;
+        margin-top: -25px;
     }
     .main-navbar ul.navbar-other {
         padding-right: 20px;
@@ -618,7 +618,9 @@ h2.course-city-heading {
 	.meetup, .team {
 		display: flex;
 		flex-wrap: wrap;
+    justify-content: space-between;
 	}
+
 	.img-circle {
 		width: 200px;
 		max-width: 100%;
