@@ -197,15 +197,9 @@
 - name: Závěrečný projekt
   date: 2018-05-24
   materials:
-  - name: Asteroids
+  - name: Data (cca 2h)
     type: lesson
-    link: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/projects/asteroids
-  - name: Množinový tahák
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
-  - name: Tahák na geometrii a fyziku 2D her
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
+    link: v1/s010-data/data.ipynb.html
 - name: Závěrečná procvičovací hodina
   date: 2018-05-31
   description: Během závěrečné hodiny se mimojiné seznámíme s možnostmi dalšího vzdělávání
@@ -216,12 +210,18 @@
     Ne vždycky je to téma předem připravené, a proto tu bohužel
     k některým nejsou materiály.
   materials:
+  - name: Asteroids
+    type: lesson
+    link: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/projects/asteroids
+  - name: Množinový tahák
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/sets/sets-cs.pdf
+  - name: Tahák na geometrii a fyziku 2D her
+    type: handout
+    link: https://github.com/pyvec/cheatsheets/blob/master/game-physics/game-physics-cs.pdf
   - name: Soubory, adresáře, a příkazová řádka do hloubky (cca 30min)
     type: lesson
     link: v1/s005-modules/cmdline.html
-  - name: Data (cca 2h)
-    type: lesson
-    link: v1/s010-data/data.ipynb.html
   - name: Requests & Twitter API
     type: lesson
     link: v1/s011-dicts/requests.ipynb.html
