@@ -12,13 +12,16 @@ body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-a:hover, a:focus, .city-address a:hover,
-.city-address a:focus, .meetup-address a:hover,
-.meetup-address a:focus, .meetup-heading a:hover,
-.meetup-heading a:focus, .meetup-registration a:hover,
-.meetup-registration a:focus {
+a {
 	text-decoration: none;
-	color: #fa023c;
+	color: #e51f40;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+p a:hover {
+	text-decoration: underline;
 }
 .pull-right li {
 	padding-top: 10px;
@@ -365,6 +368,7 @@ HOMEPAGE
 	color: #e51f40;
 }
 .about-link a:hover {
+    text-decoration: underline;
 	color: #333;
 }
 .about-p {
@@ -480,14 +484,11 @@ CITIES PAGE
 .meetup ul li.button a.meetup-info-item:hover {
     background-color: #e51f40;
 }
-.meetup ul li span.meetup-info-item {
-    color: #8e8c8d;
-}
 .meetup ul li a.meetup-info-item {
-    color: #333;
+    color: #e51f40;
 }
 .meetup ul li a.meetup-info-item:hover {
-    color: #e51f40;
+    color: #333;
 }
 .meetup ul li .glyphicon {
     color: #333;
@@ -537,8 +538,10 @@ section.recommendations, section.contacts {
 }
 section.contacts div a {
 	color: #fff;
-
 	width: 100%;
+}
+section.contacts div a:hover {
+    text-decoration: underline;
 }
 .contact a img {
 	max-width: 100%;
@@ -761,6 +764,6 @@ body > footer .global-pyladies a {
 }
 
 body > footer .global-pyladies a:hover {
-    text-shadow: 0 0 5px white;
+    text-decoration: underline;
     color: white;
 }
