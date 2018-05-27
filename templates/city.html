@@ -43,8 +43,11 @@
       {% endif %}
       {% if meetup.place %}
         {% call item(icon="map-marker", url=meetup.place.url) %}
-            {{ meetup.place.name }},
-            {{ meetup.place.address }}
+            {{ meetup.place.name }}
+            {%- if meetup.place.address -%}
+                ,
+                {{ meetup.place.address }}
+            {% endif %}
         {% endcall %}
       {% endif %}
       {% set have_button=False %}
