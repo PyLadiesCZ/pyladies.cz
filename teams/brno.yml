@@ -48,42 +48,50 @@
 
 - name: Jiří Zapletal
   img: img/brno/team/jiri.jpg
+  role: Kouč
   links:
   - mail-link: mailto:yaplik@gmail.com
 
 - name: Anna Haymannová
   img: img/brno/team/anna.jpg
+  role: Kouč
   links:
   - mail-link: mailto:haymannovaa@gmail.com
   - linkedin-link: https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/
 
 - name: Edita Balkóová
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:386966@mail.muni.cz
 
 - name: Hanka Střondalová
   img: img/brno/team/Hanka.jpg
+  role: Kouč
   links:
   - mail-link: mailto:strondalovah@centrum.cz
 
 - name: Jaroslav Šafka
   img: img/brno/team/JarekS.png
+  role: Kouč
   links:
   - mail-link: mailto:pyladies zavináč safka.org
 
 - name: Juraj Michálek
   img: img/brno/team/Juraj.jpg
+  role: Kouč
   links:
   - mail-link: mailto:juraj.michalek132@gmail.com
 
 - name: Katka Chmelařová
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:sprinarova.katka@gmail.com
 
 - name: Luděk Reif
   img: img/brno/team/ludek.jpg
+  role: Kouč
   links:
   - mail-link: mailto:ludek.reif@gmail.com
   - github-link: https://github.com/lurei
@@ -91,27 +99,32 @@
 
 - name: Marcela Vaculíková
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:marcvac@seznam.cz
 
 - name: Mária Krajčovičová
   img: img/brno/team/MariaK.jpg
+  role: Kouč
   links:
   - mail-link: mailto:krajcovicmaja@gmail.com
 
 - name: Martin Pavlásek
   img: img/brno/team/Martin.jpg
+  role: Kouč
   links:
   - mail-link: mailto:tuzticzka@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
 
 - name: Michal Cyprian
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:m.cyprian@gmail.com
 
 - name: Pavel Dedík
   img: img/brno/team/pavel.jpg
+  role: Kouč
   links:
   - mail-link: mailto:dedikx@gmail.com
   - github-link: https://github.com/paveldedik
@@ -119,20 +132,24 @@
 
 - name: Petr Bolf
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:petr.bolf@taborpolana.cz
 
 - name: Roman Blanco
   img: img/brno/team/roman.jpg
+  role: Kouč
   links:
   - github-link: https://github.com/romanblanco
 
 - name: Svätopluk Hanzel
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:svatoplukhanzel@gmail.com
 
 - name: Tomáš Orsava
   img: img/brno/team/blank.png
+  role: Kouč
   links:
   - mail-link: mailto:tomas.n@orsava.cz
