@@ -60,13 +60,18 @@ def city(city_slug):
     if city is None:
         abort(404)
     meetups = read_meetups_yaml('meetups/' + city_slug + '.yml')
+    current_meetups = [m for m in meetups if m['current']]
+    past_meetups = [m for m in meetups if not m['current']]
+    registration_meetups = [
+        m for m in current_meetups if m.get('registration_status')=='running']
     return render_template(
         'city.html',
         city_slug=city_slug,
         city_title=city['title'],
         team_name=city.get('team-name'),
-        current_meetups=[m for m in meetups if m['current']],
-        past_meetups=[m for m in meetups if not m['current']],
+        current_meetups=current_meetups,
+        past_meetups=past_meetups,
+        registration_meetups=registration_meetups,
         contacts=city.get('contacts'),
         team=read_yaml('teams/' + city_slug + '.yml', default=()),
     )
