@@ -86,17 +86,11 @@ def info_redirect(city):
 
 @app.route('/praha-cznic/')
 def praha_cznic():
-    '''
-    Pražský kurz v CZ.NIC
-    '''
-    return render_template('praha.html', location='cznic', plan=read_lessons_yaml('plans/praha-cznic.yml'))
+    return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-cznic/')
 
 @app.route('/praha-ntk/')
 def praha_ntk():
-    '''
-    Pražský kurz v NTK
-    '''
-    return render_template('praha.html', location='ntk', plan=read_lessons_yaml('plans/praha-ntk.yml'))
+    return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-ntk/')
 
 @app.route('/stan_se/')
 def stan_se():
