@@ -36,17 +36,17 @@ Website of the Czech PyLadies chapter / Web českých PyLadies.
 ## <a name="jak-to-funguje">Jak to funguje
 
 Stránky jsou generované ze šablon Jinja2 v adresáři `templates`.
-Zatím je to hlavně na hlavičky a patičky, časem můžeme použít víc
-šablonových vychytávek (dědičnost, makra), ať je v tom trochu pořádek.
 
 Soubory jako obrázky, fonty, CSS, JS jsou v `static`.
 
 Původní stránky jsou v  `original`; podadresář `v1` obsahuje kurz a musí
 být zveřejněn na stejných URL jako předtím.
 
-V `course` snad časem bude kurz převedený do ReST dokumentace.
+V `meetups` jsou data pro seznamy kurzů srazů. Mění se tu datumy, časy, odkazy na materiály.
 
-V `plans` jsou data pro seznamy lekcí. Mění se tu datumy, probrané/neprobrané lekce, přesun témat.
+V `teams` jsou data pro seznamy lidí – organizátorů a koučů.
+
+V `cities.yml` jsou data o městech, ve kterých PyLadies fungují, včetně kontaktů na PyLadies v konkrétních městech.
 
 Celé dohromady to spojuje `pyladies_cz.py`; tady se např. přidávají nové
 podstránky.
@@ -55,9 +55,13 @@ podstránky.
 
 ### Instalace
 
+Ve virtuálním prostředí s Pythhonem 3.6 (nebo vyšším) spusť:
+
     $ python -m pip install -r requirements.txt
 
 ### Spuštění webu lokálně v PC
+
+Ve stejném virtuálním prostředí spusť:
 
     $ python pyladies_cz.py serve
 
@@ -154,79 +158,4 @@ Nové kurzy se přidávají na konec `.yml` souboru. Nejnovější kurz v seznam
   time: pondělky ve 14 denních intervalech, 18:00 - 20:00
   registration:
     url: <tady_bude_adresa>
-```
-    
-
-
-### <a name="nastaveni-obrazku">Nastavení obrázků
-
-* Banner na úvodní stránce - 1500px × 655px
-* Banner v detailu měst - 1850px × 400px
-* Fotky - detail města - 1920px × 1278px
-
-**Změna obrázků podle měst v banerech**
-
-Obrázky jsou definované v CSS. Pro každé město je společná třída intro=city, s tím, že obrázek pro každé město se změní v třídě **intro-city-{city-name}**. (Příklad třídy: intro-city-praha).
-
-### <a name="nastaveni-informaci-o-aktualnim-kurzu">Nastavení informací o aktuálním kurzu na stránce materiálů
-
-* Aktivní kurz (př. v sekci ```Started course Prague``` v souboru `templates/praha.html`)
-* Neaktivní kurz (př. v sekci ```Started course Brno``` v souboru `templates/brno.html`)
-
-### <a name="probrane-neprobrane">Stav kurzu - probrané a neprobrané lekce (stránka materiálů kurzu v souboru `plans/praha.yml`)
-
-* Probraná lekce ```done: true```
-* Neprobraná lekce ```done: false```
-
-***Ukázka pro probranou a neprobranou lekci na webu:***
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-1.png" /><br /> 
-
-### <a name="presun-lekci">Stav kurzu - vytvoření plánu kurzu či přesun lekcí v kurzu (stránka materiálů kurzu v souboru `plans/praha.yml`)
-Každé město může mít vlastní plán kurzu. Případně navíc speciální lekce.
-
-***Ukázka pro běžnou lekci:***
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-2.png" /><br /> 
-
-```
-- name: Seznamy
-  date: 2016-11-14
-  done: true
-  materials:
-  - name: Turnaj v piškvorkách
-    type: special
-  - name: Seznamy
-    type: lesson
-    link: v1/s006-lists/lists2.html
-  - name: N-tice
-    type: lesson
-    link: v1/s006-lists/tuples.html
-  - name: Tahák na seznamy
-    type: handout
-    link: https://github.com/pyvec/cheatsheets/raw/master/lists/lists-cs.pdf
-  - name: Domácí projekty (PDF)
-    type: homework
-    link: v1/s006-lists/handout/handout6.pdf
-  - name: Celý kód na hru z lekce o seznamech
-    type: link
-    link: v1/cele-kody/seznamy.py
-```
-
-
-
-***Ukázka pro domluvené speciální lekce nad rámec běžného výkladu (např. z odboček)- probrané a neprobrané:***
-<img src="https://github.com/PyLadiesCZ/pyladies.cz/blob/master/static/img/readme-course-plan-3.png" /><br /> 
-
-```
-- name: Vánoční speciál
-  date: 2016-12-19
-  done: true
-  materials:
-  - name: MicroPython a světýlka
-    type: special-lesson
-- name: Relační databáze (SQLite a SQLAlchemy)
-  date: 2016-01-02
-  done: false
-  materials:
-  - name: Relační databáze
-    type: special-lesson
 ```
