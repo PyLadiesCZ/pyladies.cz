@@ -205,8 +205,6 @@ def read_meetups_yaml(filename):
 
     today = datetime.date.today()
 
-    previous = None
-
     for meetup in data:
 
         # 'date' means both start and end
@@ -241,14 +239,6 @@ def read_meetups_yaml(filename):
                 meetup['registration_status'] = 'running'
 
         meetup['current'] = ('end' not in meetup) or (meetup['end'] >= today)
-
-        # meetup['parallel_runs'] will contain a shared list of all parallel runs
-        if meetup.get('parallel-with-previous'):
-            meetup['parallel_runs'] = previous['parallel_runs']
-        else:
-            meetup['parallel_runs'] = []
-        meetup['parallel_runs'].append(meetup)
-        previous = meetup
 
     return list(reversed(data))
 
