@@ -75,7 +75,7 @@
   <section class=" container text-center" id="">
     <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
     <div class="meetup">
-      {% for meetup in current_meetups %}
+      {% for meetup in current_meetups | reverse %}
          {{ meetup_info(meetup) }}
           {% if not loop.last and loop.index0 % 2 %}
           {% endif %}
