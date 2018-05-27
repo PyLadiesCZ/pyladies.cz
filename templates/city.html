@@ -7,60 +7,70 @@
 {%- endblock -%}
 
 {% macro meetup_info(meetup, with_registration_link=True) %}
+  {% macro item(icon, url=None, is_button=False) %}
+    <li {% if is_button %}class="button"{% endif %}>
+        {% if url %}
+            <a href="{{ url }}"
+        {% else %}
+            <span
+        {% endif %}
+        class="meetup-info-item meetup-info-item-{{icon}}">
+            <span class="glyphicon glyphicon-{{ icon }}"></span>
+            <span>{{ caller() }}</span>
+        {% if url %}
+            </a>
+        {% else %}
+            </span>
+        {% endif %}
+    </li>
+  {% endmacro %}
   <div class="meetup-width">
       <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>
+      <ul>
       {% if meetup.start and meetup.end %}
-        <p class="meetup-date">
-          <span class="glyphicon glyphicon-calendar"></span>
+        {% call item(icon="calendar") %}
           {{ (meetup.start, meetup.end)| date_range }}
-        </p>
+        {% endcall %}
       {% elif meetup.date_text %}
-        <p class="meetup-date">
-          <span class="glyphicon glyphicon-calendar"></span>
+        {% call item(icon="calendar") %}
           {{ meetup.date_text }}
-        </p>
+        {% endcall %}
       {% endif %}
       {% if meetup.time %}
-        <p class="meetup-time">
-          <span class="glyphicon glyphicon-hourglass"></span>
+        {% call item(icon="hourglass") %}
           {{ ('\n' ~ meetup.time) | markdown(inline=True) }}
-        </p>
+        {% endcall %}
       {% endif %}
       {% if meetup.place %}
-        <p class="meetup-address">
-          <span class="glyphicon glyphicon-map-marker"></span>
-          {% if meetup.place.url %}
-          <a href="{{ meetup.place.url }}" target="_blank" rel="noopener">
-          {% endif %}
+        {% call item(icon="map-marker", url=meetup.place.url) %}
             {{ meetup.place.name }},
             {{ meetup.place.address }}
-          {% if meetup.place.url %}
-          </a>
-          {% endif %}
-        </p>
+        {% endcall %}
       {% endif %}
+      {% set have_button=False %}
       {% if meetup.registration_status and with_registration_link %}
-        <p class="meetup-registration">
-          <span class="glyphicon glyphicon-edit"></span>
-          {% if meetup.registration_status == 'running' %}
-            <a href="{{ meetup.registration.url }}">
-              {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
-            </a>
-          {% elif meetup.registration_status == 'closed' %}
+        {% if meetup.registration_status == 'running' %}
+          {% call item(icon="edit", url=meetup.place.url, is_button=True) %}
+            {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
+          {% endcall %}
+          {% set have_button=True %}
+        {% elif meetup.registration_status == 'closed' %}
+          {% call item(icon="edit") %}
             Registrace už je uzavřena :(
-          {% elif meetup.registration_status == 'meetup_started' %}
+          {% endcall %}
+        {% elif meetup.registration_status == 'meetup_started' %}
+          {% call item(icon="edit") %}
             Kurz probíhá
-          {% endif %}
-        </p>
+          {% endcall %}
+        {% endif %}
       {% endif %}
       {% if meetup.materials %}
-        <p class="meetup-materials">
-          <span class="glyphicon glyphicon-book"></span>
-          <a href="{{ meetup.materials }}">
-            Materiály
-          </a>
-        </p>
+        {% call item(icon="book", url=meetup.materials,
+                     is_button=not have_button and meetup.current) %}
+          Materiály
+        {% endcall %}
       {% endif %}
+      </ul>
   </div>
 {% endmacro %}
 

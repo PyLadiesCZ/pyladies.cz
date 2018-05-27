@@ -421,7 +421,7 @@ HOMEPAGE
 	padding: 40px 20px;
 
 }
-h3, span {
+h3 {
 	color: #333;
 }
 @media all and (min-width: 620px) {
@@ -453,27 +453,60 @@ CITIES PAGE
 	font-size: 20px;
 	margin-bottom: 20px;
 }
-.meetup-address, .meetup-date {
-	display: flex;
-}
-.meetup-date, .meetup-time,
-.meetup-topic, .meetup-address a,
-.meetup-registration a {
-	color: #8e8c8d;
-}
-.meetup .meetup-address span, .meetup-date span {
-	top: 5px;
-	margin-right: 5px;
-}
 .meetup-heading a {
 	color: #333;
 }
-.meetup .meetup-materials {
-  margin-bottom: 0;
+.meetup ul {
+    list-style-type: none;
+    padding-left: 0;
 }
-.meetup .meetup-materials a {
-	font-size: 1.5em;
-	color: #e51f40;
+.meetup ul li.button {
+    background-color: #8e8c8d;
+    color: white;
+}
+.meetup ul li.button span {
+    color: white;
+}
+.meetup ul li .meetup-info-item {
+    display: flex;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+.meetup ul li.button .meetup-info-item {
+    padding-top: 0.5em;
+}
+.meetup ul li.button a.meetup-info-item:hover {
+    background-color: #e51f40;
+}
+.meetup ul li span.meetup-info-item {
+    color: #8e8c8d;
+}
+.meetup ul li a.meetup-info-item {
+    color: #333;
+}
+.meetup ul li a.meetup-info-item:hover {
+    color: #e51f40;
+}
+.meetup ul li .glyphicon {
+    color: #333;
+    display: block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.25em;
+}
+.meetup ul li.meetup-button {
+    background-color: #8e8c8d;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+.meetup ul li.meetup-button .glyphicon {
+    color: white;
+}
+.meetup ul li.meetup-button a {
+    color: white;
 }
 .start-title2 {
 	padding: 30px 5px;
