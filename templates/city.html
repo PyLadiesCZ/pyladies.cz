@@ -53,7 +53,7 @@
       {% set have_button=False %}
       {% if meetup.registration_status and with_registration_link %}
         {% if meetup.registration_status == 'running' %}
-          {% call item(icon="edit", url=meetup.place.url, is_button=True) %}
+          {% call item(icon="edit", url=meetup.registration.url, is_button=True) %}
             {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
           {% endcall %}
           {% set have_button=True %}
@@ -85,7 +85,7 @@
 
   <!-- Current Meetups -->
   {% if current_meetups %}
-  <section class=" container text-center" id="">
+  <section class=" container text-center" id="meetups">
     <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
     <div class="meetup">
       {% for meetup in current_meetups | reverse %}
@@ -94,6 +94,21 @@
           {% endif %}
       {% endfor %}
     </div>
+    {% if past_meetups %}
+    <div>
+        <a href="#past-meetups">
+            {% if past_meetups|length == 1 %}
+                Jedna další akce už je
+            {% elif past_meetups|length < 5 %}
+                A další {{past_meetups|length}} akce už jsou
+            {% else %}
+                A dalších {{past_meetups|length}} kurzů a srazů už je
+            {% endif %}
+            za námi!
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    {% endif %}
   </section>
   {% endif %}
 
@@ -120,7 +135,22 @@
     {% endcall %}
   {% elif city_slug != "ostatni" %}
     {% call registration_link_block() %}
-        Čekáš na otevření dalších kurzů?
+        {% if past_meetups %}
+        <div>
+            Už máme za sebou
+            <a href="#past-meetups">
+                {% if past_meetups|length == 1 %}
+                    jednu akci.
+                {% elif past_meetups|length < 5 %}
+                    {{past_meetups|length}} akce.
+                {% else %}
+                    {{past_meetups|length}} kurzů a srazů.
+                {% endif %}
+            </a>
+        </div>
+        {% endif %}
+
+        Čekáš na otevření přihlášek na další?
     {% endcall %}
   {% endif %}
 
@@ -249,7 +279,7 @@
 
   <!-- Past Meetups -->
   {% if past_meetups %}
-  <section  class=" container text-center" id="meetups">
+  <section  class=" container text-center" id="past-meetups">
     <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
     <div class="meetup">
       {% for meetup in past_meetups %}

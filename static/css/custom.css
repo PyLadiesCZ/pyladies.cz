@@ -77,6 +77,7 @@ body.have-menu .main-navbar .navbar-menu {
     border-radius: 4px;
     background: #ededed;
 }
+body.have-menu .main-navbar .navbar-menu:active,
 body.have-menu .main-navbar .navbar-menu:hover {
     box-shadow: 0 0 2px #8e8c8d;
 }
@@ -102,6 +103,7 @@ body.menu-shown .main-navbar .navbar-menu {
 .main-navbar li:hover {
     background: #333;
 }
+.main-navbar .materials-dropdown:active,
 .main-navbar .materials-dropdown:hover {
     background: #8e8c8d;
 }
@@ -188,6 +190,7 @@ nav.main-navbar li.current-page {
         color: #e51f40;
     }
     /* and the Materials dropdown is hidden */
+    .main-navbar .materials-dropdown:active,
     .main-navbar .materials-dropdown:hover {
         background: transparent;
     }
@@ -206,6 +209,7 @@ nav.main-navbar li.current-page {
         text-align: left;
         margin-top: 0;
     }
+    .main-navbar .materials-dropdown:active ul,
     .main-navbar .materials-dropdown:hover ul {
         display: block;
     }
@@ -220,6 +224,7 @@ nav.main-navbar li.current-page {
     .main-navbar .materials-dropdown ul li a {
         color: #333;
     }
+    .main-navbar .materials-dropdown ul li a:active,
     .main-navbar .materials-dropdown ul li a:hover {
         color: #e51f40;
     }
@@ -239,6 +244,7 @@ nav.main-navbar li.current-page {
     .main-navbar .navbar-other li {
         display: inline-block;
     }
+    .main-navbar .materials-dropdown:active,
     .main-navbar .materials-dropdown:hover {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
