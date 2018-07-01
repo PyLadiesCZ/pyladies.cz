@@ -499,6 +499,9 @@ CITIES PAGE
 .meetup ul li.button span {
     color: white;
 }
+.meetup ul li.button a {
+    text-decoration: none;
+}
 .meetup ul li .meetup-info-item {
     display: flex;
     width: 100%;
