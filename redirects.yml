@@ -1,3 +1,6 @@
+# Informace ohledně přesměrovávání starých URL materiálů na nové
+# umístění (naucse.python.cz)
+
 naucse-lessons:
     s001-install:
         cmdline.html: beginners/cmdline
