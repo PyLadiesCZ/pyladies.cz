@@ -314,14 +314,14 @@ nav.main-navbar li.current-page {
         text-transform: uppercase;
     }
     .navbar-cities {
+        /* Fallback image */
         background-image: url(../img/bcg.svg);
         background-position: top left;
         background-repeat: repeat-x;
-    }
-    .navbar-cities.faded-banner {
-        background-image: url(../img/bcg.svg);
-        background-position: top left;
-        background-repeat: repeat-x;
+        /* Gradient with 137px of white on the top, pink bottom */
+        background: linear-gradient(180deg,
+                                    white, white 137px,
+                                    #e51f40 137px, #e51f40);
     }
     .navbar-cities li {
         padding: 0;
