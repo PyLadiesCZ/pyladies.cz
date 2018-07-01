@@ -16,7 +16,9 @@
                         {% for new in news %}
                             <div class="news-width">
                                 <h3 class="news-title">{{ new.title }}</h3>
-                                <p class="news-p">{{ new.content|safe }}</p>
+                                <div class="news-content">
+                                    {{ new.content|markdown }}
+                                </div>
                             </div>
                         {% endfor %}
                         </div>

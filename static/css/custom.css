@@ -387,7 +387,13 @@ HOMEPAGE
     text-decoration: underline;
 	color: #333;
 }
-.news-p, .about-p {
+.news-content {
+	color: #333333;
+  margin-bottom: 25px;
+}
+.news-content p {
+}
+.about-p {
 	color: #333333;
   margin-bottom: 25px;
   padding-top: 15px;
