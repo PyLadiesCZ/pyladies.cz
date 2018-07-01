@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>requests</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Feedback_homeworks</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,12 +11775,32 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Requests">Requests<a class="anchor-link" href="#Requests">&#182;</a></h1><p>Nejdřiv si nainstaluj Requests, knihovnu pro webové klienty:</p>
+<h1 id="Dom&#225;c&#237;-projekt---vlastn&#237;-t&#345;&#237;da-pro-cel&#225;-&#269;&#237;sla">Dom&#225;c&#237; projekt - vlastn&#237; t&#345;&#237;da pro cel&#225; &#269;&#237;sla<a class="anchor-link" href="#Dom&#225;c&#237;-projekt---vlastn&#237;-t&#345;&#237;da-pro-cel&#225;-&#269;&#237;sla">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vytvoř si vlastní třídu pro celá čísla tak, aby tato nová třída měla všechny vlastnosti a schopnosti běžných celých čísel v Pythonu (objekty bude možné sčítat, odečítat, porovnávat atp.) a navíc měla metodu pro rozpoznání, zda je číslo v objektu sudé nebo liché jménem <code>je_sude()</code>, která bude vracet <code>True</code> nebo <code>False</code>.</p>
 
-<pre><code>$ pip install requests
-
-</code></pre>
-<p>A pak v Pythonu:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#344;e&#353;en&#237;-vlastn&#237;-metody">&#344;e&#353;en&#237; vlastn&#237; metody<a class="anchor-link" href="#&#344;e&#353;en&#237;-vlastn&#237;-metody">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nejsmazší je dědit přímo z třídy <code>int</code> a přidat jen jednu vlastní metodu.</p>
 
 </div>
 </div>
@@ -11790,53 +11810,57 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CeleCislo</span><span class="p">(</span><span class="nb">int</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">je_sude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Knihovna Requests ti umožní stahovat webové stránky serverů na Internetu, podobně jako to dělá webový prohlížeč.
-(Prohlížeče umí pak stránky umí i zobrazis, Requests je jen stahuje.)</p>
-<p>Zkusíme si to napřed se stránkou <a href="http://python.cz">http://python.cz</a>:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">odpoved</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.cz&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">CeleCislo</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">je_sude</span><span class="p">()</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Requests za tebe vytvořil dotaz, který poslal serveru jménem "python.cz". V dotazu jsou "hlavičky", které určují co přesně stáhnout:</p>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">odpoved</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">CeleCislo</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">y</span><span class="o">.</span><span class="n">je_sude</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -11849,145 +11873,13 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;Connection&#39;: &#39;keep-alive&#39;, &#39;Accept-Encoding&#39;: &#39;gzip, deflate&#39;, &#39;Accept&#39;: &#39;*/*&#39;, &#39;User-Agent&#39;: &#39;python-requests/2.5.0 CPython/2.7.8 Linux/3.18.5-201.fc21.x86_64&#39;}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Server pak vrátil odpověď, která má také nějaké hlavičky...</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">odpoved</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;content-encoding&#39;: &#39;gzip&#39;, &#39;transfer-encoding&#39;: &#39;chunked&#39;, &#39;expires&#39;: &#39;Mon, 16 Feb 2015 10:00:50 GMT&#39;, &#39;server&#39;: &#39;GitHub.com&#39;, &#39;last-modified&#39;: &#39;Sun, 15 Feb 2015 19:38:20 GMT&#39;, &#39;cache-control&#39;: &#39;max-age=600&#39;, &#39;date&#39;: &#39;Mon, 16 Feb 2015 09:50:50 GMT&#39;, &#39;content-type&#39;: &#39;text/html; charset=utf-8&#39;}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>... a hlavně tělo odpovědi – v tomto případě HTML stránku:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">odpoved</span><span class="o">.</span><span class="n">text</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>  <span class="c1"># text odpovědi</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;!doctype html&gt;
-&lt;html lang=&#34;cs&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;utf-8&#34;&gt;
-
-    &lt;title&gt;Python, programovací jazyk&lt;/title&gt;
-    &lt;meta property=&#34;og:title&#34; content=&#34;Python, programovací jazyk&#34;&gt;
-
-    &lt;meta name=&#34;d
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Když dáš v prohlížeči zobrazit zdrojový kód stránky <a href="http://python.cz">http://python.cz</a>, vypadat stejně.</p>
-<p>Requests toho umí spoustu; kompletní dokumentace je na <a href="http://docs.python-requests.org">http://docs.python-requests.org</a>.</p>
-<h1 id="Twitter-API">Twitter API<a class="anchor-link" href="#Twitter-API">&#182;</a></h1><p>Normální internetové stránky jsou uzpůsobené pro lidské čtenáře. Existují ale i "stránky" dělané na to, aby je zpracovávaly programy. Vžilo se pro ně označení "API" (angl. Application Programming Interface, rozhraní pro programování aplikací). (Přesnější termín je "Webové API" nebo "REST API", protože "API" označovat jakékoli programátorské rozhraní – např. seznam metod pythoních slovníků je slovníkové API.)</p>
-<p>Jedna ze stránek, které mají API, je Twitter. Jejich API je na stránce <a href="https://dev.twitter.com/rest/public">https://dev.twitter.com/rest/public</a>. Zkusme ho použít: na stránce <a href="https://api.twitter.com/1.1/search/tweets.json">https://api.twitter.com/1.1/search/tweets.json</a> by mělo jít hledat tweety:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">odpoved</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.twitter.com/1.1/search/tweets.json&#39;</span><span class="p">)</span>
-<span class="n">odpoved</span><span class="o">.</span><span class="n">text</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;{&#34;errors&#34;:[{&#34;code&#34;:215,&#34;message&#34;:&#34;Bad Authentication data.&#34;}]}&#39;</pre>
+<pre>True</pre>
 </div>
 
 </div>
@@ -12000,138 +11892,15 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Aj, chyba! Twitter je zabezpečený. Musíme se přihlásit jako aplikace, což bohužel není vůbec jednoduché.</p>
-<p>První krok je klasické přihlášení (nebo vytvoření účtu) na twitter.com. Potom jdi na stránku <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>, a vytvoř si tam aplikaci. (Jako jméno doporučuju třeba "<em>xyz</em>-test" kde <em>xyz</em> je tvoje jméno. Jako webovou adresu můžeš použít neexistující "<a href="http://test.example">http://test.example</a>". Je taky potřeba doplnit dostatečně dlouhý popisek.)</p>
-<p>Po vytvoření aplikace si otevři její záznam a jdi na záložku "Keys and Access Tokens". Tam najdeš dvě speciální hesla, kterým se můžeš přihlásit. Zkopíruj si je do Pythonu:</p>
-
+<h2 id="&#344;e&#353;en&#237;-bonusu---vlastn&#237;-metody-repr">&#344;e&#353;en&#237; bonusu - vlastn&#237; metody repr<a class="anchor-link" href="#&#344;e&#353;en&#237;-bonusu---vlastn&#237;-metody-repr">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dosaď svoje údaje!</span>
-<span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;D4HJp6PKmpon9eya1b2c3d4e5&quot;</span>
-<span class="n">api_secret</span> <span class="o">=</span> <span class="s2">&quot;rhvasRMhvbuHJpu4MIuAb4WO50gnoQa1b2c3d4e5f6g7h8i9j0&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Tyto kódy je potřeba určitým způsobem spojit dohromady a poslat Twitteru, aby vytvořil <em>další</em> heslo, které pak půjde použít pro API. Ten způsob se naštěstí dá zapsat programem:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Zakódování hesla</span>
-<span class="kn">import</span> <span class="nn">base64</span>
-<span class="n">secret</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">api_key</span><span class="p">,</span> <span class="n">api_secret</span><span class="p">)</span>
-<span class="n">secret64</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">secret</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-
-<span class="c1"># Vytvoření speciální hlavičky pro požadavek</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="s1">&#39;Basic </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">secret64</span><span class="p">),</span>
-    <span class="s1">&#39;Host&#39;</span><span class="p">:</span> <span class="s1">&#39;api.twitter.com&#39;</span><span class="p">,</span>
-<span class="p">}</span>
-
-<span class="c1"># Odeslání požadavku.</span>
-<span class="c1"># Předtím jsme použily funkci &quot;requests.get&quot;, která stáhne informace ze serveru.</span>
-<span class="c1"># Tady je metoda &quot;requests.post&quot;, která serveru řekne aby provedl nějakou operaci.</span>
-<span class="c1"># GET, POST, a ostatní HTTP metody jsou popsané na http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html</span>
-<span class="n">odpoved</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://api.twitter.com/oauth2/token&#39;</span><span class="p">,</span>
-                        <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
-                        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;grant_type&#39;</span><span class="p">:</span> <span class="s1">&#39;client_credentials&#39;</span><span class="p">})</span>
-<span class="n">odpoved</span><span class="o">.</span><span class="n">text</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;{&#34;token_type&#34;:&#34;bearer&#34;,&#34;access_token&#34;:&#34;AAAAAAAAAAAAAAAAAAAAAHhKXAAAAAAAaA1abB2bcC3cdD4deE5efF6fgG7ghH8hiI9ijJ0ja1b2c3d4e5f6g7h8i9j0a1b2c3d4e5f6g7h8i9j0&#34;}&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Odpověď nám přišla jako řetězec, ve formátu JSON. JSON je ve světě vebových API častý, a tak má Requests přímo metodu, která JSON dekóduje. Můžeš si tak ušetřit psaní <code>import json</code> a <code>json.loads(odpoved.text)</code>.</p>
-<p>Z odpovědi nás zajímá heslo jménem <code>access_token</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bearer_token</span> <span class="o">=</span> <span class="n">odpoved</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span>
-<span class="n">bearer_token</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[9]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;AAAAAAAAAAAAAAAAAAAAAHhKXAAAAAAAaA1abB2bcC3cdD4deE5efF6fgG7ghH8hiI9ijJ0ja1b2c3d4e5f6g7h8i9j0a1b2c3d4e5f6g7h8i9j0&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tohle heslo si můžeš zapsat přímo do programu, a jeho získávání příště přeskočit (místo všeho od <code>api_key = ...</code> napsat jen <code>bearer_token = 'AAAA...'</code>.</p>
-<p>Blížíme se ke konci! Teď si uděláme si objekt <code>Session</code> s nastavenými přihlašovacími údaji. Tím řekneme knihovně Requests, aby tohle nové heslo používala pro další dotazy.</p>
+<p>Metoda <code>__repr__</code> vrací řetězec, který reprezentuje objekt například při výpisu v interaktivní konzoli. Tato metoda může vracet libovolný řetězec.</p>
 
 </div>
 </div>
@@ -12141,41 +11910,83 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bearer_auth</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
-    <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Authorization&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Bearer &#39;</span> <span class="o">+</span> <span class="n">bearer_token</span>
-    <span class="k">return</span> <span class="n">req</span>
-
-<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
-<span class="n">session</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">bearer_auth</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CeleCislo</span><span class="p">(</span><span class="nb">int</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">je_sude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+    
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Cele cislo </span><span class="si">{}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A teď když místo <code>requests.get</code> použiješ <code>session.get</code>, budeš přihlášená.</p>
-<p>Zkus znovu stáhnout stránku <a href="https://api.twitter.com/1.1/search/tweets.json">https://api.twitter.com/1.1/search/tweets.json</a>. Tentokrát s parametrem <code>'q'</code>, který říká co hledáš:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">odpoved</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-    <span class="s1">&#39;https://api.twitter.com/1.1/search/tweets.json&#39;</span><span class="p">,</span>
-    <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="s1">&#39;#vesmír&#39;</span><span class="p">},</span>
-<span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">CeleCislo</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;Cele cislo 5&gt;</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12184,21 +11995,316 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Zkus si vypsat <code>odpoved.json()</code>. Zjistíš, že je to slovník plný spooousty informací. Nejzajímavější z nich je pod klíčem <code>'statuses'</code>: <em>seznam</em> tweetů. Každý tweet je zase slovník spousty informací; samotný text je pod klíčem <code>'text'</code>.</p>
-<p>Tweety se tedy dají vypsat takhle:</p>
+<h2 id="Kompatibilita">Kompatibilita<a class="anchor-link" href="#Kompatibilita">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Kompatibilita zůstala díky dědění zachována.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">odpoved</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">CeleCislo</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
 
-<span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;statuses&#39;</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>12</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>-2</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vlastn&#237;-objekty-a-speci&#225;ln&#237;-metody">Vlastn&#237; objekty a speci&#225;ln&#237; metody<a class="anchor-link" href="#Vlastn&#237;-objekty-a-speci&#225;ln&#237;-metody">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pro domácí projekt to nebylo potřeba, ale pojďme si zkusit vytvořit vlastní objekt s implementovanými metodami pro využití operátorů v Pythonu.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Osoba</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rc</span> <span class="o">=</span> <span class="n">rc</span>
+    
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Osoba jmena &#39;</span><span class="si">{}</span><span class="s2">&#39; a RC &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rc</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Pepa&quot;</span><span class="p">,</span> <span class="mi">880101</span><span class="p">)</span>
+<span class="n">o</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[32]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;Osoba jmena &#39;Pepa&#39; a RC &#39;880101&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Matematika">Matematika<a class="anchor-link" href="#Matematika">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pro matematické operátory existují speciální metody, jejichž názvy odpovídají použitým operátorům/operacím.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Osoba</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rc</span> <span class="o">=</span> <span class="n">rc</span>
+    
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Osoba jmena &#39;</span><span class="si">{}</span><span class="s2">&#39; a RC &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rc</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">rc</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">rc</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o1</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Pepa&quot;</span><span class="p">,</span> <span class="mi">880101</span><span class="p">)</span>
+<span class="n">o2</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Karel&quot;</span><span class="p">,</span> <span class="mi">660101</span><span class="p">)</span>
+
+<span class="n">o1</span> <span class="o">+</span> <span class="n">o2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[33]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1540202</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o1</span> <span class="o">-</span> <span class="n">o2</span>
 </pre></div>
 
 </div>
@@ -12214,29 +12320,14 @@ div#notebook {
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Zajímavá hypotéza o vlivu skryté #energie na trpasličí #galaxie. http://t.co/uiSRUA4ShF | #vesmír #temnaenergie
-RT @RudyMarsCz: Probíhá na povrchu #Venuše aktivní sopečná činnost? Odpověď nabízí RudyMars http://t.co/8tKms9tdfv #vesmír #astronomie #Cze…
-Probíhá na povrchu #Venuše aktivní sopečná činnost? Odpověď nabízí RudyMars http://t.co/8tKms9tdfv #vesmír #astronomie #Czech #sopky
-RT @vjkombajn: Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-RT @vjkombajn: Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-RT @vjkombajn: Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-RT @vjkombajn: Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-RT @vjkombajn: Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-Velký třesk možná nebyl...
-http://t.co/Z22qVg8XmC #veda #vesmir
-Zoznámte sa: Toto sú ľudia, ktorí chcú opustiť #Zem a kolonizovať #Mars http://t.co/FlaSwMuQSC #vesmir #kolonizacia #planetaMars
-RT @RudyMarsCz: Jak staré jsou #sopky na Marsu? Odpověď nabízí článek na RudyMars.cz http://t.co/iOTxYxoN3Q #vesmír #astronomie #Mars #Czech
-Jak staré jsou #sopky na Marsu? Odpověď nabízí článek na RudyMars.cz http://t.co/iOTxYxoN3Q #vesmír #astronomie #Mars #Czech
-RT @CRoPlus: Podívejte se s námi do technologicky pokročilého planetária v Hradci Králové http://t.co/uL0g0U4AeT #vesmír http://t.co/LbomIA…
-RT @CRoPlus: Podívejte se s námi do technologicky pokročilého planetária v Hradci Králové http://t.co/uL0g0U4AeT #vesmír http://t.co/LbomIA…
-Podívejte se s námi do technologicky pokročilého planetária v Hradci Králové http://t.co/uL0g0U4AeT #vesmír http://t.co/LbomIAfMVj
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-23-228b50e50c4a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>o1 <span class="ansi-blue-fg">-</span> o2
+
+<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for -: &#39;Osoba&#39; and &#39;Osoba&#39;</pre>
 </div>
 </div>
 
@@ -12248,11 +12339,183 @@ Podívejte se s námi do technologicky pokročilého planetária v Hradci Králo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Na závěr varování: hesla z tohoto příkladu sice slouží jen pro čtení, ale pokud se dostanou do špatných rukou, dá se s nimi napáchat neplecha – Twitter ti pak může zablokovat účet, což může být docela nepříjemné.</p>
-<p>Hesla tedy nikomu neukazuj. Pokud je přesto někdo nezvaný uvidí, jdi na <a href="https://apps.twitter.com">https://apps.twitter.com</a> a změň je (tlačítko "Regenerate Consumer Key and Secret" pod Keys and Access Tokens).</p>
+<h3 id="Porovn&#225;v&#225;n&#237;">Porovn&#225;v&#225;n&#237;<a class="anchor-link" href="#Porovn&#225;v&#225;n&#237;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Osoba</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rc</span> <span class="o">=</span> <span class="n">rc</span>
+    
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Osoba jmena &#39;</span><span class="si">{}</span><span class="s2">&#39; a RC &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rc</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">rc</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">rc</span>
+
+    <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">jmeno</span>
+</pre></div>
 
 </div>
 </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o1</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Pepa&quot;</span><span class="p">,</span> <span class="mi">880101</span><span class="p">)</span>
+<span class="n">o2</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Zikmund&quot;</span><span class="p">,</span> <span class="mi">660101</span><span class="p">)</span>
+<span class="n">o3</span> <span class="o">=</span> <span class="n">Osoba</span><span class="p">(</span><span class="s2">&quot;Alois&quot;</span><span class="p">,</span> <span class="mi">780101</span><span class="p">)</span>
+
+<span class="n">o1</span> <span class="o">&lt;</span> <span class="n">o2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[34]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o2</span> <span class="o">&lt;</span> <span class="n">o3</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[35]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#344;azen&#237;">&#344;azen&#237;<a class="anchor-link" href="#&#344;azen&#237;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">seznam</span> <span class="o">=</span> <span class="p">[</span><span class="n">o1</span><span class="p">,</span> <span class="n">o2</span><span class="p">,</span> <span class="n">o3</span><span class="p">]</span>
+<span class="n">seznam</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[36]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;Osoba jmena &#39;Pepa&#39; a RC &#39;880101&#39;,
+ &lt;Osoba jmena &#39;Zikmund&#39; a RC &#39;660101&#39;,
+ &lt;Osoba jmena &#39;Alois&#39; a RC &#39;780101&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sorted</span><span class="p">(</span><span class="n">seznam</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[37]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;Osoba jmena &#39;Alois&#39; a RC &#39;780101&#39;,
+ &lt;Osoba jmena &#39;Pepa&#39; a RC &#39;880101&#39;,
+ &lt;Osoba jmena &#39;Zikmund&#39; a RC &#39;660101&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>

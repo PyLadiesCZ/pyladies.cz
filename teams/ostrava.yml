@@ -21,8 +21,8 @@
   role: Kontrolor domácích projektů
   links:
   - linkedin-link: https://www.linkedin.com/in/martin-%C4%8Durlej-06aa0b49/
-  - mail-link: mailto:martin.curlej@gmail.com
   - github-link: https://github.com/mcurlej
+  - mail-link: mailto:martin.curlej@gmail.com
 
 - name: Filip Valder
   img: img/ostrava/team/filip_valder.jpg
@@ -32,12 +32,16 @@
   - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
   - mail-link: mailto:filip.valder@gmail.com
 
-- name: Štěpán Tomsa
-  img: img/ostrava/team/stepan_tomsa.jpg
+- name: Glutexo
+  img: img/ostrava/team/glutexo.jpg
   role: Kouč
   links:
+  - instagram: https://www.instagram.com/glutexokun/
+  - facebook: https://www.facebook.com/glutexo
+  - linkedin-link: https://www.linkedin.com/in/glutexo
+  - github-link: https://github.com/Glutexo
   - twitter-link: https://twitter.com/Glutexo
-  - mail-link: mailto:stepantomsa@icloud.com
+  - mail-link: mailto:glutexo@icloud.com
 
 - name: David Chodur
   img: img/ostrava/team/david_chodur.jpg
