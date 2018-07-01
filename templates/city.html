@@ -1,0 +1,295 @@
+{% extends "layout.html" %}
+
+{% block current_city_class -%}
+    {% if city_slug == slug -%}
+        class="current-page"
+    {%- endif -%}
+{%- endblock -%}
+
+{% macro meetup_info(meetup, with_registration_link=True) %}
+  {% macro item(icon, url=None, is_button=False) %}
+    <li {% if is_button %}class="button"{% endif %}>
+        {% if url %}
+            <a href="{{ url }}"
+        {% else %}
+            <span
+        {% endif %}
+        class="meetup-info-item meetup-info-item-{{icon}}">
+            <span class="glyphicon glyphicon-{{ icon }}"></span>
+            <span>{{ caller() }}</span>
+        {% if url %}
+            </a>
+        {% else %}
+            </span>
+        {% endif %}
+    </li>
+  {% endmacro %}
+  <div class="meetup-width">
+      <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>
+      <ul>
+      {% if meetup.start and meetup.end %}
+        {% call item(icon="calendar") %}
+          {{ (meetup.start, meetup.end)| date_range }}
+        {% endcall %}
+      {% elif meetup.date_text %}
+        {% call item(icon="calendar") %}
+          {{ meetup.date_text }}
+        {% endcall %}
+      {% endif %}
+      {% if meetup.time %}
+        {% call item(icon="hourglass") %}
+          {{ ('\n' ~ meetup.time) | markdown(inline=True) }}
+        {% endcall %}
+      {% endif %}
+      {% if meetup.place %}
+        {% call item(icon="map-marker", url=meetup.place.url) %}
+            {{ meetup.place.name }}
+            {%- if meetup.place.address -%}
+                ,
+                {{ meetup.place.address }}
+            {% endif %}
+        {% endcall %}
+      {% endif %}
+      {% set have_button=False %}
+      {% if meetup.registration_status and with_registration_link %}
+        {% if meetup.registration_status == 'running' %}
+          {% call item(icon="edit", url=meetup.registration.url, is_button=True) %}
+            {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
+          {% endcall %}
+          {% set have_button=True %}
+        {% elif meetup.registration_status == 'closed' %}
+          {% call item(icon="edit") %}
+            Registrace už je uzavřena :(
+          {% endcall %}
+        {% elif meetup.registration_status == 'meetup_started' %}
+          {% call item(icon="edit") %}
+            Kurz probíhá
+          {% endcall %}
+        {% endif %}
+      {% endif %}
+      {% if meetup.materials %}
+        {% call item(icon="book", url=meetup.materials,
+                     is_button=not have_button and meetup.current) %}
+          Materiály
+        {% endcall %}
+      {% endif %}
+      </ul>
+  </div>
+{% endmacro %}
+
+{% block content %}
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>{{ city_title | upper }}</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  {% if current_meetups %}
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
+    <div class="meetup">
+      {% for meetup in current_meetups | reverse %}
+         {{ meetup_info(meetup) }}
+          {% if not loop.last and loop.index0 % 2 %}
+          {% endif %}
+      {% endfor %}
+    </div>
+    {% if past_meetups %}
+    <div>
+        <a href="#past-meetups">
+            {% if past_meetups|length == 1 %}
+                Jedna další akce už je
+            {% elif past_meetups|length < 5 %}
+                A další {{past_meetups|length}} akce už jsou
+            {% else %}
+                A dalších {{past_meetups|length}} kurzů a srazů už je
+            {% endif %}
+            za námi!
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <!-- Registration notice -->
+  {% macro registration_link_block() %}
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            {# Sem se vloží větička podle kontextu, viz níže #}
+            {{ caller() }}
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  {% endmacro %}
+  {% if registration_meetups %}
+    {% call registration_link_block() %}
+        Nehodí se ti kurzy, které mají otevřenou registraci?
+    {% endcall %}
+  {% elif current_meetups %}
+    {% call registration_link_block() %}
+        Registrace na kurzy už skončila.
+    {% endcall %}
+  {% elif city_slug != "ostatni" %}
+    {% call registration_link_block() %}
+        {% if past_meetups %}
+        <div>
+            Už máme za sebou
+            <a href="#past-meetups">
+                {% if past_meetups|length == 1 %}
+                    jednu akci.
+                {% elif past_meetups|length < 5 %}
+                    {{past_meetups|length}} akce.
+                {% else %}
+                    {{past_meetups|length}} kurzů a srazů.
+                {% endif %}
+            </a>
+        </div>
+        {% endif %}
+
+        Čekáš na otevření přihlášek na další?
+    {% endcall %}
+  {% endif %}
+
+    <!-- Contact -->
+    {% if contacts %}
+    <section class="contacts text-center">
+      <div class="container">
+        <h2>Kontakty</h2>
+        <div class="contact">
+            {% for text, contact in contacts.items() %}
+                <a href="{{ contact['url'] }}">
+                    <div class="about">
+                        <img height="110" src="{{ pathto('_static/img/link/' + contact['icon'] + '.png', 1) }}" />
+                        <h4 class="about-title">{{ text }}</h4>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <a name="city-info" id="city-info"></a>
+
+    <!-- How it started -->
+    <section class="info-city container text-center">
+        {% if city_slug == 'brno' %}
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to v Brně vzniklo?</h2>
+                <p class="course-city-p">Bylo nebylo, přijela jednou do Brna na návštěvu Lynn Root, která vede PyLadies v San Franciscu. Zrovna probíhala konference RuPy 2012, a v rámci ní Lynn uspořádala půldenní workshop pod hlavičkou PyLadies. Ale potom odjela, než našla dostatečně akční Pythonistku, která by to po ní převzala.</p>
+            </div>
+            <div class="city-images">
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/brno/brno1.jpg', 1) }}" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/brno/brno2.jpg', 1) }}" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/brno/brno3.jpg', 1) }}" class="img-responsive city-img" />
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-10">
+                <p class="course-city-p">Až po více než roce se na Facebooku ozvaly tři studentky, které se Python učily na škole a potřebovaly doučování. Vzpomněli jsme si na balíček samolepek PyLadies, co tu nechala Lynn, a rozhodli se to doučování udělat pod touto značkou. A odtud byl už jen krůček k začátečnickým kurzům i jiným srazům.</p>
+            </div>
+        {% elif city_slug == 'ostrava' %}
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Ostravě?</h2>
+                <p class="course-city-p">Chtěly jsme umět něco, co nás ve škole nenaučí. A tak jednoho dne nás na cestu Pythonu přivedl bratr jedné z nás. Začaly jsme hledat možnost, jak nejlépe se ho naučit. Po dlouhém rozmýšlení a hledání jsme se rozhodly pro Pyladies. Dojíždění do Prahy či Brna nepřicházelo v úvahu a tak jsme se prostě rozhodly založit kurz v Ostravě.</p>
+                <p class="course-city-p">Věříme, že i vy se chcete naučit něco víc, a že to víc najdete právě u nás. Doufáme, že vám naše lekce nebudou přinášet jen ponaučení a vědomosti, ale i zábavu a nové přátele. Můžete se také těšit na jiné akce, které pro vás chystáme v průběhu roku.</p>
+            </div>
+        {% elif city_slug == 'praha' %}
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Praze?</h2>
+                <p class="course-city-p">PyLadies v Praze vznikly v roce 2015 díky iniciativě pražské Python komunity a organizačním schopnostem pár akčních holek, které měly zájem se kurzu samy účastnit.  Spouštěcím impulsem byl i úspěch jednodenního workshopu Django Girls Prague, rovněž zaměřeného na programování v Pythonu. Vytvořili jsme pražskou pilotní skupinu PyLadies a během prvního kurzu společně vylaďovali organizaci i náplň pražských srazů do současné podoby. Nyní kurz PyLadies představuje zhruba 13 dvouhodinových lekcí, které jsou doplněny i samostatnou prací na domácích projektech.</p>
+                <p class="course-city-p">Na kurz pro začátečnice jsme v roce 2016 navázaly pravidelnými pondělními srazy (PyWorking sessions) pro pokročilejší začátečnice, kde mohou absolventky našeho kurzu pracovat na svých vlastních projektech pod vedením zkušených mentorů.</p>
+            </div>
+            <div class="city-images">
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/praha/praha1.jpg', 1) }}" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/praha/praha2.jpg', 1) }}" class="img-responsive city-img " />
+                </div>
+                <div class="course-city-images">
+                    <img src="{{ pathto('_static/img/praha/praha3.jpg', 1) }}" class="img-responsive city-img" />
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-10">
+                <p class="course-city-p">Společné setkávání v rámci PyLadies má velkou výhodu v tom, že se můžou holky navzájem průběžně motivovat a podporovat. Začátky bývají těžké, ale komunita kolem PyLadies vždy ochotně pomůže počáteční překážky překonávat. Díky týmu nadšenců fungují PyLadies čistě na dobrovolné a nezištné bázi.</p>
+            </div>
+        {% elif city_slug == 'ostatni' %}
+            <div class="col-md-offset-1 col-md-10 text-left">
+                <h2 class="course-city-heading">Jak založit Pyladies ve tvém městě?</h2>
+                <p>
+                    Nenašla jsi žádný plánovaný workshop nebo kurz ve svém městě? Zorganizuj si vlastní! :-)
+                </p>
+                <p>
+                    Nejsnažší cesta je obrátit se na některou z organizátorek PyLadies kurzů. Kontakt najdeš zde pod jednotlivými městy, nebo napiš do FB skupiny
+                    <a href="https://www.facebook.com/groups/pyladiespraha/">Pyladies Praha</a>,
+                    <a href="https://www.facebook.com/groups/pyladiesBrno/">Pyladies Brno</a>, nebo
+                    <a href="https://www.facebook.com/pyladiesostrava/">Pyladies Ostrava</a>.
+                    Určitě ti poradí s organizací.
+                </p>
+                <p>
+                    Nebo prostě zajdi na <a href="https://pyvo.cz/">Pyvo</a>.
+                    Ve větších městech pravidelně probíhají setkání příznivců programovacího jazyka Python.
+                    Najdeš zde spoustu nadšenců a třeba i nějaké ochotné budoucí kouče.
+                </p>
+                <p>
+                    Pokud neznáš nikoho, kdo Python učí, zkus najít kouče ve skupině
+                    <a href="https://www.facebook.com/groups/800923800012580/">Učíme Python</a>, která je určena pro kouče/učitele Pythonu a pro ty, co je shánějí.
+                </p>
+                <p>
+                    Praktické rady k organizaci jsou sepsané i
+                    v <a href="http://pyvec-guide.readthedocs.io/guides/beginners-course.html">Příručce pro pořadatele kurzů pro začátečníky</a>.
+                </p>
+                <p>
+                    Podporu jistě najdeš i na <a href="https://www.facebook.com/groups/pyonieri/">Facebookové skupině Python komunity</a>
+                    a na stránkách <a href="https://python.cz/">Python.cz</a>.
+                <p>
+            </div>
+        {% endif %}
+    </section>
+
+    {% if team %}
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">{{ team_name }}</h2>
+      <div class="team ">
+        {% for member in team %}
+          <div class="person">
+            <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle img-responsive" />
+            <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
+            <span><em>{{ member.role }}</em></span>
+            <ul>
+              {%- for link in member.links -%}{%- for type, url in link.items() -%}
+                <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
+              {%- endfor -%}{%- endfor -%}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+  <!-- Past Meetups -->
+  {% if past_meetups %}
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      {% for meetup in past_meetups %}
+          {{ meetup_info(meetup,  with_registration_link=False) }}
+          {% if not loop.last and loop.index0 % 2 %}
+
+          {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+{% endblock content %}

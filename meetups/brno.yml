@@ -41,6 +41,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní úterý 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-jaro-po/
   parallel-with-previous: true
   start: 2017-02-28
   end: 2017-05-30
@@ -48,6 +49,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní pondělí 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-jaro-po/
   start: 2017-02-27
   end: 2017-05-29
   time: pondělky 18:00 – 20:00
@@ -58,6 +60,7 @@
     longitude: '16.6235206'
 
 - name: Začátečnický kurz <br> Podzimní středa 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-podzim-po/
   parallel-with-previous: true
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
@@ -72,6 +75,7 @@
     longitude: '16.6057989'
 
 - name: Začátečnický kurz <br> Podzimní pondělí 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-podzim-po/
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
     end: 2017-09-03
@@ -81,6 +85,7 @@
   place: *experis
 
 - name: Python a jeho knihovny
+  materials: http://naucse.python.cz/2018/pyknihovny-jaro/
   registration:
     url: https://goo.gl/forms/LeubY9EwR7MLcPu53
     end: 2018-02-10
@@ -94,6 +99,7 @@
     longitude: '16.5858589'
 
 - name: Začátečnický kurz <br> Jarní pondělí 2018
+  materials: http://naucse.python.cz/2018/pyladies-brno-jaro-po/
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
     end: 2018-02-15
@@ -103,6 +109,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní středa 2018
+  materials: http://naucse.python.cz/2018/pyladies-brno-jaro-st/
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
     end: 2018-02-15

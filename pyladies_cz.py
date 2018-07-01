@@ -11,6 +11,7 @@ import os
 import fnmatch
 import datetime
 import collections
+from urllib.parse import urlencode
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
@@ -25,7 +26,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
-
+MISSING = object()
 
 def redirect(url):
     """Return a response with a Meta redirect"""
@@ -47,67 +48,51 @@ def redirect(url):
 def index():
     current_meetups = collections.OrderedDict(
         (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
-        for city in ('praha', 'brno', 'ostrava'))
+        for city in ('praha', 'brno', 'ostrava', 'ostatni'))
     news = read_news_yaml('news.yml')
     return render_template('index.html',
+                           cities=read_yaml('cities.yml'),
                            current_meetups=current_meetups,
                            news=news)
 
+@app.route('/<city_slug>/')
+def city(city_slug):
+    cities = read_yaml('cities.yml')
+    city = cities.get(city_slug)
+    if city is None:
+        abort(404)
+    meetups = read_meetups_yaml('meetups/' + city_slug + '.yml')
+    current_meetups = [m for m in meetups if m['current']]
+    past_meetups = [m for m in meetups if not m['current']]
+    registration_meetups = [
+        m for m in current_meetups if m.get('registration_status')=='running']
+    return render_template(
+        'city.html',
+        city_slug=city_slug,
+        city_title=city['title'],
+        team_name=city.get('team-name'),
+        current_meetups=current_meetups,
+        past_meetups=past_meetups,
+        registration_meetups=registration_meetups,
+        contacts=city.get('contacts'),
+        team=read_yaml('teams/' + city_slug + '.yml', default=()),
+    )
 
-@app.route('/brno_info/')
-def brno_info():
-    return render_template('brno_info.html')
+@app.route('/<city>_course/')
+def course_redirect(city):
+    return redirect(url_for('city', city_slug=city, _anchor='meetups'))
 
-
-@app.route('/praha_info/')
-def praha_info():
-    return render_template('praha_info.html')
-
-@app.route('/ostrava_info/')
-def ostrava_info():
-    return render_template('ostrava_info.html')
-
-@app.route('/praha_course/')
-def praha_course():
-    return render_template('praha_course.html', meetups=read_meetups_yaml('meetups/praha.yml'))
-
-@app.route('/brno_course/')
-def brno_course():
-    return render_template('brno_course.html', meetups=read_meetups_yaml('meetups/brno.yml'))
-
-@app.route('/ostrava_course/')
-def ostrava_course():
-    return render_template('ostrava_course.html', meetups=read_meetups_yaml('meetups/ostrava.yml'))
-
-@app.route('/brno/')
-def brno():
-    return render_template('brno.html', plan=read_lessons_yaml('plans/brno.yml'))
-
-@app.route('/praha/')
-def praha():
-    '''
-    Na podzim 2017 běží dva paralelní kurzy, proto je to rozdělené.
-    Toto je jen redirect kvůli zpětné kompatibilitě URL adres, co mají lidi v bookmarcích.
-    '''
-    return redirect(url_for('praha_cznic'))
+@app.route('/<city>_info/')
+def info_redirect(city):
+    return redirect(url_for('city', city_slug=city, _anchor='city-info'))
 
 @app.route('/praha-cznic/')
 def praha_cznic():
-    '''
-    Pražský kurz v CZ.NIC
-    '''
-    return render_template('praha.html', location='cznic', plan=read_lessons_yaml('plans/praha-cznic.yml'))
+    return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-cznic/')
 
 @app.route('/praha-ntk/')
 def praha_ntk():
-    '''
-    Pražský kurz v NTK
-    '''
-    return render_template('praha.html', location='ntk', plan=read_lessons_yaml('plans/praha-ntk.yml'))
-
-@app.route('/ostrava/')
-def ostrava():
-    return render_template('ostrava.html', plan=read_lessons_yaml('plans/ostrava.yml'))
+    return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-ntk/')
 
 @app.route('/stan_se/')
 def stan_se():
@@ -135,6 +120,14 @@ def course_html():
 def google_verification():
     # Verification page for GMail on our domain
     return send_from_directory(app.root_path, 'google-verification.html')
+
+
+##########
+## Template variables
+
+@app.context_processor
+def inject_cities():
+    return dict(cities=read_yaml('cities.yml'))
 
 
 ##########
@@ -166,8 +159,14 @@ def date_range(dates, sep='–'):
     return ' '.join(pieces)
 
 
-def read_yaml(filename):
-    with open(filename, encoding='utf-8') as file:
+def read_yaml(filename, default=MISSING):
+    try:
+        file = open(filename, encoding='utf-8')
+    except FileNotFoundError:
+        if default is MISSING:
+            raise
+        return default
+    with file:
         data = yaml.safe_load(file)
     return data
 
@@ -202,8 +201,6 @@ def read_meetups_yaml(filename):
 
     today = datetime.date.today()
 
-    previous = None
-
     for meetup in data:
 
         # 'date' means both start and end
@@ -215,9 +212,15 @@ def read_meetups_yaml(filename):
         if 'place' in meetup:
             if ('url' not in meetup['place']
                     and {'latitude', 'longitude'} <= meetup['place'].keys()):
-                meetup['place']['url'] = (
-                    'http://mapy.cz/zakladni?q={p[name]},'
-                    '{p[latitude]}N+{p[longitude]}E'.format(p=meetup['place']))
+                place = meetup['place']
+                place['url'] = 'http://mapy.cz/zakladni?' + urlencode({
+                    'y': place['latitude'],
+                    'x': place['longitude'],
+                    'z': '16',
+                    'id': place['longitude'] + ',' + place['latitude'],
+                    'source': 'coor',
+                    'q': place['name'],
+                })
 
         # Figure out the status of registration
         if 'registration' in meetup:
@@ -233,14 +236,6 @@ def read_meetups_yaml(filename):
 
         meetup['current'] = ('end' not in meetup) or (meetup['end'] >= today)
 
-        # meetup['parallel_runs'] will contain a shared list of all parallel runs
-        if meetup.get('parallel-with-previous'):
-            meetup['parallel_runs'] = previous['parallel_runs']
-        else:
-            meetup['parallel_runs'] = []
-        meetup['parallel_runs'].append(meetup)
-        previous = meetup
-
     return list(reversed(data))
 
 def read_news_yaml(filename):
@@ -253,7 +248,7 @@ def read_news_yaml(filename):
             news.append(new)
 
     return news
-
+    
 def pathto(name, static=False):
     if static:
         prefix = '_static/'
@@ -305,6 +300,18 @@ def v1():
                 yield {'path': path}
     for path in REDIRECTS:
         yield url_for('v1', path=path)
+
+OLD_CITIES = 'praha', 'brno', 'ostrava'
+
+@freezer.register_generator
+def course_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
+
+@freezer.register_generator
+def info_redirect():
+    for city in OLD_CITIES:
+        yield {'city': city}
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
