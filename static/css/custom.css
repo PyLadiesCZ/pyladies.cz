@@ -352,7 +352,17 @@ INTRO IMAGES
 /*******************
 HOMEPAGE
 *******************/
+/* .news {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr) );
+}
+.news-width {
+	width: 33.33%;
+	min-width: 300px;
+    margin: 0 auto;
 
+} */
 .join a, .join {
 	color: #333;
 }
@@ -371,13 +381,10 @@ HOMEPAGE
     text-decoration: underline;
 	color: #333;
 }
-.about-p {
+.news-p, .about-p {
 	color: #333333;
   margin-bottom: 25px;
   padding-top: 15px;
-}
-.about-p a {
-	color: #8e8c8d;
 }
 #start {
 	padding-top: 65px;
@@ -749,7 +756,8 @@ body > footer .clear {
 }
 
 body > footer .global-pyladies a,
-body > footer .about-p a {
+body > footer .about-p a,
+body > footer .news-p a {
   color: #8e8c8d;
 }
 

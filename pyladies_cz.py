@@ -49,9 +49,11 @@ def index():
     current_meetups = collections.OrderedDict(
         (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
         for city in ('praha', 'brno', 'ostrava', 'ostatni'))
+    news = read_news_yaml('news.yml')
     return render_template('index.html',
                            cities=read_yaml('cities.yml'),
-                           current_meetups=current_meetups)
+                           current_meetups=current_meetups,
+                           news=news)
 
 @app.route('/<city_slug>/')
 def city(city_slug):
@@ -236,6 +238,17 @@ def read_meetups_yaml(filename):
 
     return list(reversed(data))
 
+def read_news_yaml(filename):
+    data = read_yaml(filename)
+    today = datetime.date.today()
+    news = []
+
+    for new in data:
+        if new['expires'] >= today:
+            news.append(new)
+
+    return news
+    
 def pathto(name, static=False):
     if static:
         prefix = '_static/'
