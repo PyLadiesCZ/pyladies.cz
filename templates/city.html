@@ -53,7 +53,7 @@
       {% set have_button=False %}
       {% if meetup.registration_status and with_registration_link %}
         {% if meetup.registration_status == 'running' %}
-          {% call item(icon="edit", url=meetup.place.url, is_button=True) %}
+          {% call item(icon="edit", url=meetup.registration.url, is_button=True) %}
             {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
           {% endcall %}
           {% set have_button=True %}
