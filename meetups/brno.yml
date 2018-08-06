@@ -122,3 +122,13 @@
     latitude: '49.2099833'
     longitude: '16.5989164'
 
+
+- name: Hadí workshop pro PyLadies
+  materials: https://naucse.python.cz/2018/snake-brno/
+  date: 2018-09-01
+  time: 8:30 – 18:00
+  place:
+    name: Fakulta informatiky MUNI
+    address: Botanická 554/68a, Brno
+    latitude: '49.2099833'
+    longitude: '16.5989164'
