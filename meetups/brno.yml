@@ -125,10 +125,23 @@
 
 - name: Hadí workshop pro PyLadies
   materials: https://naucse.python.cz/2018/snake-brno/
+  registration:
+     url: https://goo.gl/forms/IuSr3HH40KkQw47f1
+     end: 2018-08-19
   date: 2018-09-01
   time: 8:30 – 18:00
-  place:
-    name: Fakulta informatiky MUNI
-    address: Botanická 554/68a, Brno
-    latitude: '49.2099833'
-    longitude: '16.5989164'
+  place: *fi-muni
+
+- name: Experimentální začátečnický kurz <br> Podzimní pondělí 2018
+  registration: &reg18podzim
+    url: https://goo.gl/forms/aWBLB0UC3a2uIo0l1
+    end: 2018-08-30
+  start: 2018-09-17
+  end: 2018-12-17
+  time: pondělky 18:00 – 20:00
+
+- name: Začátečnický kurz <br> Podzimní středa 2018
+  registration: *reg18podzim
+  start: 2018-09-19
+  end: 2018-12-19
+  time: středy 18:00 – 20:00
