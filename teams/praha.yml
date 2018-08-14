@@ -3,12 +3,6 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:valkova.zuza@seznam.cz
-- name: Pavlína Froňková
-  img: img/praha/team/paffi.jpg
-  role: Organizátorka/Koučka
-  links:
-  - mail-link: mailto:pavlina.fronkova@gmail.com
-  - facebook-link: https://www.facebook.com/pavlina.fronkova
 - name: Iveta Jelenová
   img: img/praha/team/ivet.jpg
   role: Organizátorka - kurz NTK
@@ -21,13 +15,13 @@
   - mail-link: mailto:zuzanapokorna@seznam.cz
 - name: Radka Planková
   img: img/praha/team/radka.jpg
-  role: Organizátorka - kurz Olšanka
+  role: Organizátorka - kurz CZ.NIC
   links:
   - mail-link: mailto:radka.plankova@gmail.com
   - facebook-link: https://www.facebook.com/radka.plankova
 - name: Eliška Doktorová
   img: img/praha/team/ED2.jpg
-  role: Organizátorka - kurz Olšanka
+  role: Organizátorka - kurz CZ.NIC
   links:
   - mail-link: mailto:eliska.doktorova@gmail.com
 - name: Zuzana Kašáková
@@ -35,11 +29,6 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:zuza.kasakova@gmail.com
-- name: Lenka Matějová
-  img: img/praha/team/lenka.jpg
-  role: Organizátorka/Koučka
-  links:
-  - twitter-link: https://twitter.com/zoellenka 
 - name: Vojtěch Růžička
   img: img/praha/team/vojta2.jpg
   role: Kouč
@@ -80,16 +69,6 @@
   links:
   - github-link: https://github.com/nadade
   - facebook-link: https://www.facebook.com/nada.jasikova
-- name: Štěpánka Lucinová
-  img: img/praha/team/stepanka.jpg
-  role: Koučka
-  links:
-  - facebook-link: https://www.facebook.com/stepanka.stephanie
-- name: Josef Rousek
-  img: img/praha/team/josef.jpg
-  role: Kouč
-  links:
-  - website-link: http://rousek.name/
 - name: Peter Hozák
   img: img/praha/team/peter.jpg
   role: Kouč
@@ -100,14 +79,12 @@
   role: Kouč
   links:
   - linkedin-link: https://www.linkedin.com/in/pydeq/cs
-- name: Anastázie Sedláková
-  img: img/praha/team/nasta.jpg
-  role: Koučka
-  links: []
-- name: Filip Sedlák
-  img: img/praha/team/filip.jpg
-  role: Kouč
-  links: []
+- name: Pavlína Froňková
+  img: img/praha/team/paffi.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:pavlina.fronkova@gmail.com
+  - facebook-link: https://www.facebook.com/pavlina.fronkova
 - name: Petr Viktorin
   img: img/praha/team/peterv.jpg
   role: Kouč v Brně/Tvůrce materiálů
@@ -122,6 +99,29 @@
   - github-link: https://github.com/honzajavorek
 
 # Neaktivní:
+#  - name: Josef Rousek
+#    img: img/praha/team/josef.jpg
+#    role: Kouč
+#    links:
+#    - website-link: http://rousek.name/
+#  - name: Anastázie Sedláková
+#    img: img/praha/team/nasta.jpg
+#    role: Koučka
+#    links: []
+#  - name: Filip Sedlák
+#    img: img/praha/team/filip.jpg
+#    role: Kouč
+#    links: []
+#  - name: Štěpánka Lucinová
+#    img: img/praha/team/stepanka.jpg
+#    role: Koučka
+#    links:
+#  - facebook-link: https://www.facebook.com/stepanka.stephanie
+#  - name: Lenka Matějová
+#    img: img/praha/team/lenka.jpg
+#    role: Organizátorka/Koučka
+#    links:
+#    - twitter-link: https://twitter.com/zoellenka 
 #  - name: Vašek Chalupníček
 #    img: img/praha/team/vasek.jpg
 #    role: Kouč
