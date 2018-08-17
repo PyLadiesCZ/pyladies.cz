@@ -219,15 +219,16 @@
 
   \verb+souradnice = [(0, 0)]+
 \\\verb+pohyb(souradnice, 'v')+
-\\\verb+print(souradnice)         # → [(0, 0), (0, 1)]+
+\\\verb+print(souradnice)         # → [(0, 0), (1, 0)]+
 \\\verb+pohyb(souradnice, 'v')+
-\\\verb+print(souradnice)         # → [(0, 0), (0, 1), (0, 2)]+
+\\\verb+print(souradnice)         # → [(0, 0), (1, 0), (2, 0)]+
 \\\verb+pohyb(souradnice, 'j')+
-\\\verb+print(souradnice)         # → [(0, 0), (0, 1), (0, 2), (1, 2)]+
+\\\verb+print(souradnice)         # → [(0, 0), (1, 0), (2, 0), (2, 1)]+
 \\\verb+pohyb(souradnice, 's')+
-\\\verb+print(souradnice)         # → [(0, 0), (0, 1), (0, 2), (1, 2), (1, 1)]+
+\\\verb+print(souradnice)         # → [(0, 0), (1, 0), (2, 0), (2, 1), (2, 0)]+
 
-    Funkce by neměla nic vracet.
+    Funkce by neměla nic vracet. Jen mění už existující seznam.
+
     Nezapomeň na testy.
 
 \item Napiš cyklus, který se bude ptát uživatele na světovou stranu,
