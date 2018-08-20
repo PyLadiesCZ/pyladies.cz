@@ -189,10 +189,13 @@
 \begin{enumerate}[resume]
 
 \item \label{snakestart}
-    Napiš funkci, která dostane seznam souřadnic (párů čísel menších než 10)
-    a vypíše je jako mapu. Například:
+    Napiš funkci, která dostane seznam souřadnic (párů čísel menších než 10,
+    která určují sloupec a řádek)
+    a vypíše je jako mapu: mřížku 10×10, kde na políčka která jsou v seznamu
+    napíše \texttt{X}, jinde tečku.
+    Například:
 
-\verb+nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9)])+
+\verb+nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9), (8, 9)])+
 \\\verb+X X . . . . . . . .+
 \\\verb+. . . . . . . . . .+
 \\\verb+. . X . . . . . . .+
@@ -228,8 +231,7 @@
 \\\verb+print(souradnice)         # → [(0, 0), (1, 0), (2, 0), (2, 1), (2, 0)]+
 
     Funkce by neměla nic vracet. Jen mění už existující seznam.
-
-    Nezapomeň na testy.
+    \\Nezapomeň na testy.
 
 \item Napiš cyklus, který se bude ptát uživatele na světovou stranu,
     podle ní zavolá \verb+pohyb+, a následně vykreslí seznam jako mapu.
