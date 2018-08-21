@@ -80,7 +80,7 @@
   time: 9:00 - 16:00
   place: *cz-nic
 
-- name: Pondělní PyWorking sessions Praha <br> pokročilé a doučovací srazy
+- name: Pondělní PyWorking sessions Praha <br> - pokročilé a doučovací srazy
   time: 18:00 - 20:00
   date_text: pondělky ve 14denních intervalech
   registration:
