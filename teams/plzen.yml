@@ -1,0 +1,11 @@
+- name: Líba Poustková
+  img: img/plzen/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:libuse.poustkova@seznam.cz
+
+- name: Filip Vaculík
+  img: img/plzen/team/blank.png
+  role: Organizátor
+  links:
+  - mail-link: mailto:filip.vaculik@seznam.cz

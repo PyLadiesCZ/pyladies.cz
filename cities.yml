@@ -30,7 +30,7 @@ brno:
             url: mailto:brno@pyladies.cz
 
 ostrava:
-    title: OSTRAVA!!!
+    title: Ostrava!!!
     team-name: Tým ostravských PyLadies
     contacts:
         Facebook PyLadies Ostrava:
@@ -42,6 +42,12 @@ ostrava:
         Napiš koučovi:
             icon: coach
             url: mailto:pyladies-ostrava@googlegroups.com
-
+plzen:
+    title: Plzeň
+    team-name: Tým plzeňských PyLadies
+    contacts:
+        Napiš koučovi:
+            icon: coach
+            url: mailto:filip.vaculik@seznam.cz
 ostatni:
     title: Tvoje město

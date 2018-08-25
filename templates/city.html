@@ -97,7 +97,9 @@
     {% if past_meetups %}
     <div>
         <a href="#past-meetups">
-            {% if past_meetups|length == 1 %}
+            {% if past_meetups|length == 0 %}
+                Kurz se připravuje.
+            {% elif past_meetups|length == 1 %}
                 Jedna další akce už je
             {% elif past_meetups|length < 5 %}
                 A další {{past_meetups|length}} akce už jsou
