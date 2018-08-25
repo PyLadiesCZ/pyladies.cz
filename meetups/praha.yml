@@ -199,20 +199,20 @@
 - name: Pyladies Praha <br> Začátečnický kurz úterý
   materials: http://naucse.python.cz/2018/pyladies-praha-podzim-cznic/
   parallel-with-previous: true
-  start: 2018-XX-XX
-  end: 2018-XX-XX
+  #start: 2018-XX-XX
+  #end: 2018-XX-XX
   time: každé úterý 18:00 - 20:00
   registration:
     url: https://goo.gl/forms/WnvKKKt8qfZ2kyIh1
-    end: 2018-XX-XX
+    #end: 2018-XX-XX
   place: *cz-nic-olsanka
   
-  - name: Pyladies Praha <br> Začátečnický kurz XXX
+- name: Pyladies Praha <br> Začátečnický kurz XXX
   materials: http://naucse.python.cz/2018/pyladies-praha-podzim-ntk/
-  start: 2018-XX-XX
-  end: 2018-XX-XX
-  time: každou XXX 18:00 - 20:00
+  #start: 2018-XX-XX
+  #end: 2018-XX-XX
+  #time: každou XXX 18:00 - 20:00
   registration:
     url: https://goo.gl/forms/WnvKKKt8qfZ2kyIh1
-    end: 2018-XX-XX
+    #end: 2018-XX-XX
   place: *ntk
