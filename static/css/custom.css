@@ -79,7 +79,8 @@ body.have-menu .main-navbar .navbar-menu {
 }
 body.have-menu .main-navbar .navbar-menu:active,
 body.have-menu .main-navbar .navbar-menu:hover {
-    box-shadow: 0 0 2px #8e8c8d;
+    -webkit-box-shadow: 0 0 2px #8e8c8d;
+            box-shadow: 0 0 2px #8e8c8d;
 }
 body.menu-shown .main-navbar .navbar-menu {
     background: #cdcdcd;
@@ -287,6 +288,8 @@ nav.main-navbar li.current-page {
         width: 100%;
     }
     .navbar-cities ul {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         list-style-type: none;
         padding: 0;
@@ -294,8 +297,13 @@ nav.main-navbar li.current-page {
         margin: 0 auto;
     }
     .navbar-cities a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         outline: none;
         text-align: center;
     }
@@ -323,14 +331,14 @@ nav.main-navbar li.current-page {
     .navbar-cities {
         /* Gradient with 137px of white on the top, pink bottom */
         background: linear-gradient(180deg,
-                                    white, white 137px,
-                                    #e51f40 137px, #e51f40);
+                                    white, white 108px,
+                                    #e51f40 108px, #e51f40);
     }
     .navbar-cities.faded-banner {
         /* Gradient with 137px of white on the top, gray bottom */
         background: linear-gradient(180deg,
-                                    white, white 137px,
-                                    #8e8c8d 137px, #8e8c8d);
+                                    white, white 108px,
+                                    #8e8c8d 108px, #8e8c8d);
     }
     .navbar-cities li {
         padding: 0;
@@ -340,8 +348,8 @@ nav.main-navbar li.current-page {
 @media all and (min-width: 1000px) {
     /* For very big sceens, set a max size */
     .navbar-cities span.city-title {
-        font-size: 2.3em;
-        line-height: 100px;
+      font-size: 2.1em;
+      line-height: 90px;
     }
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -471,7 +479,9 @@ CITIES PAGE
 
 .meetup {
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	grid-template-columns: repeat(auto-fill, 300px);
 }
 .meetup-width {
@@ -503,6 +513,8 @@ CITIES PAGE
     text-decoration: none;
 }
 .meetup ul li .meetup-info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding-left: 0.5em;
@@ -545,7 +557,8 @@ CITIES PAGE
 }
 @media all and (min-width: 620px) {
   .meetup {
-  	justify-content: space-around;
+  	-ms-flex-pack: distribute;
+  	    justify-content: space-around;
 }
 }
 /* contact */
@@ -564,6 +577,8 @@ section.recommendations, section.contacts {
   font-size: 14px;
 }
 .contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 }
@@ -607,9 +622,14 @@ section.contacts div a:hover {
 /* Photo */
 
 .city-images {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	clear: both;
 }
 .course-city-images {
@@ -630,7 +650,8 @@ section.contacts div a:hover {
 .team {
 	display: grid;
   margin-top: 40px;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	grid-template-columns: repeat(auto-fill, 180px);
 }
 
@@ -642,10 +663,14 @@ h2.course-city-heading {
 	text-align: center;
 }
 .person ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 30px;
 	padding: 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .person li {
 	list-style-type: none;
@@ -682,9 +707,14 @@ h2.course-city-heading {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	/* style for IE 10-11 */
 	.meetup, .team {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-    justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 	}
 
 	.img-circle {

@@ -48,7 +48,7 @@ def redirect(url):
 def index():
     current_meetups = collections.OrderedDict(
         (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
-        for city in ('praha', 'brno', 'ostrava', 'ostatni'))
+        for city in ('praha', 'brno', 'ostrava','plzen', 'ostatni'))
     news = read_news_yaml('news.yml')
     return render_template('index.html',
                            cities=read_yaml('cities.yml'),
@@ -248,7 +248,7 @@ def read_news_yaml(filename):
             news.append(new)
 
     return news
-    
+
 def pathto(name, static=False):
     if static:
         prefix = '_static/'
