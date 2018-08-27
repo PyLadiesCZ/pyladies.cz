@@ -17,7 +17,7 @@
   end: 2017-01-31
   place: &tieto-towers
     name: Tieto Towers
-    address: 28.října 3346/91, Ostrava
+    address: 28. října 3346/91, Ostrava
     url: https://goo.gl/maps/rq7CrLf9x2A2
 
 - name: MicroPython workshop
