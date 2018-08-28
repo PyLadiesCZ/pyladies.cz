@@ -227,7 +227,7 @@
   registration:
     url: https://goo.gl/forms/WnvKKKt8qfZ2kyIh1
     end: 2018-09-02
-  place: &Bubeneč
+  place: &bubenec
     name: Bubeneč
     address: U Zeměpisného ústavu 508/12, Praha 6-Bubeneč
     latitude: '50.1035297'
