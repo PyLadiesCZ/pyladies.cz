@@ -46,14 +46,8 @@ def redirect(url):
 
 @app.route('/')
 def index():
-    current_meetups = collections.OrderedDict(
-        (city, read_meetups_yaml('meetups/{}.yml'.format(city)))
-        for city in ('praha', 'brno', 'ostrava','plzen', 'ostatni'))
     news = read_news_yaml('news.yml')
-    return render_template('index.html',
-                           cities=read_yaml('cities.yml'),
-                           current_meetups=current_meetups,
-                           news=news)
+    return render_template('index.html', news=news)
 
 @app.route('/<city_slug>/')
 def city(city_slug):
@@ -127,7 +121,15 @@ def google_verification():
 
 @app.context_processor
 def inject_cities():
-    return dict(cities=read_yaml('cities.yml'))
+    cities = {}
+    for city_name, city_info in read_yaml('cities.yml').items():
+        meetups = read_meetups_yaml(f'meetups/{city_name}.yml')
+        meetups_nonpermanent = [m for m in meetups if m.get('start')]
+        cities[city_name] = {
+            **city_info,
+            'active_registration': any(m.get('registration_status') == 'running' for m in meetups_nonpermanent),
+        }
+    return dict(cities=cities)
 
 
 ##########
@@ -202,7 +204,6 @@ def read_meetups_yaml(filename):
     today = datetime.date.today()
 
     for meetup in data:
-
         # 'date' means both start and end
         if 'date' in meetup:
             meetup['start'] = meetup['date']
@@ -224,13 +225,10 @@ def read_meetups_yaml(filename):
 
         # Figure out the status of registration
         if 'registration' in meetup:
-            if 'end' in meetup['registration']:
-                if meetup['start'] <= today:
-                    meetup['registration_status'] = 'meetup_started'
-                elif meetup['registration']['end'] >= today:
-                    meetup['registration_status'] = 'running'
-                else:
-                    meetup['registration_status'] = 'closed'
+            if 'start' in meetup and meetup['start'] <= today:
+                meetup['registration_status'] = 'meetup_started'
+            elif 'end' in meetup['registration'] and meetup['registration']['end'] < today:
+                meetup['registration_status'] = 'closed'
             else:
                 meetup['registration_status'] = 'running'
 
