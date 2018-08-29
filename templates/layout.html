@@ -107,6 +107,11 @@
                                 <img class="city-outline" src="{{ pathto('_static/img/'+slug+'.svg', 1) }}" alt="">
                             </span>
                             <span class="city-title">{{ city['title'] }}</span>
+                            {% if city.active_registration %}
+                              <span class='city-active-registration'>
+                                Registrace otevřeny
+                              </span>
+                            {% endif %}
                         </a>
                     </li>
                     {% endfor %}

@@ -280,6 +280,12 @@ nav.main-navbar li.current-page {
     color: white;
     font-weight: bold;
 }
+.navbar-cities .city-active-registration {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70%;
+  color: #ff0;
+}
 @media all and (min-width: 404px) {
     /* On most screens, show the city silhouettes */
     .navbar-cities {
@@ -342,14 +348,41 @@ nav.main-navbar li.current-page {
     }
     .navbar-cities li {
         padding: 0;
+        position: relative;
     }
 
+    .navbar-cities .city-active-registration {
+      text-transform: uppercase;
+      background: #ff0;
+      color: #330;
+      border: 2px solid #fff;
+      font-size: 11px;
+      font-weight: 800;
+      transform: rotate(-13deg);
+      position: absolute;
+      left: 50%;
+      margin-left: -80px;
+      z-index: 999;
+      width: 160px;
+      bottom: 7vw;
+      padding: 6px 0px;
+      line-height: 13px;
+      text-align: center;
+    }
+
+    .navbar-cities a:hover .city-active-registration {
+      background: #cc0;
+    }
 }
 @media all and (min-width: 1000px) {
     /* For very big sceens, set a max size */
     .navbar-cities span.city-title {
       font-size: 2.1em;
       line-height: 90px;
+    }
+
+    .navbar-cities .city-active-registration {
+      bottom: 70px;
     }
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
