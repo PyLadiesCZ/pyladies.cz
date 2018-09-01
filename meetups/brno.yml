@@ -133,14 +133,17 @@
   place: *fi-muni
 
 - name: Experimentální začátečnický kurz <br> Podzimní pondělí 2018
+  materials: https://naucse.python.cz/2018/pyladies-brno-podzim-exp/
   registration: &reg18podzim
     url: https://goo.gl/forms/aWBLB0UC3a2uIo0l1
     end: 2018-08-30
   start: 2018-09-17
   end: 2018-12-17
   time: pondělky 18:00 – 20:00
+  place: *fi-muni
 
 - name: Začátečnický kurz <br> Podzimní středa 2018
+  materials: https://naucse.python.cz/2018/pyladies-brno-podzim/
   registration: *reg18podzim
   start: 2018-09-19
   end: 2018-12-19
