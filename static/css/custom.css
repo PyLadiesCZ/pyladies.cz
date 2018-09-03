@@ -80,7 +80,7 @@ body.have-menu .main-navbar .navbar-menu {
 body.have-menu .main-navbar .navbar-menu:active,
 body.have-menu .main-navbar .navbar-menu:hover {
     -webkit-box-shadow: 0 0 2px #8e8c8d;
-            box-shadow: 0 0 2px #8e8c8d;
+    box-shadow: 0 0 2px #8e8c8d;
 }
 body.menu-shown .main-navbar .navbar-menu {
     background: #cdcdcd;
@@ -308,8 +308,8 @@ nav.main-navbar li.current-page {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         outline: none;
         text-align: center;
     }
@@ -337,14 +337,14 @@ nav.main-navbar li.current-page {
     .navbar-cities {
         /* Gradient with 137px of white on the top, pink bottom */
         background: linear-gradient(180deg,
-                                    white, white 108px,
-                                    #e51f40 108px, #e51f40);
+                                    white, white 111px,
+                                    #e51f40 111px, #e51f40);
     }
     .navbar-cities.faded-banner {
         /* Gradient with 137px of white on the top, gray bottom */
         background: linear-gradient(180deg,
-                                    white, white 108px,
-                                    #8e8c8d 108px, #8e8c8d);
+                                    white, white 111px,
+                                    #8e8c8d 111px, #8e8c8d);
     }
     .navbar-cities li {
         padding: 0;
@@ -434,7 +434,7 @@ HOMEPAGE
 	color: #e51f40;
 }
 .about-link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 	color: #333;
 }
 .news-content {
@@ -513,8 +513,8 @@ CITIES PAGE
 .meetup {
 	display: grid;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	grid-template-columns: repeat(auto-fill, 300px);
 }
 .meetup-width {
@@ -532,58 +532,58 @@ CITIES PAGE
 	color: #333;
 }
 .meetup ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 .meetup ul li.button {
-    background-color: #8e8c8d;
-    color: white;
+  background-color: #8e8c8d;
+  color: white;
 }
 .meetup ul li.button span {
-    color: white;
+  color: white;
 }
 .meetup ul li.button a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .meetup ul li .meetup-info-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
 }
 .meetup ul li.button .meetup-info-item {
-    padding-top: 0.5em;
+  padding-top: 0.5em;
 }
 .meetup ul li.button a.meetup-info-item:hover {
-    background-color: #e51f40;
+  background-color: #e51f40;
 }
 .meetup ul li a.meetup-info-item {
-    color: #e51f40;
+  color: #e51f40;
 }
 .meetup ul li a.meetup-info-item:hover {
-    color: #333;
+  color: #333;
 }
 .meetup ul li .glyphicon {
-    color: #333;
-    display: block;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    margin-top: 0.25em;
+  color: #333;
+  display: block;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.25em;
 }
 .meetup ul li.meetup-button {
-    background-color: #8e8c8d;
-    color: white;
-    text-align: center;
-    padding: 0.5em;
+  background-color: #8e8c8d;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
 }
 .meetup ul li.meetup-button .glyphicon {
-    color: white;
+  color: white;
 }
 .meetup ul li.meetup-button a {
-    color: white;
+      color: white;
 }
 .start-title2 {
 	padding: 30px 5px;
@@ -591,7 +591,7 @@ CITIES PAGE
 @media all and (min-width: 620px) {
   .meetup {
   	-ms-flex-pack: distribute;
-  	    justify-content: space-around;
+    justify-content: space-around;
 }
 }
 /* contact */
@@ -620,7 +620,7 @@ section.contacts div a {
 	width: 100%;
 }
 section.contacts div a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .contact a img {
 	max-width: 100%;
@@ -659,10 +659,10 @@ section.contacts div a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+  flex-wrap: wrap;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 	clear: both;
 }
 .course-city-images {
@@ -684,7 +684,7 @@ section.contacts div a:hover {
 	display: grid;
   margin-top: 40px;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+  justify-content: space-around;
 	grid-template-columns: repeat(auto-fill, 180px);
 }
 
@@ -702,8 +702,8 @@ h2.course-city-heading {
 	margin-bottom: 30px;
 	padding: 0;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .person li {
 	list-style-type: none;
@@ -744,10 +744,10 @@ h2.course-city-heading {
 		display: -ms-flexbox;
 		display: flex;
 		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+	  flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 	}
 
 	.img-circle {
@@ -806,36 +806,36 @@ FAQ
 FOOTER
 *****/
 body > footer {
-    background: #333;
-    color: rgba(255, 255, 255, 0.2);
-    padding-bottom: 2px;
-    padding-top: 10px;
-    margin-top: 20px;
+  background: #333;
+  color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 
 body > footer ul {
-    display: block;
-    float: right;
-    padding: 0.5em;
+  display: block;
+  float: right;
+  padding: 0.5em;
 }
 
 body > footer li {
-    list-style: none;
-    display: inline;
-    padding: 0 5px;
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
 }
 
 body > footer img {
-    width: 40px;
-    opacity: 0.5;
+  width: 40px;
+  opacity: 0.5;
 }
 
 body > footer img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 body > footer .clear {
-    clear: both;
+  clear: both;
 }
 
 body > footer .global-pyladies a,
@@ -845,16 +845,16 @@ body > footer .news-p a {
 }
 
 body > footer .global-pyladies {
-    margin-top: 15px;
-    color: #aeacad;
-    float: left;
+  margin-top: 15px;
+  color: #aeacad;
+  float: left;
 }
 
 body > footer .global-pyladies a {
-    color: white;
+  color: white;
 }
 
 body > footer .global-pyladies a:hover {
-    text-decoration: underline;
-    color: white;
+  text-decoration: underline;
+  color: white;
 }
