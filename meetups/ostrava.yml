@@ -73,6 +73,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: https://naucse.python.cz/2018/pyladies-ostrava-podzim/
   registration:
     url: https://goo.gl/forms/IKa987yfzvpwFsJ03
     end: 2018-08-24
