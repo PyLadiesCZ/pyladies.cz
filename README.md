@@ -93,7 +93,6 @@ Každé město má vlastní stránku s aktuálními a proběhlými kurzy.
 Je z toho taková kronika.
 
 Nové kurzy se přidávají na konec `.yml` souboru v adresáři `meetups`.
-Nejnovější kurz v seznamu (poslední v souboru) se ukáže na hlavní stránce.
 
 ***V meetupech lze nastavit:***
 
