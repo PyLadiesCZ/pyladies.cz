@@ -460,18 +460,35 @@ HOMEPAGE
 .partners {
 	height: auto;
 	background: #fff;
-	padding: 10px 0px;
+	padding: 10px 0;
 }
 .partners h2 {
 	padding-bottom: 35px;
 }
-.partner-logo {
-  display: block;
-	width: auto;
-	height: 60px;
-	padding-bottom: 15px;
-	margin: 0 auto;
+.partner {
+	padding: 0 8%;
+	height: 24vw;
+	max-height: 140px;
 }
+.partner-logo {
+	height: auto;
+	width: 100%;
+	max-width: 180px;
+}
+
+@media all and (min-width: 768px) {
+	.partner {
+		padding: 0 6%;
+		max-height: none;
+		height: 160px;
+	}
+
+	.partner-logo {
+		height: auto;
+		max-width: 100%;
+	}
+}
+
 .ref-heading {
 	padding: 25px 0px;
 	color: #fff;
@@ -497,12 +514,8 @@ HOMEPAGE
 h3 {
 	color: #333;
 }
-@media all and (min-width: 620px) {
-  .partner-logo {
-  	height: 80px;
-  	padding-bottom: 20px;
-  }
-}
+
+
 /*******************
 CITIES PAGE
 *******************/
