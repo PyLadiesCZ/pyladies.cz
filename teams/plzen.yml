@@ -1,11 +1,35 @@
 - name: Líba Poustková
   img: img/plzen/team/blank.png
-  role: Organizátorka
+  role: Organizátorka, lektorka
   links:
   - mail-link: mailto:libuse.poustkova@seznam.cz
 
 - name: Filip Vaculík
   img: img/plzen/team/blank.png
-  role: Organizátor
+  role: Organizátor, lektor 
   links:
   - mail-link: mailto:filip.vaculik@seznam.cz
+  
+- name: Dáša Toncarová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:dasa@toncar.cz
+  
+- name: Honza Steinbach
+  img: img/plzen/team/blank.png
+  role: Organizátor
+  links:
+  - mail-link: mailto:honza@techheaven.org
+  
+- name: Magdalena Malastová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:magdalena.malastova@gmail.com
+
+- name: Tomáš Zítka
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor
+  links:
+  - mail-link: mailto:zitkat@ntc.zcu.cz
