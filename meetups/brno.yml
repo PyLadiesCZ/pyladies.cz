@@ -142,18 +142,18 @@
   time: pondělky 18:00 – 20:00
   place: *fi-muni
 
-- name: Začátečnický kurz <br> Podzimní středa 2018
+- name: Začátečnický kurz na Fakultě informatiky MUNI <br> Podzimní středa 2018
   materials: https://naucse.python.cz/2018/pyladies-brno-podzim/
   registration: *reg18podzim
   start: 2018-09-19
   end: 2018-12-19
   time: středy 18:00 – 20:00
   place: *fi-muni
-  
+
 - name: RoboProjekt
   registration:
     url: https://goo.gl/forms/DRnA7vTABCdvgoFg1
-    end: 2018-09-19
+    end: 2018-09-16
   start: 2018-10-02
   end: 2018-12-18
   time: úterky 18:00 – 20:00
