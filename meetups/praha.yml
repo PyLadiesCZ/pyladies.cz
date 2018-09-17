@@ -233,3 +233,16 @@
     latitude: '50.1035297'
     longitude: '14.4019892'
     url: https://www.google.com/maps/place/U+Zem%C4%9Bpisn%C3%A9ho+%C3%BAstavu+508%2F12,+160+00+Praha+6-Bubene%C4%8D/@50.1040443,14.3996057,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9525f9587a0f:0x8f75335638b84570!8m2!3d50.1040409!4d14.4017944
+
+- name: Pyladies - English edition <br> Basics
+  start: 2018-09-25
+  time: every Tuesday 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/SIMIywHgW0AavQjc2
+    end: 2018-09-22
+  place: &ca_technologies
+    name: CA Technologies
+    address: V Parku 8, Praha Chodov
+    latitude: '50.0279078'
+    longitude: '14.492098'
+    url: https://www.google.cz/maps/place/V+Parku+8,+148+00+Praha+11/@50.0284058,14.4912512,17z/data=!4m13!1m7!3m6!1s0x470b922d8afc9055:0xc8632bd29d35a35b!2sV+Parku+8,+148+00+Praha+11!3b1!8m2!3d50.0284058!4d14.4934399!3m4!1s0x470b922d8afc9055:0xc8632bd29d35a35b!8m2!3d50.0284058!4d14.4934399
