@@ -10,6 +10,8 @@
   time: úterky 18:00 – 20:00
   place: &depo
     name: DEPO2015
-    address: Presslova 14/14, 301 00 Plzeň 3
-    latitude: '49.738115'
-    longitude: '13.381954'
+    address: Cukrovarská 2996/23, 301 00 Plzeň 3
+    url: https://mapy.cz/s/33dzG
+    latitude: '49.7372831' 
+    longitude: '13.3820183'
+    
