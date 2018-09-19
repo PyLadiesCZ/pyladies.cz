@@ -1,10 +1,10 @@
 # Pozor, nové meetupy se přidávají na konec souboru
 
 - name: Začátečnický kurz <br> Podzimní 2018
-  materials: https://naucse.python.cz/course/pyladies/
+  materials: https://naucse.python.cz/2018/pyladies-plzen-podzim/
   registration:
-    url: https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300
-    end: 2018-09-26
+    url: https://goo.gl/forms/osHM0iQBt9BdZFDm2
+    end: 2018-10-03
   start: 2018-09-25
   end: 2018-12-18
   time: úterky 18:00 – 20:00
