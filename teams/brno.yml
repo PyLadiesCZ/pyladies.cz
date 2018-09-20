@@ -45,14 +45,14 @@
   - mail-link: mailto:barcza@gmail.com
 
 - name: Eliška Jégrová
-  img: img/brno/team/blank.png
+  img: img/brno/team/eliska.JPG
   role: Koučka
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
 - name: Hanka Střondalová
   img: img/brno/team/Hanka.jpg
-  role: Kouč
+  role: Koučka
   links:
   - mail-link: mailto:strondalovah@centrum.cz
 
@@ -63,7 +63,7 @@
   - mail-link: mailto:yaplik@gmail.com
 
 - name: Lukáš Benke
-  img: img/brno/team/blank.png
+  img: img/brno/team/lukas.JPG
   role: Kouč
   links:
   - mail-link: mailto:benke.lukas@gmail.com
@@ -95,19 +95,19 @@
   - mail-link: mailto:zabza86@gmail.com
 
 - name: Michal Ovciarik
-  img: img/brno/team/blank.png
+  img: img/brno/team/michal.JPG
   role: Kouč
   links:
   - mail-link: mailto:movciari@gmail.com
 
 - name: Monika Bláhová
-  img: img/brno/team/blank.png
+  img: img/brno/team/monika.JPG
   role: Koučka
   links:
   - mail-link: mailto:moblahova@centrum.cz
 
 - name: Ondřej Beneš
-  img: img/brno/team/blank.png
+  img: img/brno/team/beny.JPG
   role: Kouč
   links:
   - mail-link: mailto:ondrej.benes.93@gmail.com
@@ -119,7 +119,7 @@
   - mail-link: mailto:pavel.kocourek@protonmail.com
 
 - name: Pavel Rusinský
-  img: img/brno/team/blank.png
+  img: img/brno/team/pavelr.JPG
   role: Kouč
   links:
   - mail-link: mailto:DoneeFlack@gmail.com
@@ -161,7 +161,7 @@
   - mail-link: mailto:to.mikulec@email.cz
 
 - name: Tomáš Orsava
-  img: img/brno/team/blank.png
+  img: img/brno/team/tomaso.JPG
   role: Kouč
   links:
   - mail-link: mailto:tomas.n@orsava.cz
@@ -179,7 +179,7 @@
   - mail-link: mailto:v.vackova@gmail.com
 
 - name: Veronika Burgerová
-  img: img/brno/team/blank.png
+  img: img/brno/team/verca.JPG
   role: Koučka
   links:
   - mail-link: mailto:burgerova-veronika@email.cz
