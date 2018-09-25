@@ -235,6 +235,7 @@
     url: https://www.google.com/maps/place/U+Zem%C4%9Bpisn%C3%A9ho+%C3%BAstavu+508%2F12,+160+00+Praha+6-Bubene%C4%8D/@50.1040443,14.3996057,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9525f9587a0f:0x8f75335638b84570!8m2!3d50.1040409!4d14.4017944
 
 - name: Pyladies - English edition <br> Basics
+  materials: https://naucse.python.cz/2018/pyladies-en-prague/
   start: 2018-09-25
   time: every Tuesday 18:00 - 20:00
   registration:
