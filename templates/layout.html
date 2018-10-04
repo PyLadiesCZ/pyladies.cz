@@ -101,19 +101,27 @@
             <div class="navbar-cities {% block banner_class %}faded-banner{% endblock %}">
                 <ul>
                     {% for slug, city in cities.items() %}
+
+
+
                     <li {% block current_city_class scoped %}{% endblock %}>
                         <a href="{{ url_for('city', city_slug=slug) }}">
                             <span class="img-container">
                                 <img class="city-outline" src="{{ pathto('_static/img/'+slug+'.svg', 1) }}" alt="">
                             </span>
+                            <div class="city-title-box">
                             <span class="city-title">{{ city['title'] }}</span>
+                            </div>
                             {% if city.active_registration %}
+
                               <span class='city-active-registration'>
                                 Registrace otevřeny
                               </span>
+
                             {% endif %}
                         </a>
                     </li>
+
                     {% endfor %}
                 </ul>
             </div>

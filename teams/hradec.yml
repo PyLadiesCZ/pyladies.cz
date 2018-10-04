@@ -1,0 +1,29 @@
+- name: Ivana Brabcová
+  img: img/plzen/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:brabcova.ivana@gmail.com
+
+- name: Jirka Vejražka
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Radek Goláň
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Robert Richter
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Vladan Laxa
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Josef Jeřábek
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Roman Bedroš
+  img: img/plzen/team/blank.png
+  role: Kouč
