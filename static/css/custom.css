@@ -323,8 +323,8 @@ nav.main-navbar li.current-page {
         display: block;
     }
     .navbar-cities span.city-title {
-        font-size: 1.2em;
-        line-height: 24px;
+        font-size: 2vw;
+        line-height: 3vw;
         text-transform: uppercase;
     }
     .navbar-cities,
@@ -366,7 +366,7 @@ nav.main-navbar li.current-page {
       margin-left: -80px;
       z-index: 999;
       width: 150px;
-      bottom: 75px;
+      bottom: 10vw;
       padding: 6px 0px;
       line-height: 13px;
       text-align: center;
@@ -380,7 +380,7 @@ nav.main-navbar li.current-page {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        height: 66px;
+        height: 9vw;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -399,7 +399,6 @@ nav.main-navbar li.current-page {
     .navbar-cities span.city-title {
         font-size: 1.4em;
         line-height: 32px;
-
     }
 
     .navbar-cities .city-active-registration {
