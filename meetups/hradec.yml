@@ -1,0 +1,25 @@
+# Pozor, nové meetupy se přidávají na konec souboru
+- name: Hadí workshop v Hradci
+  materials: https://naucse.python.cz/2018/snake-hradec/
+  date: 2018-03-25
+  time: 8:00 – 18:00
+  place:
+    name: Gymnázium Boženy Němcové
+    address: Pospíšilova 324, Hradec Králové
+    latitude: '50.2123086'
+    longitude: '15.8389489'
+
+- name: Začátečnický kurz <br> Podzimní 2018
+  # materials:
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfKWCsA2Id2RwXc_7TlZ0qtUFdsyHbb_Rmym-xWKhGKxGHzjg/viewform?c=0&w=1
+    end: 2018-10-19
+  start: 2018-11-01
+  end: 2018-12-20
+  time: čtvrtky 18:00 – 20:00
+  place: &UHK
+    name: Univerzita Hradec Králové
+    address: Hradecká 1285, Hradec Králové
+
+    latitude: '50.2038156'
+    longitude: '15.8287966'
