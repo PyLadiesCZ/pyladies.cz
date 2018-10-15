@@ -651,6 +651,7 @@ section.recommendations, section.contacts {
 }
 .contact .about-title {
   font-size: 10px;
+  padding: 0 3px;
 }
 .contact {
 	display: -webkit-box;
