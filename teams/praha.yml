@@ -9,7 +9,7 @@
   links:
   - mail-link: mailto:iveta@jelen.biz
 - name: Zuzana Pokorná
-  img: img/praha/team/Zuzanita.jpg
+  img: img/praha/team/zuzanita.jpg
   role: Organizátorka - kurz NTK
   links:
   - mail-link: mailto:zuzanapokorna@seznam.cz
@@ -20,7 +20,7 @@
   - mail-link: mailto:radka.plankova@gmail.com
   - facebook-link: https://www.facebook.com/radka.plankova
 - name: Eliška Doktorová
-  img: img/praha/team/ED2.jpg
+  img: img/praha/team/eliska-doktorova.jpg
   role: Organizátorka - kurz CZ.NIC
   links:
   - mail-link: mailto:eliska.doktorova@gmail.com
@@ -127,7 +127,7 @@
 #    img: img/praha/team/lenka.jpg
 #    role: Organizátorka/Koučka
 #    links:
-#    - twitter-link: https://twitter.com/zoellenka 
+#    - twitter-link: https://twitter.com/zoellenka
 #  - name: Honza Čermák
 #    img: img/praha/team/honza.jpg
 #    role: Kouč
