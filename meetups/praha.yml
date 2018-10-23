@@ -1,5 +1,20 @@
 # Pozor, nové meetupy se přidávají na konec souboru
 
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2015-06-23
+  end: 2015-9-29
+  place: &experis-praha
+    name: Experis Praha
+    address: Florentinum, recepce C, Na Florenci 2116/15, 110 00 Praha 1
+    latitude: '50.0891556'
+    longitude: '14.4353119'
+    url: https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs
+
+- name: PyLadies Praha <br> začátečnický kurz
+  start: 2015-11-10
+  end: 2016-2-23
+  place: *experis-praha
+
 - name: Jednodenní hardwarový workshop u Prahy <br> MicroPython a LED světýlka
   date: 2016-08-19
   time: celý den
@@ -7,10 +22,9 @@
     name: Mšené-Lázně
     url: http://www.msene-lazne.cz/
 
-- name: PyLadies Praha <br> pokročilé a doučovací srazy
-  time: každé pondělí 18:00 - 20:00
-  start: 2016-04-05
-  end: 2016-06-28    # XXX - kdy to končilo?
+- name: PyLadies Praha <br> spustili jsme pokročilé a doučovací srazy
+  time: každý týden na dvě hodiny
+  date: 2016-04-05
   place:
     name: probíhaly na různých místech v Praze
 
@@ -144,7 +158,17 @@
     end: 2017-09-30
   place: *cz-nic
 
-- name: PyLadies Praha <br> začátečnický kurz
+- name: PyLadies Praha <br> začátečnický kurz úterý
+  materials: http://naucse.python.cz/2017/pyladies-praha-podzim-cznic/
+  start: 2017-09-19
+  end: 2017-12-12
+  time: každé úterý 18:00 - 20:00
+  registration:
+    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
+    end: 2017-09-10
+  place: *cz-nic
+
+- name: PyLadies Praha <br> začátečnický kurz pondělí
   materials: http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/
   parallel-with-previous: true
   start: 2017-09-25
@@ -159,18 +183,8 @@
     latitude: '50.103924'
     longitude: '14.390703'
     url: https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031
-  
-- name: PyLadies Praha <br> začátečnický kurz
-  materials: http://naucse.python.cz/2017/pyladies-praha-podzim-cznic/
-  start: 2017-09-19
-  end: 2017-12-12
-  time: každé úterý 18:00 - 20:00
-  registration:
-    url: https://goo.gl/forms/PwQU4TanL6ZpSwNE3
-    end: 2017-09-10
-  place: *cz-nic
 
-- name: Pyladies Praha <br> Začátečnický kurz středa
+- name: Pyladies Praha <br> začátečnický kurz středa
   materials: http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/
   start: 2018-03-07
   end: 2018-05-30
@@ -180,7 +194,7 @@
     end: 2018-02-25
   place: *ntk
   
-- name: Pyladies Praha <br> Začátečnický kurz čtvrtek
+- name: Pyladies Praha <br> začátečnický kurz čtvrtek
   materials: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/
   parallel-with-previous: true
   start: 2018-03-08
@@ -196,7 +210,7 @@
     longitude: '14.4574506'
     url: https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279
 
-- name: Pyladies Praha <br> Začátečnický kurz úterý
+- name: Pyladies Praha <br> začátečnický kurz úterý
   materials: https://naucse.python.cz/2018/pyladies-praha-podzim-cznic/
   start: 2018-09-11
   end: 2018-12-04
@@ -206,7 +220,7 @@
     end: 2018-09-02
   place: *cz-nic-olsanka
   
-- name: Pyladies Praha <br> Začátečnický kurz středa
+- name: Pyladies Praha <br> začátečnický kurz středa
   materials: https://naucse.python.cz/2018/pyladies-praha-podzim-ntk/
   parallel-with-previous: true
   start: 2018-09-12
@@ -218,7 +232,7 @@
   place: *ntk
   
  
-- name: Pyladies Praha <br> Začátečnický kurz čtvrtek
+- name: Pyladies Praha <br> začátečnický kurz čtvrtek
   materials: https://naucse.python.cz/2018/pyladies-praha-podzim-bubenec/
   parallel-with-previous: true
   start: 2018-09-13
@@ -242,7 +256,7 @@
   registration:
     url: https://goo.gl/forms/SIMIywHgW0AavQjc2
     end: 2018-09-22
-  place: &ca_technologies
+  place: &ca-technologies
     name: CA Technologies
     address: V Parku 8, Praha Chodov
     latitude: '50.0279078'
