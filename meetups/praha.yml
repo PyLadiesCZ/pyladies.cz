@@ -12,7 +12,7 @@
 
 - name: PyLadies Praha <br> začátečnický kurz
   start: 2015-11-10
-  end: 2016-2-23
+  end: 2016-02-23
   place: *experis-praha
 
 - name: Jednodenní hardwarový workshop u Prahy <br> MicroPython a LED světýlka
