@@ -10,7 +10,7 @@
     longitude: '15.8389489'
 
 - name: Začátečnický kurz <br> Podzimní 2018
-  # materials:
+  materials: https://naucse.python.cz/2018/pyladies-hradec-podzim/
   registration:
     url: https://goo.gl/forms/9zik7lWoyP0jgUcv1
     end: 2018-10-19
