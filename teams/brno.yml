@@ -45,13 +45,13 @@
   - mail-link: mailto:barcza@gmail.com
 
 - name: Eliška Jégrová
-  img: img/brno/team/eliska.JPG
+  img: img/brno/team/eliska.jpg
   role: Koučka
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
 - name: Hanka Střondalová
-  img: img/brno/team/Hanka.jpg
+  img: img/brno/team/hanka.jpg
   role: Koučka
   links:
   - mail-link: mailto:strondalovah@centrum.cz
@@ -63,7 +63,7 @@
   - mail-link: mailto:yaplik@gmail.com
 
 - name: Lukáš Benke
-  img: img/brno/team/lukas.JPG
+  img: img/brno/team/lukas.jpg
   role: Kouč
   links:
   - mail-link: mailto:benke.lukas@gmail.com
@@ -75,7 +75,7 @@
   - mail-link: mailto:mcveckova@centrum.cz
 
 - name: Martin Pavlásek
-  img: img/brno/team/Martin.jpg
+  img: img/brno/team/martin.jpg
   role: Kouč
   links:
   - mail-link: mailto:tuzticzka@gmail.com
@@ -95,19 +95,19 @@
   - mail-link: mailto:zabza86@gmail.com
 
 - name: Michal Ovciarik
-  img: img/brno/team/michalO.JPG
+  img: img/brno/team/michalo.jpg
   role: Kouč
   links:
   - mail-link: mailto:movciari@gmail.com
 
 - name: Monika Bláhová
-  img: img/brno/team/monika.JPG
+  img: img/brno/team/monika.jpg
   role: Koučka
   links:
   - mail-link: mailto:moblahova@centrum.cz
 
 - name: Ondřej Beneš
-  img: img/brno/team/beny.JPG
+  img: img/brno/team/beny.jpg
   role: Kouč
   links:
   - mail-link: mailto:ondrej.benes.93@gmail.com
@@ -119,7 +119,7 @@
   - mail-link: mailto:pavel.kocourek@protonmail.com
 
 - name: Pavel Rusinský
-  img: img/brno/team/pavelr.JPG
+  img: img/brno/team/pavelr.jpg
   role: Kouč
   links:
   - mail-link: mailto:DoneeFlack@gmail.com
@@ -161,7 +161,7 @@
   - mail-link: mailto:to.mikulec@email.cz
 
 - name: Tomáš Orsava
-  img: img/brno/team/tomaso.JPG
+  img: img/brno/team/tomaso.jpg
   role: Kouč
   links:
   - mail-link: mailto:tomas.n@orsava.cz
@@ -179,7 +179,7 @@
   - mail-link: mailto:v.vackova@gmail.com
 
 - name: Veronika Burgerová
-  img: img/brno/team/verca.JPG
+  img: img/brno/team/verca.jpg
   role: Koučka
   links:
   - mail-link: mailto:burgerova-veronika@email.cz
@@ -212,13 +212,13 @@
 #   - mail-link: mailto:386966@mail.muni.cz
 
 # - name: Jaroslav Šafka
-#   img: img/brno/team/JarekS.png
+#   img: img/brno/team/jareks.jpg
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:pyladies zavináč safka.org
 
 # - name: Juraj Michálek
-#   img: img/brno/team/Juraj.jpg
+#   img: img/brno/team/juraj.jpg
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:juraj.michalek132@gmail.com
@@ -244,7 +244,7 @@
 #   - mail-link: mailto:marcvac@seznam.cz
 #
 # - name: Mária Krajčovičová
-#   img: img/brno/team/MariaK.jpg
+#   img: img/brno/team/mariak.jpg
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:krajcovicmaja@gmail.com
