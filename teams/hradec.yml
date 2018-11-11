@@ -17,8 +17,14 @@
   role: Kouč
 
 - name: Vladan Laxa
-  img: img/plzen/team/blank.png
+  img: img/hradec/team/vlaxa.jpg
   role: Kouč
+  - mail-link: mailto:vlaxa@latraxa.cz
+  - linkedin-link: https://www.linkedin.com/in/vlaxa/
+  - facebook-link: https://www.facebook.com/latraxa
+  - twitter-link: https://twitter.com/latraxa
+  - website-link: http://www.latraxa.cz
+  - github-link: https://github.com/vlaxa
 
 - name: Josef Jeřábek
   img: img/plzen/team/blank.png
