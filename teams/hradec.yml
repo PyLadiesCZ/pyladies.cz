@@ -5,8 +5,13 @@
   - mail-link: mailto:brabcova.ivana@gmail.com
 
 - name: Jirka Vejražka
-  img: img/plzen/team/blank.png
+  img: img/hradec/team/JirkaV.jpg
   role: Kouč
+  links:
+  - mail-link: mailto:Jirka.Vejrazka@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/jirkavejrazka/
+  - twitter-link: https://twitter.com/JirkaV
+  - website-link: http://www.vejrazka.name
 
 - name: Radek Goláň
   img: img/plzen/team/blank.png
