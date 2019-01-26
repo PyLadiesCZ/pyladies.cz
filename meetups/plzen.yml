@@ -1,5 +1,20 @@
 # Pozor, nové meetupy se přidávají na konec souboru
 
+- name: Začátečnický kurz <br> Jarní 2019
+  materials: https://naucse.python.cz/2019/plzen-jaro-2019/
+  registration:
+    url: https://goo.gl/K2gHwQ
+    end: 2019-02-03
+  start: 2019-02-12
+  end: 2019-05-21
+  time: úterky (17:00) 18:00 – 20:00
+  place: &depo
+    name: DEPO2015
+    address: Cukrovarská 20, 301 00 Plzeň 3
+    url: https://mapy.cz/s/3k5el
+    latitude: '49.7367697'
+    longitude: '13.3815181'
+
 - name: Začátečnický kurz <br> Podzimní 2018
   materials: https://naucse.python.cz/2018/pyladies-plzen-podzim/
   registration:
