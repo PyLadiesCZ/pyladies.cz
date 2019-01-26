@@ -8,8 +8,8 @@
   start: 2019-02-12
   end: 2019-05-21
   time: úterky (17:00) 18:00 – 20:00
-  place: &depo
-    name: DEPO2015
+  place: &depo2
+    name: Vedle DEPO2015
     address: Cukrovarská 20, 301 00 Plzeň 3
     url: https://mapy.cz/s/3k5el
     latitude: '49.7367697'
