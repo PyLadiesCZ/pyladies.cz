@@ -174,3 +174,34 @@
     address: Purkyňova 115, Brno-Medlánky
     latitude: '49.231318'
     longitude: '16.5757744'
+
+- name: Začátečnický kurz <br> Jarní pondělí 2019
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-25
+  end: 2019-06-03
+  time: pondělky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz <br> Jarní úterý 2019
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-26
+  end: 2019-05-28
+  time: úterky 18:00 – 20:00
+  place: &mergado
+    name: Mergado
+    address: Minská 73/13, Brno
+    latitude: '49.2103950'
+    longitude: '16.5858589'
+
+- name: Začátečnický kurz <br> Jarní středa 2019
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-27
+  end: 2019-06-12
+  time: středy 18:00 – 20:00
+  place: *fi-muni
