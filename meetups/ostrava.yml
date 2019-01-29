@@ -94,7 +94,7 @@
     url: https://goo.gl/maps/e5EzCaeFgYC2
 
 - name: PyLadies Ostrava <br> začátečnický kurz
-  #materials: https://naucse.python.cz/2019/pyladies-ostrava-jaro/
+  materials: https://naucse.python.cz/2019/pyladies-ostrava-jaro/
   registration:
     url: https://goo.gl/forms/G0ktrZD7eS13SzXi2
     end: 2019-01-27
