@@ -262,3 +262,24 @@
     latitude: '50.0279078'
     longitude: '14.492098'
     url: https://www.google.cz/maps/place/V+Parku+8,+148+00+Praha+11/@50.0284058,14.4912512,17z/data=!4m13!1m7!3m6!1s0x470b922d8afc9055:0xc8632bd29d35a35b!2sV+Parku+8,+148+00+Praha+11!3b1!8m2!3d50.0284058!4d14.4934399!3m4!1s0x470b922d8afc9055:0xc8632bd29d35a35b!8m2!3d50.0284058!4d14.4934399
+
+- name: Pyladies Praha <br> začátečnický kurz úterý CZ.NIC
+  materials: https://naucse.python.cz/2019/pyladies-praha-jaro-cznic/
+  start: 2019-03-05
+  end: 2019-06-28
+  time: každé úterý 18:00 - 20:00
+  registration:
+    url: 
+    end: 2019-02-20
+  place: *cz-nic-olsanka
+  
+- name: Pyladies Praha <br> začátečnický kurz čtvrtek NTK
+  materials: https://naucse.python.cz/2019/pyladies-praha-jaro-ntk/
+  parallel-with-previous: true
+  start: 2019-03-07
+  end: 2019-05-30
+  time: každý čtvrtek 18:00 - 20:00
+  registration:
+    url: 
+    end: 2019-02-20
+  place: *ntk
