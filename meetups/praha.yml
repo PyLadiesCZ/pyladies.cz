@@ -269,7 +269,7 @@
   end: 2019-06-28
   time: každé úterý 18:00 - 20:00
   registration:
-    url: 
+    url: https://docs.google.com/forms/d/1uN8-lManZw1m934WwPNvq40Oh0yPcfjoVVtkegpnV1g/prefill
     end: 2019-02-20
   place: *cz-nic-olsanka
   
@@ -280,6 +280,6 @@
   end: 2019-05-30
   time: každý čtvrtek 18:00 - 20:00
   registration:
-    url: 
+    url: https://docs.google.com/forms/d/1uN8-lManZw1m934WwPNvq40Oh0yPcfjoVVtkegpnV1g/prefill
     end: 2019-02-20
   place: *ntk
