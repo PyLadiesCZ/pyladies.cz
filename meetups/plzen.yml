@@ -19,7 +19,7 @@
   materials: https://naucse.python.cz/2019/plzen-jaro-2019/
   registration:
     url: https://goo.gl/K2gHwQ
-    end: 2019-02-03
+    end: 2019-02-07
   start: 2019-02-12
   end: 2019-05-21
   time: úterky (17:00) 18:00 – 20:00
@@ -28,4 +28,13 @@
     address: Cukrovarská 20, 301 00 Plzeň 3
     url: https://mapy.cz/s/3k5el
     latitude: '49.7367697'
-    longitude: '13.3815181'    
+    longitude: '13.3815181'
+    
+- name:  PyWorking - únor 2019 <br> Datová analýza
+  registration:
+    url: https://goo.gl/dvGJru
+    end: 2019-02-10
+  topic: Jupyter a Pandas při zpracování dat
+  date: 2019-02-17
+  time: 9:30 - 17:00
+  place: *techheaven_hub2
