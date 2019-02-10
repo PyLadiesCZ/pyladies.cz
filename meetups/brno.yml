@@ -163,7 +163,7 @@
     longitude: '16.6250248'
 
 - name: Hadí workshop
-  materials: https://naucse.python.cz/2018/snake-brno/
+  materials: https://naucse.python.cz/2019/brno-jaro-snake/
   registration:
      url: https://goo.gl/forms/IYD3GcbkIHKkvyY22
      end: 2019-01-25
