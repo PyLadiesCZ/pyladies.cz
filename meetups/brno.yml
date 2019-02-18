@@ -176,6 +176,7 @@
     longitude: '16.5757744'
 
 - name: Začátečnický kurz <br> Jarní pondělí 2019
+  materials: https://naucse.python.cz/2019/brno-jaro-2019-pondeli/
   registration:
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
@@ -198,6 +199,7 @@
     longitude: '16.5858589'
 
 - name: Začátečnický kurz <br> Jarní středa 2019
+  materials: https://naucse.python.cz/2019/pyladies-brno-jaro-st/
   registration:
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
