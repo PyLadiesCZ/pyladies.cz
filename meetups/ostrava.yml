@@ -102,3 +102,10 @@
   end: 2019-05-14
   time: každé úterý 17:00 - 19:00
   place: *tieto-towers
+
+- name: Workshop na téma git, Github a open source
+  registration:
+    url: https://goo.gl/forms/Bl0bF9D3FyudXqq23
+    end: 2019-02-25
+  date: 2019-03-02
+  time: 9:00 - 17:00
