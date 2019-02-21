@@ -23,3 +23,12 @@
 
     latitude: '50.2038156'
     longitude: '15.8287966'
+
+- name: Začátečnický kurz <br> Jarní 2019
+  registration:
+    url: https://goo.gl/forms/Y1DNkExi3IQ8zglw2
+    end: 2019-03-08
+  start: 2019-03-21
+  end: 2019-05-16
+  time: čtvrtky 18:00 – 20:00
+  place: *UHK
