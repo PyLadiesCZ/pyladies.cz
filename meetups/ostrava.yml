@@ -88,7 +88,7 @@
     end: 2018-11-25
   date: 2018-12-01
   time: 9:00 - 17:00
-  place:
+  place: &msic
     name: Moravskoslezské inovační centrum
     address: Technologická 375/3, 708 00 Ostrava-Pustkovec
     url: https://goo.gl/maps/e5EzCaeFgYC2
@@ -104,8 +104,10 @@
   place: *tieto-towers
 
 - name: Workshop na téma git, Github a open source
+  materials: https://naucse.python.cz/2019/ostrava-git-workshop/
   registration:
     url: https://goo.gl/forms/Bl0bF9D3FyudXqq23
     end: 2019-02-25
   date: 2019-03-02
   time: 9:00 - 17:00
+  place: *msic
