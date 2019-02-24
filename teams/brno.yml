@@ -1,6 +1,25 @@
+- name: Kristýna Stehlíková
+  img: img/brno/team/blank.png
+  role: Organizátorka - pondělí
+  links:
+  - mail-link: mailto:stehlikovak@post.cz
+
+- name: Lucie Opletalová
+  img: img/brno/team/lucieo.jpg
+  role: Organizátorka - středa
+  links:
+  - mail-link: mailto:lucie.a.opletalova@gmail.com
+
+- name: Martina Horňáková
+  img: img/brno/team/martinah.jpg
+  role: Organizátorka - středa
+  links:
+  - mail-link: mailto:martina.hornakova@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/mhornako
+
 - name: Anežka Müller
   img: img/brno/team/anezka.jpg
-  role: Organizátorka
+  role: Organizátorka - PyWorking
   links:
   - mail-link: mailto:anezka.muller@gmail.com
   - linkedin-link: https://www.linkedin.com/in/anezkamll/
@@ -8,22 +27,17 @@
 
 - name: Karolina Surma
   img: img/brno/team/karolina.jpg
-  role: Organizátorka
+  role: Organizátorka/Koučka
   links:
   - mail-link: mailto:karolina.surma@gazeta.pl
 
 - name: Terezie Vahalová
   img: img/brno/team/terezie.jpg
-  role: Organizátorka
+  role: Organizátorka/Koučka
   links:
   - mail-link: mailto:vahalova@gmail.com
   - github-link: https://github.com/vahalova
-
-- name: Martina Hamanová
-  img: img/brno/team/blank.png
-  role: Organizátorka
-  links:
-  - mail-link: mailto:martina.hamanova@seznam.cz
+  - linkedin-link: https://www.linkedin.com/in/terezie-vahalova/
 
 - name: Anna Haymannová
   img: img/brno/team/anna2.jpg
@@ -32,17 +46,32 @@
   - mail-link: mailto:haymannovaa@gmail.com
   - linkedin-link: https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/
 
+- name: Pavel Kocourek
+  img: img/brno/team/pavelk.jpg
+  role: Lektor
+  links:
+  - mail-link: mailto:pavel.kocourek@protonmail.com
+
 - name: Petr Viktorin
   img: img/praha/team/peterv.jpg
   role: Lektor
   links:
   - website-link: http://encukou.cz
 
-- name: Barbora Telferová
-  img: img/brno/team/blank.png
+- name: Adam Kvítek
+  img: img/brno/team/adamk.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:adamkvitek@gmail.com
+  - facebook-link: https://www.facebook.com/adam.kvitek
+
+- name: Dominika Krejčí
+  img: img/brno/team/dominika.jpg
   role: Koučka
   links:
-  - mail-link: mailto:barcza@gmail.com
+  - github-link: https://github.com/Krejdom
+  - linkedin-link: https://cz.linkedin.com/in/dominika-krej%C4%8D%C3%AD-9779759b
+  - website-link: http://krejdom.cz/
 
 - name: Eliška Jégrová
   img: img/brno/team/eliska.jpg
@@ -50,29 +79,45 @@
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
-- name: Hanka Střondalová
-  img: img/brno/team/hanka.jpg
+- name: Iveta Česalová
+  img: img/brno/team/ivetac.jpg
   role: Koučka
   links:
-  - mail-link: mailto:strondalovah@centrum.cz
+  - mail-link: mailto:cesalova.iveta@seznam.cz
 
-- name: Jiří Zapletal
-  img: img/brno/team/jiri.jpg
+- name: Jan Ohnheiser
+  img: img/brno/team/janoh.jpg
   role: Kouč
   links:
-  - mail-link: mailto:yaplik@gmail.com
+  - mail-link: mailto:jan.ohnheiser@gmail.com
+  - facebook-link: https://www.facebook.com/jan.ohnheiser
+  - linkedin-link: https://www.linkedin.com/in/jan-ohnheiser-ab5a5776
 
-- name: Lukáš Benke
-  img: img/brno/team/lukas.jpg
+- name: Juraj Michálek
+  img: img/brno/team/juraj.jpg
   role: Kouč
   links:
-  - mail-link: mailto:benke.lukas@gmail.com
+  - mail-link: mailto:juraj.michalek132@gmail.com
 
-- name: Marta Cvečková
-  img: img/brno/team/marta.jpg
+- name: Katka Loučková
+  img: img/brno/team/katkal.png
   role: Koučka
   links:
-  - mail-link: mailto:mcveckova@centrum.cz
+  - mail-link: mailto:katka@louckovi.cz
+  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
+
+- name: Lubomír Sedlář
+  img: img/brno/team/lubomirs.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:lubomir.sedlar@gmail.com
+
+- name: Lucie Čuprová
+  img: img/brno/team/luciec.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:cuprova.l@gmail.com
+  - linkedin-link: www.linkedin.com/in/luciecuprova
 
 - name: Martin Pavlásek
   img: img/brno/team/martin.jpg
@@ -81,18 +126,11 @@
   - mail-link: mailto:tuzticzka@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
 
-- name: Martina Horňáková
-  img: img/brno/team/martinah.jpg
-  role: Koučka
+- name: Michal Cyprian
+  img: img/brno/team/michalcy.jpg
+  role: Kouč
   links:
-  - mail-link: mailto:martina.hornakova@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/mhornako
-
-- name: Michaela Pokludová
-  img: img/brno/team/blank.png
-  role: Koučka
-  links:
-  - mail-link: mailto:zabza86@gmail.com
+  - mail-link: mailto:m.cyprian@gmail.com
 
 - name: Michal Ovciarik
   img: img/brno/team/michalo.jpg
@@ -112,11 +150,11 @@
   links:
   - mail-link: mailto:ondrej.benes.93@gmail.com
 
-- name: Pavel Kocourek
-  img: img/brno/team/pavelk.jpg
+- name: Patrik Kopkan
+  img: img/brno/team/blank.png
   role: Kouč
   links:
-  - mail-link: mailto:pavel.kocourek@protonmail.com
+  - mail-link: mailto:kopkanpatrik@gmail.com
 
 - name: Pavel Rusinský
   img: img/brno/team/pavelr.jpg
@@ -124,41 +162,30 @@
   links:
   - mail-link: mailto:DoneeFlack@gmail.com
 
+- name: Pavlína Hyxová
+  img: img/brno/team/pavlinah.jpeg
+  role: Koučka
+  links:
+  - mail-link: mailto:pavlina.hyxova@seznam.cz
+  - linkedin-link: https://www.linkedin.com/in/pavl%C3%ADna-hyxov%C3%A1-992a3386/
+
 - name: Roman Blanco
   img: img/brno/team/roman.jpg
   role: Kouč
   links:
   - github-link: https://github.com/romanblanco
 
-- name: Sandra Tukačová
-  img: img/brno/team/sandra.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:stukacova@gmail.com
-
-- name: Silvie Chlupová
-  img: img/brno/team/silvie.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:sisi.chlupova@gmail.com
-
-- name: Svätopluk Hanzel
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-  - mail-link: mailto:svatoplukhanzel@gmail.com
-
-- name: Šárka Matějková
+- name: Soňa Staňková
   img: img/brno/team/blank.png
   role: Koučka
   links:
-  - mail-link: mailto:matejkovas97@gmail.com
+  - mail-link: mailto:sonka.aknos@seznam.cz
 
-- name: Tomáš Mikulec
-  img: img/brno/team/blank.png
-  role: Kouč
+- name: Šárka Melicharová
+  img: img/brno/team/saja.jpg
+  role: Koučka
   links:
-  - mail-link: mailto:to.mikulec@email.cz
+  - mail-link: mailto:sarka-melicharova@seznam.cz
 
 - name: Tomáš Orsava
   img: img/brno/team/tomaso.jpg
@@ -166,23 +193,103 @@
   links:
   - mail-link: mailto:tomas.n@orsava.cz
 
-- name: Tomáš Zika
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-  - mail-link: mailto:zika.tomas2@gmail.com
-
-- name: Věra Vacková
-  img: img/brno/team/verav.jpg
+- name: Zuzka Kletzanderová
+  img: img/brno/team/zuzkast.jpg
   role: Koučka
   links:
-  - mail-link: mailto:v.vackova@gmail.com
+  - mail-link: mailto:stankova.zz@seznam.cz
 
-- name: Veronika Burgerová
-  img: img/brno/team/verca.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:burgerova-veronika@email.cz
+# - name: Lukáš Benke
+#   img: img/brno/team/lukas.jpg
+#   role: Kouč
+#   links:
+#   - mail-link: mailto:benke.lukas@gmail.com
+
+# - name: Martina Hamanová
+#   img: img/brno/team/blank.png
+#   role: Organizátorka
+#   links:
+#   - mail-link: mailto:martina.hamanova@seznam.cz
+
+
+# - name: Barbora Telferová
+#   img: img/brno/team/blank.png
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:barcza@gmail.com
+
+# - name: Hanka Střondalová
+#   img: img/brno/team/hanka.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:strondalovah@centrum.cz
+#
+# - name: Jiří Zapletal
+#   img: img/brno/team/jiri.jpg
+#   role: Kouč
+#   links:
+#   - mail-link: mailto:yaplik@gmail.com
+
+
+# - name: Marta Cvečková
+#   img: img/brno/team/marta.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:mcveckova@centrum.cz
+
+# - name: Michaela Pokludová
+#   img: img/brno/team/blank.png
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:zabza86@gmail.com
+
+# - name: Sandra Tukačová
+#   img: img/brno/team/sandra.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:stukacova@gmail.com
+#
+# - name: Silvie Chlupová
+#   img: img/brno/team/silvie.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:sisi.chlupova@gmail.com
+#
+# - name: Svätopluk Hanzel
+#   img: img/brno/team/blank.png
+#   role: Kouč
+#   links:
+#   - mail-link: mailto:svatoplukhanzel@gmail.com
+#
+# - name: Šárka Matějková
+#   img: img/brno/team/blank.png
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:matejkovas97@gmail.com
+
+# - name: Tomáš Mikulec
+#   img: img/brno/team/blank.png
+#   role: Kouč
+#   links:
+#   - mail-link: mailto:to.mikulec@email.cz
+
+# - name: Tomáš Zika
+#   img: img/brno/team/blank.png
+#   role: Kouč
+#   links:
+#   - mail-link: mailto:zika.tomas2@gmail.com
+#
+# - name: Věra Vacková
+#   img: img/brno/team/verav.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:v.vackova@gmail.com
+#
+# - name: Veronika Burgerová
+#   img: img/brno/team/verca.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:burgerova-veronika@email.cz
 
 # - name: Viera Vakulová
 #   img: img/brno/team/viera.jpg
@@ -197,14 +304,6 @@
 #   links:
 #   - mail-link: mailto:iveta.horrova@cz.ibm.com
 
-# - name: Dominika Krejčí
-#   img: img/brno/team/dominika.jpg
-#   role: Hlavní koučka
-#   links:
-#   - github-link: https://github.com/Krejdom
-#   - linkedin-link: https://cz.linkedin.com/in/dominika-krej%C4%8D%C3%AD-9779759b
-#   - website-link: http://krejdom.cz/
-
 # - name: Edita Balkóová
 #   img: img/brno/team/blank.png
 #   role: Kouč
@@ -216,12 +315,6 @@
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:pyladies zavináč safka.org
-
-# - name: Juraj Michálek
-#   img: img/brno/team/juraj.jpg
-#   role: Kouč
-#   links:
-#   - mail-link: mailto:juraj.michalek132@gmail.com
 
 # - name: Katka Chmelařová
 #   img: img/brno/team/blank.png
@@ -248,12 +341,6 @@
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:krajcovicmaja@gmail.com
-
-# - name: Michal Cyprian
-#   img: img/brno/team/blank.png
-#   role: Kouč
-#   links:
-#   - mail-link: mailto:m.cyprian@gmail.com
 
 # - name: Pavel Dedík
 #   img: img/brno/team/pavel.jpg
