@@ -265,7 +265,9 @@
       <div class="team ">
         {% for member in team %}
           <div class="person">
-            <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle img-responsive" />
+            <div class="member-photo">
+              <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle" />
+             </div>
             <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
             <span><em>{{ member.role }}</em></span>
             <ul>
