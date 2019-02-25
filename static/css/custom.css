@@ -761,9 +761,35 @@ h2.course-city-heading {
 	font-size: 24px;
 	margin-top: 15px;
 }
-.img-circle {
-	max-width: 70%;
-	margin: 0 auto;
+
+.member-photo {
+    /* Trick: The .member-photo is "empty", and its size is defined
+     * by its padding. Padding (even horizontal padding) is specified
+     * in terms of the container's *width*, so "padding: 40%" gives
+     * a *square* box with 80% width.
+     */
+    padding: 40%;
+    /* For centering with "margin: auto", we also have to give the
+     * width explicitly.
+     */
+    width: 80%;
+    margin: auto;
+    /* The container needs to be empty (except for padding), so the content
+     * (image) is positioned absolutely, with this block as the
+     * "containing block". To be a containing block, it needs non-static
+     * positioning.
+     */
+    position: relative;
+}
+.member-photo img {
+    /* Absolutely positioned image that fills the containing block */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Keep the image's aspect ratio */
+    object-fit: cover;
 }
 
 @media all and (min-width:620px) {
