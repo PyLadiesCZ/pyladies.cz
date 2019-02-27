@@ -603,6 +603,9 @@ CITIES PAGE
 .meetup ul li.button a.meetup-info-item:hover {
   background-color: #e51f40;
 }
+.meetup ul li.button.highlight .meetup-info-item {
+  background-color: #e51f40;
+}
 .meetup ul li a.meetup-info-item {
   color: #e51f40;
 }

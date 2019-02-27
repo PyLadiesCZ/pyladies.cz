@@ -7,8 +7,8 @@
 {%- endblock -%}
 
 {% macro meetup_info(meetup, with_registration_link=True) %}
-  {% macro item(icon, url=None, is_button=False) %}
-    <li {% if is_button %}class="button"{% endif %}>
+  {% macro item(icon, url=None, is_button=False, highlight=False) %}
+    <li {% if is_button %}class="button{% if highlight %} highlight{% endif %}"{% endif %}>
         {% if url %}
             <a href="{{ url }}"
         {% else %}
@@ -53,7 +53,7 @@
       {% set have_button=False %}
       {% if meetup.registration_status and with_registration_link %}
         {% if meetup.registration_status == 'running' %}
-          {% call item(icon="edit", url=meetup.registration.url, is_button=True) %}
+          {% call item(icon="edit", url=meetup.registration.url, is_button=True, highlight=True) %}
             {{ meetup.registration.get('text', 'Registrace právě probíhá!') }}
           {% endcall %}
           {% set have_button=True %}
