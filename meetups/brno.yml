@@ -186,6 +186,7 @@
   place: *fi-muni
 
 - name: Začátečnický kurz <br> Jarní úterý 2019
+  materials: https://naucse.python.cz/2019/brno-jaro-2019-ut/
   registration:
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
