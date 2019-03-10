@@ -25,6 +25,7 @@
     longitude: '15.8287966'
 
 - name: Začátečnický kurz <br> Jarní 2019
+  materials: https://naucse.python.cz/2019/pyladies-hradec-jaro/
   registration:
     url: https://goo.gl/forms/Y1DNkExi3IQ8zglw2
     end: 2019-03-08
