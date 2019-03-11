@@ -1,16 +1,57 @@
+- title: Podzim v Praze
+  expires: 2018-09-02
+  content: |
+    Stejně jako v Brně, i v Praze vyhlašujeme registraci na podzimní **začátečnické kurzy**.
+    Budou celkem tři a proto si můžeš vybrat, jaký den se ti hodí. Úterý, středa nebo čtvrtek?
+    <a href="https://goo.gl/forms/uJIN82zE54U8rPWz1">Registrace</a> poběží do neděle 2. 9. do 23:59.
+
+
+- title: Podzim v Brně
+  expires: 2018-08-30
+  content: |
+    Venku to sice ještě necítíme, ale pomalu se blíží září. Vyhlašujeme tedy registraci na tři začátečnické eventy:
+
+    a) 1. 9. proběhne **Hadí workshop** - pro budoucí PyLadies, které zatím neprogramovaly. Během jednoho dne se naučiš o Pythonu tolik, abys napsala hru HAD.
+
+    b) Pokud tě programování nadchne, zveme tě na **začátečnický "experimentální" kurz**, kde rozšíříš nabyté znalosti.
+    Kurz bude probíhat každé pondělí a je určen dívkám, které už někdy Python viděly (nemusí to být nutně náš workshop - napiš do přihlášky, kde ses setkala s Pythonem a v jakém rozsahu)
+
+    c) **Klasický semestrální kurz.**
+    Nikdy jsi nenapsala jediný příkaz a vlastně ani nevíš, jak ten celý Python dostat do počítače? Uvítáme tě ve středu a provedeme během 15 srazů od instalace po závěrečný projekt.
+
+    Odkazy na přihlašovací formuláře naleznete [zde.](https://pyladies.cz/brno/)
+
+    A pro ty z vás, které jste prošly začátečnickými kurzy a chcete se dál vzdělávat, také něco chystáme. Brzy zveřejníme detaily!
+
+- title: Nové kurzy v Hradci Králové a Plzni
+  expires: 2018-09-30
+  content: |
+    Na podzim plánujeme spustit kurzy programování nově také v Hradci Králové a v Plzni.
+    Jestli se chceš zúčastnit, zapiš se do [mailing listu](http://bit.ly/2nKDaxy) a včas se o registraci dozvíš.
+
+    Hledáme i potenciální kouče a koučky. Není potřeba mít zkušenosti s učením ani být super přeborníkem v Pythonu.
+    Více informací na [info@pyladies.cz](mailto:info@pyladies.cz). ;)
+
+- title: Mailing list pro zájemkyně před spuštěním registrací - Plzeň, Hradec Králové
+  expires: 2018-08-30
+  content: |
+    Další kurzy spustíme zase po letní pauzičce. V Ostravě již byly registrace ukončeny, v Brně a Praze ještě běží (viz aktuality výše), pro zájemce z dalších měst je připraven <a href="http://bit.ly/2nKDaxy" target="_blank">mailing list</a>. Ještě líp uděláš, když si kromě zápisu do mailing listu rovnou otevřeš naše materiály na webu <a href="https://naucse.python.cz" target="_blank">naucse.python.cz</a> a začneš se samostudiem. Není na co čekat! ;)
+
+
 - title: MicroPython workshop v Ostravě
   expires: 2018-03-10
   content: |
     Chcete se naučit dalšímu nesmírně praktickému využití Pythonu? Co třeba ovládat micropočítače, LED světla, motory a další?
-    Přijďte na MicroPython workshop do Ostravy. <a href="https://goo.gl/forms/U33YfjxMFtOXqiEq1" target="_blank">Registrace zde</a>
+    Přijďte na MicroPython workshop do Ostravy.
+    [Registrace zde](https://goo.gl/forms/U33YfjxMFtOXqiEq1)
 
 - title: Workshop programování v Hradci Králové
   expires: 2018-03-14
   content: |
     Náš první workshop programování pro začátečnice v Hradci Králové je tu! Konat se bude 25. března a
-    registrovat se na něj <a href="https://docs.google.com/forms/d/e/1FAIpQLScO5in0gzo13ddLcc1q508beqc5RGp6Dpd-3XGGP9HrF_47rg/viewform" target="_blank">můžeš zde</a>
+    registrovat se na něj [můžeš zde](https://docs.google.com/forms/d/e/1FAIpQLScO5in0gzo13ddLcc1q508beqc5RGp6Dpd-3XGGP9HrF_47rg/viewform).
 
 - title: Přihlašování na jarní začátečnické kurzy v Pythonu
   expires: 2018-02-25
   content: |
-    V Praze  právě teď chystáme nové tříměsíční kurzy Pythonu pro úplné začátečnice! Dva kurzy nyní poběží souběžně, a to od začátku března, více informací v přihlášce <a href="https://goo.gl/forms/tH2mK2PsBLqODYKn1" target="_blank">na tomto odkazu</a>.
+    V Praze  právě teď chystáme nové tříměsíční kurzy Pythonu pro úplné začátečnice! Dva kurzy nyní poběží souběžně, a to od začátku března, více informací v přihlášce [na tomto odkazu](https://goo.gl/forms/tH2mK2PsBLqODYKn1).

@@ -1,22 +1,18 @@
 {% extends "layout.html" %}
 
+{% block current_page_class_stanse %}class="current-page"{% endblock %}
+
 {% block content %}
       <!-- Intro Header -->
-      <header class="intro-info intro-material">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <p class="intro-text-city">
-                            Staň se PyLady!
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <section class="container text-center">
+        <div class="row">
+
+                <h2 class="course-city-heading">Jak se zapojit do PyLadies?</h2>
+
         </div>
-    </header>
+    </section>
     <!-- Main section -->
-    <section class="course-city container">
+    <!-- <section class="course-city container">
         <div class="text-center">
             <h3>Jak se zapojit do PyLadies? A jak organizovat kurz PyLadies?</h3>
             <p class="text-left">
@@ -25,11 +21,77 @@
                 na kurzu, více se dozvíš v našem <a href="http://pyladies.cz/faq/">FAQ</a>.
             </p>
         </div>
+    </section> -->
+    <section class="container">
+        <ul class="head head-icons">
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#uzk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Účastnice kurzu</h3>
+                    <span>naučís se Python</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4 ">
+                <a href="#ho">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Hlavní organizátor<span class="ka">ka</span></h3>
+                    <span>zařídíš, seženeš, domluvíš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#hk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Lektor<span class="ka">ka</span></h3>
+                    <span>naučíš, vysvětlíš, zařídíš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#ou">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Opravovač<span class="ka">ka</span> úkolů</h3>
+                    <span>zkontroluješ, dáš zpětnou vazbu</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#os">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Organizátor<span class="ka">ka</span> srazu</h3>
+                    <span>pomůžeš, uděláš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#vk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Vedlejší kouč<span class="ka">ka</span></h3>
+                    <span>poradíš, doplníš, zachráníš</span>
+                </a>
+            </li>
+        </ul>
     </section>
-    <section class="course-city become-pylady container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                <h3>Hlavní organizátorka</h3>
+
+    <section class="become-pylady container">
+
+            <div class="col-xs-12 text-left" >
+                <h3 id="uzk">Účastnice kurzu</h3>
+                <p>
+                    Nedílnou součástí jsou holky, co se učí Python!
+                    Jejich práce je nejtěžší a proto se všichni ostatní snaží, aby se mohly
+                    soustředit na to učení:
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Choď na srazy!
+                    </li>
+                    <li>
+                        Svědomitě plň domácí úlohy!
+                    </li>
+                    <li>
+                        A odevzdávej zpětnou vazbu, ať víme co zlepšit! :)
+                        <a href="{{ url_for('faq') }}">Více pro účastnice a všeobecný FAQ.</a>
+                    </li>
+                </ul>
+
+                <h3 id="ho">Hlavní organizátor<span class="ka">ka</span></h3>
                 <p>
                     Hlavní organizátorka musí mít přehled o tom, jak kurzy PyLadies fungují.
                     Proto by to měla být bývalá účastnice/koučka, nebo někdo, kdo je
@@ -57,13 +119,13 @@
                     </li>
                     <li>
                         Zhruba dva měsíce před začátkem pozvi kouče. Na první sraz je potřeba zhruba
-                        1 kouč na 2-3 účastnice (plus 1 hlavní kouč) – instalace je hodně individuální.
-                        Od druhého srazu stačí 1 kouč na 4-5 účastnic (plus 1 hlavní kouč).
+                        1 kouč na 2-3 účastnice (plus 1 lektor) – instalace je hodně individuální.
+                        Od druhého srazu stačí 1 kouč na 4-5 účastnic (plus 1 lektor).
                     </li>
                     <li>
                         Zhruba měsíc před začátkem pozvi účastnice!
-                        Můžeš použít tuhle vzorovou přihlášku: http://goo.gl/forms/fGlImOko0oa2imDo1
-                        – ozvi se a dáme ti k&nbsp;ní přístup, abys ji mohla zkopírovat a přizpůsobit.
+                        Můžeš použít <a href="http://goo.gl/forms/fGlImOko0oa2imDo1">vzorovou přihlášku</a>.
+                        Ozvi se a dáme ti k&nbsp;ní přístup, abys ji mohla zkopírovat a přizpůsobit.
                     </li>
                     <li>
                         Zhruba dva týdny před začátkem vyber účastnice.
@@ -77,7 +139,7 @@
                         doporučujeme, ale na ty další si radši najdi pomocnice.
                     </li>
                     <li>
-                        Organizátorky a hlavní kouče přidej na stránku týmu na pyladies.cz.
+                        Organizátorky a kouče přidej na stránku týmu na pyladies.cz.
                     </li>
                     <li>
                         Řeš případné finanční náklady, tj. hlavně tisk materiálů/taháků a nákup
@@ -90,12 +152,12 @@
                     </li>
                 </ul>
 
-                <h3>Hlavní kouč/ka</h3>
+                <h3 id="hk">Lektor<span class="ka">ka</span></h3>
                 <p>
-                    Hlavní kouč musí být někdo, kdo programování rozumí, umí vysvětlit látku
+                    Lektor (neboli <em>hlavní kouč</em>) musí být někdo, kdo programování rozumí, umí vysvětlit látku
                     (s pomocí materiálů) a nezalekne se těžkých otázek.
 
-                    Důrazně doporučujeme, aby hlavní kouč byl na předcházejícím srazu a mohl tak
+                    Důrazně doporučujeme, aby lektor byl na předcházejícím srazu a mohl tak
                     navázat.
                 </p>
 
@@ -109,7 +171,7 @@
                         společně, nebo nějakým jiným systémem.
                         Účel je, aby těm, kdo se na projekty podívaly, bylo jasné, o co jde a jak se to
                         řeší.
-                        Hlavní kouč tu půlhodinu vede diskuzi.
+                        Lektor tu půlhodinu vede diskuzi.
                     </li>
                     <li>
                         Po domácích projektech vysvětli látku v materiálech.
@@ -120,17 +182,32 @@
                         se zeptej organizátorky).
                     </li>
                 </ul>
-            </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
-                <h3>Organizátorka srazu</h3>
+                <h3 id="ou">Opravovač<span class="ka">ka</span> úkolů</h3>
+                <p>
+                    Na opravování se podílí vedlejší koučové.
+                    Úkoly od jednotlivých účastnic kurzu si rozdělí dle svých
+                    časových možností.
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Zkontroluj zaslané domácí projekty.
+                    </li>
+                    <li>
+                        Napiš zpětnou vazbu a vysvětli případné chyby.
+                    </li>
+                    <li>
+                        Odepiš co nejdřív, ať účastnice zbytečně neztrácí motivaci ;-)
+                    </li>
+                </ul>
+                <h3 id="os">Organizátor<span class="ka">ka</span> srazu</h3>
                 <p>
                     Organizátorka srazu může být bývalá nebo současná účastnice nebo koučka.
                     Měla by už za sebou mít minimálně 1-2 srazy, aby věděla do čeho jde.
                 </p>
                 <ul class="role-requirements">
                     <li>
-                        Ujisti se, že je vybraný hlavní kouč a že přijde :)
+                        Ujisti se, že je vybraný lektor a že přijde :)
                     </li>
                     <li>
                         Ujisti se, že je vybráno dost vedlejších koučů a kdyžtak sežeň další.
@@ -176,11 +253,11 @@
                         a předej ji hlavnímu koučovi a rozdej domácí projekty.
                     </li>
                     <li>
-                        Po srazu zkontroluj, že hlavní kouč zpětnou vazbu zpracoval :)
+                        Po srazu zkontroluj, že lektor zpětnou vazbu zpracoval :)
                     </li>
                 </ul>
 
-                <h3>Vedlejší kouč/ka</h3>
+                <h3 id="vk">Vedlejší kouč<span class="ka">ka</span></h3>
                 <p>
                     Vedlejší kouč může být kdokoli, kdo je o&nbsp;trochu napřed před účastnicemi,
                     a chce pomoct.
@@ -203,25 +280,8 @@
                     </li>
                 </ul>
 
-                <h3>Účastnice začátečnického kurzu</h3>
-                <p>
-                    Nedílnou součástí jsou holky, co se učí Python!
-                    Jejich práce je nejtěžší a proto se všichni ostatní snaží, aby se mohly
-                    soustředit na to učení:
-                </p>
-                <ul class="role-requirements">
-                    <li>
-                        Choď na srazy!
-                    </li>
-                    <li>
-                        Svědomitě plň domácí úlohy!
-                    </li>
-                    <li>
-                        A odevzdávej zpětnou vazbu, ať víme co zlepšit! :)
-                        <a href="http://pyladies.cz/faq/">Více pro účastnice a všeobecný FAQ.</a>
-                    </li>
-                </ul>
-            </div>
+
+
         </div>
     </section>
 {% endblock content %}

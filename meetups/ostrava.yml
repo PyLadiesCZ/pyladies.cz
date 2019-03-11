@@ -17,7 +17,7 @@
   end: 2017-01-31
   place: &tieto-towers
     name: Tieto Towers
-    address: 28.října 3346/91, Ostrava
+    address: 28. října 3346/91, Ostrava
     url: https://goo.gl/maps/rq7CrLf9x2A2
 
 - name: MicroPython workshop
@@ -32,6 +32,7 @@
     url: https://goo.gl/maps/jkhhUVTtc9m
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-ostrava-jaro/
   registration:
     url: https://goo.gl/forms/YhXAAKztRuffRWLw1
     end: 2017-02-17
@@ -41,6 +42,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2017/pyladies-ostrava-podzim/
   registration:
     url: https://goo.gl/forms/KviPS2OlsA2oGT8J2
     end: 2017-08-31
@@ -56,11 +58,12 @@
   date: 2018-04-21
   time: 9:00 - 15:00
   place:
-    name: Bude upřesněno
-    address: N/A
-    url:
+    name: Nová FEI (VŠB) místnost EB229
+    address: 17. listopadu 2172/15, Ostrava
+    url: https://goo.gl/maps/m9PcPDokQnC2
 
 - name: PyLadies Ostrava <br> začátečnický kurz
+  materials: http://naucse.python.cz/2018/pyladies-ostrava-jaro/
   registration:
     url: https://goo.gl/forms/NMZUc8G4fEAwIHix2
     end: 2018-01-25
@@ -68,3 +71,43 @@
   end: 2018-05-16
   time: každou středu 17:00 - 19:00
   place: *tieto-towers
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  materials: https://naucse.python.cz/2018/pyladies-ostrava-podzim/
+  registration:
+    url: https://goo.gl/forms/IKa987yfzvpwFsJ03
+    end: 2018-08-24
+  start: 2018-09-05
+  end: 2018-12-12
+  time: každou středu 17:00 - 19:00
+  place: *tieto-towers
+
+- name: Workshop datové analýzy
+  registration:
+    url: https://goo.gl/forms/OlKotczoABZFMBpO2
+    end: 2018-11-25
+  date: 2018-12-01
+  time: 9:00 - 17:00
+  place: &msic
+    name: Moravskoslezské inovační centrum
+    address: Technologická 375/3, 708 00 Ostrava-Pustkovec
+    url: https://goo.gl/maps/e5EzCaeFgYC2
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  materials: https://naucse.python.cz/2019/pyladies-ostrava-jaro/
+  registration:
+    url: https://goo.gl/forms/G0ktrZD7eS13SzXi2
+    end: 2019-01-27
+  start: 2019-02-05
+  end: 2019-05-14
+  time: každé úterý 17:00 - 19:00
+  place: *tieto-towers
+
+- name: Workshop na téma git, Github a open source
+  materials: https://naucse.python.cz/2019/ostrava-git-workshop/
+  registration:
+    url: https://goo.gl/forms/Bl0bF9D3FyudXqq23
+    end: 2019-02-25
+  date: 2019-03-02
+  time: 9:00 - 17:00
+  place: *msic

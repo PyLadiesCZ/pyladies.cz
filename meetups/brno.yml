@@ -41,6 +41,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní úterý 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-jaro-po/
   parallel-with-previous: true
   start: 2017-02-28
   end: 2017-05-30
@@ -48,6 +49,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní pondělí 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-jaro-po/
   start: 2017-02-27
   end: 2017-05-29
   time: pondělky 18:00 – 20:00
@@ -58,6 +60,7 @@
     longitude: '16.6235206'
 
 - name: Začátečnický kurz <br> Podzimní středa 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-podzim-po/
   parallel-with-previous: true
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
@@ -72,6 +75,7 @@
     longitude: '16.6057989'
 
 - name: Začátečnický kurz <br> Podzimní pondělí 2017
+  materials: http://naucse.python.cz/2017/pyladies-brno-podzim-po/
   registration:
     url: https://docs.google.com/forms/d/1ijtXfsv2nIj0zeCWGKcRlHvZcWc_rvktktITdg9GZJs
     end: 2017-09-03
@@ -81,6 +85,7 @@
   place: *experis
 
 - name: Python a jeho knihovny
+  materials: http://naucse.python.cz/2018/pyknihovny-jaro/
   registration:
     url: https://goo.gl/forms/LeubY9EwR7MLcPu53
     end: 2018-02-10
@@ -94,6 +99,7 @@
     longitude: '16.5858589'
 
 - name: Začátečnický kurz <br> Jarní pondělí 2018
+  materials: http://naucse.python.cz/2018/pyladies-brno-jaro-po/
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
     end: 2018-02-15
@@ -103,6 +109,7 @@
   place: *experis
 
 - name: Začátečnický kurz <br> Jarní středa 2018
+  materials: http://naucse.python.cz/2018/pyladies-brno-jaro-st/
   registration:
     url: https://docs.google.com/forms/d/1iP6EM5k_SJWYpIXQ4xtAg9pLTTvk6Ixaxe9vCVlo6hA/edit?ts=5a6d8212
     end: 2018-02-15
@@ -115,3 +122,89 @@
     latitude: '49.2099833'
     longitude: '16.5989164'
 
+
+- name: Hadí workshop pro PyLadies
+  materials: https://naucse.python.cz/2018/snake-brno/
+  registration:
+     url: https://goo.gl/forms/IuSr3HH40KkQw47f1
+     end: 2018-08-19
+  date: 2018-09-01
+  time: 8:30 – 18:00
+  place: *fi-muni
+
+- name: Experimentální začátečnický kurz <br> Podzimní pondělí 2018
+  materials: https://naucse.python.cz/2018/pyladies-brno-podzim-exp/
+  registration: &reg18podzim
+    url: https://goo.gl/forms/aWBLB0UC3a2uIo0l1
+    end: 2018-08-30
+  start: 2018-09-17
+  end: 2018-12-17
+  time: pondělky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz na Fakultě informatiky MUNI <br> Podzimní středa 2018
+  materials: https://naucse.python.cz/2018/pyladies-brno-podzim/
+  registration: *reg18podzim
+  start: 2018-09-19
+  end: 2018-12-19
+  time: středy 18:00 – 20:00
+  place: *fi-muni
+
+- name: RoboProjekt
+  materials: https://roboprojekt.pyladies.cz/
+  registration:
+    url: https://goo.gl/forms/DRnA7vTABCdvgoFg1
+    end: 2018-09-16
+  time: úterky 18:00 – 20:00
+  place: &kinali
+    name: Kinalisoft s.r.o.
+    address: Cejl 37/62, Brno - Zábrdovice
+    latitude: '49.1992608'
+    longitude: '16.6250248'
+
+- name: Hadí workshop
+  materials: https://naucse.python.cz/2019/brno-jaro-snake/
+  registration:
+     url: https://goo.gl/forms/IYD3GcbkIHKkvyY22
+     end: 2019-01-25
+  date: 2019-02-02
+  time: 8:30 – 18:00
+  place: &rh
+    name: Red Hat Czech s.r.o.
+    address: Purkyňova 115, Brno-Medlánky
+    latitude: '49.231318'
+    longitude: '16.5757744'
+
+- name: Začátečnický kurz <br> Jarní pondělí 2019
+  materials: https://naucse.python.cz/2019/brno-jaro-2019-pondeli/
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-25
+  end: 2019-06-03
+  time: pondělky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz <br> Jarní úterý 2019
+  materials: https://naucse.python.cz/2019/brno-jaro-2019-ut/
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-26
+  end: 2019-05-28
+  time: úterky 18:00 – 20:00
+  place: &mergado
+    name: Mergado
+    address: Minská 73/13, Brno
+    latitude: '49.2103950'
+    longitude: '16.5858589'
+
+- name: Začátečnický kurz <br> Jarní středa 2019
+  materials: https://naucse.python.cz/2019/pyladies-brno-jaro-st/
+  registration:
+    url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
+    end: 2019-02-10
+  start: 2019-02-27
+  end: 2019-06-12
+  time: středy 18:00 – 20:00
+  place: *fi-muni

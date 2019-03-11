@@ -1,3 +1,6 @@
+# Informace ohledně přesměrovávání starých URL materiálů na nové
+# umístění (naucse.python.cz)
+
 naucse-lessons:
     s001-install:
         cmdline.html: beginners/cmdline
@@ -11,7 +14,6 @@ naucse-lessons:
         variables.html: beginners/variables
         editor.html: beginners/install-editor
     s003-looping:
-        functions.html: beginners/functions
         turtle.html: intro/turtle
         while.html: beginners/while
     s004-strings:

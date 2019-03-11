@@ -1,0 +1,41 @@
+- name: Ivana Brabcová
+  img: img/plzen/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:brabcova.ivana@gmail.com
+
+- name: Jirka Vejražka
+  img: img/hradec/team/JirkaV.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:Jirka.Vejrazka@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/jirkavejrazka/
+  - twitter-link: https://twitter.com/JirkaV
+  - website-link: http://www.vejrazka.name
+
+- name: Radek Goláň
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Robert Richter
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Vladan Laxa
+  img: img/hradec/team/vlaxa.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:vlaxa@latraxa.cz
+  - linkedin-link: https://www.linkedin.com/in/vlaxa/
+  - facebook-link: https://www.facebook.com/latraxa
+  - twitter-link: https://twitter.com/latraxa
+  - website-link: http://www.latraxa.cz
+  - github-link: https://github.com/vlaxa
+
+- name: Josef Jeřábek
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Roman Bedroš
+  img: img/plzen/team/blank.png
+  role: Kouč

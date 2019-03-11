@@ -1,0 +1,59 @@
+- name: Líba Poustková
+  img: img/plzen/team/blank.png
+  role: Organizátorka, lektorka
+  links:
+  - mail-link: mailto:libuse.poustkova@seznam.cz
+
+- name: Filip Vaculík
+  img: img/plzen/team/vitac.jpg 
+  role: Organizátor, lektor 
+  links:
+  - mail-link: mailto:filip.vaculik@seznam.cz
+  
+- name: Dáša Toncarová
+  img: img/plzen/team/dasa_t.jpg
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:dasa@toncar.cz
+  
+- name: Vladimír Toncar
+  img: img/plzen/team/vladimir_t.jpg
+  role: Organizátor, lektor
+  links:
+  - mail-link: mailto:vladimir@toncar.cz  
+  
+- name: Honza Steinbach
+  img: img/plzen/team/blank.png
+  role: Organizátor
+  links:
+  - mail-link: mailto:honza@techheaven.org
+  
+- name: Magdalena Malastová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:magdalena.malastova@gmail.com
+
+- name: Tomáš Zítka
+  img: img/plzen/team/tomas_z.jpg
+  role: Organizátor, lektor
+  links:
+  - mail-link: mailto:zitkat@ntc.zcu.cz
+  
+- name: Tomáš Andrle
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor
+  links:
+  - mail-link: mailto:tom.andrle@post.cz
+  
+- name: Radka Halířová
+  img: img/plzen/team/radka.jpg
+  role: Organizátorka, lektorka
+  links:
+  - mail-link: mailto:halirova.radka@seznam.cz
+  
+- name: Jiří Fictum
+  img: img/plzen/team/blank.png
+  role: Organizátor, vedlejší kouč
+  links:
+  - mail-link: mailto:fictum.jiri@gmail.com

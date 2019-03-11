@@ -11824,7 +11824,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tah_cloveka</span> <span class="o">=</span> <span class="s1">&#39;kámen&#39;</span>
 <span class="n">tah_pocitace</span> <span class="o">=</span> <span class="s1">&#39;papír&#39;</span>
 
-<span class="k">if</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;kámen&#39;</span> <span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;kámen&#39;</span><span class="ow">or</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;nůžky&#39;</span> <span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;nůžky&#39;</span> <span class="ow">or</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;papír&#39;</span> <span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;papír&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">tah_cloveka</span> <span class="o">==</span>  <span class="n">tah_pocitace</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Plichta.&#39;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;kámen&#39;</span> <span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;nůžky&#39;</span> <span class="ow">or</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;nůžky&#39;</span><span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;papír&#39;</span> <span class="ow">or</span> <span class="n">tah_cloveka</span> <span class="o">==</span> <span class="s1">&#39;papír&#39;</span> <span class="ow">and</span> <span class="n">tah_pocitace</span> <span class="o">==</span> <span class="s1">&#39;kámen&#39;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vyhrála jsi!&#39;</span><span class="p">)</span>
@@ -11841,7 +11841,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Najdi-chybu-1">Najdi chybu 1<a class="anchor-link" href="#Najdi-chybu-1">&#182;</a></h2>
+<h2 id="Najdi-chyby-1">Najdi chyby 1<a class="anchor-link" href="#Najdi-chyby-1">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11891,6 +11891,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Chybička byla v záměně <code>elif</code> za další <code>if</code> což způsobilo rozdělení jedné podmínky se třemi větvemi na dvě samostatné podmínky, z nichž ta první měla jen jednu větev (jen jeden if) a ta druhá dvě (jeden if a jeden else).</p>
+<p>Další chyba pak byla v generování náhodných čísel, protože <code>randrange(2)</code> vrátí vždy jen 0 nebo 1.</p>
 
 </div>
 </div>
@@ -12065,7 +12066,7 @@ div#notebook {
 <span class="k">if</span> <span class="n">bohata_retezec</span> <span class="o">==</span> <span class="s1">&#39;ano&#39;</span><span class="p">:</span>
     <span class="n">bohata</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">elif</span> <span class="n">bohata_retezec</span> <span class="o">==</span> <span class="s1">&#39;ne&#39;</span><span class="p">:</span>
-        <span class="n">bohata</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">bohata</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nerozumím!&#39;</span><span class="p">)</span>
 
@@ -12088,6 +12089,23 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ot&#225;zka:-Jak-na-hezk&#233;-chybov&#233;-hl&#225;&#353;ky-a-blbuvzdorn&#253;-program?">Ot&#225;zka: Jak na hezk&#233; chybov&#233; hl&#225;&#353;ky a blbuvzdorn&#253; program?<a class="anchor-link" href="#Ot&#225;zka:-Jak-na-hezk&#233;-chybov&#233;-hl&#225;&#353;ky-a-blbuvzdorn&#253;-program?">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Chybová hláška nejčastěji znamená vyvolanou výjimku, které se naučíme odchytávat a zpracovávat později.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Obecn&#233;-rady,-prosby-a-doporu&#269;en&#237;">Obecn&#233; rady, prosby a doporu&#269;en&#237;<a class="anchor-link" href="#Obecn&#233;-rady,-prosby-a-doporu&#269;en&#237;">&#182;</a></h2>
 </div>
 </div>
@@ -12097,13 +12115,17 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
+<li>Pochvala za krásné formátování odpovědí.</li>
+<li>Pochvala za angličtinu v komentářích (pro jednu z vás).</li>
 <li>Žádné obrázky, fotky monitoru nebo screenshoty - vše jen jako psaný text nebo program v Pythonu s příponou .py.</li>
-<li>Ideálně nedávejte více úloh do jednoho souboru. To samozřejmě neplatí, pokud jen odpovídáte na otázky.</li>
+<li>Klidně dávejte do jednoho souboru více úloh, ale dejte pozor, aby na konci byly všechny odkomentované a funkční</li>
+<li>Promměné píšeme vždy malými písmeny. Časem narazíme na jiné pojmenovávání, kde velká písmena použijeme k rozlišení od obyčejných proměnných.</li>
+<li>Názvy proměnných mají mít vysvětlující charakter, takže jednoznakové názvy jsou zapovězeny.</li>
 <li>Dávejte pozor na počty mezer. Odsazuje se vždy čtyřmi mezerami a násobky čtyř.</li>
-<li>Spouštějte (testujte) svůj program. Na většinu chyb narazíte samy, pokud budete sledovat, co váš program dělá. Zároveň jej nezakomentovávejte.</li>
+<li>Spouštějte (testujte) svůj program. Na většinu chyb narazíte samy, pokud budete sledovat, co váš program dělá.</li>
 <li>Importy patří na samotný začátek souboru.</li>
 <li>Pište komentáře. Když narazím na špatné řešení, snáze se mi radí, když vím, jak jste se k němu dostaly a na co jste při tom myslely. Komentáře ke standardním věcem psát netřeba.</li>
-<li>Odevzdávejte nejpozději v terý v 17:00!</li>
+<li>Odevzdávejte nejpozději v pondělí večer!</li>
 </ul>
 
 </div>
