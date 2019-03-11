@@ -13,7 +13,7 @@ praha:
             url: https://groups.google.com/forum/#!forum/pyladies-praha
         Napiš organizátorkám:
             icon: coach
-            url: mailto:pyladies-praha@googlegroups.com
+            url: mailto:praha@pyladies.cz
 
 brno:
     title: Brno
@@ -41,7 +41,7 @@ ostrava:
             url: https://groups.google.com/forum/#!forum/pyladies-ostrava
         Napiš organizátorům:
             icon: coach
-            url: mailto:pyladies-ostrava@googlegroups.com
+            url: mailto:ostrava@pyladies.cz
 plzen:
     title: Plzeň
     team-name: Tým plzeňských PyLadies
