@@ -3,11 +3,19 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:valkova.zuza@seznam.cz
-- name: Iveta Jelenová
-  img: img/praha/team/ivet.jpg
+- name: Lucka Říhová
+  img: img/praha/team/lucka.jpg
   role: Organizátorka - kurz NTK
   links:
-  - mail-link: mailto:iveta@jelen.biz
+  - mail-link: mailto: luc.rihova@gmail.com
+  - facebook-link: https://m.facebook.com/luc.rihova
+- name: Tereza Vaňková
+  img: img/praha/team/terezavan.png
+  role: Organizátorka - kurz NTK
+  links:
+  - mail-link: mailto: vankova.terezaa@gmail.com
+  - facebook-link: https://www.facebook.com/tereza.vankova.7
+  - - twitter-link: https://twitter.com/VanekTereza?lang=cs
 - name: Zuzana Pokorná
   img: img/praha/team/zuzanita.jpg
   role: Organizátorka - kurz NTK
@@ -29,6 +37,18 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:zuza.kasakova@gmail.com
+- name: Jana Slouková
+  #img: img/praha/team/
+  role: Koučka
+  links:
+  - mail-link: mailto:j.sloukova@gmail.com
+- name: Petr Messner
+#  img: img/praha/team/
+  role: Kouč/Kurátor odevzdávátka
+  links:
+    - mail-link: mailto:petr.messner@gmail.com
+    - facebook-link: https://www.facebook.com/petr.messner
+    - github-link: https://github.com/messa
 - name: Vojtěch Růžička
   img: img/praha/team/vojta2.jpg
   role: Kouč
@@ -105,6 +125,11 @@
   - github-link: https://github.com/honzajavorek
 
 # Neaktivní:
+# - name: Iveta Jelenová
+#   img: img/praha/team/ivet.jpg
+#   role: Organizátorka - kurz NTK
+#    links:
+#    - mail-link: mailto:iveta@jelen.biz
 #  - name: Josef Rousek
 #    img: img/praha/team/josef.jpg
 #    role: Kouč
