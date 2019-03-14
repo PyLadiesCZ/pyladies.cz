@@ -208,3 +208,17 @@
   end: 2019-06-12
   time: středy 18:00 – 20:00
   place: *fi-muni
+
+- name: Python a jeho knihovny
+  # materials: https://naucse.python.cz/2019/pyknihovny-jaro/
+  registration:
+    url: https://goo.gl/forms/QmJfnHpOnOW8TjcN2
+    end: 2019-03-19
+  start: 2019-04-04
+  end: 2019-06-13
+  time: čtvrtky 18:00 – 20:00
+  place: &rh-fbc2
+    name: Red Hat Czech
+    address: Purkyňova 97b, Brno-Medlánky (zastávka Červinkova)
+    latitude: '49.2257189'
+    longitude: '16.5821297'
