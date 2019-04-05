@@ -110,7 +110,7 @@
     </div>
     {% endif %}
   </section>
-  {% else %}
+  {% elif not current_meetups and city_slug != 'ostatni' %}
   <section class=" container text-center" id="meetups">
     <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
     <div class="meetup">
