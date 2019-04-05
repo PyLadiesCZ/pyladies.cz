@@ -98,13 +98,12 @@
             {% if past_meetups|length == 0 %}
                 Kurz se připravuje.
             {% elif past_meetups|length == 1 %}
-                Jedna další akce už je
+                Jedna další akce už je za námi!
             {% elif past_meetups|length < 5 %}
-                A další {{past_meetups|length}} akce už jsou
+                A další {{past_meetups|length}} akce už jsou za námi!
             {% else %}
-                A dalších {{past_meetups|length}} kurzů a srazů už je
+                A dalších {{past_meetups|length}} kurzů a srazů už je za námi!
             {% endif %}
-            za námi!
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
     </div>
@@ -114,10 +113,8 @@
   <section class=" container text-center" id="meetups">
     <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
     <div class="meetup">
-      {% for meetup in past_meetups %}
-        {% if loop.index < 4 %}
-         {{ meetup_info(meetup,  with_registration_link=False) }}
-        {% endif %}
+      {% for meetup in past_meetups[:3] %}
+        {{ meetup_info(meetup,  with_registration_link=False) }}
       {% endfor %}
     </div>
     <div>
@@ -125,13 +122,12 @@
             {% if past_meetups|length == 0 %}
                 Kurz se připravuje.
             {% elif past_meetups|length == 1 %}
-                Jedna další akce už je
+                Jedna další akce už je za námi!
             {% elif past_meetups|length < 5 %}
-                A další {{past_meetups|length}} akce už jsou
+                A další {{past_meetups|length}} akce už jsou za námi!
             {% else %}
-                A dalších {{past_meetups|length-3}} kurzů a srazů už je
+                A dalších {{past_meetups|length-3}} kurzů a srazů už je za námi!
             {% endif %}
-            za námi!
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
     </div>
