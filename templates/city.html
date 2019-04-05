@@ -90,8 +90,6 @@
     <div class="meetup">
       {% for meetup in current_meetups | reverse %}
          {{ meetup_info(meetup) }}
-          {% if not loop.last and loop.index0 % 2 %}
-          {% endif %}
       {% endfor %}
     </div>
     {% if past_meetups %}
@@ -112,7 +110,33 @@
     </div>
     {% endif %}
   </section>
+  {% else %}
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      {% for meetup in past_meetups %}
+        {% if loop.index < 4 %}
+         {{ meetup_info(meetup,  with_registration_link=False) }}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div>
+        <a href="#past-meetups">
+            {% if past_meetups|length == 0 %}
+                Kurz se připravuje.
+            {% elif past_meetups|length == 1 %}
+                Jedna další akce už je
+            {% elif past_meetups|length < 5 %}
+                A další {{past_meetups|length}} akce už jsou
+            {% else %}
+                A dalších {{past_meetups|length-3}} kurzů a srazů už je
+            {% endif %}
+            za námi!
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
   {% endif %}
+  </section>
 
   <!-- Registration notice -->
   {% macro registration_link_block() %}
@@ -137,7 +161,7 @@
     {% endcall %}
   {% elif city_slug != "ostatni" %}
     {% call registration_link_block() %}
-        {% if past_meetups %}
+        {% if past_meetups and current_meetups %}
         <div>
             Už máme za sebou
             <a href="#past-meetups">
