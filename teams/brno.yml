@@ -46,6 +46,12 @@
   - mail-link: mailto:haymannovaa@gmail.com
   - linkedin-link: https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/
 
+- name: Lubomír Sedlář
+  img: img/brno/team/lubomirs.jpg
+  role: Lektor
+  links:
+  - mail-link: mailto:lubomir.sedlar@gmail.com
+
 - name: Pavel Kocourek
   img: img/brno/team/pavelk.jpg
   role: Lektor
@@ -79,6 +85,12 @@
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
+- name: Erik Škultéty
+  img: img/brno/team/eriks.jpg
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/eskultety/
+
 - name: Iveta Česalová
   img: img/brno/team/ivetac.jpg
   role: Koučka
@@ -93,11 +105,23 @@
   - facebook-link: https://www.facebook.com/jan.ohnheiser
   - linkedin-link: https://www.linkedin.com/in/jan-ohnheiser-ab5a5776
 
+- name: Jan Rybář
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:jrybar@redhat.com
+
 - name: Juraj Michálek
   img: img/brno/team/juraj.jpg
   role: Kouč
   links:
   - mail-link: mailto:juraj.michalek132@gmail.com
+
+- name: Lukáš Zachar
+  img: img/brno/team/lukasz.jpg
+  role: Kouč
+  links:
+  - github-link: https://github.com/lukaszachy
 
 - name: Katka Loučková
   img: img/brno/team/katkal.png
@@ -105,12 +129,6 @@
   links:
   - mail-link: mailto:katka@louckovi.cz
   - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
-
-- name: Lubomír Sedlář
-  img: img/brno/team/lubomirs.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:lubomir.sedlar@gmail.com
 
 - name: Lucie Čuprová
   img: img/brno/team/luciec.jpg
@@ -156,6 +174,12 @@
   links:
   - mail-link: mailto:kopkanpatrik@gmail.com
 
+- name: Pavel Hrdina
+  img: img/brno/team/pavelhr.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:paja.hrdina@gmail.com
+
 - name: Pavel Rusinský
   img: img/brno/team/pavelr.jpg
   role: Kouč
@@ -192,6 +216,20 @@
   role: Kouč
   links:
   - mail-link: mailto:tomas.n@orsava.cz
+
+- name: Vít Pečeňa
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:vit@pecena.cz
+  - website-link: https://vit.pecena.cz/
+
+- name: Zdeněk Kraus
+  img: img/brno/team/zdenek.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:zdenek.kraus@gmail.com
+  - website-link: http://zkraus.zonerama.com
 
 - name: Zuzka Kletzanderová
   img: img/brno/team/zuzkast.jpg
