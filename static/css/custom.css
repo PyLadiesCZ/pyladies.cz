@@ -293,8 +293,8 @@ nav.main-navbar li.current-page {
 .navbar-cities .city-active-registration {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 70%;
-  color: #1fe5c4;
+  font-size: 85%;
+  color: #f9cfd6;
 }
 @media all and (min-width: 550px) {
     /* On most screens, show the city silhouettes */
