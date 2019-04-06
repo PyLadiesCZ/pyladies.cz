@@ -193,7 +193,7 @@
     url: https://goo.gl/forms/tH2mK2PsBLqODYKn1
     end: 2018-02-25
   place: *ntk
-  
+
 - name: Pyladies Praha <br> začátečnický kurz čtvrtek
   materials: http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/
   parallel-with-previous: true
@@ -219,7 +219,7 @@
     url: https://goo.gl/forms/WnvKKKt8qfZ2kyIh1
     end: 2018-09-02
   place: *cz-nic-olsanka
-  
+
 - name: Pyladies Praha <br> začátečnický kurz středa
   materials: https://naucse.python.cz/2018/pyladies-praha-podzim-ntk/
   parallel-with-previous: true
@@ -230,8 +230,8 @@
     url: https://goo.gl/forms/WnvKKKt8qfZ2kyIh1
     end: 2018-09-02
   place: *ntk
-  
- 
+
+
 - name: Pyladies Praha <br> začátečnický kurz čtvrtek
   materials: https://naucse.python.cz/2018/pyladies-praha-podzim-bubenec/
   parallel-with-previous: true
@@ -269,10 +269,10 @@
   end: 2019-05-28
   time: každé úterý 18:00 - 20:00
   registration:
-    url: 
+    url:
     end: 2019-02-20
   place: *cz-nic-olsanka
-  
+
 - name: Pyladies Praha <br> začátečnický kurz čtvrtek NTK
   materials: https://naucse.python.cz/2019/pyladies-praha-jaro-ntk/
   parallel-with-previous: true
@@ -280,6 +280,6 @@
   end: 2019-05-30
   time: každý čtvrtek 18:00 - 20:00
   registration:
-    url: 
+    url:
     end: 2019-02-20
   place: *ntk
