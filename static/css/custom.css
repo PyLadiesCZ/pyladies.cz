@@ -294,7 +294,7 @@ nav.main-navbar li.current-page {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 70%;
-  color: #ff0;
+  color: #1fe5c4;
 }
 @media all and (min-width: 550px) {
     /* On most screens, show the city silhouettes */
@@ -364,10 +364,10 @@ nav.main-navbar li.current-page {
 
     .navbar-cities .city-active-registration {
       text-transform: uppercase;
-      background: #ff0;
+      background: #f9cfd6;
       color: #330;
       border: 2px solid #fff;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 800;
       -webkit-transform: rotate(-13deg);
               transform: rotate(-13deg);
@@ -383,7 +383,7 @@ nav.main-navbar li.current-page {
     }
 
     .navbar-cities a:hover .city-active-registration {
-      background: #cc0;
+      background: #e0bac0;
     }
     .city-title-box {
         padding: 0 15px;
