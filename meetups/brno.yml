@@ -210,7 +210,7 @@
   place: *fi-muni
 
 - name: Python a jeho knihovny
-  # materials: https://naucse.python.cz/2019/pyknihovny-jaro/
+  materials: https://naucse.python.cz/2019/brno-jaro-knihovny/
   registration:
     url: https://goo.gl/forms/QmJfnHpOnOW8TjcN2
     end: 2019-03-19
