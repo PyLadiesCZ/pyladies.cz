@@ -111,3 +111,14 @@
   date: 2019-03-02
   time: 9:00 - 17:00
   place: *msic
+
+- name: PyWorking Testování
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSeDJ66OL-r8YZ0uUoxYNRu7Bu56SQIk-g_pjO58szexvDuRcQ/viewform
+    end: 2019-04-26
+  date: 2019-05-04
+  time: 9:00 - 16:00
+  place: &quadient
+    name: Quadient s.r.o.
+    address: The Orchard III, Hornopolní 3322/34, 702 00 Moravská Ostrava a Přívoz
+    url: https://goo.gl/maps/PwVbHAu38vbKmyFc7
