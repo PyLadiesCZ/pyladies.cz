@@ -1,2 +1,11 @@
 # Pozor, nové meetupy se přidávají na konec souboru
-[]
+- name: PyLadies Olomouc <br> začátečnický kurz
+  registration:
+    url: https://forms.gle/74qRf346E7YRT1Kr5
+    end: 2019-08-01
+  start: 2019-09-01
+  end: 2019-12-31
+  place: &rc-hermanek
+    name: RC Heřmánek
+    address: Náves Svobody 41, Olomouc - Holice
+    url: https://goo.gl/maps/z7PT3QtNBj42VurX6
