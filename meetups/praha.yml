@@ -283,3 +283,14 @@
     url:
     end: 2019-02-20
   place: *ntk
+
+- name: PyWorking <br> meetup pro pokročilé začátečníky
+  topic: Webová API
+  date: 2019-05-04
+  time: 9:30 - 17:30
+  place: &barclays
+    name: Barclays
+    address: Na Pankráci 1683/127, 140 00 Praha 4
+    latitude: '50.0518342'
+    longitude: '14.4404372'
+    url: https://goo.gl/maps/Hxy3cfYx9kRygoJD6
