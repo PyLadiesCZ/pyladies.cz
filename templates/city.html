@@ -27,6 +27,11 @@
   <div class="meetup-width">
       <h4 class="meetup-heading">{{ meetup.name | markdown(inline=True) }}</h4>
       <ul>
+      {% if meetup.topic %}
+        {% call item(icon="tag") %}
+          <div>{{ meetup.topic }}</div>
+        {% endcall %}
+      {% endif %}
       {% if meetup.start and meetup.end %}
         {% call item(icon="calendar") %}
           {{ (meetup.start, meetup.end)| date_range }}
