@@ -122,3 +122,13 @@
     name: Quadient s.r.o.
     address: The Orchard III, Hornopolní 3322/34, 702 00 Moravská Ostrava a Přívoz
     url: https://goo.gl/maps/PwVbHAu38vbKmyFc7
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  #materials: https://naucse.python.cz/2019/pyladies-ostrava-jaro/
+  registration:
+    url: https://docs.google.com/forms/d/1kYO-9ZGK_wLLp7fQdY8F8QvPJiJcJrI_7Ea8wHqbBA4/edit?usp=drive_web
+    end: 2019-06-30
+  start: 2019-09-04
+  end: 2019-12-11
+  time: každá středa 17:00 - 19:00
+  place: *tieto-towers
