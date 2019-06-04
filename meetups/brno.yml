@@ -181,7 +181,7 @@
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
   start: 2019-02-25
-  end: 2019-06-03
+  end: 2019-06-10
   time: pondělky 18:00 – 20:00
   place: *fi-muni
 
@@ -191,7 +191,7 @@
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
   start: 2019-02-26
-  end: 2019-05-28
+  end: 2019-06-18
   time: úterky 18:00 – 20:00
   place: &mergado
     name: Mergado
@@ -205,7 +205,7 @@
     url: https://goo.gl/forms/iYa9bRXdTTEkT9Dt2
     end: 2019-02-10
   start: 2019-02-27
-  end: 2019-06-12
+  end: 2019-06-19
   time: středy 18:00 – 20:00
   place: *fi-muni
 
