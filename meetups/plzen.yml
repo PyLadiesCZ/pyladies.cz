@@ -38,3 +38,13 @@
   date: 2019-02-17
   time: 9:30 - 17:00
   place: *techheaven_hub2
+  
+- name: Začátečnický kurz <br> Podzimní 2019
+  materials: https://naucse.python.cz/2019/plzen-podzim-2019/
+  registration:
+    url: https://1url.cz/@plrf_p2019
+    end: 2019-08-31
+  start: 2019-09-17
+  end: 2019-12-10
+  time: úterky (17:00) 18:00 – 20:00
+  place: *techheaven_hub2
