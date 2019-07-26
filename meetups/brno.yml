@@ -171,7 +171,7 @@
   time: 8:30 – 18:00
   place: &rh
     name: Red Hat Czech s.r.o.
-    address: Purkyňova 115, Brno-Medlánky
+    address: Purkyňova 111, Brno-Medlánky
     latitude: '49.231318'
     longitude: '16.5757744'
 
@@ -222,3 +222,12 @@
     address: Purkyňova 97b, Brno-Medlánky (zastávka Červinkova)
     latitude: '49.2257189'
     longitude: '16.5821297'
+
+- name: Hadí workshop
+  materials: https://naucse.python.cz/2019/brno-jaro-snake/
+  registration:
+     url: https://forms.gle/wjGYYwr9dcWUxKAz6
+     end: 2019-08-16
+  date: 2019-08-17
+  time: 8:30 – 18:00
+  place: *rh
