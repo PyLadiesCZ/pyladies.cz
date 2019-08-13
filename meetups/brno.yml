@@ -233,7 +233,7 @@
   place: *rh
 
 - name: Začátečnický kurz <br> Podzimní pondělí 2019
-  materials: https://naucse.python.cz/2019/brno-podzim-2019-pondeli/
+  materials: https://naucse.python.cz/2019/brno-podzim-pondeli/
   registration:
     url: https://forms.gle/YBS71A76DhvhgxpRA
     end: 2019-09-08
