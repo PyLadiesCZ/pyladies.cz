@@ -231,3 +231,31 @@
   date: 2019-08-17
   time: 8:30 – 18:00
   place: *rh
+
+- name: Začátečnický kurz <br> Podzimní pondělí 2019
+  materials: https://naucse.python.cz/2019/brno-podzim-pondeli/
+  registration:
+    url: https://forms.gle/YBS71A76DhvhgxpRA
+    end: 2019-09-08
+  start: 2019-09-23
+  end: 2019-12-16
+  time: pondělky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz <br> Podzimní úterý 2019
+  registration:
+    url: https://forms.gle/YBS71A76DhvhgxpRA
+    end: 2019-09-08
+  start: 2019-09-24
+  end: 2020-01-14
+  time: úterky 18:00 – 20:00
+  place: *mergado
+
+- name: Začátečnický kurz <br> Podzimní středa 2019
+  registration:
+    url: https://forms.gle/YBS71A76DhvhgxpRA
+    end: 2019-09-08
+  start: 2019-09-25
+  end: 2019-12-18
+  time: středy 18:00 – 20:00
+  place: *fi-muni
