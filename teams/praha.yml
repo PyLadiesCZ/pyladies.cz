@@ -128,6 +128,13 @@
   - website-link: http://honzajavorek.cz/
   - twitter-link: https://twitter.com/honzajavorek
   - github-link: https://github.com/honzajavorek
+- name: Mirek Brabenec
+  img: img/praha/team/mirek.jpg
+  role: Kouč
+  links:
+    - mail-link: mailto:brabemi@gmail.com
+    - facebook-link: https://www.facebook.com/miroslav.brabenec
+    - github-link: https://github.com/brabemi
 
 # Neaktivní:
 # - name: Iveta Jelenová
