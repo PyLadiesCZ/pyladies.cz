@@ -54,6 +54,11 @@
     - mail-link: mailto:petr.messner@gmail.com
     - facebook-link: https://www.facebook.com/petr.messner
     - github-link: https://github.com/messa
+- name: Petra Vidnerová
+  img: img/praha/team/petra.jpg
+  role: Koučka
+  links:
+    - mail-link: mailto:petra.vidnerova@gmail.com
 - name: Vojtěch Růžička
   img: img/praha/team/vojta2.jpg
   role: Kouč
