@@ -73,6 +73,13 @@
   links:
   - github-link: https://github.com/asgeirrr
   - twitter-link: https://twitter.com/OskarHollmann
+- name: Mirek Brabenec
+  img: img/praha/team/mirek.jpg
+  role: Kouč
+  links:
+    - mail-link: mailto:brabemi@gmail.com
+    - facebook-link: https://www.facebook.com/miroslav.brabenec
+    - github-link: https://github.com/brabemi
 - name: Petr Matuška
   img: img/praha/team/petrmatuska2.jpg
   role: Kouč
@@ -105,13 +112,7 @@
   role: organizátorka/pamětnice :)
   links:
   - mail-link: mailto:valkova.zuza@seznam.cz
-- name: Mirek Brabenec
-  img: img/praha/team/mirek.jpg
-  role: Kouč
-  links:
-    - mail-link: mailto:brabemi@gmail.com
-    - facebook-link: https://www.facebook.com/miroslav.brabenec
-    - github-link: https://github.com/brabemi
+
 
 # Neaktivní:
 # - name: Iveta Jelenová
