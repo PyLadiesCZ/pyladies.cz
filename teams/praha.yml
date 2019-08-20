@@ -1,14 +1,3 @@
-- name: Zuzana Válková
-  img: img/praha/team/zuzka.jpg
-  role: Organizátorka/Koučka
-  links:
-  - mail-link: mailto:valkova.zuza@seznam.cz
-- name: Lucka Říhová
-  img: img/praha/team/lucka.jpg
-  role: Organizátorka - kurz NTK
-  links:
-  - mail-link: mailto:luc.rihova@gmail.com
-  - facebook-link: https://m.facebook.com/luc.rihova
 - name: Tereza Vaňková
   img: img/praha/team/terezavan.png
   role: Organizátorka - kurz NTK
@@ -26,6 +15,12 @@
   role: Organizátorka - kurz NTK
   links:
   - mail-link: mailto:veronika.sarkanyova@gmail.com
+- name: Lucka Říhová
+  img: img/praha/team/lucka.jpg
+  role: Organizátorka - kurz NTK
+  links:
+  - mail-link: mailto:luc.rihova@gmail.com
+  - facebook-link: https://m.facebook.com/luc.rihova
 - name: Radka Planková
   img: img/praha/team/radka.jpg
   role: Organizátorka - kurz CZ.NIC
@@ -78,6 +73,13 @@
   links:
   - github-link: https://github.com/asgeirrr
   - twitter-link: https://twitter.com/OskarHollmann
+- name: Mirek Brabenec
+  img: img/praha/team/mirek.jpg
+  role: Kouč
+  links:
+    - mail-link: mailto:brabemi@gmail.com
+    - facebook-link: https://www.facebook.com/miroslav.brabenec
+    - github-link: https://github.com/brabemi
 - name: Petr Matuška
   img: img/praha/team/petrmatuska2.jpg
   role: Kouč
@@ -94,52 +96,23 @@
   - twitter-link: https://twitter.com/hroncok
   - website-link: http://hroncok.cz/
   - github-link: https://github.com/hroncok
-- name: Martin Jahn
-  img: img/praha/team/martin.jpg
-  role: Kouč
-  links:
-  - website-link: https://jahn.sk/
 - name: Naďa Jašíková
   img: img/praha/team/nada.jpg
   role: Koučka
   links:
   - github-link: https://github.com/nadade
   - facebook-link: https://www.facebook.com/nada.jasikova
-- name: Peter Hozák
-  img: img/praha/team/peter.jpg
-  role: Kouč
-  links:
-  - facebook-link: https://www.facebook.com/peter.hozak
-- name: Radek Holý
-  img: img/praha/team/radek.jpg
-  role: Kouč
-  links:
-  - linkedin-link: https://www.linkedin.com/in/pydeq/cs
-- name: Pavlína Froňková
-  img: img/praha/team/paffi.jpg
-  role: Organizátorka/Koučka
-  links:
-  - mail-link: mailto:pavlina.fronkova@gmail.com
-  - facebook-link: https://www.facebook.com/pavlina.fronkova
 - name: Petr Viktorin
   img: img/praha/team/peterv.jpg
   role: Kouč v Brně/Tvůrce materiálů
   links:
   - website-link: http://encukou.cz
-- name: Honza Javorek
-  img: img/praha/team/honzaj.jpg
-  role: Maskot Pythonu
+- name: Zuzka Javorková
+  img: img/praha/team/zuzka.jpg
+  role: organizátorka/pamětnice :)
   links:
-  - website-link: http://honzajavorek.cz/
-  - twitter-link: https://twitter.com/honzajavorek
-  - github-link: https://github.com/honzajavorek
-- name: Mirek Brabenec
-  img: img/praha/team/mirek.jpg
-  role: Kouč
-  links:
-    - mail-link: mailto:brabemi@gmail.com
-    - facebook-link: https://www.facebook.com/miroslav.brabenec
-    - github-link: https://github.com/brabemi
+  - mail-link: mailto:valkova.zuza@seznam.cz
+
 
 # Neaktivní:
 # - name: Iveta Jelenová
@@ -199,3 +172,31 @@
 #    role: Organizátorka/Koučka
 #    links:
 #    - twitter-link: https://twitter.com/ostruzina
+#  - name: Peter Hozák
+#   img: img/praha/team/peter.jpg
+#   role: Kouč
+#   links:
+#   - facebook-link: https://www.facebook.com/peter.hozak
+# - name: Radek Holý
+#   img: img/praha/team/radek.jpg
+#   role: Kouč
+#   links:
+#   - linkedin-link: https://www.linkedin.com/in/pydeq/cs
+# - name: Pavlína Froňková
+#   img: img/praha/team/paffi.jpg
+#   role: Organizátorka/Koučka
+#   links:
+#   - mail-link: mailto:pavlina.fronkova@gmail.com
+#   - facebook-link: https://www.facebook.com/pavlina.fronkova
+#  - name: Martin Jahn
+#   img: img/praha/team/martin.jpg
+#   role: Kouč
+#   links:
+#   - website-link: https://jahn.sk/
+#  - name: Honza Javorek
+#    img: img/praha/team/honzaj.jpg
+#    role: Maskot Pythonu
+#    links:
+#    - website-link: http://honzajavorek.cz/
+#    - twitter-link: https://twitter.com/honzajavorek
+#    - github-link: https://github.com/honzajavorek
