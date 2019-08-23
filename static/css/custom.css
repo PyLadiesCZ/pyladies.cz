@@ -347,15 +347,15 @@ nav.main-navbar li.current-page {
     .navbar-cities {
         /* Gradient with 137px of white on the top, pink bottom */
         background: linear-gradient(180deg,
-                                    white, white 106px,
-                                    #e51f40 106px, #e51f40);
+                                    white, white 103px,
+                                    #e51f40 103px, #e51f40);
     }
 
     .navbar-cities.faded-banner {
         /* Gradient with 137px of white on the top, gray bottom */
         background: linear-gradient(180deg,
-                                    white, white 106px,
-                                    #8e8c8d 106px, #8e8c8d);
+                                    white, white 103px,
+                                    #8e8c8d 103px, #8e8c8d);
     }
     .navbar-cities li {
         padding: 0;
@@ -386,7 +386,7 @@ nav.main-navbar li.current-page {
       background: #e0bac0;
     }
     .city-title-box {
-        padding: 0 15px;
+        padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -403,7 +403,7 @@ nav.main-navbar li.current-page {
     /* For very big sceens, set a max size */
     .city-title-box {
         height: 88px;
-        padding: 0 15px;
+        padding: 0 5px;
 
     }
     .navbar-cities span.city-title {

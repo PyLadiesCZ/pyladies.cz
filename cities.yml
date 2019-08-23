@@ -52,6 +52,14 @@ plzen:
         Napiš koučovi:
             icon: coach
             url: mailto:plzen@pyladies.cz
+
+olomouc:
+    title: Olomouc
+    team-name: Tým olomouckých PyLadies
+    contacts:
+        Napiš koučovi:
+            icon: coach
+            url: mailto:filip.valder@gmail.com
 hradec:
     title: Hradec Králové
     team-name: Tým hradeckých PyLadies
