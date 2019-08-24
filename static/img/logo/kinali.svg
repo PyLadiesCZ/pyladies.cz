@@ -7,11 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 88 52.05"
+   viewBox="0 0 88.278114 47.045884"
    version="1.1"
    id="svg154"
    sodipodi:docname="kinali.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   width="88.278114"
+   height="47.045883">
   <metadata
      id="metadata160">
     <rdf:RDF>
@@ -38,16 +40,16 @@
      inkscape:window-height="1016"
      id="namedview156"
      showgrid="false"
-     inkscape:zoom="15.81172"
-     inkscape:cx="44"
-     inkscape:cy="26.025"
+     inkscape:zoom="11.180574"
+     inkscape:cx="48.680149"
+     inkscape:cy="32.13997"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg154" />
   <g
      id="g152"
-     transform="matrix(0.70769912,0,0,0.70769912,12.142892,7.712454)">
+     transform="matrix(0.70769912,0,0,0.70769912,12.142892,2.5294573)">
     <circle
        cx="18.17"
        cy="48.380001"
