@@ -301,9 +301,6 @@
   start: 2019-09-17
   end: 2019-12-03
   time: každé úterý 18:00 - 20:00
-  registration:
-    url: https://forms.gle/eTnwZW1oAkKY3zjXA
-    end: 2019-09-03
   place: *cz-nic-olsanka
 
 - name: Pyladies Praha <br> začátečnický kurz středa NTK
@@ -312,7 +309,4 @@
   start: 2019-09-18
   end: 2019-12-04
   time: každou středu 18:00 - 20:00
-  registration:
-    url: https://forms.gle/eTnwZW1oAkKY3zjXA
-    end: 2019-09-03
   place: *ntk
