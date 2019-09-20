@@ -11,6 +11,8 @@
     name: Red Hat – Tower Big
     address: Purkyňova 99, Brno
     url: http://www.mapy.cz/s/8NKT
+    latitude: '49.2261222'
+    longitude: '16.5816069'
 
 - name: Začátečnický kurz <br> 2014
   start: 2014-06-10
@@ -252,6 +254,7 @@
   place: *mergado
 
 - name: Začátečnický kurz <br> Podzimní středa 2019
+  materials: https://naucse.python.cz/2019/pyladies-brno-podzim-st/
   registration:
     url: https://forms.gle/YBS71A76DhvhgxpRA
     end: 2019-09-08
@@ -259,3 +262,16 @@
   end: 2019-12-18
   time: středy 18:00 – 20:00
   place: *fi-muni
+
+- name: Linuxová administrace
+  registration:
+    end: 2019-09-01
+  start: 2019-09-19
+  end: 2019-12-19
+  time: čtvrtky 18:00 – 20:00
+  place: &rh-tower-small
+    name: Red Hat – Tower Small
+    address: Purkyňova 99, Brno
+    url: http://www.mapy.cz/s/8NKT
+    latitude: '49.2261222'
+    longitude: '16.5816069'
