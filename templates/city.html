@@ -82,6 +82,25 @@
   </div>
 {% endmacro %}
 
+{% macro other_courses_link(n) %}
+    {% if n %}
+    <div>
+        <a href="#past-meetups">
+            {% if n == 0 %}
+                Kurz se připravuje.
+            {% elif n == 1 %}
+                Jedna další akce už je za námi!
+            {% elif n < 5 %}
+                A další {{n}} akce už jsou za námi!
+            {% else %}
+                A dalších {{n}} kurzů a srazů už je za námi!
+            {% endif %}
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    {% endif %}
+{% endmacro %}
+
 {% block content %}
   <!-- Intro Header -->
   <header class="intro-city">
@@ -97,22 +116,7 @@
          {{ meetup_info(meetup) }}
       {% endfor %}
     </div>
-    {% if past_meetups %}
-    <div>
-        <a href="#past-meetups">
-            {% if past_meetups|length == 0 %}
-                Kurz se připravuje.
-            {% elif past_meetups|length == 1 %}
-                Jedna další akce už je za námi!
-            {% elif past_meetups|length < 5 %}
-                A další {{past_meetups|length}} akce už jsou za námi!
-            {% else %}
-                A dalších {{past_meetups|length}} kurzů a srazů už je za námi!
-            {% endif %}
-            <span class="glyphicon glyphicon-chevron-down"></span>
-        </a>
-    </div>
-    {% endif %}
+    {{ other_courses_link(past_meetups|length) }}
   </section>
   {% elif not current_meetups and city_slug != 'ostatni' %}
   <section class=" container text-center" id="meetups">
@@ -122,20 +126,7 @@
         {{ meetup_info(meetup,  with_registration_link=False) }}
       {% endfor %}
     </div>
-    <div>
-        <a href="#past-meetups">
-            {% if past_meetups|length == 0 %}
-                Kurz se připravuje.
-            {% elif past_meetups|length == 1 %}
-                Jedna další akce už je za námi!
-            {% elif past_meetups|length < 5 %}
-                A další {{past_meetups|length}} akce už jsou za námi!
-            {% else %}
-                A dalších {{past_meetups|length-3}} kurzů a srazů už je za námi!
-            {% endif %}
-            <span class="glyphicon glyphicon-chevron-down"></span>
-        </a>
-    </div>
+    {{ other_courses_link(past_meetups|length - 3) }}
   {% endif %}
   </section>
 
