@@ -201,6 +201,11 @@ def read_lessons_yaml(filename):
 def read_meetups_yaml(filename):
     data = read_yaml(filename)
 
+    if data is None:
+        # Treat an empty YAML file as no courses.
+        # (Otherwise, the file would have to contain [])
+        data = []
+
     today = datetime.date.today()
 
     for meetup in data:
