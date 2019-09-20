@@ -11,6 +11,8 @@
     name: Red Hat – Tower Big
     address: Purkyňova 99, Brno
     url: http://www.mapy.cz/s/8NKT
+    latitude: '49.2261222'
+    longitude: '16.5816069'
 
 - name: Začátečnický kurz <br> 2014
   start: 2014-06-10
@@ -267,4 +269,9 @@
   start: 2019-09-19
   end: 2019-12-19
   time: čtvrtky 18:00 – 20:00
-  place: *rh-fbc2
+  place: &rh-tower-small
+    name: Red Hat – Tower Small
+    address: Purkyňova 99, Brno
+    url: http://www.mapy.cz/s/8NKT
+    latitude: '49.2261222'
+    longitude: '16.5816069'
