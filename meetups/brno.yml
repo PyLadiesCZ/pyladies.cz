@@ -245,6 +245,7 @@
   place: *fi-muni
 
 - name: Začátečnický kurz <br> Podzimní úterý 2019
+  materials: https://naucse.python.cz/2019/brno-podzim-2019-ut/
   registration:
     url: https://forms.gle/YBS71A76DhvhgxpRA
     end: 2019-08-30
