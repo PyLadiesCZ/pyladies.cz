@@ -7,7 +7,7 @@
   - twitter-link: https://twitter.com/anezkamll
 
 - name: Kristýna Stehlíková
-  img: img/brno/team/blank.png
+  img: img/brno/team/kristynas.jpg
   role: Organizátorka - pondělí
   links:
   - mail-link: mailto:stehlikovak@post.cz
@@ -78,11 +78,30 @@
   - mail-link: mailto:adamkvitek@gmail.com
   - facebook-link: https://www.facebook.com/adam.kvitek
 
+- name: Bára Lejsková
+  img: img/brno/team/barale.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:lejskovabara@seznam.cz
+
+- name: Barbora Táborská
+  img: img/brno/team/barata.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:barbora.taborska@gmail.com
+ 
 - name: Cvetelina Šubová
   img: img/brno/team/cvetelina.jpg
   role: Koučka
   links:
   - mail-link: mailto:tsvetelina.subova@email.cz
+
+- name: David Kaša
+  img: img/brno/team/davidka.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:alastor001@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/  
 
 - name: Eliška Jégrová
   img: img/brno/team/eliska.jpg
@@ -144,13 +163,19 @@
   links:
   - mail-link: mailto:lubomir.sedlar@gmail.com
 
+- name: Lucie Duháčková
+  img: img/brno/team/luciedu.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:lucieduhackova@gmail.com 
+
 - name: Luděk Reif
   img: img/brno/team/ludek.jpg
   role: Kouč
   links:
   - mail-link: mailto:ludek.reif@gmail.com
-  - github-link: https://github.com/lurei
-  - twitter-link: https://twitter.com/lu_rei
+  - linkedin-link: https://www.linkedin.com/in/luipenox/
+  - twitter-link: https://twitter.com/luipenox
 
 - name: Martina Baláková
   img: img/brno/team/martinabal.jpg
@@ -158,6 +183,12 @@
   links:
   - mail-link: mailto:m.balakova@email.cz
   - linkedin-link: https://www.linkedin.com/in/martina-baláková-116aba101
+
+- name: Michaela Miškovská
+  img: img/brno/team/misami.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:miki2177@seznam.cz
 
 - name: Monika Rusková
   img: img/brno/team/monikar.jpg
@@ -174,16 +205,28 @@
   - mail-link: mailto:ondrej.benes.93@gmail.com
 
 - name: Patrik Kopkan
-  img: img/brno/team/blank.png
+  img: img/brno/team/patrikk.jpg
   role: Kouč
   links:
   - mail-link: mailto:kopkanpatrik@gmail.com
+
+- name: Pavel Hrdina
+  img: img/brno/team/pavelhr.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:paja.hrdina@gmail.com
 
 - name: Pavel Rusinský
   img: img/brno/team/pavelr.jpg
   role: Kouč
   links:
   - mail-link: mailto:DoneeFlack@gmail.com
+
+- name: Petra Serišová
+  img: img/brno/team/petase.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:petra.sykorova@gmail.com
 
 - name: Roman Blanco
   img: img/brno/team/roman.jpg
@@ -198,7 +241,7 @@
   - mail-link: mailto:tomas.n@orsava.cz
 
 - name: Vít Pečeňa
-  img: img/brno/team/blank.png
+  img: img/brno/team/vitap.jpg
   role: Kouč
   links:
   - mail-link: mailto:vit@pecena.cz
@@ -243,11 +286,6 @@
 #   links:
 #   - mail-link: mailto:m.cyprian@gmail.com
 
-# - name: Pavel Hrdina
-#   img: img/brno/team/pavelhr.jpg
-#   role: Kouč
-#   links:
-#   - mail-link: mailto:paja.hrdina@gmail.com
 
 # - name: Pavlína Hyxová
 #   img: img/brno/team/pavlinah.jpeg
