@@ -7,7 +7,7 @@
   - twitter-link: https://twitter.com/anezkamll
 
 - name: Kristýna Stehlíková
-  img: img/brno/team/kristynas.jpg
+  img: img/brno/team/blank.png
   role: Organizátorka - pondělí
   links:
   - mail-link: mailto:stehlikovak@post.cz
@@ -96,7 +96,7 @@
   links:
   - mail-link: mailto:tsvetelina.subova@email.cz
 
-- name: David Kaša
+- name: David Kaše
   img: img/brno/team/davidka.jpg
   role: Kouč
   links:
@@ -233,6 +233,13 @@
   role: Kouč
   links:
   - github-link: https://github.com/romanblanco
+
+- name: Tamara Krestianková
+  img: img/brno/team/tamarakr.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:tamara.krestiankova@kiwi.com
+  - linkedin-link: https://www.linkedin.com/in/tamara-krestiankov%C3%A1-b95a2b15a/
 
 - name: Tomáš Orsava
   img: img/brno/team/tomaso.jpg
