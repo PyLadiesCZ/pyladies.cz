@@ -48,3 +48,12 @@
   end: 2019-12-10
   time: úterky (17:00) 18:00 – 20:00
   place: *techheaven_hub2
+  
+- name:  PyWorking - Opakovací <br> Říjen 2019 <br> 
+  registration:
+    url: https://1url.cz/@pyworking_plz5
+    end: 2019-27-10
+  topic: Opakování prvních 5 lekci začátečnického kurzu
+  date: 2019-27-10
+  time: 9:00 - 17:00
+  place: *techheaven_hub2
