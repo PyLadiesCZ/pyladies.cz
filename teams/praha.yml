@@ -80,6 +80,12 @@
     - mail-link: mailto:brabemi@gmail.com
     - facebook-link: https://www.facebook.com/miroslav.brabenec
     - github-link: https://github.com/brabemi
+- name: Petr Lessner
+  img: img/praha/team/lessa.png
+  role: Kouč
+  links:
+    - mail-link: mailto:petr.lessner+pyladies@gmail.com
+    - facebook-link: https://www.facebook.com/lessay
 - name: Petr Matuška
   img: img/praha/team/petrmatuska2.jpg
   role: Kouč
