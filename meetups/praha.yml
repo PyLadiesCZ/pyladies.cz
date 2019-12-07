@@ -310,3 +310,12 @@
   end: 2019-12-04
   time: každou středu 18:00 - 20:00
   place: *ntk
+
+- name: PyData kurz pro PyLadies: <br> Navazující kurz datové analýzy
+  start: 2020-01-23
+  end: 2020-04-09
+  time: čtvrtky 18:00 – 20:00
+  registration:
+    url: https://forms.gle/9sUsZuoZe6WdN8MS8
+    text: Registrace právě probíhá!
+    end: 2019-12-21
