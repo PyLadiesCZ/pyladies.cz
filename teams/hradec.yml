@@ -13,10 +13,6 @@
   - twitter-link: https://twitter.com/JirkaV
   - website-link: http://www.vejrazka.name
 
-- name: Radek Goláň
-  img: img/plzen/team/blank.png
-  role: Kouč
-
 - name: Robert Richter
   img: img/plzen/team/blank.png
   role: Kouč
@@ -31,11 +27,3 @@
   - twitter-link: https://twitter.com/latraxa
   - website-link: http://www.latraxa.cz
   - github-link: https://github.com/vlaxa
-
-- name: Josef Jeřábek
-  img: img/plzen/team/blank.png
-  role: Kouč
-
-- name: Roman Bedroš
-  img: img/plzen/team/blank.png
-  role: Kouč
