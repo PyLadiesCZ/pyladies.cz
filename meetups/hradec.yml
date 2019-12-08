@@ -33,3 +33,13 @@
   end: 2019-05-16
   time: čtvrtky 18:00 – 20:00
   place: *UHK
+
+- name: Začátečnický kurz <br> Leden 2020
+  materials: https://naucse.python.cz/2020/pyladies-hradec-leden/
+  registration:
+    url: http://tiny.cc/8tiehz
+    end: 2020-01-09
+  start: 2020-01-23
+  end: 2020-03-19
+  time: čtvrtky 18:00 – 20:00
+  place: *UHK
