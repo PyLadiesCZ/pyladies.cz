@@ -1,5 +1,32 @@
 - name: Filip Valder
-  img: img/brno/team/blank.png
-  role: Organizátor
+  img: img/olomouc/team/filip_valder.jpg
+  role: Organizátor/Hlavní kouč
   links:
+  - facebook: https://www.facebook.com/profile.php?id=100012379782021
+  - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
   - mail-link: mailto:filip.valder@gmail.com
+
+- name: Dan Nepejchal
+  img: img/olomouc/team/blank.png
+  role: Kouč
+  links: []
+
+- name: Lubomír Přibyla
+  img: img/olomouc/team/blank.png
+  role: Kouč
+  links: []
+
+- name: Vojta Beran
+  img: img/olomouc/team/blank.png
+  role: Kouč
+  links: []
+
+- name: Martin Tichý
+  img: img/olomouc/team/blank.png
+  role: Kouč
+  links: []
+
+- name: Tereza Kovačíková
+  img: img/olomouc/team/blank.png
+  role: Koučka
+  links: []
