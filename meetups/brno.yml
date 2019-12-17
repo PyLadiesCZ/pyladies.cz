@@ -278,3 +278,12 @@
     url: http://www.mapy.cz/s/8NKT
     latitude: '49.2261222'
     longitude: '16.5816069'
+
+- name: Hadí workshop
+  materials: https://naucse.python.cz/2019/brno-podzim-snake/
+  registration:
+     url: https://forms.gle/Nr7kxbBTXGhgCffy6
+     end: 2020-01-17
+  date: 2020-01-18
+  time: 8:30 – 18:00
+  # place: *rh
