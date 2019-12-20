@@ -172,7 +172,7 @@
     {% endcall %}
   {% endif %}
 
-    <!-- Contact -->
+      <!-- Contact -->
     {% if contacts %}
     <section class="contacts text-center">
       <div class="container p-0">
@@ -191,9 +191,39 @@
     </section>
     {% endif %}
 
-    <a name="city-info" id="city-info"></a>
-
-    <!-- How it started -->
+  <!-- Newsletter -->
+  {% if newsletter %}
+  <section class="container newsletter">
+    <h2 class="text-center">Newsletter</h2>
+    <p>{{ newsletter['text']}}</p>
+    <div id="mc_embed_signup">
+      <form action="{{ newsletter['url'] }}"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+        target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="e-mail">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="{{ newsletter['input-name'] }}" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+              <input type="submit" value="Přihlaš mě" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+        </div>
+        <p>Odeslaním svého e-mailu dáváš souhlas se <a href="http://goo.gl/hdEDjo">zpracováním osobních údajů</a></p>
+      </form>
+    </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  </section>
+  {% endif %}
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
     <section class="info-city container text-center">
         {% if city_slug == 'brno' %}
             <div class="col-md-offset-1 col-md-10">
@@ -274,6 +304,8 @@
         {% endif %}
     </section>
 
+
+    
     {% if team %}
     <!-- Team section -->
     <section id="team" class="container" >
