@@ -684,11 +684,85 @@ section.contacts div a:hover {
     margin-top: 55px;
 }
 }
+/* Newsletter */
+.newsletter {
+  margin: 0;
+  text-align: center;
+  padding: 0 10px 30px;
+  background: #8e8c8d;
+  color: #fff;
+
+  width: 100%;
+}
+#mc_embed_signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#mc_embed_signup .button:hover {
+  background-color: #333;
+}
+#mc_embed_signup .mc-field-group {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+  min-height: 50px;
+  width: 100%;
+}
+#mce-EMAIL {
+  width: 400px;
+  color: #333;
+}
+#mc_embed_signup .mc-field-group input {
+  padding: 0px 12px;
+  margin: 10px 5px;
+}
+#mc_embed_signup .mc-field-group input#mc-embedded-subscribe {
+  width: 100%;
+}
+#mc_embed_signup .button {
+  background-color: #e51f40;
+  width: 110px;
+}
+#mc_embed_signup #mce-success-response, #mce-success-response {
+  color:white;
+  text-align: center;
+}
+.mce_inline_error {
+  background-color: white;
+  text-align: center;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  margin: 10px 2px;
+  padding: 7px 44px;
+  position: absolute;
+  top: 42px;
+}
+#mc_embed_signup a {
+  color:white;
+  text-decoration: underline;
+}
+@media all and (min-width: 500px) {
+  .newsletter p {
+    text-align: center;
+    margin: auto;
+    width: 34%;
+    padding: 10px;
+  }
+  #mc_embed_signup p {
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      padding: 10px;
+    }
+  #mc_embed_signup .mc-field-group input {
+    width: 40%;
+    max-width: 300px;
+  }
+}
+
 /* How it started */
 
-.info-city {
-
-}
 .course-city {
 	padding: 0px 5%;
 }
