@@ -65,7 +65,7 @@ def city(city_slug):
         city_slug=city_slug,
         city_title=city['title'],
         team_name=city.get('team-name'),
-        newsletter=city['newsletter'],
+        newsletter=city.get('newsletter'),
         current_meetups=current_meetups,
         past_meetups=past_meetups,
         registration_meetups=registration_meetups,
