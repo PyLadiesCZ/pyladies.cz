@@ -132,3 +132,23 @@
   end: 2019-12-11
   time: každá středa 17:00 - 19:00
   place: *tieto-towers
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  # materials: https://naucse.python.cz/2019/pyladies-ostrava-podzim/
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfbAnzVfssQzKgWXfW4kmDyMQjrERD3DPKqBbKbbIsZEGT6jQ/viewform
+    end: 2020-01-08
+  start: 2020-02-04
+  end: 2020-05-12
+  time: každé úterý 17:00 - 19:00
+  place: *tieto-towers
+
+- name: PyLadies Ostrava <br> kurz datové analýzy
+  # materials: https://naucse.python.cz/2019/pyladies-ostrava-podzim/
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSeicntDIOgX8RQ2l8zy_EvcmhhnJlXrCfa8FO7SFvV7hFnbHw/viewform
+    end: 2019-12-31
+  start: 2020-02-05
+  end: 2020-05-13
+  time: každá středa 17:00 - 19:00
+  place: *tieto-towers
