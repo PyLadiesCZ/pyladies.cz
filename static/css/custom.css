@@ -685,13 +685,19 @@ section.contacts div a:hover {
 }
 }
 /* Newsletter */
+
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 3%;
+}
 .newsletter {
   margin: 0;
   text-align: center;
   padding: 0 10px 30px;
   background: #8e8c8d;
   color: #fff;
-
   width: 100%;
 }
 #mc_embed_signup {
@@ -703,6 +709,8 @@ section.contacts div a:hover {
   background-color: #333;
 }
 #mc_embed_signup .mc-field-group {
+  clear: left;
+  position: relative;
   display: flex;
   justify-content: center;
   padding-bottom: 0;
@@ -713,14 +721,49 @@ section.contacts div a:hover {
   width: 400px;
   color: #333;
 }
+#mc_embed_signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 #mc_embed_signup .mc-field-group input {
+  display: block;
+  text-indent: 2%;
   padding: 0px 12px;
   margin: 10px 5px;
+  width: 100%;
+  text-indent: 2%;
+}
+#mce-responses {
+  font-weight: bold;
+}
+#mc_embed_signup input {
+  border: 1px solid #ABB0B2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 #mc_embed_signup .mc-field-group input#mc-embedded-subscribe {
   width: 100%;
 }
+#mc_embed_signup .clear {
+  clear: both;
+}
 #mc_embed_signup .button {
+  clear: both;
+  border: 0 none;
+  border-radius: 4px;
+  transition: all 0.23s ease-in-out 0s;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
   background-color: #e51f40;
   width: 110px;
 }
@@ -732,14 +775,24 @@ section.contacts div a:hover {
   background-color: white;
   text-align: center;
 }
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  border: 2px solid #e85c41;
+  text-align: left;
+}
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
   margin: 10px 2px;
   padding: 7px 44px;
   position: absolute;
   top: 42px;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  z-index: 1;
+  color: #e51f40;
 }
 #mc_embed_signup a {
-  color:white;
+  color: white;
   text-decoration: underline;
 }
 @media all and (min-width: 500px) {
@@ -754,7 +807,7 @@ section.contacts div a:hover {
       margin: auto;
       width: 100%;
       padding: 10px;
-    }
+  }
   #mc_embed_signup .mc-field-group input {
     width: 40%;
     max-width: 300px;
