@@ -1,5 +1,6 @@
 # Pozor, nové meetupy se přidávají na konec souboru
 - name: PyLadies Olomouc <br> začátečnický kurz
+  materials: https://naucse.python.cz/2020/pyladies-olomouc-jaro/
   registration:
     url: https://forms.gle/74qRf346E7YRT1Kr5
     end: 2019-12-19
