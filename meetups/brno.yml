@@ -287,3 +287,23 @@
   date: 2020-01-18
   time: 8:30 – 18:00
   place: *rh
+
+- name: Začátečnický kurz <br> Jarní pondělí 2020
+  # materials: https://naucse.python.cz/2020/brno-jaro-2020-pondeli/
+  registration:
+    url: https://forms.gle/vaRWar55iAixTqff8
+    end: 2020-01-31
+  start: 2020-02-24
+  end: 2020-05-25
+  time: pondělky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz <br> Jarní úterý 2020
+  # materials: https://naucse.python.cz/2020/brno-jaro-202-ut/
+  registration:
+    url: https://forms.gle/vaRWar55iAixTqff8
+    end: 2020-01-31
+  start: 2020-02-25
+  end: 2020-05-19
+  time: úterky 18:00 – 20:00
+  place: *mergado
