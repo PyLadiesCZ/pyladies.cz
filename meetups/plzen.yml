@@ -59,7 +59,7 @@
   place: *techheaven_hub2
 
 - name: Začátečnický kurz <br> Jarní 2020
-  materials: https://naucse.python.cz/2020/plzen-podzim-2020/
+  materials: https://naucse.python.cz/2020/plzen-jaro-2020/
   registration:
     url: https://1url.cz/@plzpylzk_j2020
     end: 2020-01-31
