@@ -57,3 +57,13 @@
   date: 2019-10-27
   time: 9:00 - 17:00
   place: *techheaven_hub2
+
+- name: Začátečnický kurz <br> Jarní 2020
+  materials: https://naucse.python.cz/2020/plzen-podzim-2020/
+  registration:
+    url: https://1url.cz/@plzpylzk_j2020
+    end: 2020-01-31
+  start: 2020-02-11
+  end: 2020-05-19
+  time: úterky (17:00) 18:00 – 20:00
+  place: *techheaven_hub2
