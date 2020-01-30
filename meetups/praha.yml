@@ -331,7 +331,7 @@
 - name: Pyladies Praha <br> začátečnický kurz středa Barclays
   materials: https://naucse.python.cz/2020/pyladies-praha-jaro2020-barclays/
   parallel-with-previous: true
-  start: 2020-04-03
+  start: 2020-03-04
   end: 2020-05-30
   time: každou středu 18:00 - 20:00
   place: *barclays
