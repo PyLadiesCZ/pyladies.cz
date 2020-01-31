@@ -289,7 +289,7 @@
   place: *rh
 
 - name: Začátečnický kurz <br> Jarní pondělí 2020
-  # materials: https://naucse.python.cz/2020/brno-jaro-2020-pondeli/
+  materials: https://naucse.python.cz/2020/brno-jaro-pondeli/
   registration:
     url: https://forms.gle/vaRWar55iAixTqff8
     end: 2020-01-31
