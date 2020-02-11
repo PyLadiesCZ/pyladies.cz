@@ -328,7 +328,7 @@
   time: každé úterý 18:00 - 20:00
   registration:
     url: https://forms.gle/9QsBpw3EX394wVpW8
-    end: 2020-02-08
+    end: 2020-02-18
   place: *cz-nic-olsanka
 
 - name: Pyladies Praha <br> začátečnický kurz středa Barclays
@@ -339,5 +339,5 @@
   time: každou středu 18:00 - 20:00
   registration:
     url: https://forms.gle/9QsBpw3EX394wVpW8
-    end: 2020-02-08
+    end: 2020-02-18
   place: *barclays
