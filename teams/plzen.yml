@@ -9,49 +9,91 @@
   role: Organizátor, lektor 
   links:
   - mail-link: mailto:filip.vaculik@seznam.cz
-  
+
 - name: Dáša Toncarová
   img: img/plzen/team/dasa_t.jpg
   role: Organizátorka, vedlejší koučka
   links:
   - mail-link: mailto:dasa@toncar.cz
-  
+
 - name: Vladimír Toncar
   img: img/plzen/team/vladimir_t.jpg
   role: Organizátor, lektor
   links:
   - mail-link: mailto:vladimir@toncar.cz  
-  
+
 - name: Honza Steinbach
   img: img/plzen/team/blank.png
   role: Organizátor
   links:
   - mail-link: mailto:honza@techheaven.org
-  
+
+- name: Tomáš Zítka
+  img: img/plzen/team/tomas_z.jpg
+  role: Organizátor, lektor, vedlejší kouč
+  links:
+  - mail-link: mailto:zitkat@ntc.zcu.cz
+
+- name: Tomáš Andrle
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor, vedlejší kouč
+  links:
+  - mail-link: mailto:tom.andrle@post.cz
+
+- name: Ondřej Kopáček
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor, vedlejší kouč
+  links:
+  - mail-link: ondra.kopacek@gmail.com
+
+- name: Simona Chladová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: simca.chladova@gmail.com
+
+- name: Lenka Konstantinovičová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, lektorka, vedlejší koučka
+  links:
+  - mail-link: lenka@konstant.cz
+
+- name: Petr Fišer
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor, vedlejší kouč
+  links:
+  - mail-link: fiser.p@volny.cz
+
+- name: Ondřej Kristejn
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: kristejn.ondrej@gmail.com
+
+- name: Jiří Smolík
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: smoldosh@gmail.com
+
+- name: Světlana Spiglazova
+  img: img/plzen/team/blank.png
+  role: Vedlejší koučka
+  links:
+  - mail-link: s.spiglazova@gmail.com
+
 - name: Magdalena Malastová
   img: img/plzen/team/blank.png
   role: Organizátorka, vedlejší koučka
   links:
   - mail-link: mailto:magdalena.malastova@gmail.com
 
-- name: Tomáš Zítka
-  img: img/plzen/team/tomas_z.jpg
-  role: Organizátor, lektor
-  links:
-  - mail-link: mailto:zitkat@ntc.zcu.cz
-  
-- name: Tomáš Andrle
-  img: img/plzen/team/blank.png
-  role: Organizátor, lektor
-  links:
-  - mail-link: mailto:tom.andrle@post.cz
-  
 - name: Radka Halířová
   img: img/plzen/team/radka.jpg
-  role: Organizátorka, lektorka
+  role: Organizátorka, lektorka, vedlejší koučka
   links:
   - mail-link: mailto:halirova.radka@seznam.cz
-  
+
 - name: Jiří Fictum
   img: img/plzen/team/blank.png
   role: Organizátor, vedlejší kouč
