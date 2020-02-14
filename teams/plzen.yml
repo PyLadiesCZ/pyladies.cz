@@ -44,43 +44,43 @@
   img: img/plzen/team/blank.png
   role: Organizátor, lektor, vedlejší kouč
   links:
-  - mail-link: ondra.kopacek@gmail.com
+  - mail-link: mailto:ondra.kopacek@gmail.com
 
 - name: Simona Chladová
   img: img/plzen/team/blank.png
   role: Organizátorka, vedlejší koučka
   links:
-  - mail-link: simca.chladova@gmail.com
+  - mail-link: mailto:simca.chladova@gmail.com
 
 - name: Lenka Konstantinovičová
   img: img/plzen/team/blank.png
   role: Organizátorka, lektorka, vedlejší koučka
   links:
-  - mail-link: lenka@konstant.cz
+  - mail-link: mailto:lenka@konstant.cz
 
 - name: Petr Fišer
   img: img/plzen/team/blank.png
   role: Organizátor, lektor, vedlejší kouč
   links:
-  - mail-link: fiser.p@volny.cz
+  - mail-link: mailto:fiser.p@volny.cz
 
 - name: Ondřej Kristejn
   img: img/plzen/team/blank.png
   role: Vedlejší kouč
   links:
-  - mail-link: kristejn.ondrej@gmail.com
+  - mail-link: mailto:kristejn.ondrej@gmail.com
 
 - name: Jiří Smolík
   img: img/plzen/team/blank.png
   role: Vedlejší kouč
   links:
-  - mail-link: smoldosh@gmail.com
+  - mail-link: mailto:smoldosh@gmail.com
 
 - name: Světlana Spiglazova
   img: img/plzen/team/blank.png
   role: Vedlejší koučka
   links:
-  - mail-link: s.spiglazova@gmail.com
+  - mail-link: mailto:s.spiglazova@gmail.com
 
 - name: Magdalena Malastová
   img: img/plzen/team/blank.png
