@@ -299,7 +299,7 @@
   place: *fi-muni
 
 - name: Začátečnický kurz <br> Jarní úterý 2020
-  # materials: https://naucse.python.cz/2020/brno-jaro-202-ut/
+  materials: https://naucse.python.cz/2020/brno-jaro-2020-ut/
   registration:
     url: https://forms.gle/vaRWar55iAixTqff8
     end: 2020-01-31
@@ -319,6 +319,7 @@
   place: *rh-fbc2
 
 - name: Linuxová administrace
+  materials: https://naucse.python.cz/2020/linux-admin/
   registration:
     url: https://forms.gle/B8fVH5423yWAZDNy8
     end: 2020-02-23
