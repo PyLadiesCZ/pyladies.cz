@@ -7,14 +7,36 @@
   - github-link: https://github.com/frenzymadness
   - twitter-link: https://twitter.com/lumirbalhar
   - mail-link: mailto:frenzy.madness@gmail.com
+  - facebook: https://www.facebook.com/lumir.balhar
+  - instagram: https://www.instagram.com/frenzymadness/
 
-- name: Táňa Marčišovská
-  role: Organizátorka
-  img: img/ostrava/team/tana.jpg
+#- name: Táňa Marčišovská
+  #role: Organizátorka
+  #img: img/ostrava/team/tana.jpg
+  #links:
+  #- instagram: https://www.instagram.com/marcisek93/
+  #- facebook: https://www.facebook.com/moris.kocurova
+  #- mail-link: mailto:tanamarcisovska@gmail.com
+
+- name: Petra Číhalová
+  role: Koučka a kontrolorka domácích projektů
+  img: img/ostrava/team/petra.jpg
   links:
-  - instagram: https://www.instagram.com/marcisek93/
-  - facebook: https://www.facebook.com/moris.kocurova
-  - mail-link: mailto:tanamarcisovska@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/petra-číhalová-469092166
+  - github-link: https://github.com/Disi77
+
+- name: Lucie Tížková
+  role: Organizátorka
+  img: img/ostrava/team/lucka.jpg
+  links:
+  - linkedin-link: https://www.linkedin.com/in/lucie-t%C3%AD%C5%BEkov%C3%A1-103563140
+  - mail-link: mailto:lucie.tizkova@gmail.com
+
+- name: David Štroch
+  role: Kouč
+  img: img/ostrava/team/david.jpg
+  links:
+  - github-link: https://github.com/mappex
 
 - name: Martin Čurlej
   img: img/ostrava/team/martin_curlej.jpg
@@ -34,9 +56,3 @@
   - github-link: https://github.com/Glutexo
   - twitter-link: https://twitter.com/Glutexo
   - mail-link: mailto:glutexo@icloud.com
-
-- name: David Chodur
-  img: img/ostrava/team/david_chodur.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:davidchodur@gmail.com
