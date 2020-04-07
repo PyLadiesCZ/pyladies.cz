@@ -37,6 +37,11 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:zuza.kasakova@gmail.com
+- name: Michaela Kroužková
+  img: img/praha/team/michaelakrouzkova.png
+  role: Organizátorka - kurz Olšanka
+  links:
+  - mail-link: mailto:michaelakrouzkova@seznam.cz
 - name: Jana Slouková
   #img: img/praha/team/
   role: Koučka
