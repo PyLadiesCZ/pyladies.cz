@@ -126,7 +126,9 @@
         {{ meetup_info(meetup,  with_registration_link=False) }}
       {% endfor %}
     </div>
-    {{ other_courses_link(past_meetups|length - 3) }}
+    {% if past_meetups|length > 3 %}
+      {{ other_courses_link(past_meetups|length - 3) }}
+    {% endif %}
   {% endif %}
   </section>
 
