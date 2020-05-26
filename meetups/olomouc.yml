@@ -10,3 +10,12 @@
     name: ZŠ Holečkova
     address: Holečkova 10, 779 00 Olomouc
     url: https://goo.gl/maps/iHKueXfExciQ1tZ9A
+
+- name: PyLadies Olomouc <br> začátečnický kurz
+  materials: https://naucse.python.cz/2020/pyladies-olomouc-podzim/
+  registration:
+    url: https://forms.gle/g4eUFfF3x79c2Axd8
+    end: 2020-08-16
+  start: 2020-09-10
+  end: 2020-12-17
+  place: *zs-holeckova
