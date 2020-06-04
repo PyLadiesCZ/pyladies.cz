@@ -1,0 +1,38 @@
+- author: Pavlína F.
+  meetup:
+    name: null
+    end: null
+  content: |
+      Kurz byl pro mě ohromně přínosný. S&nbsp;pomocí koučů a lidí ve skupině jsem
+      si po kurzu zvládla napsat pár krátkých prográmků, které mi zjednodušují každodenní práci
+      a to jsem před pyladies o&nbsp;Pythonu sotva slyšela. Všichni jsou až neuvěřitelně ochotní
+      pomoci. Rozhodně doporučuji!
+  # 0 = worst, 5 = best
+  score: null
+
+- author: Verča G.
+  meetup:
+    name: null
+    end: null
+  content: |
+      Dříve jsem vyhledávala krátké jednodenní či víkendové kurzy programování pro slečny.
+      Ale díky PyLadies srazům jsem zjistila, že scházet se každý týden, učit se postupně a více
+      do detailů je jednoduše super a velmi přínosné! Odcházela jsem s&nbsp;pocitem, že umím
+      informace ze srazů využít při psaní kódu. Oblíbila jsem si programovací jazyk Python
+      a především komunitu kolem Pythonu. Nyní pokračuji na vlastních projektech dál a na PyLadies
+      srazy se vracím jako koučka pro další slečny!
+  # 0 = worst, 5 = best
+  score: null
+
+- author: Verča Š.
+  meetup:
+    name: null
+    end: null
+  content: |
+      Kurz Pythonu u pražských Pyladies byl skvělý - komplexní, dobře vystavěný
+      a srozumitelně prezentovaný. Vyžadoval pozornou účast a aktivní domácí práci, ale nikdy
+      jsme v&nbsp;tom nebyly samy; k&nbsp;dispozici byli koučové, kteří ochotně zodpověděli
+      všechny dotazy a pomohli překonat nástrahy učení, online i offline. Super způsob,
+      jak se seznámit se základy programování a začlenit se do místní pythonovské komunity.
+  # 0 = worst, 5 = best
+  score: null

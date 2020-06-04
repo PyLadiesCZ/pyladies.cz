@@ -1,0 +1,12 @@
+title: Ostrava
+order: 30
+contacts:
+    Facebook PyLadies Ostrava:
+        icon: facebook
+        url: https://www.facebook.com/pyladiesostrava/
+    Google Group PyLadies Ostrava:
+        icon: google-group
+        url: https://groups.google.com/forum/#!forum/pyladies-ostrava
+    Napiš organizátorům:
+        icon: coach
+        url: mailto:ostrava@pyladies.cz

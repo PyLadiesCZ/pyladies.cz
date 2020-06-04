@@ -535,6 +535,13 @@ HOMEPAGE
 	float: left;
 	font-style: italic;
 }
+.ref-name {
+	clear: both;
+	margin-bottom: 0;
+}
+.ref-details {
+	color: #d3d3d3;
+}
 .head li {
 	list-style-type: none;
 	text-align: center;

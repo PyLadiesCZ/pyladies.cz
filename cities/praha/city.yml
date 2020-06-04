@@ -1,0 +1,15 @@
+title: Praha
+order: 10
+contacts:
+    Facebook PyLadies Praha:
+        icon: facebook
+        url: https://www.facebook.com/groups/PyLadiesPraha/
+    PyWorking Praha:
+        icon: facebook
+        url: https://www.facebook.com/groups/PyWorkingPraha/
+    Google Group PyLadies Praha:
+        icon: google-group
+        url: https://groups.google.com/forum/#!forum/pyladies-praha
+    Napiš organizátorkám:
+        icon: coach
+        url: mailto:praha@pyladies.cz

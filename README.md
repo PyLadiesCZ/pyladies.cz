@@ -48,7 +48,7 @@ podstránky.
 
 ### Instalace
 
-Ve virtuálním prostředí s Pythhonem 3.6 (nebo vyšším) spusť:
+Ve virtuálním prostředí s Pythonem 3.6 (nebo vyšším) spusť:
 
     $ python -m pip install -r requirements.txt
 
@@ -68,6 +68,16 @@ a pak (na všech systémech):
 
 Stránky se zpřístupní na adrese `http://127.0.0.1:8003/`.
 Změny v kódu se projeví po obnovení stránky v prohlížeči.
+
+### Testování
+
+Ve virtuálním prostředí s Pythonem 3.6 (nebo vyšším) spusť:
+
+    $ python -m pip install -r test-requirements.txt
+
+V hlavním adresáři projektu spusť `pytest` nad adresářem `tests/`:
+
+    $ pytest tests/
 
 ### Úprava souborů
 

@@ -1,0 +1,19 @@
+title: Brno
+order: 20
+contacts:
+    Facebook PyLadies Brno:
+        icon: facebook
+        url: https://www.facebook.com/groups/pyladiesBrno
+    Google Group PyLadies Brno:
+        icon: google-group
+        url: https://groups.google.com/forum/#!forum/pyladies-brno
+    Napiš organizátorkám:
+        icon: coach
+        url: mailto:brno@pyladies.cz
+newsletter:
+    url: https://pyladies.us4.list-manage.com/subscribe/post?u=d18802c49f8d98ac411c260b7&amp;id=b569c163bb
+    text: |
+        Horké novinky (nejen) z dění PyLadies komunity! Jednou měsíčně ti mailem pošleme zprávu
+        o chystaných akcích, kurzech a workshopech v Brně. Vše na jednom místě, bez spamu. Přihlaš
+        se k odběru.
+    input-name: b_d18802c49f8d98ac411c260b7_b569c163bb

@@ -119,7 +119,7 @@
                                 <img class="city-outline" src="{{ pathto('_static/img/'+slug+'.svg', 1) }}" alt="">
                             </span>
                             <div class="city-title-box">
-                            <span class="city-title">{{ city['title'] }}</span>
+                            <span class="city-title">{{ city['title'] | default('Tvoje město', true) }}</span>
                             </div>
                             {% if city.active_registration %}
                               <span class='city-active-registration'>

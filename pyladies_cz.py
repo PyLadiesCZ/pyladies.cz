@@ -9,6 +9,7 @@ if sys.version_info < (3, 0):
 
 import os
 import fnmatch
+import time
 import datetime
 import collections
 from urllib.parse import urlencode
@@ -18,11 +19,14 @@ from flask_frozen import Freezer
 import yaml
 import jinja2
 import markdown
+import random
 
 from elsa import cli
+from functools import lru_cache
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.jinja_loader = jinja2.FileSystemLoader(['cities/', 'templates/'])
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
@@ -47,15 +51,19 @@ def redirect(url):
 @app.route('/')
 def index():
     news = read_news_yaml('news.yml')
-    return render_template('index.html', news=news)
+    partners = read_yaml('partners.yml')
+    return render_template(
+        'index.html', news=news, partners=partners,
+        feedbacks=get_random_feedbacks(ttl=round(time.time() / 30)))  # cache for 30 secs
+
 
 @app.route('/<city_slug>/')
 def city(city_slug):
-    cities = read_yaml('cities.yml')
+    cities = get_cities()
     city = cities.get(city_slug)
     if city is None:
         abort(404)
-    meetups = read_meetups_yaml('meetups/' + city_slug + '.yml')
+    meetups = read_meetups_yaml(os.path.join('cities', city_slug, 'meetups.yml'))
     current_meetups = [m for m in meetups if m['current']]
     past_meetups = [m for m in meetups if not m['current']]
     registration_meetups = [
@@ -64,13 +72,12 @@ def city(city_slug):
         'city.html',
         city_slug=city_slug,
         city_title=city['title'],
-        team_name=city.get('team-name'),
         newsletter=city.get('newsletter'),
         current_meetups=current_meetups,
         past_meetups=past_meetups,
         registration_meetups=registration_meetups,
         contacts=city.get('contacts'),
-        team=read_yaml('teams/' + city_slug + '.yml', default=()),
+        team=read_yaml(os.path.join('cities', city_slug, 'team.yml'), default=()),
     )
 
 @app.route('/<city>_course/')
@@ -123,8 +130,8 @@ def google_verification():
 @app.context_processor
 def inject_cities():
     cities = {}
-    for city_name, city_info in read_yaml('cities.yml').items():
-        meetups = read_meetups_yaml(f'meetups/{city_name}.yml')
+    for city_name, city_info in get_cities().items():
+        meetups = read_meetups_yaml(f'cities/{city_name}/meetups.yml')
         meetups_nonpermanent = [m for m in meetups if m.get('start')]
         cities[city_name] = {
             **city_info,
@@ -160,6 +167,51 @@ def date_range(dates, sep='–'):
     pieces.append('{d.day}. {d.month}. {d.year}'.format(d=end))
 
     return ' '.join(pieces)
+
+
+@app.template_filter('datetimeformat')
+def datetimeformat(value, format='%Y'):
+    return value.strftime(format)
+
+
+def get_cities():
+    """
+    Returns {'cityY': <loaded_cityY_yaml_data>,
+             'cityX': <loaded_cityX_yaml_data>,
+             ...}
+    by order specified in the YAML
+    """
+
+    cities_yamls = {d: os.path.join('cities', d, 'city.yml')
+                    for d in os.listdir('cities')
+                    if os.path.isdir(os.path.join('cities', d))}
+    cities = {d: read_yaml(y) for d, y in cities_yamls.items()}
+    cities_sorted = collections.OrderedDict(sorted(cities.items(), key=lambda x: x[1]['order']))
+    return cities_sorted
+
+
+@lru_cache(maxsize=1)
+def get_random_feedbacks(n=3, ttl=None):
+    """
+    Returns list of n random feedbacks from various cities.
+
+    This can be quite expensive when too many requests need to be handled (e.g. if used on index
+    page), so let's provide some simple caching feature using `ttl' which would change
+    e.g. once a 30 seconds or so, when calling this function.
+    """
+
+    cities = get_cities()
+    feedbacks_yamls = {d: os.path.join('cities', d, 'feedbacks.yml')
+                       for d in os.listdir('cities')
+                       if os.path.isfile(os.path.join('cities', d, 'feedbacks.yml'))}
+    city_feedbacks = {cities[d]['title']: read_yaml(y) for d, y in feedbacks_yamls.items()}
+    feedbacks = list()
+    for city_title, feedback_list in city_feedbacks.items():
+        feedbacks.extend([(city_title, i) for i in feedback_list])
+    random_feedbacks = random.sample(feedbacks, n)
+    random.shuffle(random_feedbacks)
+    random_feedbacks = [{'city-title': f[0], **f[1]} for f in random_feedbacks]
+    return random_feedbacks
 
 
 def read_yaml(filename, default=MISSING):
