@@ -77,7 +77,7 @@ Ve virtuálním prostředí s Pythonem 3.6 (nebo vyšším) spusť:
 
 V hlavním adresáři projektu spusť `pytest` nad adresářem `tests/`:
 
-    $ pytest tests/
+    $ pytest -v tests/
 
 ### Úprava souborů
 

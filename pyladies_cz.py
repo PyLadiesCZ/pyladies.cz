@@ -4,25 +4,26 @@
 """
 
 import sys
-if sys.version_info < (3, 0):
-    raise RuntimeError('You need Python 3.')
-
 import os
 import fnmatch
 import time
 import datetime
 import collections
-from urllib.parse import urlencode
-
-from flask import Flask, render_template, url_for, send_from_directory
-from flask_frozen import Freezer
 import yaml
 import jinja2
 import markdown
 import random
 
-from elsa import cli
 from functools import lru_cache
+from urllib.parse import urlencode
+from flask import Flask, render_template, url_for, send_from_directory, abort
+from flask_frozen import Freezer
+
+from elsa import cli
+
+if sys.version_info < (3, 0):
+    raise RuntimeError('You need Python 3.')
+
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -31,6 +32,7 @@ app.jinja_loader = jinja2.FileSystemLoader(['cities/', 'templates/'])
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
 MISSING = object()
+
 
 def redirect(url):
     """Return a response with a Meta redirect"""
@@ -67,7 +69,7 @@ def city(city_slug):
     current_meetups = [m for m in meetups if m['current']]
     past_meetups = [m for m in meetups if not m['current']]
     registration_meetups = [
-        m for m in current_meetups if m.get('registration_status')=='running']
+        m for m in current_meetups if m.get('registration_status') == 'running']
     return render_template(
         'city.html',
         city_slug=city_slug,
@@ -80,29 +82,36 @@ def city(city_slug):
         team=read_yaml(os.path.join('cities', city_slug, 'team.yml'), default=()),
     )
 
+
 @app.route('/<city>_course/')
 def course_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='meetups'))
+
 
 @app.route('/<city>_info/')
 def info_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='city-info'))
 
+
 @app.route('/praha-cznic/')
 def praha_cznic():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-cznic/')
+
 
 @app.route('/praha-ntk/')
 def praha_ntk():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-ntk/')
 
+
 @app.route('/stan_se/')
 def stan_se():
     return render_template('stan_se.html')
 
+
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/v1/<path:path>')
 def v1(path):
@@ -110,13 +119,16 @@ def v1(path):
         return redirect(REDIRECTS[path])
     return send_from_directory(v1_path, path)
 
+
 @app.route('/index.html')
 def index_html():
     return redirect(url_for('index'))
 
+
 @app.route('/course.html')
 def course_html():
     return send_from_directory(orig_path, 'course.html')
+
 
 @app.route('/googlecc704f0f191eda8f.html')
 def google_verification():
@@ -135,7 +147,8 @@ def inject_cities():
         meetups_nonpermanent = [m for m in meetups if m.get('start')]
         cities[city_name] = {
             **city_info,
-            'active_registration': any(m.get('registration_status') == 'running' for m in meetups_nonpermanent),
+            'active_registration': any(m.get('registration_status') == 'running'
+                                       for m in meetups_nonpermanent),
         }
     return dict(cities=cities)
 
@@ -145,12 +158,14 @@ def inject_cities():
 
 md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
 
+
 @app.template_filter('markdown')
 def convert_markdown(text, inline=False):
     result = jinja2.Markup(md.convert(text))
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':
         result = result[3:-4]
     return result
+
 
 @app.template_filter('date_range')
 def date_range(dates, sep='–'):
@@ -225,6 +240,7 @@ def read_yaml(filename, default=MISSING):
         data = yaml.safe_load(file)
     return data
 
+
 def read_lessons_yaml(filename):
     data = read_yaml(filename)
 
@@ -269,8 +285,8 @@ def read_meetups_yaml(filename):
 
         # Derive a URL for places that don't have one from the location
         if 'place' in meetup:
-            if ('url' not in meetup['place']
-                    and {'latitude', 'longitude'} <= meetup['place'].keys()):
+            if ('url' not in meetup['place'] and {'latitude',
+                                                  'longitude'} <= meetup['place'].keys()):
                 place = meetup['place']
                 place['url'] = 'http://mapy.cz/zakladni?' + urlencode({
                     'y': place['latitude'],
@@ -294,6 +310,7 @@ def read_meetups_yaml(filename):
 
     return list(reversed(data))
 
+
 def read_news_yaml(filename):
     data = read_yaml(filename)
     today = datetime.date.today()
@@ -304,6 +321,7 @@ def read_news_yaml(filename):
             news.append(new)
 
     return news
+
 
 def pathto(name, static=False):
     if static:
@@ -342,8 +360,9 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 
 freezer = Freezer(app)
 
+
 @freezer.register_generator
-def v1():
+def v1():  # noqa: F811
     IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
     for name, dirs, files in os.walk(v1_path):
         if '.git' in dirs:
@@ -357,17 +376,21 @@ def v1():
     for path in REDIRECTS:
         yield url_for('v1', path=path)
 
+
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
+
 @freezer.register_generator
-def course_redirect():
+def course_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
 
+
 @freezer.register_generator
-def info_redirect():
+def info_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
+
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
