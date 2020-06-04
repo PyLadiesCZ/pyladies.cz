@@ -67,35 +67,10 @@
                 <li class="materials-dropdown">
                     <a>Materiály<span class="caret"></span></a>
                     <ul>
-                      {% for name, url in (
-                              ('Brno – začátečnický kurz (pondělí)',
-                                  'https://naucse.python.cz/2020/brno-jaro-pondeli/'),
-                              ('Brno – začátečnický kurz (úterý)',
-                                  'https://naucse.python.cz/2020/brno-jaro-2020-ut/'),
-                              ('Brno – Linuxová administrace',
-                                  'https://naucse.python.cz/2020/linux-admin/'),
-                              ('Praha – začátečnický kurz (Olšanka)',
-                                  'https://naucse.python.cz/2020/pyladies-praha-jaro-cznic/'),
-                              ('Praha – začátečnický kurz (Barclays)',
-                                  'https://naucse.python.cz/2020/pyladies-praha-jaro2020-barclays/'),
-                              ('Praha – Datový kurz',
-                                  'https://naucse.python.cz/2020/pydata-praha-jaro/'),
-                              ('Ostrava – začátečnický kurz',
-                                  'https://naucse.python.cz/2020/pyladies-ostrava-jaro/'),
-                              ('Ostrava – kurz datové analýzy',
-                                  'https://naucse.python.cz/2020/pydata-ostrava-jaro/'),
-                              ('Plzeň – začátečnický kurz',
-                                  'https://naucse.python.cz/2020/plzen-jaro-2020/'),
-                              ('Hradec Králové – začátečnický kurz',
-                                  'https://naucse.python.cz/2020/pyladies-hradec-leden/'),
-                              ('Olomouc – začátečnický kurz',
-                                  'https://naucse.python.cz/2020/pyladies-olomouc-jaro/'),
-                              ('Chci se učit doma sama',
-                                  'https://naucse.python.cz/course/pyladies/'),
-                              ) %}
+                      {% for name, url in materials + [('Chci se učit doma sama', 'https://naucse.python.cz/course/pyladies/')] %}
                         <li>
                             <a href="{{ url }}">
-                                {{ name }}
+                                {{ name|striptags }}
                                 <small><span class="glyphicon"></span></small>
                             </a>
                         </li>

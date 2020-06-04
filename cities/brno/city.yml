@@ -17,3 +17,6 @@ newsletter:
         o chystaných akcích, kurzech a workshopech v Brně. Vše na jednom místě, bez spamu. Přihlaš
         se k odběru.
     input-name: b_d18802c49f8d98ac411c260b7_b569c163bb
+static-materials:
+    - name: Linuxová administrace
+      url: https://naucse.python.cz/2020/linux-admin/

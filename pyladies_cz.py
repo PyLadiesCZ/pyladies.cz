@@ -142,15 +142,26 @@ def google_verification():
 @app.context_processor
 def inject_cities():
     cities = {}
+    materials = list()
     for city_name, city_info in get_cities().items():
         meetups = read_meetups_yaml(f'cities/{city_name}/meetups.yml')
+        current_meetups = [m for m in meetups if m['current']]
+        past_meetups = [m for m in meetups if not m['current']][:3]
+        recent_meetups = current_meetups + past_meetups
+        materials.extend((city_info['title'] + ' / ' + m['name'], m['materials'])
+                         for m in recent_meetups
+                         if 'materials' in m)
+        if 'static-materials' in city_info:
+            materials.extend((city_info['title'] + ' / ' + m['name'], m['url'])
+                             for m in city_info['static-materials'])
         meetups_nonpermanent = [m for m in meetups if m.get('start')]
         cities[city_name] = {
             **city_info,
             'active_registration': any(m.get('registration_status') == 'running'
                                        for m in meetups_nonpermanent),
         }
-    return dict(cities=cities)
+    return dict(cities=cities,
+                materials=materials)
 
 
 ##########

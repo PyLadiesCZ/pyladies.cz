@@ -13,3 +13,6 @@ contacts:
     Napiš organizátorkám:
         icon: coach
         url: mailto:praha@pyladies.cz
+static-materials:
+    - name: Datový kurz
+      url: https://naucse.python.cz/2020/pydata-praha-jaro/
