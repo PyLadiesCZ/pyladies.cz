@@ -13,6 +13,8 @@ import yaml
 import jinja2
 import markdown
 import random
+import json
+import hashlib
 
 from functools import lru_cache
 from urllib.parse import urlencode
@@ -136,6 +138,13 @@ def google_verification():
     return send_from_directory(app.root_path, 'google-verification.html')
 
 
+@app.route('/feedbacks.json')
+def feedbacks_json():
+    return (json.dumps([(f['id'], render_template('feedbacks.html', feedback=f))
+                        for f in get_random_feedbacks(n=-1, ttl=round(time.time() / 3600))],
+            ensure_ascii=False), 200, {'Content-Type': 'application/json; charset=utf-8'})
+
+
 ##########
 ## Template variables
 
@@ -216,10 +225,11 @@ def get_cities():
     return cities_sorted
 
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=10)
 def get_random_feedbacks(n=3, ttl=None):
     """
-    Returns list of n random feedbacks from various cities.
+    Returns list of n random feedbacks from various cities, randomly sorted.
+    If n == -1, then return all, also randomly sorted.
 
     This can be quite expensive when too many requests need to be handled (e.g. if used on index
     page), so let's provide some simple caching feature using `ttl' which would change
@@ -234,9 +244,13 @@ def get_random_feedbacks(n=3, ttl=None):
     feedbacks = list()
     for city_title, feedback_list in city_feedbacks.items():
         feedbacks.extend([(city_title, i) for i in feedback_list])
+    if n == -1 or n > len(feedbacks):
+        n = len(feedbacks)
     random_feedbacks = random.sample(feedbacks, n)
-    random.shuffle(random_feedbacks)
-    random_feedbacks = [{'city-title': f[0], **f[1]} for f in random_feedbacks]
+    random_feedbacks = [{'city-title': f[0],
+                         'id': hashlib.sha256(f[1]['content'].encode()).hexdigest(),
+                         **f[1]}
+                        for f in random_feedbacks]
     return random_feedbacks
 
 

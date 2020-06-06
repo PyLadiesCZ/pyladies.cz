@@ -91,18 +91,39 @@
             </div>
     </section>
 
-    <!-- Reccommendations -->
+    <!-- Recommendations -->
+    <script>
+        function pyladiesChangeFeedback() {
+            var feedbacksSelector = 'section.recommendations div.ref';
+            var feedbacksCount = pyladiesFeedbacks.responseJSON.length;
+            for (i = 0; i < feedbacksCount * 10; i++) {
+                var jsonFeedbackRandomId = Math.floor(Math.random() * feedbacksCount);
+                var newFeedback = pyladiesFeedbacks.responseJSON[jsonFeedbackRandomId];
+                if ($(feedbacksSelector).find('[id="' + newFeedback[0] + '"]').length) {
+                    continue;
+                }
+                var slotRandomId = Math.floor(Math.random() * $(feedbacksSelector).length);
+                var chosenSlot = feedbacksSelector + ':eq(' + slotRandomId + ')'
+                $(chosenSlot).fadeOut(1000, function() {
+                    $(chosenSlot).empty();
+                    $(chosenSlot).append(newFeedback[1]);
+                    $(chosenSlot).fadeIn(1000);
+                });
+                break;
+            }
+        }
+        $(document).ready(function() {
+            pyladiesFeedbacks = $.getJSON('/feedbacks.json');
+            setInterval(pyladiesChangeFeedback, 30000);
+        });
+    </script>
+
     <section id="recommendations" class="recommendations">
         <div class="container">
             <h4 class="col-xs-12 text-center ref-heading">PyLadies pro PyLadies</h4>
             {% for feedback in feedbacks %}
                 <div class="col-xs-12 col-md-4 ref">
-                    {% if 'score' in feedback and feedback.score is not none %}<center>{{ feedback.score * '&#x2605; ' | safe }}{{ (5 - feedback.score) * '&#x2606; ' | safe }}</span></center>{% endif %}
-                    <p class="ref-p">
-                      "{{ feedback.content | safe | trim }}"
-		      <p class="ref-name"><strong>{{ feedback.author }}{% if feedback['city-title'] %}, {{ feedback['city-title'] }}{% endif %}</strong></p>
-		      {% if feedback.meetup.name and feedback.meetup.end %}<p class="ref-details">{{ feedback.meetup.name }}, {{ feedback.meetup.end | datetimeformat }}</p>{% endif %}
-                    </p>
+                    {% include "feedbacks.html" with context %}
                 </div>
             {% endfor %}
         </div>

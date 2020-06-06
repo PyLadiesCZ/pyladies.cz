@@ -1,0 +1,6 @@
+{% if 'score' in feedback and feedback.score is not none %}<center>{{ feedback.score * '&#x2605; ' | safe }}{{ (5 - feedback.score) * '&#x2606; ' | safe }}</span></center>{% endif %}
+<p class="ref-p" id="{{ feedback.id }}">
+    "{{ feedback.content | safe | trim }}"
+    <p class="ref-name"><strong>{{ feedback.author }}{% if feedback['city-title'] %}, {{ feedback['city-title'] }}{% endif %}</strong></p>
+    {% if feedback.meetup.name and feedback.meetup.start %}<p class="ref-details">{{ feedback.meetup.name }}, {{ feedback.meetup.start | datetimeformat }}</p>{% endif %}
+</p>

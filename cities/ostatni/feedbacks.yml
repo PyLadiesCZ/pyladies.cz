@@ -1,7 +1,7 @@
 - author: Pavlína F.
   meetup:
     name: null
-    end: null
+    start: null
   content: |
       Kurz byl pro mě ohromně přínosný. S&nbsp;pomocí koučů a lidí ve skupině jsem
       si po kurzu zvládla napsat pár krátkých prográmků, které mi zjednodušují každodenní práci
@@ -15,7 +15,7 @@
 - author: Verča G.
   meetup:
     name: null
-    end: null
+    start: null
   content: |
       Dříve jsem vyhledávala krátké jednodenní či víkendové kurzy programování pro slečny.
       Ale díky PyLadies srazům jsem zjistila, že scházet se každý týden, učit se postupně a více
@@ -31,7 +31,7 @@
 - author: Verča Š.
   meetup:
     name: null
-    end: null
+    start: null
   content: |
       Kurz Pythonu u pražských Pyladies byl skvělý - komplexní, dobře vystavěný
       a srozumitelně prezentovaný. Vyžadoval pozornou účast a aktivní domácí práci, ale nikdy
