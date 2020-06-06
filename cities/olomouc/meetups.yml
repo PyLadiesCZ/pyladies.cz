@@ -1,18 +1,17 @@
 # Pozor, nové meetupy se přidávají na konec souboru
-- name: PyLadies Olomouc <br> začátečnický kurz
+- name: Začátečnický kurz <br> Leden 2020
   materials: https://naucse.python.cz/2020/pyladies-olomouc-jaro/
   registration:
     url: https://forms.gle/74qRf346E7YRT1Kr5
     end: 2019-12-19
   start: 2020-01-09
-  end: 2020-04-30
+  end: 2020-05-28
   place: &zs-holeckova
     name: ZŠ Holečkova
     address: Holečkova 10, 779 00 Olomouc
     url: https://goo.gl/maps/iHKueXfExciQ1tZ9A
 
-- name: PyLadies Olomouc <br> začátečnický kurz
-  materials: https://naucse.python.cz/2020/pyladies-olomouc-podzim/
+- name: Začátečnický kurz <br> Září 2020
   registration:
     url: https://forms.gle/g4eUFfF3x79c2Axd8
     end: 2020-08-16

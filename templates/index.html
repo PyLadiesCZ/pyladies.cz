@@ -91,118 +91,53 @@
             </div>
     </section>
 
-    <!-- Reccommendations -->
+    <!-- Recommendations -->
+    <script>
+        function pyladiesChangeFeedback() {
+            var feedbacksSelector = 'section.recommendations div.ref';
+            var feedbacksCount = pyladiesFeedbacks.responseJSON.length;
+            for (i = 0; i < feedbacksCount * 10; i++) {
+                var jsonFeedbackRandomId = Math.floor(Math.random() * feedbacksCount);
+                var newFeedback = pyladiesFeedbacks.responseJSON[jsonFeedbackRandomId];
+                if ($(feedbacksSelector).find('[id="' + newFeedback[0] + '"]').length) {
+                    continue;
+                }
+                var slotRandomId = Math.floor(Math.random() * $(feedbacksSelector).length);
+                var chosenSlot = feedbacksSelector + ':eq(' + slotRandomId + ')'
+                $(chosenSlot).fadeOut(1000, function() {
+                    $(chosenSlot).empty();
+                    $(chosenSlot).append(newFeedback[1]);
+                    $(chosenSlot).fadeIn(1000);
+                });
+                break;
+            }
+        }
+        $(document).ready(function() {
+            pyladiesFeedbacks = $.getJSON('/feedbacks.json');
+            setInterval(pyladiesChangeFeedback, 30000);
+        });
+    </script>
+
     <section id="recommendations" class="recommendations">
         <div class="container">
             <h4 class="col-xs-12 text-center ref-heading">PyLadies pro PyLadies</h4>
-            <div class="col-xs-12 col-md-4 ref">
-                <p class="ref-p">
-                  "Kurz byl pro mě ohromně přínosný. S&nbsp;pomocí koučů a lidí ve skupině jsem si po kurzu zvládla napsat pár krátkých prográmků, které mi zjednodušují každodenní práci a to jsem před pyladies o&nbsp;Pythonu sotva slyšela. Všichni jsou až neuvěřitelně ochotní pomoci. Rozhodně doporučuji!"
-                  <p class="ref-name"><strong>Pavlína F.</strong></p>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-4 ref">
-                <p class="ref-p">
-                  "Dříve jsem vyhledávala krátké jednodenní či víkendové kurzy programování pro slečny. Ale díky PyLadies srazům jsem zjistila, že scházet se každý týden, učit se postupně a více do detailů je jednoduše super a velmi přínosné! Odcházela jsem s&nbsp;pocitem, že umím informace ze srazů využít při psaní kódu. Oblíbila jsem si programovací jazyk Python a především komunitu kolem Pythonu. Nyní pokračuji na vlastních projektech dál a na PyLadies srazy se vracím jako koučka pro další slečny!"
-                  <p class="ref-name"><strong>Verča G.</strong></p>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-4 ref">
-                <p class="ref-p">
-                  "Kurz Pythonu u pražských Pyladies byl skvělý - komplexní, dobře vystavěný a srozumitelně prezentovaný. Vyžadoval pozornou účast a aktivní domácí práci, ale nikdy jsme v&nbsp;tom nebyly samy; k&nbsp;dispozici byli koučové, kteří ochotně zodpověděli všechny dotazy a pomohli překonat nástrahy učení, online i offline. Super způsob, jak se seznámit se základy programování a začlenit se do místní pythonovské komunity."
-                  <p class="ref-name"><strong>Verča Š.</strong></p>
-                </p>
-            </div>
+            {% for feedback in feedbacks %}
+                <div class="col-xs-12 col-md-4 ref">
+                    {% include "feedbacks.html" with context %}
+                </div>
+            {% endfor %}
         </div>
     </section>
 
     <!-- Partners -->
     <section class="partners container">
         <h2 class="col-xs-12 text-center">Naši partneři</h2>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.python.org/psf/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/psf.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="http://pyvec.org/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/pyvec.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="http://www.redhat.com/en/global/czech-republic" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/redhat.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.nic.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/cznic.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.tieto.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/tieto.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="http://www.kinali.cz/en/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/kinali.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.techlib.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/ntk.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://apiary.io/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/apiary.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://usertechnologies.com/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/usertech.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.nekavarna.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/mergado.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.uhk.cz/cs-CZ/PRF" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/uhk_prf.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://search.jobs.barclays/barclays-developers-prague" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/barclays.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.solarwinds.com/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/solarwinds.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.olc.cz" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/olc.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://msdit.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/msd.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.kiwi.com/jobs" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/kiwi.svg', 1) }}" />
-            </a>
-        </div>
-        <div class="partner col-xs-6 col-sm-4">
-            <a href="https://www.fi.muni.cz/" target="_blank" rel="noopener">
-                <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/fimuni.svg', 1) }}" />
-            </a>
-        </div>
+        {% for partner in partners %}
+            <div class="partner col-xs-6 col-sm-4">
+                <a href="{{ partner.url }}" target="_blank" rel="noopener">
+                    <img class="partner-logo img-responsive center-block" src="{{ pathto('_static/img/logo/' + partner['logo-file'], 1) }}" />
+                </a>
+            </div>
+        {% endfor %}
     </section>
 {% endblock content %}

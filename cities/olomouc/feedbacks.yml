@@ -1,0 +1,74 @@
+- author: Hana B.
+  meetup:
+    name: Začátečnický kurz
+    start: 2020-01-09
+  content: |
+      Kurz Pyladies hodnotím velice kladně a&nbsp;všem, kteří se chtějí naučit základy
+      programování, mohu jen doporučit. Nejsou potřeba žádné předchozí znalosti. Do&nbsp;kurzu
+      jsem se přihlásila jako úplný začátečník a&nbsp;kurz se mi podařilo s&nbsp;podporou
+      a&nbsp;pomocí koučů dokončit. Věřím, že&nbsp;získané znalosti v&nbsp;budoucnosti využiji
+      a&nbsp;ráda bych se programování věnovala i&nbsp;nadále.
+  # the original non truncated content
+  original-content: ""
+  # 0 = worst, 5 = best
+  score: null
+
+- author: Věrka F.
+  meetup:
+    name: Začátečnický kurz
+    start: 2020-01-09
+  content: |
+      Při nabalování nových a&nbsp;nových znalostí i&nbsp;praktických zkušeností se účastnice/i
+      mohou těšit na&nbsp;spoustu „aha“ momentů, v&nbsp;nichž si začnou uvědomovat nejrůznější
+      návaznosti mezi učební látkou jednotlivých lekcí. Je to jako puzzle, jehož jednotlivé
+      dílky do&nbsp;sebe pomalu, ale jistě zapadají. Zvažujete-li svou účast v&nbsp;kurzu PyLadies,
+      vězte, že jeho absolvováním nezískáte jenom certifikát a&nbsp;nějaký teoretický IT
+      background, ale také mnoho cenných praktických zkušeností. Navíc poznáte partu
+      zapálených nadšenců...
+  # the original non truncated content
+  original-content: |
+      Kurz PyLadies je určený pro ženy a skutečně koncipován tak, aby jej bez znalosti
+      složité matematiky zvládli všichni, kdo mají zájem do IT hlouběji proniknout. Pojetí
+      vzdělávacího obsahu základů programovacího jazyka Python je ryze orientované na
+      dobře představitelné praktické příklady. Délka kurzu je dostačující pro pochopení
+      elementárních souvislostí a jejich utužení do té míry, aby na ně bylo možné
+      navázat následným samostudiem a pracovat tak na vlastním rozvoji v IT oblasti. Vše,
+      co se zde účastníce/i naučí, lze překlopit do praxe a pomocí programování si
+      tak neustále zjednodušovat nejrůznější aspekty nejen svého života (osobního i
+      pracovního). Pro ty nejambicióznější se absolvováním kurzu zároveň otevírají
+      dveře nových pracovních příležitostí v IT.
+
+      Četnost kurzu konající se jedenkrát za týden v délce dvou hodin je nutné rozšířit o
+      vlastní studium doma, při němž účastnice/i plní domácí projekty nejrůznějšího
+      charakteru (programování jednoduchých her, práce se soubory, apod.). Nikdy však
+      nejsou nechávány/i bez podpory. Neustále se mohou obracet na tým koučů, který je
+      jim během kurzu k dispozici a nápomocen. S odstupem času při nabalování nových a
+      nových znalostí i praktických zkušeností se účastnice/i mohou těšit na spoustu
+      „aha“ momentů, v nichž si začnou uvědomovat nejrůznější návaznosti mezi
+      učební látkou jednotlivých lekcí. Je to jako puzzle, jehož jednotlivé dílky do
+      sebe pomalu, ale jistě zapadají.
+
+      Zvažujete-li svou účast v kurzu PyLadies, vězte, že jeho absolvováním nezískáte
+      jenom certifikát a nějaký teoretický IT background, ale také mnoho cenných
+      praktických zkušeností. Navíc poznáte partu zapálených nadšenců, jejichž
+      vnitřním motorem je neustále objevovat něco nového a své poznatky sdílet a pomáhat
+      si navzájem. Absolvováním kurzu totiž slovy hlavního kouče olomouckého PyLadies
+      Filipa Valdera „příběh nekončí“. Právě jemu a jeho týmu koučů patří velké
+      poděkování za to, že i přes nejrůznější překážky vč. koronavirové pandemie
+      úspěšně zrealizovali a dovedli do zdárného konce 1. běh kurzu olomouckého PyLydies
+      a já jsem měla tu čest být u toho! :-)
+
+      Nepřísluší mi mluvit za ostatní města, ale za Olomouc mohu kvitovat lidský přístup,
+      obětavost, schopnost hlavního kouče předávat informace takovým způsobem, že pro
+      všechny z nás byla učební látka pochopena povětšinou napoprvé. Vzpomíná-li
+      někdo na hodiny angličtiny s hrůzou, v nichž se bál promluvit, tak tady se bát
+      opravdu nemusí. Chyby jsou brány jako běžná součást vzdělávacího procesu a bez
+      nich se snad ani nelze programátorsky vyvíjet. Domácí projekty nemusíte vypracovat
+      napoprvé, ale za pomoci koučů jste ke správnému řešení dovedeni. Je to jen o
+      tom to zkoušet a nevzdat to. Navíc programování nabízí tolik cest, jak zkoumaný
+      problém vyřešit, že je jen na osobnosti a zkušenostech programátora, kterou z nich
+      si zvolí. Na programování nikdy nemusíte být sami a nejen při jeho objevování ve
+      svých začátcích Vám u toho může být oporou právě PyLadies.
+
+      # 0 = worst, 5 = best
+  score: null

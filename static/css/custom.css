@@ -530,10 +530,18 @@ HOMEPAGE
 	max-height: 50%;
 	color: #fff;
 	text-align: left;
+	margin-bottom: 20px;
 }
 .ref-p {
 	float: left;
 	font-style: italic;
+}
+.ref-name {
+	clear: both;
+	margin-bottom: 0;
+}
+.ref-details {
+	color: #d3d3d3;
 }
 .head li {
 	list-style-type: none;

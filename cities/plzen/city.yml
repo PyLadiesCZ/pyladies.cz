@@ -1,0 +1,10 @@
+title: Plzeň
+order: 40
+contacts:
+    Facebook PyLadies Plzeň:
+        icon: facebook
+        url: https://www.facebook.com/groups/2235479259799633
+    Napiš koučovi:
+        icon: coach
+        url: mailto:plzen@pyladies.cz
+static-materials: []

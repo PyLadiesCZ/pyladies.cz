@@ -4,29 +4,37 @@
 """
 
 import sys
-if sys.version_info < (3, 0):
-    raise RuntimeError('You need Python 3.')
-
 import os
 import fnmatch
+import time
 import datetime
 import collections
-from urllib.parse import urlencode
-
-from flask import Flask, render_template, url_for, send_from_directory
-from flask_frozen import Freezer
 import yaml
 import jinja2
 import markdown
+import random
+import json
+import hashlib
+
+from functools import lru_cache
+from urllib.parse import urlencode
+from flask import Flask, render_template, url_for, send_from_directory, abort
+from flask_frozen import Freezer
 
 from elsa import cli
 
+if sys.version_info < (3, 0):
+    raise RuntimeError('You need Python 3.')
+
+
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.jinja_loader = jinja2.FileSystemLoader(['cities/', 'templates/'])
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
 MISSING = object()
+
 
 def redirect(url):
     """Return a response with a Meta redirect"""
@@ -47,55 +55,65 @@ def redirect(url):
 @app.route('/')
 def index():
     news = read_news_yaml('news.yml')
-    return render_template('index.html', news=news)
+    partners = read_yaml('partners.yml')
+    return render_template(
+        'index.html', news=news, partners=partners,
+        feedbacks=get_random_feedbacks(ttl=round(time.time() / 30)))  # cache for 30 secs
+
 
 @app.route('/<city_slug>/')
 def city(city_slug):
-    cities = read_yaml('cities.yml')
+    cities = get_cities()
     city = cities.get(city_slug)
     if city is None:
         abort(404)
-    meetups = read_meetups_yaml('meetups/' + city_slug + '.yml')
+    meetups = read_meetups_yaml(os.path.join('cities', city_slug, 'meetups.yml'))
     current_meetups = [m for m in meetups if m['current']]
     past_meetups = [m for m in meetups if not m['current']]
     registration_meetups = [
-        m for m in current_meetups if m.get('registration_status')=='running']
+        m for m in current_meetups if m.get('registration_status') == 'running']
     return render_template(
         'city.html',
         city_slug=city_slug,
         city_title=city['title'],
-        team_name=city.get('team-name'),
         newsletter=city.get('newsletter'),
         current_meetups=current_meetups,
         past_meetups=past_meetups,
         registration_meetups=registration_meetups,
         contacts=city.get('contacts'),
-        team=read_yaml('teams/' + city_slug + '.yml', default=()),
+        team=read_yaml(os.path.join('cities', city_slug, 'team.yml'), default=()),
     )
+
 
 @app.route('/<city>_course/')
 def course_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='meetups'))
 
+
 @app.route('/<city>_info/')
 def info_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='city-info'))
+
 
 @app.route('/praha-cznic/')
 def praha_cznic():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-cznic/')
 
+
 @app.route('/praha-ntk/')
 def praha_ntk():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-ntk/')
+
 
 @app.route('/stan_se/')
 def stan_se():
     return render_template('stan_se.html')
 
+
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/v1/<path:path>')
 def v1(path):
@@ -103,18 +121,28 @@ def v1(path):
         return redirect(REDIRECTS[path])
     return send_from_directory(v1_path, path)
 
+
 @app.route('/index.html')
 def index_html():
     return redirect(url_for('index'))
+
 
 @app.route('/course.html')
 def course_html():
     return send_from_directory(orig_path, 'course.html')
 
+
 @app.route('/googlecc704f0f191eda8f.html')
 def google_verification():
     # Verification page for GMail on our domain
     return send_from_directory(app.root_path, 'google-verification.html')
+
+
+@app.route('/feedbacks.json')
+def feedbacks_json():
+    return (json.dumps([(f['id'], render_template('feedbacks.html', feedback=f))
+                        for f in get_random_feedbacks(n=-1, ttl=round(time.time() / 3600))],
+            ensure_ascii=False), 200, {'Content-Type': 'application/json; charset=utf-8'})
 
 
 ##########
@@ -123,14 +151,26 @@ def google_verification():
 @app.context_processor
 def inject_cities():
     cities = {}
-    for city_name, city_info in read_yaml('cities.yml').items():
-        meetups = read_meetups_yaml(f'meetups/{city_name}.yml')
+    materials = list()
+    for city_name, city_info in get_cities().items():
+        meetups = read_meetups_yaml(f'cities/{city_name}/meetups.yml')
+        current_meetups = [m for m in meetups if m['current']]
+        past_meetups = [m for m in meetups if not m['current']][:3]
+        recent_meetups = current_meetups + past_meetups
+        materials.extend((city_info['title'] + ' / ' + m['name'], m['materials'])
+                         for m in recent_meetups
+                         if 'materials' in m)
+        if 'static-materials' in city_info:
+            materials.extend((city_info['title'] + ' / ' + m['name'], m['url'])
+                             for m in city_info['static-materials'])
         meetups_nonpermanent = [m for m in meetups if m.get('start')]
         cities[city_name] = {
             **city_info,
-            'active_registration': any(m.get('registration_status') == 'running' for m in meetups_nonpermanent),
+            'active_registration': any(m.get('registration_status') == 'running'
+                                       for m in meetups_nonpermanent),
         }
-    return dict(cities=cities)
+    return dict(cities=cities,
+                materials=materials)
 
 
 ##########
@@ -138,12 +178,14 @@ def inject_cities():
 
 md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
 
+
 @app.template_filter('markdown')
 def convert_markdown(text, inline=False):
     result = jinja2.Markup(md.convert(text))
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':
         result = result[3:-4]
     return result
+
 
 @app.template_filter('date_range')
 def date_range(dates, sep='–'):
@@ -162,6 +204,56 @@ def date_range(dates, sep='–'):
     return ' '.join(pieces)
 
 
+@app.template_filter('datetimeformat')
+def datetimeformat(value, format='%Y'):
+    return value.strftime(format)
+
+
+def get_cities():
+    """
+    Returns {'cityY': <loaded_cityY_yaml_data>,
+             'cityX': <loaded_cityX_yaml_data>,
+             ...}
+    by order specified in the YAML
+    """
+
+    cities_yamls = {d: os.path.join('cities', d, 'city.yml')
+                    for d in os.listdir('cities')
+                    if os.path.isdir(os.path.join('cities', d))}
+    cities = {d: read_yaml(y) for d, y in cities_yamls.items()}
+    cities_sorted = collections.OrderedDict(sorted(cities.items(), key=lambda x: x[1]['order']))
+    return cities_sorted
+
+
+@lru_cache(maxsize=10)
+def get_random_feedbacks(n=3, ttl=None):
+    """
+    Returns list of n random feedbacks from various cities, randomly sorted.
+    If n == -1, then return all, also randomly sorted.
+
+    This can be quite expensive when too many requests need to be handled (e.g. if used on index
+    page), so let's provide some simple caching feature using `ttl' which would change
+    e.g. once a 30 seconds or so, when calling this function.
+    """
+
+    cities = get_cities()
+    feedbacks_yamls = {d: os.path.join('cities', d, 'feedbacks.yml')
+                       for d in os.listdir('cities')
+                       if os.path.isfile(os.path.join('cities', d, 'feedbacks.yml'))}
+    city_feedbacks = {cities[d]['title']: read_yaml(y) for d, y in feedbacks_yamls.items()}
+    feedbacks = list()
+    for city_title, feedback_list in city_feedbacks.items():
+        feedbacks.extend([(city_title, i) for i in feedback_list])
+    if n == -1 or n > len(feedbacks):
+        n = len(feedbacks)
+    random_feedbacks = random.sample(feedbacks, n)
+    random_feedbacks = [{'city-title': f[0],
+                         'id': hashlib.sha256(f[1]['content'].encode()).hexdigest(),
+                         **f[1]}
+                        for f in random_feedbacks]
+    return random_feedbacks
+
+
 def read_yaml(filename, default=MISSING):
     try:
         file = open(filename, encoding='utf-8')
@@ -172,6 +264,7 @@ def read_yaml(filename, default=MISSING):
     with file:
         data = yaml.safe_load(file)
     return data
+
 
 def read_lessons_yaml(filename):
     data = read_yaml(filename)
@@ -217,8 +310,8 @@ def read_meetups_yaml(filename):
 
         # Derive a URL for places that don't have one from the location
         if 'place' in meetup:
-            if ('url' not in meetup['place']
-                    and {'latitude', 'longitude'} <= meetup['place'].keys()):
+            if ('url' not in meetup['place'] and {'latitude',
+                                                  'longitude'} <= meetup['place'].keys()):
                 place = meetup['place']
                 place['url'] = 'http://mapy.cz/zakladni?' + urlencode({
                     'y': place['latitude'],
@@ -242,6 +335,7 @@ def read_meetups_yaml(filename):
 
     return list(reversed(data))
 
+
 def read_news_yaml(filename):
     data = read_yaml(filename)
     today = datetime.date.today()
@@ -252,6 +346,7 @@ def read_news_yaml(filename):
             news.append(new)
 
     return news
+
 
 def pathto(name, static=False):
     if static:
@@ -290,8 +385,9 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 
 freezer = Freezer(app)
 
+
 @freezer.register_generator
-def v1():
+def v1():  # noqa: F811
     IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
     for name, dirs, files in os.walk(v1_path):
         if '.git' in dirs:
@@ -305,17 +401,21 @@ def v1():
     for path in REDIRECTS:
         yield url_for('v1', path=path)
 
+
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
+
 @freezer.register_generator
-def course_redirect():
+def course_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
 
+
 @freezer.register_generator
-def info_redirect():
+def info_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
+
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')
