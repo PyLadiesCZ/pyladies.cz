@@ -12,6 +12,7 @@ import fnmatch
 import datetime
 import collections
 from urllib.parse import urlencode
+from pathlib import Path, PurePosixPath
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
@@ -300,8 +301,8 @@ def v1():
             if file == '.git':
                 continue
             if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
-                path = os.path.relpath(os.path.join(name, file), v1_path)
-                yield {'path': path}
+                path = Path(name) / file
+                yield {'path': PurePosixPath(path.relative_to(v1_path))}
     for path in REDIRECTS:
         yield url_for('v1', path=path)
 
