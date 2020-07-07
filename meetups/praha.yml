@@ -100,10 +100,10 @@
   registration:
     url: https://www.meetup.com/pyladiescz/
     text: Potvrď účast na meetup.com
-  place: &akamai
-    name: Akamai
-    address: Karla Engliše 3219/4, Praha
-    url: https://www.google.com/maps/place/Karla+Engli%C5%A1e+3219%2F4,+150+00+Praha-Sm%C3%ADchov/@50.0702393,14.4016807,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9456f60f699b:0xe893d1d075874670!8m2!3d50.0702393!4d14.4016807
+  place: &folimanka
+    name: Folimanka Lab – Testovací centrum
+    address: Oldřichova 49, Praha 2
+    url: https://www.google.com/maps/place/Folimanka+Lab/@50.0658874,14.428769,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9518748311d1:0xed7a5a90f146f76e!8m2!3d50.0658874!4d14.4309577
 
 - name: Kurz Webfrontend <br> Tvorba webu
   start: 2017-01-31
