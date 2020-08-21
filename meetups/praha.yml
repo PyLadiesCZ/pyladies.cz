@@ -341,3 +341,12 @@
     url: https://forms.gle/9QsBpw3EX394wVpW8
     end: 2020-02-18
   place: *barclays
+
+- name: PyData kurz pro PyLadies <br> Navazující kurz datové analýzy
+  start: 2020-09-15
+  end: 2020-12-15
+  time: každé úterý 18:00 - 20:00
+  registration:
+    url: https://forms.gle/Fsp6bLtrbH35cmhy8 
+    text: Registrace právě probíhá!
+    end: 2020-08-29
