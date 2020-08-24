@@ -154,7 +154,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> začátečnický kurz
-  # materials: https://naucse.python.cz/2020/pyladies-ostrava-jaro/
+  materials: https://naucse.python.cz/2020/pyladies-ostrava-podzim/
   registration:
     url: https://1url.cz/@PyLadiesOstrava2020-2
     end: 2020-07-31
@@ -164,7 +164,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> Python a jeho knihovny
-  # materials: https://naucse.python.cz/2020/pydata-ostrava-jaro/
+  materials: https://naucse.python.cz/2020/pyladies-ostrava-podzim-pokrocili/
   registration:
     url: https://forms.gle/q4WRReHTuqmmLwm49
     end: 2020-07-31
