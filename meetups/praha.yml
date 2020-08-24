@@ -98,7 +98,7 @@
   time: 18:00 - 20:00
   date_text: pondělky ve 14denních intervalech
   registration:
-    url: https://www.meetup.com/pyladiescz/
+    url: https://www.meetup.com/pyworking/
     text: Potvrď účast na meetup.com
   place: &folimanka
     name: Folimanka Lab – Testovací centrum
