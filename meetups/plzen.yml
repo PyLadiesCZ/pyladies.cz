@@ -67,3 +67,13 @@
   end: 2020-05-19
   time: úterky (17:00) 18:00 – 20:00
   place: *techheaven_hub2
+  
+- name: Začátečnický kurz <br> Podzimní 2020
+  materials: https://naucse.python.cz/2020/plzen-podzim-2020/
+  registration:
+    url: https://1url.cz/@plzpylzk_p2020
+    end: 2020-09-08
+  start: 2020-09-15
+  end: 2020-09-15
+  time: společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
+  place: *techheaven_hub2
