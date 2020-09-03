@@ -307,6 +307,20 @@
   end: 2020-05-19
   time: úterky 18:00 – 20:00
   place: *mergado
+  
+- name: Hadí workshop
+  registration:
+    url: https://forms.gle/gyvt3vUBXnzcDKiCA
+    end: 2020-09-11
+  date: 2020-09-19
+  time: 8:30 – 18:00
+  materials: https://naucse.python.cz/2020/brno-podzim-snake/
+  place: &mzlu
+    name: Mendelova lesnická a zemědělská univerzita
+    address: Zemědělská 1752, Brno
+    url: https://mapy.cz/s/letasusohe
+    latitude: '49.2111189'
+    longitude: '16.6164672'
 
 # - name: Python a jeho knihovny
 #   materials: https://naucse.python.cz/2019/brno-jaro-knihovny/
