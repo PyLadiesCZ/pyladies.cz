@@ -352,6 +352,7 @@
     end: 2020-08-29
  
 - name: PyLadies Praha <br> on-line začátečnický kurz
+  materials: https://naucse.python.cz/2020/pyladies-praha-podzim2020/
   start: 2020-09-16
   end: 2020-12-09
   time: každou středu 18:00 - 20:00
