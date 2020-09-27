@@ -1,11 +1,7 @@
 name: Main
 on:
   push:
-    branches:
-      - master
   pull_request:
-    branches:
-      - master
   schedule:
     - cron: "30 2 * * *"
 jobs:
@@ -23,7 +19,8 @@ jobs:
     - name: Freeze HTML
       run: |
         python pyladies_cz.py freeze
-    - name: Deploy
+    - if: ${{ github.ref == 'refs/heads/master' }}
+      name: Deploy
       run: |
         python pyladies_cz.py deploy --no-freeze --push
       env:
