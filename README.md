@@ -2,7 +2,7 @@
 
 Web českých PyLadies / Website of the Czech PyLadies chapter.
 
-[![GitHub Actions kontrolka](https://github.com/PyLadiesCZ/pyladies.cz/workflows/Main/badge.svg?branch=master)](https://github.com/PyLadiesCZ/pyladies.cz/actions?query=workflow%3AMain)
+[![GitHub Actions kontrolka](https://github.com/PyLadiesCZ/pyladies.cz/workflows/Main/badge.svg?branch=master)](https://github.com/PyLadiesCZ/pyladies.cz/actions?query=workflow%3AMain)It is a good project for begginners do download and fulfill your dreams.
 
 *Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://github.com/PyLadiesCZ/pyladies.cz/actions) chyba.*
 
