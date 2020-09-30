@@ -2,9 +2,9 @@
 
 Web českých PyLadies / Website of the Czech PyLadies chapter.
 
-[![Travis CI kontrolka](https://travis-ci.org/PyLadiesCZ/pyladies.cz.svg?branch=master)](https://travis-ci.org/PyLadiesCZ/pyladies.cz)
+[![GitHub Actions kontrolka](https://github.com/PyLadiesCZ/pyladies.cz/workflows/Main/badge.svg?branch=master)](https://github.com/PyLadiesCZ/pyladies.cz/actions?query=workflow%3AMain)
 
-*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://travis-ci.org/PyLadiesCZ/pyladies.cz) chyba.*
+*Pokud je kontrolka zelená, povedlo se dostat poslední změny z větve `master` do ostrého provozu. Má-li jinou barvu, stala se [někde po cestě](https://github.com/PyLadiesCZ/pyladies.cz/actions) chyba.*
 
 
 ### Licence
@@ -163,4 +163,3 @@ Nové kurzy se přidávají na konec `.yml` souboru v adresáři `meetups`.
   registration:
     url: <tady_bude_adresa>
 ```
-
