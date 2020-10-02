@@ -323,7 +323,7 @@
     longitude: '16.6164672'
     
 - name: Linuxová administrace
-#  materials: https://naucse.python.cz/2020/linux-admin/
+  materials: https://naucse.python.cz/2020/linux-admin/
   registration:
     url: https://forms.gle/uecR9uQjUywk9msT8 
     end: 2020-09-25
@@ -333,7 +333,7 @@
   place: *mzlu
     
 - name: Začátečnický kurz <br> Podzimní pondělí 2020
-#  materials: https://naucse.python.cz/2020/brno-podzim-pondeli/
+  materials: https://naucse.python.cz/2020/brno-podzim-pondeli/
   registration:
     url: https://forms.gle/8vafPSWE4reeafiBA
     end: 2020-09-27
