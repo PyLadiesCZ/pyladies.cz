@@ -77,3 +77,13 @@
   end: 2020-12-15
   time: společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
   place: *techheaven_hub2
+  
+- name: Navazující kurz <br> Jarní 2021
+  materials: https://github.com/pyladies-pilsen/materialy-pokrocily-kurz
+  registration:
+    url: https://forms.gle/rP3MNcDpBRrp4rhm9
+    end: 2021-01-25
+  start: 2021-01-26
+  end: 2020-05-25
+  time: lekce úterky 18:00 – 20:00
+  place: online
