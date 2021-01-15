@@ -86,4 +86,5 @@
   start: 2021-01-26
   end: 2020-05-25
   time: lekce úterky 18:00 – 20:00
-  place: online
+  place:
+    name: online
