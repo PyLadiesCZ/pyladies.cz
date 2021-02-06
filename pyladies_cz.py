@@ -102,6 +102,10 @@ def stan_se():
 def faq():
     return render_template('faq.html')
 
+@app.route('/gdpr/')
+def gdpr():
+    return render_template('gdpr.html')
+
 @app.route('/v1/')
 @app.route('/v1/<path:path>')
 def v1(path='index.html'):
