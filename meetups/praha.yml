@@ -294,7 +294,7 @@
     latitude: '50.0518342'
     longitude: '14.4404372'
     url: https://goo.gl/maps/Hxy3cfYx9kRygoJD6
-    
+
 - name: Pyladies Praha <br> začátečnický kurz úterý CZ.NIC
   materials: https://naucse.python.cz/2019/pyladies-praha-podzim-cznic/
   parallel-with-previous: true
@@ -319,7 +319,7 @@
     url: https://forms.gle/9sUsZuoZe6WdN8MS8
     text: Registrace právě probíhá!
     end: 2019-12-21
-    
+
 - name: Pyladies Praha <br> začátečnický kurz úterý Olšanka
   materials: https://naucse.python.cz/2020/pyladies-praha-jaro-cznic/
   parallel-with-previous: true
@@ -347,17 +347,17 @@
   end: 2020-12-15
   time: každé úterý 18:00 - 20:00
   registration:
-    url: https://forms.gle/Fsp6bLtrbH35cmhy8 
+    url: https://forms.gle/Fsp6bLtrbH35cmhy8
     text: Registrace právě probíhá!
     end: 2020-08-29
- 
+
 - name: PyLadies Praha <br> on-line začátečnický kurz
   materials: https://naucse.python.cz/2020/pyladies-praha-podzim2020/
   start: 2020-09-16
   end: 2020-12-09
   time: každou středu 18:00 - 20:00
   registration:
-    url: https://forms.gle/Hw6LvfJ1nhXr4WYq9 
+    url: https://forms.gle/Hw6LvfJ1nhXr4WYq9
     text: Registrace právě probíhá!
     end: 2020-09-03
 
@@ -366,6 +366,15 @@
   end: 2021-06-09
   time: každou středu 18:00 - 20:00
   registration:
-    url: https://forms.gle/1Q7UuNgCDRT4EHQD8 
+    url: https://forms.gle/1Q7UuNgCDRT4EHQD8
     text: Registrace právě probíhá!
     end: 2021-02-23
+
+- name: PyLadies Praha <br> on-line začátečnický kurz
+  start: 2021-03-25
+  end: 2021-06-17
+  time: každý čtvrtek 18:00 - 20:00
+  registration:
+    url: https://forms.gle/oxNdzZKJBAgBKMVT8
+    text: Registrace právě probíhá!
+    end: 2021-03-11
