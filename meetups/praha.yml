@@ -371,6 +371,7 @@
     end: 2021-02-23
 
 - name: PyLadies Praha <br> on-line začátečnický kurz
+  materials: https://naucse.python.cz/2021/pyladies-praha-jaro2021/
   start: 2021-03-25
   end: 2021-06-17
   time: každý čtvrtek 18:00 - 20:00
