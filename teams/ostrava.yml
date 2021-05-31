@@ -60,3 +60,5 @@
 - name: Martina Zátopková
   img: img/ostrava/team/martina.jpg
   role: Koučka
+  links:
+  - mail-link: mailto:martulie@seznam.cz
