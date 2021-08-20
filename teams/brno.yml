@@ -130,7 +130,7 @@
   img: img/brno/team/karolina.jpg
   role: Organizace/Koučka/Copywriterka
   links:
-  - mail-link: karolina.surma@pyladies.cz
+  - mail-link: mailto:karolina.surma@pyladies.cz
 
 #- name: Katka Loučková
 #  img: img/brno/team/katkal.png
