@@ -17,8 +17,8 @@ from pathlib import Path, PurePosixPath
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
 import yaml
-import jinja2
 import markdown
+import markupsafe
 
 from elsa import cli
 
@@ -141,7 +141,7 @@ md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
 
 @app.template_filter('markdown')
 def convert_markdown(text, inline=False):
-    result = jinja2.Markup(md.convert(text))
+    result = markupsafe.Markup(md.convert(text))
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':
         result = result[3:-4]
     return result
