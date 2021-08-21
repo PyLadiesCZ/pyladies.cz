@@ -216,6 +216,21 @@ def read_meetups_yaml(filename):
             meetup['start'] = meetup['date']
             meetup['end'] = meetup['date']
 
+        # Test that meetup doesn't end earlier than it starts
+        start = meetup.get('start', None)
+        end = meetup.get('end', None)
+        # Only check further if meetup has got an end date
+        if end is not None:
+            # If end date is set, there must be a start date as well
+            if start is None:
+                raise ValueError(f"There's no start date for meetup {meetup}.")
+            else:
+                # If both dates are set, end must be the same as or later than start
+                if end < start:
+                    raise ValueError(
+                        f"Start date is later than end date. Meetup: {meetup}."
+                    )
+
         # Derive a URL for places that don't have one from the location
         if 'place' in meetup:
             if ('url' not in meetup['place']
