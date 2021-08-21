@@ -174,31 +174,6 @@ def read_yaml(filename, default=MISSING):
         data = yaml.safe_load(file)
     return data
 
-def read_lessons_yaml(filename):
-    data = read_yaml(filename)
-
-    # workaround for http://stackoverflow.com/q/36157569/99057
-    # Convert datetime objects to strings
-    for lesson in data:
-        if 'date' in lesson:
-            lesson['dates'] = [lesson['date']]
-        if 'description' in lesson:
-            lesson['description'] = convert_markdown(lesson['description'],
-                                                     inline=True)
-        for mat in lesson.get('materials', ()):
-            mat['name'] = convert_markdown(mat['name'], inline=True)
-
-        # If lesson has no `done` key, add them according to lesson dates
-        # All lesson's dates must be in past to mark it as done
-        done = lesson.get('done', None)
-        if done is None and 'dates' in lesson:
-            all_done = []
-            for date in lesson['dates']:
-                all_done.append(datetime.date.today() > date)
-            lesson['done'] = all(all_done)
-
-    return data
-
 
 def read_meetups_yaml(filename):
     data = read_yaml(filename)
