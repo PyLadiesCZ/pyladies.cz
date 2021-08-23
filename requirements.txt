@@ -1,4 +1,4 @@
 PyYAML
 elsa>=0.1.2
-jinja2
 markdown
+markupsafe
