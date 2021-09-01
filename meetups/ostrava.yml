@@ -172,3 +172,13 @@
   end: 2020-12-16
   time: každá středa 17:00 - 19:00
   place: *tieto-towers
+
+- name: PyLadies Ostrava <br> týmový začátečnický kurz
+  # materials: https://naucse.python.cz/2021/pyladies-ostrava-podzim/
+  registration:
+    url: https://forms.gle/F6vPR31idwUSXKzCA
+    end: 2021-09-10
+  start: 2021-09-15
+  end: 2021-12-15
+  time: každou středu 17:00 - 19:00
+  place: *tieto-towers
