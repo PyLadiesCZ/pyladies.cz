@@ -15,12 +15,11 @@ from pathlib import Path, PurePosixPath
 import functools
 
 from flask import Flask, render_template, url_for, send_from_directory, abort
-from flask_frozen import Freezer
+
 import yaml
 import markdown
 import markupsafe
 
-from elsa import cli
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -321,10 +320,7 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
-freezer = Freezer(app)
-
-@freezer.register_generator
-def v1():
+def v1_generator():
     IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
     for name, dirs, files in os.walk(v1_path):
         if '.git' in dirs:
@@ -340,15 +336,14 @@ def v1():
 
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
-@freezer.register_generator
 def course_redirect():
     for city in OLD_CITIES:
         yield {'city': city}
 
-@freezer.register_generator
 def info_redirect():
     for city in OLD_CITIES:
         yield {'city': city}
 
 if __name__ == '__main__':
+    from elsa import cli
     cli(app, freezer=freezer, base_url='http://pyladies.cz')

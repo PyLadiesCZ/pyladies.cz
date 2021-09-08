@@ -1,0 +1,6 @@
+output: ./_build/
+prefix: http://pyladies.cz/
+extra_pages:
+  - generator: pyladies_cz:v1_generator
+  - generator: pyladies_cz:course_redirect
+  - generator: pyladies_cz:info_redirect
