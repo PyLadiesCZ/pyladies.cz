@@ -340,14 +340,19 @@
   start: 2020-10-05
   end: 2020-12-21
   time: pondělky 18:00 – 20:00
-  place: *mzlu    
+  place: *mzlu
 
-# - name: Python a jeho knihovny
-#   materials: https://naucse.python.cz/2019/brno-jaro-knihovny/
-#   registration:
-#     url: https://forms.gle/B8fVH5423yWAZDNy8
-#     end: 2020-02-23
-#   start: 2020-03-16
-#   end: 2020-06-02
-#   time: pondělky 18:00 – 20:00
-#   place: *rh-fbc2
+- name: Linuxová administrace <br> Podpořeno Czechitas
+  # materials: https://naucse.python.cz/2021/linux-admin/
+  registration:
+    url: https://forms.gle/Rh27MM2Qv6NcCPJK9
+    end: 2021-09-15
+  start: 2021-10-04
+  end: 2021-12-20
+  time: pondělky 18:00 – 20:00
+  place: &czechitashouse
+    name: CTP Czechitas House
+    address: Škrobárenská 511/3, Brno
+    url: https://mapy.cz/s/jabasupeze
+    latitude: '49.1853719'
+    longitude: '16.6253939'
