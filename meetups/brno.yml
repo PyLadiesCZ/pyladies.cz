@@ -343,7 +343,7 @@
   place: *mzlu
 
 - name: Linuxová administrace <br> Podpořeno Czechitas
-  # materials: https://naucse.python.cz/2021/linux-admin/
+  materials: https://naucse.python.cz/2021/linuxadmin-podzim/
   registration:
     url: https://forms.gle/Rh27MM2Qv6NcCPJK9
     end: 2021-09-15
