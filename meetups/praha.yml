@@ -380,3 +380,9 @@
     url: https://forms.gle/oxNdzZKJBAgBKMVT8
     text: Registrace právě probíhá!
     end: 2021-03-11
+
+- name: PyData kurz pro PyLadies <br> Kurz datové analýzy
+  materials: https://naucse.python.cz/2021/pydata-praha-podzim/
+  start: 2021-09-23
+  end: 2021-12-16
+  time: každý čtvrtek 18:00 - 20:00
