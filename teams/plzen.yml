@@ -1,14 +1,14 @@
 - name: Líba Poustková
   img: img/plzen/team/blank.png
-  role: Organizátorka, lektorka
+  role: Organizátorka, lektorka, vedlejší koučka
   links:
   - mail-link: mailto:libuse.poustkova@seznam.cz
 
 - name: Filip Vaculík
   img: img/plzen/team/vitac.jpg 
-  role: Organizátor, lektor 
+  role: Organizátor, lektor, vedlejší kouč
   links:
-  - mail-link: mailto:filip.vaculik@seznam.cz
+  - mail-link: mailto:filip.vaculik@jsi.cz
 
 - name: Dáša Toncarová
   img: img/plzen/team/dasa_t.jpg
@@ -18,16 +18,16 @@
 
 - name: Vladimír Toncar
   img: img/plzen/team/vladimir_t.jpg
-  role: Organizátor, lektor
+  role: Lektor, vedlejší kouč
   links:
   - mail-link: mailto:vladimir@toncar.cz  
 
 - name: Honza Steinbach
   img: img/plzen/team/blank.png
-  role: Organizátor
+  role: Organizátor - TechHeaven
   links:
   - mail-link: mailto:honza@techheaven.org
-
+ 
 - name: Tomáš Zítka
   img: img/plzen/team/tomas_z.jpg
   role: Organizátor, lektor, vedlejší kouč
@@ -36,33 +36,15 @@
 
 - name: Tomáš Andrle
   img: img/plzen/team/blank.png
-  role: Organizátor, lektor, vedlejší kouč
+  role: Lektor, vedlejší kouč
   links:
   - mail-link: mailto:tom.andrle@post.cz
 
 - name: Ondřej Kopáček
   img: img/plzen/team/blank.png
-  role: Organizátor, lektor, vedlejší kouč
+  role: Lektor, vedlejší kouč
   links:
   - mail-link: mailto:ondra.kopacek@gmail.com
-
-- name: Simona Chladová
-  img: img/plzen/team/blank.png
-  role: Organizátorka, vedlejší koučka
-  links:
-  - mail-link: mailto:simca.chladova@gmail.com
-
-- name: Lenka Konstantinovičová
-  img: img/plzen/team/blank.png
-  role: Organizátorka, lektorka, vedlejší koučka
-  links:
-  - mail-link: mailto:lenka@konstant.cz
-
-- name: Petr Fišer
-  img: img/plzen/team/blank.png
-  role: Organizátor, lektor, vedlejší kouč
-  links:
-  - mail-link: mailto:fiser.p@volny.cz
 
 - name: Ondřej Kristejn
   img: img/plzen/team/blank.png
@@ -82,6 +64,84 @@
   links:
   - mail-link: mailto:s.spiglazova@gmail.com
 
+- name: Jiří Fictum
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:fictum.jiri@gmail.com
+
+- name: Václav Fiala
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:fialav8@gmail.com
+
+- name: Jakub Červinka
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:cervinka.jakub.1989@gmail.com
+
+- name: Jana Koukalová
+  img: img/plzen/team/jana_k.png
+  role: Lektorka, vedlejší koučka
+  links:
+  - mail-link: mailto:koukalova.jana@gmail.com
+ 
+- name: Jakub Lenk
+  img: img/plzen/team/kuba_l.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:jakub.lenk@icloud.com
+
+- name: Pavel Veselý
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:vesely.paja@seznam.cz
+
+- name: Adéla Kristejnová
+  img: img/plzen/team/blank.png
+  role: Vedlejší koučka
+  links:
+  - mail-link: mailto:kristejnovaa@gmail.com
+
+- name: Lucie Jimenez
+  img: img/plzen/team/blank.png
+  role: Vedlejší koučka
+  links:
+  - mail-link: mailto:lucie.jimenez@gmail.com
+ 
+- name: Vojtěch Pšenák
+  img: img/plzen/team/blank.png
+  role: Organizátor - TechHeaven
+  links:
+  - mail-link: mailto:vojta@techheaven.org
+
+- name: Anna Čudáková
+  img: img/plzen/team/blank.png
+  role: Organizátor - Město Plzeň
+  links:
+  - mail-link: mailto:cudakova@plzen.eu
+
+- name: Simona Chladová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:simca.chladova@gmail.com
+
+- name: Lenka Konstantinovičová
+  img: img/plzen/team/blank.png
+  role: Organizátorka, lektorka, vedlejší koučka
+  links:
+  - mail-link: mailto:lenka@konstant.cz
+
+- name: Petr Fišer
+  img: img/plzen/team/blank.png
+  role: Organizátor, lektor, vedlejší kouč
+  links:
+  - mail-link: mailto:fiser.p@volny.cz
+
 - name: Magdalena Malastová
   img: img/plzen/team/blank.png
   role: Organizátorka, vedlejší koučka
@@ -93,9 +153,3 @@
   role: Organizátorka, lektorka, vedlejší koučka
   links:
   - mail-link: mailto:halirova.radka@seznam.cz
-
-- name: Jiří Fictum
-  img: img/plzen/team/blank.png
-  role: Organizátor, vedlejší kouč
-  links:
-  - mail-link: mailto:fictum.jiri@gmail.com
