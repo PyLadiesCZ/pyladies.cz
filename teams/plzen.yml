@@ -1,13 +1,13 @@
 - name: Líba Poustková
   img: img/plzen/team/blank.png
   role: Organizátorka, lektorka, vedlejší koučka
-  links: 
+  links:
   - mail-link: mailto:libuse.poustkova@seznam.cz
 
 - name: Filip Vaculík
   img: img/plzen/team/vitac.jpg
   role: Organizátor, lektor, vedlejší kouč
-  links: 
+  links:
   - mail-link: mailto:filip.vaculik@jsi.cz
 
 - name: Dáša Toncarová
@@ -106,4 +106,3 @@
   role: Vedlejší koučka
   links: 
   - mail-link: mailto:lucie.jimenez@gmail.com
-
