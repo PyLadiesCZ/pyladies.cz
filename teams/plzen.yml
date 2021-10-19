@@ -5,7 +5,7 @@
   - mail-link: mailto:libuse.poustkova@seznam.cz
 
 - name: Filip Vaculík
-  img: img/plzen/team/vitac.jpg 
+  img: img/plzen/team/vitac.jpg
   role: Organizátor, lektor, vedlejší kouč
   links:
   - mail-link: mailto:filip.vaculik@jsi.cz
@@ -13,143 +13,96 @@
 - name: Dáša Toncarová
   img: img/plzen/team/dasa_t.jpg
   role: Organizátorka, vedlejší koučka
-  links:
+  links: 
   - mail-link: mailto:dasa@toncar.cz
 
-- name: Vladimír Toncar
-  img: img/plzen/team/vladimir_t.jpg
-  role: Lektor, vedlejší kouč
-  links:
-  - mail-link: mailto:vladimir@toncar.cz  
+- name: Tomáš Zítka
+  img: img/plzen/team/tomas_z.jpg
+  role: Organizátor, lektor, vedlejší kouč
+  links: 
+  - mail-link: mailto:tozitka@gmail.com
+  - facebook-link: www.facebook.com/tozitka
+  - github-link: www.github.com/zitkat
 
 - name: Honza Steinbach
   img: img/plzen/team/blank.png
   role: Organizátor - TechHeaven
-  links:
+  links: 
   - mail-link: mailto:honza@techheaven.org
- 
-- name: Tomáš Zítka
-  img: img/plzen/team/tomas_z.jpg
-  role: Organizátor, lektor, vedlejší kouč
-  links:
-  - mail-link: mailto:zitkat@ntc.zcu.cz
 
+- name: Vláďa Toncar
+  img: img/plzen/team/vladimir_t.jpg
+  role: Lektor, vedlejší kouč
+  links: 
+  - mail-link: mailto:vladimir@toncar.cz
+  
+- name: Jakub Červinka
+  img: img/plzen/team/jakub_cervinka.jpg
+  role: Vedlejší kouč
+  links: 
+  - mail-link: mailto:cervinka.jakub.1989@gmail.com
+  - facebook-link: www.facebook.com/jakub.cervinka
+  - github-link: github.com/JakubDotPy
+  - twitter-link: twitter.com/JakubDotPy
+  - linkedin-link: www.linkedin.com/in/jakub-%C4%8Dervinka-2972079b/
+ 
 - name: Tomáš Andrle
   img: img/plzen/team/blank.png
   role: Lektor, vedlejší kouč
-  links:
+  links: 
   - mail-link: mailto:tom.andrle@post.cz
 
 - name: Ondřej Kopáček
   img: img/plzen/team/blank.png
   role: Lektor, vedlejší kouč
-  links:
+  links: 
   - mail-link: mailto:ondra.kopacek@gmail.com
 
-- name: Ondřej Kristejn
-  img: img/plzen/team/blank.png
-  role: Vedlejší kouč
-  links:
-  - mail-link: mailto:kristejn.ondrej@gmail.com
-
 - name: Jiří Smolík
-  img: img/plzen/team/blank.png
+  img: img/plzen/team/jiri_smolik.jpg
   role: Vedlejší kouč
-  links:
+  links: 
   - mail-link: mailto:smoldosh@gmail.com
 
-- name: Světlana Spiglazova
-  img: img/plzen/team/blank.png
-  role: Vedlejší koučka
-  links:
-  - mail-link: mailto:s.spiglazova@gmail.com
-
-- name: Jiří Fictum
-  img: img/plzen/team/blank.png
-  role: Vedlejší kouč
-  links:
-  - mail-link: mailto:fictum.jiri@gmail.com
+- name: Petr Fišer
+  img: img/plzen/team/petr_fiser.jpg
+  role: Organizátor, lektor, vedlejší kouč
+  links: 
+  - mail-link: mailto:fiser.p@volny.cz
 
 - name: Václav Fiala
   img: img/plzen/team/blank.png
   role: Vedlejší kouč
-  links:
-  - mail-link: mailto:fialav8@gmail.com
-
-- name: Jakub Červinka
-  img: img/plzen/team/blank.png
-  role: Vedlejší kouč
-  links:
-  - mail-link: mailto:cervinka.jakub.1989@gmail.com
+  links: 
+  - mail-link: mailto:fialav8@gmail.com 
 
 - name: Jana Koukalová
   img: img/plzen/team/jana_k.png
   role: Lektorka, vedlejší koučka
-  links:
+  links: 
   - mail-link: mailto:koukalova.jana@gmail.com
- 
-- name: Jakub Lenk
-  img: img/plzen/team/kuba_l.png
-  role: Vedlejší kouč
-  links:
-  - mail-link: mailto:jakub.lenk@icloud.com
+  - facebook-link: www.facebook.com/janca.koukalova/
+  - github-link: www.github.com/koukalka
+  - website-link: www.skoukalkou.online
+  - linkedin-link: www.linkedin.com/in/janakoukalova/
 
-- name: Pavel Veselý
-  img: img/plzen/team/blank.png
+- name: Jakub Lenk
+  img: img/plzen/team/kuba_l.jpg
   role: Vedlejší kouč
-  links:
-  - mail-link: mailto:vesely.paja@seznam.cz
+  links: 
+  - mail-link: mailto:jakub.lenk@icloud.com
+  - github-link: https://github.com/jakub85
+  - website-link: www.lenk.solutions
+  - linkedin-link: https://www.linkedin.com/in/jakub-lenk/
 
 - name: Adéla Kristejnová
   img: img/plzen/team/blank.png
   role: Vedlejší koučka
-  links:
+  links: 
   - mail-link: mailto:kristejnovaa@gmail.com
 
 - name: Lucie Jimenez
   img: img/plzen/team/blank.png
   role: Vedlejší koučka
-  links:
+  links: 
   - mail-link: mailto:lucie.jimenez@gmail.com
- 
-- name: Vojtěch Pšenák
-  img: img/plzen/team/blank.png
-  role: Organizátor - TechHeaven
-  links:
-  - mail-link: mailto:vojta@techheaven.org
-
-- name: Anna Čudáková
-  img: img/plzen/team/blank.png
-  role: Organizátor - Město Plzeň
-  links:
-  - mail-link: mailto:cudakova@plzen.eu
-
-- name: Simona Chladová
-  img: img/plzen/team/blank.png
-  role: Organizátorka, vedlejší koučka
-  links:
-  - mail-link: mailto:simca.chladova@gmail.com
-
-- name: Lenka Konstantinovičová
-  img: img/plzen/team/blank.png
-  role: Organizátorka, lektorka, vedlejší koučka
-  links:
-  - mail-link: mailto:lenka@konstant.cz
-
-- name: Petr Fišer
-  img: img/plzen/team/blank.png
-  role: Organizátor, lektor, vedlejší kouč
-  links:
-  - mail-link: mailto:fiser.p@volny.cz
-
-- name: Magdalena Malastová
-  img: img/plzen/team/blank.png
-  role: Organizátorka, vedlejší koučka
-  links:
-  - mail-link: mailto:magdalena.malastova@gmail.com
-
-- name: Radka Halířová
-  img: img/plzen/team/radka.jpg
-  role: Organizátorka, lektorka, vedlejší koučka
-  links:
-  - mail-link: mailto:halirova.radka@seznam.cz
