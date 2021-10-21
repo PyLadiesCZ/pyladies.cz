@@ -21,12 +21,12 @@
 #  links:
 #  - mail-link: mailto:miki2177@seznam.cz
 
-#- name: Ivana Jelínková
-#  img: img/brno/team/ivanaj.jpg
-#  role: Organizátorka - Knihovny
-#  links:
-#  - mail-link: mailto:jelinkova.ivana@gmail.com
-#  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
+- name: Ivana Jelínková
+  img: img/brno/team/ivanaj.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jelinkova.ivana@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 #- name: Kristýna Stehlíková
 #  img: img/brno/team/blank.png
@@ -48,18 +48,18 @@
   - linkedin-link: https://www.linkedin.com/in/anezkamll/
   - twitter-link: https://twitter.com/anezkamll
 
-- name: Lubomír Sedlář
-  img: img/brno/team/lubomirs.jpg
-  role: Lektor
-  links:
-  - mail-link: mailto:lubomir.sedlar@gmail.com
+# - name: Lubomír Sedlář
+#   img: img/brno/team/lubomirs.jpg
+#   role: Lektor
+#   links:
+#   - mail-link: mailto:lubomir.sedlar@gmail.com
 
-#- name: Martin Pavlásek
-#  img: img/brno/team/martin.jpg
-#  role: Lektor
-#  links:
-#  - mail-link: mailto:tuzticzka@gmail.com
-#  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
+- name: Martin Pavlásek
+  img: img/brno/team/martin.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:tuzticzka@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
 
 #- name: Monika Bláhová
 #  img: img/brno/team/monika.jpg
@@ -118,6 +118,12 @@
 #  links:
 #  - linkedin-link: https://www.linkedin.com/in/eskultety/
 
+- name: Jakub Heger
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+    - mail-link: mailto:hegerj@gmail.com
+
 #- name: Jan Ohnheiser
 #  img: img/brno/team/janoh.jpg
 #  role: Kouč
@@ -132,12 +138,12 @@
   links:
   - mail-link: mailto:karolina.surma@pyladies.cz
 
-#- name: Katka Loučková
-#  img: img/brno/team/katkal.png
-#  role: Koučka
-#  links:
-#  - mail-link: mailto:katka@louckovi.cz
-#  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
+- name: Katka Loučková
+  img: img/brno/team/katkal.png
+  role: Koučka
+  links:
+  - mail-link: mailto:katka@louckovi.cz
+  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
 
 #- name: Kateřina Pitašová
 #  img: img/brno/team/katerinap.jpg
@@ -308,11 +314,11 @@
 #   - mail-link: mailto:vit@pecena.cz
 #   - website-link: https://vit.pecena.cz/
 #
-# - name: Tomáš Orsava
-#   img: img/brno/team/tomaso.jpg
-#   role: Kouč
-#   links:
-#   - mail-link: mailto:tomas.n@orsava.cz
+- name: Tomáš Orsava
+  img: img/brno/team/tomaso.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:tomas.n@orsava.cz
 
 # - name: Lucie Opletalová
 #   img: img/brno/team/lucieo.jpg
