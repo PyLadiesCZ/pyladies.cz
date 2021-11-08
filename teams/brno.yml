@@ -54,12 +54,11 @@
 #   links:
 #   - mail-link: mailto:lubomir.sedlar@gmail.com
 
-- name: Martin Pavlásek
-  img: img/brno/team/martin.jpg
-  role: Kouč
+- name: Alexandra Šimková
+  img: img/brno/team/sasam.jpg
+  role: Organizátorka
   links:
-  - mail-link: mailto:tuzticzka@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
+  - mail-link: mailto:sasa.matulova@gmail.com
 
 #- name: Monika Bláhová
 #  img: img/brno/team/monika.jpg
@@ -97,6 +96,14 @@
   links:
   - mail-link: mailto:alastor001@gmail.com
   - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
+
+- name: Martin Pavlásek
+  img: img/brno/team/martin.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:tuzticzka@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
+
 
 # - name: Dita Stehlíková
 #   img: img/brno/team/blank.png
