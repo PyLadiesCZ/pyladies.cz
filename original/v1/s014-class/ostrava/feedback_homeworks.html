@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13018,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13072,20 +13072,17 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
-
-<!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13249,7 +13246,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CeleCislo</span><span class="p">(</span><span class="nb">int</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">je_sude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
-    
+
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;&lt;Cele cislo </span><span class="si">{}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 </pre></div>
@@ -13512,7 +13509,7 @@ div#notebook {
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">ingredience</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span> <span class="o">=</span> <span class="n">ingredience</span>
-    
+
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;&lt;Pizza &#39;</span><span class="si">{}</span><span class="s2">&#39; na které je &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span><span class="p">)</span>
 </pre></div>
@@ -13580,10 +13577,10 @@ div#notebook {
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">ingredience</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span> <span class="o">=</span> <span class="n">ingredience</span>
-    
+
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;&lt;Pizza &#39;</span><span class="si">{}</span><span class="s2">&#39; na které je &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span><span class="p">)</span>
-    
+
     <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="n">jmeno</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">jmeno</span>
         <span class="n">ingredience</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">ingredience</span>
@@ -13702,15 +13699,15 @@ div#notebook {
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jmeno</span><span class="p">,</span> <span class="n">ingredience</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">=</span> <span class="n">jmeno</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span> <span class="o">=</span> <span class="n">ingredience</span>
-    
+
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;&lt;Pizza &#39;</span><span class="si">{}</span><span class="s2">&#39; na které je &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span><span class="p">)</span>
-    
+
     <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="n">jmeno</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">jmeno</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">jmeno</span>
         <span class="n">ingredience</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">ingredience</span>
         <span class="k">return</span> <span class="n">Pizza</span><span class="p">(</span><span class="n">jmeno</span><span class="p">,</span> <span class="n">ingredience</span><span class="p">)</span>
-    
+
     <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ingredience</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">ingredience</span><span class="p">)</span>
 </pre></div>
@@ -13943,7 +13940,7 @@ div#notebook {
   </div>
 </body>
 
- 
+
 
 
 </html>

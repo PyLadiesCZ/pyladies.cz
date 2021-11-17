@@ -320,29 +320,34 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
-def v1_generator():
-    IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
-    for name, dirs, files in os.walk(v1_path):
-        if '.git' in dirs:
-            dirs.remove('.git')
-        for file in files:
-            if file == '.git':
-                continue
-            if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
-                path = Path(name) / file
-                yield {'path': PurePosixPath(path.relative_to(v1_path))}
-    for path in REDIRECTS:
-        yield url_for('v1', path=path)
+app.config['SERVER_NAME'] = 'pyladies.cz'
+
+def v1_generator(app):
+    with app.app_context():
+        IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
+        for name, dirs, files in os.walk(v1_path):
+            if '.git' in dirs:
+                dirs.remove('.git')
+            for file in files:
+                if file == '.git':
+                    continue
+                if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
+                    path = Path(name) / file
+                    yield url_for('v1', path=PurePosixPath(path.relative_to(v1_path)))
+        for path in REDIRECTS:
+            yield url_for('v1', path=path)
 
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
-def course_redirect():
-    for city in OLD_CITIES:
-        yield {'city': city}
+def course_redirect(app):
+    with app.app_context():
+        for city in OLD_CITIES:
+            yield url_for('course_redirect', city=city)
 
-def info_redirect():
-    for city in OLD_CITIES:
-        yield {'city': city}
+def info_redirect(app):
+    with app.app_context():
+        for city in OLD_CITIES:
+            yield url_for('info_redirect', city=city)
 
 if __name__ == '__main__':
     from elsa import cli
