@@ -349,6 +349,25 @@ def info_redirect(app):
         for city in OLD_CITIES:
             yield url_for('info_redirect', city=city)
 
+def get_html_links(page_content, base_url, headers):
+    from urllib.parse import urlparse
+    if urlparse(base_url).path.startswith('/v1/reveal.js'):
+        return
+    import freezeyt.url_finders
+    for link in freezeyt.url_finders.get_html_links(
+        page_content, base_url, headers,
+    ):
+        if not link.startswith('../components/bootstrap/fonts/glyphicons-halflings-regular.'):
+            yield link
+
+def get_css_links(page_content, base_url, headers):
+    from urllib.parse import urlparse
+    if urlparse(base_url).path.startswith('/v1/css/bootstrap.css'):
+        return ()
+    import freezeyt.url_finders
+    return freezeyt.url_finders.get_css_links(
+        page_content, base_url, headers)
+
 if __name__ == '__main__':
     from elsa import cli
     cli(app, freezer=freezer, base_url='http://pyladies.cz')

@@ -4,3 +4,6 @@ extra_pages:
   - generator: pyladies_cz:v1_generator
   - generator: pyladies_cz:course_redirect
   - generator: pyladies_cz:info_redirect
+url_finders:
+    text/html: pyladies_cz:get_html_links
+    text/css: pyladies_cz:get_css_links
