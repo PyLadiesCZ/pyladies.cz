@@ -98,3 +98,13 @@
   end: 2021-12-14
   time: společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
   place: *techheaven_hub2
+
+- name: Začátečnický kurz <br> Jarní 2022
+  materials: https://naucse.python.cz/2022/plzen-jaro-2022/
+  registration:
+    url: https://forms.gle/AbV4BYfg1jxmyUsV9
+    end: 2022-02-07
+  start: 2022-02-15
+  end: 2022-10-05
+  time: úterky (17:00) 18:00 – 20:00
+  place: *techheaven_hub2
