@@ -187,7 +187,7 @@ def read_yaml(filename, default=MISSING):
     return _read_yaml_cached(filename, info.st_size, info.st_mtime)
 
 
-@functools.lru_cache
+@functools.lru_cache()
 def _read_yaml_cached(filename, size, mtime):
     with open(filename, encoding='utf-8') as file:
         data = yaml.safe_load(file)
