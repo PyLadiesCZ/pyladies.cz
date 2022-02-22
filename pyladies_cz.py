@@ -13,6 +13,7 @@ import datetime
 import collections
 from urllib.parse import urlencode
 from pathlib import Path, PurePosixPath
+import functools
 
 from flask import Flask, render_template, url_for, send_from_directory
 from flask_frozen import Freezer
@@ -164,13 +165,31 @@ def date_range(dates, sep='–'):
 
 
 def read_yaml(filename, default=MISSING):
+    """Read the given YAML file
+
+    If the file is not found:
+    - if default is given, return it
+    - else, raise FileNotFoundError
+    """
+
+    # Reading YAML is slow, and we need info from cities.yml for every single
+    # page. To avoid loading all the time, we cache the result.
+    # To make the site react to changes in the files, we use the file size
+    # and last-modified time as part of the cache key. If either changes,
+    # the cache will be invalidated and the file will be read from disk again.
+
     try:
-        file = open(filename, encoding='utf-8')
+        info = os.stat(filename)
     except FileNotFoundError:
         if default is MISSING:
             raise
         return default
-    with file:
+    return _read_yaml_cached(filename, info.st_size, info.st_mtime)
+
+
+@functools.lru_cache
+def _read_yaml_cached(filename, size, mtime):
+    with open(filename, encoding='utf-8') as file:
         data = yaml.safe_load(file)
     return data
 
