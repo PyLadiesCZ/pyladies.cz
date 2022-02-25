@@ -192,3 +192,11 @@
   time: každé úterý 17:00 - 19:00
   place:
     name: online
+
+- name: Workshop datové analýzy
+  registration:
+    url: https://forms.gle/e4GW2zHW4KyrTwBv9
+    end: 2022-03-12
+  date: 2022-03-19
+  time: 9:00 - 17:00
+  place: *tieto-towers
