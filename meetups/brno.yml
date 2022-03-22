@@ -356,3 +356,12 @@
     url: https://mapy.cz/s/jabasupeze
     latitude: '49.1853719'
     longitude: '16.6253939'
+
+- name: Úvod do Webu
+  # materials: TBD
+  registration:
+    url: https://forms.gle/Yma1mgtstYM3v3RB8
+    end: 2022-03-29
+  date: 2022-04-02
+  time: 9:00 – 17:00
+  place: *fi-muni
