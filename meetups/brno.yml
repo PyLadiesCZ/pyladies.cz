@@ -366,7 +366,7 @@
   time: 9:00 – 17:00
   place: *fi-muni
   
- - name: PyWorking: Automatické testy
+- name: Testovací PyWorking
   # materials: TBD
   registration:
     url: https://forms.gle/P9Gp2Cg4u2da92qH8
