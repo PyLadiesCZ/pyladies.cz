@@ -373,4 +373,13 @@
     end: 2022-06-09
   date: 2022-06-26
   time: 9:00 – 17:00
-  place: *fi-muni 
+  place: *fi-muni
+
+- name: Hadí workshop
+  registration:
+    url: https://forms.gle/Xo1fBvZckrpRaKu46
+    end: 2022-08-12
+  date: 2022-08-20
+  time: 8:30 – 18:00
+  # materials: https://naucse.python.cz/2020/brno-podzim-snake/
+  # place: *rh
