@@ -21,13 +21,6 @@
 #  links:
 #  - mail-link: mailto:miki2177@seznam.cz
 
-- name: Ivana Jelínková
-  img: img/brno/team/ivanaj.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:jelinkova.ivana@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
-
 #- name: Kristýna Stehlíková
 #  img: img/brno/team/blank.png
 #  role: Organizátorka
@@ -53,6 +46,13 @@
   role: Organizace/Lektorka/Koučka/Copywriterka
   links:
   - mail-link: mailto:karolina.surma@pyladies.cz  
+
+- name: Ivana Jelínková
+  img: img/brno/team/ivanaj.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jelinkova.ivana@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 # - name: Lubomír Sedlář
 #   img: img/brno/team/lubomirs.jpg
