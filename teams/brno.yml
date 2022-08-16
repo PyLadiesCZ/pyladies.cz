@@ -2,11 +2,11 @@
 #  img: img/brno/team/blank.png
 #  role: Organizátorka - pondělí
 
-- name: Jana Mikulášková
-  img: img/brno/team/janam.jpg
-  role: Organizátorka
-  links:
-  - mail-link: mailto:mikulaskova.janca@gmail.com
+#- name: Jana Mikulášková
+#  img: img/brno/team/janam.jpg
+#  role: Organizátorka
+#  links:
+#  - mail-link: mailto:mikulaskova.janca@gmail.com
 
 #- name: Anna Benke
 #  img: img/brno/team/anna2.jpg
@@ -20,13 +20,6 @@
 #  role: Organizátorka - navazující kurzy
 #  links:
 #  - mail-link: mailto:miki2177@seznam.cz
-
-- name: Ivana Jelínková
-  img: img/brno/team/ivanaj.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:jelinkova.ivana@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 #- name: Kristýna Stehlíková
 #  img: img/brno/team/blank.png
@@ -47,6 +40,19 @@
   - mail-link: mailto:anezka.muller@pyladies.cz
   - linkedin-link: https://www.linkedin.com/in/anezkamll/
   - twitter-link: https://twitter.com/anezkamll
+  
+- name: Karolina Surma
+  img: img/brno/team/karolina.jpg
+  role: Organizace/Lektorka/Koučka/Copywriterka
+  links:
+  - mail-link: mailto:karolina.surma@pyladies.cz  
+
+- name: Ivana Jelínková
+  img: img/brno/team/ivanaj.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jelinkova.ivana@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 # - name: Lubomír Sedlář
 #   img: img/brno/team/lubomirs.jpg
@@ -138,12 +144,6 @@
 #  - mail-link: mailto:jan.ohnheiser@gmail.com
 #  - facebook-link: https://www.facebook.com/jan.ohnheiser
 #  - linkedin-link: https://www.linkedin.com/in/jan-ohnheiser-ab5a5776
-
-- name: Karolina Surma
-  img: img/brno/team/karolina.jpg
-  role: Organizace/Koučka/Copywriterka
-  links:
-  - mail-link: mailto:karolina.surma@pyladies.cz
 
 - name: Katka Loučková
   img: img/brno/team/katkal.png
