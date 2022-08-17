@@ -381,5 +381,5 @@
     end: 2022-08-12
   date: 2022-08-20
   time: 8:30 – 18:00
-  # materials: https://naucse.python.cz/2020/brno-podzim-snake/
-  # place: *rh
+  materials: https://naucse.python.cz/2022/snake-brno-podzim/
+  place: *rh
