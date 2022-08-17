@@ -382,4 +382,24 @@
   date: 2022-08-20
   time: 8:30 – 18:00
   # materials: https://naucse.python.cz/2020/brno-podzim-snake/
-  # place: *rh
+  place: *rh
+
+- name: Začátečnický kurz <br> Podzimní úterý 2022
+  # materials: https://naucse.python.cz/2020/brno-jaro-pondeli/
+  registration:
+    url: https://forms.gle/fTDxPEiKaPeKiAPJ9
+    end: 2022-08-27
+  start: 2022-09-13
+  end: 2022-11-29
+  time: úterky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Začátečnický kurz <br> Podzimní středa 2022
+  # materials: https://naucse.python.cz/2020/brno-jaro-2020-ut/
+  registration:
+    url: https://forms.gle/fTDxPEiKaPeKiAPJ9
+    end: 2022-08-27
+  start: 2022-09-14
+  end: 2022-12-14
+  time: středy 18:00 – 20:00
+  place: *mergado
