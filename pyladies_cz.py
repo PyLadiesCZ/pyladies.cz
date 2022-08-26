@@ -107,10 +107,6 @@ def v1(path='index.html'):
         path += 'index.html'
     return send_from_directory(v1_path, path)
 
-@app.route('/index.html')
-def index_html():
-    return redirect(url_for('index'))
-
 @app.route('/course.html')
 def course_html():
     return send_from_directory(orig_path, 'course.html')
