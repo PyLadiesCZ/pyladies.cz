@@ -40,18 +40,30 @@
   - mail-link: mailto:anezka.muller@pyladies.cz
   - linkedin-link: https://www.linkedin.com/in/anezkamll/
   - twitter-link: https://twitter.com/anezkamll
-  
-- name: Karolina Surma
-  img: img/brno/team/karolina.jpg
-  role: Lektorka/Koučka/Copywriterka
-  links:
-  - mail-link: mailto:karolina.surma@pyladies.cz  
 
 - name: Pavel Kocourek
   img: img/brno/team/pavelk.jpg
   role: Organizátor/Kouč
   links:
   - mail-link: mailto:pavel.kocourek@protonmail.com
+
+- name: Kateřina Pospíšilová
+  img: img/brno/team/blank.png
+  role: Organizátorka - Mergado
+  links:
+  - mail-link: katerina.pospisilova@mergado.com
+  
+- name: Karolina Surma
+  img: img/brno/team/karolina.jpg
+  role: Lektorka/Koučka/Copywriterka
+  links:
+  - mail-link: mailto:karolina.surma@pyladies.cz  
+ 
+- name: Petr Viktorin
+  img: img/brno/team/petrv.jpg
+  role: Lektor
+  links:
+  - website-link: http://encukou.cz
 
 - name: Ivana Jelínková
   img: img/brno/team/ivanaj.jpg
@@ -77,12 +89,6 @@
   role: Lektorka
   links:
   - mail-link: mailto:moblahovaa@gmail.com
-
-- name: Petr Viktorin
-  img: img/brno/team/petrv.jpg
-  role: Lektor
-  links:
-  - website-link: http://encukou.cz
 
 #- name: Adrián Chlpík
 #  img: img/brno/team/adrianch.jpg
@@ -571,7 +577,7 @@
   role: Koučka
   
 - name: Andrea Kopečná
-  img: img/brno/team/blank.png
+  img: img/brno/team/andrea.jpeg
   role: Koučka
   links:
   - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
@@ -596,8 +602,3 @@
   img: img/brno/team/blank.png
   role: Koučka
   
-- name: Kateřina Pospíšilová
-  img: img/brno/team/blank.png
-  role: Organizátorka - Mergado
-  links:
-  - mail-link: katerina.pospisilova@mergado.com
