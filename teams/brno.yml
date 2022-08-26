@@ -43,9 +43,15 @@
   
 - name: Karolina Surma
   img: img/brno/team/karolina.jpg
-  role: Organizace/Lektorka/Koučka/Copywriterka
+  role: Lektorka/Koučka/Copywriterka
   links:
   - mail-link: mailto:karolina.surma@pyladies.cz  
+
+- name: Pavel Kocourek
+  img: img/brno/team/pavelk.jpg
+  role: Organizátor/Kouč
+  links:
+  - mail-link: mailto:pavel.kocourek@protonmail.com
 
 - name: Ivana Jelínková
   img: img/brno/team/ivanaj.jpg
@@ -60,17 +66,17 @@
 #   links:
 #   - mail-link: mailto:lubomir.sedlar@gmail.com
 
-- name: Alexandra Šimková
-  img: img/brno/team/sasam.jpg
-  role: Organizátorka
-  links:
-  - mail-link: mailto:sasa.matulova@gmail.com
-
-#- name: Monika Bláhová
-#  img: img/brno/team/monika.jpg
-#  role: Lektorka
+#- name: Alexandra Šimková
+#  img: img/brno/team/sasam.jpg
+#  role: Organizátorka
 #  links:
-#  - mail-link: mailto:moblahova@centrum.cz
+#  - mail-link: mailto:sasa.matulova@gmail.com
+
+- name: Monika Bláhová
+  img: img/brno/team/monika.jpg
+  role: Lektorka
+  links:
+  - mail-link: mailto:moblahovaa@gmail.com
 
 - name: Petr Viktorin
   img: img/brno/team/petrv.jpg
@@ -96,12 +102,12 @@
 #  links:
 #  - mail-link: mailto:tsvetelina.subova@email.cz
 
-- name: David Kaše
-  img: img/brno/team/davidka.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:alastor001@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
+#- name: David Kaše
+#  img: img/brno/team/davidka.jpg
+#  role: Kouč
+#  links:
+#  - mail-link: mailto:alastor001@gmail.com
+#  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
 
 - name: Martin Pavlásek
   img: img/brno/team/martin.jpg
@@ -110,16 +116,15 @@
   - mail-link: mailto:tuzticzka@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
 
+- name: Dita Stehlíková
+  img: img/brno/team/blank.png
+  role: Koučka
 
-# - name: Dita Stehlíková
-#   img: img/brno/team/blank.png
-#   role: Koučka
-
-#- name: Eliška Jégrová
-#  img: img/brno/team/eliska.jpg
-#  role: Koučka
-#  links:
-#  - mail-link: mailto:jegrovaeliska@seznam.cz
+- name: Eliška Jégrová
+  img: img/brno/team/eliska.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jegrovaeliska@seznam.cz
 
 # - name: Eva Fadrná
 #   img: img/brno/team/blank.png
@@ -131,11 +136,11 @@
 #  links:
 #  - linkedin-link: https://www.linkedin.com/in/eskultety/
 
-- name: Jakub Heger
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-    - mail-link: mailto:hegerj@gmail.com
+#- name: Jakub Heger
+#  img: img/brno/team/blank.png
+#  role: Kouč
+#  links:
+#    - mail-link: mailto:hegerj@gmail.com
 
 #- name: Jan Ohnheiser
 #  img: img/brno/team/janoh.jpg
@@ -145,12 +150,12 @@
 #  - facebook-link: https://www.facebook.com/jan.ohnheiser
 #  - linkedin-link: https://www.linkedin.com/in/jan-ohnheiser-ab5a5776
 
-- name: Katka Loučková
-  img: img/brno/team/katkal.png
-  role: Koučka
-  links:
-  - mail-link: mailto:katka@louckovi.cz
-  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
+#- name: Katka Loučková
+#  img: img/brno/team/katkal.png
+#  role: Koučka
+#  links:
+#  - mail-link: mailto:katka@louckovi.cz
+#  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
 
 #- name: Kateřina Pitašová
 #  img: img/brno/team/katerinap.jpg
@@ -252,11 +257,11 @@
 #   - mail-link: mailto:helenacerna21@gmail.com
 #   - linkedin-link: https://www.linkedin.com/in/helena-černá-71410364
 #
-# - name: Iveta Česalová
-#   img: img/brno/team/ivetac.jpg
-#   role: Koučka
-#   links:
-#   - mail-link: mailto:cesalova.iveta@seznam.cz
+- name: Iveta Česalová
+  img: img/brno/team/ivetac.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:cesalova.iveta@seznam.cz
 #
 # - name: Adam Kvítek
 #   img: img/brno/team/adamk.jpg
@@ -276,12 +281,6 @@
 #   role: Koučka
 #   links:
 #   - mail-link: mailto:barbora.taborska@gmail.com
-#
-# - name: Pavel Kocourek
-#   img: img/brno/team/pavelk.jpg
-#   role: Lektor
-#   links:
-#   - mail-link: mailto:pavel.kocourek@protonmail.com
 #
 # - name: Ondřej Beneš
 #   img: img/brno/team/beny.jpg
@@ -321,18 +320,18 @@
 #   - mail-link: mailto:vit@pecena.cz
 #   - website-link: https://vit.pecena.cz/
 #
-- name: Tomáš Orsava
-  img: img/brno/team/tomaso.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:tomas.n@orsava.cz
-
+#- name: Tomáš Orsava
+#  img: img/brno/team/tomaso.jpg
+#  role: Kouč
+#  links:
+#  - mail-link: mailto:tomas.n@orsava.cz
+#
 # - name: Lucie Opletalová
 #   img: img/brno/team/lucieo.jpg
 #   role: Organizátorka - středa
 #   links:
 #   - mail-link: mailto:lucie.a.opletalova@gmail.com
-
+#
 # - name: Terezie Vahalová
 #   img: img/brno/team/terezie.jpg
 #   role: Organizátorka/Koučka
@@ -340,7 +339,7 @@
 #   - mail-link: mailto:vahalova@gmail.com
 #   - github-link: https://github.com/vahalova
 #   - linkedin-link: https://www.linkedin.com/in/terezie-vahalova/
-
+#
 # - name: Dominika Krejčí
 #   img: img/brno/team/dominika.jpg
 #   role: Koučka
@@ -518,11 +517,11 @@
 #   links:
 #   - mail-link: mailto:iveta.horrova@cz.ibm.com
 
-# - name: Edita Balkóová
-#   img: img/brno/team/blank.png
-#   role: Kouč
-#   links:
-#   - mail-link: mailto:386966@mail.muni.cz
+- name: Edita Lelkes
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:balkoedi@gmail.com 
 
 # - name: Jaroslav Šafka
 #   img: img/brno/team/jareks.jpg
@@ -562,3 +561,43 @@
 #   role: Kouč
 #   links:
 #   - mail-link: mailto:petr.bolf@taborpolana.cz
+#
+- name: Michal Polovka
+  img: img/brno/team/blank.png
+  role: Kouč
+  
+- name: Pavlína Zagolová
+  img: img/brno/team/blank.png
+  role: Koučka
+  
+- name: Andrea Kopečná
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
+  
+- name: Vojta Haška
+  img: img/brno/team/blank.png
+  role: Kouč
+  
+- name: Tomáš Jelínek
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Veronika Konečná
+  img: img/brno/team/blank.png
+  role: Koučka
+  
+- name: Nela Slezáková
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Kristýna Papežová
+  img: img/brno/team/blank.png
+  role: Koučka
+  
+- name: Kateřina Pospíšilová
+  img: img/brno/team/blank.png
+  role: Organizátorka - Mergado
+  links:
+  - mail-link: katerina.pospisilova@mergado.com
