@@ -48,7 +48,7 @@ podstránky.
 
 ### Instalace
 
-Ve virtuálním prostředí s Pythhonem 3.6 (nebo vyšším) spusť:
+Ve virtuálním prostředí s Pythhonem 3.10 (nebo vyšším) spusť:
 
     $ python -m pip install -r requirements.txt
 
