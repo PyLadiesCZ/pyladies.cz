@@ -10,12 +10,11 @@ if sys.version_info < (3, 0):
 import os
 import fnmatch
 import datetime
-import collections
 from urllib.parse import urlencode
 from pathlib import Path, PurePosixPath
 import functools
 
-from flask import Flask, render_template, url_for, send_from_directory
+from flask import Flask, render_template, url_for, send_from_directory, abort
 from flask_frozen import Freezer
 import yaml
 import markdown
@@ -99,10 +98,13 @@ def stan_se():
 def faq():
     return render_template('faq.html')
 
+@app.route('/v1/')
 @app.route('/v1/<path:path>')
-def v1(path):
+def v1(path='index.html'):
     if path in REDIRECTS:
         return redirect(REDIRECTS[path])
+    if path[-1] == '/':
+        path += 'index.html'
     return send_from_directory(v1_path, path)
 
 @app.route('/index.html')
