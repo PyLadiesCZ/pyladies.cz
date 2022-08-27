@@ -523,7 +523,7 @@
 #   links:
 #   - mail-link: mailto:iveta.horrova@cz.ibm.com
 
-- name: Edita Lelkes
+- name: Edit Lelkes
   img: img/brno/team/blank.png
   role: Koučka
   links:
@@ -595,8 +595,12 @@
   role: Koučka
   
 - name: Nela Slezáková
-  img: img/brno/team/blank.png
+  img: img/brno/team/nela.jpg
   role: Koučka
+  links:
+  - mail-link: mailto:nela@nelaprovazi.cz
+  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
+  - website-link: https://www.nelaprovazi.cz
 
 - name: Kristýna Papežová
   img: img/brno/team/blank.png
