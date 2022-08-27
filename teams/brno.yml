@@ -263,11 +263,11 @@
 #   - mail-link: mailto:helenacerna21@gmail.com
 #   - linkedin-link: https://www.linkedin.com/in/helena-černá-71410364
 #
-- name: Iveta Česalová
-  img: img/brno/team/ivetac.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:cesalova.iveta@seznam.cz
+# - name: Iveta Česalová
+#   img: img/brno/team/ivetac.jpg
+#   role: Koučka
+#   links:
+#   - mail-link: mailto:cesalova.iveta@seznam.cz
 #
 # - name: Adam Kvítek
 #   img: img/brno/team/adamk.jpg
