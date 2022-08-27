@@ -65,13 +65,6 @@
   links:
   - website-link: https://encukou.cz
 
-- name: Ivana Jelínková
-  img: img/brno/team/ivanaj.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:jelinkova.ivana@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
-
 # - name: Lubomír Sedlář
 #   img: img/brno/team/lubomirs.jpg
 #   role: Lektor
@@ -86,9 +79,16 @@
 
 - name: Monika Bláhová
   img: img/brno/team/monika.jpg
-  role: Lektorka
+  role: Lektorka/Koučka
   links:
   - mail-link: mailto:moblahovaa@gmail.com
+  
+- name: Ivana Jelínková
+  img: img/brno/team/ivanaj.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jelinkova.ivana@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 #- name: Adrián Chlpík
 #  img: img/brno/team/adrianch.jpg
