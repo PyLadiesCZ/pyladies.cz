@@ -105,6 +105,15 @@
     url: https://forms.gle/AbV4BYfg1jxmyUsV9
     end: 2022-02-07
   start: 2022-02-15
-  end: 2022-10-05
+  end: 2022-05-10
   time: úterky (17:00) 18:00 – 20:00
+  place: *techheaven_hub2
+
+- name: Začátečnický kurz <br> Podzimní 2022
+  registration:
+    url: https://1url.cz/@pyplzk_p22
+    end: 2022-09-13
+  start: 2022-09-20
+  end: 2022-12-13
+  time: úterky 18:00 – 20:00
   place: *techheaven_hub2
