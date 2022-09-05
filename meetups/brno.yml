@@ -385,7 +385,7 @@
   place: *rh
 
 - name: Začátečnický kurz <br> Podzimní úterý 2022
-  # materials: https://naucse.python.cz/2020/brno-jaro-pondeli/
+  materials: https://naucse.python.cz/2022/brno-podzim-utery/
   registration:
     url: https://forms.gle/fTDxPEiKaPeKiAPJ9
     end: 2022-08-26
