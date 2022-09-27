@@ -38,7 +38,7 @@
 
 - name: Jakub Červinka
   img: img/plzen/team/jakub_cervinka.jpg
-  role: Vedlejší kouč
+  role: Lektor, vedlejší kouč
   links:
   - mail-link: mailto:cervinka.jakub.1989@gmail.com
   - facebook-link: https://www.facebook.com/jakub.cervinka
@@ -107,3 +107,11 @@
   links:
   - mail-link: mailto:lucie.jimenez@gmail.com
 
+- name: Rudolf Klusal
+  img: img/plzen/team/rudolf_k.jpg
+  role: Lektor, vedlejší kouč
+  links:
+  - mail-link: mailto:pyladies@klusik.cz
+  - facebook-link: https://www.facebook.com/klusik
+  - linkedin-link: https://www.linkedin.com/in/klusik/
+  - website-link: https://www.klusik.cz/
