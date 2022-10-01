@@ -398,6 +398,7 @@
     end: 2021-10-27
 
 - name: PyLadies Praha <br> začátečnický kurz
+  materials: https://naucse.python.cz/2022/praha-pyladies-podzim/
   start: 2022-09-21
   end: 2022-12-14
   time: každou středu 18:00 - 20:00
