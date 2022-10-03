@@ -202,7 +202,7 @@
   place: *tieto-towers
 
 - name: PyLadies Ostrava <br> začátečnický kurz
-  materials: https://naucse.python.cz/2020/pyladies-ostrava-podzim/
+  materials: https://naucse.python.cz/2022/ostrava-python/
   registration:
     url: https://docs.google.com/forms/d/1na6Iv_95-qut4TVREupumFfuSRnoSldj7OnVums4QT0/edit?usp=sharing
     end: 2022-10-04
