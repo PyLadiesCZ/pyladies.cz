@@ -403,3 +403,12 @@
   end: 2022-12-14
   time: středy 18:00 – 20:00
   place: *mergado
+  
+- name: PyWorking - Datová analýza
+  # materials: TBD
+  registration:
+    url: https://forms.gle/DrBcPeaFLyxoPBdz7
+    end: 2023-01-13
+  date: 2023-01-21
+  time: 10:00 – 18:00
+  place: *fi-muni
