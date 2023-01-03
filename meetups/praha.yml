@@ -100,10 +100,10 @@
   registration:
     url: https://www.meetup.com/pyworking/
     text: Potvrď účast na meetup.com
-  place: &folimanka
-    name: Folimanka Lab – Testovací centrum
-    address: Oldřichova 49, Praha 2
-    url: https://www.google.com/maps/place/Folimanka+Lab/@50.0658874,14.428769,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9518748311d1:0xed7a5a90f146f76e!8m2!3d50.0658874!4d14.4309577
+  place: &sentinelone
+    name: SentinelOne
+    address: Missouri Park, Karolinská 707/7, Karlín, 3. patro
+    url: https://www.google.cz/maps/place/SentinelOne+CZ/@50.0949552,14.4435661,17z/data=!3m1!4b1!4m5!3m4!1s0x470b954d528a4593:0xe04c6642f23c7b3f!8m2!3d50.0949552!4d14.4457548?hl=cs
 
 - name: Kurz Webfrontend <br> Tvorba webu
   start: 2017-01-31
@@ -396,3 +396,13 @@
     url: https://docs.google.com/forms/d/e/1FAIpQLSc19qItwr0yV-LjT0S4hnn8Uywa9A2DuuBkV5SrCZAltxMk8g/viewform?fbclid=IwAR3V0--K1hLj24iNQC5LPVysigY3Pi_nOF8X1OltwyeLQ30fw0OPWF7zgAI
     text: Registrace právě probíhá!
     end: 2021-10-27
+
+- name: PyLadies Praha <br> začátečnický kurz
+  materials: https://naucse.python.cz/2022/praha-pyladies-podzim/
+  start: 2022-09-21
+  end: 2022-12-14
+  time: každou středu 18:00 - 20:00
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSdfJFRR6AUFQeZ8PS6b0uvi5gqp0lUWbxkoQgJOqFZa0ZMn8g/viewform
+    text: Registrace právě probíhá!
+    end: 2022-09-07

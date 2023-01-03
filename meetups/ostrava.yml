@@ -200,3 +200,14 @@
   date: 2022-03-19
   time: 9:00 - 17:00
   place: *tieto-towers
+
+- name: PyLadies Ostrava <br> začátečnický kurz
+  materials: https://naucse.python.cz/2022/ostrava-python/
+  registration:
+    url: https://docs.google.com/forms/d/1na6Iv_95-qut4TVREupumFfuSRnoSldj7OnVums4QT0/edit?usp=sharing
+    end: 2022-10-04
+  start: 2022-10-12
+  end: 2023-01-25
+  time: každou středu 17:00 - 19:00
+  place: *tieto-towers
+  
