@@ -412,3 +412,12 @@
   date: 2023-01-21
   time: 10:00 – 18:00
   place: *fi-muni
+  
+- name: PyWorking - Práce s XLSX tabulkami
+  # materials: TBD
+  registration:
+    url: https://forms.gle/6DB2U1ruCgUC1P3T6
+    end: 2023-02-03
+  date: 2023-02-11
+  time: 9:00 – 17:00
+  place: *fi-muni  
