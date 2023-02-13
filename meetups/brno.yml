@@ -430,3 +430,12 @@
   date: 2023-02-25
   time: 9:30 – 17:30
   place: *fi-muni    
+
+- name: PyWorking - MicroPython
+  # materials: TBD
+  registration:
+    url: https://forms.gle/LStLgMYDrhE6Lj7N7
+    end: 2023-02-23
+  date: 2023-03-04
+  time: 9:00 – 17:00
+  place: *fi-muni
