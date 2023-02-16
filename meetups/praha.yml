@@ -406,8 +406,9 @@
     url: https://docs.google.com/forms/d/e/1FAIpQLSdfJFRR6AUFQeZ8PS6b0uvi5gqp0lUWbxkoQgJOqFZa0ZMn8g/viewform
     text: Registrace právě probíhá!
     end: 2022-09-07
-    
+
 - name: PyLadies Praha <br> začátečnický kurz
+  materials: https://naucse.python.cz/2023/praha-pyladies-jaro/
   start: 2023-03-01
   end: 2023-05-24
   time: každou středu 18:00 - 20:00
