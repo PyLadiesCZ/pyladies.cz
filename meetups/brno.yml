@@ -449,3 +449,13 @@
   end: 2023-05-29
   time: pondělky 18:00 – 20:00
   place: *rh
+
+- name: Začátečnický kurz naruby
+  # materials:
+  registration:
+    url: https://forms.gle/6VUNL3Vws2YeBxtj6
+    end: 2023-02-26
+  start: 2023-03-09
+  end: 2023-05-25
+  time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
