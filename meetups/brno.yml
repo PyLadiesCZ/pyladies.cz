@@ -423,10 +423,39 @@
   place: *fi-muni  
   
 - name: PyWorking - Úvod do Linuxu
-  # materials: TBD
+  materials: https://kodim.cz/kurzy/uvod-do-linuxu
   registration:
     url: https://forms.gle/JqVahybDRa6GKV8XA
     end: 2023-02-17
   date: 2023-02-25
   time: 9:30 – 17:30
   place: *fi-muni    
+
+- name: PyWorking - MicroPython
+  materials: https://naucse.python.cz/2023/brno-micropython/
+  registration:
+    url: https://forms.gle/LStLgMYDrhE6Lj7N7
+    end: 2023-02-23
+  date: 2023-03-04
+  time: 9:00 – 17:00
+  place: *fi-muni
+
+- name: Python a jeho knihovny 
+  # materials:
+  registration:
+    url: https://forms.gle/JK6MkSTritev6F2K6 
+    end: 2023-02-21
+  start: 2023-03-06
+  end: 2023-05-29
+  time: pondělky 18:00 – 20:00
+  place: *rh
+
+- name: Začátečnický kurz naruby
+  # materials:
+  registration:
+    url: https://forms.gle/6VUNL3Vws2YeBxtj6
+    end: 2023-02-26
+  start: 2023-03-09
+  end: 2023-05-25
+  time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
