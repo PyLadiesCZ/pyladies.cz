@@ -451,7 +451,7 @@
   place: *rh
 
 - name: Začátečnický kurz naruby
-  # materials:
+  materials: https://naucse.python.cz/2023/brno-jaro-ctvrtek/
   registration:
     url: https://forms.gle/6VUNL3Vws2YeBxtj6
     end: 2023-02-26
