@@ -460,12 +460,12 @@
   time: čtvrtky 18:00 – 20:00
   place: *fi-muni
 
-- name: Dvoudílný GitWorking
+- name: Třídílný GitWorking
   # materials:
   registration:
     url: https://forms.gle/BPd97oAfCqCjM8XB9
     end: 2023-04-10
   start: 2023-04-15
-  end: 2023-04-22
+  end: 2023-04-29
   time: sobota 9:30 – 16:30
   place: *rh
