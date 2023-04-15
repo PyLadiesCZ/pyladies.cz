@@ -1,6 +1,6 @@
 # pyladies.cz
 
-Web českých PyLadies / Website of the Czech PyLadies chapter.
+Web českých PyLadies zdravím!
 
 [![GitHub Actions kontrolka](https://github.com/PyLadiesCZ/pyladies.cz/workflows/Main/badge.svg?branch=master)](https://github.com/PyLadiesCZ/pyladies.cz/actions?query=workflow%3AMain)
 
