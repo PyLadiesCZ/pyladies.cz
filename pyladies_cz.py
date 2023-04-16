@@ -29,6 +29,7 @@ orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
 MISSING = object()
 
+
 def redirect(url):
     """Return a response with a Meta redirect"""
 
@@ -42,13 +43,14 @@ def redirect(url):
     return render_template('meta_redirect.html', url=url)
 
 
-########
+#######
 ## Views
 
 @app.route('/')
 def index():
     news = read_news_yaml('news.yml')
     return render_template('index.html', news=news)
+
 
 @app.route('/<city_slug>/')
 def city(city_slug):
@@ -60,7 +62,7 @@ def city(city_slug):
     current_meetups = [m for m in meetups if m['current']]
     past_meetups = [m for m in meetups if not m['current']]
     registration_meetups = [
-        m for m in current_meetups if m.get('registration_status')=='running']
+        m for m in current_meetups if m.get('registration_status') == 'running']
     return render_template(
         'city.html',
         city_slug=city_slug,
@@ -74,29 +76,36 @@ def city(city_slug):
         team=read_yaml('teams/' + city_slug + '.yml', default=()),
     )
 
+
 @app.route('/<city>_course/')
 def course_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='meetups'))
+
 
 @app.route('/<city>_info/')
 def info_redirect(city):
     return redirect(url_for('city', city_slug=city, _anchor='city-info'))
 
+
 @app.route('/praha-cznic/')
 def praha_cznic():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-cznic/')
+
 
 @app.route('/praha-ntk/')
 def praha_ntk():
     return redirect('https://naucse.python.cz/2018/pyladies-praha-jaro-ntk/')
 
+
 @app.route('/stan_se/')
 def stan_se():
     return render_template('stan_se.html')
 
+
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/v1/')
 @app.route('/v1/<path:path>')
@@ -107,9 +116,11 @@ def v1(path='index.html'):
         path += 'index.html'
     return send_from_directory(v1_path, path)
 
+
 @app.route('/course.html')
 def course_html():
     return send_from_directory(orig_path, 'course.html')
+
 
 @app.route('/googlecc704f0f191eda8f.html')
 def google_verification():
@@ -128,7 +139,8 @@ def inject_cities():
         meetups_nonpermanent = [m for m in meetups if m.get('start')]
         cities[city_name] = {
             **city_info,
-            'active_registration': any(m.get('registration_status') == 'running' for m in meetups_nonpermanent),
+            'active_registration': any(
+                m.get('registration_status') == 'running' for m in meetups_nonpermanent),
         }
     return dict(cities=cities)
 
@@ -138,12 +150,14 @@ def inject_cities():
 
 md = markdown.Markdown(extensions=['meta', 'markdown.extensions.toc'])
 
+
 @app.template_filter('markdown')
 def convert_markdown(text, inline=False):
     result = markupsafe.Markup(md.convert(text))
     if inline and result[:3] == '<p>' and result[-4:] == '</p>':
         result = result[3:-4]
     return result
+
 
 @app.template_filter('date_range')
 def date_range(dates, sep='–'):
@@ -250,6 +264,7 @@ def read_meetups_yaml(filename):
 
     return list(reversed(data))
 
+
 def read_news_yaml(filename):
     data = read_yaml(filename)
     today = datetime.date.today()
@@ -260,6 +275,7 @@ def read_news_yaml(filename):
             news.append(new)
 
     return news
+
 
 def pathto(name, static=False):
     if static:
@@ -296,10 +312,12 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
+
 freezer = Freezer(app)
 
+
 @freezer.register_generator
-def v1():
+def v1():  # noqa: F811
     IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
     for name, dirs, files in os.walk(v1_path):
         if '.git' in dirs:
@@ -313,17 +331,21 @@ def v1():
     for path in REDIRECTS:
         yield url_for('v1', path=path)
 
+
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
+
 @freezer.register_generator
-def course_redirect():
+def course_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
 
+
 @freezer.register_generator
-def info_redirect():
+def info_redirect():  # noqa: F811
     for city in OLD_CITIES:
         yield {'city': city}
+
 
 if __name__ == '__main__':
     cli(app, freezer=freezer, base_url='http://pyladies.cz')

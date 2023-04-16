@@ -1,2 +1,4 @@
 [flake8]
-exclude=original/v1/*,pyladies_cz.py
+exclude=original/v1/*
+extend-ignore=E266
+max-line-length=100
