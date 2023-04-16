@@ -620,3 +620,10 @@
 - name: Martin Zelený
   img: img/brno/team/blank.png
   role: Kouč
+
+- name: Jiří Podivín
+  img: img/brno/team/jpodivin.jpeg
+  role: Lektor
+  links:
+  - github-link: https://github.com/jpodivin
+  - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
