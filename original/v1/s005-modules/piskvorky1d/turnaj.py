@@ -16,7 +16,7 @@ import pkgutil
 import time
 import collections
 import importlib
-import argparse 
+import argparse
 
 import blessings
 import pytest

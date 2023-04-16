@@ -140,7 +140,7 @@ ahoj.py  ctverec.py  if.py  printing.py  rady.py
                         <div>
                             Takové lomítky oddělené jméno adresáře
                             se nazývá <em>cesta</em> (angl. <em>path</em>),
-                            a slouží 
+                            a slouží
                         </div>
                         <div>
                             Cesta může vést i k normálnímu souboru.
@@ -156,13 +156,13 @@ $ ls /home/alenka/pyladies/02/ahoj.py
                             <code>ls</code> použil <code>cat</code>,
                             ve Windows pak místo <code>dir</code>
                             příkaz <code>type</code>.
-                        </div> 
+                        </div>
                         <div>
                             Použít normální soubor jako rodičovský adresář
                             nejde: cesta jako
                             <code>/home/alenka/pyladies/02/ahoj.py/neco</code>
                             nikam nevede.
-                        </div> 
+                        </div>
                     </section>
                     <section>
                         <h2>Relativní cesty</h2>
@@ -170,7 +170,7 @@ $ ls /home/alenka/pyladies/02/ahoj.py
                             Zatím jsme používaly cesty, které začínají lomítkem
                             (nebo, na Windows, jménem disku).
                             Co se stane, když lomítkem nezačneme?
-                        </div> 
+                        </div>
                         <div>
                             Každá příkazová řádka má <em>aktuální adresář</em>
                             (angl. <em>current working directory</em>),
@@ -178,7 +178,7 @@ $ ls /home/alenka/pyladies/02/ahoj.py
                             vypsat příkazem <code>pwd</code>
                             a změnit příkazem <code>cd</code>.
                             (Na Windows se příkazem <code>cd</code> i vypisuje.)
-                        </div> 
+                        </div>
                         <div>
                             Pokud zadám cestu bez počátečního lomítka,
                             tak místo v kořenovém adresáři
@@ -187,7 +187,7 @@ $ ls /home/alenka/pyladies/02/ahoj.py
                             Je to cesta <em>relativní</em>
                             (angl. <em>relative</em>)
                             vzhledem k aktuálnímu adresáři.
-                        </div> 
+                        </div>
 <pre>
 $ pwd
 /home/alenka
@@ -200,7 +200,7 @@ ahoj.py  ctverec.py  if.py  printing.py  rady.py
                             Cestám, které začínají lomítkem (či jménem disku),
                             se říká <em>absolutní</em>
                             (angl. <em>absolute</em>).
-                        </div> 
+                        </div>
                         <div class="note">
                             Tohle platí i ve Windows.
                             Pokud začíná jméno cesty jménem disku,
@@ -217,7 +217,7 @@ ahoj.py  ctverec.py  if.py  printing.py  rady.py
                             tečkami (<code>..</code>),
                             a aktuální adresář, který se označuje jednou tečkou
                             (<code>.</code>):
-                        </div> 
+                        </div>
 <pre>
 $ pwd
 /home/alenka
@@ -239,7 +239,7 @@ alenka
                                 <li><code>.</code>: zůstat v <code>/home/alenka</code>.</li>
                             </ol>
                             Jde tedy o ten samý adresář.
-                        </div> 
+                        </div>
                         <div class="note">
                             Ve Windows <code>..</code> a <code>.</code>
                             znamenají přesně to samé jako v Unixu,
@@ -474,7 +474,7 @@ Python 2.7.8
 $ source /home/alenka/pyladies/venv/bin/activate
 (venv)$ python --version
 Python 3.4.0
-(venv)$ 
+(venv)$
 </pre>
                         <div class="note">
                             Na Windows jsme „systémový” Python nainstalovaly my,

@@ -67,4 +67,3 @@ pprint.pprint(dict(response.headers))
 for tweet in data['statuses']:
     print(tweet['id_str'])
     print(tweet['text'])
-

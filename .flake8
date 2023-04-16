@@ -1,0 +1,2 @@
+[flake8]
+exclude=original/v1/*,pyladies_cz.py

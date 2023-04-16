@@ -307,7 +307,7 @@
   end: 2020-05-19
   time: úterky 18:00 – 20:00
   place: *mergado
-  
+
 - name: Hadí workshop
   registration:
     url: https://forms.gle/gyvt3vUBXnzcDKiCA
@@ -321,17 +321,17 @@
     url: https://mapy.cz/s/letasusohe
     latitude: '49.2111189'
     longitude: '16.6164672'
-    
+
 - name: Linuxová administrace
   materials: https://naucse.python.cz/2020/linux-admin/
   registration:
-    url: https://forms.gle/uecR9uQjUywk9msT8 
+    url: https://forms.gle/uecR9uQjUywk9msT8
     end: 2020-09-25
   start: 2020-09-29
   end: 2020-12-15
   time: úterky 18:00 – 20:00
   place: *mzlu
-    
+
 - name: Začátečnický kurz <br> Podzimní pondělí 2020
   materials: https://naucse.python.cz/2020/brno-podzim-pondeli/
   registration:
@@ -365,7 +365,7 @@
   date: 2022-04-02
   time: 9:00 – 17:00
   place: *fi-muni
-  
+
 - name: Testovací PyWorking
   # materials: TBD
   registration:
@@ -403,7 +403,7 @@
   end: 2022-12-14
   time: středy 18:00 – 20:00
   place: *mergado
-  
+
 - name: PyWorking - Datová analýza
   # materials: TBD
   registration:
@@ -412,7 +412,7 @@
   date: 2023-01-21
   time: 10:00 – 18:00
   place: *fi-muni
-  
+
 - name: PyWorking - Práce s XLSX tabulkami
   # materials: TBD
   registration:
@@ -420,8 +420,8 @@
     end: 2023-02-02
   date: 2023-02-11
   time: 9:00 – 17:00
-  place: *fi-muni  
-  
+  place: *fi-muni
+
 - name: PyWorking - Úvod do Linuxu
   materials: https://kodim.cz/kurzy/uvod-do-linuxu
   registration:
@@ -429,7 +429,7 @@
     end: 2023-02-17
   date: 2023-02-25
   time: 9:30 – 17:30
-  place: *fi-muni    
+  place: *fi-muni
 
 - name: PyWorking - MicroPython
   materials: https://naucse.python.cz/2023/brno-micropython/
@@ -440,10 +440,10 @@
   time: 9:00 – 17:00
   place: *fi-muni
 
-- name: Python a jeho knihovny 
+- name: Python a jeho knihovny
   # materials:
   registration:
-    url: https://forms.gle/JK6MkSTritev6F2K6 
+    url: https://forms.gle/JK6MkSTritev6F2K6
     end: 2023-02-21
   start: 2023-03-06
   end: 2023-05-29

@@ -110,4 +110,3 @@ if __name__ == "__main__":
     print('Authentification successful: %s' %tm.authenticate())
     tm.get_timeline(max=max_t, keywords=keywords)
     tm.make_csv(args.out)
-

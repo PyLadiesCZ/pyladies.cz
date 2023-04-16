@@ -131,14 +131,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -544,7 +544,7 @@ Když budeme chtít pole vytvořit, použijeme nejčastěji právě seznam (nebo
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;], 
+<pre>array([&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;],
       dtype=&apos;&lt;U1&apos;)</pre>
 </div>
 
@@ -3226,7 +3226,7 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
 <pre>array([[[172, 173, 165],
         [173, 174, 166],
         [173, 174, 168],
-        ..., 
+        ...,
         [172, 171, 167],
         [173, 172, 168],
         [173, 172, 168]],
@@ -3234,7 +3234,7 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
        [[175, 176, 168],
         [174, 175, 167],
         [172, 173, 167],
-        ..., 
+        ...,
         [172, 171, 167],
         [173, 172, 168],
         [174, 173, 169]],
@@ -3242,16 +3242,16 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
        [[176, 177, 169],
         [174, 175, 167],
         [171, 172, 166],
-        ..., 
+        ...,
         [173, 172, 168],
         [173, 172, 168],
         [172, 171, 167]],
 
-       ..., 
+       ...,
        [[209, 211, 206],
         [210, 212, 207],
         [211, 213, 208],
-        ..., 
+        ...,
         [202, 203, 197],
         [200, 201, 195],
         [200, 201, 195]],
@@ -3259,7 +3259,7 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
        [[208, 210, 205],
         [209, 211, 206],
         [209, 211, 206],
-        ..., 
+        ...,
         [202, 203, 197],
         [202, 203, 197],
         [203, 204, 198]],
@@ -3267,7 +3267,7 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
        [[207, 209, 204],
         [209, 211, 206],
         [210, 212, 207],
-        ..., 
+        ...,
         [201, 202, 196],
         [201, 202, 196],
         [201, 202, 196]]], dtype=uint8)</pre>
@@ -3284,7 +3284,7 @@ Každý pixel v obrázku, který jsme kreslily před chvílí, by sám obsahoval
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Funkce <code>imshow</code> si s takovou věcí poradí, a nakreslí obrázek správných barev. 
+<p>Funkce <code>imshow</code> si s takovou věcí poradí, a nakreslí obrázek správných barev.
 (Jen si pořád myslí že to je graf, tak automaticky doplní osy.)</p>
 
 </div>
@@ -12123,7 +12123,7 @@ Naštěstí Pandas umí takzvané <em>složené indexy</em>, takže můžeme zko
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>    název               
+<pre>    název
 0   Hlavní město Praha      1268796
 1   Středočeský kraj        1289211
 2   Jihočeský kraj           628336
@@ -12194,7 +12194,7 @@ Name: obyvatel, Length: 6712, dtype: float64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>    název               
+<pre>    název
 0   Hlavní město Praha      1.067325
 1   Středočeský kraj        1.023079
 2   Jihočeský kraj          1.038093
@@ -12451,7 +12451,7 @@ Length: 6712, dtype: float64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>    název               
+<pre>    název
 0   Hlavní město Praha       True
 1   Středočeský kraj         True
 2   Jihočeský kraj           True

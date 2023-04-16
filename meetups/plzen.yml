@@ -12,9 +12,9 @@
     name: DEPO2015
     address: Cukrovarská 2996/23, 301 00 Plzeň 3
     url: https://mapy.cz/s/33dzG
-    latitude: '49.7372831' 
+    latitude: '49.7372831'
     longitude: '13.3820183'
-    
+
 - name: Začátečnický kurz <br> Jarní 2019
   materials: https://naucse.python.cz/2019/plzen-jaro-2019/
   registration:
@@ -29,7 +29,7 @@
     url: https://mapy.cz/s/3k5el
     latitude: '49.7367697'
     longitude: '13.3815181'
-    
+
 - name:  PyWorking - únor 2019 <br> Datová analýza
   registration:
     url: https://goo.gl/dvGJru
@@ -38,7 +38,7 @@
   date: 2019-02-17
   time: 9:30 - 17:00
   place: *techheaven_hub2
-  
+
 - name: Začátečnický kurz <br> Podzimní 2019
   materials: https://naucse.python.cz/2019/plzen-podzim-2019/
   registration:
@@ -48,8 +48,8 @@
   end: 2019-12-10
   time: úterky (17:00) 18:00 – 20:00
   place: *techheaven_hub2
-  
-- name:  PyWorking - Opakovací <br> Říjen 2019 <br> 
+
+- name:  PyWorking - Opakovací <br> Říjen 2019 <br>
   registration:
     url: https://1url.cz/@pyworking_plz5
     end: 2019-10-27
@@ -67,7 +67,7 @@
   end: 2020-05-19
   time: úterky (17:00) 18:00 – 20:00
   place: *techheaven_hub2
-  
+
 - name: Začátečnický kurz <br> Podzimní 2020
   materials: https://naucse.python.cz/2020/plzen-podzim-2020/
   registration:
@@ -77,7 +77,7 @@
   end: 2020-12-15
   time: společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
   place: *techheaven_hub2
-  
+
 - name: Navazující kurz <br> Jarní 2021
   materials: https://github.com/pyladies-pilsen/materialy-pokrocily-kurz
   registration:

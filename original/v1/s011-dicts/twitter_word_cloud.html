@@ -111,7 +111,7 @@ timeline = twitter_timeline.TimelineMiner(
     oauth_info.CONSUMER_SECRET,
     oauth_info.USER_NAME
 )
-</pre>                  
+</pre>
                         Nejdříve se musíme do Twitteru přihlásit. To uděláme
                         zavoláním funkce <code>authenticate()</code> na objektu
                         <code>TimelineMiner</code>. Rovnou můžeme vypsat do
@@ -134,7 +134,7 @@ if timeline.authenticate():
                     <div>
                         Nyní nám nic nebrání získat samotný text tweetů.
                         Na objektu <code>TimelineMiner</code> zavoláme
-                        metodu <code>get_timeline()</code> a tím se nám 
+                        metodu <code>get_timeline()</code> a tím se nám
                         tweety stáhnou.
 <pre>timeline.get_timeline(max=2000)</pre>
                     </div>
@@ -158,7 +158,7 @@ if timeline.authenticate():
                         <strong>Drobná nápověda:</strong>
                         <ul>
                             <li>
-                                Znaky interpunkce jsou v Pythonu dostupné v 
+                                Znaky interpunkce jsou v Pythonu dostupné v
                                 knihovně <code>string</code> jako
                                 <code>string.punctuation</code>.
                             </li>
@@ -186,7 +186,7 @@ def odstran_interpunkci(retezec):
     return retezec
 </pre>
 </details>
-                    
+
                 </section>
                 <section>
                     <h3>Získání klíčových slov</h3>
@@ -247,7 +247,7 @@ def najdi_klicova_slova(text):
                         <strong>Nápověda:</strong>
                         <ul>
                             <li>
-                                Nejdřív si do slovníku nasčítej počet výskytů 
+                                Nejdřív si do slovníku nasčítej počet výskytů
                                 každého jednoho slova, teprve pak slovník
                                 projdi v cyklu a poděl počet výskytů slova
                                 celkovým počtem slov.
@@ -292,7 +292,7 @@ def spocitej_frekvence(slova):
                         Směle zkopíruj následující kód, ale prohlédni si ho
                         a přečti si pozorně komentáře.
                     </div>
-                    
+
 <pre>
 import json
 
@@ -311,7 +311,7 @@ template_data = {
 
 # Vykresli HTML stranku a uloz do souboru
 with open('wordcloud.html', 'w') as result_file:
-    result_file.write(template.render(template_data))                       
+    result_file.write(template.render(template_data))
 </pre>
                     <div>
                         Nyní bys už měla mít ve složce nový soubor

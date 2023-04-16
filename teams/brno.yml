@@ -51,7 +51,7 @@
   img: img/brno/team/karolina.jpg
   role: Koučka/Copywriterka
   links:
-  - mail-link: mailto:karolina.surma@pyladies.cz  
+  - mail-link: mailto:karolina.surma@pyladies.cz
 
 - name: Luděk Reif
   img: img/brno/team/ludek.jpg
@@ -84,7 +84,7 @@
   role: Lektorka/Koučka
   links:
   - mail-link: mailto:moblahovaa@gmail.com
-  
+
 - name: Ivana Jelínková
   img: img/brno/team/ivanaj.jpg
   role: Koučka
@@ -527,7 +527,7 @@
   img: img/brno/team/blank.png
   role: Koučka
   links:
-  - mail-link: mailto:balkoedi@gmail.com 
+  - mail-link: mailto:balkoedi@gmail.com
 
 # - name: Jaroslav Šafka
 #   img: img/brno/team/jareks.jpg
@@ -571,21 +571,21 @@
 # - name: Michal Polovka
 #   img: img/brno/team/blank.png
 #   role: Kouč
-  
+
 # - name: Pavlína Zagolová
 #   img: img/brno/team/blank.png
 #   role: Koučka
-  
+
 - name: Andrea Kopečná
   img: img/brno/team/andrea.jpeg
   role: Koučka
   links:
   - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
-  
+
 # - name: Vojta Haška
 #   img: img/brno/team/blank.png
 #   role: Kouč
-  
+
 - name: Tomáš Jelínek
   img: img/brno/team/blank.png
   role: Kouč
@@ -593,13 +593,13 @@
 # - name: Veronika Konečná
 #   img: img/brno/team/blank.png
 #   role: Koučka
-  
+
 - name: Nela Slezáková
   img: img/brno/team/nela.jpg
   role: Koučka
   links:
   - mail-link: mailto:nela@nelaprovazi.cz
-  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
+  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/
   - website-link: https://www.nelaprovazi.cz
 
 - name: Kristýna Papežová
