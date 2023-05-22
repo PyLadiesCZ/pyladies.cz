@@ -469,3 +469,10 @@
   end: 2023-04-22
   time: sobota 9:30 – 16:30
   place: *rh
+
+- name: "Seminář: Životní cyklus vývoje softwaru"
+  registration:
+    url: https://forms.gle/7p44rq2vyQhATaxg9
+  date: 2023-06-10
+  time: 9:00 – 13:00
+  place: *fi-muni
