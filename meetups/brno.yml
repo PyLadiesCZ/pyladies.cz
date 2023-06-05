@@ -473,6 +473,7 @@
 - name: "Seminář: Životní cyklus vývoje softwaru"
   registration:
     url: https://forms.gle/7p44rq2vyQhATaxg9
+    end: 2023-06-04
   date: 2023-06-10
   time: 9:00 – 13:00
   place: *fi-muni
