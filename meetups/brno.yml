@@ -477,3 +477,13 @@
   date: 2023-06-10
   time: 9:00 – 13:00
   place: *fi-muni
+
+  - name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2023/brno-jaro-ctvrtek/
+  registration:
+    url: https://bit.ly/PythonBrno
+    end: 2023-09-17
+  start: 2023-09-27
+  end: 2023-12-13
+  time: středy 18:00 – 20:00
+  place: *fi-muni
