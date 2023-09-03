@@ -478,7 +478,7 @@
   time: 9:00 – 13:00
   place: *fi-muni
 
-  - name: Začátečnický kurz naruby
+- name: Začátečnický kurz naruby
   materials: https://naucse.python.cz/2023/brno-jaro-ctvrtek/
   registration:
     url: https://bit.ly/PythonBrno
