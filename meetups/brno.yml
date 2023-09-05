@@ -487,3 +487,13 @@
   end: 2023-12-13
   time: středy 18:00 – 20:00
   place: *fi-muni
+
+- name: "Python: za hranice základů (mírně pokročilý kurz)"
+  # materials: 
+  registration:
+    url: https://forms.gle/ZTozEi4Xd7Do8oCV7
+    end: 2023-09-17
+  start: 2023-09-25
+  end: 2024-01-29
+  time: pondělí 18:00 – 20:00
+  place: *fi-muni
