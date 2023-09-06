@@ -479,7 +479,7 @@
   place: *fi-muni
 
 - name: Začátečnický kurz naruby
-  materials: https://naucse.python.cz/2023/brno-jaro-ctvrtek/
+  materials: https://naucse.python.cz/2023/brno-podzim-streda/
   registration:
     url: https://bit.ly/PythonBrno
     end: 2023-09-17
