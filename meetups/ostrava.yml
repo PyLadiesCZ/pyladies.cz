@@ -210,4 +210,14 @@
   end: 2023-01-25
   time: každou středu 17:00 - 19:00
   place: *tieto-towers
-  
+
+- name: Workshop 3D tisku
+  registration:
+    url: https://forms.gle/Z5QiVwDof2c6Fhte6
+    end: 2023-10-23
+  date: 2023-10-28
+  time: 9:00 - 16:30
+  place: &msvk
+    name: Moravskoslezská vědecká knihovna v Ostravě
+    address: Prokešovo náměstí 1802/9, Ostrava, 70200
+    url: https://maps.app.goo.gl/ahdR8vw1LDw3ic6y5
