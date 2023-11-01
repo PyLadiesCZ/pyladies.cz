@@ -2,3 +2,4 @@ PyYAML
 elsa>=0.1.2
 markdown
 markupsafe
+werkzeug<3

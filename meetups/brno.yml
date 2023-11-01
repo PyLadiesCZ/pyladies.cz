@@ -451,11 +451,49 @@
   place: *rh
 
 - name: Začátečnický kurz naruby
-  # materials:
+  materials: https://naucse.python.cz/2023/brno-jaro-ctvrtek/
   registration:
     url: https://forms.gle/6VUNL3Vws2YeBxtj6
     end: 2023-02-26
   start: 2023-03-09
   end: 2023-05-25
   time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Dvoudílný GitWorking
+  # materials:
+  registration:
+    url: https://forms.gle/BPd97oAfCqCjM8XB9
+    end: 2023-04-10
+  start: 2023-04-15
+  end: 2023-04-22
+  time: sobota 9:30 – 16:30
+  place: *rh
+
+- name: "Seminář: Životní cyklus vývoje softwaru"
+  registration:
+    url: https://forms.gle/7p44rq2vyQhATaxg9
+    end: 2023-06-04
+  date: 2023-06-10
+  time: 9:00 – 13:00
+  place: *fi-muni
+
+- name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2023/brno-podzim-streda/
+  registration:
+    url: https://bit.ly/PythonBrno
+    end: 2023-09-17
+  start: 2023-09-27
+  end: 2023-12-13
+  time: středy 18:00 – 20:00
+  place: *fi-muni
+
+- name: "Python&#58; za hranice základů (mírně pokročilý kurz)"
+  # materials: 
+  registration:
+    url: https://forms.gle/ZTozEi4Xd7Do8oCV7
+    end: 2023-09-17
+  start: 2023-09-25
+  end: 2024-01-29
+  time: pondělí 18:00 – 20:00
   place: *fi-muni
