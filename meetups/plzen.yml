@@ -117,3 +117,17 @@
   end: 2022-12-13
   time: úterky 18:00 – 20:00
   place: *techheaven_hub2
+
+- name: Začátečnický kurz <br> Jarní 2024
+  registration:
+    url: https://1url.cz/@pyplz_j2024
+    end: 2024-01-06
+  start: 2024-01-16
+  end: 2024-04-16
+  time: úterky (17:00) 18:00 – 20:00
+  place: &techtower_plzen
+    name: TechTower Plzeň, Slovany
+    address: Koterovská 2827/152, 326 00 Plzeň
+    url: https://en.mapy.cz/s/gunomaneku
+    latitude: '49.7291583'
+    longitude: '13.4092142'
