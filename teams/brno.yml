@@ -618,8 +618,11 @@
   role: Kouč
 
 - name: Martin Zelený
-  img: img/brno/team/blank.png
+  img: img/brno/team/mzeleny.jpg
   role: Kouč
+  links:
+  - github-link: https://github.com/ZelenyMartin
+  - linkedin-link: https://www.linkedin.com/in/martin-zeleny
 
 - name: Jiří Podivín
   img: img/brno/team/jpodivin.jpeg
