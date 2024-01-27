@@ -34,8 +34,8 @@
 #  - linkedin-link: https://www.linkedin.com/in/mhornako
 
 - name: Anežka Müller
-  img: img/brno/team/anezka.jpg
-  role: Organizace/Média/PR
+  img: img/brno/team/anezka.png
+  role: Organizace/PR
   links:
   - mail-link: mailto:anezka.muller@pyladies.cz
   - linkedin-link: https://www.linkedin.com/in/anezkamll/
@@ -79,18 +79,18 @@
 #  links:
 #  - mail-link: mailto:sasa.matulova@gmail.com
 
-- name: Monika Bláhová
-  img: img/brno/team/monika.jpg
-  role: Lektorka/Koučka
-  links:
-  - mail-link: mailto:moblahovaa@gmail.com
+#- name: Monika Bláhová
+#  img: img/brno/team/monika.jpg
+#  role: Lektorka/Koučka
+#  links:
+#  - mail-link: mailto:moblahovaa@gmail.com
   
-- name: Ivana Jelínková
-  img: img/brno/team/ivanaj.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:jelinkova.ivana@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
+#- name: Ivana Jelínková
+#  img: img/brno/team/ivanaj.jpg
+#  role: Koučka
+#  links:
+#  - mail-link: mailto:jelinkova.ivana@gmail.com
+#  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
 
 #- name: Adrián Chlpík
 #  img: img/brno/team/adrianch.jpg
@@ -134,11 +134,11 @@
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
-- name: Pavel Kocourek
-  img: img/brno/team/pavelk.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:pavel.kocourek@protonmail.com
+#- name: Pavel Kocourek
+#  img: img/brno/team/pavelk.jpg
+#  role: Kouč
+#  links:
+#  - mail-link: mailto:pavel.kocourek@protonmail.com
 
 # - name: Eva Fadrná
 #   img: img/brno/team/blank.png
@@ -354,11 +354,11 @@
 #   - linkedin-link: https://cz.linkedin.com/in/dominika-krej%C4%8D%C3%AD-9779759b
 #   - website-link: https://vranihnizdo.blogspot.com/
 
-- name: Jan Rybář
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-  - mail-link: mailto:jrybar@redhat.com
+#- name: Jan Rybář
+#  img: img/brno/team/blank.png
+#  role: Kouč
+#  links:
+#  - mail-link: mailto:jrybar@redhat.com
 
 # - name: Juraj Michálek
 #   img: img/brno/team/juraj.jpg
@@ -401,7 +401,7 @@
 
 - name: Šárka Melicharová
   img: img/brno/team/saja.jpg
-  role: Koučka
+  role: Organizátorka/Koučka
   links:
   - mail-link: mailto:sarka-melicharova@seznam.cz
 
@@ -523,11 +523,11 @@
 #   links:
 #   - mail-link: mailto:iveta.horrova@cz.ibm.com
 
-- name: Edit Lelkes
-  img: img/brno/team/blank.png
-  role: Koučka
-  links:
-  - mail-link: mailto:balkoedi@gmail.com 
+#- name: Edit Lelkes
+#  img: img/brno/team/blank.png
+#  role: Koučka
+#  links:
+#  - mail-link: mailto:balkoedi@gmail.com 
 
 # - name: Jaroslav Šafka
 #   img: img/brno/team/jareks.jpg
@@ -576,11 +576,11 @@
 #   img: img/brno/team/blank.png
 #   role: Koučka
   
-- name: Andrea Kopečná
-  img: img/brno/team/andrea.jpeg
-  role: Koučka
-  links:
-  - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
+#- name: Andrea Kopečná
+#  img: img/brno/team/andrea.jpeg
+#  role: Koučka
+#  links:
+#  - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
   
 # - name: Vojta Haška
 #   img: img/brno/team/blank.png
@@ -588,23 +588,23 @@
   
 - name: Tomáš Jelínek
   img: img/brno/team/blank.png
-  role: Kouč
+  role: Lektor
 
 # - name: Veronika Konečná
 #   img: img/brno/team/blank.png
 #   role: Koučka
   
-- name: Nela Slezáková
-  img: img/brno/team/nela.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:nela@nelaprovazi.cz
-  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
-  - website-link: https://www.nelaprovazi.cz
+#- name: Nela Slezáková
+#  img: img/brno/team/nela.jpg
+#  role: Koučka
+#  links:
+#  - mail-link: mailto:nela@nelaprovazi.cz
+#  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
+#  - website-link: https://www.nelaprovazi.cz
 
-- name: Kristýna Papežová
-  img: img/brno/team/blank.png
-  role: Koučka
+#- name: Kristýna Papežová
+#  img: img/brno/team/blank.png
+#  role: Koučka
 
 - name: Martina Antalovová
   img: img/brno/team/martinaa.jpg
@@ -619,7 +619,7 @@
 
 - name: Martin Zelený
   img: img/brno/team/mzeleny.jpg
-  role: Kouč
+  role: Lektor/Kouč
   links:
   - github-link: https://github.com/ZelenyMartin
   - linkedin-link: https://www.linkedin.com/in/martin-zeleny
