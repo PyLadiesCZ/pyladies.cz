@@ -535,9 +535,9 @@
 #   links:
 #   - mail-link: mailto:pyladies zavináč safka.org
 
-# - name: Katka Chmelařová
-#   img: img/brno/team/blank.png
-#   role: Kouč
+ - name: Katka Chmelařová
+   img: img/brno/team/blank.png
+   role: Kouč
 #   links:
 #   - mail-link: mailto:sprinarova.katka@gmail.com
 
@@ -604,7 +604,7 @@
 
 - name: Kristýna Papežová
   img: img/brno/team/blank.png
-  role: Koučka
+  role: Organizátorka/Koučka
 
 - name: Martina Antalovová
   img: img/brno/team/martinaa.jpg
@@ -638,3 +638,27 @@
 - name: Pavlína Váňová
   img: img/brno/team/blank.png
   role: Organizátorka/Koučka
+
+- name: Boris Kolda
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Adam Cmiel
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Zdenek Lovecek
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Markéta Dalecká
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Erik Belko
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Barbora Baláková
+  img: img/brno/team/blank.png
+  role: Koučka
