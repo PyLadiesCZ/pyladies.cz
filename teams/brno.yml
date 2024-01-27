@@ -130,7 +130,7 @@
 
 - name: Eliška Jégrová
   img: img/brno/team/eliska.jpg
-  role: Koučka
+  role: Lektorka/Koučka
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
 
@@ -602,9 +602,9 @@
 #  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
 #  - website-link: https://www.nelaprovazi.cz
 
-#- name: Kristýna Papežová
-#  img: img/brno/team/blank.png
-#  role: Koučka
+- name: Kristýna Papežová
+  img: img/brno/team/blank.png
+  role: Koučka
 
 - name: Martina Antalovová
   img: img/brno/team/martinaa.jpg
@@ -630,3 +630,11 @@
   links:
   - github-link: https://github.com/jpodivin
   - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
+
+- name: Veronika Konečná
+  img: img/brno/team/blank.png
+  role: Kouč  
+
+- name: Pavlína Váňová
+  img: img/brno/team/blank.png
+  role: Organizátorka/Koučka
