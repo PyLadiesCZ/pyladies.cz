@@ -590,9 +590,9 @@
   img: img/brno/team/blank.png
   role: Lektor
 
-# - name: Veronika Konečná
-#   img: img/brno/team/blank.png
-#   role: Koučka
+- name: Veronika Konečná
+  img: img/brno/team/blank.png
+  role: Koučka
   
 #- name: Nela Slezáková
 #  img: img/brno/team/nela.jpg
@@ -630,10 +630,6 @@
   links:
   - github-link: https://github.com/jpodivin
   - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
-
-- name: Veronika Konečná
-  img: img/brno/team/blank.png
-  role: Kouč  
 
 - name: Pavlína Váňová
   img: img/brno/team/blank.png
