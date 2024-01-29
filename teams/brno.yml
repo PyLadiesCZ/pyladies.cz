@@ -535,9 +535,9 @@
 #   links:
 #   - mail-link: mailto:pyladies zavináč safka.org
 
- - name: Katka Chmelařová
-   img: img/brno/team/blank.png
-   role: Kouč
+- name: Káťa Chmelařová
+  img: img/brno/team/blank.png
+  role: Kouč
 #   links:
 #   - mail-link: mailto:sprinarova.katka@gmail.com
 
