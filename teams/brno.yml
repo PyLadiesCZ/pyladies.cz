@@ -662,3 +662,9 @@
 - name: Daniela Drážná
   img: img/brno/team/Danuse.jpg
   role: Organizátorka
+
+- name: Petra Adámková
+  img: img/brno/team/petra.png
+  role: Organizátorka
+  links:
+  - mail-link: petra.adamkova@pyladies.cz
