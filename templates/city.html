@@ -73,10 +73,19 @@
         {% endif %}
       {% endif %}
       {% if meetup.materials %}
-        {% call item(icon="book", url=meetup.materials,
-                     is_button=not have_button and meetup.current) %}
-          Materiály
-        {% endcall %}
+        {% if meetup.materials is mapping %}
+          {% for anchor_text, url in meetup.materials.items() %}
+            {% call item(icon="book", url=url,
+                        is_button=not have_button and meetup.current) %}
+              {{ anchor_text }}
+            {% endcall %}
+          {% endfor %}
+        {% else %}
+          {% call item(icon="book", url=meetup.materials,
+                      is_button=not have_button and meetup.current) %}
+            Materiály
+          {% endcall %}
+        {% endif %}
       {% endif %}
       </ul>
   </div>
