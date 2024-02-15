@@ -515,3 +515,13 @@
   date: 2024-02-17
   time: 8:30 – 18:00
   place: *rh
+
+- name: Začátečnický kurz naruby
+ # materials: https://naucse.python.cz/2023/brno-podzim-streda/
+  registration: https://forms.gle/gaV7ieZTwSWGm5Tw7
+    url: https://docs.google.com/forms/d/e/1FAIpQLSflxEtnT-UQkeByddhfGikZ8CpZd1YJzLYAK2iNYw72GwktuQ/viewform?usp=pp_url
+    end: 2024-02-29
+  start: 2024-03-14
+  end: 2024-05-30
+  time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
