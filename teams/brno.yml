@@ -668,3 +668,10 @@
   role: Organizátorka
   links:
   - mail-link: petra.adamkova@pyladies.cz
+
+- name: Otakar Joch
+  img: img/brno/team/otakar.jpg
+  role: Kouč
+  links:
+   - mail-link: mailto:turak97@gmail.com
+
