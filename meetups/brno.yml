@@ -516,6 +516,7 @@
   time: 8:30 – 18:00
   place: *rh
 
+
 - name: Začátečnický kurz naruby
  # materials: https://naucse.python.cz/2023/brno-podzim-streda/
   registration:
@@ -524,4 +525,14 @@
   start: 2024-03-14
   end: 2024-05-30
   time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
+
+- name: Linuxová administrace
+  materials: https://naucse.python.cz/2024/brno-linuxadmin-jaro/
+  registration:
+    url: https://forms.gle/mWt1uZ7orzGfRmML8
+    end: 2024-03-03
+  start: 2024-03-13
+  end: 2024-06-12
+  time: středy 18:00 – 20:00
   place: *fi-muni
