@@ -221,3 +221,13 @@
     name: Moravskoslezská vědecká knihovna v Ostravě
     address: Prokešovo náměstí 1802/9, Ostrava, 70200
     url: https://maps.app.goo.gl/ahdR8vw1LDw3ic6y5
+
+- name: Online mentoring
+  topic: Indivuduální online mentoring týkající se Pythonu nebo příbuzných témat
+  start: 2023-09-20
+  end: 2024-06-30
+  place:
+    name: online
+  materials:
+    Příručka online mentoringu: https://docs.google.com/document/d/1LGhQ2DZju5YoLx3J_R5iQsyNy-K0b2zNw09Pf6hW2PQ/edit?usp=sharing
+    Online mentoring guide: https://docs.google.com/document/d/1OnQ5ku3weVDd0gTNe8uQuxTRtz3neMwhxm37NcVqMS4/edit?usp=sharing
