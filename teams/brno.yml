@@ -52,10 +52,11 @@
   - mail-link: mailto:hana.stramberkova@pyladies.cz
 
 - name: Boris Kolda
-  img: img/brno/team/blank.png
+  img: img/brno/team/boris.jpg
   role: Organizátor/Kouč
   links:
   - mail-link: mailto:boris.kolda@pyladies.cz 
+  - linkedin-link: https://www.linkedin.com/in/boris-kolda-12854651/
 
 # - name: Kateřina Pospíšilová
 #   img: img/brno/team/blank.png
