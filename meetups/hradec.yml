@@ -43,3 +43,17 @@
   end: 2020-03-19
   time: čtvrtky 18:00 – 20:00
   place: *UHK
+
+- name: Hadí workshop v Hradci
+  registration:
+    url: https://docs.google.com/forms/d/1JFdLrTmaNLLJC3RKTCmKg6iR4_d9CAkmO_zpMIJaLwg
+    end: 2024-03-29
+  start: 2024-04-13
+  end: 2024-04-13
+  time: 8:30 - 18:00
+  place: &UHK
+    name: Univerzita Hradec Králové
+    address: Hradecká 1285, Hradec Králové
+
+    latitude: '50.2038156'
+    longitude: '15.8287966'
