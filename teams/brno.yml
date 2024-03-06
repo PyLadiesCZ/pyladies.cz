@@ -42,7 +42,7 @@
 - name: Petra Adámková
   img: img/brno/team/petra.png
   role: Organizátorka
-  links: 
+  links:
   - mail-link: mailto:petra.adamkova@pyladies.cz
 
 - name: Hana Štamberková
@@ -55,7 +55,7 @@
   img: img/brno/team/boris.jpg
   role: Organizátor/Kouč
   links:
-  - mail-link: mailto:boris.kolda@pyladies.cz 
+  - mail-link: mailto:boris.kolda@pyladies.cz
   - linkedin-link: https://www.linkedin.com/in/boris-kolda-12854651/
 
 # - name: Kateřina Pospíšilová
@@ -73,8 +73,8 @@
   - website-link: https://anezka.muller.dev/
 
 - name: Tomáš Jelínek
-  img: img/brno/team/blank.png
-  role: Lektor  
+  img: img/brno/team/tomasisko.jpg
+  role: Lektor
 
 - name: Eliška Jégrová
   img: img/brno/team/eliska.jpg
@@ -87,7 +87,7 @@
   role: Lektor/Kouč
   links:
   - github-link: https://github.com/ZelenyMartin
-  - linkedin-link: https://www.linkedin.com/in/martin-zeleny  
+  - linkedin-link: https://www.linkedin.com/in/martin-zeleny
 
 - name: Petr Viktorin
   img: img/brno/team/petrv.jpg
@@ -140,7 +140,7 @@
 #  role: Lektorka/Koučka
 #  links:
 #  - mail-link: mailto:moblahovaa@gmail.com
-  
+
 #- name: Ivana Jelínková
 #  img: img/brno/team/ivanaj.jpg
 #  role: Koučka
@@ -571,7 +571,7 @@
 #  img: img/brno/team/blank.png
 #  role: Koučka
 #  links:
-#  - mail-link: mailto:balkoedi@gmail.com 
+#  - mail-link: mailto:balkoedi@gmail.com
 
 # - name: Jaroslav Šafka
 #   img: img/brno/team/jareks.jpg
@@ -615,17 +615,17 @@
 # - name: Michal Polovka
 #   img: img/brno/team/blank.png
 #   role: Kouč
-  
+
 # - name: Pavlína Zagolová
 #   img: img/brno/team/blank.png
 #   role: Koučka
-  
+
 #- name: Andrea Kopečná
 #  img: img/brno/team/andrea.jpeg
 #  role: Koučka
 #  links:
 #  - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
-  
+
 # - name: Vojta Haška
 #   img: img/brno/team/blank.png
 #   role: Kouč
@@ -633,13 +633,13 @@
 - name: Veronika Konečná
   img: img/brno/team/blank.png
   role: Koučka
-  
+
 #- name: Nela Slezáková
 #  img: img/brno/team/nela.jpg
 #  role: Koučka
 #  links:
 #  - mail-link: mailto:nela@nelaprovazi.cz
-#  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/ 
+#  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/
 #  - website-link: https://www.nelaprovazi.cz
 
 - name: Martina Antalovová
@@ -685,4 +685,3 @@
   role: Kouč
   links:
    - mail-link: mailto:turak97@gmail.com
-
