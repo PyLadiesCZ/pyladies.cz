@@ -102,7 +102,7 @@ def stan_se():
 def faq():
     return render_template('faq.html')
 
-@app.route('/gdpr/')
+@app.route('/zpracovani_osobnich_udaju/')
 def gdpr():
     return render_template('gdpr.html')
 
