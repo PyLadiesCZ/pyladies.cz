@@ -1,0 +1,29 @@
+- name: Build your own Blog with PyLadies! <br> Django Workshop @ RuPy 2012
+  date: 2012-11-16
+
+- name: Doučování Pythonu
+  start: 2013-11-11
+  end: 2014-09-15
+  time: pondělky a později úterky 18:00 – 20:00
+  place: &rh-tower-big
+    name: Red Hat – Tower Big
+    address: Purkyňova 99, Brno
+    url: http://www.mapy.cz/s/8NKT
+    latitude: '49.2261222'
+    longitude: '16.5816069'
+
+- name: Začátečnický kurz <br> 2014
+  start: 2014-06-10
+  end: 2015-03-16
+  time: pondělky 18:00 – 20:00
+  place: *rh-tower-big
+
+- name: Začátečnický kurz <br> 2015
+  start: 2015-10-05
+  end: 2016-02-29
+  time: pondělky 17:00 – 19:00
+  place: &experis
+    name: Experis
+    address: BC Titanium, Nové sady 25, Brno
+    latitude: '49.1875653'
+    longitude: '16.6064981'

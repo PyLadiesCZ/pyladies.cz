@@ -24,10 +24,14 @@ from elsa import cli
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TRAP_HTTP_EXCEPTIONS'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
 MISSING = object()
+
+class YamlIOException(Exception):
+    pass
 
 def redirect(url):
     """Return a response with a Meta redirect"""
@@ -188,7 +192,13 @@ def read_yaml(filename, default=MISSING):
 @functools.lru_cache()
 def _read_yaml_cached(filename, size, mtime):
     with open(filename, encoding='utf-8') as file:
-        data = yaml.safe_load(file)
+        try:
+            data = yaml.safe_load(file)
+        except Exception:
+            err_message = f"""The YAML file '{filename}' can not be read by
+            the yaml parser. Please check if the file exist or if the file is
+            a valid yaml file."""
+            raise YamlIOException(err_message)
     return data
 
 
