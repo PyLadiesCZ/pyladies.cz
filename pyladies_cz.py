@@ -24,6 +24,7 @@ from elsa import cli
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TRAP_HTTP_EXCEPTIONS'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
