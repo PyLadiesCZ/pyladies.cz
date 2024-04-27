@@ -163,3 +163,33 @@ Nové kurzy se přidávají na konec `.yml` souboru v adresáři `meetups`.
   registration:
     url: <tady_bude_adresa>
 ```
+
+### Ukázky údajů o koučkách/koučích
+
+Koučky a koučové si přidávají do souborů `teams/<mesto>.yml`.
+Nejjednoduší záznam koučky musí obsahovat klíče `name`, `img` a `role`.
+Obrázky se načítají ze složky `static/img/<mesto>/team/`
+Pokud kouč nechce zveřejňovat fotku, jako `img` uveď prázdný avatar:
+`img/brno/team/blank.png`.
+
+```
+- name: Anička Nováková
+  img: img/brno/team/blank.png
+  role: Koučka
+```
+
+Volitelně se můžou nastavit odkazy na další profily. Žádný údaj není povinný.
+
+```
+- name: Anička Nováková
+  img: img/brno/team/anicka.png
+  role: Koučka
+  links:
+  - mail-link: mailto:anicka@novakova.cz
+  - linkedin-link: https://www.linkedin.com/in/...
+  - twitter-link: https://twitter.com/...
+  - github-link: https://github.com/...
+  - website-link: https://example.com
+  - facebook: https://www.facebook.com/...
+  - instagram: https://www.instagram.com/...
+```
