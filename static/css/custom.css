@@ -1057,7 +1057,6 @@ body > footer .clear {
   clear: both;
 }
 
-body > footer .global-pyladies a,
 body > footer .about-p a,
 body > footer .news-p a {
   color: #8e8c8d;
@@ -1069,11 +1068,11 @@ body > footer .global-pyladies {
   float: left;
 }
 
-body > footer .global-pyladies a {
+body > footer a:hover {
+  text-decoration: underline;
   color: white;
 }
 
-body > footer .global-pyladies a:hover {
-  text-decoration: underline;
+body > footer a {
   color: white;
 }
