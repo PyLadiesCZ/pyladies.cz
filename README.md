@@ -166,8 +166,8 @@ Nové kurzy se přidávají na konec `.yml` souboru v adresáři `meetups`.
 
 ### Ukázky údajů o koučkách/koučích
 
-Koučky a koučové si přidávají do souborů `teams/<mesto>.yml`.
-Nejjednoduší záznam koučky musí obsahovat klíče `name`, `img` a `role`.
+Koučky a koučové se přidávají do souborů `teams/<mesto>.yml`.
+Nejjednodušší záznam koučky musí obsahovat klíče `name`, `img` a `role`.
 Obrázky se načítají ze složky `static/img/<mesto>/team/`
 Pokud kouč nechce zveřejňovat fotku, jako `img` uveď prázdný avatar:
 `img/brno/team/blank.png`.
