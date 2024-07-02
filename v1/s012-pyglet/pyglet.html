@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+    <!-- Apologies for using deprecated HTML technology -->
+    <meta http-equiv="refresh" content="0; http://naucse.python.cz/lessons/intro/pyglet/">
+    <link rel="canonical" href="http://naucse.python.cz/lessons/intro/pyglet/">
+    <meta name="robots" content="noindex, follow">
+
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+    <section class="course-city faq container">
+        <div class="row">
+        <h1>Přesměrování</h1>
+            <p>
+                Obsah této stránky byl přesunut na novou adresu:
+                <a href="http://naucse.python.cz/lessons/intro/pyglet/">http://naucse.python.cz/lessons/intro/pyglet/</a>.
+            </p>
+        </div>
+    </section>
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>

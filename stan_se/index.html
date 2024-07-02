@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li class="current-page">
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+      <!-- Intro Header -->
+      <section class="container text-center">
+        <div class="row">
+
+                <h2 class="course-city-heading">Jak se zapojit do PyLadies?</h2>
+
+        </div>
+    </section>
+    <!-- Main section -->
+    <!-- <section class="course-city container">
+        <div class="text-center">
+            <h3>Jak se zapojit do PyLadies? A jak organizovat kurz PyLadies?</h3>
+            <p class="text-left">
+                Chceš-li se zapojit do organizace nebo založit PyLadies v novém městě,
+                máme tu vypsané role, kterých se můžeš ujmout. Pokud Tě zajímá pouze účast
+                na kurzu, více se dozvíš v našem <a href="http://pyladies.cz/faq/">FAQ</a>.
+            </p>
+        </div>
+    </section> -->
+    <section class="container">
+        <ul class="head head-icons">
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#uzk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Účastnice kurzu</h3>
+                    <span>naučíš se Python</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4 ">
+                <a href="#ho">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Hlavní organizátor<span class="ka">ka</span></h3>
+                    <span>zařídíš, seženeš, domluvíš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#hk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Lektor<span class="ka">ka</span></h3>
+                    <span>naučíš, vysvětlíš, zařídíš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#ou">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Opravovač<span class="ka">ka</span> úkolů</h3>
+                    <span>zkontroluješ, dáš zpětnou vazbu</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#os">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Organizátor<span class="ka">ka</span> srazu</h3>
+                    <span>pomůžeš, uděláš</span>
+                </a>
+            </li>
+            <li class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#vk">
+                    <img class="head-cutout" src="../static/img/head-cutout.svg" alt="">
+                    <h3>Vedlejší kouč<span class="ka">ka</span></h3>
+                    <span>poradíš, doplníš, zachráníš</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="become-pylady container">
+
+            <div class="col-xs-12 text-left" >
+                <h3 id="uzk">Účastnice kurzu</h3>
+                <p>
+                    Nedílnou součástí jsou holky, co se učí Python!
+                    Jejich práce je nejtěžší a proto se všichni ostatní snaží, aby se mohly
+                    soustředit na to učení:
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Choď na srazy!
+                    </li>
+                    <li>
+                        Svědomitě plň domácí úlohy!
+                    </li>
+                    <li>
+                        A odevzdávej zpětnou vazbu, ať víme co zlepšit! :)
+                        <a href="/faq/">Více pro účastnice a všeobecný FAQ.</a>
+                    </li>
+                </ul>
+
+                <h3 id="ho">Hlavní organizátor<span class="ka">ka</span></h3>
+                <p>
+                    Hlavní organizátorka musí mít přehled o tom, jak kurzy PyLadies fungují.
+                    Proto by to měla být bývalá účastnice/koučka, nebo někdo, kdo je
+                    v&nbsp;kontaktu s&nbsp;organizátorkami z ostatních měst.
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Urči den a čas, kdy se budete scházet. Každý sraz trvá dvě hodiny
+                        a srazy se opakují každý týden.
+                    </li>
+                    <li>
+                        Domluv místo, kde se bude kurz konat. Jestli nevíš, zeptej se v&nbsp;místních
+                        IT firmách a školách, jestli by nějaký prostor nezapůjčili.
+                    </li>
+                    <li>
+                        Navrhni časový plán: který týden se bude co probírat.
+                        Kurz má standardně 13 lekcí, ale je dobré si jeden nebo dva týdny nechat
+                        jako rezervu na případné odbočky.
+                    </li>
+                    <li>
+                        Nezapomeň zkontrolovat kalendář; pozor na státní svátky!
+                    </li>
+                    <li>
+                        Rozhodni, pro kolik lidí sraz bude.
+                    </li>
+                    <li>
+                        Zhruba dva měsíce před začátkem pozvi kouče. Na první sraz je potřeba zhruba
+                        1 kouč na 2-3 účastnice (plus 1 lektor) – instalace je hodně individuální.
+                        Od druhého srazu stačí 1 kouč na 4-5 účastnic (plus 1 lektor).
+                    </li>
+                    <li>
+                        Zhruba měsíc před začátkem pozvi účastnice!
+                        Můžeš použít <a href="http://goo.gl/forms/fGlImOko0oa2imDo1">vzorovou přihlášku</a>.
+                        Ozvi se a dáme ti k&nbsp;ní přístup, abys ji mohla zkopírovat a přizpůsobit.
+                    </li>
+                    <li>
+                        Zhruba dva týdny před začátkem vyber účastnice.
+                        Vybraným pošli mail s&nbsp;radostnou zprávou.
+                        Zhruba 5-10 odmítnutých informuj, že jsou náhradnice.
+                        Ostatním odmítnutým sděl, že se bohužel nevejdou.
+                    </li>
+                    <li>
+                        Každý sraz musí mít vlastní organizátorku a hlavního kouče.
+                        Organizátorka konkrétního srazu můžeš být i ty: a na první sraz to
+                        doporučujeme, ale na ty další si radši najdi pomocnice.
+                    </li>
+                    <li>
+                        Organizátorky a kouče přidej na stránku týmu na pyladies.cz.
+                    </li>
+                    <li>
+                        Řeš případné finanční náklady, tj. hlavně tisk materiálů/taháků a nákup
+                        barevných papírků.
+                        Všechno by měla proplatit naše neziskovka Pyvec, ale domluv se předem.
+                    </li>
+                    <li>
+                        Na konci kurzu pošli mail se shrnutím a začni hledat hlavní organizátorku na
+                        další běh :)
+                    </li>
+                </ul>
+
+                <h3 id="hk">Lektor<span class="ka">ka</span></h3>
+                <p>
+                    Lektor (neboli <em>hlavní kouč</em>) musí být někdo, kdo programování rozumí, umí vysvětlit látku
+                    (s pomocí materiálů) a nezalekne se těžkých otázek.
+
+                    Důrazně doporučujeme, aby lektor byl na předcházejícím srazu a mohl tak
+                    navázat.
+                </p>
+
+                <ul class="role-requirements">
+                    <li>
+                        Předem si nastuduj materiály a rozvrhni si čas, ať je za hodinu a půl stíháš
+                        projít. (To může trvat zhruba 1-2 hodiny.)
+                    </li>
+                    <li>
+                        Na srazu se první půlhodinu procházejí domácí projekty – ve dvojicích,
+                        společně, nebo nějakým jiným systémem.
+                        Účel je, aby těm, kdo se na projekty podívaly, bylo jasné, o co jde a jak se to
+                        řeší.
+                        Lektor tu půlhodinu vede diskuzi.
+                    </li>
+                    <li>
+                        Po domácích projektech vysvětli látku v materiálech.
+                    </li>
+                    <li>
+                        Na konci dostaneš zpětnou vazbu. Napiš shrnutí probrané látky a zpětné vazby
+                        někam, kde si to všichni zúčastnění přečtou (mail, Facebook, atd. – kdyžtak
+                        se zeptej organizátorky).
+                    </li>
+                </ul>
+
+                <h3 id="ou">Opravovač<span class="ka">ka</span> úkolů</h3>
+                <p>
+                    Na opravování se podílí vedlejší koučové.
+                    Úkoly od jednotlivých účastnic kurzu si rozdělí dle svých
+                    časových možností.
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Zkontroluj zaslané domácí projekty.
+                    </li>
+                    <li>
+                        Napiš zpětnou vazbu a vysvětli případné chyby.
+                    </li>
+                    <li>
+                        Odepiš co nejdřív, ať účastnice zbytečně neztrácí motivaci ;-)
+                    </li>
+                </ul>
+                <h3 id="os">Organizátor<span class="ka">ka</span> srazu</h3>
+                <p>
+                    Organizátorka srazu může být bývalá nebo současná účastnice nebo koučka.
+                    Měla by už za sebou mít minimálně 1-2 srazy, aby věděla do čeho jde.
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Ujisti se, že je vybraný lektor a že přijde :)
+                    </li>
+                    <li>
+                        Ujisti se, že je vybráno dost vedlejších koučů a kdyžtak sežeň další.
+                    </li>
+                    <li>
+                        Zhruba den předem připomeň sraz účastnicím.
+                    </li>
+                    <li>
+                        Ujisti se, že na srazu budou k&nbsp;dispozici:
+
+                        <ul>
+                            <li>
+                                červené/zelené/žluté papírky (na proplacení nákladů se domluv s&nbsp;hlavní
+                                organizátorkou)
+                            </li>
+                            <li>
+                                vytištěné domácí projekty (pokud k&nbsp;aktuální lekci jsou)
+                            </li>
+                            <li>
+                                vytištěné taháky (pokud k&nbsp;aktuální lekci jsou)
+                            </li>
+                            <li>
+                                jmenovky pro kouče (jestli se ještě všichni neznají)
+                            </li>
+                        </ul>
+
+                        Na některé srazy je potřeba speciální vybavení – domluv se s&nbsp;hlavní
+                        organizátorkou:
+                        <ul>
+                            <li>Ceny na turnaj v piškvorkách</li>
+                            <li>Hardware na odbočku MicroPython</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Chceš-li, zarezervuj hospodu na afterparty.
+                    </li>
+                    <li>
+                        Přijď na sraz s&nbsp;předstihem, přichystej místnost, uvítej účastnice a předej
+                        slovo hlavnímu koučovi.
+                    </li>
+                    <li>
+                        Na konci srazu poděkuj všem zúčastněným, vyber od účastnic zpětnou vazbu
+                        a předej ji hlavnímu koučovi a rozdej domácí projekty.
+                    </li>
+                    <li>
+                        Po srazu zkontroluj, že lektor zpětnou vazbu zpracoval :)
+                    </li>
+                </ul>
+
+                <h3 id="vk">Vedlejší kouč<span class="ka">ka</span></h3>
+                <p>
+                    Vedlejší kouč může být kdokoli, kdo je o&nbsp;trochu napřed před účastnicemi,
+                    a chce pomoct.
+                    Může to být profi programátor<span class="ka">ka</span> nebo klidně účastnice minulého běhu, která si
+                    chce kurz nebo lekci zopakovat.
+                </p>
+                <ul class="role-requirements">
+                    <li>
+                        Chceš-li koučovat častěji, nahlaš se předem hlavní organizátorce
+                        kurzu, lépe se to pak naplánuje.
+                    </li>
+                    <li>
+                        Chceš-li přijít jen občas, nahlaš se organizátorce konkrétního srazu – nejlépe
+                        tak, že odpovíš na pozvánku, kterou pošle zhruba den předem.
+                    </li>
+                    <li>
+                        Úkolem vedlejšího kouče je sledovat místnost. Kdykoli uvidíš červený papírek,
+                        přiskoč a vyřeš problém.
+                        Neumíš-li to vyřešit, předej problém jinému (nebo hlavnímu) koučovi.
+                    </li>
+                </ul>
+
+
+
+        </div>
+    </section>
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>

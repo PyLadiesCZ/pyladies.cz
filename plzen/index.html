@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="current-page">
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>PLZEŇ</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2024</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          16. 1. – 16. 4. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://en.mapy.cz/s/gunomaneku"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechTower Plzeň, Slovany,
+                Koterovská 2827/152, 326 00 Plzeň
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 9. – 13. 12. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. 2. – 10. 5. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/plzen-jaro-2022/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+      
+    
+    <div>
+        <a href="#past-meetups">
+            
+                A dalších 9 kurzů a srazů už je za námi!
+            
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    
+
+    
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        
+
+        Čekáš na otevření přihlášek na další?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="https://www.facebook.com/pyladies.plzen/">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/facebook.png" />
+                        <h4 class="about-title">Facebook PyLadies Plzeň</h4>
+                    </div>
+                </a>
+            
+                <a href="mailto:plzen@pyladies.cz">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš koučovi</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">Tým plzeňských PyLadies</h2>
+      <div class="team ">
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Líba Poustková</strong></h5>
+            <span><em>Organizátorka, lektorka, vedlejší koučka</em></span>
+            <ul><li><a href="mailto:libuse.poustkova@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/barah.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Barbora Hůlová</strong></h5>
+            <span><em>Organizátorka, lektorka, vedlejší koučka</em></span>
+            <ul><li><a href="mailto:hulovaba@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/vitac.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Filip Vaculík</strong></h5>
+            <span><em>Organizátor, lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:filip.vaculik@jsi.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/dasa_t.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Dáša Toncarová</strong></h5>
+            <span><em>Organizátorka, vedlejší koučka</em></span>
+            <ul><li><a href="mailto:dasa@toncar.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/tomas_z.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Tomáš Zítka</strong></h5>
+            <span><em>Organizátor, lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:tozitka@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/tozitka"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://www.github.com/zitkat"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Honza Steinbach</strong></h5>
+            <span><em>Organizátor - TechHeaven</em></span>
+            <ul><li><a href="mailto:honza@techheaven.org"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/vladimir_t.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Vláďa Toncar</strong></h5>
+            <span><em>Lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:vladimir@toncar.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/jakub_cervinka.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jakub Červinka</strong></h5>
+            <span><em>Lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:cervinka.jakub.1989@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/jakub.cervinka"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://github.com/JakubDotPy"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://twitter.com/JakubDotPy"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="https://www.linkedin.com/in/jakub-%C4%8Dervinka-2972079b/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Tomáš Andrle</strong></h5>
+            <span><em>Lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:tom.andrle@post.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Ondřej Kopáček</strong></h5>
+            <span><em>Lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:ondra.kopacek@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/jiri_smolik.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jiří Smolík</strong></h5>
+            <span><em>Vedlejší kouč</em></span>
+            <ul><li><a href="mailto:smoldosh@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/petr_fiser.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petr Fišer</strong></h5>
+            <span><em>Organizátor, lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:fiser.p@volny.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Václav Fiala</strong></h5>
+            <span><em>Vedlejší kouč</em></span>
+            <ul><li><a href="mailto:fialav8@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/jana_k.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jana Koukalová</strong></h5>
+            <span><em>Lektorka, vedlejší koučka</em></span>
+            <ul><li><a href="mailto:koukalova.jana@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/janca.koukalova/"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://www.github.com/koukalka"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.skoukalkou.online"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://www.linkedin.com/in/janakoukalova/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/kuba_l.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jakub Lenk</strong></h5>
+            <span><em>Vedlejší kouč</em></span>
+            <ul><li><a href="mailto:jakub.lenk@icloud.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://github.com/jakub85"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.lenk.solutions"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://www.linkedin.com/in/jakub-lenk/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Adéla Kristejnová</strong></h5>
+            <span><em>Vedlejší koučka</em></span>
+            <ul><li><a href="mailto:kristejnovaa@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Lucie Jimenez</strong></h5>
+            <span><em>Vedlejší koučka</em></span>
+            <ul><li><a href="mailto:lucie.jimenez@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/rudolf_k.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Rudolf Klusal</strong></h5>
+            <span><em>Lektor, vedlejší kouč</em></span>
+            <ul><li><a href="mailto:pyladies@klusik.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/klusik"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://www.linkedin.com/in/klusik/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://www.klusik.cz/"><img src="/static/img/icon/website-link.png" /></a></li></ul>
+          </div>
+        
+      </div>
+    </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2024</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          16. 1. – 16. 4. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://en.mapy.cz/s/gunomaneku"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechTower Plzeň, Slovany,
+                Koterovská 2827/152, 326 00 Plzeň
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 9. – 13. 12. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. 2. – 10. 5. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/plzen-jaro-2022/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2021</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 10. – 14. 12. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/plzen-podzim-2021/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Navazující kurz <br> Jarní 2021</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          26. 1. – 25. 5. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          lekce úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            online
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://github.com/pyladies-pilsen/materialy-pokrocily-kurz"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. 9. – 15. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          společné lekce úterky 18:00 – 20:00, práce ve skupinách dle domluvy
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/plzen-podzim-2020/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          11. 2. – 19. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - Opakovací <br> Říjen 2019 <br></h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Opakování prvních 5 lekci začátečnického kurzu</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          27. 10. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 9. – 10. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/plzen-podzim-2019/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - únor 2019 <br> Datová analýza</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Jupyter a Pandas při zpracování dat</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 2. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:30 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 2. – 21. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky (17:00) 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/3k5el"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            TechHeaven HUB 2, vedle DEPO2015,
+                Cukrovarská 20, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/plzen-jaro-2019/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. – 18. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/33dzG"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            DEPO2015,
+                Cukrovarská 2996/23, 301 00 Plzeň 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-plzen-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>

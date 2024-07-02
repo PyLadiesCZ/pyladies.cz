@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="current-page">
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>HRADEC KRÁLOVÉ</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop v Hradci</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 4. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 - 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Leden 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 1. – 19. 3. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          21. 3. – 16. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-hradec-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+      
+    
+    <div>
+        <a href="#past-meetups">
+            
+                A další 2 akce už jsou za námi!
+            
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    
+
+    
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        
+
+        Čekáš na otevření přihlášek na další?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="mailto:brabcova.ivana@gmail.com">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš organizátorce</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">Tým hradeckých PyLadies</h2>
+      <div class="team ">
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Ivana Brabcová</strong></h5>
+            <span><em>Organizátorka</em></span>
+            <ul><li><a href="mailto:brabcova.ivana@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/hradec/team/JirkaV.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jirka Vejražka</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:Jirka.Vejrazka@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/jirkavejrazka/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://twitter.com/JirkaV"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="http://www.vejrazka.name"><img src="/static/img/icon/website-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/plzen/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Robert Richter</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/hradec/team/vlaxa.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Vladan Laxa</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:vlaxa@latraxa.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/vlaxa/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://www.facebook.com/latraxa"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://twitter.com/latraxa"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="http://www.latraxa.cz"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://github.com/vlaxa"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+      </div>
+    </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop v Hradci</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 4. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 - 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Leden 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 1. – 19. 3. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          21. 3. – 16. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-hradec-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 11. – 20. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2038156&amp;x=15.8287966&amp;z=16&amp;id=15.8287966%2C50.2038156&amp;source=coor&amp;q=Univerzita+Hradec+Kr%C3%A1lov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Univerzita Hradec Králové,
+                Hradecká 1285, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-hradec-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop v Hradci</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 3. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:00 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=50.2123086&amp;x=15.8389489&amp;z=16&amp;id=15.8389489%2C50.2123086&amp;source=coor&amp;q=Gymn%C3%A1zium+Bo%C5%BEeny+N%C4%9Bmcov%C3%A9"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Gymnázium Boženy Němcové,
+                Pospíšilova 324, Hradec Králové
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/snake-hradec/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>

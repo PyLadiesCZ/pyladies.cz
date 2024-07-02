@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="current-page">
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>OLOMOUC</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 10. 2021 – 3. 2. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 9. – 17. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-olomouc-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          9. 1. – 30. 4. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-olomouc-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        
+
+        Čekáš na otevření přihlášek na další?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="https://groups.google.com/forum/#!forum/pyladies-olomouc">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/google-group.png" />
+                        <h4 class="about-title">Google Group PyLadies Olomouc</h4>
+                    </div>
+                </a>
+            
+                <a href="mailto:filip.valder@gmail.com">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš koučovi</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">Tým olomouckých PyLadies</h2>
+      <div class="team ">
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/dan_nepejchal.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Dan Nepejchal</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/filip_valder.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Filip Valder</strong></h5>
+            <span><em>Organizátor/Hlavní kouč</em></span>
+            <ul><li><a href="https://www.facebook.com/profile.php?id=100012379782021"><img src="/static/img/icon/facebook.png" /></a></li><li><a href="https://www.linkedin.com/in/filip-valder-7296a3122"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="mailto:filip.valder@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/iveta_kovarikova.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Iveta Kovaříková</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/jana_marashli.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jana Marashli</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/kuba_beranek.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Kuba Beránek</strong></h5>
+            <span><em>Kontrolor domácích projektů</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/lubomir_pribyla.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Lubomír Přibyla</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Tereza Kovačíková</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/verka_fisarova.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Věrka Fišarová</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Vojta Beran</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/olomouc/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Martin Tichý</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul></ul>
+          </div>
+        
+      </div>
+    </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 10. 2021 – 3. 2. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 9. – 17. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-olomouc-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Olomouc <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          9. 1. – 30. 4. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/iHKueXfExciQ1tZ9A"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            ZŠ Holečkova,
+                Holečkova 10, 779 00 Olomouc
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-olomouc-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>

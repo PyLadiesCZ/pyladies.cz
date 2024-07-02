@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="current-page">
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>OSTRAVA</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Online mentoring</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Indivuduální online mentoring týkající se Pythonu nebo příbuzných témat</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 9. 2023 – 30. 6. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            online
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+            
+    <li >
+        
+            <a href="https://docs.google.com/document/d/1LGhQ2DZju5YoLx3J_R5iQsyNy-K0b2zNw09Pf6hW2PQ/edit?usp=sharing"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+              Příručka online mentoringu
+            </span>
+        
+            </a>
+        
+    </li>
+  
+          
+            
+    <li >
+        
+            <a href="https://docs.google.com/document/d/1OnQ5ku3weVDd0gTNe8uQuxTRtz3neMwhxm37NcVqMS4/edit?usp=sharing"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+              Online mentoring guide
+            </span>
+        
+            </a>
+        
+    </li>
+  
+          
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Workshop 3D tisku</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          28. 10. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 16:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://maps.app.goo.gl/ahdR8vw1LDw3ic6y5"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Moravskoslezská vědecká knihovna v Ostravě,
+                Prokešovo náměstí 1802/9, Ostrava, 70200
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 10. 2022 – 25. 1. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/ostrava-python/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+      
+    
+    <div>
+        <a href="#past-meetups">
+            
+                A dalších 20 kurzů a srazů už je za námi!
+            
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    
+
+    
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        
+
+        Čekáš na otevření přihlášek na další?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="https://www.facebook.com/pyladiesostrava/">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/facebook.png" />
+                        <h4 class="about-title">Facebook PyLadies Ostrava</h4>
+                    </div>
+                </a>
+            
+                <a href="https://groups.google.com/forum/#!forum/pyladies-ostrava">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/google-group.png" />
+                        <h4 class="about-title">Google Group PyLadies Ostrava</h4>
+                    </div>
+                </a>
+            
+                <a href="mailto:ostrava@pyladies.cz">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš organizátorům</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Ostravě?</h2>
+                <p class="course-city-p">Chtěly jsme umět něco, co nás ve škole nenaučí. A tak jednoho dne nás na cestu Pythonu přivedl bratr jedné z nás. Začaly jsme hledat možnost, jak nejlépe se ho naučit. Po dlouhém rozmýšlení a hledání jsme se rozhodly pro Pyladies. Dojíždění do Prahy či Brna nepřicházelo v úvahu a tak jsme se prostě rozhodly založit kurz v Ostravě.</p>
+                <p class="course-city-p">Věříme, že i vy se chcete naučit něco víc, a že to víc najdete právě u nás. Doufáme, že vám naše lekce nebudou přinášet jen ponaučení a vědomosti, ale i zábavu a nové přátele. Můžete se také těšit na jiné akce, které pro vás chystáme v průběhu roku.</p>
+            </div>
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">Tým ostravských PyLadies</h2>
+      <div class="team ">
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/lumir.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Lumír Balhar</strong></h5>
+            <span><em>Organizátor/Hlavní Kouč</em></span>
+            <ul><li><a href="https://cz.linkedin.com/in/lumír-balhar-b173833a"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="http://www.frenzy.cz/"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://github.com/frenzymadness"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://twitter.com/lumirbalhar"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="mailto:frenzy.madness@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/lumir.balhar"><img src="/static/img/icon/facebook.png" /></a></li><li><a href="https://www.instagram.com/frenzymadness/"><img src="/static/img/icon/instagram.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/petra.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petra Číhalová</strong></h5>
+            <span><em>Koučka a kontrolorka domácích projektů</em></span>
+            <ul><li><a href="https://www.linkedin.com/in/petra-číhalová-469092166"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://github.com/Disi77"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/lucka.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Lucie Tížková</strong></h5>
+            <span><em>Organizátorka</em></span>
+            <ul><li><a href="https://www.linkedin.com/in/lucie-t%C3%AD%C5%BEkov%C3%A1-103563140"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="mailto:lucie.tizkova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/david.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>David Štroch</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="https://github.com/nappex"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/martin_curlej.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Martin Čurlej</strong></h5>
+            <span><em>Kontrolor domácích projektů</em></span>
+            <ul><li><a href="https://www.linkedin.com/in/martin-%C4%8Durlej-06aa0b49/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://github.com/mcurlej"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="mailto:martin.curlej@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/glutexo.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Glutexo</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="https://www.instagram.com/glutexokun/"><img src="/static/img/icon/instagram.png" /></a></li><li><a href="https://www.facebook.com/glutexo"><img src="/static/img/icon/facebook.png" /></a></li><li><a href="https://www.linkedin.com/in/glutexo"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://github.com/Glutexo"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://twitter.com/Glutexo"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="mailto:glutexo@icloud.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/ostrava/team/martina.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Martina Zátopková</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul><li><a href="mailto:martulie@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+      </div>
+    </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Online mentoring</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Indivuduální online mentoring týkající se Pythonu nebo příbuzných témat</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 9. 2023 – 30. 6. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            online
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+            
+    <li >
+        
+            <a href="https://docs.google.com/document/d/1LGhQ2DZju5YoLx3J_R5iQsyNy-K0b2zNw09Pf6hW2PQ/edit?usp=sharing"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+              Příručka online mentoringu
+            </span>
+        
+            </a>
+        
+    </li>
+  
+          
+            
+    <li >
+        
+            <a href="https://docs.google.com/document/d/1OnQ5ku3weVDd0gTNe8uQuxTRtz3neMwhxm37NcVqMS4/edit?usp=sharing"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+              Online mentoring guide
+            </span>
+        
+            </a>
+        
+    </li>
+  
+          
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Workshop 3D tisku</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          28. 10. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 16:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://maps.app.goo.gl/ahdR8vw1LDw3ic6y5"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Moravskoslezská vědecká knihovna v Ostravě,
+                Prokešovo náměstí 1802/9, Ostrava, 70200
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 10. 2022 – 25. 1. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/ostrava-python/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Workshop datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 3. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Advent of Code 2021</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 12. 2021 – 4. 1. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            online
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> týmový začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. 9. – 15. 12. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pyladies-ostrava-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          9. 9. – 16. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každá středa 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-ostrava-podzim-pokrocili/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          8. 9. – 15. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-ostrava-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> kurz datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 2. – 13. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každá středa 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pydata-ostrava-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 2. – 12. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-ostrava-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 9. – 11. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každá středa 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-ostrava-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking Testování</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 16:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/PwVbHAu38vbKmyFc7"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Quadient s.r.o.,
+                The Orchard III, Hornopolní 3322/34, 702 00 Moravská Ostrava a Přívoz
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Workshop na téma git, Github a open source</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          2. 3. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/e5EzCaeFgYC2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Moravskoslezské inovační centrum,
+                Technologická 375/3, 708 00 Ostrava-Pustkovec
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/ostrava-git-workshop/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 2. – 14. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-ostrava-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Workshop datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/e5EzCaeFgYC2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Moravskoslezské inovační centrum,
+                Technologická 375/3, 708 00 Ostrava-Pustkovec
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 9. – 12. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-ostrava-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 2. – 16. 5. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2018/pyladies-ostrava-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">MicroPython workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          21. 4. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 15:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/m9PcPDokQnC2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Nová FEI (VŠB) místnost EB229,
+                17. listopadu 2172/15, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 9. – 19. 12. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-ostrava-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 3. – 31. 5. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 17:00 - 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-ostrava-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">MicroPython workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 3. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/jkhhUVTtc9m"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            klubovna Pirátské strany,
+                Jugoslávská 3038/40A, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Ostrava <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 10. 2016 – 31. 1. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/rq7CrLf9x2A2"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Tieto Towers,
+                28. října 3346/91, Ostrava
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Advanced PyLadies <br> pokročilé a doučovací srazy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 3. – 26. 6. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 19:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/hKpiFtjqKnp"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            VŠB TUO - FEI,
+                17. listopadu 15, Ostrava - Poruba
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>
