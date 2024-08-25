@@ -416,3 +416,13 @@
     url: https://docs.google.com/forms/d/e/1FAIpQLSe2-t09XJMO-9xx2wTZYw4r4RkxF65g8xkKxSc1EPg7oVmE-A/viewform
     text: Registrace právě probíhá!
     end: 2023-02-15
+
+- name: PyLadies Praha <br> začátečnický kurz
+  materials: https://naucse.python.cz/2024/praha-pyladies-podzim/
+  start: 2024-09-18
+  end: 2024-12-11
+  time: každou středu 18:00 - 20:00
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLScw3xX9HiS3nDn1gj1hq5u8HynmUZkSa4vqd9Ln-7G3XqwP8g/viewform
+    text: Registrace právě probíhá!
+    end: 2024-09-05
