@@ -535,3 +535,13 @@
   end: 2024-06-12
   time: středy 18:00 – 20:00
   place: *fi-muni
+
+- name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2024/brno-podzim-utery/
+  registration:
+    url: https://forms.gle/6PwsSBYRDjoYCQZE6
+    end: 2024-09-23
+  start: 2024-10-01
+  end: 2024-12-03
+  time: úterky 18:00 – 20:00
+  place: *fi-muni
