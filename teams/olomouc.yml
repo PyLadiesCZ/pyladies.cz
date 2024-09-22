@@ -1,11 +1,34 @@
-- name: Dan Nepejchal
-  img: img/olomouc/team/dan_nepejchal.jpg
+- name: Martin Čurlej
+  img: img/olomouc/team/blank.png
+  role: Organizátor/Hlavní kouč
+  links:
+    - linkedin-link: https://www.linkedin.com/in/martin-%C4%8Durlej-06aa0b49/
+    - mail-link: mailto:martin.curlej@gmail.com
+
+- name: Vojta Beran
+  img: img/olomouc/team/blank.png
+  role: Kouč
+  links: []
+
+- name: Kuba Beránek
+  img: img/olomouc/team/kuba_beranek.jpg
+  role: Kouč
+  links:
+    - github-link: https://github.com/kobzol
+
+- name: Tereza Kovačíková
+  img: img/olomouc/team/blank.png
+  role: Koučka
+  links: []
+
+- name: Lubomír Přibyla
+  img: img/olomouc/team/lubomir_pribyla.jpg
   role: Kouč
   links: []
 
 - name: Filip Valder
   img: img/olomouc/team/filip_valder.jpg
-  role: Organizátor/Hlavní kouč
+  role: Kouč
   links:
   - facebook: https://www.facebook.com/profile.php?id=100012379782021
   - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
@@ -21,29 +44,14 @@
   role: Koučka
   links: []
 
-- name: Kuba Beránek
-  img: img/olomouc/team/kuba_beranek.jpg
-  role: Kontrolor domácích projektů
-  links: []
-
-- name: Lubomír Přibyla
-  img: img/olomouc/team/lubomir_pribyla.jpg
+- name: Dan Nepejchal
+  img: img/olomouc/team/dan_nepejchal.jpg
   role: Kouč
-  links: []
-
-- name: Tereza Kovačíková
-  img: img/olomouc/team/blank.png
-  role: Koučka
   links: []
 
 - name: Věrka Fišarová
   img: img/olomouc/team/verka_fisarova.jpg
   role: Koučka
-  links: []
-
-- name: Vojta Beran
-  img: img/olomouc/team/blank.png
-  role: Kouč
   links: []
 
 - name: Martin Tichý
