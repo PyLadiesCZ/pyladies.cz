@@ -562,8 +562,8 @@
   time: čtvrtky 18:00 – 20:00
   place: *fi-muni
 
-- name: GIMP Workshop
-  #materials: https://naucse.python.cz/2022/snake-brno-podzim/
+- name: GIMP workshop
+  materials: https://naucse.python.cz/2024/brno-gimp/
   registration:
      url: https://forms.gle/najf7wCKtQfc9HSo6
      end: 2024-10-04
