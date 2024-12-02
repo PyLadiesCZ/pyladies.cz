@@ -570,3 +570,12 @@
   date: 2024-10-12
   time: 9:00 – 16:00
   place: *fi-muni
+
+- name: GitWorking
+  materials: https://naucse.python.cz/2019/gitworking-openalt/
+  registration:
+    url: https://forms.gle/GvTgJUT69tBNgoHC6
+    end: 2025-01-20
+  date: 2025-02-01
+  time: sobota 8:30 – 18:00
+  place: *rh
