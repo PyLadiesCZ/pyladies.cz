@@ -58,3 +58,13 @@
   img: img/olomouc/team/blank.png
   role: Kouč
   links: []
+
+- name: Jakub Kadlčík
+  img: img/olomouc/team/jakub_kadlcik.jpg
+  role: Kontrolor domácích projektů
+  links:
+    - twitter-link: https://fosstodon.org/@FrostyX
+    - github-link: https://github.com/FrostyX
+    - website-link: https://frostyx.cz/
+    - facebook: https://www.facebook.com/jakubkadlcik/
+    - instagram: https://www.instagram.com/jakubkadlcik/
