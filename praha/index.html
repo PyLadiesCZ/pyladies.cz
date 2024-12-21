@@ -1,0 +1,3946 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2024/brno-podzim-utery/">
+                                Brno – začátečnický kurz - úterý
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2024/brno-podzim-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2024/pyladies-olomouc-podzim/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li class="current-page">
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                              <span class='city-active-registration'>
+                                Registruj se!
+                              </span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>PRAHA</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Aktuální kurzy a srazy</h2>
+    <div class="meetup">
+      
+         
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pondělní PyWorking sessions Praha <br> - pokročilé a doučovací srazy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          pondělky ve 14denních intervalech
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/SentinelOne+CZ/@50.0949552,14.4435661,17z/data=!3m1!4b1!4m5!3m4!1s0x470b954d528a4593:0xe04c6642f23c7b3f!8m2!3d50.0949552!4d14.4457548?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            SentinelOne,
+                Missouri Park, Karolinská 707/7, Karlín, 3. patro
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+        
+          
+    <li class="button highlight">
+        
+            <a href="https://www.meetup.com/pyworking/"
+        
+        class="meetup-info-item meetup-info-item-edit">
+            <span class="glyphicon glyphicon-edit"></span>
+            <span>
+            Potvrď účast na meetup.com
+          </span>
+        
+            </a>
+        
+    </li>
+  
+          
+        
+      
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+    
+    <div>
+        <a href="#past-meetups">
+            
+                A dalších 44 kurzů a srazů už je za námi!
+            
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    
+
+  </section>
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        Nehodí se ti kurzy, které mají otevřenou registraci?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="https://www.facebook.com/groups/PyLadiesPraha/">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/facebook.png" />
+                        <h4 class="about-title">Facebook PyLadies Praha</h4>
+                    </div>
+                </a>
+            
+                <a href="https://www.facebook.com/groups/PyWorkingPraha/">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/facebook.png" />
+                        <h4 class="about-title">PyWorking Praha</h4>
+                    </div>
+                </a>
+            
+                <a href="https://groups.google.com/forum/#!forum/pyladies-praha">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/google-group.png" />
+                        <h4 class="about-title">Google Group PyLadies Praha</h4>
+                    </div>
+                </a>
+            
+                <a href="mailto:praha@pyladies.cz">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš organizátorkám</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to vzniklo v Praze?</h2>
+                <p class="course-city-p">PyLadies v Praze vznikly v roce 2015 díky iniciativě pražské Python komunity a organizačním schopnostem pár akčních holek, které měly zájem se kurzu samy účastnit.  Spouštěcím impulsem byl i úspěch jednodenního workshopu Django Girls Prague, rovněž zaměřeného na programování v Pythonu. Vytvořili jsme pražskou pilotní skupinu PyLadies a během prvního kurzu společně vylaďovali organizaci i náplň pražských srazů do současné podoby. Nyní kurz PyLadies představuje zhruba 13 dvouhodinových lekcí, které jsou doplněny i samostatnou prací na domácích projektech.</p>
+                <p class="course-city-p">Na kurz pro začátečnice jsme v roce 2016 navázaly pravidelnými pondělními srazy (PyWorking sessions) pro pokročilejší začátečnice, kde mohou absolventky našeho kurzu pracovat na svých vlastních projektech pod vedením zkušených mentorů.</p>
+            </div>
+            <div class="city-images">
+                <div class="course-city-images">
+                    <img src="/static/img/praha/praha1.jpg" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="/static/img/praha/praha2.jpg" class="img-responsive city-img " />
+                </div>
+                <div class="course-city-images">
+                    <img src="/static/img/praha/praha3.jpg" class="img-responsive city-img" />
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-10">
+                <p class="course-city-p">Společné setkávání v rámci PyLadies má velkou výhodu v tom, že se můžou holky navzájem průběžně motivovat a podporovat. Začátky bývají těžké, ale komunita kolem PyLadies vždy ochotně pomůže počáteční překážky překonávat. Díky týmu nadšenců fungují PyLadies čistě na dobrovolné a nezištné bázi.</p>
+            </div>
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      <h2 class="course-city-heading">Tým pražských PyLadies</h2>
+      <div class="team ">
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/terezavan.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Tereza Vaňková</strong></h5>
+            <span><em>Organizátorka - kurz NTK</em></span>
+            <ul><li><a href="mailto:vankova.terezaa@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/tereza.vankova.7"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://twitter.com/VanekTereza?lang=cs"><img src="/static/img/icon/twitter-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/zuzanita.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Zuzana Pokorná</strong></h5>
+            <span><em>Organizátorka - kurz NTK</em></span>
+            <ul><li><a href="mailto:zuzanapokorna@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/veronikas.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Veronika Sarkányová</strong></h5>
+            <span><em>Organizátorka - kurz NTK</em></span>
+            <ul><li><a href="mailto:veronika.sarkanyova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/lucka.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Lucka Říhová</strong></h5>
+            <span><em>Organizátorka - kurz NTK</em></span>
+            <ul><li><a href="mailto:luc.rihova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://m.facebook.com/luc.rihova"><img src="/static/img/icon/facebook-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/radka.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Radka Planková</strong></h5>
+            <span><em>Organizátorka - kurz CZ.NIC</em></span>
+            <ul><li><a href="mailto:radka.plankova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/radka.plankova"><img src="/static/img/icon/facebook-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/eliska-doktorova.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Eliška Doktorová</strong></h5>
+            <span><em>Organizátorka - kurz CZ.NIC</em></span>
+            <ul><li><a href="mailto:eliska.doktorova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/zuzka-k.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Zuzana Kašáková</strong></h5>
+            <span><em>Organizátorka/Koučka</em></span>
+            <ul><li><a href="mailto:zuza.kasakova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/michaelakrouzkova.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Michaela Kroužková</strong></h5>
+            <span><em>Organizátorka - kurz Olšanka</em></span>
+            <ul><li><a href="mailto:michaelakrouzkova@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/brno/team/blank.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Jana Slouková</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul><li><a href="mailto:j.sloukova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/messa.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petr Messner</strong></h5>
+            <span><em>Kouč/Kurátor odevzdávátka</em></span>
+            <ul><li><a href="mailto:petr.messner@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/petr.messner"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://github.com/messa"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/petra.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petra Vidnerová</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul><li><a href="mailto:petra.vidnerova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/vojta2.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Vojtěch Růžička</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="https://vojtechruzicka.com/"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://twitter.com/vojtechruzicka"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="mailto:vojtech.ruz@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/vasek.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Vašek Chalupníček</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="https://github.com/vasekch"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/v%C3%A1clav-chalupn%C3%AD%C4%8Dek-15a2b228"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/oskar.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Oskar Hollmann</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="https://github.com/asgeirrr"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://twitter.com/OskarHollmann"><img src="/static/img/icon/twitter-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/mirek.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Mirek Brabenec</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:brabemi@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/miroslav.brabenec"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://github.com/brabemi"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/lessa.png" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petr Lessner</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:petr.lessner+pyladies@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/lessay"><img src="/static/img/icon/facebook-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/petrmatuska2.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petr Matuška</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:matuska.petr@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/matuska.petr"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://cz.linkedin.com/in/matuskapetr"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/miro.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Miro Hrončok</strong></h5>
+            <span><em>Kouč</em></span>
+            <ul><li><a href="mailto:miro@hroncok.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.facebook.com/hroncok"><img src="/static/img/icon/facebook-link.png" /></a></li><li><a href="https://twitter.com/hroncok"><img src="/static/img/icon/twitter-link.png" /></a></li><li><a href="http://hroncok.cz/"><img src="/static/img/icon/website-link.png" /></a></li><li><a href="https://github.com/hroncok"><img src="/static/img/icon/github-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/nada.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Naďa Jašíková</strong></h5>
+            <span><em>Koučka</em></span>
+            <ul><li><a href="https://github.com/nadade"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.facebook.com/nada.jasikova"><img src="/static/img/icon/facebook-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/brno/team/petrv.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Petr Viktorin</strong></h5>
+            <span><em>Kouč v Brně/Tvůrce materiálů</em></span>
+            <ul><li><a href="http://encukou.cz"><img src="/static/img/icon/website-link.png" /></a></li></ul>
+          </div>
+        
+          <div class="person">
+            <div class="member-photo">
+              <img src="/static/img/praha/team/zuzka.jpg" class="img-circle" />
+             </div>
+            <h5 class="member-name"><strong>Zuzka Javorková</strong></h5>
+            <span><em>organizátorka/pamětnice :)</em></span>
+            <ul><li><a href="mailto:valkova.zuza@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+          </div>
+        
+      </div>
+    </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          18. 9. – 11. 12. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/praha-pyladies-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 3. – 24. 5. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2023/praha-pyladies-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          21. 9. – 14. 12. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/praha-pyladies-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 11. 2021 – 10. 2. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pyladies-praha-podzim2021/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyData kurz pro PyLadies <br> Kurz datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 9. – 16. 12. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pydata-praha-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> on-line začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 3. – 17. 6. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pyladies-praha-jaro2021/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyData kurz pro PyLadies <br> On-line kurz datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 3. – 9. 6. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> on-line začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          16. 9. – 9. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-praha-podzim2020/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyData kurz pro PyLadies <br> Navazující kurz datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. 9. – 15. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz středa Barclays</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 3. – 30. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/Hxy3cfYx9kRygoJD6"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Barclays,
+                Na Pankráci 1683/127, 140 00 Praha 4
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-praha-jaro2020-barclays/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz úterý Olšanka</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          3. 3. – 30. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            cz.nic, hotel Olšanka,
+                Táboritská 23/1000, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/pyladies-praha-jaro-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyData kurz pro PyLadies <br> Navazující kurz datové analýzy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 1. – 9. 4. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz středa NTK</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          18. 9. – 4. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Národní technická knihovna,
+                Technická 2710/6, Praha 6
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-praha-podzim-ntk/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz úterý CZ.NIC</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 9. – 3. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            cz.nic, hotel Olšanka,
+                Táboritská 23/1000, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-praha-podzim-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Webová API</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:30 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://goo.gl/maps/Hxy3cfYx9kRygoJD6"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Barclays,
+                Na Pankráci 1683/127, 140 00 Praha 4
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz čtvrtek NTK</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 3. – 30. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Národní technická knihovna,
+                Technická 2710/6, Praha 6
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-praha-jaro-ntk/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz úterý CZ.NIC</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 3. – 28. 5. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            cz.nic, hotel Olšanka,
+                Táboritská 23/1000, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-praha-jaro-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies - English edition <br> Basics</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. – 18. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          every Tuesday 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/V+Parku+8,+148+00+Praha+11/@50.0284058,14.4912512,17z/data=!4m13!1m7!3m6!1s0x470b922d8afc9055:0xc8632bd29d35a35b!2sV+Parku+8,+148+00+Praha+11!3b1!8m2!3d50.0284058!4d14.4934399!3m4!1s0x470b922d8afc9055:0xc8632bd29d35a35b!8m2!3d50.0284058!4d14.4934399"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            CA Technologies,
+                V Parku 8, Praha Chodov
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-en-prague/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz čtvrtek</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 9. – 6. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.com/maps/place/U+Zem%C4%9Bpisn%C3%A9ho+%C3%BAstavu+508%2F12,+160+00+Praha+6-Bubene%C4%8D/@50.1040443,14.3996057,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9525f9587a0f:0x8f75335638b84570!8m2!3d50.1040409!4d14.4017944"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Bubeneč,
+                U Zeměpisného ústavu 508/12, Praha 6-Bubeneč
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-praha-podzim-bubenec/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz středa</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 9. – 5. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Národní technická knihovna,
+                Technická 2710/6, Praha 6
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-praha-podzim-ntk/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz úterý</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          11. 9. – 4. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            cz.nic, hotel Olšanka,
+                Táboritská 23/1000, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-praha-podzim-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz čtvrtek</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          8. 3. – 31. 5. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Hotel+Ol%C5%A1anka/@50.0828549,14.4552392,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9361dfdd06b7:0x967cf4b46e46fa30!8m2!3d50.0828549!4d14.4574279"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            cz.nic, hotel Olšanka,
+                Táboritská 23/1000, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2018/pyladies-praha-jaro-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Pyladies Praha <br> začátečnický kurz středa</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 3. – 30. 5. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Národní technická knihovna,
+                Technická 2710/6, Praha 6
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2018/pyladies-praha-jaro-ntk/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz pondělí</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. – 18. 12. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé pondělí 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/N%C3%A1rodn%C3%AD+technick%C3%A1+knihovna/@50.1039236,14.3885145,17z/data=!4m5!3m4!1s0x0:0x917af83b84a0902!8m2!3d50.1039236!4d14.3907031"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Národní technická knihovna,
+                Technická 2710/6, Praha 6
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-praha-podzim-ntk/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz úterý</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 9. – 12. 12. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-praha-podzim-cznic/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Datová analýza v Pythonu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 10. – 2. 11. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý čtvrtek 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Říjnový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Vue.js a Django</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. 10. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Apiary,
+                Pernerova 49, Praha 8 - Karlín
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Zářijový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Pandas</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          2. 9. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            MSD IT (Riverview),
+                Svornosti 3321/2, Praha 5
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies workshop MicroPythonu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. – 25. 5. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Apiary, CZ.NIC
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Květnový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Internety</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 5. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            MSD IT (Riverview),
+                Svornosti 3321/2, Praha 5
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Dubnový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Databáze</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          8. 4. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            MSD IT (Riverview),
+                Svornosti 3321/2, Praha 5
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. 3. – 6. 6. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Kurz Webfrontend <br> Tvorba webu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          31. 1. – 28. 2. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Apiary,
+                Pernerova 49, Praha 8 - Karlín
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Kurz Testování <br> vhled do automatizovaného testování</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. – 15. 1. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 16:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Lednový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Django Polls</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          28. 1. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            MSD IT (Riverview),
+                Svornosti 3321/2, Praha 5
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 10. – 21. 12. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každou středu 18:30 - 20:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/MSD/@50.0670442,14.408024,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945967ee4865:0x99578d127cf52018!8m2!3d50.0670442!4d14.4102127"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            MSD IT (Riverview),
+                Svornosti 3321/2, Praha 5
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Vánoční MicroPython <br>
+pokračování začátečnického MicroPython kurzu
+s <a href="https://twitter.com/josefrousek">Josefem Rouskem</a></h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 12. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          18:00 - 20:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/%C5%A0tef%C3%A1nikova+13%2F43,+150+00+Praha+5-Sm%C3%ADchov/@50.0764314,14.4016603,17z/data=!3m1!4b1!4m5!3m4!1s0x470b94f938dd9c6d:0xa7239b1dd6398d30!8m2!3d50.0764314!4d14.403849"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Usertech,
+                Štefánikova 43a, Praha 5 - Anděl
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Prosincový PyWorking <br> meetup pro pokročilé začátečníky</h4>
+      <ul>
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-tag">
+            <span class="glyphicon glyphicon-tag"></span>
+            <span>
+          <div>Django - první webová aplikace</div>
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 12. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 - 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/Apiary/@50.0919519,14.4544029,15z/data=!4m5!3m4!1s0x0:0xf904379c587b1bb7!8m2!3d50.0919519!4d14.4544029"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Apiary,
+                Pernerova 49, Praha 8 - Karlín
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 9. – 6. 12. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé úterý 18:00 - 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 4. – 28. 6. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            budova CZ.NIC,
+                Milešovská 5, Praha 3
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> spustili jsme pokročilé a doučovací srazy</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 4. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každý týden na dvě hodiny
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            probíhaly na různých místech v Praze
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Jednodenní hardwarový workshop u Prahy <br> MicroPython a LED světýlka</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 8. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          celý den
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://www.msene-lazne.cz/"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mšené-Lázně
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 11. 2015 – 23. 2. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis Praha,
+                Florentinum, recepce C, Na Florenci 2116/15, 110 00 Praha 1
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyLadies Praha <br> začátečnický kurz</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 6. – 29. 9. 2015
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+        
+    <li >
+        
+            <a href="https://www.google.cz/maps/place/CZ.NIC,+z.+s.+p.+o./@50.079123,14.4490963,17z/data=!3m1!4b1!4m2!3m1!1s0x417314ec0f1850d3:0x7fea48d126f93e72?hl=cs"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis Praha,
+                Florentinum, recepce C, Na Florenci 2116/15, 110 00 Praha 1
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>
