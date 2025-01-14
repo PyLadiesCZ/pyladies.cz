@@ -581,7 +581,7 @@
   place: *rh
 
 - name: Hadí workshop
-  materials: https://naucse.python.cz/2024/snake-brno-podzim/
+  materials: https://naucse.python.cz/2025/snake-brno-zima/
   registration:
      url: https://forms.gle/g3m98wJRj9177oHf6
      end: 2025-01-10
