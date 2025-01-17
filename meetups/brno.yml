@@ -588,3 +588,14 @@
   date: 2025-01-18
   time: 8:30 – 18:00
   place: *rh
+
+- name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2024/brno-podzim-utery/
+  registration:
+    url: https://forms.gle/RGpvAUtZxr9HG5p99
+    end: 2025-02-17
+  start: 2025-02-25
+  end: 2025-04-29
+  time: úterky 18:00 – 20:00
+  place: *fi-muni
+  
