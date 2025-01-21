@@ -590,7 +590,7 @@
   place: *rh
 
 - name: Začátečnický kurz naruby
-  materials: https://naucse.python.cz/2024/brno-podzim-utery/
+  materials: https://naucse.python.cz/2025/brno-jaro-utery/
   registration:
     url: https://forms.gle/RGpvAUtZxr9HG5p99
     end: 2025-02-17
