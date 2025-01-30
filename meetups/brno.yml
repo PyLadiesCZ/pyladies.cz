@@ -598,4 +598,15 @@
   end: 2025-04-29
   time: úterky 18:00 – 20:00
   place: *fi-muni
+
+- name: Python a jeho knihovny
+  materials: https://github.com/PyLadiesCZ-Brno/python-knihovny
+  registration:
+    url: https://forms.gle/n1s5pEF4ssZmX8rg8
+    end: 2025-02-10
+  start: 2025-02-17
+  end: 2025-04-28
+  time: pondělky 18:00 – 20:30
+  place: *fi-muni
+
   
