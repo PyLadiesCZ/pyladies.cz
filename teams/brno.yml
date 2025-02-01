@@ -140,3 +140,10 @@
   role: Kouč
   links:
    - mail-link: mailto:turak97@gmail.com
+
+- name: Alicja Kario
+  img: img/brno/team/alicja.jpg
+  role: Koučka
+  links:
+    - github-link: https://github.com/tomato42
+    - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2/
