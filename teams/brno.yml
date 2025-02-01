@@ -3,6 +3,7 @@
   role: Organizátorka
   links:
   - mail-link: mailto:daniela.d@pyladies.cz
+  - linkedin-link: https://www.linkedin.com/in/daniela-902dd/
 
 - name: Petra Adámková
   img: img/brno/team/petra.png
@@ -36,10 +37,12 @@
   role: Lektor
 
 - name: Eliška Jégrová
-  img: img/brno/team/eliska.jpg
+  img: img/brno/team/eliska.png
   role: Lektorka/Koučka
   links:
   - mail-link: mailto:jegrovaeliska@seznam.cz
+  - github-link: https://github.com/ejegrova/
+  - linkedin-link: https://www.linkedin.com/in/eliska-jegrova-973940167
 
 - name: Martin Zelený
   img: img/brno/team/mzeleny.jpg
@@ -63,7 +66,7 @@
   - twitter-link: https://twitter.com/luipenox
 
 - name: Pavlína Váňová
-  img: img/brno/team/blank.png
+  img: img/brno/team/pavlinav.jpg
   role: Organizátorka/Koučka
 
 - name: Šárka Melicharová
@@ -71,10 +74,6 @@
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:sarka-melicharova@seznam.cz
-
-- name: Kristýna Papežová
-  img: img/brno/team/blank.png
-  role: Organizátorka/Koučka
 
 - name: Karolina Surma
   img: img/brno/team/karolina.jpg
@@ -89,10 +88,6 @@
   - mail-link: mailto:tuzticzka@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
 
-- name: Káťa Chmelařová
-  img: img/brno/team/blank.png
-  role: Koučka
-
 - name: Veronika Konečná
   img: img/brno/team/blank.png
   role: Koučka
@@ -103,10 +98,6 @@
   links:
   - mail-link: mailto:antalovova@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martina-ant/
-
-- name: Tomáš Hrnčiar
-  img: img/brno/team/blank.png
-  role: Kouč
 
 - name: Jiří Podivín
   img: img/brno/team/jpodivin.jpeg
@@ -119,17 +110,9 @@
   img: img/brno/team/blank.png
   role: Kouč
 
-- name: Zdenek Lovecek
-  img: img/brno/team/blank.png
-  role: Kouč
-
 - name: Markéta Dalecká
   img: img/brno/team/blank.png
   role: Koučka
-
-- name: Erik Belko
-  img: img/brno/team/blank.png
-  role: Kouč
 
 - name: Barbora Baláková
   img: img/brno/team/blank.png
@@ -146,4 +129,21 @@
   role: Koučka
   links:
     - github-link: https://github.com/tomato42
-    - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2/
+    - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
+    
+- name: Veronika Čierna
+  img: img/brno/team/veronika.jpg
+  role: Koučka
+
+- name: Ondra Vagner
+  img: img/brno/team/ondra.png
+  role: Kouč
+  links:
+    - linkedin-link: https://www.linkedin.comond%C5%99ej-vagner-38401458/
+    
+- name: Tomáš Nevrlka
+  img: img/brno/team/tnevrlka.jpg
+  role: Lektor/Kouč
+ links:
+    - github-link: https://github.com/tnevrlka
+    - linkedin-link: https://www.linkedin.com/in/tnevrlka
