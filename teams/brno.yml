@@ -69,12 +69,6 @@
   img: img/brno/team/pavlinav.jpg
   role: Organizátorka/Koučka
 
-- name: Šárka Melicharová
-  img: img/brno/team/saja.jpg
-  role: Organizátorka/Koučka
-  links:
-  - mail-link: mailto:sarka-melicharova@seznam.cz
-
 - name: Karolina Surma
   img: img/brno/team/karolina.jpg
   role: Koučka/Copywriterka
@@ -87,10 +81,6 @@
   links:
   - mail-link: mailto:tuzticzka@gmail.com
   - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
-
-- name: Veronika Konečná
-  img: img/brno/team/blank.png
-  role: Koučka
 
 - name: Martina Antalovová
   img: img/brno/team/martinaa.jpg
@@ -109,14 +99,6 @@
 - name: Adam Cmiel
   img: img/brno/team/blank.png
   role: Kouč
-
-- name: Markéta Dalecká
-  img: img/brno/team/blank.png
-  role: Koučka
-
-- name: Barbora Baláková
-  img: img/brno/team/blank.png
-  role: Koučka
 
 - name: Otakar Joch
   img: img/brno/team/otakar.jpg
