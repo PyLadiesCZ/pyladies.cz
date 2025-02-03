@@ -97,8 +97,11 @@
   - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
 
 - name: Adam Cmiel
-  img: img/brno/team/blank.png
+  img: img/brno/team/acmiel.jpg
   role: Kouč
+  links:
+    - github-link: https://github.com/chmeliik
+    - mail-link: mailto:acmiel1@gmail.com
 
 - name: Otakar Joch
   img: img/brno/team/otakar.jpg
