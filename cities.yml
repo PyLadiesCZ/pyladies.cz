@@ -60,12 +60,9 @@ olomouc:
     title: Olomouc
     team-name: Tým olomouckých PyLadies
     contacts:
-        Google Group PyLadies Olomouc:
-            icon: google-group
-            url: https://groups.google.com/forum/#!forum/pyladies-olomouc
         Napiš koučovi:
             icon: coach
-            url: mailto:filip.valder@gmail.com
+            url: mailto:martin.curlej@gmail.com
 hradec:
     title: Hradec Králové
     team-name: Tým hradeckých PyLadies
