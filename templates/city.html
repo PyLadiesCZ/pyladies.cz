@@ -110,6 +110,26 @@
     {% endif %}
 {% endmacro %}
 
+{% macro team_section(name, team) %}
+  <h2 class="course-city-heading">{{ name }}</h2>
+  <div class="team ">
+    {% for member in team %}
+      <div class="person">
+        <div class="member-photo">
+          <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
+        <span><em>{{ member.role }}</em></span>
+        <ul>
+          {%- for link in member.links -%}{%- for type, url in link.items() -%}
+            <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
+          {%- endfor -%}{%- endfor -%}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
 {% block content %}
   <!-- Intro Header -->
   <header class="intro-city">
@@ -320,23 +340,7 @@
     {% if team %}
     <!-- Team section -->
     <section id="team" class="container" >
-      <h2 class="course-city-heading">{{ team_name }}</h2>
-      <div class="team ">
-        {% for member in team %}
-          <div class="person">
-            <div class="member-photo">
-              <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle" />
-             </div>
-            <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
-            <span><em>{{ member.role }}</em></span>
-            <ul>
-              {%- for link in member.links -%}{%- for type, url in link.items() -%}
-                <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
-              {%- endfor -%}{%- endfor -%}
-            </ul>
-          </div>
-        {% endfor %}
-      </div>
+      {{ team_section(team_name, team) }}
     </section>
     {% endif %}
 
