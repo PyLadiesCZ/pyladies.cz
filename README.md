@@ -178,6 +178,10 @@ Pokud kouč nechce zveřejňovat fotku, jako `img` uveď prázdný avatar:
   role: Koučka
 ```
 
+Pokud je daný kouč/koučka v komunitě již neaktivní, můžete jim přidat vlastnost `alumni: true`.
+Tito bývalí členové se poté vypíšou v separátní sekci. Takto můžeme oddělit aktivní a neaktivní
+členy komunity, a zároveň vzdát hold členům, kteří v minulosti PyLadies pomáhali organizovat.
+
 Volitelně se můžou nastavit odkazy na další profily. Žádný údaj není povinný.
 
 ```

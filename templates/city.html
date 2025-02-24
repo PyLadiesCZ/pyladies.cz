@@ -344,6 +344,13 @@
     </section>
     {% endif %}
 
+    {% if alumni %}
+    <!-- Alumni section -->
+      <section id="alumni" class="container" >
+        {{ team_section("Bývalí členové komunity", alumni) }}
+      </section>
+    {% endif %}
+
   <!-- Past Meetups -->
   {% if past_meetups %}
   <section  class=" container text-center" id="past-meetups">
