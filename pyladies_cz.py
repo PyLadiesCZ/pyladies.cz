@@ -65,6 +65,16 @@ def city(city_slug):
     past_meetups = [m for m in meetups if not m['current']]
     registration_meetups = [
         m for m in current_meetups if m.get('registration_status')=='running']
+
+    members = read_yaml('teams/' + city_slug + '.yml', default=())
+    team = []
+    alumni = []
+    for member in members:
+        if member.get("alumni", False):
+            alumni.append(member)
+        else:
+            team.append(member)
+
     return render_template(
         'city.html',
         city_slug=city_slug,
@@ -75,7 +85,8 @@ def city(city_slug):
         past_meetups=past_meetups,
         registration_meetups=registration_meetups,
         contacts=city.get('contacts'),
-        team=read_yaml('teams/' + city_slug + '.yml', default=()),
+        team=team,
+        alumni=alumni
     )
 
 @app.route('/<city>_course/')
