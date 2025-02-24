@@ -26,37 +26,19 @@
   role: Kouč
   links: []
 
-- name: Filip Valder
-  img: img/olomouc/team/filip_valder.jpg
-  role: Kouč
-  links:
-  - facebook: https://www.facebook.com/profile.php?id=100012379782021
-  - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
-  - mail-link: mailto:filip.valder@gmail.com
-
-- name: Iveta Kovaříková
-  img: img/olomouc/team/iveta_kovarikova.jpg
+- name: Hana Vylíčilová
+  img: img/olomouc/team/hana_vylicilova.jpg
+  role: Koučka
+  links: []
+  
+- name: Alžbeta Mičúchová
+  img: img/olomouc/team/alzbeta_micuchova.png
   role: Koučka
   links: []
 
-- name: Jana Marashli
-  img: img/olomouc/team/jana_marashli.jpg
+- name: Šárka Rašková
+  img: img/olomouc/team/sarka_raskova.jpg
   role: Koučka
-  links: []
-
-- name: Dan Nepejchal
-  img: img/olomouc/team/dan_nepejchal.jpg
-  role: Kouč
-  links: []
-
-- name: Věrka Fišarová
-  img: img/olomouc/team/verka_fisarova.jpg
-  role: Koučka
-  links: []
-
-- name: Martin Tichý
-  img: img/olomouc/team/blank.png
-  role: Kouč
   links: []
 
 - name: Jakub Kadlčík
