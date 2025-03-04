@@ -110,7 +110,7 @@
     {% endif %}
 {% endmacro %}
 
-{% macro team_section(name, team) %}
+{% macro team_section(name, team, show_details) %}
   <h2 class="course-city-heading">{{ name }}</h2>
   <div class="team ">
     {% for member in team %}
@@ -119,12 +119,14 @@
           <img src="{{ url_for('static', filename=member.img or 'img/brno/team/blank.png') }}" class="img-circle" />
         </div>
         <h5 class="member-name"><strong>{{ member.name }}</strong></h5>
-        <span><em>{{ member.role }}</em></span>
+        {% if show_details %}
+        <span class="member-role"><em>{{ member.role }}</em></span>
         <ul>
           {%- for link in member.links -%}{%- for type, url in link.items() -%}
             <li><a href="{{ url }}"><img src="{{ url_for('static', filename='img/icon/{}.png'.format(type)) }}" /></a></li>
           {%- endfor -%}{%- endfor -%}
         </ul>
+      {% endif %}
       </div>
     {% endfor %}
   </div>
@@ -340,14 +342,14 @@
     {% if team %}
     <!-- Team section -->
     <section id="team" class="container" >
-      {{ team_section(team_name, team) }}
+      {{ team_section(team_name, team, show_details=True) }}
     </section>
     {% endif %}
 
     {% if alumni %}
     <!-- Alumni section -->
       <section id="alumni" class="container" >
-        {{ team_section("Bývalé členky a členové komunity", alumni) }}
+        {{ team_section("Bývalé členky a členové komunity", alumni, show_details=False) }}
       </section>
     {% endif %}
 

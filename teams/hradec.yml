@@ -27,3 +27,18 @@
   - twitter-link: https://twitter.com/latraxa
   - website-link: http://www.latraxa.cz
   - github-link: https://github.com/vlaxa
+
+- name: Radek Goláň
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Josef Jeřábek
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Kouč
+
+- name: Roman Bedroš
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Kouč

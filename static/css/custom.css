@@ -891,6 +891,12 @@ h2.course-city-heading {
 	font-size: 24px;
 	margin-top: 15px;
 }
+#alumni .member-name {
+    font-size: 12px;
+}
+#alumni .member-role {
+    font-size: 0.7em;
+}
 
 .member-photo {
     /* Trick: The .member-photo is "empty", and its size is defined
@@ -922,14 +928,27 @@ h2.course-city-heading {
     object-fit: cover;
 }
 
+#alumni {
+    /* Hide alumni on phone devices, as the list can be very long */
+    display: none;
+}
+
 @media all and (min-width:620px) {
   h2.course-city-heading {
     margin: 55px 10px 40px;
   }
 }
 @media all and (min-width:1000px) {
-  .team {
-  	grid-template-columns: repeat(auto-fill, 225px);
+  #team {
+    .team {
+      grid-template-columns: repeat(auto-fill, 225px);
+    }
+  }
+  #alumni {
+    display: block;
+    .team {
+      grid-template-columns: repeat(auto-fill, 100px);
+    }
   }
   h2.course-city-heading {
     margin-top: 70px;
