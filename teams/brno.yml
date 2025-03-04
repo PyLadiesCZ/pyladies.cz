@@ -139,7 +139,7 @@
   links:
     - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
 
-- name: Terezie Vahalová
+- name: Terezie Viktorinová
   alumni: true
   img: img/brno/team/terezie.jpg
   role: Organizátorka/Koučka
@@ -179,13 +179,6 @@
   links:
   - mail-link: mailto:yaplik@gmail.com
 
-- name: Edita Balkóová
-  alumni: true
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-  - mail-link: mailto:386966@mail.muni.cz
-
 - name: Hanka Střondalová
   alumni: true
   img: img/brno/team/hanka.jpg
@@ -206,12 +199,6 @@
   role: Kouč
   links:
   - mail-link: mailto:juraj.michalek132@gmail.com
-
-- name: Kateřina Chmelařová
-  alumni: true
-  img: img/brno/team/blank.png
-  links:
-  - mail-link: mailto:sprinarova.katka@gmail.com
 
 - name: Marcela Vaculíková
   alumni: true
@@ -270,13 +257,6 @@
   role: Kouč
   links:
   - mail-link: mailto:tomas.n@orsava.cz
-
-- name: Katka Chmelařová
-  alumni: true
-  img: img/brno/team/blank.png
-  role: Kouč
-  links:
-  - mail-link: mailto:sprinarova.katka@gmail.com
 
 - name: Martina Hamanová
   alumni: true
@@ -736,13 +716,6 @@
   img: img/brno/team/blank.png
   role: Koučka
 
-- name: Edita Lelkes
-  alumni: true
-  img: img/brno/team/blank.png
-  role: Koučka
-  links:
-  - mail-link: mailto:balkoedi@gmail.com
-
 - name: Michal Polovka
   alumni: true
   img: img/brno/team/blank.png
@@ -827,10 +800,3 @@
   alumni: true
   img: img/brno/team/blank.png
   role: Koučka
-
-- name: Hana Štramberková
-  alumni: true
-  img: img/brno/team/blank.png
-  role: Organizátorka
-  links:
-  - mail-link: mailto:hana.stramberkova@pyladies.cz
