@@ -54,3 +54,36 @@
   role: Koučka
   links:
   - mail-link: mailto:martulie@seznam.cz
+
+- name: Táňa Marčišovská
+  alumni: true
+  img: img/ostrava/team/tana.jpg
+  role: Organizátorka
+  links:
+  - instagram: https://www.instagram.com/marcisek93/
+  - facebook: https://www.facebook.com/moris.kocurova
+  - mail-link: mailto:tanamarcisovska@gmail.com
+
+- name: Filip Valder
+  alumni: true
+  img: img/ostrava/team/filip_valder.jpg
+  role: Kouč
+  links:
+  - facebook: https://www.facebook.com/profile.php?id=100012379782021
+  - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
+  - mail-link: mailto:filip.valder@gmail.com
+
+- name: Štěpán Tomsa
+  alumni: true
+  img: img/ostrava/team/stepan_tomsa.jpg
+  role: Kouč
+  links:
+  - twitter-link: https://twitter.com/Glutexo
+  - mail-link: mailto:stepantomsa@icloud.com
+
+- name: David Chodur
+  alumni: true
+  img: img/ostrava/team/david_chodur.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:davidchodur@gmail.com

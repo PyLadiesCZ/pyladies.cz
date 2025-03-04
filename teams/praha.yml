@@ -5,60 +5,70 @@
   - mail-link: mailto:vankova.terezaa@gmail.com
   - facebook-link: https://www.facebook.com/tereza.vankova.7
   - twitter-link: https://twitter.com/VanekTereza?lang=cs
+
 - name: Zuzana Pokorná
   img: img/praha/team/zuzanita.jpg
   role: Organizátorka - kurz NTK
   links:
   - mail-link: mailto:zuzanapokorna@seznam.cz
+
 - name: Veronika Sarkányová
   img: img/praha/team/veronikas.jpg
   role: Organizátorka - kurz NTK
   links:
   - mail-link: mailto:veronika.sarkanyova@gmail.com
+
 - name: Lucka Říhová
   img: img/praha/team/lucka.jpg
   role: Organizátorka - kurz NTK
   links:
   - mail-link: mailto:luc.rihova@gmail.com
   - facebook-link: https://m.facebook.com/luc.rihova
+
 - name: Radka Planková
   img: img/praha/team/radka.jpg
   role: Organizátorka - kurz CZ.NIC
   links:
   - mail-link: mailto:radka.plankova@gmail.com
   - facebook-link: https://www.facebook.com/radka.plankova
+
 - name: Eliška Doktorová
   img: img/praha/team/eliska-doktorova.jpg
   role: Organizátorka - kurz CZ.NIC
   links:
   - mail-link: mailto:eliska.doktorova@gmail.com
+
 - name: Zuzana Kašáková
   img: img/praha/team/zuzka-k.jpg
   role: Organizátorka/Koučka
   links:
   - mail-link: mailto:zuza.kasakova@gmail.com
+
 - name: Michaela Kroužková
   img: img/praha/team/michaelakrouzkova.jpg
   role: Organizátorka - kurz Olšanka
   links:
   - mail-link: mailto:michaelakrouzkova@seznam.cz
+
 - name: Jana Slouková
-  #img: img/praha/team/
   role: Koučka
   links:
   - mail-link: mailto:j.sloukova@gmail.com
+
 - name: Petr Messner
   img: img/praha/team/messa.jpg
   role: Kouč/Kurátor odevzdávátka
   links:
-    - mail-link: mailto:petr.messner@gmail.com
-    - facebook-link: https://www.facebook.com/petr.messner
-    - github-link: https://github.com/messa
+  - mail-link: mailto:petr.messner@gmail.com
+  - facebook-link: https://www.facebook.com/petr.messner
+  - github-link: https://github.com/messa
+
 - name: Petra Vidnerová
   img: img/praha/team/petra.jpg
   role: Koučka
   links:
-    - mail-link: mailto:petra.vidnerova@gmail.com
+  - mail-link: mailto:petra.vidnerova@gmail.com
+
 - name: Vojtěch Růžička
   img: img/praha/team/vojta2.jpg
   role: Kouč
@@ -66,31 +76,36 @@
   - website-link: https://vojtechruzicka.com/
   - twitter-link: https://twitter.com/vojtechruzicka
   - mail-link: mailto:vojtech.ruz@gmail.com
+
 - name: Vašek Chalupníček
   img: img/praha/team/vasek.jpg
   role: Kouč
   links:
   - github-link: https://github.com/vasekch
   - linkedin-link: https://www.linkedin.com/in/v%C3%A1clav-chalupn%C3%AD%C4%8Dek-15a2b228
+
 - name: Oskar Hollmann
   img: img/praha/team/oskar.jpg
   role: Kouč
   links:
   - github-link: https://github.com/asgeirrr
   - twitter-link: https://twitter.com/OskarHollmann
+
 - name: Mirek Brabenec
   img: img/praha/team/mirek.jpg
   role: Kouč
   links:
-    - mail-link: mailto:brabemi@gmail.com
-    - facebook-link: https://www.facebook.com/miroslav.brabenec
-    - github-link: https://github.com/brabemi
+  - mail-link: mailto:brabemi@gmail.com
+  - facebook-link: https://www.facebook.com/miroslav.brabenec
+  - github-link: https://github.com/brabemi
+
 - name: Petr Lessner
   img: img/praha/team/lessa.png
   role: Kouč
   links:
-    - mail-link: mailto:petr.lessner+pyladies@gmail.com
-    - facebook-link: https://www.facebook.com/lessay
+  - mail-link: mailto:petr.lessner+pyladies@gmail.com
+  - facebook-link: https://www.facebook.com/lessay
+
 - name: Petr Matuška
   img: img/praha/team/petrmatuska2.jpg
   role: Kouč
@@ -98,6 +113,7 @@
   - mail-link: mailto:matuska.petr@gmail.com
   - facebook-link: https://www.facebook.com/matuska.petr
   - linkedin-link: https://cz.linkedin.com/in/matuskapetr
+
 - name: Miro Hrončok
   img: img/praha/team/miro.jpg
   role: Kouč
@@ -107,107 +123,146 @@
   - twitter-link: https://twitter.com/hroncok
   - website-link: http://hroncok.cz/
   - github-link: https://github.com/hroncok
+
 - name: Naďa Jašíková
   img: img/praha/team/nada.jpg
   role: Koučka
   links:
   - github-link: https://github.com/nadade
   - facebook-link: https://www.facebook.com/nada.jasikova
+
 - name: Petr Viktorin
   img: img/brno/team/petrv.jpg
   role: Kouč v Brně/Tvůrce materiálů
   links:
   - website-link: http://encukou.cz
+
 - name: Zuzka Javorková
   img: img/praha/team/zuzka.jpg
   role: organizátorka/pamětnice :)
   links:
   - mail-link: mailto:valkova.zuza@seznam.cz
 
+- name: Zuzana Válková
+  alumni: true
+  img: img/praha/team/zuzka.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:valkova.zuza@seznam.cz
 
-# Neaktivní:
-# - name: Iveta Jelenová
-#   img: img/praha/team/ivet.jpg
-#   role: Organizátorka - kurz NTK
-#    links:
-#    - mail-link: mailto:iveta@jelen.biz
-#  - name: Josef Rousek
-#    img: img/praha/team/josef.jpg
-#    role: Kouč
-#    links:
-#    - website-link: http://rousek.name/
-#  - name: Anastázie Sedláková
-#    img: img/praha/team/nasta.jpg
-#    role: Koučka
-#    links: []
-#  - name: Filip Sedlák
-#    img: img/praha/team/filip.jpg
-#    role: Kouč
-#    links: []
-#  - name: Štěpánka Lucinová
-#    img: img/praha/team/stepanka.jpg
-#    role: Koučka
-#    links:
-#  - facebook-link: https://www.facebook.com/stepanka.stephanie
-#  - name: Lenka Matějová
-#    img: img/praha/team/lenka.jpg
-#    role: Organizátorka/Koučka
-#    links:
-#    - twitter-link: https://twitter.com/zoellenka
-#  - name: Honza Čermák
-#    img: img/praha/team/honza.jpg
-#    role: Kouč
-#    links:
-#    - twitter-link: https://twitter.com/sairon
-#  - name: Svetlana Margetová
-#    img: img/praha/team/sveta.jpg
-#    role: Koučka
-#    links:
-#    - github-link: https://github.com/SvetlanaM
-#    - website-link: http://margetova.eu/
-#    - linkedin-link: https://www.linkedin.com/in/msvetlana
-#  - name: Veronika Gabrielová
-#    img: img/praha/team/veronika.jpg
-#    role: Organizátorka
-#    links:
-#    - mail-link: mailto:gabrielova.veronika@gmail.com
-#    - facebook-link: https://www.facebook.com/veronika.gabrielova.7
-#  - name: Kristýna Doležalová
-#    img: img/praha/team/tyna2.jpg
-#    role: Organizátorka/Koučka
-#    links:
-#    - mail-link: mailto:dolezalova.tynka@gmail.com
-#    - facebook-link: https://www.facebook.com/kristyna.dolezalova.58
-#  - name: Veronika Švecová
-#    img: img/praha/team/verca.jpg
-#    role: Organizátorka/Koučka
-#    links:
-#    - twitter-link: https://twitter.com/ostruzina
-#  - name: Peter Hozák
-#   img: img/praha/team/peter.jpg
-#   role: Kouč
-#   links:
-#   - facebook-link: https://www.facebook.com/peter.hozak
-# - name: Radek Holý
-#   img: img/praha/team/radek.jpg
-#   role: Kouč
-#   links:
-#   - linkedin-link: https://www.linkedin.com/in/pydeq/cs
-# - name: Pavlína Froňková
-#   img: img/praha/team/paffi.jpg
-#   role: Organizátorka/Koučka
-#   links:
-#   - mail-link: mailto:pavlina.fronkova@gmail.com
-#   - facebook-link: https://www.facebook.com/pavlina.fronkova
-#  - name: Martin Jahn
-#   img: img/praha/team/martin.jpg
-#   role: Kouč
-#   links:
-#   - website-link: https://jahn.sk/
-#  - name: Honza Javorek
-#    img: img/praha/team/honzaj.jpg
-#    role: Maskot Pythonu
-#    links:
-#    - website-link: http://honzajavorek.cz/
-#    - twitter-link: https://twitter.com/honzajavorek
-#    - github-link: https://github.com/honzajavorek
+- name: Pavlína Froňková
+  alumni: true
+  img: img/praha/team/paffi.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:pavlina.fronkova@gmail.com
+  - facebook-link: https://www.facebook.com/pavlina.fronkova
+
+- name: Iveta Jelenová
+  alumni: true
+  img: img/praha/team/ivet.jpg
+  role: Organizátorka - kurz NTK
+  links:
+  - mail-link: mailto:iveta@jelen.biz
+
+- name: Lenka Matějová
+  alumni: true
+  img: img/praha/team/lenka.jpg
+  role: Organizátorka/Koučka
+  links:
+  - twitter-link: https://twitter.com/zoellenka
+
+- name: Martin Jahn
+  alumni: true
+  img: img/praha/team/martin.jpg
+  role: Kouč
+  links:
+  - website-link: https://jahn.sk/
+
+- name: Štěpánka Lucinová
+  alumni: true
+  img: img/praha/team/stepanka.jpg
+  role: Koučka
+  links:
+  - facebook-link: https://www.facebook.com/stepanka.stephanie
+
+- name: Josef Rousek
+  alumni: true
+  img: img/praha/team/josef.jpg
+  role: Kouč
+  links:
+  - website-link: http://rousek.name/
+
+- name: Peter Hozák
+  alumni: true
+  img: img/praha/team/peter.jpg
+  role: Kouč
+  links:
+  - facebook-link: https://www.facebook.com/peter.hozak
+
+- name: Radek Holý
+  alumni: true
+  img: img/praha/team/radek.jpg
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/pydeq/cs
+
+- name: Anastázie Sedláková
+  alumni: true
+  img: img/praha/team/nasta.jpg
+  role: Koučka
+  links: []
+
+- name: Filip Sedlák
+  alumni: true
+  img: img/praha/team/filip.jpg
+  role: Kouč
+  links: []
+
+- name: Honza Javorek
+  alumni: true
+  img: img/praha/team/honzaj.jpg
+  role: Maskot Pythonu
+  links:
+  - website-link: http://honzajavorek.cz/
+  - twitter-link: https://twitter.com/honzajavorek
+  - github-link: https://github.com/honzajavorek
+
+- name: Honza Čermák
+  alumni: true
+  img: img/praha/team/honza.jpg
+  role: Kouč
+  links:
+  - twitter-link: https://twitter.com/sairon
+
+- name: Svetlana Margetová
+  alumni: true
+  img: img/praha/team/sveta.jpg
+  role: Koučka
+  links:
+  - github-link: https://github.com/SvetlanaM
+  - website-link: http://margetova.eu/
+  - linkedin-link: https://www.linkedin.com/in/msvetlana
+
+- name: Veronika Gabrielová
+  alumni: true
+  img: img/praha/team/veronika.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:gabrielova.veronika@gmail.com
+  - facebook-link: https://www.facebook.com/veronika.gabrielova.7
+
+- name: Kristýna Doležalová
+  alumni: true
+  img: img/praha/team/tyna2.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:dolezalova.tynka@gmail.com
+  - facebook-link: https://www.facebook.com/kristyna.dolezalova.58
+
+- name: Veronika Švecová
+  alumni: true
+  img: img/praha/team/verca.jpg
+  role: Organizátorka/Koučka
+  links:
+  - twitter-link: https://twitter.com/ostruzina
