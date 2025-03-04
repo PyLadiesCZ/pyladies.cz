@@ -29,6 +29,7 @@
 - name: Filip Valder
   img: img/olomouc/team/filip_valder.jpg
   role: Kouč
+  alumni: true
   links:
   - facebook: https://www.facebook.com/profile.php?id=100012379782021
   - linkedin-link: https://www.linkedin.com/in/filip-valder-7296a3122
@@ -37,26 +38,31 @@
 - name: Iveta Kovaříková
   img: img/olomouc/team/iveta_kovarikova.jpg
   role: Koučka
+  alumni: true
   links: []
 
 - name: Jana Marashli
   img: img/olomouc/team/jana_marashli.jpg
   role: Koučka
+  alumni: true
   links: []
 
 - name: Dan Nepejchal
   img: img/olomouc/team/dan_nepejchal.jpg
   role: Kouč
+  alumni: true
   links: []
 
 - name: Věrka Fišarová
   img: img/olomouc/team/verka_fisarova.jpg
   role: Koučka
+  alumni: true
   links: []
 
 - name: Martin Tichý
   img: img/olomouc/team/blank.png
   role: Kouč
+  alumni: true
   links: []
 
 - name: Jakub Kadlčík
@@ -68,3 +74,18 @@
     - website-link: https://frostyx.cz/
     - facebook: https://www.facebook.com/jakubkadlcik/
     - instagram: https://www.instagram.com/jakubkadlcik/
+
+- name: Alžbeta Mičuchová
+  img: img/olomouc/team/alzbeta_micuchova.jpg
+  role: Koučka
+  links: []
+
+- name: Hana Vyličilová
+  img: img/olomouc/team/hana_vylicilova.jpg
+  role: Koučka
+  links: []
+
+- name: Šárka Rašková
+  img: img/olomouc/team/sarka_raskova.jpg
+  role: Koučka
+  links: []
