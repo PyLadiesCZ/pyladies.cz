@@ -179,14 +179,6 @@
   links:
   - mail-link: mailto:yaplik@gmail.com
 
-- name: Anna Haymannová
-  alumni: true
-  img: img/brno/team/anna2.jpg
-  role: Lektorka
-  links:
-  - mail-link: mailto:haymannovaa@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/
-
 - name: Edita Balkóová
   alumni: true
   img: img/brno/team/blank.png
@@ -622,14 +614,6 @@
   role: Koučka
   links:
   - mail-link: mailto:barbora.taborska@gmail.com
-
-- name: David Kaša
-  alumni: true
-  img: img/brno/team/davidka.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:alastor001@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
 
 - name: Lucie Duháčková
   alumni: true
