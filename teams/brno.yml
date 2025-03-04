@@ -132,3 +132,9 @@
   links:
     - github-link: https://github.com/tnevrlka
     - linkedin-link: https://www.linkedin.com/in/tnevrlka
+
+- name: Nina Belyavskaya
+  img: img/brno/team/ninabel.jpg
+  role: Koučka
+  links:
+    - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
