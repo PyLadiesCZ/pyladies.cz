@@ -80,7 +80,7 @@
   img: img/plzen/team/blank.png
   role: Vedlejší kouč
   links:
-  - mail-link: mailto:fialav8@gmail.com 
+  - mail-link: mailto:fialav8@gmail.com
 
 - name: Jana Koukalová
   img: img/plzen/team/jana_k.png
@@ -121,3 +121,80 @@
   - facebook-link: https://www.facebook.com/klusik
   - linkedin-link: https://www.linkedin.com/in/klusik/
   - website-link: https://www.klusik.cz/
+
+- name: Magdalena Malastová
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:magdalena.malastova@gmail.com
+
+- name: Vladimír Toncar
+  alumni: true
+  img: img/plzen/team/vladimir_t.jpg
+  role: Lektor, vedlejší kouč
+  links:
+  - mail-link: mailto:vladimir@toncar.cz
+
+- name: Radka Halířová
+  alumni: true
+  img: img/plzen/team/radka.jpg
+  role: Organizátorka, lektorka, vedlejší koučka
+  links:
+  - mail-link: mailto:halirova.radka@seznam.cz
+
+- name: Jiří Fictum
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:fictum.jiri@gmail.com
+
+- name: Simona Chladová
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Organizátorka, vedlejší koučka
+  links:
+  - mail-link: mailto:simca.chladova@gmail.com
+
+- name: Lenka Konstantinovičová
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Organizátorka, lektorka, vedlejší koučka
+  links:
+  - mail-link: mailto:lenka@konstant.cz
+
+- name: Ondřej Kristejn
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:kristejn.ondrej@gmail.com
+
+- name: Světlana Spiglazova
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Vedlejší koučka
+  links:
+  - mail-link: mailto:s.spiglazova@gmail.com
+
+- name: Pavel Veselý
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Vedlejší kouč
+  links:
+  - mail-link: mailto:vesely.paja@seznam.cz
+
+- name: Vojtěch Pšenák
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Organizátor - TechHeaven
+  links:
+  - mail-link: mailto:vojta@techheaven.org
+
+- name: Anna Čudáková
+  alumni: true
+  img: img/plzen/team/blank.png
+  role: Organizátor - Město Plzeň
+  links:
+  - mail-link: mailto:cudakova@plzen.eu

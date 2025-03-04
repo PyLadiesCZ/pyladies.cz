@@ -100,21 +100,21 @@
   img: img/brno/team/acmiel.jpg
   role: Kouč
   links:
-    - github-link: https://github.com/chmeliik
-    - mail-link: mailto:acmiel1@gmail.com
+  - github-link: https://github.com/chmeliik
+  - mail-link: mailto:acmiel1@gmail.com
 
 - name: Otakar Joch
   img: img/brno/team/otakar.jpg
   role: Kouč
   links:
-   - mail-link: mailto:turak97@gmail.com
+  - mail-link: mailto:turak97@gmail.com
 
 - name: Alicja Kario
   img: img/brno/team/alicja.jpg
   role: Koučka
   links:
-    - github-link: https://github.com/tomato42
-    - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
+  - github-link: https://github.com/tomato42
+  - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
 
 - name: Veronika Čierna
   img: img/brno/team/veronika.jpg
@@ -124,17 +124,729 @@
   img: img/brno/team/ondra.png
   role: Kouč
   links:
-    - linkedin-link: https://www.linkedin.com/in/ond%C5%99ej-vagner-38401458
+  - linkedin-link: https://www.linkedin.com/in/ond%C5%99ej-vagner-38401458
 
 - name: Tomáš Nevrlka
   img: img/brno/team/tnevrlka.jpg
   role: Lektor/Kouč
   links:
-    - github-link: https://github.com/tnevrlka
-    - linkedin-link: https://www.linkedin.com/in/tnevrlka
+  - github-link: https://github.com/tnevrlka
+  - linkedin-link: https://www.linkedin.com/in/tnevrlka
 
 - name: Nina Belyavskaya
   img: img/brno/team/ninabel.jpg
   role: Koučka
   links:
     - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
+
+- name: Terezie Vahalová
+  alumni: true
+  img: img/brno/team/terezie.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:vahalova@gmail.com
+  - github-link: https://github.com/vahalova
+  - linkedin-link: https://www.linkedin.com/in/terezie-vahalova/
+
+- name: Viera Vakulová
+  alumni: true
+  img: img/brno/team/viera.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:vakulova.viera@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/viera-vakulova-42353730/?ppe=1
+
+- name: Iveta Horrová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:iveta.horrova@cz.ibm.com
+
+- name: Dominika Krejčí
+  alumni: true
+  img: img/brno/team/dominika.jpg
+  role: Koučka
+  links:
+  - github-link: https://github.com/Krejdom
+  - linkedin-link: https://cz.linkedin.com/in/dominika-krej%C4%8D%C3%AD-9779759b
+  - website-link: https://vranihnizdo.blogspot.com/
+
+- name: Jiří Zapletal
+  alumni: true
+  img: img/brno/team/jiri.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:yaplik@gmail.com
+
+- name: Anna Haymannová
+  alumni: true
+  img: img/brno/team/anna2.jpg
+  role: Lektorka
+  links:
+  - mail-link: mailto:haymannovaa@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/anna-haymannov%C3%A1-157693a8/
+
+- name: Edita Balkóová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:386966@mail.muni.cz
+
+- name: Hanka Střondalová
+  alumni: true
+  img: img/brno/team/hanka.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:strondalovah@centrum.cz
+
+- name: Jaroslav Šafka
+  alumni: true
+  img: img/brno/team/JarekS.png
+  role: Kouč
+  links:
+  - mail-link: mailto:pyladies zavináč safka.org
+
+- name: Juraj Michálek
+  alumni: true
+  img: img/brno/team/juraj.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:juraj.michalek132@gmail.com
+
+- name: Kateřina Chmelařová
+  alumni: true
+  img: img/brno/team/blank.png
+  links:
+  - mail-link: mailto:sprinarova.katka@gmail.com
+
+- name: Marcela Vaculíková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:marcvac@seznam.cz
+
+- name: Mária Krajčovičová
+  alumni: true
+  img: img/brno/team/MariaK.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:krajcovicmaja@gmail.com
+
+- name: Michal Cyprian
+  alumni: true
+  img: img/brno/team/michalcy.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:m.cyprian@gmail.com
+
+- name: Pavel Dedík
+  alumni: true
+  img: img/brno/team/pavel.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:dedikx@gmail.com
+  - github-link: https://github.com/paveldedik
+  - website-link: http://paveldedik.com
+
+- name: Petr Bolf
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:petr.bolf@taborpolana.cz
+
+- name: Roman Blanco
+  alumni: true
+  img: img/brno/team/roman.jpg
+  role: Kouč
+  links:
+  - github-link: https://github.com/romanblanco
+
+- name: Svätopluk Hanzel
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:svatoplukhanzel@gmail.com
+
+- name: Tomáš Orsava
+  alumni: true
+  img: img/brno/team/tomaso.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:tomas.n@orsava.cz
+
+- name: Katka Chmelařová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:sprinarova.katka@gmail.com
+
+- name: Martina Hamanová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:martina.hamanova@seznam.cz
+
+- name: Barbora Telferová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:barcza@gmail.com
+
+- name: Lukáš Benke
+  alumni: true
+  img: img/brno/team/lukas.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:benke.lukas@gmail.com
+
+- name: Marta Cvečková
+  alumni: true
+  img: img/brno/team/marta.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:mcveckova@centrum.cz
+
+- name: Martina Horňáková
+  alumni: true
+  img: img/brno/team/martinah.jpg
+  role: Organizátorka - NePyvo
+  links:
+  - linkedin-link: https://www.linkedin.com/in/mhornako
+
+- name: Michaela Pokludová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:zabza86@gmail.com
+
+- name: Michal Ovciarik
+  alumni: true
+  img: img/brno/team/michalo.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:movciari@gmail.com
+
+- name: Monika Bláhová
+  alumni: true
+  img: img/brno/team/monika.jpg
+  role: Lektorka/Koučka
+  links:
+  - mail-link: mailto:moblahovaa@gmail.com
+
+- name: Ondřej Beneš
+  alumni: true
+  img: img/brno/team/beny.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:ondrej.benes.93@gmail.com
+
+- name: Pavel Kocourek
+  alumni: true
+  img: img/brno/team/pavelk.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:pavel.kocourek@protonmail.com
+
+- name: Pavel Rusinský
+  alumni: true
+  img: img/brno/team/pavelr.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:DoneeFlack@gmail.com
+
+- name: Sandra Tukačová
+  alumni: true
+  img: img/brno/team/sandra.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:stukacova@gmail.com
+
+- name: Silvie Chlupová
+  alumni: true
+  img: img/brno/team/silvie.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:sisi.chlupova@gmail.com
+
+- name: Šárka Matějková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:matejkovas97@gmail.com
+
+- name: Tomáš Mikulec
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:to.mikulec@email.cz
+
+- name: Tomáš Zika
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:zika.tomas2@gmail.com
+
+- name: Věra Vacková
+  alumni: true
+  img: img/brno/team/verav.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:v.vackova@gmail.com
+
+- name: Veronika Burgerová
+  alumni: true
+  img: img/brno/team/verca.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:burgerova-veronika@email.cz
+
+- name: Kristýna Stehlíková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:stehlikovak@post.cz
+
+- name: Lucie Opletalová
+  alumni: true
+  img: img/brno/team/lucieo.jpg
+  role: Organizátorka - středa
+  links:
+  - mail-link: mailto:lucie.a.opletalova@gmail.com
+
+- name: Adam Kvítek
+  alumni: true
+  img: img/brno/team/adamk.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:adamkvitek@gmail.com
+  - facebook-link: https://www.facebook.com/adam.kvitek
+
+- name: Iveta Česalová
+  alumni: true
+  img: img/brno/team/ivetac.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:cesalova.iveta@seznam.cz
+
+- name: Jan Ohnheiser
+  alumni: true
+  img: img/brno/team/janoh.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:jan.ohnheiser@gmail.com
+  - facebook-link: https://www.facebook.com/jan.ohnheiser
+  - linkedin-link: https://www.linkedin.com/in/jan-ohnheiser-ab5a5776
+
+- name: Katka Loučková
+  alumni: true
+  img: img/brno/team/katkal.png
+  role: Koučka
+  links:
+  - mail-link: mailto:katka@louckovi.cz
+  - linkedin-link: https://www.linkedin.com/in/kate%C5%99ina-lou%C4%8Dkov%C3%A1-58379179/
+
+- name: Lubomír Sedlář
+  alumni: true
+  img: img/brno/team/lubomirs.jpg
+  role: Lektor
+  links:
+  - mail-link: mailto:lubomir.sedlar@gmail.com
+
+- name: Lucie Čuprová
+  alumni: true
+  img: img/brno/team/luciec.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:cuprova.l@gmail.com
+  - linkedin-link: www.linkedin.com/in/luciecuprova
+
+- name: Patrik Kopkan
+  alumni: true
+  img: img/brno/team/patrikk.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:kopkanpatrik@gmail.com
+
+- name: Pavlína Hyxová
+  alumni: true
+  img: img/brno/team/pavlinah.jpeg
+  role: Koučka
+  links:
+  - mail-link: mailto:pavlina.hyxova@seznam.cz
+  - linkedin-link: https://www.linkedin.com/in/pavl%C3%ADna-hyxov%C3%A1-992a3386/
+
+- name: Soňa Staňková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:sonka.aknos@seznam.cz
+
+- name: Šárka Melicharová
+  alumni: true
+  img: img/brno/team/saja.jpg
+  role: Organizátorka/Koučka
+  links:
+  - mail-link: mailto:sarka-melicharova@seznam.cz
+
+- name: Zuzka Kletzanderová
+  alumni: true
+  img: img/brno/team/zuzkast.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:stankova.zz@seznam.cz
+
+- name: Erik Škultéty
+  alumni: true
+  img: img/brno/team/eriks.jpg
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/eskultety/
+
+- name: Jan Rybář
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:jrybar@redhat.com
+
+- name: Lukáš Zachar
+  alumni: true
+  img: img/brno/team/lukasz.jpg
+  role: Kouč
+  links:
+  - github-link: https://github.com/lukaszachy
+
+- name: Pavel Hrdina
+  alumni: true
+  img: img/brno/team/pavelhr.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:paja.hrdina@gmail.com
+
+- name: Vít Pečeňa
+  alumni: true
+  img: img/brno/team/vitap.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:vit@pecena.cz
+  - website-link: https://vit.pecena.cz/
+
+- name: Zdeněk Kraus
+  alumni: true
+  img: img/brno/team/zdenek.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:zdenek.kraus@gmail.com
+  - website-link: http://zkraus.zonerama.com
+
+- name: Anna Benke
+  alumni: true
+  img: img/brno/team/anna2.jpg
+  role: Organizátorka/Lektorka - úterý
+  links:
+  - mail-link: mailto:anna.benkea@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/anna-benke-157693a8/
+
+- name: Cvetelina Šubová
+  alumni: true
+  img: img/brno/team/cvetelina.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:tsvetelina.subova@email.cz
+
+- name: Helena Černá
+  alumni: true
+  img: img/brno/team/helenac.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:helenacerna21@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/helena-černá-71410364
+
+- name: Ivana Jelínková
+  alumni: true
+  img: img/brno/team/ivanaj.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:jelinkova.ivana@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/ivanajelinkova
+
+- name: Josef Boudník
+  alumni: true
+  img: img/brno/team/josefb.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:josef@celaeno.cz
+  - website-link: https://celaeno.cz
+
+- name: Martina Baláková
+  alumni: true
+  img: img/brno/team/martinabal.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:m.balakova@email.cz
+  - linkedin-link: https://www.linkedin.com/in/martina-baláková-116aba101
+
+- name: Monika Rusková
+  alumni: true
+  img: img/brno/team/monikar.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:monicka.ruskova@gmail.com
+  - facebook-link: https://www.facebook.com/monicka.ruskova
+  - facebook-link: https://www.facebook.com/cinnamon.monnnica/
+
+- name: Bára Lejsková
+  alumni: true
+  img: img/brno/team/barale.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:lejskovabara@seznam.cz
+
+- name: Barbora Táborská
+  alumni: true
+  img: img/brno/team/barata.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:barbora.taborska@gmail.com
+
+- name: David Kaša
+  alumni: true
+  img: img/brno/team/davidka.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:alastor001@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
+
+- name: Lucie Duháčková
+  alumni: true
+  img: img/brno/team/luciedu.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:lucieduhackova@gmail.com
+
+- name: Michaela Miškovská
+  alumni: true
+  img: img/brno/team/misami.jpg
+  role: Organizátorka - navazující kurzy
+  links:
+  - mail-link: mailto:miki2177@seznam.cz
+
+- name: Petra Serišová
+  alumni: true
+  img: img/brno/team/petase.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:petra.sykorova@gmail.com
+
+- name: David Kaše
+  alumni: true
+  img: img/brno/team/davidka.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:alastor001@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/david-kaše-550467180/
+
+- name: Tamara Krestianková
+  alumni: true
+  img: img/brno/team/tamarakr.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:tamara.krestiankova@kiwi.com
+  - linkedin-link: https://www.linkedin.com/in/tamara-krestiankov%C3%A1-b95a2b15a/
+
+- name: Sabina Chovancová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka - pondělí
+
+- name: Jana Mikulášková
+  alumni: true
+  img: img/brno/team/janam.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:mikulaskova.janca@gmail.com
+
+- name: Adrián Chlpík
+  alumni: true
+  img: img/brno/team/adrianch.jpg
+  role: Kouč
+  links:
+  - instagram: https://www.instagram.com/adino_zlatino/
+
+- name: Alexandra Krnáčová
+  alumni: true
+  img: img/brno/team/alexandrak.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:alexandra.krnacova@gmail.com
+
+- name: Kateřina Pitašová
+  alumni: true
+  img: img/brno/team/katerinap.jpg
+  role: Koučka
+
+- name: Lukáš Gryc
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Milan Dufek
+  alumni: true
+  img: img/brno/team/miland.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:milan.dufek@mergado.com
+  - linkedin-link: https://www.linkedin.com/in/milan-dufek-b363a649/
+
+- name: Přemysl Karbula
+  alumni: true
+  img: img/brno/team/premak.jpeg
+  role: Kouč
+  links:
+  - github-link: https://github.com/smuuf/
+  - website-link: https://premyslkarbula.cz/
+
+- name: Roman Pavelka
+  alumni: true
+  img: img/brno/team/romanp.jpg
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/roman-pavelka-b721339b/
+  - website-link: http://romanpavelka.cz/
+
+- name: Vladimíra Křižanová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Jakub Heger
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+  links:
+  - mail-link: mailto:hegerj@gmail.com
+
+- name: Alexandra Šimková
+  alumni: true
+  img: img/brno/team/sasam.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:sasa.matulova@gmail.com
+
+- name: Dita Stehlíková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Edita Lelkes
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:balkoedi@gmail.com
+
+- name: Michal Polovka
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Pavlína Zagolová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Andrea Kopečná
+  alumni: true
+  img: img/brno/team/andrea.jpeg
+  role: Koučka
+  links:
+  - linkedin-link: https://www.linkedin.com/in/andrea-kopecna/
+
+- name: Vojta Haška
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Veronika Konečná
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Nela Slezáková
+  alumni: true
+  img: img/brno/team/nela.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:nela@nelaprovazi.cz
+  - linkedin-link: https://www.linkedin.com/in/nela-slezakova/
+  - website-link: https://www.nelaprovazi.cz
+
+- name: Kristýna Papežová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka/Koučka
+
+- name: Kateřina Pospíšilová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka - Mergado
+  links:
+  - mail-link: katerina.pospisilova@mergado.com
+
+- name: Edit Lelkes
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+  links:
+  - mail-link: mailto:balkoedi@gmail.com
+
+- name: Tomáš Hrnčiar
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Káťa Chmelařová
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Zdenek Lovecek
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Markéta Dalecká
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Erik Belko
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Kouč
+
+- name: Barbora Baláková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Koučka
+
+- name: Hana Štramberková
+  alumni: true
+  img: img/brno/team/blank.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:hana.stramberkova@pyladies.cz
