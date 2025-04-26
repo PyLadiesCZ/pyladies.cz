@@ -4,6 +4,16 @@ extra_pages:
   - generator: pyladies_cz:v1_generator
   - generator: pyladies_cz:course_redirect
   - generator: pyladies_cz:info_redirect
+  - /praha-cznic/
+  - /praha-ntk/
 url_finders:
     text/html: pyladies_cz:get_html_links
     text/css: pyladies_cz:get_css_links
+extra_files:
+  CNAME: pyladies.cz
+  googlecc704f0f191eda8f.html:
+    copy_from: google-verification.html
+  course.html:
+    copy_from: original/course.html
+  static:
+    copy_from: static/
