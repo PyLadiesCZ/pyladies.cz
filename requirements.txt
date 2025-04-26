@@ -1,5 +1,6 @@
 PyYAML
-elsa>=0.1.2
+Flask
+freezeyt
 markdown
 markupsafe
 werkzeug<3

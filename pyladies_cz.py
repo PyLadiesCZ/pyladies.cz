@@ -20,6 +20,7 @@ import yaml
 import markdown
 import markupsafe
 
+from freezeyt import freeze
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -369,5 +370,6 @@ def get_css_links(page_content, base_url, headers):
         page_content, base_url, headers)
 
 if __name__ == '__main__':
-    from elsa import cli
-    cli(app, freezer=freezer, base_url='http://pyladies.cz')
+    with open('freezeyt.yaml') as f:
+        config = yaml.safe_load(f)
+    freeze(app, config)
