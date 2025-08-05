@@ -407,6 +407,12 @@
     text: Registrace právě probíhá!
     end: 2022-09-07
 
+- name: PyData kurz PyLadies <br> Kurz datové analýzy
+  materials: https://naucse.python.cz/2022/pydata-praha-podzim/
+  start: 2022-09-12
+  end: 2022-12-17
+  time: každé pondělí 18:00 - 20:00
+
 - name: PyLadies Praha <br> začátečnický kurz
   materials: https://naucse.python.cz/2023/praha-pyladies-jaro/
   start: 2023-03-01
@@ -416,6 +422,12 @@
     url: https://docs.google.com/forms/d/e/1FAIpQLSe2-t09XJMO-9xx2wTZYw4r4RkxF65g8xkKxSc1EPg7oVmE-A/viewform
     text: Registrace právě probíhá!
     end: 2023-02-15
+
+- name: PyData kurz PyLadies <br> Kurz datové analýzy
+  materials: https://naucse.python.cz/2023/pydata-praha-podzim/
+  start: 2023-09-18
+  end: 2023-12-24
+  time: každé pondělí 18:00 - 20:00
 
 - name: PyLadies Praha <br> začátečnický kurz
   materials: https://naucse.python.cz/2024/praha-pyladies-podzim/
@@ -427,6 +439,12 @@
     text: Registrace právě probíhá!
     end: 2024-09-05
 
+- name: PyData kurz PyLadies <br> Kurz datové analýzy
+  materials: https://naucse.python.cz/2024/pydata-praha-podzim/
+  start: 2024-09-16
+  end: 2024-12-24
+  time: každé pondělí 18:00 - 20:00
+
 - name: PyLadies Praha <br> začátečnický kurz
   materials: https://naucse.python.cz/2025/praha-pyladies-jaro/
   start: 2025-03-19
@@ -436,3 +454,13 @@
     url: https://docs.google.com/forms/d/e/1FAIpQLSfrqqavPG1Kdums434q57Z8p_tNlPc_LuWEUEpRahBIIv9FAA/viewform
     text: Registrace právě probíhá!
     end: 2025-03-05
+
+- name: PyData kurz <br> Kurz datové analýzy
+  start: 2025-09-15
+  end: 2025-12-15
+  time: 18:00 - 20:00
+  date_text: pondělky
+  registration:
+    url: https://forms.gle/JHtvu39jAUseD96h7
+    text: Registrace právě probíhá!
+    end: 2025-09-01
