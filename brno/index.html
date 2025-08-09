@@ -1,0 +1,6602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- ADD META TAGS -->
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+      <meta name="keywords" content="PyLadies, PyLady, kurz, sraz, programování, IT, python, workshop, slečny, ženy"></meta>
+      <meta name="description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta property="og:title" content="PyLadies CZ"></meta>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content="www.pyladies.cz"></meta>
+      <meta property="og:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:title" content="PyLadies CZ"></meta>
+      <meta name="twitter:site" content="@PyLadiesCZ"></meta>
+      <meta name="twitter:description" content="PyLadies přibližují IT k ženám a ženy k IT pomocí programovacího jazyka Python. Aktuální kurzy najdeš na www.pyladies.cz"></meta>
+
+      <title>PyLadies CZ</title>
+
+      
+      
+
+      
+        <!-- Bootstrap CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href='https://fonts.bunny.net/css?family=Open+Sans:400,400italic,600,600italic,700&subset=latin,greek,greek-ext,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="">
+      <div class="body-content">
+
+      <!-- Navigation -->
+      <nav class="main-navbar" role="navigation">
+            <div class="container navbar-logo">
+                <a href="/">
+                    <img src="/static/img/pyladies.png" />
+                </a>
+            </div>
+            <div class="navbar-menu" id="hamburger-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <ul class="navbar-other">
+                <li class="materials-dropdown">
+                    <a>Materiály<span class="caret"></span></a>
+                    <ul>
+                      
+                        <li>
+                            <a href="https://naucse.python.cz/2024/brno-podzim-utery/">
+                                Brno – začátečnický kurz - úterý
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2024/brno-podzim-ctvrtek/">
+                                Brno – začátečnický kurz - čtvrtek
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2024/praha-pyladies-podzim/">
+                                Praha – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2021/pydata-praha-jaro/">
+                                Praha – Datový kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2022/ostrava-python/">
+                                Ostrava – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/plzen-jaro-2020/">
+                                Plzeň – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2020/pyladies-hradec-leden/">
+                                Hradec Králové – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/2025/pyladies-olomouc-jaro/">
+                                Olomouc – začátečnický kurz
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://naucse.python.cz/course/pyladies/">
+                                Chci se učit doma sama
+                                <small><span class="glyphicon"></span></small>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="/stan_se/">Staň se PyLady!</a>
+                </li>
+                <li >
+                    <a href="/faq/">FAQ</a>
+                </li>
+            </ul>
+            <div class="navbar-cities faded-banner">
+                <ul>
+                    
+                    <li >
+                        <a href="/praha/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/praha.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Praha</span>
+                            </div>
+                            
+                              <span class='city-active-registration'>
+                                Registruj se!
+                              </span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="current-page">
+                        <a href="/brno/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/brno.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Brno</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostrava/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostrava.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Ostrava</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/plzen/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/plzen.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Plzeň</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/olomouc/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/olomouc.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Olomouc</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/hradec/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/hradec.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Hradec Králové</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                    <li >
+                        <a href="/ostatni/">
+                            <span class="img-container">
+                                <img class="city-outline" src="/static/img/ostatni.svg" alt="">
+                            </span>
+                            <div class="city-title-box">
+                            <span class="city-title">Tvoje město</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+  <!-- Intro Header -->
+  <header class="intro-city">
+      <h1>BRNO</h1>
+  </header>
+
+  <!-- Current Meetups -->
+  
+  <section class=" container text-center" id="meetups">
+    <h2 class="course-city-heading">Nedávné kurzy a srazy</h2>
+    <div class="meetup">
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 2. – 28. 4. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://github.com/PyLadiesCZ-Brno/python-knihovny"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 2. – 29. 4. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2025/brno-jaro-utery/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+        
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          18. 1. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2025/snake-brno-zima/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+      
+    </div>
+    
+      
+    
+    <div>
+        <a href="#past-meetups">
+            
+                A dalších 58 kurzů a srazů už je za námi!
+            
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+    </div>
+    
+
+    
+  
+  </section>
+
+  <!-- Registration notice -->
+  
+  
+    
+    <section class="container">
+        <h2 class="course-city-heading">Registrace</h2>
+        <p>
+            
+            
+        
+
+        Čekáš na otevření přihlášek na další?
+    
+            Jestli chceš, můžeš nám
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsTcHeSrUF3-BJtD4m0cI6Tgn3IJ4ubZ-37iDABWGjMy07xA/viewform?entry.328629992=M%C3%A1m+z%C3%A1jem+o+za%C4%8D%C3%A1te%C4%8Dnick%C3%BD+kurz+a+o+posl%C3%A1n%C3%AD+informac%C3%AD,+a%C5%BE+na+n%C4%9Bj+bude+vypsan%C3%A1+registrace.&entry.40816140&entry.618723007&entry.1740996300">nechat kontakt.</a>
+            Až otevřeme registrace na další kurzy, pošleme ti zprávu.
+        </p>
+    </section>
+  
+  
+
+      <!-- Contact -->
+    
+    <section class="contacts text-center">
+      <div class="container p-0">
+        <h2>Kontakty</h2>
+        <div class="contact m-0">
+            
+                <a href="https://www.facebook.com/groups/pyladiesBrno">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/facebook.png" />
+                        <h4 class="about-title">Facebook PyLadies Brno</h4>
+                    </div>
+                </a>
+            
+                <a href="https://discord.gg/yUbgArVAyF">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/discord-white.png" />
+                        <h4 class="about-title">Discord CZ a SK Python komunity</h4>
+                    </div>
+                </a>
+            
+                <a href="mailto:brno@pyladies.cz">
+                    <div class="about">
+                        <img height="110" src="/static/img/link/coach.png" />
+                        <h4 class="about-title">Napiš organizátorkám</h4>
+                    </div>
+                </a>
+            
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- Newsletter -->
+  
+  <section class="container newsletter">
+    <h2 class="text-center">Newsletter</h2>
+    <p>Horké novinky (nejen) z dění PyLadies komunity! Maximálně jednou měsíčně ti mailem pošleme zprávu o chystaných akcích, kurzech a workshopech v Brně. Vše na jednom místě, bez spamu. Přihlaš se k odběru.</p>
+    <div id="mc_embed_signup">
+      <form action="https://pyladies.us4.list-manage.com/subscribe/post?u=d18802c49f8d98ac411c260b7&amp;amp;id=b569c163bb"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+        target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="e-mail">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_d18802c49f8d98ac411c260b7_b569c163bb" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+              <input type="submit" value="Přihlaš mě" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+        </div>
+        <p>Odeslaním svého e-mailu dáváš souhlas se <a href="http://goo.gl/hdEDjo">zpracováním osobních údajů</a></p>
+      </form>
+    </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  </section>
+  
+  
+  <!-- How it started -->
+  <a name="city-info" id="city-info"></a>
+    <section class="info-city container text-center">
+        
+            <div class="col-md-offset-1 col-md-10">
+                <h2 class="course-city-heading">Jak to v Brně vzniklo?</h2>
+                <p class="course-city-p">Bylo nebylo, přijela jednou do Brna na návštěvu Lynn Root, která vede PyLadies v San Franciscu. Zrovna probíhala konference RuPy 2012, a v rámci ní Lynn uspořádala půldenní workshop pod hlavičkou PyLadies. Ale potom odjela, než našla dostatečně akční Pythonistku, která by to po ní převzala.</p>
+            </div>
+            <div class="city-images">
+                <div class="course-city-images">
+                    <img src="/static/img/brno/brno1.jpg" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="/static/img/brno/brno2.jpg" class="img-responsive city-img" />
+                </div>
+                <div class="course-city-images">
+                    <img src="/static/img/brno/brno3.jpg" class="img-responsive city-img" />
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-10">
+                <p class="course-city-p">Až po více než roce se na Facebooku ozvaly tři studentky, které se Python učily na škole a potřebovaly doučování. Vzpomněli jsme si na balíček samolepek PyLadies, co tu nechala Lynn, a rozhodli se to doučování udělat pod touto značkou. A odtud byl už jen krůček k začátečnickým kurzům i jiným srazům.</p>
+            </div>
+        
+    </section>
+
+
+    
+    
+    <!-- Team section -->
+    <section id="team" class="container" >
+      
+  <h2 class="course-city-heading">Tým brněnských PyLadies</h2>
+  <div class="team ">
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/Danuse.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Daniela Drážná</strong></h5>
+        
+        <span class="member-role"><em>Organizátorka</em></span>
+        <ul><li><a href="mailto:daniela.d@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/daniela-902dd/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/petra.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Petra Adámková</strong></h5>
+        
+        <span class="member-role"><em>Organizátorka</em></span>
+        <ul><li><a href="mailto:petra.adamkova@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/HankaStamb.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Hana Štamberková</strong></h5>
+        
+        <span class="member-role"><em>Organizátorka</em></span>
+        <ul><li><a href="mailto:hana.stramberkova@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/boris.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Boris Kolda</strong></h5>
+        
+        <span class="member-role"><em>Organizátor/Kouč</em></span>
+        <ul><li><a href="mailto:boris.kolda@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/boris-kolda-12854651/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/anezka.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Anežka Müller</strong></h5>
+        
+        <span class="member-role"><em>Organizace/PR</em></span>
+        <ul><li><a href="mailto:anezka.muller@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/anezkamll/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://anezka.muller.dev/"><img src="/static/img/icon/website-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/tomasisko.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Jelínek</strong></h5>
+        
+        <span class="member-role"><em>Lektor</em></span>
+        <ul></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/eliska.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Eliška Jégrová</strong></h5>
+        
+        <span class="member-role"><em>Lektorka/Koučka</em></span>
+        <ul><li><a href="mailto:jegrovaeliska@seznam.cz"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://github.com/ejegrova/"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/eliska-jegrova-973940167"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/mzeleny.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martin Zelený</strong></h5>
+        
+        <span class="member-role"><em>Lektor/Kouč</em></span>
+        <ul><li><a href="https://github.com/ZelenyMartin"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/martin-zeleny"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/petrv.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Petr Viktorin</strong></h5>
+        
+        <span class="member-role"><em>Lektor</em></span>
+        <ul><li><a href="https://encukou.cz"><img src="/static/img/icon/website-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/ludek.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Luděk Reif</strong></h5>
+        
+        <span class="member-role"><em>Lektor</em></span>
+        <ul><li><a href="mailto:ludek.reif@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/luipenox/"><img src="/static/img/icon/linkedin-link.png" /></a></li><li><a href="https://twitter.com/luipenox"><img src="/static/img/icon/twitter-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavlinav.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavlína Váňová</strong></h5>
+        
+        <span class="member-role"><em>Organizátorka/Koučka</em></span>
+        <ul></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/karolina.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Karolina Surma</strong></h5>
+        
+        <span class="member-role"><em>Koučka/Copywriterka</em></span>
+        <ul><li><a href="mailto:karolina.surma@pyladies.cz"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/martin.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martin Pavlásek</strong></h5>
+        
+        <span class="member-role"><em>Kouč</em></span>
+        <ul><li><a href="mailto:tuzticzka@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/martinaa.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martina Antalovová</strong></h5>
+        
+        <span class="member-role"><em>Koučka</em></span>
+        <ul><li><a href="mailto:antalovova@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li><li><a href="https://www.linkedin.com/in/martina-ant/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/jpodivin.jpeg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jiří Podivín</strong></h5>
+        
+        <span class="member-role"><em>Lektor/Kouč</em></span>
+        <ul><li><a href="https://github.com/jpodivin"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/jiri-podivin-46601b156/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/acmiel.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Adam Cmiel</strong></h5>
+        
+        <span class="member-role"><em>Kouč</em></span>
+        <ul><li><a href="https://github.com/chmeliik"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="mailto:acmiel1@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/otakar.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Otakar Joch</strong></h5>
+        
+        <span class="member-role"><em>Kouč</em></span>
+        <ul><li><a href="mailto:turak97@gmail.com"><img src="/static/img/icon/mail-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/alicja.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Alicja Kario</strong></h5>
+        
+        <span class="member-role"><em>Koučka</em></span>
+        <ul><li><a href="https://github.com/tomato42"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/alicja-kario-51025a2"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/veronika.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Veronika Čierna</strong></h5>
+        
+        <span class="member-role"><em>Koučka</em></span>
+        <ul></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/ondra.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Ondra Vagner</strong></h5>
+        
+        <span class="member-role"><em>Kouč</em></span>
+        <ul><li><a href="https://www.linkedin.com/in/ond%C5%99ej-vagner-38401458"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/tnevrlka.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Nevrlka</strong></h5>
+        
+        <span class="member-role"><em>Lektor/Kouč</em></span>
+        <ul><li><a href="https://github.com/tnevrlka"><img src="/static/img/icon/github-link.png" /></a></li><li><a href="https://www.linkedin.com/in/tnevrlka"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/ninabel.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Nina Belyavskaya</strong></h5>
+        
+        <span class="member-role"><em>Koučka</em></span>
+        <ul><li><a href="https://www.linkedin.com/in/nina-belyavskaya/"><img src="/static/img/icon/linkedin-link.png" /></a></li></ul>
+      
+      </div>
+    
+  </div>
+
+    </section>
+    
+
+    
+    <!-- Alumni section -->
+      <section id="alumni" class="container" >
+        
+  <h2 class="course-city-heading">Bývalé členky a členové komunity</h2>
+  <div class="team ">
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/terezie.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Terezie Viktorinová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/viera.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Viera Vakulová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Iveta Horrová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/dominika.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Dominika Krejčí</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/jiri.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jiří Zapletal</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/hanka.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Hanka Střondalová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/JarekS.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jaroslav Šafka</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/juraj.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Juraj Michálek</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Marcela Vaculíková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/MariaK.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Mária Krajčovičová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/michalcy.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Michal Cyprian</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavel.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavel Dedík</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Petr Bolf</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/roman.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Roman Blanco</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Svätopluk Hanzel</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/tomaso.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Orsava</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martina Hamanová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Barbora Telferová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/lukas.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lukáš Benke</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/marta.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Marta Cvečková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/martinah.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martina Horňáková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Michaela Pokludová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/michalo.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Michal Ovciarik</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/monika.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Monika Bláhová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/beny.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Ondřej Beneš</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavelk.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavel Kocourek</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavelr.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavel Rusinský</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/sandra.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Sandra Tukačová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/silvie.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Silvie Chlupová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Šárka Matějková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Mikulec</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Zika</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/verav.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Věra Vacková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/verca.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Veronika Burgerová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Kristýna Stehlíková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/lucieo.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lucie Opletalová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/adamk.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Adam Kvítek</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/ivetac.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Iveta Česalová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/janoh.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jan Ohnheiser</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/katkal.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Katka Loučková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/lubomirs.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lubomír Sedlář</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/luciec.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lucie Čuprová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/patrikk.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Patrik Kopkan</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavlinah.jpeg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavlína Hyxová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Soňa Staňková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/saja.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Šárka Melicharová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/zuzkast.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Zuzka Kletzanderová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/eriks.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Erik Škultéty</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jan Rybář</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/lukasz.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lukáš Zachar</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/pavelhr.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavel Hrdina</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/vitap.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Vít Pečeňa</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/zdenek.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Zdeněk Kraus</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/anna2.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Anna Benke</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/cvetelina.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Cvetelina Šubová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/helenac.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Helena Černá</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/ivanaj.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Ivana Jelínková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/josefb.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Josef Boudník</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/martinabal.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Martina Baláková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/monikar.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Monika Rusková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/barale.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Bára Lejsková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/barata.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Barbora Táborská</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/luciedu.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lucie Duháčková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/misami.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Michaela Miškovská</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/petase.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Petra Serišová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/davidka.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>David Kaše</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/tamarakr.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tamara Krestianková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Sabina Chovancová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/janam.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jana Mikulášková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/adrianch.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Adrián Chlpík</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/alexandrak.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Alexandra Krnáčová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/katerinap.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Kateřina Pitašová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Lukáš Gryc</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/miland.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Milan Dufek</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/premak.jpeg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Přemysl Karbula</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/romanp.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Roman Pavelka</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Vladimíra Křižanová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Jakub Heger</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/sasam.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Alexandra Šimková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Dita Stehlíková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Michal Polovka</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Pavlína Zagolová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/andrea.jpeg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Andrea Kopečná</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Vojta Haška</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Veronika Konečná</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/nela.jpg" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Nela Slezáková</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Kristýna Papežová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Kateřina Pospíšilová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Edit Lelkes</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Tomáš Hrnčiar</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Káťa Chmelařová</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Zdenek Lovecek</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Markéta Dalecká</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Erik Belko</strong></h5>
+        
+      </div>
+    
+      <div class="person">
+        <div class="member-photo">
+          <img src="/static/img/brno/team/blank.png" class="img-circle" />
+        </div>
+        <h5 class="member-name"><strong>Barbora Baláková</strong></h5>
+        
+      </div>
+    
+  </div>
+
+      </section>
+    
+
+  <!-- Past Meetups -->
+  
+  <section  class=" container text-center" id="past-meetups">
+    <h2 class="course-city-heading">Proběhlé kurzy a srazy</h2>
+    <div class="meetup">
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 2. – 28. 4. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://github.com/PyLadiesCZ-Brno/python-knihovny"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 2. – 29. 4. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2025/brno-jaro-utery/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          18. 1. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2025/snake-brno-zima/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">GitWorking</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 2. 2025
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          sobota 8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/gitworking-openalt/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">GIMP workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          12. 10. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 16:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/brno-gimp/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz PyLadies naruby - druhá část</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          26. 9. – 28. 11. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/brno-podzim-ctvrtek/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. 9. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/snake-brno-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 10. – 3. 12. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/brno-podzim-utery/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Linuxová administrace</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 3. – 12. 6. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/brno-linuxadmin-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. 3. – 30. 5. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2024/brno-jaro-ctvrtek/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 2. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Vyzkoušej si Linux!</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 11. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python&#58; za hranice základů (mírně pokročilý kurz)</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. 2023 – 29. 1. 2024
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělí 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          27. 9. – 13. 12. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2023/brno-podzim-streda/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Seminář: Životní cyklus vývoje softwaru</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 6. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 13:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Dvoudílný GitWorking</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          15. – 22. 4. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          sobota 9:30 – 16:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz naruby</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          9. 3. – 25. 5. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2023/brno-jaro-ctvrtek/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          6. 3. – 29. 5. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - MicroPython</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 3. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2023/brno-micropython/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - Úvod do Linuxu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 2. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:30 – 17:30
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://kodim.cz/kurzy/uvod-do-linuxu"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - Práce s XLSX tabulkami</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          11. 2. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">PyWorking - Datová analýza</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          21. 1. 2023
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          10:00 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní středa 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          14. 9. – 14. 12. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2103950&amp;x=16.5858589&amp;z=16&amp;id=16.5858589%2C49.2103950&amp;source=coor&amp;q=Mergado"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mergado,
+                Minská 73/13, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/brno-mergado/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní úterý 2022</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          13. 9. – 29. 11. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/brno-podzim-utery/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          20. 8. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2022/snake-brno-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Testovací PyWorking</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          26. 6. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Úvod do Webu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          2. 4. 2022
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          9:00 – 17:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Linuxová administrace <br> Podpořeno Czechitas</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 10. – 20. 12. 2021
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/jabasupeze"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            CTP Czechitas House,
+                Škrobárenská 511/3, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2021/linuxadmin-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní pondělí 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 10. – 21. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/letasusohe"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mendelova univerzita v Brně,
+                Zemědělská 1752, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/brno-podzim-pondeli/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Linuxová administrace</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          29. 9. – 15. 12. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/letasusohe"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mendelova univerzita v Brně,
+                Zemědělská 1752, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/linux-admin/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 9. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="https://mapy.cz/s/letasusohe"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mendelova univerzita v Brně,
+                Zemědělská 1752, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/brno-podzim-snake/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní úterý 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 2. – 19. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2103950&amp;x=16.5858589&amp;z=16&amp;id=16.5858589%2C49.2103950&amp;source=coor&amp;q=Mergado"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mergado,
+                Minská 73/13, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/brno-jaro-2020-ut/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní pondělí 2020</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          24. 2. – 25. 5. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/brno-jaro-pondeli/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          18. 1. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2020/brno-jaro-snake/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Linuxová administrace</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 9. – 12. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://www.mapy.cz/s/8NKT"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat – Tower Small,
+                Purkyňova 99, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní středa 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. – 18. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-brno-podzim-st/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní úterý 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          24. 9. 2019 – 14. 1. 2020
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2103950&amp;x=16.5858589&amp;z=16&amp;id=16.5858589%2C49.2103950&amp;source=coor&amp;q=Mergado"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mergado,
+                Minská 73/13, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-podzim-2019-ut/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní pondělí 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          23. 9. – 16. 12. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-podzim-pondeli/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 8. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-podzim-snake/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          4. 4. – 13. 6. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          čtvrtky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2257189&amp;x=16.5821297&amp;z=16&amp;id=16.5821297%2C49.2257189&amp;source=coor&amp;q=Red+Hat+Czech"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech,
+                Purkyňova 97b, Brno-Medlánky (zastávka Červinkova)
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-jaro-knihovny/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní středa 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          27. 2. – 19. 6. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/pyladies-brno-jaro-st/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní úterý 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          26. 2. – 18. 6. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2103950&amp;x=16.5858589&amp;z=16&amp;id=16.5858589%2C49.2103950&amp;source=coor&amp;q=Mergado"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Mergado,
+                Minská 73/13, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-jaro-2019-ut/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní pondělí 2019</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 2. – 10. 6. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-jaro-2019-pondeli/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          2. 2. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.231318&amp;x=16.5757744&amp;z=16&amp;id=16.5757744%2C49.231318&amp;source=coor&amp;q=Red+Hat+Czech+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat Czech s.r.o.,
+                Purkyňova 111, Brno-Medlánky
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2019/brno-jaro-snake/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">RoboProjekt</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          2. 10. 2018 – 26. 11. 2019
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1992608&amp;x=16.6250248&amp;z=16&amp;id=16.6250248%2C49.1992608&amp;source=coor&amp;q=Kinalisoft+s.r.o."
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Kinalisoft s.r.o.,
+                Cejl 37/62, Brno - Zábrdovice
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://roboprojekt.pyladies.cz/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz na Fakultě informatiky MUNI <br> Podzimní středa 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          19. 9. – 19. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-brno-podzim/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Experimentální začátečnický kurz <br> Podzimní pondělí 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          17. 9. – 17. 12. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-brno-podzim-exp/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Hadí workshop pro PyLadies</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          1. 9. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          8:30 – 18:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/snake-brno/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní středa 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 3. – 6. 6. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2099833&amp;x=16.5989164&amp;z=16&amp;id=16.5989164%2C49.2099833&amp;source=coor&amp;q=Fakulta+informatiky+MU"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Fakulta informatiky MU,
+                Botanická 68A, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2018/pyladies-brno-jaro-st/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní pondělí 2018</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 3. – 25. 6. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="https://naucse.python.cz/2018/pyladies-brno-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Python a jeho knihovny</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          6. 2. – 26. 6. 2018
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          každé druhé úterý 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.2103950&amp;x=16.5858589&amp;z=16&amp;id=16.5858589%2C49.2103950&amp;source=coor&amp;q=Nekav%C3%A1rna"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Nekavárna,
+                Minská 73/13, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2018/pyknihovny-jaro/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní pondělí 2017</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          25. 9. – 18. 12. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-brno-podzim-po/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzimní středa 2017</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          27. 9. – 20. 12. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          středy 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1810008&amp;x=16.6057989&amp;z=16&amp;id=16.6057989%2C49.1810008&amp;source=coor&amp;q=SolarWinds"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            SolarWinds,
+                Holandská 873/6, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-brno-podzim-po/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní pondělí 2017</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          27. 2. – 29. 5. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1992294&amp;x=16.6235206&amp;z=16&amp;id=16.6235206%2C49.1992294&amp;source=coor&amp;q=Odbor+%C5%A1kolstv%C3%AD"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Odbor školství,
+                Cejl 73, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-brno-jaro-po/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jarní úterý 2017</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          28. 2. – 30. 5. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+        
+          
+    <li >
+        
+            <a href="http://naucse.python.cz/2017/pyladies-brno-jaro-po/"
+        
+        class="meetup-info-item meetup-info-item-book">
+            <span class="glyphicon glyphicon-book"></span>
+            <span>
+            Materiály
+          </span>
+        
+            </a>
+        
+    </li>
+  
+        
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Podzim 2016</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          26. 9. 2016 – 9. 1. 2017
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> Jaro 2016</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          7. 3. – 19. 6. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 17:00 – 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> 2015</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          5. 10. 2015 – 29. 2. 2016
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 17:00 – 19:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://mapy.cz/zakladni?y=49.1875653&amp;x=16.6064981&amp;z=16&amp;id=16.6064981%2C49.1875653&amp;source=coor&amp;q=Experis"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Experis,
+                BC Titanium, Nové sady 25, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Začátečnický kurz <br> 2014</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          10. 6. 2014 – 16. 3. 2015
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://www.mapy.cz/s/8NKT"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat – Tower Big,
+                Purkyňova 99, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Doučování Pythonu</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          11. 11. 2013 – 15. 9. 2014
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-hourglass">
+            <span class="glyphicon glyphicon-hourglass"></span>
+            <span>
+          pondělky a později úterky 18:00 – 20:00
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+        
+    <li >
+        
+            <a href="http://www.mapy.cz/s/8NKT"
+        
+        class="meetup-info-item meetup-info-item-map-marker">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>
+            Red Hat – Tower Big,
+                Purkyňova 99, Brno
+            
+        </span>
+        
+            </a>
+        
+    </li>
+  
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+
+          
+      
+          
+  
+  <div class="meetup-width">
+      <h4 class="meetup-heading">Build your own Blog with PyLadies! <br> Django Workshop @ RuPy 2012</h4>
+      <ul>
+      
+      
+        
+    <li >
+        
+            <span
+        
+        class="meetup-info-item meetup-info-item-calendar">
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span>
+          16. 11. 2012
+        </span>
+        
+            </span>
+        
+    </li>
+  
+      
+      
+      
+      
+      
+      
+      </ul>
+  </div>
+
+          
+      
+    </div>
+  </section>
+  
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="global-pyladies">
+              PyLadies CZ jsou součástí <a href="http://pyladies.com">mezinárodních PyLadies</a>.
+            </div>
+            <ul>
+                <li>
+                    <a href="mailto:info@pyladies.cz">
+                        <img src="/static/img/icon/mail-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pyladiescz">
+                        <img src="/static/img/icon/twitter-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pyladiescz">
+                        <img src="/static/img/icon/github-white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/pyonieri/">
+                        <img src="/static/img/icon/facebook-white.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+    
+    
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+</body>
+</html>
