@@ -13,6 +13,7 @@ import datetime
 from urllib.parse import urlencode
 from pathlib import Path, PurePosixPath
 import functools
+import argparse
 
 from flask import Flask, render_template, url_for, send_from_directory, abort
 
@@ -369,7 +370,48 @@ def get_css_links(page_content, base_url, headers):
     return freezeyt.url_finders.get_css_links(
         page_content, base_url, headers)
 
-if __name__ == '__main__':
+def serve():
+    """Run the Flask development server locally"""
+    # Temporarily override SERVER_NAME for local development,
+    # otherwise Flask will error out with 404
+    original_server_name = app.config.get('SERVER_NAME')
+    app.config['SERVER_NAME'] = None
+
+    try:
+        app.run(host='127.0.0.1', port=8003, debug=True)
+    finally:
+        # Restore original SERVER_NAME after server stops
+        if original_server_name is not None:
+            app.config['SERVER_NAME'] = original_server_name
+
+def freeze_site():
+    """Generate static files for deployment"""
     with open('freezeyt.yaml') as f:
         config = yaml.safe_load(f)
     freeze(app, config)
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='PyLadies.cz website generator and development server',
+        prog='pyladies_cz.py'
+    )
+    subparsers = parser.add_subparsers(dest='command', required=True)
+
+    serve_parser = subparsers.add_parser(
+        'serve',
+        help='Start local development server'
+    )
+    serve_parser.set_defaults(func=serve)
+
+    freeze_parser = subparsers.add_parser(
+        'freeze',
+        help='Generate static files for deployment'
+    )
+    freeze_parser.set_defaults(func=freeze_site)
+
+    args = parser.parse_args()
+    args.func()
+
+
+if __name__ == '__main__':
+    main()

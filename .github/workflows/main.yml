@@ -20,7 +20,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Freeze HTML
       run: |
-        python pyladies_cz.py freeze --verbose
+        python pyladies_cz.py freeze
     - if: ${{ github.ref == 'refs/heads/master' }}
       name: Deploy
       run: |
