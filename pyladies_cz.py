@@ -322,10 +322,17 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
-app.config['SERVER_NAME'] = 'pyladies.cz'
+
+def app_context(app):
+    """Context manager needed to call e.g. url_for() outside a Flask route
+    """
+    if not app.config.get('SERVER_NAME'):
+        app.config['SERVER_NAME'] = 'pyladies.cz'
+    return app.app_context()
+
 
 def v1_generator(app):
-    with app.app_context():
+    with app_context(app):
         IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
         for name, dirs, files in os.walk(v1_path):
             if '.git' in dirs:
@@ -342,12 +349,12 @@ def v1_generator(app):
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
 def course_redirect(app):
-    with app.app_context():
+    with app_context(app):
         for city in OLD_CITIES:
             yield url_for('course_redirect', city=city)
 
 def info_redirect(app):
-    with app.app_context():
+    with app_context(app):
         for city in OLD_CITIES:
             yield url_for('info_redirect', city=city)
 
@@ -371,18 +378,7 @@ def get_css_links(page_content, base_url, headers):
         page_content, base_url, headers)
 
 def serve():
-    """Run the Flask development server locally"""
-    # Temporarily override SERVER_NAME for local development,
-    # otherwise Flask will error out with 404
-    original_server_name = app.config.get('SERVER_NAME')
-    app.config['SERVER_NAME'] = None
-
-    try:
-        app.run(host='127.0.0.1', port=8003, debug=True)
-    finally:
-        # Restore original SERVER_NAME after server stops
-        if original_server_name is not None:
-            app.config['SERVER_NAME'] = original_server_name
+    app.run(host='127.0.0.1', port=8003, debug=True)
 
 def freeze_site():
     """Generate static files for deployment"""
