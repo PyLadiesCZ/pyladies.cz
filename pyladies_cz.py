@@ -328,6 +328,7 @@ def app_context(app):
     """
     if not app.config.get('SERVER_NAME'):
         app.config['SERVER_NAME'] = 'pyladies.cz'
+        app.config['PREFERRED_URL_SCHEME'] = 'https'
     return app.app_context()
 
 

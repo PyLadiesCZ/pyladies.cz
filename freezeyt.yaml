@@ -1,5 +1,5 @@
 output: ./_build/
-prefix: http://pyladies.cz/
+prefix: https://pyladies.cz/
 extra_pages:
   - generator: pyladies_cz:v1_generator
   - generator: pyladies_cz:course_redirect
