@@ -1,6 +1,6 @@
 PyYAML
 Flask
-freezeyt
+freezeyt==1.2.0
 markdown
 markupsafe
 werkzeug<3
