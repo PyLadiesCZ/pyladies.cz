@@ -377,8 +377,8 @@ def get_css_links(page_content, base_url, headers):
     return freezeyt.url_finders.get_css_links(
         page_content, base_url, headers)
 
-def serve():
-    app.run(host='127.0.0.1', port=8003, debug=True)
+def serve(host, port):
+    app.run(host=host, port=port, debug=True)
 
 def freeze_site():
     """Generate static files for deployment"""
@@ -397,7 +397,9 @@ def main():
         'serve',
         help='Start local development server'
     )
-    serve_parser.set_defaults(func=serve)
+    serve_parser.add_argument('--host', default='127.0.0.1', help='hostname')
+    serve_parser.add_argument('--port', '-p', default=8003, type=int, help='port')
+    serve_parser.set_defaults(func=lambda: serve(args.host, args.port))
 
     freeze_parser = subparsers.add_parser(
         'freeze',
