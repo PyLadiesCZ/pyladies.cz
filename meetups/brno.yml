@@ -609,7 +609,7 @@
   time: pondělky 18:00 – 20:30
   place: *fi-muni
 
-  - name: Linuxová administrace
+- name: Linuxová administrace
   materials: https://naucse.python.cz/2025/brno-podzim-linuxadmin/
   registration:
     url: https://forms.gle/zyxJd3CtkAPcUDEi9
