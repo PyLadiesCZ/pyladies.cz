@@ -609,4 +609,22 @@
   time: pondělky 18:00 – 20:30
   place: *fi-muni
 
+  - name: Linuxová administrace
+  materials: https://naucse.python.cz/2025/brno-podzim-linuxadmin/
+  registration:
+    url: https://forms.gle/zyxJd3CtkAPcUDEi9
+    end: 2025-09-12
+  start: 2025-09-17
+  end: 2025-12-03
+  time: středy 18:00 – 20:00
+  place: *fi-muni
+
+- name: Hadí workshop
+  materials: https://naucse.python.cz/2025/snake-brno-podzim/
+  registration:
+     url: https://forms.gle/kM58YhABNYw9L82J9
+     end: 2025-09-21
+  date: 2025-09-27
+  time: 8:30 – 18:00
+  place: *rh
   
