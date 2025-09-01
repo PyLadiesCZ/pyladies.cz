@@ -322,10 +322,18 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
-app.config['SERVER_NAME'] = 'pyladies.cz'
+
+def app_context(app):
+    """Context manager needed to call e.g. url_for() outside a Flask route
+    """
+    if not app.config.get('SERVER_NAME'):
+        app.config['SERVER_NAME'] = 'pyladies.cz'
+        app.config['PREFERRED_URL_SCHEME'] = 'https'
+    return app.app_context()
+
 
 def v1_generator(app):
-    with app.app_context():
+    with app_context(app):
         IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
         for name, dirs, files in os.walk(v1_path):
             if '.git' in dirs:
@@ -342,12 +350,12 @@ def v1_generator(app):
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
 def course_redirect(app):
-    with app.app_context():
+    with app_context(app):
         for city in OLD_CITIES:
             yield url_for('course_redirect', city=city)
 
 def info_redirect(app):
-    with app.app_context():
+    with app_context(app):
         for city in OLD_CITIES:
             yield url_for('info_redirect', city=city)
 
@@ -370,19 +378,8 @@ def get_css_links(page_content, base_url, headers):
     return freezeyt.url_finders.get_css_links(
         page_content, base_url, headers)
 
-def serve():
-    """Run the Flask development server locally"""
-    # Temporarily override SERVER_NAME for local development,
-    # otherwise Flask will error out with 404
-    original_server_name = app.config.get('SERVER_NAME')
-    app.config['SERVER_NAME'] = None
-
-    try:
-        app.run(host='127.0.0.1', port=8003, debug=True)
-    finally:
-        # Restore original SERVER_NAME after server stops
-        if original_server_name is not None:
-            app.config['SERVER_NAME'] = original_server_name
+def serve(host, port):
+    app.run(host=host, port=port, debug=True)
 
 def freeze_site():
     """Generate static files for deployment"""
@@ -401,7 +398,9 @@ def main():
         'serve',
         help='Start local development server'
     )
-    serve_parser.set_defaults(func=serve)
+    serve_parser.add_argument('--host', default='127.0.0.1', help='hostname')
+    serve_parser.add_argument('--port', '-p', default=8003, type=int, help='port')
+    serve_parser.set_defaults(func=lambda: serve(args.host, args.port))
 
     freeze_parser = subparsers.add_parser(
         'freeze',
