@@ -13,14 +13,15 @@ import datetime
 from urllib.parse import urlencode
 from pathlib import Path, PurePosixPath
 import functools
+import argparse
 
 from flask import Flask, render_template, url_for, send_from_directory, abort
-from flask_frozen import Freezer
+
 import yaml
 import markdown
 import markupsafe
 
-from elsa import cli
+from freezeyt import freeze
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -119,11 +120,11 @@ def gdpr():
 
 @app.route('/v1/')
 @app.route('/v1/<path:path>')
-def v1(path='index.html'):
+def v1(path=''):
+    if not path or path.endswith('/'):
+        path += 'index.html'
     if path in REDIRECTS:
         return redirect(REDIRECTS[path])
-    if path[-1] == '/':
-        path += 'index.html'
     return send_from_directory(v1_path, path)
 
 @app.route('/course.html')
@@ -321,34 +322,95 @@ for directory, pages in REDIRECTS_DATA['naucse-lessons'].items():
 ##########
 ## Freezer
 
-freezer = Freezer(app)
 
-@freezer.register_generator
-def v1():
-    IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
-    for name, dirs, files in os.walk(v1_path):
-        if '.git' in dirs:
-            dirs.remove('.git')
-        for file in files:
-            if file == '.git':
-                continue
-            if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
-                path = Path(name) / file
-                yield {'path': PurePosixPath(path.relative_to(v1_path))}
-    for path in REDIRECTS:
-        yield url_for('v1', path=path)
+def app_context(app):
+    """Context manager needed to call e.g. url_for() outside a Flask route
+    """
+    if not app.config.get('SERVER_NAME'):
+        app.config['SERVER_NAME'] = 'pyladies.cz'
+        app.config['PREFERRED_URL_SCHEME'] = 'https'
+    return app.app_context()
+
+
+def v1_generator(app):
+    with app_context(app):
+        IGNORE = ['*.aux', '*.out', '*.log', '*.scss', '.travis.yml', '.gitignore']
+        for name, dirs, files in os.walk(v1_path):
+            if '.git' in dirs:
+                dirs.remove('.git')
+            for file in files:
+                if file == '.git':
+                    continue
+                if not any(fnmatch.fnmatch(file, ig) for ig in IGNORE):
+                    path = Path(name) / file
+                    yield url_for('v1', path=PurePosixPath(path.relative_to(v1_path)))
+        for path in REDIRECTS:
+            yield url_for('v1', path=path)
 
 OLD_CITIES = 'praha', 'brno', 'ostrava'
 
-@freezer.register_generator
-def course_redirect():
-    for city in OLD_CITIES:
-        yield {'city': city}
+def course_redirect(app):
+    with app_context(app):
+        for city in OLD_CITIES:
+            yield url_for('course_redirect', city=city)
 
-@freezer.register_generator
-def info_redirect():
-    for city in OLD_CITIES:
-        yield {'city': city}
+def info_redirect(app):
+    with app_context(app):
+        for city in OLD_CITIES:
+            yield url_for('info_redirect', city=city)
+
+def get_html_links(page_content, base_url, headers):
+    from urllib.parse import urlparse
+    if urlparse(base_url).path.startswith('/v1/reveal.js'):
+        return
+    import freezeyt.url_finders
+    for link in freezeyt.url_finders.get_html_links(
+        page_content, base_url, headers,
+    ):
+        if not link.startswith('../components/bootstrap/fonts/glyphicons-halflings-regular.'):
+            yield link
+
+def get_css_links(page_content, base_url, headers):
+    from urllib.parse import urlparse
+    if urlparse(base_url).path.startswith('/v1/css/bootstrap.css'):
+        return ()
+    import freezeyt.url_finders
+    return freezeyt.url_finders.get_css_links(
+        page_content, base_url, headers)
+
+def serve(host, port):
+    app.run(host=host, port=port, debug=True)
+
+def freeze_site():
+    """Generate static files for deployment"""
+    with open('freezeyt.yaml') as f:
+        config = yaml.safe_load(f)
+    freeze(app, config)
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='PyLadies.cz website generator and development server',
+        prog='pyladies_cz.py'
+    )
+    subparsers = parser.add_subparsers(dest='command', required=True)
+
+    serve_parser = subparsers.add_parser(
+        'serve',
+        help='Start local development server'
+    )
+    serve_parser.add_argument('--host', default='127.0.0.1', help='hostname')
+    serve_parser.add_argument('--port', '-p', default=8003, type=int, help='port')
+    serve_parser.set_defaults(func=lambda: serve(args.host, args.port))
+
+    freeze_parser = subparsers.add_parser(
+        'freeze',
+        help='Generate static files for deployment'
+    )
+    freeze_parser.set_defaults(func=freeze_site)
+
+    args = parser.parse_args()
+    args.func()
+
 
 if __name__ == '__main__':
-    cli(app, freezer=freezer, base_url='http://pyladies.cz')
+    main()

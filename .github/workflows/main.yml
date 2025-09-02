@@ -20,10 +20,10 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Freeze HTML
       run: |
-        python pyladies_cz.py freeze --verbose
+        python pyladies_cz.py freeze
     - if: ${{ github.ref == 'refs/heads/master' }}
-      name: Deploy
-      run: |
-        python pyladies_cz.py deploy --no-freeze --push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build    
