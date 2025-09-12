@@ -53,3 +53,15 @@
     name: Přírodovědecká fakulta UPOL – hlavní budova
     address: 17. listopadu 1192/12, 779 00 Olomouc
     url: https://mapy.cz/s/fatemakero
+
+- name: PyLadies Olomouc <br> začátečnický kurz
+  materials: https://naucse.python.cz/2025/pyladies-olomouc-podzim/
+  registration:
+    url: https://forms.gle/hJJ3dckzPWS74otC9
+    end: 2025-09-30
+  start: 2025-10-07
+  end: 2026-01-20
+  place:
+    name: Přírodovědecká fakulta UPOL – hlavní budova
+    address: 17. listopadu 1192/12, 779 00 Olomouc
+    url: https://mapy.cz/s/fatemakero
