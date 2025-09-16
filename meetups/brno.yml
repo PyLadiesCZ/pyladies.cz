@@ -638,3 +638,12 @@
   time: úterky 18:00 – 20:00
   place: *fi-muni
   
+- name: GitWorking
+  materials: https://naucse.python.cz/2019/gitworking-openalt/
+  registration:
+    url: https://forms.gle/Vz5iqZLZRgJXfBby7
+    end: 2025-10-10
+  date: 2025-10-18
+  time: sobota 8:30 – 18:00
+  place: *rh
+
