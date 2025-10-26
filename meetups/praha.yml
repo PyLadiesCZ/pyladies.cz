@@ -96,6 +96,8 @@
 
 - name: Pondělní PyWorking sessions Praha <br> - pokročilé a doučovací srazy
   time: 18:00 - 20:00
+  start: 2017-01-14
+  end: 2023-01-01
   date_text: pondělky ve 14denních intervalech
   registration:
     url: https://www.meetup.com/pyworking/
@@ -456,6 +458,7 @@
     end: 2025-03-05
 
 - name: PyData kurz <br> Kurz datové analýzy
+  materials: https://pydatacz.github.io/pyladies-kurz/
   start: 2025-09-15
   end: 2025-12-15
   time: 18:00 - 20:00
@@ -464,3 +467,8 @@
     url: https://forms.gle/JHtvu39jAUseD96h7
     text: Registrace právě probíhá!
     end: 2025-09-01
+  place:
+    name: Matematicko-fyzikální fakulta UK
+    address: Malostranské nám. 25, 118 00 Praha 1
+    latitude: '50.08847'
+    longitude: '14.40365'
