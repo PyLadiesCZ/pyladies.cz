@@ -13,6 +13,7 @@
   - mail-link: mailto:zuzanapokorna@seznam.cz
 
 - name: Veronika Sarkányová
+  alumni: true
   img: img/praha/team/veronikas.jpg
   role: Organizátorka - kurz NTK
   links:
@@ -49,6 +50,13 @@
   role: Organizátorka - kurz Olšanka
   links:
   - mail-link: mailto:michaelakrouzkova@seznam.cz
+
+- name: Barbora Profantová
+  img: img/praha/team/bajka.jpg
+  role: Organizátorka
+  links:
+   - mail-link: mailto:profantovab@gmail.com
+   - linkedin-link: https://www.linkedin.com/in/profantova/
 
 - name: Jana Slouková
   role: Koučka
@@ -207,7 +215,6 @@
   links: []
 
 - name: Filip Sedlák
-  alumni: true
   img: img/praha/team/filip.jpg
   role: Kouč
   links: []
@@ -259,3 +266,9 @@
   role: Organizátorka/Koučka
   links:
   - twitter-link: https://twitter.com/ostruzina
+
+- name: Jakub Urban
+  img: img/praha/team/jakub.jpg
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/urbanj/
