@@ -738,6 +738,7 @@
   - mail-link: mailto:karolina.surma@pyladies.cz
 
 - name: Martin Pavlásek
+  alumni: true
   img: img/brno/team/martin.jpg
   role: Kouč
   links:
@@ -766,6 +767,7 @@
   - mail-link: mailto:acmiel1@gmail.com
 
 - name: Otakar Joch
+  alumni: true
   img: img/brno/team/otakar.jpg
   role: Kouč
   links:
