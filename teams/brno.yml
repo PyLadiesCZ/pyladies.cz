@@ -1,144 +1,3 @@
-- name: Daniela Drážná
-  img: img/brno/team/Danuse.jpg
-  role: Organizátorka
-  links:
-  - mail-link: mailto:daniela.d@pyladies.cz
-  - linkedin-link: https://www.linkedin.com/in/daniela-902dd/
-
-- name: Petra Adámková
-  img: img/brno/team/petra.png
-  role: Organizátorka
-  links:
-  - mail-link: mailto:petra.adamkova@pyladies.cz
-
-- name: Hana Štamberková
-  img: img/brno/team/HankaStamb.jpg
-  role: Organizátorka
-  links:
-  - mail-link: mailto:hana.stramberkova@pyladies.cz
-
-- name: Boris Kolda
-  img: img/brno/team/boris.jpg
-  role: Organizátor/Kouč
-  links:
-  - mail-link: mailto:boris.kolda@pyladies.cz
-  - linkedin-link: https://www.linkedin.com/in/boris-kolda-12854651/
-
-- name: Anežka Müller
-  img: img/brno/team/anezka.png
-  role: Organizace/PR
-  links:
-  - mail-link: mailto:anezka.muller@pyladies.cz
-  - linkedin-link: https://www.linkedin.com/in/anezkamll/
-  - website-link: https://anezka.muller.dev/
-
-- name: Tomáš Jelínek
-  img: img/brno/team/tomasisko.jpg
-  role: Lektor
-
-- name: Eliška Jégrová
-  img: img/brno/team/eliska.png
-  role: Lektorka/Koučka
-  links:
-  - mail-link: mailto:jegrovaeliska@seznam.cz
-  - github-link: https://github.com/ejegrova/
-  - linkedin-link: https://www.linkedin.com/in/eliska-jegrova-973940167
-
-- name: Martin Zelený
-  img: img/brno/team/mzeleny.jpg
-  role: Lektor/Kouč
-  links:
-  - github-link: https://github.com/ZelenyMartin
-  - linkedin-link: https://www.linkedin.com/in/martin-zeleny
-
-- name: Petr Viktorin
-  img: img/brno/team/petrv.jpg
-  role: Lektor
-  links:
-  - website-link: https://encukou.cz
-
-- name: Luděk Reif
-  img: img/brno/team/ludek.jpg
-  role: Lektor
-  links:
-  - mail-link: mailto:ludek.reif@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/luipenox/
-  - twitter-link: https://twitter.com/luipenox
-
-- name: Pavlína Váňová
-  img: img/brno/team/pavlinav.jpg
-  role: Organizátorka/Koučka
-
-- name: Karolina Surma
-  img: img/brno/team/karolina.jpg
-  role: Koučka/Copywriterka
-  links:
-  - mail-link: mailto:karolina.surma@pyladies.cz
-
-- name: Martin Pavlásek
-  img: img/brno/team/martin.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:tuzticzka@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
-
-- name: Martina Antalovová
-  img: img/brno/team/martinaa.jpg
-  role: Koučka
-  links:
-  - mail-link: mailto:antalovova@gmail.com
-  - linkedin-link: https://www.linkedin.com/in/martina-ant/
-
-- name: Jiří Podivín
-  img: img/brno/team/jpodivin.jpeg
-  role: Lektor/Kouč
-  links:
-  - github-link: https://github.com/jpodivin
-  - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
-
-- name: Adam Cmiel
-  img: img/brno/team/acmiel.jpg
-  role: Kouč
-  links:
-  - github-link: https://github.com/chmeliik
-  - mail-link: mailto:acmiel1@gmail.com
-
-- name: Otakar Joch
-  img: img/brno/team/otakar.jpg
-  role: Kouč
-  links:
-  - mail-link: mailto:turak97@gmail.com
-
-- name: Alicja Kario
-  img: img/brno/team/alicja.jpg
-  role: Koučka
-  links:
-  - github-link: https://github.com/tomato42
-  - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
-
-- name: Veronika Čierna
-  img: img/brno/team/veronika.jpg
-  role: Koučka
-
-- name: Ondra Vagner
-  img: img/brno/team/ondra.png
-  role: Kouč
-  links:
-  - linkedin-link: https://www.linkedin.com/in/ond%C5%99ej-vagner-38401458
-
-- name: Tomáš Nevrlka
-  img: img/brno/team/tnevrlka.jpg
-  role: Lektor/Kouč
-  links:
-  - github-link: https://github.com/tnevrlka
-  - linkedin-link: https://www.linkedin.com/in/tnevrlka
-
-- name: Nina Belyavskaya
-  img: img/brno/team/ninabel.jpg
-  role: Koučka
-  links:
-    - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
-
 - name: Terezie Viktorinová
   alumni: true
   img: img/brno/team/terezie.jpg
@@ -800,3 +659,144 @@
   alumni: true
   img: img/brno/team/blank.png
   role: Koučka
+
+- name: Daniela Drážná
+  img: img/brno/team/Danuse.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:daniela.d@pyladies.cz
+  - linkedin-link: https://www.linkedin.com/in/daniela-902dd/
+
+- name: Petra Adámková
+  img: img/brno/team/petra.png
+  role: Organizátorka
+  links:
+  - mail-link: mailto:petra.adamkova@pyladies.cz
+
+- name: Hana Štamberková
+  img: img/brno/team/HankaStamb.jpg
+  role: Organizátorka
+  links:
+  - mail-link: mailto:hana.stramberkova@pyladies.cz
+
+- name: Boris Kolda
+  img: img/brno/team/boris.jpg
+  role: Organizátor/Kouč
+  links:
+  - mail-link: mailto:boris.kolda@pyladies.cz
+  - linkedin-link: https://www.linkedin.com/in/boris-kolda-12854651/
+
+- name: Anežka Müller
+  img: img/brno/team/anezka.png
+  role: Organizace/PR
+  links:
+  - mail-link: mailto:anezka.muller@pyladies.cz
+  - linkedin-link: https://www.linkedin.com/in/anezkamll/
+  - website-link: https://anezka.muller.dev/
+
+- name: Tomáš Jelínek
+  img: img/brno/team/tomasisko.jpg
+  role: Lektor
+
+- name: Eliška Jégrová
+  img: img/brno/team/eliska.png
+  role: Lektorka/Koučka
+  links:
+  - mail-link: mailto:jegrovaeliska@seznam.cz
+  - github-link: https://github.com/ejegrova/
+  - linkedin-link: https://www.linkedin.com/in/eliska-jegrova-973940167
+
+- name: Martin Zelený
+  img: img/brno/team/mzeleny.jpg
+  role: Lektor/Kouč
+  links:
+  - github-link: https://github.com/ZelenyMartin
+  - linkedin-link: https://www.linkedin.com/in/martin-zeleny
+
+- name: Petr Viktorin
+  img: img/brno/team/petrv.jpg
+  role: Lektor
+  links:
+  - website-link: https://encukou.cz
+
+- name: Luděk Reif
+  img: img/brno/team/ludek.jpg
+  role: Lektor
+  links:
+  - mail-link: mailto:ludek.reif@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/luipenox/
+  - twitter-link: https://twitter.com/luipenox
+
+- name: Pavlína Váňová
+  img: img/brno/team/pavlinav.jpg
+  role: Organizátorka/Koučka
+
+- name: Karolina Surma
+  img: img/brno/team/karolina.jpg
+  role: Koučka/Copywriterka
+  links:
+  - mail-link: mailto:karolina.surma@pyladies.cz
+
+- name: Martin Pavlásek
+  img: img/brno/team/martin.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:tuzticzka@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/martin-pavl%C3%A1sek-a02b01a5
+
+- name: Martina Antalovová
+  img: img/brno/team/martinaa.jpg
+  role: Koučka
+  links:
+  - mail-link: mailto:antalovova@gmail.com
+  - linkedin-link: https://www.linkedin.com/in/martina-ant/
+
+- name: Jiří Podivín
+  img: img/brno/team/jpodivin.jpeg
+  role: Lektor/Kouč
+  links:
+  - github-link: https://github.com/jpodivin
+  - linkedin-link: https://www.linkedin.com/in/jiri-podivin-46601b156/
+
+- name: Adam Cmiel
+  img: img/brno/team/acmiel.jpg
+  role: Kouč
+  links:
+  - github-link: https://github.com/chmeliik
+  - mail-link: mailto:acmiel1@gmail.com
+
+- name: Otakar Joch
+  img: img/brno/team/otakar.jpg
+  role: Kouč
+  links:
+  - mail-link: mailto:turak97@gmail.com
+
+- name: Alicja Kario
+  img: img/brno/team/alicja.jpg
+  role: Koučka
+  links:
+  - github-link: https://github.com/tomato42
+  - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
+
+- name: Veronika Čierna
+  img: img/brno/team/veronika.jpg
+  role: Koučka
+
+- name: Ondra Vagner
+  img: img/brno/team/ondra.png
+  role: Kouč
+  links:
+  - linkedin-link: https://www.linkedin.com/in/ond%C5%99ej-vagner-38401458
+
+- name: Tomáš Nevrlka
+  img: img/brno/team/tnevrlka.jpg
+  role: Lektor/Kouč
+  links:
+  - github-link: https://github.com/tnevrlka
+  - linkedin-link: https://www.linkedin.com/in/tnevrlka
+
+- name: Nina Belyavskaya
+  img: img/brno/team/ninabel.jpg
+  role: Koučka
+  links:
+    - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
