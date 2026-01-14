@@ -647,3 +647,11 @@
   time: sobota 8:30 – 18:00
   place: *rh
 
+- name: Od dat k webové aplikaci
+  registration:
+    url: https://forms.gle/EakDx6difuCZbyC96
+    end: 2026-01-31
+  date: 2026-02-07
+  time: 9:00 – 18:00
+  place: *fi-muni
+
