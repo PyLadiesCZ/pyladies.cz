@@ -665,3 +665,14 @@
   time: čtvrtky 18:00 – 20:00
   place: *fi-muni
 
+- name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2026/brno-jaro-utery/
+  registration:
+    url: https://forms.gle/dxeFnEqKmKKFrzdC8
+    end: 2026-02-22
+  start: 2026-03-03
+  end: 2026-05-05
+  time: úterky 18:00 – 20:00
+  place: *fi-muni
+
+  
