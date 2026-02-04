@@ -675,4 +675,12 @@
   time: úterky 18:00 – 20:00
   place: *fi-muni
 
-  
+- name: GitWorking
+  materials: https://naucse.python.cz/course/gitworking/
+  registration:
+    url: https://forms.gle/wtv3hRYtgJ5gtgbu6
+    end: 2026-02-28
+  date: 2026-03-07
+  time: sobota 8:30 – 18:00
+  place: *fi-muni
+
