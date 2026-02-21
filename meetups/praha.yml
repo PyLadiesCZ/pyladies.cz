@@ -472,3 +472,13 @@
     address: Malostranské nám. 25, 118 00 Praha 1
     latitude: '50.08847'
     longitude: '14.40365'
+
+- name: PyLadies Praha <br> začátečnický kurz
+  materials: https://naucse.python.cz/2025/praha-pyladies-jaro/
+  start: 2026-03-19
+  end: 2026-06-11
+  time: každý čtvrtek 18:00 - 20:00
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSc_sGdT_zeVaJebQJ_dHbllu-D_nVy2LYMEnS1kPIzyHMhUww/viewform
+    text: Registrace právě probíhá!
+    end: 2025-03-06
