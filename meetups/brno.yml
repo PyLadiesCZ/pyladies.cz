@@ -692,3 +692,12 @@
   time: sobota 13:00 – 18:00
   place: *fi-muni
 
+- name: PyWorking - MicroPython
+  materials: https://naucse.python.cz/2023/brno-micropython/
+  registration:
+    url: https://forms.gle/fGeCrceJUvB9f7786
+    end: 2026-05-31
+  date: 2026-06-06
+  time: sobota 09:00 – 17:00
+  place: *fi-muni
+
