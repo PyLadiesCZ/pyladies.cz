@@ -640,7 +640,7 @@
   img: img/brno/team/blank.png
   role: Koučka
 
-- name: Zdenek Lovecek
+- name: Zdeněk Loveček
   alumni: true
   img: img/brno/team/blank.png
   role: Kouč
@@ -668,6 +668,7 @@
   - linkedin-link: https://www.linkedin.com/in/daniela-902dd/
 
 - name: Petra Adámková
+  alumni: true
   img: img/brno/team/petra.png
   role: Organizátorka
   links:
@@ -696,7 +697,7 @@
 
 - name: Tomáš Jelínek
   img: img/brno/team/tomasisko.jpg
-  role: Lektor
+  role: Lektor/Kouč
 
 - name: Eliška Jégrová
   img: img/brno/team/eliska.png
@@ -774,15 +775,18 @@
   - mail-link: mailto:turak97@gmail.com
 
 - name: Alicja Kario
+  alumni: true
   img: img/brno/team/alicja.jpg
   role: Koučka
   links:
   - github-link: https://github.com/tomato42
   - linkedin-link: https://www.linkedin.com/in/alicja-kario-51025a2
 
-- name: Veronika Čierna
+- name: Veronika Halíčková
   img: img/brno/team/veronika.jpg
   role: Koučka
+  links:
+  - linkedin-link: https://www.linkedin.com/in/veronika-cierna108/
 
 - name: Ondra Vagner
   img: img/brno/team/ondra.png
