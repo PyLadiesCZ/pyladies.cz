@@ -802,3 +802,11 @@
   role: Koučka
   links:
     - linkedin-link: https://www.linkedin.com/in/nina-belyavskaya/
+
+- name: David Slavíček
+  img: img/brno/team/dslavicek.jpeg
+  role: Lektor/Kouč
+  links:
+  - mail-link: mailto:slavicek.david29@gmail.com
+  - github-link: https://github.com/dslavicek
+  - linkedin-link: https://www.linkedin.com/in/david-slavicek-a20518163
