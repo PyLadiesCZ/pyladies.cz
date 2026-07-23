@@ -8,7 +8,6 @@ extra_pages:
   - /praha-ntk/
 url_finders:
     text/html: pyladies_cz:get_html_links
-    text/css: pyladies_cz:get_css_links
 extra_files:
   CNAME: pyladies.cz
   googlecc704f0f191eda8f.html:
@@ -17,3 +16,5 @@ extra_files:
     copy_from: original/course.html
   static:
     copy_from: static/
+status_handlers:
+    "308": "save"  # Permanent redirect
