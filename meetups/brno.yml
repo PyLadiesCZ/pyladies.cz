@@ -701,3 +701,12 @@
   time: sobota 09:00 – 17:00
   place: *fi-muni
 
+- name: Začátečnický kurz naruby
+  materials: https://naucse.python.cz/2026/brno-podzim-utery/
+  registration:
+    url: https://docs.google.com/forms/d/e/1FAIpQLScmsB6bDUuruzByVGFPdybgKRVJY1GPSX8KGffq-6QELy3lTw/viewform?usp=header
+    end: 2026-09-14
+  start: 2026-09-22
+  end: 2026-12-08
+  time: úterky 18:00 – 20:00
+  place: *fi-muni
