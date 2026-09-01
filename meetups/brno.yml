@@ -710,3 +710,10 @@
   end: 2026-12-08
   time: úterky 18:00 – 20:00
   place: *fi-muni
+
+- name: Projekt Quiz CLI
+  materials: https://github.com/quiz-cli
+  start: 2026-09-03
+  end: 2026-12-10
+  time: čtvrtky 18:00 – 20:00
+  place: *fi-muni
