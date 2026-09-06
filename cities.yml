@@ -28,6 +28,9 @@ brno:
         Napiš organizátorkám:
             icon: coach
             url: mailto:brno@pyladies.cz
+        Linkedin PyLadies Brno:
+            icon: linkedin
+            url: https://www.linkedin.com/company/pyladies-brno/
     newsletter:
         url: https://pyladies.us4.list-manage.com/subscribe/post?u=d18802c49f8d98ac411c260b7&amp;id=b569c163bb
         text: "Horké novinky (nejen) z dění PyLadies komunity! Maximálně jednou měsíčně ti mailem pošleme zprávu o chystaných akcích, kurzech a workshopech v Brně. Vše na jednom místě, bez spamu. Přihlaš se k odběru."
