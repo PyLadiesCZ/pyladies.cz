@@ -717,3 +717,13 @@
   end: 2026-12-10
   time: čtvrtky 18:00 – 20:00
   place: *fi-muni
+
+- name: Mluvte s daty - SQL za jeden den
+  registration:
+    url: https://forms.gle/Yv6dWZcGqzd1H2oE8
+    end: 2026-10-18
+  date: 2026-10-24
+  time: sobota 09:00 – 18:00
+  place: *fi-muni
+
+  
