@@ -3,10 +3,6 @@
 """Create or serve the pyladies.cz website
 """
 
-import sys
-if sys.version_info < (3, 0):
-    raise RuntimeError('You need Python 3.')
-
 import os
 import fnmatch
 import datetime
@@ -16,6 +12,7 @@ import functools
 import argparse
 
 from flask import Flask, render_template, url_for, send_from_directory, abort
+from flask import make_response
 
 import yaml
 import markdown
@@ -25,7 +22,7 @@ from freezeyt import freeze
 
 app = Flask('pyladies_cz')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-app.config['TRAP_HTTP_EXCEPTIONS'] = True
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 orig_path = os.path.join(app.root_path, 'original/')
 v1_path = os.path.join(orig_path, 'v1/')
@@ -38,13 +35,12 @@ def redirect(url):
     """Return a response with a Meta redirect"""
 
     # With static pages, we can't use HTTP redirects.
-    # Return a page wit <meta refresh> instead.
-    #
-    # When Frozen-Flask gets support for redirects
-    # (https://github.com/Frozen-Flask/Frozen-Flask/issues/81),
-    # this should be revisited.
+    # Return a page with <meta refresh> instead.
 
-    return render_template('meta_redirect.html', url=url)
+    rendered_template = render_template('meta_redirect.html', url=url)
+    response = make_response(rendered_template, 308)  # 308 Permanent redirect
+    response.headers['Location'] = url
+    return response
 
 
 ########
@@ -125,7 +121,11 @@ def v1(path=''):
         path += 'index.html'
     if path in REDIRECTS:
         return redirect(REDIRECTS[path])
-    return send_from_directory(v1_path, path)
+    response = send_from_directory(v1_path, path)
+    if path.startswith(('css/bootstrap.css', 'reveal.js')):
+        # Bootstrap and Reveal contain some URLs to documents we do not serve.
+        response.headers['Freezeyt-URL-Finder'] = 'none'
+    return response
 
 @app.route('/course.html')
 def course_html():
@@ -360,23 +360,12 @@ def info_redirect(app):
             yield url_for('info_redirect', city=city)
 
 def get_html_links(page_content, base_url, headers):
-    from urllib.parse import urlparse
-    if urlparse(base_url).path.startswith('/v1/reveal.js'):
-        return
     import freezeyt.url_finders
     for link in freezeyt.url_finders.get_html_links(
         page_content, base_url, headers,
     ):
         if not link.startswith('../components/bootstrap/fonts/glyphicons-halflings-regular.'):
             yield link
-
-def get_css_links(page_content, base_url, headers):
-    from urllib.parse import urlparse
-    if urlparse(base_url).path.startswith('/v1/css/bootstrap.css'):
-        return ()
-    import freezeyt.url_finders
-    return freezeyt.url_finders.get_css_links(
-        page_content, base_url, headers)
 
 def serve(host, port):
     app.run(host=host, port=port, debug=True)
